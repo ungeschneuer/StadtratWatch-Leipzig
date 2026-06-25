@@ -47,6 +47,8 @@ deno check src/         # Type-check code
 
 ## Architecture
 
+**Architecture documentation (arc42):** A structured architecture description following the [arc42](https://arc42.org) template lives in `docs/arc42/` (in German). Start at `docs/arc42/index.adoc`. Consult and keep it up to date when making architectural changes.
+
 ### Data Flow
 
 1. **OParl Ingestion** → scrape-oparl fetches parliamentary data from the city council's OParl API
@@ -60,7 +62,7 @@ deno check src/         # Type-check code
 
 All processed data lives in `data/` directory with this structure:
 
-```
+```text
 data/
 ├── magdeburg-7/              # Parliament period 7 (2019-2024)
 │   ├── registry.json         # Persons, factions, parties, sessions list
