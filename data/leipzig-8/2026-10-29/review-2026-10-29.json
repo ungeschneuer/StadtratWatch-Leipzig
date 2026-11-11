@@ -1,0 +1,15 @@
+{
+  "sessionId": "2026-10-29",
+  "generatedAt": "2026-11-11T23:06:28.989Z",
+  "video": {
+    "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_29_Oktober_2026_-_04-05-14.smil/playlist.m3u8",
+    "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-29-oktober-2026",
+    "available": true
+  },
+  "summary": {
+    "cases": 0,
+    "open": 0,
+    "reviewed": 0
+  },
+  "cases": []
+}

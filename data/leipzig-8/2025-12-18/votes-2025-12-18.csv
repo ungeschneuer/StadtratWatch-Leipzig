@@ -1,0 +1,711 @@
+sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boardName,vote,attendance,boardVote,status,procedural
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",E,present,E,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",E,present,E,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",E,present,E,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",E,present,E,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",E,present,E,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",E,present,E,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false
+2025-12-18,0,4901,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",E,present,E,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",E,present,E,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",E,present,E,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",E,present,E,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",E,present,E,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",E,present,E,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false
+2025-12-18,1,4939.1,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false
+2025-12-18,2,4971.9,19.3.1,VIII-DS-01694-Ifo-1-NF-1-ÄA-1,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",O,present,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",O,present,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",E,present,E,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false
+2025-12-18,3,5712.1,18.11.1,VIII-DS-01387-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",O,present,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",O,present,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false
+2025-12-18,4,5737.4,18.11,VIII-DS-01387,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",O,present,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",E,present,E,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",E,present,E,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",E,present,E,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false
+2025-12-18,5,6241.8,18.15.1,VIII-DS-01518-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",O,present,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",E,present,E,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false
+2025-12-18,6,7107.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",E,present,E,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",E,present,E,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",E,present,E,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",E,present,E,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",E,present,E,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false
+2025-12-18,7,7150.6,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",E,present,E,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",E,present,E,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",E,present,E,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false
+2025-12-18,8,7182.9,18.28.1,VIII-DS-01978-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000526,"Droese, Siegbert",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,absent,O,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",E,present,E,verified,false
+2025-12-18,9,7219.1,18.28,VIII-DS-01978-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false

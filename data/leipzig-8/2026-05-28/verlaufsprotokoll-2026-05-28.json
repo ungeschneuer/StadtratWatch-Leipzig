@@ -1,0 +1,646 @@
+{
+  "sessionId": "2026-05-28",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004608",
+  "fetchedAt": "2026-11-11T22:36:18.166Z",
+  "parserVersion": 1,
+  "results": [
+    {
+      "order": 0,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 14,
+      "N": 37,
+      "E": 11,
+      "line": "Abstimmung: 14 - 37 - 11. Damit abgelehnt.",
+      "context": "Sicht ist es an sich Verwaltungshandeln. Sie müssen das nicht positiv votieren, Sie können. - Wir übernehmen es nicht, nein. Oberbürgermeister Jung: Verwaltungshandeln heißt in diesen synoptischen Darstellungen immer: Machen wir sowieso. - Wir kommen zur Abstimmung. Dann rufe ich zunächst den Änderungsantrag vom BSW, der ÄA-04, auf. Es wurde punktweise Abstimmung gewünscht. - Punkt 1: Maßnahmen sozialer Abfederung. - Ich bitte Sie um Ihr Votum. - Alle haben abgestimmt."
+    },
+    {
+      "order": 1,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 20,
+      "N": 42,
+      "E": 0,
+      "line": "Abstimmung: 20 - 42 - 0. Abgelehnt.",
+      "context": "Wir kommen zu Punkt 2, dem Vollsperrung- und Entschädigungsfonds. Ihr Votum. - Ich sehe, alle konnten abstimmen."
+    },
+    {
+      "order": 2,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 7,
+      "N": 44,
+      "E": 11,
+      "line": "Abstimmung: 7 - 44 - 11. Abgelehnt.",
+      "context": "Dann kommt der Punkt 3: Online-Dienst/digitaler Zwilling. - Nein, wir machen jetzt nicht 3 a) und 3 b), oder? - Alle konnten abstimmen."
+    },
+    {
+      "order": 3,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 6,
+      "N": 55,
+      "E": 1,
+      "line": "Abstimmung: 6 - 55 - 1. Abgelehnt.",
+      "context": "Wir kommen zum Punkt 4, der schriftlichen Zusicherung bei sechs Monaten."
+    },
+    {
+      "order": 4,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 7,
+      "N": 42,
+      "E": 13,
+      "line": "Abstimmung: 7 - 42 - 13. Abgelehnt.",
+      "context": "Dann kommen wir ebenfalls punktweise zum BSW-Antrag ÄA-05, Inselnetze etc. - Ihr Votum zu Punkt 1."
+    },
+    {
+      "order": 5,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 14,
+      "N": 48,
+      "E": 0,
+      "line": "Abstimmung: 14 - 48 - 0. Abgelehnt.",
+      "context": "Wir kommen zum Punkt 2, der Koordinierungsstelle."
+    },
+    {
+      "order": 6,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 27,
+      "N": 35,
+      "E": 0,
+      "line": "Abstimmung: 27 - 35 - 0.",
+      "context": "Wir kommen zum Punkt 3, Fokus der Beratung Nachbarschaft, Informationskampagnen etc."
+    },
+    {
+      "order": 7,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 43,
+      "N": 12,
+      "E": 7,
+      "line": "Abstimmung: 43 - 12 - 7. Abgelehnt.",
+      "context": "Wir sind bei dem Änderungsantrag 06 von BSW, hier zunächst der Punkt 1, Photovoltaik, Solarthermie. - Alle konnten abstimmen."
+    },
+    {
+      "order": 8,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 43,
+      "N": 12,
+      "E": 7,
+      "line": "Abstimmung: 43 - 12 - 7. So beschlossen.",
+      "context": "- Entschuldigung! Ich war es so gewohnt. Noch einmal:"
+    },
+    {
+      "order": 9,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 62,
+      "N": 0,
+      "E": 0,
+      "line": "Abstimmung: 62 - 0 - 0. So beschlossen.",
+      "context": "Wir sind bei Punkt 2: Entwicklungsziele der KWP. Konnten alle drücken? - Ja."
+    },
+    {
+      "order": 10,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 25,
+      "N": 37,
+      "E": 0,
+      "line": "Abstimmung: 25 - 37 - 0. Abgelehnt.",
+      "context": "Wir sind jetzt bei der Fraktion DIE LINKE. Auch hier wird um punktweise Abstimmung gebeten, von Frau Feichtinger. Punkt 1: Erweiterung zur Planungssicherheit für Gebäudeeigentümer."
+    },
+    {
+      "order": 11,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 27,
+      "N": 28,
+      "E": 7,
+      "line": "Abstimmung: 27 - 28 - 7. Abgelehnt.",
+      "context": "Punkt 2: Maßnahmensteckbriefe."
+    },
+    {
+      "order": 12,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 35,
+      "N": 26,
+      "E": 1,
+      "line": "Abstimmung: 35 - 26 - 1. So beschlossen.",
+      "context": "Wir kommen zur SPD-Fraktion. Auch hier punktweise Einzelabstimmung, damit wir sicher gehen. Zum Punkt I, Sozialverträglichkeit, dort Punkt 1."
+    },
+    {
+      "order": 13,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 35,
+      "N": 26,
+      "E": 1,
+      "line": "Abstimmung: 35 - 26 - 1. So beschlossen.",
+      "context": "Dann der Punkt I.2, Kappungsgrenze."
+    },
+    {
+      "order": 14,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 36,
+      "N": 25,
+      "E": 1,
+      "line": "Abstimmung: 36 - 25 - 1. So beschlossen.",
+      "context": "Dann sind wir bei I.3, II. Quartal 2027, Info."
+    },
+    {
+      "order": 15,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 22,
+      "N": 34,
+      "E": 6,
+      "line": "Abstimmung: 22 - 34 - 6. Abgelehnt.",
+      "context": "Wir kommen zu II., Bürgerbeteiligung, und da Punkt 1, Potenzialgebiete. - Ihr Votum, bitte."
+    },
+    {
+      "order": 16,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 29,
+      "N": 26,
+      "E": 7,
+      "line": "Abstimmung: 29 - 26 - 7. So beschlossen.",
+      "context": "Wir kommen zu II.2, kommunale Energieagentur. - Alle konnten abstimmen."
+    },
+    {
+      "order": 17,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 35,
+      "N": 26,
+      "E": 1,
+      "line": "Abstimmung: 35 - 26 - 1. So beschlossen.",
+      "context": "Wir sind bei III, Milieuschutzsatzungen. - Alle konnten abstimmen."
+    },
+    {
+      "order": 18,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 43,
+      "N": 19,
+      "E": 0,
+      "line": "Abstimmung: 43 - 19 - 0. So beschlossen.",
+      "context": "Wir kommen jetzt zur Vorlage selbst. Auch hier war gewünscht, Punkt 1 gesondert abzustimmen. Ich bitte um Ihr Votum zu Punkt 1 der Vorlage. - Frau Möbius kommt noch bei Grün dazu."
+    },
+    {
+      "order": 19,
+      "agendaItemNumbers": [
+        "2"
+      ],
+      "J": 30,
+      "N": 32,
+      "E": 0,
+      "line": "Abstimmung: 30 - 32 - 0. Damit sind die",
+      "context": "Die Punkte 2 bis 6 machen wir jetzt gemeinsam. Ihr Votum bitte. - Alle konnten abstimmen."
+    },
+    {
+      "order": 20,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 17,
+      "N": 40,
+      "E": 1,
+      "line": "Abstimmung: 17 - 40 - 1. Damit abgelehnt.",
+      "context": "haben recht, dass wir das schon häufiger gemacht haben, aber wenn ich es übernommen habe und zum Bestandteil der Vorlage mache, dann ist es jetzt die Vorlage. Sie können jetzt höchstens beantragen, die wieder herauszulösen. Das können Sie machen. - Wir sind im Umgang völlig fair. - Nein, er braucht mir kein Papier vorzulegen, in dem er beantragt, den ÄA- 01 zu streichen. Ich betrachte das jetzt als einen Antrag auf Streichung des Änderungsantrags 01 als ersten Punkt. Ihr Votum bitte dazu, den ÄA-01 zu streichen."
+    },
+    {
+      "order": 21,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 16,
+      "N": 41,
+      "E": 2,
+      "line": "Abstimmung: 16 - 41 - 2. Damit abgelehnt.",
+      "context": "Ich bitte Sie um Ihr Votum zum zweiten Antrag, die übernommenen Punkte aus dem ÄA-04 zu streichen."
+    },
+    {
+      "order": 22,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 18,
+      "N": 38,
+      "E": 3,
+      "line": "Abstimmung: 18 - 38 - 3. Damit abgelehnt.",
+      "context": "Jetzt kommen wir zur Vorlage selbst. Wir gehen der Reihe nach durch. Wir kommen zu ÄA-02- NF-01 von Bündnis 90/Die Grünen. - Ihr Votum bitte. Konnten alle votieren? - Frau Heine ist schon gegangen."
+    },
+    {
+      "order": 23,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 18,
+      "N": 29,
+      "E": 11,
+      "line": "Abstimmung: 18 - 29 - 11. Ebenfalls abgelehnt.",
+      "context": "Wir kommen zum ÄA-03 von DIE LINKE. - Ihr Votum bitte."
+    },
+    {
+      "order": 24,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 13,
+      "N": 45,
+      "E": 1,
+      "line": "Abstimmung: 13 - 45 - 1. Abgelehnt.",
+      "context": "Dann sind wir jetzt bei ÄA-05 der AfD-Fraktion. - Ihr Votum, bitte."
+    },
+    {
+      "order": 25,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 19,
+      "N": 39,
+      "E": 1,
+      "line": "Abstimmung: 19 - 39 - 1. Abgelehnt.",
+      "context": "Oberbürgermeister Jung: Ich würde jetzt vor der Pause noch den Beschlusspunkt 8 aufrufen, damit alles auf dem Tisch liegt. Diesen lese ich noch einmal vor: Sollten die unter Punkt 5 genannten Zielwerte bis zum 31.12.2027 nicht erreicht werden, legt der Oberbürgermeister bis zum I. Quartal 2028 eine Satzung zur Einführung einer Verpackungssteuer, Take-away-Steuer, ab dem 01.07.2028 zum Beschluss vor. So lautet der Antrag. - Ihr Votum bitte dazu."
+    },
+    {
+      "order": 26,
+      "agendaItemNumbers": [
+        "20"
+      ],
+      "J": 25,
+      "N": 28,
+      "E": 6,
+      "line": "Abstimmung: 25 - 28 - 6.",
+      "context": "formationsvorlage jetzt ein Beschlusstext auf dem Deckblatt stehen, der 1.a und 4 in den 7 Punkten enthält. Darüber müssten wir abstimmen. Wenn die Mehrheit dieses ablehnt, werden wir als Verwaltung uns damit auseinandersetzen müssen, was wir tun, weil wir mit den Kammern und der Wirtschaft natürlich dementsprechende Vorgespräche geführt haben. Ich bitte Sie um Ihr Votum zur gerade erläuterten Beschlussvorlage. - Herr Dr. Külow ist nicht mehr da. Es konnten alle abstimmen."
+    },
+    {
+      "order": 27,
+      "agendaItemNumbers": [
+        "3"
+      ],
+      "J": 47,
+      "N": 0,
+      "E": 7,
+      "line": "Abstimmung: 47 - 0 - 7. So beschlossen.",
+      "context": "kompletten Neufassung, so wie von Frau Münch gerade ausgeführt, übernehmen? Denn wir halten das für sehr wichtig, dass in diesen wirtschaftlichen Gebieten dort oben unsere soziale Infrastruktur sorgsam betrachtet wird. Der Ortschaftsrat hat mich gebeten, ihn notfalls hier einzubringen. Aber wenn Sie ihn übernehmen, spart es uns allen Zeit. - Herzlichen Dank. Oberbürgermeister Jung: Jawohl, den Beschlussvorschlag übernehmen wir. Ich sehe keine weiteren Wortmeldungen. - Dann bitte ich Sie um Ihr Votum zur Vorlage."
+    },
+    {
+      "order": 28,
+      "agendaItemNumbers": [
+        "17"
+      ],
+      "J": 6,
+      "N": 44,
+      "E": 6,
+      "line": "Abstimmung: 6 - 44 - 6. Damit abgelehnt.",
+      "context": "Qualifizierung bräuchten wir noch eine Aussage, ob wir das als Protokollnotiz hinbekommen. Dann können wir den zurückziehen. Oberbürgermeister Jung: Das ist der ÄA-03, hier die Auswirkungen der neuen Gesundheitsvereinbarung auf Qualifizierung und Fortbildung, II. Quartal. - Das können wir zu Protokoll geben. Dann können wir meines Erachtens jetzt den Jugendhilfeausschuss abstimmen, Beschlusspunkt 4 zu streichen. - Ihr Votum. - Alle Anwesenden konnten abstimmen."
+    },
+    {
+      "order": 29,
+      "agendaItemNumbers": [
+        "17"
+      ],
+      "J": 54,
+      "N": 0,
+      "E": 2,
+      "line": "Abstimmung: 54 - 0 - 2. So beschlossen.",
+      "context": "gen. - Frau Nagel. Stadträtin Nagel (DIE LINKE): Vielleicht können wir es jetzt so machen, dass wir 1 bis 3 einzeln abstimmen und 4 einzeln. Macht das Sinn? Dann können die Kolleginnen differenziert abstimmen. - 4 bleibt in der Vorlage. Oberbürgermeister Jung: Das können wir machen. - Wir haben gerade beschlossen, es nicht zu streichen. - Getrennte Abstimmung ist trotzdem möglich. 1 bis 3 geht nur gemeinsam. - Dann bitte Ihr Votum zu 1 bis 3."
+    },
+    {
+      "order": 30,
+      "agendaItemNumbers": [
+        "17"
+      ],
+      "J": 51,
+      "N": 2,
+      "E": 3,
+      "line": "Abstimmung: 51 - 2 - 3. So beschlossen.",
+      "context": "Punkt 4 ist gesondert abzustimmen. - Ihr Votum."
+    },
+    {
+      "order": 31,
+      "agendaItemNumbers": [
+        "10"
+      ],
+      "J": 29,
+      "N": 18,
+      "E": 5,
+      "line": "Abstimmung: 29 - 18 - 5. So beschlossen.",
+      "context": "Ich bitte um Zustimmung zu dem Änderungsantrag, einen Einschnitt vorzunehmen, der jetzt nicht allen Trägern krass das Genick brechen wird, aber trotzdem irgendwie einen Mittelweg einschlägt. So ehrlich muss man sein. - Vielen Dank. Oberbürgermeister Jung: Vielen Dank. - Keine weiteren Wortmeldungen mehr. Wir bleiben bei unserem Vorschlag und empfehlen Ablehnung. Wir kommen zunächst ÄA-01 vom Jugendhilfeausschuss. - Ihr Votum."
+    },
+    {
+      "order": 32,
+      "agendaItemNumbers": [
+        "10"
+      ],
+      "J": 11,
+      "N": 26,
+      "E": 16,
+      "line": "Abstimmung: 11 - 26 - 16. Damit abgelehnt.",
+      "context": "staltete, eigenverantwortliche und wertgebundene, ehrenamtliche Tätigkeit junger Menschen in Jugendverbänden und Gruppen […]. Das Wort „gestaltet“ müsste dann auch wieder gestrichen werden. Da ist ein unerträglicher Syntaxfehler. - Danach kommt die Ergänzung „Personalausgaben“ etc. Ihr Votum bitte. - Frau Vollerthun ist wieder da. Frau Vollerthun, was ist Ihr Votum? - Dann zählen wir eine Enthaltung dazu, und Sie werden gleich wieder eingetragen."
+    },
+    {
+      "order": 33,
+      "agendaItemNumbers": [
+        "10"
+      ],
+      "J": 27,
+      "N": 27,
+      "E": 0,
+      "line": "Abstimmung: 27 - 27 - 0. Damit abgelehnt.",
+      "context": "Wir kommen zum ÄA-04, dem Vorschlag von LINKE und Bündnis90/Die Grünen, das Thema der gestaffelten Erhöhung der Prozente. - Ihr Votum bitte."
+    },
+    {
+      "order": 34,
+      "agendaItemNumbers": [
+        "10"
+      ],
+      "J": 0,
+      "N": 42,
+      "E": 11,
+      "line": "Abstimmung: 0 - 42 - 11. Abgelehnt.",
+      "context": "Stadträtin Riekewald (DIE LINKE): Herr Jung, ich wollte nur ganz kurz nachfrage: ÄA-03 ist doch weitergehender als der ÄA-04. Normalerweise wird doch immer der Weitestgehende aufgerufen. Warum haben Sie jetzt ÄA-04 vorher aufgerufen? Oberbürgermeister Jung: Auch da haben Sie recht. Ich habe einfach antizipiert. Ich habe gedacht, der findet eine Mehrheit. Also die Abstimmung zu ÄA-04 wird annulliert. Wir rufen jetzt ÄA-03 als den Weitergehenden zuerst auf. - Ihr Votum."
+    },
+    {
+      "order": 35,
+      "agendaItemNumbers": [
+        "10"
+      ],
+      "J": 27,
+      "N": 27,
+      "E": 0,
+      "line": "Abstimmung: 27 - 27 - 0. Abgelehnt.",
+      "context": "Jetzt kommt noch einmal der ÄA-04, der Antrag von DIE LINKE und Bündnis 90/Die Grünen. - Ihr Votum, bitte. Konnten alle abstimmen?"
+    },
+    {
+      "order": 36,
+      "agendaItemNumbers": [
+        "10"
+      ],
+      "J": 43,
+      "N": 0,
+      "E": 12,
+      "line": "Abstimmung: 43 - 0 - 12. So beschlossen.",
+      "context": "Jetzt müssen wir die Fachförderrichtlinie selbst aufrufen. - Ihr Votum zur Fachförderrichtlinie, bitte. - Konnten alle abstimmen? - Jetzt haben wir es."
+    },
+    {
+      "order": 37,
+      "agendaItemNumbers": [
+        "18.19"
+      ],
+      "J": 53,
+      "N": 0,
+      "E": 0,
+      "line": "Abstimmung: 53 - 0 - 0.",
+      "context": "gen kann ich die Entscheidung der Schule sehr nachvollziehen und würde solche Entscheidungen einer Schulmehrheit auch generell ungern infrage stellen von politischer Seite. Oberbürgermeister Jung: Dann kommen wir zur Abstimmung. Punktweise Abstimmung war beantragt, was bei der Namensgebung auch Sinn macht. Ich würde jeden einzelnen Punkt aufrufen, damit wir sauber in der Beschlussfassung sind. Beschlusspunkt 1: Die 8. Schule wird zur Schule am Agra-Park. - Ihr Votum."
+    },
+    {
+      "order": 38,
+      "agendaItemNumbers": [
+        "18.19"
+      ],
+      "J": 20,
+      "N": 23,
+      "E": 0,
+      "line": "Abstimmung: 20 - 23 - 0.",
+      "context": "Beschlusspunkt 2: Die 46. Schule wird zur Käte- Duncker-Schule. - Ihr Votum."
+    },
+    {
+      "order": 39,
+      "agendaItemNumbers": [
+        "18.19"
+      ],
+      "J": 51,
+      "N": 0,
+      "E": 0,
+      "line": "Abstimmung: 51 - 0 - 0.",
+      "context": "Punkt 3: Die Schule am Barnet-Licht-Platz wird zur Barnet-Licht-Schule. - Ihr Votum."
+    },
+    {
+      "order": 40,
+      "agendaItemNumbers": [
+        "18.19"
+      ],
+      "J": 54,
+      "N": 0,
+      "E": 0,
+      "line": "Abstimmung: 54 - 0 - 0.",
+      "context": "Punkt 4: Die Schule Hainbuchenstraße soll den Namen Alwine-Winter-Schule bekommen."
+    },
+    {
+      "order": 41,
+      "agendaItemNumbers": [
+        "18.19"
+      ],
+      "J": 53,
+      "N": 0,
+      "E": 1,
+      "line": "Abstimmung: 53 - 0 - 1.",
+      "context": "Punkt 5: Die Schule Ihmelsstraße soll den Namen Hope-Adams-Schule bekommen."
+    },
+    {
+      "order": 42,
+      "agendaItemNumbers": [
+        "18.14"
+      ],
+      "J": 20,
+      "N": 31,
+      "E": 2,
+      "line": "Abstimmung: 20 - 31 - 2. Damit abgelehnt.",
+      "context": "werden. Sehr geehrte Anwesende, nur weil Veranstaltungen gut besucht werden, eignen sie sich deshalb nicht für Tourismusförderung. Sie können ebenso Politikerinnen - natürlich des politischen Gegenübers - auch an den Pranger stellen. Das würde auch den Tourismus ankurbeln. Aber wollen wir das? Oberbürgermeister Jung: Keine weiteren Wortmeldungen. Wir beginnen mit dem Antrag ÄA-01. - Ihr Votum, bitte."
+    },
+    {
+      "order": 43,
+      "agendaItemNumbers": [
+        "18.14"
+      ],
+      "J": 13,
+      "N": 31,
+      "E": 8,
+      "line": "Abstimmung: 13 - 31 - 8. Abgelehnt.",
+      "context": "Der ÄA-02 wurde zurückgezogen. Wir kommen zum ÄA-03 von Stadtrat Kumbernuß und Frau Subat. - Ihr Votum bitte."
+    },
+    {
+      "order": 44,
+      "agendaItemNumbers": [
+        "18.14"
+      ],
+      "J": 50,
+      "N": 0,
+      "E": 2,
+      "line": "Abstimmung: 50 - 0 - 2. So beschlossen.",
+      "context": "Wir kommen zur Gesamtvorlage. - Ihr Votum bitte."
+    },
+    {
+      "order": 45,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "J": 21,
+      "N": 27,
+      "E": 2,
+      "line": "Abstimmung: 21 - 27 - 2.",
+      "context": "schaftsrat in Mehrheit das abgelehnt. Oberbürgermeister Jung: Herr Bütow. Stadtrat Bütow (AfD): Wir möchten beantragen, den Änderungsantrag, den Sie übernommen haben, wieder herauszulösen und eigens abzustimmen. Oberbürgermeister Jung: Dann machen wir das so. Wir stehen dazu, dass es eine sinnvolle Ergänzung ist. Ihr Votum bitte zum Geschäftsordnungsantrag zur Herauslösung des Antrags der Fraktion DIE LINKE."
+    },
+    {
+      "order": 46,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "J": 34,
+      "N": 0,
+      "E": 16,
+      "line": "Abstimmung: 34 - 0 - 16. So beschlossen.",
+      "context": "Damit können wir jetzt die Vorlage selbst inklusive dieses Änderungsantrags abstimmen. - Ihr Votum, bitte."
+    },
+    {
+      "order": 47,
+      "agendaItemNumbers": [
+        "18.21"
+      ],
+      "J": 21,
+      "N": 28,
+      "E": 2,
+      "line": "Abstimmung: 21 - 28 - 2. Abgelehnt.",
+      "context": "den verwaltet wird, nicht ein einziges Mal zu erwähnen. Für die Selbstvergessenheit der etablierten Parteien in der Finanzfrage sind die Beschäftigten der städtischen Kulturstätten wirklich nicht verantwortlich, aber wir als BSW, als neue Partei, sind es eben auch nicht. Daher können wir hier nicht zustimmen. - Ich danke Ihnen. Oberbürgermeister Jung: Ich sehe keine weiteren Wortmeldungen. Ich bitte Sie um Ihr Votum, zunächst zum Änderungsantrag. - Es konnten alle abstimmen."
+    },
+    {
+      "order": 48,
+      "agendaItemNumbers": [
+        "18.21"
+      ],
+      "J": 39,
+      "N": 1,
+      "E": 11,
+      "line": "Abstimmung: 39 - 1 - 11. So beschlossen.",
+      "context": "Wir kommen zur Entgeltordnung selbst. - Ihr Votum, bitte."
+    },
+    {
+      "order": 49,
+      "agendaItemNumbers": [
+        "19.4"
+      ],
+      "J": 22,
+      "N": 25,
+      "E": 4,
+      "line": "Abstimmung: 22 - 25 - 4. Damit abgelehnt.",
+      "context": "oder 4 Uhr zu Hause sein. Ich muss auch an mich denken, Entschuldigung. - An die Minderleister von der CDU: Ich werde dann am Ende heute wieder einen 20-Stunden-Arbeitstag hinter mir haben. Darauf wäre sogar Friedrich Merz stolz. Oberbürgermeister Jung: Gibt es Gegenrede? - Rein formal Gegenrede. - Dann bitte ich Sie um Ihr Votum zum Geschäftsordnungsantrag zur Schließung der Debatte nach dem nichtöffentlichen Punkt. - Es haben alle abgestimmt."
+    },
+    {
+      "order": 50,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 23,
+      "N": 26,
+      "E": 2,
+      "line": "Abstimmung: 23 - 26 - 2. Damit ist der Streich-",
+      "context": "Stadtrat Dr. Peter (Bündnis 90/Die Grünen): Ich beantrage Schluss der Debatte. Oberbürgermeister Jung: Gibt es Gegenstimmen zum Schluss der Debatte? - Enthaltungen? Abstimmung: Mit großer Mehrheit so beschlossen. Damit ist die Debatte beendet. Wir kommen zur Abstimmung. Ich rufe auf den Änderungsantrag der SPD- Fraktion, den wir jetzt punktweise aufrufen. Zunächst geht es darum, den Beschlusspunkt 1 zu streichen. - Ihr Votum."
+    },
+    {
+      "order": 51,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 49,
+      "N": 0,
+      "E": 0,
+      "line": "Abstimmung: 49 - 0 - 0. So beschlossen.",
+      "context": "vorschlag abgelehnt. Punkt 2: Hier geht es darum, es bis August zu überarbeiten."
+    },
+    {
+      "order": 52,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 41,
+      "N": 10,
+      "E": 0,
+      "line": "Abstimmung: 41 - 10 - 0. So beschlossen.",
+      "context": "Wir kommen zu Beschlusspunkt 3 mit der Ergänzung des gemeinsamen Campus."
+    },
+    {
+      "order": 53,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 17,
+      "N": 27,
+      "E": 7,
+      "line": "Abstimmung: 17 - 27 - 7. Abgelehnt.",
+      "context": "Beschlusspunkt 4 schlägt die SPD vor, ganz zu streichen. - Ihr Votum, bitte."
+    },
+    {
+      "order": 54,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 24,
+      "N": 25,
+      "E": 3,
+      "line": "Abstimmung: 24 - 25 - 3. Damit abgelehnt.",
+      "context": "Wir kommen zum Beschlusspunkt 5, hier das „bis zu einer abschließenden Entscheidung“ zu streichen."
+    },
+    {
+      "order": 55,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 22,
+      "N": 24,
+      "E": 6,
+      "line": "Abstimmung: 22 - 24 - 6. Abgelehnt. Damit ist",
+      "context": "Wir kommen jetzt zum Ursprungsantrag der CDU in der Neufassung, denn die Fraktion DIE LINKE hatte den Beschlusspunkt zurückgezogen. Hier müssen wir jetzt, nachdem wir über die Streichung abgestimmt haben, den Beschlusspunkt 1 zur Abstimmung stellen, den Beschluss auszusetzen. - Ihr Votum, bitte."
+    },
+    {
+      "order": 56,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 27,
+      "N": 23,
+      "E": 2,
+      "line": "Abstimmung: 27 - 23 - 2. So beschlossen.",
+      "context": "der Beschlussvorschlag 1 des CDU-Antrags abgelehnt. Wir kommen zum Beschlusspunkt 4 des CDU- Antrages selbst."
+    },
+    {
+      "order": 57,
+      "agendaItemNumbers": [
+        "5"
+      ],
+      "J": 11,
+      "N": 31,
+      "E": 9,
+      "line": "Abstimmung: 11 - 31 - 9. Damit abgelehnt.",
+      "context": "sender? Stadträtin Riekewald (DIE LINKE): Ja, es wäre konsequent, es jetzt bei 1 und 4 auch so zu machen. Oberbürgermeister Jung: Danke für den Hinweis, Frau Riekewald! - Entschuldigung, ich habe gedacht, das wäre beschlossen. Also, Beschlusspunkt 5 der CDU-Antrag muss noch einmal aufgerufen gerufen werden, weil Sie abgelehnt bis zu einer abschließenden Entscheidung hatten. Ihr Votum zu Punkt 5."
+    }
+  ]
+}
