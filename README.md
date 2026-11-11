@@ -1,3 +1,12 @@
+# StadtratWatch Leipzig
+
+> Dieser Fork von [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) (Code for Magdeburg) passt die Plattform
+> an die **Leipziger Ratsversammlung** an. Ziel ist eine offene, maschinenlesbare Datenbasis zum Abstimmungsverhalten
+> jedes Ratsmitglieds. Plan und Stand: [TODO.md](./TODO.md). Datenquellen und Pipeline-Schritte für Leipzig:
+> [`src/scripts/leipzig-recordings/`](./src/scripts/leipzig-recordings/README.md).
+>
+> Daten aus OParl und dem Open-Data-Portal: © Stadt Leipzig, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
 # StadtratWatch
 
 Eine umfassende Plattform für Bürgerbeteiligung und Transparenz im Magdeburger Stadtrat. StadtratWatch verfolgt Stadtratssitzungen, analysiert Abstimmungsverhalten und bietet Werkzeuge für demokratische Teilhabe.

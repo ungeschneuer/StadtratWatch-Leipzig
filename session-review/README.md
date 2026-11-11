@@ -17,6 +17,15 @@ Each view works on one session, identified by its date (`YYYY-MM-DD`):
 | `/session/{sessionDate}/speakers` | Assign speaker segments to persons, remove noise, generate speeches       | `session-speakers-{date}.json`, `session-speeches-{date}.json` |
 | `/session/{sessionDate}/speeches` | Review speeches and mark chair contributions                              | `session-speeches-{date}.json`  |
 
+### Leipzig
+
+`/leipzig` lists the Leipzig sessions with open review cases, `/leipzig/{sessionDate}` shows the cases of one session
+(see `src/scripts/leipzig-votings/README.md`, section „Review“). Unlike the Magdeburg views it saves to GitHub: a
+reviewer signs in with a personal token, and each decision is committed to the session's corrections file on the
+branch `data/leipzig-votings`. In development (`npm run dev`) it reads `../data/leipzig-8/` and the evidence images in
+`../output/leipzig-votings/evidence/`; the published build reads the data branch from GitHub. The build needs the
+dependencies of `astro/` installed, because the shared models compile with its `tsconfig.json`.
+
 ## Development
 
 ```bash

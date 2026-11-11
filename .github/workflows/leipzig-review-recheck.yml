@@ -1,0 +1,66 @@
+name: Leipzig review recheck
+
+# Runs whenever a reviewer saves a decision, and daily for new minutes: validates the corrections file, fetches minutes
+# that are not stored yet, applies both to the votings without reading the video, and ticks the cases off in the issues. A broken corrections file fails this check on the data PR.
+
+on:
+  push:
+    branches: [data/leipzig-votings]
+    paths: ['data/leipzig-8/*/corrections-*.json']
+  # The minutes appear weeks after a session; this run picks them up and checks the session against them.
+  schedule:
+    - cron: '53 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: leipzig-votings-data
+  cancel-in-progress: false
+
+env:
+  LEIPZIG_DATA_BRANCH: data/leipzig-votings
+
+jobs:
+  recheck:
+    name: Apply corrections
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout the data branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ env.LEIPZIG_DATA_BRANCH }}
+
+      - name: Name the review UI
+        run: echo "REVIEW_UI_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/review" >> "$GITHUB_ENV"
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Apply corrections
+        run: |
+          bun src/scripts/leipzig-votings/index.ts --corrections-only \
+            --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}"
+
+      - name: Commit data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/leipzig-8
+          git diff --cached --quiet && exit 0
+          git commit -m 'data(leipzig): Prüfentscheidungen und Niederschriften übernehmen'
+          git push origin "HEAD:$LEIPZIG_DATA_BRANCH"
+
+      - name: Update review issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          bun src/scripts/leipzig-votings/review-issues.ts --review-ui-url "$REVIEW_UI_URL"
+          .github/scripts/leipzig-review-issues.sh output/leipzig-review-issues/issues.json

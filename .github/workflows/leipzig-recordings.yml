@@ -1,0 +1,67 @@
+name: Leipzig recordings
+
+on:
+  schedule:
+    # Daily at 05:17 UTC; an off-the-hour minute avoids the GitHub Actions peak.
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: Guess page addresses for every meeting of the period
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: leipzig-recordings
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync recordings
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Sync recordings
+        id: sync
+        continue-on-error: true
+        run: bun src/scripts/leipzig-recordings/index.ts ${{ inputs.backfill && '--backfill' || '' }} 2>&1 | tee sync.log; exit ${PIPESTATUS[0]}
+
+      - name: Propose data changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/leipzig-recordings
+          add-paths: data/leipzig-8
+          commit-message: 'data(leipzig): Aufzeichnungen der Ratsversammlung aktualisieren'
+          title: 'data(leipzig): Aufzeichnungen der Ratsversammlung aktualisieren'
+          body: Automatisch erzeugt vom Workflow „Leipzig recordings“. Neue oder geänderte Aufzeichnungen und Untertitel.
+          delete-branch: true
+
+      - name: Report failure
+        if: steps.sync.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title='Leipzig recordings: Abruf fehlgeschlagen'
+          body="$(printf 'Lauf: %s/%s/actions/runs/%s\n\n```\n%s\n```' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(tail -n 40 sync.log)")"
+          existing="$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
+          exit 1

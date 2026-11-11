@@ -5,6 +5,7 @@
   "type": "module",
   "exports": {
     "./ai-text-assessment": "./ai-text-assessment.ts",
+    "./leipzig-review": "./leipzig-review.ts",
     "./oparl": "./oparl.ts",
     "./oparl-derivatives": "./oparl-derivatives.ts",
     "./paper-batch": "./paper-batch.ts",

@@ -1,0 +1,147 @@
+name: Leipzig votings
+
+# Reads the votes of new council sessions from the recordings, publishes the evidence images of every vote that needs
+# a human look, and collects data and corrections on the branch data/leipzig-votings with one pull request.
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/leipzig-8/recordings.json']
+  schedule:
+    # Weekly on Monday 06:23 UTC, in case a recording appeared without a merged recordings update.
+    - cron: '23 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      sessions:
+        description: Sitzungen (YYYY-MM-DD, durch Leerzeichen getrennt); leer = alle ohne Abstimmungsdatei
+        type: string
+        default: ''
+      force:
+        description: Auch Sitzungen mit vorhandener Abstimmungsdatei neu lesen
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+# Shared with the recheck, so the two never write the data branch at the same time.
+concurrency:
+  group: leipzig-votings-data
+  cancel-in-progress: false
+
+env:
+  LEIPZIG_DATA_BRANCH: data/leipzig-votings
+
+jobs:
+  extract:
+    name: Extract votings
+    runs-on: ubuntu-latest
+    # A session takes 15 to 25 minutes; a first backfill of many sessions may need a second run.
+    timeout-minutes: 350
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Check out the data branch
+        run: |
+          .github/scripts/leipzig-data-branch.sh
+          echo "REVIEW_UI_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/review" >> "$GITHUB_ENV"
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Install ffmpeg
+        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+
+      # The scan of a recording takes several minutes and never changes; the OCR language data is a download.
+      - name: Restore scans and OCR data
+        uses: actions/cache@v6
+        with:
+          path: |
+            output/leipzig-votings/vote-events-*.json
+            deu.traineddata
+          key: leipzig-votings-${{ github.run_id }}
+          restore-keys: leipzig-votings-
+
+      # Ends before the job does, so what was read is still committed and published; the next run continues.
+      - name: Extract votings
+        id: extract
+        continue-on-error: true
+        timeout-minutes: 300
+        env:
+          SESSIONS: ${{ inputs.sessions }}
+          FORCE: ${{ inputs.force && '--force' || '' }}
+        run: |
+          session_args=()
+          for session in $SESSIONS; do session_args+=(-s "$session"); done
+          bun src/scripts/leipzig-votings/index.ts $FORCE "${session_args[@]}" \
+            --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}" \
+            2>&1 | tee extract.log
+          exit "${PIPESTATUS[0]}"
+
+      - name: Commit data
+        run: |
+          git add data/leipzig-8
+          git diff --cached --quiet || git commit -m 'data(leipzig): Abstimmungen aus den Aufzeichnungen'
+          git push origin "HEAD:$LEIPZIG_DATA_BRANCH"
+
+      - name: Publish evidence images
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          for directory in output/leipzig-votings/evidence/*/; do
+            session="$(basename "$directory")"
+            images=("$directory"*.png)
+            [ "${#images[@]}" -eq 0 ] && continue
+            tag="evidence-$session"
+            gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --prerelease --target "$LEIPZIG_DATA_BRANCH" \
+              --title "Belegbilder Ratsversammlung $session" \
+              --notes 'Tafelbilder der Abstimmungen, die geprüft werden müssen. Sie bleiben erhalten, wenn die Aufzeichnung aus der Mediathek verschwindet.'
+            gh release upload "$tag" "${images[@]}" --clobber
+          done
+
+      - name: Open the data pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(gh pr list --head "$LEIPZIG_DATA_BRANCH" --state open --json number --jq '.[0].number')" ] \
+            && ! git diff --quiet origin/main HEAD -- data/leipzig-8; then
+            gh pr create --base main --head "$LEIPZIG_DATA_BRANCH" \
+              --title 'data(leipzig): Abstimmungen der Ratsversammlung' \
+              --body "Automatisch erzeugt vom Workflow „Leipzig votings“. Abstimmungen, die geprüft werden müssen, stehen in den Issues mit dem Label \`leipzig-review\`; geprüft wird auf ${REVIEW_UI_URL}/leipzig. Jede gespeicherte Entscheidung landet als Commit auf diesem Branch."
+          fi
+
+      # An extraction stopped by its timeout has not written the review index; rebuilding it needs no video.
+      - name: Update review issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LEIPZIG_REVIEWERS: ${{ vars.LEIPZIG_REVIEWERS }}
+        run: |
+          bun src/scripts/leipzig-votings/index.ts --corrections-only \
+            --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}"
+          bun src/scripts/leipzig-votings/review-issues.ts --review-ui-url "$REVIEW_UI_URL"
+          .github/scripts/leipzig-review-issues.sh output/leipzig-review-issues/issues.json
+
+      - name: Report failure
+        if: steps.extract.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title='Leipzig votings: Auswertung fehlgeschlagen'
+          body="$(printf 'Lauf: %s/%s/actions/runs/%s\n\n```\n%s\n```' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(grep -E '^(failed|- )' extract.log | tail -n 40)")"
+          existing="$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
+          exit 1

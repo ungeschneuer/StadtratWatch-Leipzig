@@ -1,0 +1,28 @@
+name: Leipzig review reminder
+
+# Reminds the reviewers once a week of sessions with open cases, while the recording may still be online.
+
+on:
+  schedule:
+    - cron: '41 7 * * 3'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    name: Remind of open review cases
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Comment on open review issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue list --label leipzig-review --state open --json number,title --jq '.[] | "\(.number)\t\(.title)"' |
+            while IFS=$'\t' read -r number title; do
+              gh issue comment "$number" --body "Erinnerung: ${title#*: } – bitte prüfen, solange die Aufzeichnung in der Mediathek ist."
+            done

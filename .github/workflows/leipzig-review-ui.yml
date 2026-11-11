@@ -1,0 +1,79 @@
+name: Leipzig review UI
+
+# Publishes the review app (session-review) on GitHub Pages under /review/. It reads the data branch straight from
+# GitHub, so it only has to be rebuilt when the app itself changes.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'session-review/**'
+      - 'astro/src/models/**'
+      - 'src/deps/astro/**'
+      - '.github/workflows/leipzig-review-ui.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build review UI
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      # The shared models are compiled with astro/tsconfig.json, which extends Astro's base config.
+      - name: Install Astro dependencies
+        working-directory: astro
+        run: npm ci
+
+      - name: Install review app dependencies
+        working-directory: session-review
+        run: npm ci
+
+      - name: Build
+        working-directory: session-review
+        env:
+          VITE_LEIPZIG_REPOSITORY: ${{ github.repository }}
+        run: SESSION_REVIEW_BASE="/${GITHUB_REPOSITORY#*/}/review/" npm run build
+
+      # GitHub Pages answers unknown paths with 404.html; serving the app there lets deep links like
+      # /review/leipzig/2026-10-29 work.
+      - name: Assemble site
+        run: |
+          mkdir -p site/review
+          cp -r session-review/dist/. site/review/
+          cp site/review/index.html site/404.html
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
