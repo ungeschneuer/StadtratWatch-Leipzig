@@ -67,6 +67,21 @@ describe('toSessionScan', () => {
     ]);
   });
 
+  it('names a qualified majority the vote needs, and leaves the simple majority unnamed', () => {
+    const hauptsatzung = voting(7, 'verified', {
+      heading: {
+        raw: '',
+        agendaItemNumber: '19.10',
+        paperReference: 'VIII-DS-02011-NF-01-DS-01',
+        title: '5. Satzung zur Änderung der Hauptsatzung der Stadt Leipzig',
+      },
+    });
+    const { scan } = toSessionScan('2026-03-25', [hauptsatzung, voting(8, 'verified')], members);
+
+    expect(scan[0].majorityRequirement).toBe('majority-of-members');
+    expect(scan[1]).not.toHaveProperty('majorityRequirement');
+  });
+
   it('publishes votes with an unfinished check under their review status, and leaves out the invalid ones', () => {
     const statuses: ExtractedVoting['status'][] = [
       'corrected',
