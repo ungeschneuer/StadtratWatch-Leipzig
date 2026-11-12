@@ -20,8 +20,8 @@ on:
         description: Auch Sitzungen mit vorhandener Abstimmungsdatei neu lesen
         type: boolean
         default: false
-      quotation_images_only:
-        description: Nur die Belegbilder (Zitat) der veröffentlichten Abstimmungen erzeugen und veröffentlichen
+      evidence_images_only:
+        description: Nur Belegbilder erzeugen und veröffentlichen (Zitatbilder und Tafelbilder der Prüffälle), ohne die Aufzeichnung neu zu lesen
         type: boolean
         default: false
 
@@ -84,11 +84,11 @@ jobs:
         env:
           SESSIONS: ${{ inputs.sessions }}
           FORCE: ${{ inputs.force && '--force' || '' }}
-          QUOTATION_IMAGES_ONLY: ${{ inputs.quotation_images_only && '--quotation-images-only' || '' }}
+          EVIDENCE_IMAGES_ONLY: ${{ inputs.evidence_images_only && '--evidence-images-only' || '' }}
         run: |
           session_args=()
           for session in $SESSIONS; do session_args+=(-s "$session"); done
-          bun src/scripts/leipzig-votings/index.ts $FORCE $QUOTATION_IMAGES_ONLY "${session_args[@]}" \
+          bun src/scripts/leipzig-votings/index.ts $FORCE $EVIDENCE_IMAGES_ONLY "${session_args[@]}" \
             --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}" \
             2>&1 | tee extract.log
           exit "${PIPESTATUS[0]}"
