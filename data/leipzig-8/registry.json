@@ -307,7 +307,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "andre-moellmer",
@@ -315,7 +329,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "andreas-geisler",
@@ -323,7 +351,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "andreas-nowak",
@@ -331,7 +373,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "andreas-schultz",
@@ -339,7 +395,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "anja-feichtinger",
@@ -347,7 +417,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "anna-lisa-moebius",
@@ -355,7 +439,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": "2025-06-25",
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2025-06-25",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2025-06-25",
+          "end": null
+        }
+      ]
     },
     {
       "id": "anne-vollerthun",
@@ -363,7 +461,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "beate-ehms",
@@ -371,7 +483,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "bernd-bahr",
@@ -379,7 +505,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": "2025-04-16",
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2025-04-16",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2025-04-16",
+          "end": null
+        }
+      ]
     },
     {
       "id": "chantal-schneiss",
@@ -387,7 +527,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "christian-kriegel",
@@ -395,7 +549,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "christina-maerz",
@@ -403,7 +571,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "christoph-neumann",
@@ -411,7 +593,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "christopher-zenker",
@@ -419,7 +615,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": "2025-01-31"
+      "end": "2025-01-31",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": "2025-01-31"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": "2025-01-31"
+        }
+      ]
     },
     {
       "id": "cornelia-falken",
@@ -427,7 +637,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "danilo-streller",
@@ -435,7 +659,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": "2025-12-17",
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2025-12-17",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2025-12-17",
+          "end": null
+        }
+      ]
     },
     {
       "id": "elisa-gerbsch",
@@ -443,7 +681,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "gesine-maertens",
@@ -451,7 +703,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "klaus-peter-reinhold",
@@ -459,7 +725,21 @@
       "factionId": "fraktionslos",
       "partyId": "fdp",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "fdp",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "nicole-schreyer-krieg",
@@ -467,7 +747,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "olga-naumov",
@@ -475,7 +769,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "paula-piechotta",
@@ -483,7 +791,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": "2025-06-24"
+      "end": "2025-06-24",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": "2025-06-24"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": "2025-06-24"
+        }
+      ]
     },
     {
       "id": "sabine-heymann",
@@ -491,7 +813,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "tobias-peter",
@@ -499,7 +835,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "volker-kuelow",
@@ -507,7 +857,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "enrico-stange",
@@ -515,7 +879,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "eric-recke",
@@ -523,7 +901,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "falk-dossin",
@@ -531,7 +923,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "frank-franke",
@@ -539,7 +945,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "franziska-riekewald",
@@ -547,7 +967,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "hans-juergen-raque",
@@ -555,7 +989,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "jan-paul-helbig",
@@ -563,7 +1011,21 @@
       "factionId": "die-freie-fraktion",
       "partyId": "piraten",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "piraten",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "jens-lehmann",
@@ -571,7 +1033,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "jessica-steiner",
@@ -579,7 +1055,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": "2025-01-14"
+      "end": "2025-01-14",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": "2025-01-14"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": "2025-01-14"
+        }
+      ]
     },
     {
       "id": "joerg-kuehne",
@@ -587,7 +1077,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "julian-schroeder",
@@ -595,7 +1099,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "juliane-nagel",
@@ -603,7 +1121,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "juergen-guenter-butz",
@@ -611,7 +1143,26 @@
       "factionId": "afd",
       "partyId": "freie-sachsen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": "2025-09-17"
+        },
+        {
+          "factionId": "afd",
+          "start": "2025-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "freie-sachsen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "karsten-albrecht",
@@ -619,7 +1170,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "karsten-fiedler",
@@ -627,7 +1192,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "katharina-krefft",
@@ -635,7 +1214,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "katharina-subat",
@@ -643,7 +1236,21 @@
       "factionId": "die-freie-fraktion",
       "partyId": "die-partei",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-partei",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "kristina-weyh",
@@ -651,7 +1258,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "lucas-schopphoven",
@@ -659,7 +1280,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "mandy-gehrt",
@@ -667,7 +1302,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marco-goetze",
@@ -675,7 +1324,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marco-zscherny",
@@ -683,7 +1346,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marcus-muendlein",
@@ -691,7 +1368,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": "2025-01-16",
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2025-01-16",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2025-01-16",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marius-beyer",
@@ -699,7 +1390,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marius-wittwer",
@@ -707,7 +1412,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": "2025-02-12",
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2025-02-12",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2025-02-12",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marsha-richarz",
@@ -715,7 +1434,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "marvin-frommhold",
@@ -723,7 +1456,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "maximilian-kretschmar",
@@ -731,7 +1478,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": "2025-12-16"
+      "end": "2025-12-16",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-12-16"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-12-16"
+        }
+      ]
     },
     {
       "id": "michael-weickert",
@@ -739,7 +1500,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "nora-reinhardt",
@@ -747,7 +1522,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": "2026-02-25",
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2026-02-25",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2026-02-25",
+          "end": null
+        }
+      ]
     },
     {
       "id": "burkhard-jung",
@@ -755,7 +1544,21 @@
       "factionId": "oberbuergermeister",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "oberbuergermeister",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "pia-heine",
@@ -763,7 +1566,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "getu-abraham",
@@ -771,7 +1588,36 @@
       "factionId": "fraktionslos",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": "2024-11-08"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-11-09",
+          "end": "2025-03-12"
+        },
+        {
+          "factionId": "cdu",
+          "start": "2025-03-13",
+          "end": "2026-09-22"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2026-09-23",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "ralf-pannowitsch",
@@ -779,7 +1625,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "ringo-haustein",
@@ -787,7 +1647,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": "2025-04-15"
+      "end": "2025-04-15",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-04-15"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-04-15"
+        }
+      ]
     },
     {
       "id": "rocco-farkas",
@@ -795,7 +1669,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "roland-ulbrich",
@@ -803,7 +1691,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "sascha-jecht",
@@ -811,7 +1713,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "siegbert-droese",
@@ -819,7 +1735,26 @@
       "factionId": "fraktionslos",
       "partyId": "afd",
       "start": null,
-      "end": "2026-01-27"
+      "end": "2026-01-27",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": "2025-12-31"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2026-01-01",
+          "end": "2026-01-27"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": "2026-01-27"
+        }
+      ]
     },
     {
       "id": "soeren-pellmann",
@@ -827,7 +1762,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "stefan-artmann",
@@ -835,7 +1784,21 @@
       "factionId": "cdu",
       "partyId": "cdu",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "stefan-rieger",
@@ -843,7 +1806,21 @@
       "factionId": "fraktionslos",
       "partyId": "freie-waehler",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "freie-waehler",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "susanne-scheidereiter",
@@ -851,7 +1828,21 @@
       "factionId": "die-linke",
       "partyId": "die-linke",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "sven-morlok",
@@ -859,7 +1850,21 @@
       "factionId": "die-freie-fraktion",
       "partyId": "fdp",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "fdp",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "sylvia-deubel",
@@ -867,7 +1872,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "sylvia-herbst-weckel",
@@ -875,7 +1894,21 @@
       "factionId": "buendnis-90-die-gruenen",
       "partyId": "buendnis-90-die-gruenen",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "thomas-kachel",
@@ -883,7 +1916,21 @@
       "factionId": "bsw",
       "partyId": "bsw",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "thomas-kumbernuss",
@@ -891,7 +1938,21 @@
       "factionId": "die-freie-fraktion",
       "partyId": "die-partei",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-partei",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "tobias-keller",
@@ -899,7 +1960,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "udo-buetow",
@@ -907,7 +1982,21 @@
       "factionId": "afd",
       "partyId": "afd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     },
     {
       "id": "ute-koehler-siegel",
@@ -915,7 +2004,21 @@
       "factionId": "spd",
       "partyId": "spd",
       "start": null,
-      "end": null
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
     }
   ]
 }

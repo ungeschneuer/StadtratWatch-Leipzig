@@ -1,6 +1,6 @@
 {
   "parliamentPeriodId": "leipzig-8",
-  "generatedAt": "2026-11-12T07:52:54.768Z",
+  "generatedAt": "2026-11-12T09:51:35.844Z",
   "sources": [
     {
       "name": "Ratsinformationssystem der Stadt Leipzig (OParl): Mitgliedschaften, Personen, Fraktionen",
@@ -153,6 +153,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -174,6 +186,18 @@
           "factionId": "cdu",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -199,6 +223,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -220,6 +256,18 @@
           "factionId": "cdu",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -245,6 +293,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -266,6 +326,18 @@
           "factionId": "spd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -291,6 +363,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2025-06-25",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -312,6 +396,18 @@
           "factionId": "buendnis-90-die-gruenen",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
         }
       ],
       "partySource": {
@@ -337,6 +433,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -358,6 +466,18 @@
           "factionId": "bsw",
           "start": "2025-04-16",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2025-04-16",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
         }
       ],
       "partySource": {
@@ -383,6 +503,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -404,6 +536,18 @@
           "factionId": "afd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
         }
       ],
       "partySource": {
@@ -429,6 +573,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -450,6 +606,18 @@
           "factionId": "afd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
         }
       ],
       "partySource": {
@@ -475,6 +643,18 @@
           "end": "2025-01-31"
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": "2025-01-31",
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -496,6 +676,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -521,6 +713,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2025-12-17",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -542,6 +746,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -567,6 +783,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -588,6 +816,18 @@
           "factionId": "fraktionslos",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "fdp",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Freie Demokratische Partei"
+          }
         }
       ],
       "partySource": {
@@ -613,6 +853,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "former-name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "former-name",
@@ -634,6 +886,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -659,6 +923,18 @@
           "end": "2025-06-24"
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": "2025-06-24",
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -680,6 +956,18 @@
           "factionId": "cdu",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -705,6 +993,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -726,6 +1026,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -751,6 +1063,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -772,6 +1096,18 @@
           "factionId": "bsw",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
         }
       ],
       "partySource": {
@@ -797,6 +1133,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -818,6 +1166,18 @@
           "factionId": "spd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -843,6 +1203,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -864,6 +1236,18 @@
           "factionId": "cdu",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -889,6 +1273,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "piraten",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Piratenpartei Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -910,6 +1306,18 @@
           "factionId": "cdu",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -935,6 +1343,18 @@
           "end": "2025-01-14"
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": "2025-01-14",
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -956,6 +1376,18 @@
           "factionId": "afd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
         }
       ],
       "partySource": {
@@ -981,6 +1413,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1002,6 +1446,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -1032,6 +1488,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "freie-sachsen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "FREIE SACHSEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1053,6 +1521,18 @@
           "factionId": "cdu",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -1078,6 +1558,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1099,6 +1591,18 @@
           "factionId": "buendnis-90-die-gruenen",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
         }
       ],
       "partySource": {
@@ -1124,6 +1628,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "die-partei",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Partei für Arbeit Rechtsstaat Tierschutz Elitenförderung und basisdemokratische Initiative"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1145,6 +1661,18 @@
           "factionId": "buendnis-90-die-gruenen",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
         }
       ],
       "partySource": {
@@ -1170,6 +1698,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1191,6 +1731,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -1216,6 +1768,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1237,6 +1801,18 @@
           "factionId": "bsw",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
         }
       ],
       "partySource": {
@@ -1262,6 +1838,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2025-01-16",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1283,6 +1871,18 @@
           "factionId": "afd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
         }
       ],
       "partySource": {
@@ -1308,6 +1908,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2025-02-12",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1329,6 +1941,18 @@
           "factionId": "buendnis-90-die-gruenen",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
         }
       ],
       "partySource": {
@@ -1354,6 +1978,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1375,6 +2011,18 @@
           "factionId": "bsw",
           "start": "2024-09-18",
           "end": "2025-12-16"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-12-16",
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
         }
       ],
       "partySource": {
@@ -1400,6 +2048,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1421,6 +2081,18 @@
           "factionId": "afd",
           "start": "2026-02-25",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2026-02-25",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
         }
       ],
       "partySource": {
@@ -1446,6 +2118,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "override",
+            "reason": "Der Oberbürgermeister kandidierte nicht für den Stadtrat und steht daher nicht in der Bewerberliste 2024.",
+            "source": "Open-Data-Portal Leipzig, Oberbürgermeisterwahl 2020 (Kandidat „Burkhard Jung“, Partei „SPD“): https://opendata.leipzig.de/dataset/oberburgermeisterwahl-2020-reprasentative-nachwahlbefragung"
+          }
+        }
+      ],
       "partySource": {
         "method": "override",
         "reason": "Der Oberbürgermeister kandidierte nicht für den Stadtrat und steht daher nicht in der Bewerberliste 2024.",
@@ -1467,6 +2151,18 @@
           "factionId": "spd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
         }
       ],
       "partySource": {
@@ -1507,6 +2203,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1528,6 +2236,18 @@
           "factionId": "bsw",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
         }
       ],
       "partySource": {
@@ -1553,6 +2273,18 @@
           "end": "2025-04-15"
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-04-15",
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1574,6 +2306,18 @@
           "factionId": "afd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
         }
       ],
       "partySource": {
@@ -1599,6 +2343,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1620,6 +2376,18 @@
           "factionId": "bsw",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
         }
       ],
       "partySource": {
@@ -1650,6 +2418,18 @@
           "end": "2026-01-27"
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": "2026-01-27",
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1671,6 +2451,18 @@
           "factionId": "die-linke",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
         }
       ],
       "partySource": {
@@ -1696,6 +2488,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Christlich Demokratische Union Deutschlands"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1717,6 +2521,18 @@
           "factionId": "fraktionslos",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "freie-waehler",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "WVL - Wählervereinigung Leipzig (FREIE WÄHLER) e.V."
+          }
         }
       ],
       "partySource": {
@@ -1742,6 +2558,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "DIE LINKE"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1763,6 +2591,18 @@
           "factionId": "die-freie-fraktion",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "fdp",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Freie Demokratische Partei"
+          }
         }
       ],
       "partySource": {
@@ -1788,6 +2628,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1809,6 +2661,18 @@
           "factionId": "buendnis-90-die-gruenen",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "BÜNDNIS 90/DIE GRÜNEN"
+          }
         }
       ],
       "partySource": {
@@ -1834,6 +2698,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1855,6 +2731,18 @@
           "factionId": "die-freie-fraktion",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-partei",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Partei für Arbeit Rechtsstaat Tierschutz Elitenförderung und basisdemokratische Initiative"
+          }
         }
       ],
       "partySource": {
@@ -1880,6 +2768,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1903,6 +2803,18 @@
           "end": null
         }
       ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Alternative für Deutschland"
+          }
+        }
+      ],
       "partySource": {
         "method": "election-list",
         "match": "name",
@@ -1924,6 +2836,18 @@
           "factionId": "spd",
           "start": "2024-09-18",
           "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null,
+          "source": {
+            "method": "election-list",
+            "match": "name",
+            "listName": "Sozialdemokratische Partei Deutschlands"
+          }
         }
       ],
       "partySource": {
