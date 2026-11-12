@@ -2,9 +2,6 @@ import { getStaticPaths as getStaticParliamentPeriodPaths } from '../../[parliam
 import { generateMeta } from '../../../_helpers.ts';
 import { getEntry } from 'astro:content';
 import type { Registry, RegistrySession } from '@models/registry.ts';
-import type { SessionSpeech } from '@models/session-speech.ts';
-import type { AiTextAssessmentLabel } from '@models/ai-text-assessment.ts';
-import { isAiTextAssessmentVisible } from '@utils/ai-text-assessment-presentation.ts';
 
 export const getStaticPaths = async () => {
   const paths = await getStaticParliamentPeriodPaths();
@@ -61,7 +58,6 @@ export async function GET({
         duration: speech.duration,
         onBehalfOf: speech.onBehalfOf,
         transcription: speech.transcription,
-        ...getExposedAiTextAssessment(speech),
       };
     });
 
@@ -76,16 +72,6 @@ export async function GET({
       'Content-Type': 'application/json',
     },
   });
-}
-
-function getExposedAiTextAssessment(
-  speech: SessionSpeech,
-): { aiTextAssessmentLabel: AiTextAssessmentLabel } | Record<string, never> {
-  if (!isAiTextAssessmentVisible(speech)) {
-    return {};
-  }
-
-  return { aiTextAssessmentLabel: speech.aiTextAssessment.label };
 }
 
 // Texts taken from an official record are not StadtratWatch's to put under CC0; the record is named instead.

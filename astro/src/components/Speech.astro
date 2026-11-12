@@ -3,10 +3,7 @@ import { type SessionSpeech } from '@models/session-speech';
 import { getFactionOfPerson, getPersonByName } from '@utils/session-utils';
 import { type Registry, type RegistrySession } from '@models/registry';
 import { sessionVideoLink } from '@models/session-video';
-import {
-  AI_TEXT_ASSESSMENT_BADGE_DESCRIPTION,
-  isAiTextAssessmentVisible,
-} from '@utils/ai-text-assessment-presentation';
+import { CONTACT_EMAIL, SITE_NAME } from '@utils/site-config';
 
 type Props = {
   parliamentPeriod: Registry;
@@ -28,7 +25,6 @@ const videoLink = sessionVideoLink(session, speech.start);
 const linkTitle = getLinkTitle(speech.speaker, session.date);
 const hintMailHref = getHintMailHref(speech, session.date);
 const hintMailTitle = getHintMailTitle(speech);
-const showAiTextAssessmentBadge = isAiTextAssessmentVisible(speech);
 
 function getLinkTitle(speaker: string, date: string): string {
   const formattedDate = new Date(date).toLocaleString('de-DE', {
@@ -49,7 +45,7 @@ function getHintMailHref(speech: SessionSpeech, date: string): string {
     `Hinweis zum Redebeitrag von ${speech.speaker} am ${formattedDate}`,
   );
   const hintMailBodyText = encodeURIComponent(
-    `Hallo StadtratWatch-Team!
+    `Hallo ${SITE_NAME}-Team!
 
 Ich habe einen Hinweis zum Redebeitrag von ${speech.speaker} aus der Sitzung vom ${formattedDate} (Zeitmarke: ${speech.start}):
 
@@ -60,7 +56,7 @@ Mit freundlichen Grüßen,
 
 `,
   );
-  return `mailto:stadtratwatch@gmail.com?subject=${subject}&body=${hintMailBodyText}`;
+  return `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${hintMailBodyText}`;
 }
 
 function getHintMailTitle(speech: SessionSpeech): string {
@@ -73,27 +69,6 @@ function getHintMailTitle(speech: SessionSpeech): string {
   class="timeline-start text-sm flex flex-row flex-wrap gap-2 w-full items-center"
 >
   <span class="text-base-content/80">{speech.speaker}</span>
-  {showAiTextAssessmentBadge && (
-    <div class="dropdown dropdown-bottom">
-      <button
-        type="button"
-        tabindex="0"
-        class="btn btn-ghost btn-xs btn-circle"
-        aria-label={AI_TEXT_ASSESSMENT_BADGE_DESCRIPTION}
-      >
-        <span class="iconify lucide--bot size-4 text-warning align-middle" />
-      </button>
-      <div
-        tabindex="0"
-        class="dropdown-content z-10 bg-base-200 rounded-box shadow p-3 w-64 text-sm space-y-2"
-      >
-        <p>{AI_TEXT_ASSESSMENT_BADGE_DESCRIPTION}</p>
-        <a href="/transparency/ai-assessment/" class="link link-primary">
-          Informationen zur Analyse-Methodik.
-        </a>
-      </div>
-    </div>
-  )}
   {faction && <span class="badge badge-sm badge-neutral">{faction.name}</span>}
   {speech.onBehalfOf && (
     <span class="badge badge-sm badge-neutral">{speech.onBehalfOf}</span>

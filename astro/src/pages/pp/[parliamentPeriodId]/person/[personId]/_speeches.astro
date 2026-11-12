@@ -1,9 +1,9 @@
 ---
+import { sitePath } from '@utils/site-path';
 import { type Registry } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
 import { type RegistryPerson } from '@models/registry';
 import Speech from '@components/Speech.astro';
-import AiTextAssessmentDisclaimer from '@components/AiTextAssessmentDisclaimer.astro';
 import { formatDate } from '@utils/format-date';
 import { formatSpeakingTime } from '@utils/format-time';
 
@@ -45,19 +45,21 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
         der Sitzung.
       </p>
     )}
-    <p>
-      Die folgenden Redebeiträge wurden automatisiert erstellt und können Fehler
-      enthalten. Die Texte dienen nur zur Orientierung und sind nicht als
-      offizielle Protokolle zu verstehen. Um Aufzeichnungen der Redebeiträge
-      anzuhören, nutzen Sie bitte die Links zum jeweiligen YouTube-Video.
-    </p>
+    {!hasRecordedSpeeches && (
+      <p>
+        Die folgenden Redebeiträge wurden automatisiert erstellt und können
+        Fehler enthalten. Die Texte dienen nur zur Orientierung und sind nicht
+        als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
+        Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
+        Aufzeichnung.
+      </p>
+    )}
     <p>
       Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
       Klicken Sie dazu auf das Flaggen-Symbol unter dem jeweiligen Redebeitrag
       und senden Sie uns eine Nachricht. Wir werden den Fehler umgehend prüfen
       und korrigieren.
     </p>
-    <AiTextAssessmentDisclaimer />
   </div>
 </div>
 
@@ -86,7 +88,9 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
                   </span>
                   <a
                     class="link link-primary"
-                    href={`/pp/${parliamentPeriod.id}/session/${speechesBySessionDate.session.id}?tab=speeches#speech-${speech.start}`}
+                    href={sitePath(
+                      `/pp/${parliamentPeriod.id}/session/${speechesBySessionDate.session.id}?tab=speeches#speech-${speech.start}`,
+                    )}
                   >
                     In der Sitzung lesen
                   </a>
@@ -104,7 +108,9 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
                       session={speechesBySessionDate.session}
                       speech={speech}
                       speechElementId={`speech-${speechesBySessionDate.session.id}-${speech.start}`}
-                      link={`/pp/${parliamentPeriod.id}/person/${person.id}?tab=speeches`}
+                      link={sitePath(
+                        `/pp/${parliamentPeriod.id}/person/${person.id}?tab=speeches`,
+                      )}
                     />
                     {index < speechesBySessionDate.speeches.length - 1 && (
                       <hr />
@@ -133,12 +139,15 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
 <div class="alert alert-soft alert-info fixed bottom-5 right-5 hidden">
   <span class="iconify lucide--info size-5"></span>
   <div class="flex flex-col gap-2">
-    <p>
-      Die folgenden Redebeiträge wurden automatisiert erstellt und können Fehler
-      enthalten. Die Texte dienen nur zur Orientierung und sind nicht als
-      offizielle Protokolle zu verstehen. Um Aufzeichnungen der Redebeiträge
-      anzuhören, nutzen Sie bitte die Links zum jeweiligen YouTube-Video.
-    </p>
+    {!hasRecordedSpeeches && (
+      <p>
+        Die folgenden Redebeiträge wurden automatisiert erstellt und können
+        Fehler enthalten. Die Texte dienen nur zur Orientierung und sind nicht
+        als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
+        Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
+        Aufzeichnung.
+      </p>
+    )}
     <p>
       Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
       Klicken Sie dazu auf das Flaggen-Symbol unter dem jeweiligen Redebeitrag

@@ -5,21 +5,17 @@ on:
     branches: [main]
     paths-ignore:
       - .claude/**
-      - docker/**
-      - typesense/**
   pull_request:
     branches: [main]
     paths-ignore:
       - .claude/**
-      - docker/**
-      - typesense/**
 
 permissions:
   contents: read
 
 jobs:
-  deno-checks:
-    name: Deno Checks
+  deno-lint:
+    name: Deno Lint
     runs-on: ubuntu-latest
 
     steps:
@@ -30,16 +26,10 @@ jobs:
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-          cache: true
 
-      - name: Deno type check
-        run: deno check src
-
+      # The scripts run on Bun; Deno only lints them.
       - name: Deno linter
         run: deno lint
-
-      - name: Deno tests
-        run: deno test --permit-no-files
 
   bun-checks:
     name: Bun Checks
@@ -67,13 +57,6 @@ jobs:
   astro-checks:
     name: Astro Checks
     runs-on: ubuntu-latest
-    env:
-      DEFAULT_PARLIAMENT_PERIOD: magdeburg-8
-      AWS_CLOUDFRONT_BASE_URL: https://d2zk2bghxwzsug.cloudfront.net
-      TYPESENSE_HOST: localhost
-      TYPESENSE_PORT: 8108
-      TYPESENSE_PROTOCOL: http
-      TYPESENSE_SEARCH_ONLY_API_KEY: xxx
 
     steps:
       - name: Checkout code

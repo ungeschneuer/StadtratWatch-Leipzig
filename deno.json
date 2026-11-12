@@ -1,74 +1,10 @@
 {
-  "exclude": [
-    "src/scripts/detect-ai-text/",
-    "src/scripts/download-paper-files/",
-    "src/scripts/fetch-oparl/",
-    "src/scripts/generate-image-assets/",
-    "src/scripts/generate-oparl-derivatives/",
-    "src/scripts/generate-paper-assets/",
-    "src/scripts/generate-paper-votings/",
-    "src/scripts/index-search/",
-    "src/scripts/leipzig-members/",
-    "src/scripts/leipzig-papers/",
-    "src/scripts/leipzig-recordings/",
-    "src/scripts/leipzig-site-data/",
-    "src/scripts/leipzig-votings/",
-    "src/scripts/parse-speakers/",
-    "src/scripts/scan-voting-images/",
-    "src/scripts/scrape-oparl/",
-    "src/scripts/shared/**/*.test.ts",
-    "src/scripts/speech-to-text/"
-  ],
   "nodeModulesDir": "none",
-  "workspace": [
-    "src/deps/astro"
-  ],
-  "imports": {
-    "@aws-sdk/client-cloudfront": "npm:@aws-sdk/client-cloudfront@^3",
-    "@aws-sdk/client-s3": "npm:@aws-sdk/client-s3@^3",
-    "@gfx/canvas": "jsr:@gfx/canvas@^0.5.8",
-    "@std/assert": "jsr:@std/assert@^1.0.8",
-    "@std/cli": "jsr:@std/cli@^1.0.6",
-    "@std/crypto": "jsr:@std/crypto@^1.0.3",
-    "@std/encoding": "jsr:@std/encoding@^1.0.5",
-    "@std/expect": "jsr:@std/expect@^1.0.8",
-    "@std/fs": "jsr:@std/fs@^1.0.5",
-    "@std/path": "jsr:@std/path@^1.0.8",
-    "@std/testing": "jsr:@std/testing@^1.0.5"
-  },
   "lint": {
     "include": ["src/"],
-    "exclude": [
-      "!src/scripts/detect-ai-text/",
-      "!src/scripts/download-paper-files/",
-      "!src/scripts/fetch-oparl/",
-      "!src/scripts/generate-image-assets/",
-      "!src/scripts/generate-oparl-derivatives/",
-      "!src/scripts/generate-paper-assets/",
-      "!src/scripts/generate-paper-votings/",
-      "!src/scripts/index-search/",
-      "!src/scripts/leipzig-members/",
-      "!src/scripts/leipzig-papers/",
-      "!src/scripts/leipzig-recordings/",
-      "!src/scripts/leipzig-site-data/",
-      "!src/scripts/leipzig-votings/",
-      "!src/scripts/parse-speakers/",
-      "!src/scripts/scan-voting-images/",
-      "!src/scripts/scrape-oparl/",
-      "!src/scripts/shared/**/*.test.ts",
-      "!src/scripts/speech-to-text/"
-    ],
     "rules": {
       "tags": ["recommended"],
       "include": ["verbatim-module-syntax"]
     }
-  },
-  "test": {
-    "include": ["src/"],
-    "exclude": ["src/deps/astro/"]
-  },
-  "compileOptions": {
-    "checkJs": true,
-    "strict": true
   }
 }

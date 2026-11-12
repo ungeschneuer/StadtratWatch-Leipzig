@@ -1,6 +1,6 @@
 ---
+import { sitePath } from '@utils/site-path';
 import Speech from '@components/Speech.astro';
-import AiTextAssessmentDisclaimer from '@components/AiTextAssessmentDisclaimer.astro';
 import SpeechesSourceNotice from '@components/SpeechesSourceNotice.astro';
 import { type SessionInput } from '@models/SessionInput';
 import { type Registry } from '@models/registry';
@@ -35,8 +35,8 @@ const speeches = sessionInput.speeches.filter(
             Die folgenden Redebeiträge wurden automatisiert erstellt und können
             Fehler enthalten. Die Texte dienen nur zur Orientierung und sind
             nicht als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
-            Redebeiträge anzuhören, nutzen Sie bitte die Links zum jeweiligen
-            YouTube-Video.
+            Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
+            Aufzeichnung.
           </p>
         )}
         <p>
@@ -45,7 +45,6 @@ const speeches = sessionInput.speeches.filter(
           Redebeitrag und senden Sie uns eine Nachricht. Wir werden den Fehler
           umgehend prüfen und korrigieren.
         </p>
-        <AiTextAssessmentDisclaimer />
       </div>
     </div>
 
@@ -58,7 +57,9 @@ const speeches = sessionInput.speeches.filter(
             session={sessionInput.session}
             speech={speech}
             speechElementId={`speech-${speech.start}`}
-            link={`/pp/${parliamentPeriod.id}/session/${sessionInput.session.id}?tab=speeches`}
+            link={sitePath(
+              `/pp/${parliamentPeriod.id}/session/${sessionInput.session.id}?tab=speeches`,
+            )}
           />
           {index < speeches.length - 1 && <hr />}
         </li>
