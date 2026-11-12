@@ -11,6 +11,7 @@ import type { SessionVotingsFile } from '../leipzig-votings/session-votings-file
 import { parseVtt } from '../leipzig-votings/subtitle-announcements.ts';
 import type { VerlaufFile } from '../leipzig-votings/verlaufsprotokoll.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
+import { dataPackage, type SessionScans, sessionsToCsv, votesToCsv, votingsToCsv } from './open-data.ts';
 import { buildRegistry, type RegistrySessionInput } from './registry.ts';
 import { toSessionScan } from './session-scan.ts';
 import { toSessionSpeeches } from './session-speeches.ts';
@@ -34,6 +35,7 @@ try {
   const problems: string[] = [];
   const warnings: string[] = [];
   const sessions: RegistrySessionInput[] = [];
+  const scans: SessionScans = new Map();
   let published = 0;
   let speechSessions = 0;
   for (const recording of manifest.recordings) {
@@ -43,6 +45,7 @@ try {
     const result = toSessionScan(recording.sessionId, votings.votings, members, papers);
     problems.push(...result.problems);
     published += result.scan.length;
+    scans.set(recording.sessionId, result.scan);
     await writeFile(
       join(sessionDir, `session-scan-${recording.sessionId}.json`),
       `${JSON.stringify(result.scan, null, 2)}\n`,
@@ -60,6 +63,13 @@ try {
 
   const registry = buildRegistry({ id: args.parliamentPeriodId, name: args.parliamentPeriodName }, members, sessions);
   await writeFile(join(args.dataDir, 'registry.json'), `${JSON.stringify(registry, null, 2)}\n`);
+  await writeFile(join(args.dataDir, 'votings.csv'), votingsToCsv(registry, scans));
+  await writeFile(join(args.dataDir, 'votes.csv'), votesToCsv(registry, scans));
+  await writeFile(join(args.dataDir, 'sessions.csv'), sessionsToCsv(registry, scans));
+  await writeFile(
+    join(args.dataDir, 'datapackage.json'),
+    `${JSON.stringify(dataPackage(registry, registry.lastUpdate), null, 2)}\n`,
+  );
   // The map links votes to the paper pages of the site, which only exist for papers in data/paper-index.json. Leipzig
   // papers are not there yet; an empty map says so, where a missing one makes the build warn on every page.
   await writeFile(join(args.dataDir, 'voting-paper-map.json'), '{}\n');
