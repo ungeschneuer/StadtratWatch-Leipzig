@@ -13,7 +13,7 @@
 
 . Prüfende öffnen `/review/leipzig/<datum>`, sehen Tafelbild, Video an der Stelle und die fehlgeschlagene Prüfung.
 . Jede Entscheidung wird ein Commit in `corrections-<datum>.json` auf `data/leipzig-votings`.
-. `leipzig-review-recheck` wendet die Korrekturen an und erzeugt die Seitendaten neu (bei jeder Entscheidung und täglich). Neu erschienene amtliche Ergebnisse und Verlaufsprotokolle holt der lokale Runner (`local-runner/`) aus ALLRIS, weil ALLRIS GitHub Actions nicht antwortet; danach arbeitet der Recheck mit den gespeicherten Dateien.
+. `leipzig-review-recheck` wendet die Korrekturen an und erzeugt die Seitendaten neu (bei jeder Entscheidung und täglich). Neu erschienene amtliche Ergebnisse und Verlaufsprotokolle holt der ALLRIS-Runner auf dem Server des Betreibers (`minutes-runner/`), weil ALLRIS GitHub Actions nicht antwortet; danach arbeitet der Recheck mit den gespeicherten Dateien.
 . Bis zum Merge zeigt die Seite die Abstimmung als „in Prüfung“ mit Link zur Prüfoberfläche und zum Pull Request.
 
 == Mitglieder
