@@ -201,7 +201,7 @@
         "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_02_September_2026_-_02-08-10.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview-Ratsversammlung-02092026.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4828216&OTYP=41",
-      "approved": false,
+      "approved": true,
       "speechesSource": {
         "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
         "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004599"
