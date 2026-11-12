@@ -33,7 +33,8 @@ export type MinutesFile = {
 };
 
 export async function extractPdfText(pdf: Uint8Array): Promise<PdfTextItem[]> {
-  const document = await getDocument({ data: pdf, verbosity: 0, isEvalSupported: false }).promise;
+  const loadingTask = getDocument({ data: pdf, verbosity: 0 });
+  const document = await loadingTask.promise;
   const items: PdfTextItem[] = [];
   for (let page = 1; page <= document.numPages; page++) {
     const content = await (await document.getPage(page)).getTextContent();
@@ -42,7 +43,7 @@ export async function extractPdfText(pdf: Uint8Array): Promise<PdfTextItem[]> {
       items.push({ page, x: Math.round(item.transform[4]), y: Math.round(item.transform[5]), text: item.str });
     }
   }
-  await document.destroy();
+  await loadingTask.destroy();
   return items;
 }
 
