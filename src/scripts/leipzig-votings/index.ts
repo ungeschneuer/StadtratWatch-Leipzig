@@ -163,6 +163,7 @@ async function writeSessionVotings(recording: Recording, votings: ExtractedVotin
     dataDir: args.dataDir,
     cacheDir: args.cacheDir,
     offline: args.offline,
+    boardCount: votings.length,
     fetchJson,
     allris,
     warn: log.warn,

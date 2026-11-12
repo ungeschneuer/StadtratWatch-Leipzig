@@ -32,6 +32,8 @@ export type SourceContext = {
   dataDir: string;
   cacheDir: string;
   offline: boolean;
+  // Boards read from the video; a protocol yields about as many results.
+  boardCount: number;
   fetchJson: (url: string) => Promise<unknown>;
   allris: AllrisClient;
   warn: (message: string) => void;
@@ -112,14 +114,15 @@ async function loadMinutes(context: SourceContext, meetingPage: string | null): 
 
   try {
     const protocol = await readProtocol(context, stored?.kind === 'beschlussprotokoll' ? stored.source : null);
-    if (protocol) {
+    const protocolVotes = protocol ? parseMinutes(await extractPdfText(protocol.pdf)) : [];
+    if (protocol && isPlausibleParse(context, 'Beschlussprotokoll', protocolVotes.length)) {
       const file: MinutesFile = {
         sessionId: context.sessionId,
         kind: 'beschlussprotokoll',
         source: protocol.source,
         fetchedAt: context.now.toISOString(),
         parserVersion: MINUTES_PARSER_VERSION,
-        votes: parseMinutes(await extractPdfText(protocol.pdf)),
+        votes: protocolVotes,
       };
       await writeJson(path, file);
       return { kind: file.kind, votes: file.votes };
@@ -197,12 +200,14 @@ async function loadVerlauf(context: SourceContext, meetingPage: string | null): 
       source = `${ALLRIS_BASE_URL}/${meetingPagePath(numericId(context.oparlMeetingId) ?? '')}`;
       await cachePdf(pdfPath, pdf);
     }
+    const results = parseVerlaufsprotokoll(await extractPdfLines(pdf), agendaNumbersOf(meetingPage));
+    if (!isPlausibleParse(context, 'Verlaufsprotokoll', results.length)) return stored?.results ?? null;
     const file: VerlaufFile = {
       sessionId: context.sessionId,
       source: source ?? '',
       fetchedAt: stored?.fetchedAt ?? context.now.toISOString(),
       parserVersion: VERLAUF_PARSER_VERSION,
-      results: parseVerlaufsprotokoll(await extractPdfLines(pdf), agendaNumbersOf(meetingPage)),
+      results,
     };
     await writeJson(path, file);
     return file.results;
@@ -226,6 +231,22 @@ async function downloadAttachment(context: SourceContext, attachment: string): P
   if (!retry) return null;
   const second = await context.allris.getBytes(retry);
   return isPdf(second) ? second : null;
+}
+
+// A stored protocol counts as final and is not read again. A parse with far fewer results than boards points to a
+// changed PDF layout; it is not stored, so it cannot leave the session's votes without an official result for good.
+const MINIMUM_RESULTS_PER_BOARD = 0.5;
+
+export function isPlausibleParse(
+  context: Pick<SourceContext, 'sessionId' | 'boardCount' | 'warn'>,
+  document: string,
+  resultCount: number,
+): boolean {
+  if (resultCount >= context.boardCount * MINIMUM_RESULTS_PER_BOARD) return true;
+  context.warn(
+    `${context.sessionId}: ${document} yields ${resultCount} results for ${context.boardCount} boards; not stored, its layout may have changed`,
+  );
+  return false;
 }
 
 function isPdf(bytes: Uint8Array): boolean {

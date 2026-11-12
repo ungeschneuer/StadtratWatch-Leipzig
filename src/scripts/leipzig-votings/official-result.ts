@@ -342,8 +342,18 @@ function withoutOfficialResult(voting: ExtractedVoting): ExtractedVoting {
     })),
     checks: voting.checks
       .filter((check) => !OFFICIAL_CHECKS.has(check.check))
-      .map(({ settledByOfficialResult, ...check }) => (settledByOfficialResult ? { ...check, passed: false } : check)),
+      .map(({ settledByOfficialResult, ...check }) =>
+        settledByOfficialResult ? { ...check, passed: false, detail: withoutSettledNote(check.detail) } : check,
+      ),
   };
+}
+
+// The note is added each time the official result settles a check, so it is removed before the result is applied
+// again. „minutes confirm the board“ is the same note as written by earlier versions.
+const SETTLED_NOTE = /(?:; (?:settled by the official result|minutes confirm the board))+$/;
+
+export function withoutSettledNote(detail: string): string {
+  return detail.replace(SETTLED_NOTE, '');
 }
 
 // verified: the board equals the official result; corrected: the Verlaufsprotokoll explains the difference;

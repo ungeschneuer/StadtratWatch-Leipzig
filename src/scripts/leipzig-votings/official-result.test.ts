@@ -2,7 +2,7 @@ import { describe, expect, it } from 'bun:test';
 
 import type { ExtractedVoting, SeatVote } from './extract-session.ts';
 import type { MinutesVote } from './minutes.ts';
-import { alignVerlauf, applyOfficialResults, matchMinutes } from './official-result.ts';
+import { alignVerlauf, applyOfficialResults, matchMinutes, withoutSettledNote } from './official-result.ts';
 import type { VerlaufResult } from './verlaufsprotokoll.ts';
 
 function seat(boardName: string, vote: SeatVote['vote']): SeatVote {
@@ -114,6 +114,25 @@ describe('applyOfficialResults', () => {
     expect(applied.status).toEqual('verified');
     expect(applied.official?.agendaItemNumber).toEqual('19.5.6');
     expect(applied.checks.find((check) => check.check === 'agenda-item-in-oparl')?.settledByOfficialResult).toBe(true);
+  });
+
+  it('gives the same checks when applied again to its own output', () => {
+    const sources = {
+      minutes: { kind: 'beschlussprotokoll' as const, votes: [minutesVote(0, '19.5.6', [28, 31, 1])] },
+      verlauf: [verlauf(0, ['19.5'], [28, 31, 1])],
+    };
+    const once = applyOfficialResults([voting(0, null, [28, 31, 1], { failed: ['agenda-item-in-oparl'] })], sources);
+    const twice = applyOfficialResults(once, sources);
+
+    expect(twice[0].checks).toEqual(once[0].checks);
+  });
+
+  it('drops the note of an earlier settlement, also in the wording of earlier versions', () => {
+    expect(
+      withoutSettledNote(
+        'heading TOP unreadable; minutes confirm the board; minutes confirm the board; settled by the official result',
+      ),
+    ).toEqual('heading TOP unreadable');
   });
 
   it('corrects the seats the Verlaufsprotokoll names as added by hand', () => {

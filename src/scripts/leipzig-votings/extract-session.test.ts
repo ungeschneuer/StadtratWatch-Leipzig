@@ -9,6 +9,7 @@ import {
   type ReadVoting,
   relinkAgendaItemsByPaper,
   resultSearchSeconds,
+  seatsWithoutOwnPerson,
   type SessionInputs,
 } from './extract-session.ts';
 import type { VideoReader } from './ffmpeg.ts';
@@ -190,6 +191,34 @@ describe('resultSearchSeconds', () => {
   it('tries the result phase first, then seconds before and after it', () => {
     expect(resultSearchSeconds({ startSeconds: 100.5, endSeconds: 103 }).slice(0, 6)).toEqual([
       101, 102, 103, 99, 104, 98,
+    ]);
+  });
+});
+
+describe('seatsWithoutOwnPerson', () => {
+  const heymann = { personId: 'p/1', name: 'Sabine Heymann' };
+  const streller = { personId: 'p/2', name: 'Ute Streller' };
+
+  it('lists nothing when every seat has a person of its own', () => {
+    expect(
+      seatsWithoutOwnPerson([
+        { boardName: 'Heymann, Sabine', person: heymann },
+        { boardName: 'Streller, Ute', person: streller },
+      ]),
+    ).toEqual([]);
+  });
+
+  it('lists seats without a person and seats that share one', () => {
+    expect(
+      seatsWithoutOwnPerson([
+        { boardName: 'Heymann, Sabine', person: heymann },
+        { boardName: 'Heyrnann, Sabine', person: heymann },
+        { boardName: '[ia', person: null, reason: 'no roster name close to "[ia"' },
+      ]),
+    ).toEqual([
+      'no roster name close to "[ia"',
+      '"Heymann, Sabine" shares Sabine Heymann with another seat',
+      '"Heyrnann, Sabine" shares Sabine Heymann with another seat',
     ]);
   });
 });

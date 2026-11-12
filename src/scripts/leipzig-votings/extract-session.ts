@@ -202,9 +202,7 @@ export async function extractSessionVotings(inputs: SessionInputs, tools: Extrac
             repeatCall: repeatedAt,
             seatCount: votes.length,
             expectedSeatCount: expectedSeatCount(inputs.roster, nameMapping),
-            unmatchedSeats: [...nameMapping.names.values()]
-              .filter((entry) => !entry.person)
-              .map((entry) => entry.reason ?? entry.boardName),
+            unmatchedSeats: seatsWithoutOwnPerson([...nameMapping.names.values()]),
           };
         })(),
         tools.voteDeadlineMilliseconds ?? VOTE_DEADLINE_MILLISECONDS,
@@ -562,6 +560,22 @@ async function rereadUnmatchedNames(
     const match = matchBoardName(boardName, roster);
     if (match.person) names.set(cellKey(cell), { boardName, person: match.person });
   }
+}
+
+// Each cell is matched to the roster on its own, so two misread names can land on the same person. The seat count then
+// still fits, which is why such seats count as unmatched.
+export function seatsWithoutOwnPerson(
+  entries: { boardName: string; person: Pick<RosterPerson, 'personId' | 'name'> | null; reason?: string }[],
+): string[] {
+  const seatsPerPerson = new Map<string, number>();
+  for (const entry of entries) {
+    if (entry.person) seatsPerPerson.set(entry.person.personId, (seatsPerPerson.get(entry.person.personId) ?? 0) + 1);
+  }
+  const unmatched = entries.filter((entry) => !entry.person).map((entry) => entry.reason ?? entry.boardName);
+  const shared = entries
+    .filter((entry) => entry.person && (seatsPerPerson.get(entry.person.personId) ?? 0) > 1)
+    .map((entry) => `"${entry.boardName}" shares ${entry.person?.name} with another seat`);
+  return [...unmatched, ...shared];
 }
 
 function mapNames(
