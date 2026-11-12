@@ -12,7 +12,7 @@ import { parseVtt } from '../leipzig-votings/subtitle-announcements.ts';
 import type { VerlaufFile } from '../leipzig-votings/verlaufsprotokoll.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
 import { dataPackage, type SessionScans, sessionsToCsv, votesToCsv, votingsToCsv } from './open-data.ts';
-import { buildRegistry, type RegistrySessionInput } from './registry.ts';
+import { buildRegistry, type PartyClassification, type RegistrySessionInput } from './registry.ts';
 import { toSessionScan } from './session-scan.ts';
 import { toSessionSpeeches } from './session-speeches.ts';
 
@@ -61,7 +61,15 @@ try {
     });
   }
 
-  const registry = buildRegistry({ id: args.parliamentPeriodId, name: args.parliamentPeriodName }, members, sessions);
+  // Editorial, kept by hand: parties a Verfassungsschutz authority classifies as extremist, with their source.
+  const classifications =
+    (await readJson<PartyClassification[]>(join(args.dataDir, 'party-classifications.json'))) ?? [];
+  const registry = buildRegistry(
+    { id: args.parliamentPeriodId, name: args.parliamentPeriodName },
+    members,
+    sessions,
+    classifications,
+  );
   await writeFile(join(args.dataDir, 'registry.json'), `${JSON.stringify(registry, null, 2)}\n`);
   await writeFile(join(args.dataDir, 'votings.csv'), votingsToCsv(registry, scans));
   await writeFile(join(args.dataDir, 'votes.csv'), votesToCsv(registry, scans));
