@@ -195,7 +195,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [ ] **Feste Anker:** Jede Abstimmungszeile des Protokolls ist schon einer Tafel mit Videozeit zugeordnet (10 bis 55 Anker je Sitzung). Sie begrenzen den Textabgleich und prüfen ihn: Ein Beitrag muss zwischen den Abstimmungen davor und danach liegen. Die Lücken zwischen Abstimmungen reichen bis 3,5 Stunden (Aktuelle Stunde, Anfragen), deshalb genügen die Anker allein nicht für die Zeiten. Uhrzeiten nennt das Protokoll nur in Ansagen („Pause bis 18.10 Uhr“), sie taugen nicht als Anker.
 - [ ] **Lokales Whisper für die Sitzungen ohne Untertitel** (2025-12-18, 2026-01-28, 2026-02-25, zusammen 16,7 Stunden):
   - [ ] Nur die Tonspur laden (AAC im HLS-Stream), als 16 kHz mono für Whisper.
-  - [ ] `whisper.cpp` mit `large-v3-turbo` (dieselbe Modellfamilie wie die Untertitel des Hosters), auf dem Mac mit Metal. Erst an 10 Minuten Geschwindigkeit und Qualität messen. Schätzung: 2 bis 4 Stunden Rechenzeit für alle drei Tage, einmalig.
+  - [x] `whisper.cpp` mit `large-v3-turbo` auf dem Mac mit Metal, gemessen: 7,6-fach schneller als Echtzeit, alle drei Tage zusammen gut 2 Stunden.
   - [ ] Ergebnis als `subtitles-<datum>.vtt` mit Herkunft (`method: whisper-local`, Modell, Version) ablegen, damit die Abstimmungsprüfung (Ansagen) davon auch profitiert.
   - [ ] Bleibt lokal: Auf GitHub Actions ohne GPU zu langsam, und für neue Sitzungen liefert der Hoster Untertitel.
 - [ ] **Prüfung:** Anteil der Beiträge mit gefundener Zeit, Summe der Redezeiten im Verhältnis zur Sitzungsdauer, Beiträge außerhalb ihrer Anker. Stichprobe von Hand an einer Sitzung (z. B. 28./29.10.2026, sobald das Protokoll da ist).
@@ -226,8 +226,12 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [ ] **Erforderliche Mehrheit:** Woher kommt `majorityRequirement` (Zweidrittelmehrheit u. a.)? Aus den Protokollen, aus der Vorlage oder von Hand?
 
 ### Reden (M5)
-- [ ] **Rechte am Verlaufsprotokoll:** Es ist eine Anlage der Sitzung im Ratsinformationssystem, nicht Teil von OParl (CC BY 4.0). Darf der Text vollständig veröffentlicht werden (amtliches Werk nach § 5 UrhG?), oder nur Sprecher und Redezeiten mit Link aufs Original? Sprecher und Redezeiten allein wären unkritisch.
-- [ ] **Whisper lokal installieren:** `whisper.cpp` per Homebrew und das Modell `large-v3-turbo` (rund 1,6 GB) auf diesem Mac; 13 GB Speicher frei. Freigabe nötig.
+- [x] **Rechte am Verlaufsprotokoll** (recherchiert 12.11.2026, keine Rechtsberatung):
+  - **Reden:** [§ 48 Abs. 1 Nr. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__48.html) erlaubt Vervielfältigung, Verbreitung und öffentliche Wiedergabe von Reden, die bei öffentlichen Verhandlungen vor kommunalen Organen gehalten wurden. Das deckt die Redebeiträge der öffentlichen Ratsversammlung.
+  - **Grenze:** § 48 Abs. 2 verbietet Sammlungen, die überwiegend Reden desselben Urhebers enthalten. Die upstream-Personenseite zeigt alle Reden einer Person im Volltext, das wäre so eine Sammlung. Für Leipzig: Volltexte nur auf der Sitzungsseite (Reden aller Sprecher), auf der Personenseite nur Liste mit Datum, TOP, Redezeit und Link zur Sitzung.
+  - **Protokoll als Dokument:** Als amtliches Werk nach [§ 5 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__5.html) gemeinfrei wäre es nur, wenn es im amtlichen Interesse zur allgemeinen Kenntnisnahme veröffentlicht ist; der Begriff wird eng ausgelegt, eine Entscheidung zu Ratsprotokollen gibt es nicht. Dann gelten Änderungsverbot und Quellenangabe (§§ 62, 63). Die redaktionelle Bearbeitung durch die Stadt erreicht kaum Schöpfungshöhe. Daraus folgt: Quelle je Rede angeben, Text nicht inhaltlich ändern (nur Silbentrennung und Seitenköpfe entfernen).
+  - **Leipzig selbst:** Das [Impressum des Ratsinformationssystems](https://ratsinformation.leipzig.de/allris_leipzig_impressum/) nennt keine Nutzungsbedingungen. Die OParl-Lizenz CC BY 4.0 steht am System-Objekt; das Verlaufsprotokoll ist dort aber nicht als Datei verlinkt (nur Beschlussprotokoll und „Alle Anlagen öffentlich“).
+- [x] **Whisper lokal:** `whisper-cpp` per Homebrew, Modell `ggml-large-v3-turbo.bin` (1,6 GB, SHA-256 `1fc70f77…e2bc69`) in `output/whisper/`. Test 12.11.2026 an 10 Minuten von 2026-09-03: 78,5 s Rechenzeit (7,6-fach schneller als Echtzeit); 96 % Wortübereinstimmung mit den Untertiteln des Hosters, 74 % mit dem redigierten Verlaufsprotokoll (Hoster: 73 %).
 
 ### Video und Belege
 - [ ] **Nach Ablauf der Mediathek:** Die Stadt löscht Aufzeichnungen nach etwa einem Jahr, danach entfällt der Video-Link. Soll die Seite dann auf die Belegbilder im Release `evidence-<datum>` verlinken? Bisher gibt es Belegbilder nur für Prüffälle.
