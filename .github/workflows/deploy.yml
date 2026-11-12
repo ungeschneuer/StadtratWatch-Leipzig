@@ -1,0 +1,108 @@
+name: Deploy site
+
+# Builds the site from main and publishes it on GitHub Pages, together with the review app below /review/. One
+# repository has one Pages site, so both are deployed in one artifact. The site links the open pull request of the
+# data branch, where corrections wait for their merge.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'astro/**'
+      - 'data/**'
+      - 'session-review/**'
+      - 'src/deps/astro/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  LEIPZIG_DATA_BRANCH: data/leipzig-votings
+
+jobs:
+  build:
+    name: Build site and review app
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            astro/package-lock.json
+            session-review/package-lock.json
+
+      # GitHub Pages serves a project page at https://<owner>.github.io/<repository>/.
+      - name: Address of the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          echo "SITE_URL=https://${owner}.github.io" >> "$GITHUB_ENV"
+          echo "SITE_BASE=/${GITHUB_REPOSITORY#*/}" >> "$GITHUB_ENV"
+          echo "DATA_REPOSITORY=${GITHUB_REPOSITORY}" >> "$GITHUB_ENV"
+          pull_request_url="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$LEIPZIG_DATA_BRANCH" --state open \
+            --json url --jq '.[0].url // empty')"
+          echo "DATA_PULL_REQUEST_URL=${pull_request_url}" >> "$GITHUB_ENV"
+
+      - name: Install Astro dependencies
+        working-directory: astro
+        run: npm ci
+
+      - name: Build site
+        working-directory: astro
+        run: npm run build
+
+      - name: Install review app dependencies
+        working-directory: session-review
+        run: npm ci
+
+      - name: Build review app
+        working-directory: session-review
+        env:
+          VITE_LEIPZIG_REPOSITORY: ${{ github.repository }}
+        run: SESSION_REVIEW_BASE="${SITE_BASE}/review/" npm run build
+
+      # GitHub Pages answers unknown paths with 404.html. Serving the review app there lets its deep links like
+      # /review/leipzig/2026-10-29 work; any other unknown path goes to the start page of the site.
+      - name: Assemble site
+        run: |
+          mkdir -p site
+          cp -r astro/dist/. site/
+          mkdir -p site/review
+          cp -r session-review/dist/. site/review/
+          redirect="<script>if(!location.pathname.startsWith('${SITE_BASE}/review/'))location.replace('${SITE_BASE}/');</script>"
+          sed "s#<head>#<head>${redirect}#" site/review/index.html > site/404.html
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
