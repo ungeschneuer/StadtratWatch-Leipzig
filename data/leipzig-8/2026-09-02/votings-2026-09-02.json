@@ -12,11 +12,11 @@
     "votings": 43,
     "verified": 39,
     "corrected": 1,
-    "provisional": 1,
+    "provisional": 0,
     "reviewed": 0,
     "needs-review": 0,
     "skipped": 0,
-    "discarded": 2
+    "discarded": 3
   },
   "votings": [
     {
@@ -676,10 +676,15 @@
           "check": "most-present-members-voted",
           "passed": true,
           "detail": "63 votes from 66 present"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": false,
+          "detail": "attendance count at „Feststellung der Beschlussfähigkeit“"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "discarded",
+      "status": "discarded"
     },
     {
       "index": 1,
@@ -1348,6 +1353,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 41/21/0 for TOP 3"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -2068,6 +2078,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 12/46/6 for TOP 3"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -2788,6 +2803,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 31/32/1 for TOP 3"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -3505,6 +3525,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 39/16/8 for TOP 3"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -4232,6 +4257,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 31/29/0 for TOP 9.4 (VIII-DS-00057-NF-01-DS-05)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -4951,6 +4981,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 32/30/0 for TOP 9/9.2/9.4/9.5/9.6"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -5661,6 +5696,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 59/0/0 for TOP 9/9.2/9.4/9.5/9.6"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -6359,6 +6399,11 @@
           "check": "paper-matches-oparl",
           "passed": true,
           "detail": "heading VIII-A-02816-VSP-01, OParl VIII-A-02816-VSP-01"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "discarded",
@@ -7053,6 +7098,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 48/11/5 for TOP 13.1 (VIII-A-01808)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -7783,6 +7833,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 12/49/3 for TOP 13.4.1 (VII-A-08074-VSP-01); added by hand: Dr. Külow, Volker J"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "corrected",
@@ -8520,6 +8575,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 51/1/12 for TOP 13.4 (VII-A-08074-NF-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -9247,6 +9307,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 28/34/2 for TOP 13.5 (VIII-A-01891-NF-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -9974,6 +10039,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 64/0/1 for TOP 13.12 (VIII-A-02610-NF-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -10701,6 +10771,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 11/47/4 for TOP 13.15.2 (VIII-A-02754-NF-01-ÄA-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -11428,6 +11503,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 19/32/12 for TOP 13.15 (VIII-A-02754-NF-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -12150,6 +12230,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 33/32/0 for TOP 13.17 (VIII-A-02834)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -12865,6 +12950,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 22/41/2 for TOP 13.18.3 (VIII-A-02838-VSP-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -13587,6 +13677,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 11/46/6 for TOP 13.18.2 (VIII-A-02838-NF-02-ÄA-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -14309,6 +14404,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 11/48/6 for TOP 13.18.2 (VIII-A-02838-NF-02-ÄA-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -15019,6 +15119,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 42/18/5 for TOP 13.18 (VIII-A-02838-NF-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -15729,6 +15834,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 21/44/0 for TOP 13.18 (VIII-A-02838-NF-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -16439,6 +16549,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 41/19/5 for TOP 13.18 (VIII-A-02838-NF-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -17149,6 +17264,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 28/33/4 for TOP 13.18 (VIII-A-02838-NF-02)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -17871,6 +17991,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 44/0/14 for TOP 15.1 (VII-P-08574-DS-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -18582,6 +18707,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 25/37/3 for TOP 15.2.2 (VIII-P-02586-ÄA-03)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -19297,6 +19427,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 25/37/3 for TOP 15.2.2 (VIII-P-02586-ÄA-03)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -20019,6 +20154,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 26/38/1 for TOP 15.2.2 (VIII-P-02586-ÄA-03)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -20741,6 +20881,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 17/43/5 for TOP 15.2.2 (VIII-P-02586-ÄA-03)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -21463,6 +21608,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 37/27/1 for TOP 15.2 (VIII-P-02586-DS-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -22185,6 +22335,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 34/29/2 for TOP 15.2 (VIII-P-02586-DS-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -22907,6 +23062,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 35/29/1 for TOP 15.2 (VIII-P-02586-DS-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -23608,6 +23768,11 @@
           "check": "paper-matches-oparl",
           "passed": true,
           "detail": "heading VIII-P-02779-VSP-01, OParl VIII-P-02779-VSP-01"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "discarded",
@@ -24297,6 +24462,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 11/43/3 for TOP 15.4.1 (VIII-P-02779-VSP-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -25025,6 +25195,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 45/11/1 for TOP 15.4 (VIII-P-02779-DS-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -25753,6 +25928,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 38/24/2 for TOP 19.2 (VII-DS-07720-DS-06)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -26481,6 +26661,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 39/24/1 for TOP 19.3 (VII-DS-07720-DS-07)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -27210,6 +27395,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 64/0/0 for TOP 19.11 (VIII-DS-01156)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -27941,6 +28131,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 35/30/0 for TOP 19.17 (VIII-DS-02604)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -28674,6 +28869,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 44/8/13 for TOP 19.18 (VIII-DS-02655)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -29408,6 +29608,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 63/0/0 for TOP 19.19 (VIII-DS-02822)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -30143,6 +30348,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 40/12/11 for TOP 19.1 (VIII-DS-03149)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
@@ -30870,6 +31080,11 @@
           "check": "matches-official",
           "passed": true,
           "detail": "official 49/11/3 for TOP 19.5 (VIII-DS-02876-NF-01)"
+        },
+        {
+          "check": "not-attendance-count",
+          "passed": true,
+          "detail": "agenda item is no opening or quorum"
         }
       ],
       "checkStatus": "verified",
