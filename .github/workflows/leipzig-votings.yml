@@ -29,6 +29,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  actions: write
 
 # Shared with the recheck, so the two never write the data branch at the same time.
 concurrency:
@@ -105,10 +106,19 @@ jobs:
         run: bun src/scripts/leipzig-site-data/index.ts 2>&1 | tee -a extract.log; exit "${PIPESTATUS[0]}"
 
       - name: Commit data
+        id: commit
         run: |
           git add data/leipzig-8
           git diff --cached --quiet || git commit -m 'data(leipzig): Abstimmungen aus den Aufzeichnungen'
+          before="$(git ls-remote origin "refs/heads/$LEIPZIG_DATA_BRANCH" | cut -f1)"
           git push origin "HEAD:$LEIPZIG_DATA_BRANCH"
+          [ "$before" != "$(git rev-parse HEAD)" ] && echo 'pushed=true' >> "$GITHUB_OUTPUT" || true
+
+      - name: Run CI on the data branch
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ci.yml --ref "$LEIPZIG_DATA_BRANCH"
 
       - name: Publish evidence images
         env:

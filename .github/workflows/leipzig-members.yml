@@ -10,6 +10,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  actions: write
 
 concurrency:
   group: leipzig-members
@@ -40,6 +41,7 @@ jobs:
       # Only the members files: the votes tables live on the voting data branch, where reviewers commit, and the
       # voting workflow writes their faction and party columns from members.json on its next run.
       - name: Propose data changes
+        id: proposal
         uses: peter-evans/create-pull-request@v7
         with:
           branch: data/leipzig-members
@@ -53,6 +55,13 @@ jobs:
             Automatisch erzeugt vom Workflow „Leipzig members“ aus OParl und der Bewerberliste 2024.
             Korrekturen gehören in `data/leipzig-8/member-overrides.json`.
           delete-branch: true
+
+      # See ci.yml: a branch pushed with GITHUB_TOKEN starts no CI by itself.
+      - name: Run CI on the data branch
+        if: steps.proposal.outputs.pull-request-operation == 'created' || steps.proposal.outputs.pull-request-operation == 'updated'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ci.yml --ref data/leipzig-members
 
       - name: Report failure
         if: steps.members.outcome == 'failure'
