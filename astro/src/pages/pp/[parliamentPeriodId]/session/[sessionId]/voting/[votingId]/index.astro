@@ -9,6 +9,7 @@ import { getPaperId, getVotingPaperMap } from '../../../../_helpers2';
 import MetaTags from '@components/MetaTags.astro';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
 import { sessionVideoLink } from '@models/session-video';
+import { factionIdOn } from '@models/person-affiliation';
 import { getVoteCounts, votingAccepted } from '@models/voting-breakdown';
 import {
   getMajorityRequirement,
@@ -50,8 +51,9 @@ const votesWithFaction = voting.votes.map((vote) => {
     throw new Error(`Person ${vote.name} not found`);
   }
 
+  const factionId = factionIdOn(person, sessionInput.session.date);
   const faction = parliamentPeriod.factions.find(
-    (faction) => faction.id === person?.factionId,
+    (faction) => faction.id === factionId,
   );
   if (!faction) {
     throw new Error(`Person ${person.name} not found`);

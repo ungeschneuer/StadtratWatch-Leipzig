@@ -25,13 +25,14 @@ OParl ID; this module says who they are, which faction they sat in on a given da
    Overlapping faction memberships are reported, not resolved.
 3. **Party.** Family name and first given name are matched in the candidates list, ignoring case, accents and titles.
    A member who has since taken a double name („Schreyer-Krieg“) is found by one part of it (`match: former-name`).
-   The list says where someone stood in 2024, not whether they are a party member; the field is `partySource`, and a
-   different party needs an override with a source.
+   The list says where someone stood in 2024, not whether they are a party member. It holds from the start of the
+   membership; a documented change of party starts a new period in `partyMemberships`, each with its source.
 4. **Board.** OParl starts a successor's membership on the day after the session that swore them in, where they already
    vote. A member read from the board up to 7 days before their OParl start starts on that session day. A member on
    the board outside their membership otherwise is reported.
 5. **Overrides** are applied on every run: `exclude` (a membership OParl lists although the seat was not taken),
-   `name`/`givenName`/`familyName` (misspellings), `party`. Every entry needs `reason` and `source`.
+   `name`/`givenName`/`familyName` (misspellings), `party` (instead of the list) and `party` with `since` (a change of
+   party from that day; one entry per change). Every entry needs `reason` and `source`.
 6. **Checks.** Exactly 71 members (70 councillors and the mayor) sit on the day of the run; each of them has a faction
    or is `fraktionslos`; each member has a party; overrides refer to members of the period; IDs are unique. A failed
    check exits with code 1 after writing the files, so the change is visible.
@@ -69,13 +70,14 @@ opens an issue. The faction and party columns of the votes tables are written by
 `members.json` has the type `LeipzigMembersFile` (`astro/src/models/leipzig-members.ts`). Factions, parties and persons
 have the fields of the StadtratWatch registry (`factionId` and `partyId` are the latest), plus:
 
-| Field                | Meaning                                                                          |
-| -------------------- | -------------------------------------------------------------------------------- |
-| `oparlId`            | OParl person or organization; the key the votes use                              |
-| `factionMemberships` | Faction per period; `factionOn(person, date)` gives the faction on a session day |
-| `partySource`        | `election-list` with the list name and how the name matched, or `override`       |
-| `start`, `end`       | Council membership; `null` from the start of the period or while it lasts        |
-| `seats`              | Members of the faction or party on the day of the run                            |
+| Field                | Meaning                                                                                      |
+| -------------------- | -------------------------------------------------------------------------------------------- |
+| `oparlId`            | OParl person or organization; the key the votes use                                          |
+| `factionMemberships` | Faction per period; `factionOn(person, date)` gives the faction on a session day             |
+| `partyMemberships`   | Party per period, each with its `source`; `partyIdOn(person, date)` gives the party of a day |
+| `partySource`        | Source of the latest party: `election-list` with list name and match, or `override`          |
+| `start`, `end`       | Council membership; `null` from the start of the period or while it lasts                    |
+| `seats`              | Members of the faction or party on the day of the run                                        |
 
 ## Tests
 

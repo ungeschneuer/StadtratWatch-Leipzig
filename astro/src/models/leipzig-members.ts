@@ -1,6 +1,8 @@
 import type {
   RegistryFaction,
+  RegistryFactionMembership,
   RegistryParty,
+  RegistryPartyMembership,
   RegistryPerson,
 } from './registry.ts';
 
@@ -40,10 +42,11 @@ export type LeipzigPartySource =
   | { method: 'election-list'; match: 'name' | 'former-name'; listName: string }
   | { method: 'override'; reason: string; source: string };
 
-export type LeipzigFactionMembership = {
-  factionId: string;
-  start: string;
-  end: string | null;
+export type LeipzigFactionMembership = RegistryFactionMembership;
+
+// The party from the election list holds from the start of the membership; a documented change starts a new period.
+export type LeipzigPartyMembership = RegistryPartyMembership & {
+  source: LeipzigPartySource;
 };
 
 // start and end: membership in the council within the period; null at the beginning of the period or while it lasts.
@@ -52,6 +55,8 @@ export type LeipzigPerson = RegistryPerson & {
   familyName: string;
   givenName: string;
   factionMemberships: LeipzigFactionMembership[];
+  partyMemberships: LeipzigPartyMembership[];
+  // Where the latest party comes from.
   partySource: LeipzigPartySource;
 };
 

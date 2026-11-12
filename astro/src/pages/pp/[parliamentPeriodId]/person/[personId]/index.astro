@@ -10,6 +10,12 @@ import Speeches from './_speeches.astro';
 import MetaTags from '@components/MetaTags.astro';
 import ExtremistClassificationAlert from '@components/ExtremistClassificationAlert.astro';
 import { extractExtremistClassificationInformation } from '@utils/party-utils';
+import {
+  type AffiliationPeriod,
+  factionHistory,
+  partyHistory,
+} from '@models/person-affiliation';
+import { formatPeriod } from '@utils/format-period';
 
 export const getStaticPaths = getParliamentPeriodWithPersonPaths;
 
@@ -33,6 +39,28 @@ if (!party) {
     `Party with ID ${person.partyId} not found in parliament period ${parliamentPeriodId}`,
   );
 }
+
+// Shown only for members who changed faction or party during the period.
+function describeHistory(
+  periods: AffiliationPeriod[],
+  nameOf: (id: string) => string | undefined,
+): string | null {
+  if (new Set(periods.map((period) => period.id)).size < 2) return null;
+  return periods
+    .map(
+      (period) =>
+        `${nameOf(period.id) ?? period.id} ${formatPeriod(period.start, period.end)}`,
+    )
+    .join(', ');
+}
+const factionChanges = describeHistory(
+  factionHistory(person),
+  (id) => parliamentPeriod.factions.find((faction) => faction.id === id)?.name,
+);
+const partyChanges = describeHistory(
+  partyHistory(person),
+  (id) => parliamentPeriod.parties.find((party) => party.id === id)?.name,
+);
 
 const {
   extremistClassification,
@@ -93,6 +121,16 @@ const {
         </a>
       </div>
     </div>
+    {factionChanges && (
+      <div class="text-base-content/60 text-xs mt-1">
+        Fraktionen in der Wahlperiode: {factionChanges}
+      </div>
+    )}
+    {partyChanges && (
+      <div class="text-base-content/60 text-xs mt-1">
+        Parteien in der Wahlperiode: {partyChanges}
+      </div>
+    )}
   </div>
 
   <div

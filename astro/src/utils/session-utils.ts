@@ -6,6 +6,7 @@ import type {
   RegistrySession,
 } from '@models/registry.ts';
 import type { SessionScanItem } from '@models/session-scan.ts';
+import { factionIdOn, partyIdOn } from '@models/person-affiliation.ts';
 
 function getPersonsOfSession(
   parliamentPeriod: Registry,
@@ -22,7 +23,7 @@ export function getPersonsOfSessionAndParty(
   party: RegistryParty,
 ): RegistryPerson[] {
   return getPersonsOfSession(parliamentPeriod, session).filter(
-    (person) => person.partyId === party.id,
+    (person) => partyIdOn(person, session.date) === party.id,
   );
 }
 
@@ -32,7 +33,7 @@ export function getPersonsOfSessionAndFaction(
   faction: RegistryFaction,
 ): RegistryPerson[] {
   return getPersonsOfSession(parliamentPeriod, session).filter(
-    (person) => person.factionId === faction.id,
+    (person) => factionIdOn(person, session.date) === faction.id,
   );
 }
 
@@ -67,7 +68,8 @@ export function getFactionOfPerson(
   return (
     parliamentPeriod.factions.find(
       (faction) =>
-        faction.id === person.factionId && isPersonInSession(person, session),
+        faction.id === factionIdOn(person, session.date) &&
+        isPersonInSession(person, session),
     ) || null
   );
 }

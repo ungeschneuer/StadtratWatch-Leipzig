@@ -1,4 +1,5 @@
 import { factionOn, type LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
+import { partyIdOn } from '@srw-astro/models/person-affiliation';
 
 import type { Recording } from '../leipzig-recordings/recordings-manifest.ts';
 import type { ExtractedVoting } from './extract-session.ts';
@@ -56,7 +57,7 @@ const CSV_COLUMNS = [
   'partyId',
 ] as const;
 
-// factionId is the faction on the session day, so a member who changed faction is counted where they sat; both stay
+// factionId and partyId hold on the session day, so a member who changed is counted where they belonged; both stay
 // empty without members file (leipzig-members) or for a seat matched to no one.
 export function sessionVotesToCsv(
   sessionId: string,
@@ -90,7 +91,7 @@ export function sessionVotesToCsv(
 
 function factionAndParty(person: LeipzigMembersFile['persons'][number] | undefined, sessionDay: string): string[] {
   if (!person) return ['', ''];
-  return [factionOn(person, sessionDay) ?? '', person.partyId];
+  return [factionOn(person, sessionDay) ?? '', partyIdOn(person, sessionDay)];
 }
 
 function toCsvField(value: string): string {

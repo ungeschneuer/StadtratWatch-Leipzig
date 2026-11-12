@@ -15,6 +15,9 @@ type Props = {
 };
 
 const { parliamentPeriod, sessionId, sessionScan } = Astro.props as Props;
+const sessionDate = parliamentPeriod.sessions.find(
+  (session) => session.id === sessionId,
+)?.date;
 
 const votings = sessionScan
   .map(
@@ -26,7 +29,11 @@ const votings = sessionScan
         title: voting.votingSubject.title,
         type: voting.votingSubject.type || '',
         authors: voting.votingSubject.authors,
-        votesByFactions: getVotesByFactions(parliamentPeriod, voting.votes),
+        votesByFactions: getVotesByFactions(
+          parliamentPeriod,
+          voting.votes,
+          sessionDate,
+        ),
         accepted: votingAccepted(parliamentPeriod, voting),
       }) satisfies VotingListItem,
   )

@@ -27,14 +27,23 @@ export function buildRegistry(
     sessions: sortedSessions.map(toRegistrySession),
     factions: members.factions.map(({ id, name, seats }) => ({ id, name, seats })),
     parties: members.parties.map(({ id, name, seats }) => ({ id, name, seats })),
-    persons: members.persons.map(({ id, name, factionId, partyId, start, end }) => ({
-      id,
-      name,
-      factionId,
-      partyId,
-      start,
-      end,
-    })),
+    // The history lets the site count each vote for the faction and party of its session day.
+    persons: members.persons.map(
+      ({ id, name, factionId, partyId, start, end, factionMemberships, partyMemberships }) => ({
+        id,
+        name,
+        factionId,
+        partyId,
+        start,
+        end,
+        factionMemberships,
+        partyMemberships: partyMemberships.map(({ partyId: party, start: from, end: until }) => ({
+          partyId: party,
+          start: from,
+          end: until,
+        })),
+      }),
+    ),
   };
 }
 

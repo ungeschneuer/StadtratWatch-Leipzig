@@ -38,11 +38,27 @@ export type RegistryParty = {
   additionalInformation?: { key: string; value: string }[];
 };
 
+// factionId and partyId are the latest. Where they changed during the period, factionMemberships and partyMemberships
+// say which held on which day; without them factionId and partyId hold for the whole membership.
 export type RegistryPerson = {
   id: string;
   name: string;
   factionId: string;
   partyId: string;
   start: string | null;
+  end: string | null;
+  factionMemberships?: RegistryFactionMembership[];
+  partyMemberships?: RegistryPartyMembership[];
+};
+
+export type RegistryFactionMembership = {
+  factionId: string;
+  start: string;
+  end: string | null;
+};
+
+export type RegistryPartyMembership = {
+  partyId: string;
+  start: string;
   end: string | null;
 };

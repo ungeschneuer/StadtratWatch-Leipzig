@@ -166,11 +166,13 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [ ] **S3/CloudFront ersetzen:**
   - [ ] Abstimmungs-PNGs (`generate-image-assets`) beim Build erzeugen oder als GitHub-Release-Assets ablegen
   - [ ] `paper-votings` als statische JSON-Dateien im Build
-- [ ] **Zeitverlauf von Fraktion und Partei in Auswertungen und Datenverarbeitung:** Heute ordnet die Seite jede Person für alle Abstimmungen ihrer aktuellen Fraktion und einer festen Partei zu (`RegistryPerson.factionId`, `partyId`). Fraktions- und Parteiwechsel (z. B. Abraham: SPD → fraktionslos → CDU → fraktionslos; Butz: Liste FREIE SACHSEN, seit 18.09.2025 AfD-Fraktion) verfälschen damit die Auswertungen.
-  - [ ] **Datenmodell:** Parteizugehörigkeit mit Zeiträumen (`partyMemberships` wie `factionMemberships`), Quellen und Overrides für Parteiwechsel; die Wahlliste 2024 bleibt der Ausgangswert.
-  - [ ] **Datenverarbeitung:** Fraktion und Partei am Sitzungstag in jede Stimme übernehmen (`session-scan-*.json`, optional und abwärtskompatibel, z. B. `factionId`/`partyId` je Stimme); `votes-<datum>.csv` hat die Fraktion bereits, die Partei noch fest.
-  - [ ] **Auswertungen** (`astro/src/data-analysis/`: VotingMatrix, UniformityScore, MotionsSuccess, PersonsForces, Fraktions- und Parteiseiten, Abstimmungsseite nach Fraktionen) rechnen mit der Zugehörigkeit am Abstimmungstag statt der aktuellen; Sitzzahlen je Zeitpunkt.
-  - [ ] **Anzeige:** Wechsel auf der Personenseite als Verlauf (Fraktion/Partei mit Zeitraum), auf Fraktions- und Parteiseiten auch ehemalige Mitglieder.
+- [x] **Zeitverlauf von Fraktion und Partei in Auswertungen und Datenverarbeitung** (12.11.2026):
+  - [x] **Datenmodell:** `RegistryPerson.factionMemberships` und `partyMemberships` (optional, Magdeburg unverändert); `factionIdOn()`/`partyIdOn()` in `astro/src/models/person-affiliation.ts`. `members.json` führt die Parteizugehörigkeit mit Zeiträumen und Quelle je Zeitraum; ein Override mit `party` und `since` beginnt einen neuen Zeitraum. Die Wahlliste 2024 ist der Ausgangswert.
+  - [x] **Datenverarbeitung:** Die Registry trägt den Verlauf, deshalb braucht `session-scan-*.json` keine Fraktion je Stimme. `votes-<datum>.csv` hat Fraktion und Partei am Sitzungstag.
+  - [x] **Auswertungen:** Teilnahme, Enthaltungen, Abstimmungserfolg, Geschlossenheit und Redezeit je Fraktion und Partei (über `getPersonsOfSessionAndFaction`/`…Party`), die Fraktionsaufteilung jeder Abstimmung und die Abstimmungsseite rechnen mit der Zugehörigkeit am Sitzungstag. Die Ähnlichkeitsgrafik und die Personenliste zeigen bewusst die aktuelle Fraktion.
+  - [x] **Anzeige:** Personenseite mit Verlauf („Fraktionen in der Wahlperiode: …“), Fraktions- und Parteiseiten mit allen, die je dazugehörten, mit Zeitraum bei Wechsel; Parteiseite zeigt die Fraktion statt nochmals die Partei.
+  - [ ] Sitzzahlen je Zeitpunkt: `seats` ist der Stand am Tag der Erzeugung.
+  - [ ] Parteiwechsel mit Quelle erfassen, sobald bekannt (siehe Offene Fragen: Abraham, Butz).
 - [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Die Seite zeigt die Wahlliste 2024 als „Partei“; bei Fraktionswechseln (z. B. Abraham: Liste SPD, heute fraktionslos) prüfen, ob ein Override mit Quelle nötig ist. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
 - [ ] **Offene Daten ausliefern:**
   - [ ] API v1 unverändert (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`)

@@ -20,7 +20,15 @@ const members = {
       oparlId: 'p/zenker',
       familyName: 'Zenker',
       givenName: 'Christopher',
-      factionMemberships: [],
+      factionMemberships: [{ factionId: 'spd', start: '2024-09-18', end: '2025-01-31' }],
+      partyMemberships: [
+        {
+          partyId: 'spd',
+          start: '2024-09-18',
+          end: '2025-01-31',
+          source: { method: 'election-list', match: 'name', listName: 'SPD' },
+        },
+      ],
       partySource: { method: 'election-list', match: 'name', listName: 'SPD' },
     },
   ],
@@ -68,7 +76,7 @@ describe('buildRegistry', () => {
     ]);
   });
 
-  it('keeps only the registry fields of members, factions and parties', () => {
+  it('keeps the registry fields of members with their history, without the sources', () => {
     expect(registry.persons).toEqual([
       {
         id: 'christopher-zenker',
@@ -77,6 +85,8 @@ describe('buildRegistry', () => {
         partyId: 'spd',
         start: null,
         end: '2025-01-31',
+        factionMemberships: [{ factionId: 'spd', start: '2024-09-18', end: '2025-01-31' }],
+        partyMemberships: [{ partyId: 'spd', start: '2024-09-18', end: '2025-01-31' }],
       },
     ]);
     expect(registry.factions).toEqual([{ id: 'spd', name: 'SPD', seats: 7 }]);

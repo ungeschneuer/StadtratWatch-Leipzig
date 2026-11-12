@@ -1,3 +1,4 @@
+import { factionIdOn } from './person-affiliation.ts';
 import type { Registry } from './registry.ts';
 import type { SessionScanItem, SessionScanVote } from './session-scan.ts';
 import type { VoteCode } from './Session.ts';
@@ -39,9 +40,11 @@ export function getVoteCounts(voting: SessionScanItem): VoteCounts {
   return counts;
 }
 
+// With the session date, each vote counts for the faction of that day; without it, for the person's latest faction.
 export function getVotesByFactions(
   parliamentPeriod: Registry,
   votes: SessionScanVote[],
+  sessionDate?: string,
 ): VotesByFaction[] {
   const personsByName = new Map(
     parliamentPeriod.persons.map((person) => [person.name, person]),
@@ -54,7 +57,10 @@ export function getVotesByFactions(
     }
     return {
       personName: person.name,
-      factionId: person.factionId,
+      factionId:
+        sessionDate === undefined
+          ? person.factionId
+          : factionIdOn(person, sessionDate),
       vote: vote.vote,
     };
   });

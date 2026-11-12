@@ -19,6 +19,18 @@ describe('parseMemberOverrides', () => {
     );
   });
 
+  it('needs a date and a party for a party change', () => {
+    expect(() =>
+      parseMemberOverrides([{ personOparlId: 'p/1', since: '1.7.2025', reason: 'r', source: 's' }], 'o.json'),
+    ).toThrow(
+      new MemberOverridesError([
+        'o.json entry 0: needs one of exclude, name, givenName, familyName, party',
+        'o.json entry 0: since must be a date (YYYY-MM-DD)',
+        'o.json entry 0: since needs a party',
+      ]),
+    );
+  });
+
   it('rejects a file that is no array', () => {
     expect(() => parseMemberOverrides({}, 'member-overrides.json')).toThrow('expected a JSON array');
   });

@@ -155,6 +155,42 @@ describe('buildMembersFile', () => {
     );
   });
 
+  it('starts a new party period with each dated change', () => {
+    const { file, problems } = buildMembersFile(
+      inputs({
+        members: [member('p/zenker', 'Christopher', 'Zenker')],
+        overrides: [
+          { personOparlId: 'p/zenker', party: 'parteilos', since: '2025-07-01', reason: 'Austritt', source: 'Presse' },
+        ],
+      }),
+    );
+
+    expect(file.persons[0].partyMemberships.map(({ partyId, start, end }) => ({ partyId, start, end }))).toEqual([
+      { partyId: 'spd', start: '2024-09-18', end: '2025-06-30' },
+      { partyId: 'parteilos', start: '2025-07-01', end: null },
+    ]);
+    expect(file.persons[0].partyId).toEqual('parteilos');
+    expect(file.persons[0].partySource).toEqual({ method: 'override', reason: 'Austritt', source: 'Presse' });
+    expect(file.parties.map((party) => [party.id, party.seats])).toEqual([
+      ['parteilos', 1],
+      ['spd', 0],
+    ]);
+    expect(problems.filter((problem) => problem.includes('party change'))).toEqual([]);
+  });
+
+  it('reports a party change outside the membership', () => {
+    const { problems } = buildMembersFile(
+      inputs({
+        members: [member('p/zenker', 'Christopher', 'Zenker', { end: '2025-01-31' })],
+        overrides: [{ personOparlId: 'p/zenker', party: 'CDU', since: '2025-07-01', reason: 'x', source: 'y' }],
+      }),
+    );
+
+    expect(problems).toContain(
+      'Christopher Zenker: party change on 2025-07-01 lies outside the membership or before the previous change',
+    );
+  });
+
   it('writes one row per faction membership', () => {
     const { file } = buildMembersFile(inputs({ members: [member('p/zenker', 'Christopher', 'Zenker')] }));
 

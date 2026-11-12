@@ -33,8 +33,10 @@ faction's name, as the site credits motions by it; offices of the administration
 submitter per paper, so a joint motion counts for that faction only. The paper reference is taken from OParl where the
 vote is linked, which corrects the period numeral OCR confuses.
 
-Not yet carried over: the majority a vote needed (always simple) and the faction of the day. The site gives each person
-one faction, the latest (`factionId`); `votes-<date>.csv` and `members.json` have the faction on each session day.
+**History.** The registry carries each person's `factionMemberships` and `partyMemberships`, so the site counts every
+vote for the faction and party of its session day.
+
+Not yet carried over: the majority a vote needed (always simple).
 
 ## Usage
 

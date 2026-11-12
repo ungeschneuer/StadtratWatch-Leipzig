@@ -11,6 +11,7 @@
     "./oparl-derivatives": "./oparl-derivatives.ts",
     "./paper-batch": "./paper-batch.ts",
     "./paper-votings": "./paper-votings.ts",
+    "./person-affiliation": "./person-affiliation.ts",
     "./registry": "./registry.ts",
     "./session-input": "./session-input.ts",
     "./session-scan": "./session-scan.ts",

@@ -9,6 +9,7 @@ import {
   type LeipzigPerson,
   MAYOR_FACTION_ID,
 } from '@srw-astro/models/leipzig-members';
+import { partyIdOn } from '@srw-astro/models/person-affiliation';
 
 import { addDays, type CouncilMember, type OparlOrganization } from './council-members.ts';
 import { type Candidate, matchCandidate } from './election-candidates.ts';
@@ -47,7 +48,16 @@ export function buildMembersFile(inputs: MembersInputs): { file: LeipzigMembersF
     }
     overridesByPerson.set(override.personOparlId, [...(overridesByPerson.get(override.personOparlId) ?? []), override]);
   }
-  const overrideOf = (member: CouncilMember) => Object.assign({}, ...(overridesByPerson.get(member.person.id) ?? []));
+  // Name corrections and exclusion: the last override wins. Party changes are collected, one period each.
+  const overrideOf = (member: CouncilMember) =>
+    Object.assign(
+      {},
+      ...(overridesByPerson.get(member.person.id) ?? []).filter((override) => override.since === undefined),
+    );
+  const partyChangesOf = (member: CouncilMember) =>
+    (overridesByPerson.get(member.person.id) ?? [])
+      .filter((override) => override.since !== undefined && override.party !== undefined)
+      .toSorted((a, b) => (a.since ?? '').localeCompare(b.since ?? ''));
 
   const organizationsById = new Map(inputs.organizations.map((organization) => [organization.id, organization]));
   const factions = new Map<string, LeipzigFaction>();
@@ -68,10 +78,11 @@ export function buildMembersFile(inputs: MembersInputs): { file: LeipzigMembersF
       problems.push(`${name}: ${party.problem}`);
       continue;
     }
-    const partyRecord = partyRecordOf(party.shortName, party.listName);
-    parties.set(partyRecord.id, partyRecord);
 
     const start = startSeenOnBoard(member, inputs.boardSessionDays.get(member.person.id) ?? [], name, problems);
+    const partyMemberships = partyPeriods(party, partyChangesOf(member), start, member.end, name, problems);
+    for (const membership of partyMemberships) parties.set(membership.record.id, membership.record);
+    const latestParty = partyMemberships.at(-1) ?? partyMemberships[0];
     const factionMemberships = member.factionPeriods.map((period, index) => {
       const faction = factionRecordOf(period.organizationId, member.isMayor, organizationsById);
       factions.set(faction.id, faction);
@@ -83,14 +94,20 @@ export function buildMembersFile(inputs: MembersInputs): { file: LeipzigMembersF
       id,
       name,
       factionId: factionMemberships.at(-1)?.factionId ?? FACTIONLESS_ID,
-      partyId: partyRecord.id,
+      partyId: latestParty.record.id,
       start: start <= inputs.periodStart ? null : start,
       end: member.end,
       oparlId: member.person.id,
       familyName,
       givenName,
       factionMemberships,
-      partySource: party.source,
+      partyMemberships: partyMemberships.map(({ record, start: from, end, source }) => ({
+        partyId: record.id,
+        start: from,
+        end,
+        source,
+      })),
+      partySource: latestParty.source,
     });
   }
 
@@ -112,7 +129,7 @@ export function buildMembersFile(inputs: MembersInputs): { file: LeipzigMembersF
         .map((faction) => ({ ...faction, seats: seatsOf((person) => factionOn(person, inputs.today) === faction.id) }))
         .sort(bySeatsThenName),
       parties: [...parties.values()]
-        .map((party) => ({ ...party, seats: seatsOf((person) => person.partyId === party.id) }))
+        .map((party) => ({ ...party, seats: seatsOf((person) => partyIdOn(person, inputs.today) === party.id) }))
         .sort(bySeatsThenName),
       persons,
     },
@@ -177,6 +194,38 @@ function partyOf(
     listName,
     source: { method: 'election-list', match: found.match, listName },
   };
+}
+
+type PartyPeriod = { record: LeipzigParty; start: string; end: string | null; source: LeipzigPartySource };
+
+// The party of the list (or of an override without date) from the start; each dated change ends the period before it.
+function partyPeriods(
+  initial: Extract<PartyChoice, { shortName: string }>,
+  changes: Partial<MemberOverride>[],
+  start: string,
+  end: string | null,
+  name: string,
+  problems: string[],
+): PartyPeriod[] {
+  const periods: PartyPeriod[] = [
+    { record: partyRecordOf(initial.shortName, initial.listName), start, end, source: initial.source },
+  ];
+  for (const change of changes) {
+    const since = change.since ?? start;
+    const previous = periods.at(-1) as PartyPeriod;
+    if (since <= previous.start || (end !== null && since > end)) {
+      problems.push(`${name}: party change on ${since} lies outside the membership or before the previous change`);
+      continue;
+    }
+    previous.end = addDays(since, -1);
+    periods.push({
+      record: partyRecordOf(change.party ?? '', change.party ?? ''),
+      start: since,
+      end,
+      source: { method: 'override', reason: change.reason ?? '', source: change.source ?? '' },
+    });
+  }
+  return periods;
 }
 
 function partyRecordOf(shortName: string, listName: string): LeipzigParty {
