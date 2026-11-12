@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import {
   type ParliamentPeriodWithPersonProps,
   getParliamentPeriodWithPersonPaths,
@@ -76,11 +77,11 @@ const {
   breadcrumbItems={[
     {
       name: parliamentPeriod.name,
-      href: `/pp/${parliamentPeriodId}`,
+      href: sitePath(`/pp/${parliamentPeriodId}`),
     },
     {
       name: 'Personen',
-      href: `/pp/${parliamentPeriodId}/persons`,
+      href: sitePath(`/pp/${parliamentPeriodId}/persons`),
     },
     {
       name: person.name,
@@ -105,7 +106,9 @@ const {
       <div>
         Fraktion
         <a
-          href={`/pp/${parliamentPeriodId}/faction/${person.factionId}`}
+          href={sitePath(
+            `/pp/${parliamentPeriodId}/faction/${person.factionId}`,
+          )}
           class="link link-primary"
         >
           {faction.name}
@@ -114,7 +117,7 @@ const {
       <div>
         Partei
         <a
-          href={`/pp/${parliamentPeriodId}/party/${person.partyId}`}
+          href={sitePath(`/pp/${parliamentPeriodId}/party/${person.partyId}`)}
           class="link link-primary"
         >
           {party.name}
@@ -148,7 +151,7 @@ const {
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'statistics'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/person/${personId}?tab=statistics`); currentTab = 'statistics'"
+      @change="history.pushState(null, '', '?tab=statistics'); currentTab = 'statistics'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Statistics
@@ -165,7 +168,7 @@ const {
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'speeches'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/person/${personId}?tab=speeches`); currentTab = 'speeches'"
+      @change="history.pushState(null, '', '?tab=speeches'); currentTab = 'speeches'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Speeches
@@ -182,7 +185,7 @@ const {
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'voting-matrix'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/person/${personId}?tab=voting-matrix`); currentTab = 'voting-matrix'"
+      @change="history.pushState(null, '', '?tab=voting-matrix'); currentTab = 'voting-matrix'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <VotingMatrix

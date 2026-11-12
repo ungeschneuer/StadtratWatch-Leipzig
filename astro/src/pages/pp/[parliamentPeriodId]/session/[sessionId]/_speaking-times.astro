@@ -49,6 +49,7 @@ const chartHeight = chartData.length * 40;
 )}
 
 <script>
+  import { sitePath } from '@utils/site-path';
   import Chart from 'chart.js/auto';
   import { type SpeakingTimesChartDataPoint } from './_helpers';
 
@@ -141,7 +142,9 @@ const chartHeight = chartData.length * 40;
           chart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]
             .speakerId;
         if (speakerId) {
-          window.location.href = `/pp/${parliamentPeriodId}/person/${speakerId}`;
+          window.location.href = sitePath(
+            `/pp/${parliamentPeriodId}/person/${speakerId}`,
+          );
         }
       }
     };

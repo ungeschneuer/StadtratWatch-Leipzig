@@ -146,21 +146,21 @@ const persons = parliamentPeriod.persons
         <tr>
           <td>
             <a
-              :href="`/pp/${parliamentPeriodId}/person/${person.id}`"
+              :href="sitePath(`/pp/${parliamentPeriodId}/person/${person.id}`)"
               class="link link-primary"
               x-text="person.name"
             ></a>
           </td>
           <td>
             <a
-              :href="`/pp/${parliamentPeriodId}/faction/${person.factionId}`"
+              :href="sitePath(`/pp/${parliamentPeriodId}/faction/${person.factionId}`)"
               class="link link-primary"
               x-text="person.faction"
             ></a>
           </td>
           <td>
             <a
-              :href="`/pp/${parliamentPeriodId}/party/${person.partyId}`"
+              :href="sitePath(`/pp/${parliamentPeriodId}/party/${person.partyId}`)"
               class="link link-primary"
               x-text="person.party"
             ></a>

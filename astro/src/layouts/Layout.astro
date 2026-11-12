@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import '@styles/global.css';
 import Sidebar from '@components/Sidebar.astro';
 import Topbar from '@components/Topbar.astro';
@@ -30,31 +31,14 @@ if (!parliamentPeriod) {
     <MetaTags />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href={sitePath('/sitemap-index.xml')} />
+    <link rel="icon" type="image/x-icon" href={sitePath('/favicon.ico')} />
+    <link rel="apple-touch-icon" href={sitePath('/apple-touch-icon.png')} />
 
-    <!-- Matomo -->
-    <script>
-      // @ts-ignore
-      var _paq = (window._paq = window._paq || []);
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function () {
-        var u = '//matomo.unser-magdeburg.de/';
-        _paq.push(['setTrackerUrl', u + 'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d = document,
-          g = d.createElement('script'),
-          s = d.getElementsByTagName('script')[0];
-        // @ts-ignore
-        g.async = true;
-        g.src = u + 'matomo.js';
-        s.parentNode?.insertBefore(g, s);
-      })();
+    <script is:inline define:vars={{ basePath: sitePath('/') }}>
+      // Alpine expressions build links in the browser; they reach the base path through this global.
+      window.sitePath = (path) => basePath + path.replace(/^\//, '');
     </script>
-    <!-- End Matomo Code -->
   </head>
 
   <body>

@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithSessionsProps,
@@ -17,7 +18,7 @@ const { parliamentPeriod, sessionInputs } =
 const breadcrumbItems: BreadcrumbItem[] = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Personen',
@@ -45,7 +46,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'list'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/persons?tab=list`); currentTab = 'list'"
+      @change="history.pushState(null, '', '?tab=list'); currentTab = 'list'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <PersonsList
@@ -61,7 +62,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'graph'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/persons?tab=graph`); currentTab = 'graph'"
+      @change="history.pushState(null, '', '?tab=graph'); currentTab = 'graph'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <PersonsGraph

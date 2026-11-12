@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import { type Registry, type RegistryParty } from '@models/registry';
 import { affiliationMembers, partyHistory } from '@models/person-affiliation';
 import { formatDate } from '@utils/format-date';
@@ -36,7 +37,7 @@ function getFactionName(factionId: string) {
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
   {persons.map((person) => (
     <a
-      href={`/pp/${parliamentPeriod.id}/person/${person.id}`}
+      href={sitePath(`/pp/${parliamentPeriod.id}/person/${person.id}`)}
       class="card card-border border-base-300 bg-base-200 hover:bg-base-300"
       class:list={[{ 'opacity-50': !person.isCurrent }]}
     >

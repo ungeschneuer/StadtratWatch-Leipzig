@@ -1,7 +1,13 @@
 ---
+import { sitePath } from '@utils/site-path';
 import { getCollection } from 'astro:content';
 import { type Registry } from '@models/registry';
 import { formatDate } from '@utils/format-date';
+import {
+  SITE_NAME,
+  SOURCE_REPOSITORY_URL,
+  UPSTREAM_PROJECT,
+} from '@utils/site-config';
 
 const parliamentPeriodsCollection = await getCollection('parliamentPeriods');
 const parliamentPeriods = parliamentPeriodsCollection
@@ -14,7 +20,9 @@ type Props = {
 
 const { parliamentPeriod } = Astro.props as Props;
 
-const pathname = Astro.url.pathname.toLowerCase();
+const pathname = Astro.url.pathname
+  .toLowerCase()
+  .slice(sitePath('/').length - 1);
 let activePage = '';
 switch (true) {
   case pathname.startsWith(`/pp/${parliamentPeriod.id}/session/`) ||
@@ -46,9 +54,9 @@ switch (true) {
 <div id="layout-sidebar">
   <a
     class="flex min-h-16 items-center px-5 text-xl md:text-2xl font-bold text-primary"
-    href="/"
+    href={sitePath('/')}
   >
-    StadtratWatch
+    {SITE_NAME}
   </a>
   <div class="relative min-h-0 grow">
     <div class="size-full">
@@ -73,7 +81,7 @@ switch (true) {
         >
           {parliamentPeriods.map((parliamentPeriod) => (
             <li>
-              <a href={`/pp/${parliamentPeriod.id}`}>
+              <a href={sitePath(`/pp/${parliamentPeriod.id}`)}>
                 <span>{parliamentPeriod.name}</span>
               </a>
             </li>
@@ -85,35 +93,28 @@ switch (true) {
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'sessions' }]}
-          href={`/pp/${parliamentPeriod.id}/sessions`}
+          href={sitePath(`/pp/${parliamentPeriod.id}/sessions`)}
         >
           Sitzungen
         </a>
         <a
           class="sidebar-menu-item"
-          class:list={[{ active: activePage === 'papers' }]}
-          href={`/papers`}
-        >
-          Drucksachen
-        </a>
-        <a
-          class="sidebar-menu-item"
           class:list={[{ active: activePage === 'factions' }]}
-          href={`/pp/${parliamentPeriod.id}/factions`}
+          href={sitePath(`/pp/${parliamentPeriod.id}/factions`)}
         >
           Fraktionen
         </a>
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'parties' }]}
-          href={`/pp/${parliamentPeriod.id}/parties`}
+          href={sitePath(`/pp/${parliamentPeriod.id}/parties`)}
         >
           Parteien
         </a>
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'persons' }]}
-          href={`/pp/${parliamentPeriod.id}/persons`}
+          href={sitePath(`/pp/${parliamentPeriod.id}/persons`)}
         >
           Personen
         </a>
@@ -121,27 +122,18 @@ switch (true) {
     </div>
   </div>
 
-  <div class="p-3" x-data>
-    <form
-      class="md:hidden"
-      @submit.prevent="$event.target.search.value.trim() !== '' ? window.location.href = `/search?q=${$event.target.search.value}` : null; $event.target.search.value = null"
-    >
-      <label class="input">
-        <span class="iconify lucide--search text-base-content/60 size-5"></span>
-        <input class="grow" placeholder="Suche" type="search" name="search" />
-      </label>
-    </form>
-  </div>
-
   <div class="alert alert-soft alert-info m-3 dark:opacity-60" role="alert">
     <span>
-      Diese Seite ist <em>keine</em> offizielle Seite der Stadt Magdeburg. Es
-      handelt sich hierbei um ein Privatprojekt und wird ehrenamtlich entwickelt
-      von
-      <a class="link" href="https://codefor.de/magdeburg" target="_blank">
-        Code for Magdeburg
+      Diese Seite ist <em>keine</em> offizielle Seite der Stadt Leipzig. Sie ist
+      ein ehrenamtliches Privatprojekt und baut auf
+      <a class="link" href={UPSTREAM_PROJECT.siteUrl} target="_blank">
+        {UPSTREAM_PROJECT.name}
       </a>
-      .
+      von
+      <a class="link" href={UPSTREAM_PROJECT.maintainersUrl} target="_blank">
+        {UPSTREAM_PROJECT.maintainers}
+      </a>
+      auf.
     </span>
   </div>
 
@@ -149,34 +141,31 @@ switch (true) {
     <hr class="border-base-300" />
     <ul class="menu w-full">
       <li>
-        <a
-          href="https://github.com/code-for-magdeburg/stadtratWatch-web"
-          class="flex items-center gap-2"
-        >
+        <a href={SOURCE_REPOSITORY_URL} class="flex items-center gap-2">
           <span class="iconify lucide--github size-4"></span>
           Quellcode
         </a>
       </li>
       <li>
-        <a href="/api" class="flex items-center gap-2">
+        <a href={sitePath('/api')} class="flex items-center gap-2">
           <span class="iconify lucide--code-2 size-4"></span>
           API
         </a>
       </li>
       <li>
-        <a href="/privacy" class="flex items-center gap-2">
+        <a href={sitePath('/privacy')} class="flex items-center gap-2">
           <span class="iconify lucide--cookie size-4"></span>
           Datenschutz
         </a>
       </li>
       <li>
-        <a href="/impressum" class="flex items-center gap-2">
+        <a href={sitePath('/impressum')} class="flex items-center gap-2">
           <span class="iconify lucide--section size-4"></span>
           Impressum
         </a>
       </li>
       <li>
-        <a href="/contact" class="flex items-center gap-2">
+        <a href={sitePath('/contact')} class="flex items-center gap-2">
           <span class="iconify lucide--mail size-4"></span>
           Kontakt
         </a>

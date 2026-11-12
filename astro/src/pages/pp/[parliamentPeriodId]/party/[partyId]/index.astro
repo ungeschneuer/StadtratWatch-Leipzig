@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithPartyProps,
@@ -19,11 +20,11 @@ const { parliamentPeriod, party, sessionInputs } =
 const breadcrumbItems = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Parteien',
-    href: `/pp/${parliamentPeriodId}/parties`,
+    href: sitePath(`/pp/${parliamentPeriodId}/parties`),
   },
   {
     name: party.name,
@@ -71,7 +72,7 @@ const {
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'councilors'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/party/${partyId}?tab=councilors`); currentTab = 'councilors'"
+      @change="history.pushState(null, '', '?tab=councilors'); currentTab = 'councilors'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Councilors parliamentPeriod={parliamentPeriod} party={party} />
@@ -84,7 +85,7 @@ const {
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'statistics'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/party/${partyId}?tab=statistics`); currentTab = 'statistics'"
+      @change="history.pushState(null, '', '?tab=statistics'); currentTab = 'statistics'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Statistics

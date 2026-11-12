@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithSessionsProps,
@@ -30,7 +31,7 @@ const { parliamentPeriod, sessionInputs } =
 const breadcrumbItems: BreadcrumbItem[] = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Fraktionen',
@@ -236,7 +237,7 @@ const barHeight = factions.length * 40;
               <tr>
                 <td>
                   <a
-                    :href="`/pp/${parliamentPeriodId}/faction/${faction.id}`"
+                    :href="sitePath(`/pp/${parliamentPeriodId}/faction/${faction.id}`)"
                     class="link link-primary"
                     x-text="faction.name"
                   ></a>
@@ -416,6 +417,7 @@ const barHeight = factions.length * 40;
 </PageLayout>
 
 <script>
+  import { sitePath } from '@utils/site-path';
   import Alpine from 'alpinejs';
   import { type FactionListItem } from './_models';
   import Chart from 'chart.js/auto';
@@ -598,7 +600,9 @@ const barHeight = factions.length * 40;
           chart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]
             .factionId;
         if (factionId) {
-          window.location.href = `/pp/${parliamentPeriodId}/faction/${factionId}`;
+          window.location.href = sitePath(
+            `/pp/${parliamentPeriodId}/faction/${factionId}`,
+          );
         }
       }
     };

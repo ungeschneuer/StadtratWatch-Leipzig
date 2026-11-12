@@ -1,28 +1,16 @@
 export const fillColorsMap = new Map([
   [
-    'magdeburg-7',
+    'leipzig-8',
     new Map([
+      ['AfD', '#0845C5'],
       ['CDU', '#16B9DE'],
+      ['DIE LINKE', '#C535E5'],
+      ['Bündnis 90/Die Grünen', '#3EAD3E'],
+      ['BSW', '#7D254F'],
       ['SPD', '#F33F2F'],
-      ['DIE LINKE', '#C535E5'],
-      ['Gartenpartei/Tierschutzallianz', '#107012'],
-      ['AfD', '#0845C5'],
-      ['FDP/Tierschutzpartei', '#E7D251'],
-      ['GRÜNE/future!', '#3EAD3E'],
-      ['Oberbürgermeisterin', '#A1A2A1'],
-    ]),
-  ],
-  [
-    'magdeburg-8',
-    new Map([
-      ['CDU/FDP', '#16B9DE'],
-      ['SPD/Tierschutzallianz/Volt', '#F33F2F'],
-      ['DIE LINKE', '#C535E5'],
-      ['Gartenpartei', '#107012'],
-      ['AfD', '#0845C5'],
-      ['Tierschutzpartei', '#E7D251'],
-      ['GRÜNE/future!', '#3EAD3E'],
-      ['Oberbürgermeisterin', '#A1A2A1'],
+      ['Die Freie Fraktion', '#F29200'],
+      ['fraktionslos', '#7A7A7A'],
+      ['Oberbürgermeister', '#A1A2A1'],
     ]),
   ],
 ]);

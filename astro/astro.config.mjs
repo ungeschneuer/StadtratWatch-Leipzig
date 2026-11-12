@@ -5,62 +5,40 @@ import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from '@astrojs/sitemap';
 
-import { validateVotingPaperMapConsistency } from './src/content-validation/voting-paper-map-consistency.ts';
-
-/** @type {import('astro').AstroIntegration} */
-const validateOparlDerivates = {
-  name: 'validate-oparl-derivates',
-  hooks: {
-    'astro:config:setup': () => {
-      validateVotingPaperMapConsistency();
-    },
-  },
-};
+// The site is served by GitHub Pages as a project page, i.e. below the repository name. SITE_URL and SITE_BASE
+// switch it to another address (e.g. an own domain with base '/') without touching any link.
+const siteUrl = process.env.SITE_URL ?? 'https://ungeschneuer.github.io';
+const siteBase = process.env.SITE_BASE ?? '/StadtratWatch-web';
 
 export default defineConfig({
-  site: 'https://www.stadtratwatch.de',
+  site: siteUrl,
+  base: siteBase,
+  trailingSlash: 'ignore',
   env: {
     schema: {
       DEFAULT_PARLIAMENT_PERIOD: envField.string({
         context: 'server',
         access: 'public',
-        optional: false
+        optional: true,
+        default: 'leipzig-8',
       }),
-      AWS_CLOUDFRONT_BASE_URL: envField.string({
-        context: 'client',
-        access: 'public',
-        optional: false,
-      }),
-      TYPESENSE_HOST: envField.string({
-        context: 'client',
-        access: 'public',
-        optional: false,
-      }),
-      TYPESENSE_PORT: envField.number({
-        context: 'client',
-        access: 'public',
-        optional: false,
-      }),
-      TYPESENSE_PROTOCOL: envField.string({
-        context: 'client',
-        access: 'public',
-        optional: false,
-      }),
-      TYPESENSE_SEARCH_ONLY_API_KEY: envField.string({
-        context: 'client',
-        access: 'public',
-        optional: false,
-      }),
-      SRW_FEATURE_FLAGS: envField.string({
-        context: 'client',
+      DATA_REPOSITORY: envField.string({
+        context: 'server',
         access: 'public',
         optional: true,
-        default: ''
+        default: 'ungeschneuer/StadtratWatch-web',
+      }),
+      // Set by the deploy workflow to the open pull request of the data branch; without it the site links a search
+      // that finds that pull request.
+      DATA_PULL_REQUEST_URL: envField.string({
+        context: 'server',
+        access: 'public',
+        optional: true,
       }),
     },
   },
 
-  integrations: [alpinejs(), sitemap(), validateOparlDerivates],
+  integrations: [alpinejs(), sitemap()],
 
   vite: {
     plugins: [tailwindcss()],

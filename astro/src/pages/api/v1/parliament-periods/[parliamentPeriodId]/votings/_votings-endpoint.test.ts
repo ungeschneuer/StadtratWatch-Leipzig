@@ -19,8 +19,8 @@ const session: RegistrySession = {
 };
 
 const parliamentPeriod: Registry = {
-  id: 'magdeburg-8',
-  name: 'Magdeburg 8',
+  id: 'leipzig-8',
+  name: 'Wahlperiode VIII',
   lastUpdate: '2026-08-27',
   sessions: [session],
   factions: [{ id: 'council', name: 'Stadtrat', seats: 57 }],

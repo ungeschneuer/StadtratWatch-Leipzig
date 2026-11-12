@@ -36,8 +36,8 @@ describe('MotionsSuccess', () => {
     };
 
     registry = {
-      id: 'magdeburg-8',
-      name: 'Stadtrat Magdeburg 8',
+      id: 'leipzig-8',
+      name: 'Wahlperiode VIII',
       lastUpdate: '2023-01-01',
       sessions: [session1],
       factions: [faction1, faction2],

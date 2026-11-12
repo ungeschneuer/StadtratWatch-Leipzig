@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithSessionsProps,
@@ -75,7 +76,7 @@ const timelineEntries = groupedByMonth
 const breadcrumbItems: BreadcrumbItem[] = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Sitzungen',
@@ -111,7 +112,9 @@ const breadcrumbItems: BreadcrumbItem[] = [
             <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1" />
           </div>
           <a
-            href={`/pp/${parliamentPeriodId}/session/${(entry as SessionEntry).sessionId}`}
+            href={sitePath(
+              `/pp/${parliamentPeriodId}/session/${(entry as SessionEntry).sessionId}`,
+            )}
             class="timeline-end timeline-box ms-3 hover:bg-base-200 hover:cursor-pointer space-y-2"
             class:list={approved ? undefined : 'border-dashed'}
           >

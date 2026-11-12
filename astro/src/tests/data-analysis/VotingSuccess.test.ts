@@ -39,8 +39,8 @@ const carol = createPerson('Carol', otherFaction.id);
 const dave = createPerson('Dave', otherFaction.id);
 
 const registry: Registry = {
-  id: 'magdeburg-8',
-  name: 'Stadtrat Magdeburg 8',
+  id: 'leipzig-8',
+  name: 'Wahlperiode VIII',
   lastUpdate: '2024-07-08',
   sessions: [],
   parties: [party],
