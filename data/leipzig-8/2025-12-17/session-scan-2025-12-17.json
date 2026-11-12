@@ -1,0 +1,9538 @@
+[
+  {
+    "votingFilename": "2025-12-17-001.png",
+    "videoTimestamp": "00:19:06",
+    "votingSubject": {
+      "agendaItem": "3.1",
+      "motionId": "",
+      "title": "Beschluss über die Aufnahme der Vorlage VIII-DS-01464",
+      "type": null,
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "O"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "O"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "O"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-002.png",
+    "videoTimestamp": "00:21:31",
+    "votingSubject": {
+      "agendaItem": "3.2",
+      "motionId": "VIII-AS-02163",
+      "title": "Antrag auf Durchführung einer Aktuellen Stunde zur Haushaltssituation der Stadt Leipzig",
+      "type": "Sonstige",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "O"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "E"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "E"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "E"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "E"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "O"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-003.png",
+    "videoTimestamp": "00:22:50",
+    "votingSubject": {
+      "agendaItem": "3.3",
+      "motionId": "VIII-DF-02161",
+      "title": "Haushaltsbeschlüsse des Stadtrates sind keine Politikfolklore – Umsetzung im Rahmen der Gesetze und der Haushaltsgenehmigung gleichwertig behandeln!",
+      "type": "Sonstige",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "O"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "O"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "E"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "O"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "E"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-005.png",
+    "videoTimestamp": "00:46:30",
+    "votingSubject": {
+      "agendaItem": "14.4",
+      "motionId": "VIII-A-01817",
+      "title": "ABSTIMMUNG",
+      "type": "Geschäftsordnung",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-006.png",
+    "videoTimestamp": "00:56:21",
+    "votingSubject": {
+      "agendaItem": "14.7.1",
+      "motionId": "VIII-A-01469-ÄA-01",
+      "title": "Gedenken an William Zipperer",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "O"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "E"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "E"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "E"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "E"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "E"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "E"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "E"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "E"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "E"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "E"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-007.png",
+    "videoTimestamp": "00:56:48",
+    "votingSubject": {
+      "agendaItem": "14.7",
+      "motionId": "VIII-A-01469",
+      "title": "Gedenken an William Zipperer",
+      "type": "Antrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "E"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "O"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "E"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "E"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "E"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "E"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "E"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "E"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "E"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "E"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "E"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "E"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "E"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-008.png",
+    "videoTimestamp": "00:57:41",
+    "votingSubject": {
+      "agendaItem": "14.9",
+      "motionId": "VIII-A-01662",
+      "title": "Schaffung von Wohnraum in Leipzig, Ortsteil Burghausen",
+      "type": "Antrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "O"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "O"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-009.png",
+    "videoTimestamp": "01:04:02",
+    "votingSubject": {
+      "agendaItem": "18.3",
+      "motionId": "VIII-DS-01887",
+      "title": "Städtebaulicher Vertrag zur Sicherung der straßenseitigen Erschließung des Bauvorhabens Errichtung von 6 Gewerbehallen auf dem Gewerbegrundstück Kossaer Straße 2 - eilbedürftig",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "O"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "O"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "E"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-010.png",
+    "videoTimestamp": "01:04:34",
+    "votingSubject": {
+      "agendaItem": "18.8",
+      "motionId": "VIII-DS-01088-NF-01",
+      "title": "Neufassung der Betriebssatzung für den Kommunalen Eigenbetrieb Leipzig / Engelsdorf",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "O"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-011.png",
+    "videoTimestamp": "03:14:02",
+    "votingSubject": {
+      "agendaItem": "18.1.1",
+      "motionId": "VIII-DS-01373-ÄA-01",
+      "title": "Gebührensatzung Stadtarchiv",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "E"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "E"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "O"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-012.png",
+    "videoTimestamp": "03:14:29",
+    "votingSubject": {
+      "agendaItem": "18.1",
+      "motionId": "VIII-DS-01373",
+      "title": "Gebührensatzung Stadtarchiv - eilbedürftig",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "O"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "O"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "O"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-013.png",
+    "videoTimestamp": "04:33:14",
+    "votingSubject": {
+      "agendaItem": "6",
+      "motionId": "",
+      "title": "ABSTIMMUNG",
+      "type": "Geschäftsordnung",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "E"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-014.png",
+    "videoTimestamp": "04:36:33",
+    "votingSubject": {
+      "agendaItem": "6",
+      "motionId": "",
+      "title": "ABSTIMMUNG",
+      "type": "Geschäftsordnung",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "O"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "O"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "O"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "O"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "O"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "O"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "E"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "O"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-015.png",
+    "videoTimestamp": "04:59:21",
+    "votingSubject": {
+      "agendaItem": "18.6.1",
+      "motionId": "VIII-DS-07720-Ifo-02-ÄA-01",
+      "title": "Kommunale Wärmeplanung für die Stadt Leipzig | 1. Fassung (Entwurf zum öffentlichen Beteiligungsverfahren)",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "O"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "E"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "E"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "E"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "E"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "E"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "E"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "E"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "E"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-016.png",
+    "videoTimestamp": "05:00:24",
+    "votingSubject": {
+      "agendaItem": "18.4",
+      "motionId": "VIII-DS-07720-DS-02-NF-02",
+      "title": "Grundsatz- und Planungsbeschluss zur Wärmewende im Pilotquartier Südvorstadt West",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-017.png",
+    "videoTimestamp": "05:01:04",
+    "votingSubject": {
+      "agendaItem": "18.5",
+      "motionId": "VIII-DS-07720-DS-03-NF-02",
+      "title": "Gründung der Leipziger Quartiersentwicklungsgesellschaft mbH (LQEG)",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "E"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-018.png",
+    "videoTimestamp": "05:04:14",
+    "votingSubject": {
+      "agendaItem": "",
+      "motionId": "",
+      "title": "ABSTIMMUNG",
+      "type": "Geschäftsordnung",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "O"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "J"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "O"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "E"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "E"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-019.png",
+    "videoTimestamp": "05:46:25",
+    "votingSubject": {
+      "agendaItem": "18.10.1",
+      "motionId": "VIII-DS-01232-NF-02-ÄA-1-NF-01",
+      "title": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "J"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "E"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "E"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "E"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "E"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "E"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-020.png",
+    "videoTimestamp": "05:48:07",
+    "votingSubject": {
+      "agendaItem": "18.10.2",
+      "motionId": "VIII-DS-01232-NF-02-ÄA-02",
+      "title": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-021.png",
+    "videoTimestamp": "05:48:52",
+    "votingSubject": {
+      "agendaItem": "18.10.2",
+      "motionId": "VIII-DS-01232-NF-02-ÄA-02",
+      "title": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "E"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "E"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "E"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "E"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "E"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-022.png",
+    "videoTimestamp": "05:49:42",
+    "votingSubject": {
+      "agendaItem": "18.10.3",
+      "motionId": "VIII-DS-01232-NF-02-ÄA-03",
+      "title": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "E"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-023.png",
+    "videoTimestamp": "05:50:32",
+    "votingSubject": {
+      "agendaItem": "18.10",
+      "motionId": "VIII-DS-01232-NF-02",
+      "title": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "E"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "E"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "E"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "E"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "E"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "E"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "E"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-024.png",
+    "videoTimestamp": "05:58:03",
+    "votingSubject": {
+      "agendaItem": "18.16.1",
+      "motionId": "VIII-DS-01609-ÄA-01",
+      "title": "3. Satzung zur Änderung der Vergnügungsteuersatzung der Stadt Leipzig",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "E"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "O"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "O"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-025.png",
+    "videoTimestamp": "05:58:49",
+    "votingSubject": {
+      "agendaItem": "18.16.1",
+      "motionId": "VIII-DS-01609-ÄA-01",
+      "title": "3. Satzung zur Änderung der Vergnügungsteuersatzung der Stadt Leipzig",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "E"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "E"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "O"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "N"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "O"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-026.png",
+    "videoTimestamp": "05:59:41",
+    "votingSubject": {
+      "agendaItem": "18.16",
+      "motionId": "VIII-DS-01609",
+      "title": "3. Satzung zur Änderung der Vergnügungsteuersatzung der Stadt Leipzig",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "J"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "O"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "O"
+      }
+    ],
+    "presentMembers": 65
+  },
+  {
+    "votingFilename": "2025-12-17-027.png",
+    "videoTimestamp": "06:27:55",
+    "votingSubject": {
+      "agendaItem": "18.17.1",
+      "motionId": "VIII-DS-01611-ÄA-01-NF-02",
+      "title": "Hundesteuersatzung der Stadt Leipzig",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "E"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "O"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 62
+  },
+  {
+    "votingFilename": "2025-12-17-028.png",
+    "videoTimestamp": "06:29:57",
+    "votingSubject": {
+      "agendaItem": "18.17.1",
+      "motionId": "VIII-DS-01611-ÄA-01-NF-02",
+      "title": "Hundesteuersatzung der Stadt Leipzig",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "O"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "E"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 62
+  },
+  {
+    "votingFilename": "2025-12-17-029.png",
+    "videoTimestamp": "06:30:25",
+    "votingSubject": {
+      "agendaItem": "18.17.2",
+      "motionId": "VIII-DS-01611-ÄA-02",
+      "title": "Hundesteuersatzung der Stadt Leipzig",
+      "type": "Änderungsantrag",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "N"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "N"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "N"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "N"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "N"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "N"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 62
+  },
+  {
+    "votingFilename": "2025-12-17-030.png",
+    "videoTimestamp": "06:31:13",
+    "votingSubject": {
+      "agendaItem": "18.17",
+      "motionId": "VIII-DS-01611-NF-06",
+      "title": "Hundesteuersatzung der Stadt Leipzig",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "E"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 62
+  },
+  {
+    "votingFilename": "2025-12-17-031.png",
+    "videoTimestamp": "06:32:22",
+    "votingSubject": {
+      "agendaItem": "18.19",
+      "motionId": "VIII-DS-01678",
+      "title": "Altersteilzeit in der Stadtverwaltung ab 2026 (Bestätigung gem. § 79 Abs. 1 SächsGemO) - eilbedürftig",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "N"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 62
+  },
+  {
+    "votingFilename": "2025-12-17-032.png",
+    "videoTimestamp": "06:33:17",
+    "votingSubject": {
+      "agendaItem": "18.25",
+      "motionId": "VIII-DS-01830",
+      "title": "Sozialumlage an den Kommunalen Sozialverband Sachsen (KSV Sachsen) 2025 - Bestätigung überplanmäßiger Aufwendungen nach § 79 (1) SächsGemO",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "E"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "O"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "E"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "E"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "O"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "E"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "E"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "E"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "E"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "E"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "J"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "E"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "J"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "E"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 62
+  },
+  {
+    "votingFilename": "2025-12-17-033.png",
+    "videoTimestamp": "06:49:47",
+    "votingSubject": {
+      "agendaItem": "18.29",
+      "motionId": "VIII-DS-01464",
+      "title": "Verkauf des Grundstücks Hallesche Str. 116 im Konzeptverfahren Änderung der Vorlage VII-DS-06578",
+      "type": "Beschlussvorlage",
+      "authors": []
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "J"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "O"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "O"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "J"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "N"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "E"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "O"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Siegbert Droese",
+        "vote": "O"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "J"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "J"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "O"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "J"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "E"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "E"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "O"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "J"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "O"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "E"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "J"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "O"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 62
+  }
+]
