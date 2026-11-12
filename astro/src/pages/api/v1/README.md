@@ -22,7 +22,12 @@ Alle API-Antworten folgen diesem grundlegenden Format:
     "stadtratwatch_api": {
       "version": "1.0",
       "license": "CC0 1.0",
-      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_note": "CC0 gilt für Stimmen, Ergebnisse und Zuordnungen …",
+      "attribution": [
+        { "source": "Stadt Leipzig, OParl-Schnittstelle …", "url": "…", "license": "CC BY 4.0", "license_url": "…" },
+        { "source": "Stadt Leipzig, Stadtratswahl 2024 …", "url": "…", "license": "Datenlizenz Deutschland – Namensnennung – Version 2.0", "license_url": "…" }
+      ]
     }
   },
   "data": [...] // oder andere Datenfelder
@@ -240,6 +245,21 @@ curl -X GET https://ungeschneuer.github.io/StadtratWatch-Leipzig/api/v1/parliame
 ```bash
 curl -X GET https://ungeschneuer.github.io/StadtratWatch-Leipzig/api/v1/parliament-periods/leipzig-8/votings/2026-10-29.json
 ```
+
+## Bulk-Downloads
+
+Alle veröffentlichten Abstimmungen als Tabellen, im Long-Format und als [Frictionless Data Package](https://datapackage.org) beschrieben (Spalten, Typen, Schlüssel, Lizenzen, Quellen):
+
+```
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/datapackage.json
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/votings.csv               # eine Zeile je Abstimmung
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/votes.csv                 # eine Zeile je Person und Abstimmung
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/sessions.csv              # eine Zeile je Sitzungstag
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/persons.csv               # Mitglieder
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/faction-memberships.csv   # Fraktionen mit Zeiträumen
+```
+
+Sie enthalten genau, was Seite und API zeigen. Bedeutung der Felder, Stimmcodes, Methodik und Grenzen: [`DATA.md`](https://github.com/ungeschneuer/StadtratWatch-Leipzig/blob/main/DATA.md).
 
 ## Lizenz
 
