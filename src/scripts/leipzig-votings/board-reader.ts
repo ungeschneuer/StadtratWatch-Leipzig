@@ -79,8 +79,10 @@ export function nameColumnArea(layout: BoardLayout, column: number): Rectangle {
 // The result bars start at a common left edge below the table; each bar's length is proportional to its count and the
 // count is printed right of the bar. Bars of a zero count have no coloured pixels and are reported without position.
 // A single vote draws a bar of 6 px (board since February 2026) to 12 px (older board) at full HD. The round status
-// dot shown during the vote is told apart by its shape, not its width.
+// dot shown during the vote is as wide as such a bar, so it is told apart by its shape, not its width: a bar is about
+// as tall as a table row (32 to 38 px), the dot half of that (13 to 17 px).
 const MINIMUM_BAR_WIDTH = 4;
+const MINIMUM_BAR_HEIGHT_IN_ROWS = 0.75;
 
 export function findResultBars(frame: RgbFrame, layout: BoardLayout): ResultBar[] {
   const searchTop = layout.bottom + 20;
@@ -99,7 +101,7 @@ export function findResultBars(frame: RgbFrame, layout: BoardLayout): ResultBar[
       }
     }
     const band = groupAdjacent(rows).sort((a, b) => b.end - b.start - (a.end - a.start))[0];
-    if (!band || band.end - band.start < 10) {
+    if (!band || band.end - band.start + 1 < layout.rowHeight * MINIMUM_BAR_HEIGHT_IN_ROWS) {
       continue;
     }
     const middle = Math.round((band.start + band.end) / 2);
@@ -115,8 +117,7 @@ export function findResultBars(frame: RgbFrame, layout: BoardLayout): ResultBar[
       return { left, right, width: left < 0 ? 0 : right - left + 1 };
     };
     const { left, right, width } = extent(middle);
-    // During the vote a round green status dot sits below the table. A bar is a rectangle, as wide near its top edge as
-    // in the middle; the dot is much narrower there.
+    // A rectangle is as wide near its top edge as in the middle; a round shape is much narrower there.
     const nearTop = extent(band.start + 3);
     if (width < MINIMUM_BAR_WIDTH || nearTop.width < width * 0.8) {
       continue;

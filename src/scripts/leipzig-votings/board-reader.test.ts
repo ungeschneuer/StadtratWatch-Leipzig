@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { type BoardCell, BoardLayoutError, findResultBars, readBoard } from './board-reader.ts';
 import { decodePngFrame, type RgbFrame } from './rgb-frame.ts';
 
-// Frames of the 2026-10-29, 2026-01-28 and 2025-12-18 recordings, colour depth reduced to keep the fixtures small.
+// Frames of the 2026-10-29, 2026-09-30, 2026-01-28 and 2025-12-18 recordings, colour depth reduced to keep the fixtures small.
 function fixture(name: string): RgbFrame {
   return decodePngFrame(new Uint8Array(readFileSync(join(import.meta.dir, 'test-fixtures', name))));
 }
@@ -78,6 +78,13 @@ describe('readBoard', () => {
 
   it('finds no result bars while the vote is still open', () => {
     const frame = fixture('board-2026-02-voting-in-progress.png');
+
+    expect(findResultBars(frame, readBoard(frame).layout)).toEqual([]);
+  });
+
+  // 2026-09-30, 0:02:18: the round green status dot below the table, about 16 px wide like a bar for one vote.
+  it('takes the status dot for no result bar', () => {
+    const frame = fixture('board-2026-09-status-dot.png');
 
     expect(findResultBars(frame, readBoard(frame).layout)).toEqual([]);
   });

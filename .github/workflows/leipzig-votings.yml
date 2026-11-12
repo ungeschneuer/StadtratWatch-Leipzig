@@ -87,6 +87,12 @@ jobs:
             2>&1 | tee extract.log
           exit "${PIPESTATUS[0]}"
 
+      # The paper of each new vote with its submitters, the authors of the motion on the site.
+      - name: Link papers
+        id: papers
+        continue-on-error: true
+        run: bun src/scripts/leipzig-papers/index.ts 2>&1 | tee -a extract.log; exit "${PIPESTATUS[0]}"
+
       # registry.json and session-scan-<date>.json for the site, from the votings and members.json; no network.
       - name: Build site data
         id: site_data
@@ -138,12 +144,12 @@ jobs:
           .github/scripts/leipzig-review-issues.sh output/leipzig-review-issues/issues.json
 
       - name: Report failure
-        if: steps.extract.outcome == 'failure' || steps.site_data.outcome == 'failure'
+        if: steps.extract.outcome == 'failure' || steps.papers.outcome == 'failure' || steps.site_data.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           title='Leipzig votings: Auswertung fehlgeschlagen'
-          body="$(printf 'Lauf: %s/%s/actions/runs/%s\n\n```\n%s\n```' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(grep -E '^(failed|- )' extract.log | tail -n 40)")"
+          body="$(printf 'Lauf: %s/%s/actions/runs/%s\n\n```\n%s\n```' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(grep -E '^(failed|- )|failed:' extract.log | tail -n 40)")"
           existing="$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number')"
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body "$body"

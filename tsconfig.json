@@ -21,6 +21,7 @@
     "src/scripts/generate-paper-votings",
     "src/scripts/index-search",
     "src/scripts/leipzig-members",
+    "src/scripts/leipzig-papers",
     "src/scripts/leipzig-recordings",
     "src/scripts/leipzig-site-data",
     "src/scripts/leipzig-votings",

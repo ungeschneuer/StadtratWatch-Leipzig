@@ -4,6 +4,7 @@ import process from 'node:process';
 
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 
+import type { PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import type { MinutesFile } from '../leipzig-votings/minutes.ts';
 import type { SessionVotingsFile } from '../leipzig-votings/session-votings-file.ts';
@@ -24,6 +25,8 @@ try {
   const manifest = await readJson<RecordingsManifest>(join(args.dataDir, 'recordings.json'));
   const members = await readJson<LeipzigMembersFile>(join(args.dataDir, 'members.json'));
   if (!manifest || !members) throw new Error(`recordings.json and members.json are needed in ${args.dataDir}`);
+  // Written by leipzig-papers; without it the votes have no authors.
+  const papers = await readJson<PapersFile>(join(args.dataDir, 'papers.json'));
 
   const problems: string[] = [];
   const sessions: RegistrySessionInput[] = [];
@@ -32,7 +35,7 @@ try {
     const sessionDir = join(args.dataDir, recording.sessionId);
     const votings = await readJson<SessionVotingsFile>(join(sessionDir, `votings-${recording.sessionId}.json`));
     if (!votings) continue;
-    const result = toSessionScan(recording.sessionId, votings.votings, members);
+    const result = toSessionScan(recording.sessionId, votings.votings, members, papers);
     problems.push(...result.problems);
     published += result.scan.length;
     await writeFile(

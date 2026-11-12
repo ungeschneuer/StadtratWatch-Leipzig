@@ -409,15 +409,20 @@ function showsResult(grab: BoardGrab): boolean {
 // unreadable. Such a frame is no reading of the result.
 const MINIMUM_READABLE_SEATS = 60;
 
-function isUsableResult(grab: BoardGrab): boolean {
+function isReadableBoard(grab: BoardGrab): boolean {
   const seats = grab.reading.cells.filter((cell) => cell.kind === 'seat');
   const unreadable = seats.filter((cell) => cell.kind === 'seat' && cell.state === 'unknown').length;
-  return showsResult(grab) && seats.length >= MINIMUM_READABLE_SEATS && unreadable === 0;
+  return seats.length >= MINIMUM_READABLE_SEATS && unreadable === 0;
 }
 
-// The full-HD variant can run a few seconds apart from the low-resolution one the scan used, so the picked frames may
-// miss the result or catch a cross-fade. Then the result phase itself is searched second by second, and only after
-// that its surroundings, where a frame may show a count still in progress.
+function isUsableResult(grab: BoardGrab): boolean {
+  return showsResult(grab) && isReadableBoard(grab);
+}
+
+// The full-HD and the low-resolution variant share their timestamps (measured on 2026-11-12), so the picked frames lie
+// in the result phase. They can still catch a cross-fade to the room camera, or a phase so short that both frames miss
+// it. Then the result phase itself is searched second by second, and only after that its surroundings, where a frame
+// may show a count still in progress.
 const RESULT_SEARCH_MARGIN_SECONDS = 6;
 
 export function resultSearchSeconds(event: VoteEvent): number[] {
@@ -437,17 +442,38 @@ async function searchResultFrames(
   event: VoteEvent,
 ): Promise<{ grab: BoardGrab; agrees: boolean; frameSeconds: number[] }> {
   const results: BoardGrab[] = [];
+  const boardsWithoutBars: BoardGrab[] = [];
   for (const seconds of resultSearchSeconds(event)) {
     const grab = await grabBoard(video, url, seconds).catch(() => null);
-    if (!grab || !isUsableResult(grab)) continue;
+    if (!grab || !isReadableBoard(grab)) continue;
+    if (!showsResult(grab)) {
+      boardsWithoutBars.push(grab);
+      continue;
+    }
     const agreeing = results.find((other) => seatStates(other.reading.cells) === seatStates(grab.reading.cells));
     if (agreeing) {
       return { grab: agreeing, agrees: true, frameSeconds: [agreeing.seconds, grab.seconds] };
     }
     results.push(grab);
   }
-  if (results.length === 0) throw new Error('no readable result frame near the scanned result phase');
-  return { grab: results[0], agrees: false, frameSeconds: results.map((grab) => grab.seconds) };
+  // Bars that flashed up for a fraction of a second are caught by the low-resolution scan but by no full-HD frame. The
+  // board itself is still read, so the checks can tell the flash and discard it instead of leaving it to the review.
+  const candidates = results.length > 0 ? results : boardsWithoutBars;
+  if (candidates.length === 0) throw new Error('no readable result frame near the scanned result phase');
+  const pair = agreeingPair(candidates);
+  return pair
+    ? { grab: pair[0], agrees: true, frameSeconds: pair.map((grab) => grab.seconds) }
+    : { grab: candidates[0], agrees: false, frameSeconds: candidates.map((grab) => grab.seconds) };
+}
+
+function agreeingPair(grabs: BoardGrab[]): [BoardGrab, BoardGrab] | null {
+  for (const [position, grab] of grabs.entries()) {
+    const other = grabs
+      .slice(position + 1)
+      .find((candidate) => seatStates(candidate.reading.cells) === seatStates(grab.reading.cells));
+    if (other) return [grab, other];
+  }
+  return null;
 }
 
 type BoardGrab = { seconds: number; png: Uint8Array; frame: RgbFrame; reading: ReturnType<typeof readBoard> };

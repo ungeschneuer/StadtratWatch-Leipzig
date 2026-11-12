@@ -134,10 +134,10 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] Namens-OCR, wenn sich die Namensspalten ändern, Zuordnung zur OParl-Person; zwei Sitze auf derselben Person gehen in die Prüfung.
 - [x] **4. Plausibilitätsprüfungen:** Tafelzahlen, zweiter Frame, Ansage aus der VTT, amtliches Ergebnis aus Beschlussprotokoll, ALLRIS-TOP-Seiten und Verlaufsprotokoll. Von Hand hinzugezählte Mitglieder werden aus dem Verlaufsprotokoll übernommen (`corrected`, Tafelstand in `boardVote`).
 - [x] **5. Zuordnung zu TOP und Vorlage:** Kopfzeile → OParl-`agendaItem.number`, Drucksache → `paper.reference`, Änderungsanträge und Neufassungen zur Hauptvorlage, Fortsetzungstage durchsucht.
-  - [ ] Antragsteller:innen aus `paper.originatorOrganization`.
+  - [x] Antragsteller:innen: Leipzig füllt nur `underDirectionOf` (Geschäftsstelle einer Fraktion oder Amt/Dezernat). Skript `src/scripts/leipzig-papers` verknüpft jede Abstimmung mit ihrer Vorlage (auch Änderungsanträge über `subordinatedPaper`), `data/leipzig-8/papers.json`: 453 Abstimmungen, 352 Vorlagen. OParl nennt je Vorlage genau eine einreichende Stelle, gemeinsame Anträge mehrerer Fraktionen zählen nur für die genannte.
 - [ ] **6. Sonderfälle** als `votingMethod` erfassen: keine Tafel (Handzeichen, Anlage ausgefallen), geheime Wahl, en-bloc, punktweise Abstimmung, Befangenheit (§ 20 SächsGemO), Stimme des OB (Sitz 71), `majorityRequirement`. Bisher erkannt: Geschäftsordnungsanträge (`procedural`), ungültige Tafeln (`discarded`).
-- [ ] **Statuspunkt im 1080p-Frame:** Der runde grüne Punkt während der Abstimmung wird manchmal als Ja-Balken gelesen. Betrifft nur Ergebnisse unter einer Sekunde (alle verworfen); Abhilfe: Seitenverhältnis prüfen.
-- [ ] **Irreführender Kommentar in `extract-session.ts`:** Die Suche `searchResultFrames` begründet sich mit „1080p läuft einige Sekunden versetzt“. Gemessen am 12.11.2026: 360p und 1080p sind zeitgleich, die Suche wurde in keiner der 547 Abstimmungen gebraucht. Kommentar richtigstellen, Suche als Rückfall für Überblendungen behalten.
+- [x] **Statuspunkt im 1080p-Frame:** Ein Ergebnisbalken muss mindestens drei Viertel einer Tabellenzeile hoch sein (Balken 32–38 px, Punkt 13–17 px). Testbild `board-2026-09-status-dot.png`.
+- [x] **Irreführender Kommentar in `extract-session.ts`:** richtiggestellt (360p und 1080p zeitgleich), Suche als Rückfall für Überblendungen behalten.
 - [x] **7. Prüfung durch Menschen:** Route `/leipzig` in `session-review` (GitHub Pages), Prüffälle in `review-<datum>.json`, Benachrichtigung per Issue je Sitzung, Speichern als Commit in `corrections-<datum>.json`, Nachprüfung per Workflow. Freigabe per PR-Merge.
   - [ ] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Schreibrechte der Prüfenden, Variable `LEIPZIG_REVIEWERS`.
   - [ ] Workflows einmal auf GitHub durchlaufen lassen (bisher nur lokal getestet).
@@ -160,7 +160,8 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Registry `data/leipzig-8/registry.json`** aus `members.json` und den Sitzungen mit Abstimmungen, Skript `src/scripts/leipzig-site-data`. `approved`, sobald keine Abstimmung mehr auf Prüfung oder amtliches Ergebnis wartet (Stand 12.11.2026: 5 von 16).
 - [ ] **OParl-Pipeline schlank halten:** nur Sitzungen, TOPs und die **in Abstimmungen vorkommenden** Vorlagen (Titel, Nummer, Link zum Ratsinfo). Kein Download aller PDFs, kein Tika, kein Typesense.
 - [x] **Adapter M3 → `session-scan-*.json`** (`src/scripts/leipzig-site-data`): veröffentlicht `verified`, `corrected`, `reviewed`, `provisional` (510 von 547), Namen wie in der Registry, Titel aus OParl, Typ aus der Drucksachennummer. Läuft in den Workflows `leipzig-votings` und `leipzig-review-recheck`. Site-Build mit Leipzig geprüft (12.11.2026, 4878 Seiten, keine Fehler).
-  - [ ] `authors` aus `paper.originatorOrganization` (siehe M3, Schritt 5), `majorityRequirement` (siehe M3, Schritt 6).
+  - [x] `authors` aus `papers.json`: Fraktionen unter ihrem Namen auf der Seite, Ämter und Dezernate ohne Nummer; `motionId` aus OParl (behebt VII/VIII aus der OCR).
+  - [ ] `majorityRequirement` (siehe M3, Schritt 6).
   - [ ] `voting-paper-map.json` ist leer, bis Leipziger Vorlagen eigene Seiten haben.
 - [ ] **S3/CloudFront ersetzen:**
   - [ ] Abstimmungs-PNGs (`generate-image-assets`) beim Build erzeugen oder als GitHub-Release-Assets ablegen

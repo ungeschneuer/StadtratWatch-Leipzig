@@ -7,6 +7,7 @@ the API v1 then work for Leipzig as they do for Magdeburg. The script reads only
 
 | Input                                                | From                                                    |
 | ---------------------------------------------------- | ------------------------------------------------------- |
+| `data/leipzig-8/papers.json`                         | [`leipzig-papers`](../leipzig-papers/README.md)         |
 | `data/leipzig-8/members.json`                        | [`leipzig-members`](../leipzig-members/README.md)       |
 | `data/leipzig-8/recordings.json`                     | [`leipzig-recordings`](../leipzig-recordings/README.md) |
 | `data/leipzig-8/{date}/votings-{date}.json`, minutes | [`leipzig-votings`](../leipzig-votings/README.md)       |
@@ -27,9 +28,13 @@ the API v1 then work for Leipzig as they do for Magdeburg. The script reads only
 - **IDs.** `votingFilename` is `<date>-<NNN>.png` with the position of the vote in the scan, so a vote keeps its address
   on the site when another vote of the session is decided later.
 
-Not yet carried over: the authors of motions (`authors` is empty), the majority a vote needed (always simple), and the
-faction of the day. The site gives each person one faction, the latest (`factionId`); `votes-<date>.csv` and
-`members.json` have the faction on each session day.
+Authors come from `papers.json` ([`leipzig-papers`](../leipzig-papers/README.md)): a faction's office becomes the
+faction's name, as the site credits motions by it; offices of the administration keep their name. OParl names one
+submitter per paper, so a joint motion counts for that faction only. The paper reference is taken from OParl where the
+vote is linked, which corrects the period numeral OCR confuses.
+
+Not yet carried over: the majority a vote needed (always simple) and the faction of the day. The site gives each person
+one faction, the latest (`factionId`); `votes-<date>.csv` and `members.json` have the faction on each session day.
 
 ## Usage
 

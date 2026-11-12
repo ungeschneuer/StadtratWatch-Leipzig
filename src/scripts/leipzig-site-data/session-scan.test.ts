@@ -3,7 +3,7 @@ import { describe, expect, it } from 'bun:test';
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
-import { formatTimestamp, subjectType, toSessionScan } from './session-scan.ts';
+import { authorsOf, formatTimestamp, subjectType, toSessionScan } from './session-scan.ts';
 
 const members = {
   persons: [
@@ -147,5 +147,73 @@ describe('formatTimestamp', () => {
   it('writes hours, minutes and seconds with two digits', () => {
     expect(formatTimestamp(59.9)).toEqual('00:00:59');
     expect(formatTimestamp(36125)).toEqual('10:02:05');
+  });
+});
+
+describe('authorsOf', () => {
+  const factions = [
+    {
+      id: 'buendnis-90-die-gruenen',
+      name: 'Bündnis 90/Die Grünen',
+      seats: 11,
+      oparlId: 'f',
+      oparlName: 'Fraktion Bündnis 90/Die Grünen',
+    },
+    { id: 'cdu', name: 'CDU', seats: 13, oparlId: 'c', oparlName: 'CDU-Fraktion' },
+    { id: 'die-linke', name: 'DIE LINKE', seats: 12, oparlId: 'l', oparlName: 'Fraktion DIE LINKE' },
+    { id: 'bsw', name: 'BSW', seats: 7, oparlId: 'b', oparlName: 'Fraktion BSW' },
+    { id: 'die-freie-fraktion', name: 'Die Freie Fraktion', seats: 4, oparlId: 'x', oparlName: 'Die Freie Fraktion' },
+    { id: 'fraktionslos', name: 'fraktionslos', seats: 3, oparlId: null, oparlName: null },
+  ];
+
+  it('names factions as the site does and offices of the administration without their number', () => {
+    const originators = [
+      'Geschäftsstelle der Fraktion Bündnis 90/Die Grünen',
+      'Geschäftsstelle der CDU-Fraktion',
+      'Geschäftsstelle der Fraktion Die Linke',
+      'Geschäftsstelle der BSW-Fraktion',
+      'Geschäftsstelle der Freien Fraktion',
+      '02.8 Dezernat Wirtschaft, Arbeit und Digitales',
+      '01.15 Büro für Ratsangelegenheiten',
+    ].map((name, index) => ({ oparlId: `org/${index}`, name }));
+
+    expect(authorsOf({ originators }, { factions })).toEqual([
+      'Bündnis 90/Die Grünen',
+      'CDU',
+      'DIE LINKE',
+      'BSW',
+      'Die Freie Fraktion',
+      'Dezernat Wirtschaft, Arbeit und Digitales',
+      'Büro für Ratsangelegenheiten',
+    ]);
+  });
+
+  it('takes reference and authors from the linked OParl paper', () => {
+    const papers = {
+      papers: {
+        'paper/1': {
+          oparlId: 'paper/1',
+          reference: 'VIII-DS-02186-ÄA-02',
+          name: '',
+          paperType: null,
+          date: null,
+          web: null,
+          originators: [{ oparlId: 'org/1', name: 'Geschäftsstelle der CDU-Fraktion' }],
+        },
+      },
+      votings: { '2026-10-29': { '0': 'paper/1' } },
+    };
+    const misread = voting(0, 'verified', {
+      heading: { raw: '', agendaItemNumber: '19.10.2', paperReference: 'VII-DS-02186-ÄA-02', title: '' },
+    });
+    const [item] = toSessionScan(
+      '2026-10-29',
+      [misread],
+      { ...members, factions } as unknown as LeipzigMembersFile,
+      papers,
+    ).scan;
+
+    expect(item.votingSubject.motionId).toEqual('VIII-DS-02186-ÄA-02');
+    expect(item.votingSubject.authors).toEqual(['CDU']);
   });
 });
