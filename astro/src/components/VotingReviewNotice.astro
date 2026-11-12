@@ -24,11 +24,11 @@ const reviewUrl = sitePath(`review/leipzig/${sessionId}`);
         Abstimmung damit abgeglichen.
       </p>
       <p>
-        Fehler gefunden? Korrekturen sammeln wir im
+        Fehler gefunden? Korrekturen sammeln wir im{' '}
         <a href={DATA_PULL_REQUEST_URL} class="link" target="_blank">
           Pull Request mit den Leipziger Daten
         </a>
-        ; kommentieren Sie dort oder schreiben Sie an
+        ; kommentieren Sie dort oder schreiben Sie an{' '}
         <a href={`mailto:${CONTACT_EMAIL}`} class="link">
           {CONTACT_EMAIL}
         </a>
@@ -47,15 +47,15 @@ const reviewUrl = sitePath(`review/leipzig/${sessionId}`);
         abweichen. Einzelne Stimmen können falsch gelesen sein.
       </p>
       <p>
-        So wird es behoben: Prüfende vergleichen die Tafel in der
+        So wird es behoben: Prüfende vergleichen die Tafel in der{' '}
         <a href={reviewUrl} class="link">
           Prüfoberfläche
-        </a>
+        </a>{' '}
         mit dem Video und entscheiden den Fall. Die Entscheidung kommt als
-        Commit in den
+        Commit in den{' '}
         <a href={DATA_PULL_REQUEST_URL} class="link" target="_blank">
           Pull Request mit den Leipziger Daten
-        </a>
+        </a>{' '}
         und erscheint hier, sobald er übernommen ist.
       </p>
     </div>
