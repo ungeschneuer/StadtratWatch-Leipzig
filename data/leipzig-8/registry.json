@@ -10,7 +10,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-17122025",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2025/20251217_RV_livestream.smil&videostartoffset=914&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/ratsversammlung-aufzeichnung-17.12.2025.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406737&OTYP=41",
       "approved": true,
@@ -26,7 +27,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-18122025",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2025/20251218_RV_livestream.smil&videostartoffset=660&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/aufzeichnung-ratsversammlung-18.12.2025.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406745&OTYP=41",
       "approved": true,
@@ -42,7 +44,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28012026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/20260128_RV_livestream.smil&videostartoffset=890&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_28.01.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546029&OTYP=41",
       "approved": false,
@@ -58,7 +61,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25022026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/20260225_RV_livestream.smil&videostartoffset=646&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_25.02.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546014&OTYP=41",
       "approved": false,
@@ -74,7 +78,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25032026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_25_Mrz_2026.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_25.03.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545861&OTYP=41",
       "approved": false,
@@ -90,7 +95,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-26032026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_26_Mrz_2026.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/videopreview_Livestream_Stadtrat_Leipzig-26-M%C3%A4rz-2026.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545839&OTYP=41",
       "approved": true,
@@ -106,7 +112,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-29042026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_29_April_2026.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Aufzeichnung_Ratsversammlung_29.04.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545747&OTYP=41",
       "approved": true,
@@ -122,7 +129,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-27052026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_27_Mai_2026.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_27.05.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4589019&OTYP=41",
       "approved": false,
@@ -138,7 +146,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28052026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_28_Mai_2026_-_04-05-16.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/videopreview_Ratsversammlung_28052026.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4589020&OTYP=41",
       "approved": true,
@@ -154,7 +163,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-01072026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_01_Juli_2026_-_02-07-21.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_20260701.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775236&OTYP=41",
       "approved": false,
@@ -170,7 +180,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-02072026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_02_Juli_2026_-_04-07-32.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_02.07.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775237&OTYP=41",
       "approved": false,
@@ -186,7 +197,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-02092026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_02_September_2026_-_02-08-10.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview-Ratsversammlung-02092026.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4828216&OTYP=41",
       "approved": false,
@@ -202,7 +214,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-03092026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_03_September_2026_-_04-07-39.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/01.1_Geschaeftsbereich_OBM/12_Ref_Kommunikation/Videostream_Ratsversammlung_03.09.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": null,
       "approved": false,
@@ -218,7 +231,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-30092026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_30_September_2026_-_02-06-35.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videostream_Ratsversammlung_30.09.2026.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4877966&OTYP=41",
       "approved": false
@@ -230,7 +244,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_28_Oktober_2026_-_02-06-08.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_28102026.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": null,
       "approved": false
@@ -242,7 +257,8 @@
       "youtubeUrl": "",
       "video": {
         "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-29-oktober-2026",
-        "label": "Mediathek"
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_29_Oktober_2026_-_04-05-14.smil&videostartoffset=1&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_Stadtrat_OBM_2026-10-29.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": null,
       "approved": false
