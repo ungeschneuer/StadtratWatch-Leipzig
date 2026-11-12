@@ -52,7 +52,8 @@ export type VerlaufFile = {
 export const VERLAUF_PARSER_VERSION = 2;
 
 export async function extractPdfLines(pdf: Uint8Array): Promise<string[]> {
-  const document = await getDocument({ data: pdf, verbosity: 0, isEvalSupported: false }).promise;
+  const loadingTask = getDocument({ data: pdf, verbosity: 0 });
+  const document = await loadingTask.promise;
   const lines: string[] = [];
   for (let page = 1; page <= document.numPages; page++) {
     let line = '';
@@ -66,7 +67,7 @@ export async function extractPdfLines(pdf: Uint8Array): Promise<string[]> {
     }
     if (line.trim()) lines.push(line.trim());
   }
-  await document.destroy();
+  await loadingTask.destroy();
   return lines.map(normalizeSpaces).filter((line) => line !== '');
 }
 

@@ -14,7 +14,7 @@
   "dependencies": {
     "@srw-astro/models": "workspace:*",
     "fast-png": "8.0.0",
-    "pdfjs-dist": "4.10.38",
+    "pdfjs-dist": "6.5.438",
     "tesseract.js": "7.0.0"
   },
   "devDependencies": {
