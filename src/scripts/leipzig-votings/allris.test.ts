@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'bun:test';
 
-import { findAttachmentPath, listAgendaItemIds, pageLines } from './allris.ts';
+import {
+  AllrisUnreachableError,
+  createAllrisClient,
+  findAttachmentPath,
+  listAgendaItemIds,
+  pageLines,
+} from './allris.ts';
 import { parseAgendaItemPage } from './minutes.ts';
 import { agendaNumbersOf } from './official-sources.ts';
 
@@ -38,5 +44,41 @@ describe('ALLRIS pages', () => {
       },
       { agendaItemNumber: '19.5.6', J: 29, N: 31, E: 0 },
     ]);
+  });
+});
+
+describe('ALLRIS client', () => {
+  function timingOutFetch() {
+    const calls: string[] = [];
+    const fetchImplementation = (url: string) => {
+      calls.push(String(url));
+      return Promise.reject(new DOMException('The operation timed out.', 'TimeoutError'));
+    };
+    return { calls, fetchImplementation };
+  }
+
+  it('gives up on the first timeout instead of retrying it', async () => {
+    const { calls, fetchImplementation } = timingOutFetch();
+    const allris = createAllrisClient('test', { fetchImplementation, pauseMilliseconds: 0 });
+
+    await expect(allris.getText('to010?SILFDNR=1')).rejects.toBeInstanceOf(AllrisUnreachableError);
+    expect(calls).toHaveLength(1);
+  });
+
+  it('asks ALLRIS no more once it has not answered in this run', async () => {
+    const { calls, fetchImplementation } = timingOutFetch();
+    const allris = createAllrisClient('test', { fetchImplementation, pauseMilliseconds: 0 });
+
+    await allris.getText('to010?SILFDNR=1').catch(() => {});
+    await expect(allris.getText('to010?SILFDNR=2')).rejects.toBeInstanceOf(AllrisUnreachableError);
+    expect(calls).toHaveLength(1);
+  });
+
+  it('keeps retrying a server error', async () => {
+    const statuses = [503, 200];
+    const fetchImplementation = () => Promise.resolve(new Response('ok', { status: statuses.shift() }));
+    const allris = createAllrisClient('test', { fetchImplementation, pauseMilliseconds: 0, retryPauseMilliseconds: 0 });
+
+    expect(await allris.getText('to010?SILFDNR=1')).toBe('ok');
   });
 });

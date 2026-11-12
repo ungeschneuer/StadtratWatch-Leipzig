@@ -6,40 +6,80 @@ export const ALLRIS_BASE_URL = 'https://ratsinformation.leipzig.de/allris_leipzi
 
 const REQUEST_TIMEOUT_MILLISECONDS = 120_000;
 const PAUSE_MILLISECONDS = 300;
+const RETRY_PAUSE_MILLISECONDS = 5_000;
+const MAXIMUM_ATTEMPTS = 3;
 
 export type AllrisClient = {
   getText(path: string): Promise<string>;
   getBytes(path: string): Promise<Uint8Array>;
 };
 
-export function createAllrisClient(userAgent: string): AllrisClient {
+type FetchPage = (url: string, init: RequestInit) => Promise<Response>;
+
+export type AllrisClientOptions = {
+  fetchImplementation?: FetchPage;
+  pauseMilliseconds?: number;
+  retryPauseMilliseconds?: number;
+};
+
+// ALLRIS does not answer GitHub's runners at all, while it answers other machines within a second. Waiting out every
+// timeout again cost six minutes per session, so the first one ends ALLRIS for the rest of the run.
+export class AllrisUnreachableError extends Error {
+  constructor(cause: unknown) {
+    super(`ALLRIS does not answer (${cause instanceof Error ? cause.message : String(cause)})`, { cause });
+    this.name = 'AllrisUnreachableError';
+  }
+}
+
+function isTimeout(error: unknown): boolean {
+  return error instanceof Error && error.name === 'TimeoutError';
+}
+
+export function createAllrisClient(userAgent: string, options: AllrisClientOptions = {}): AllrisClient {
+  const fetchImplementation: FetchPage = options.fetchImplementation ?? fetch;
+  const pauseMilliseconds = options.pauseMilliseconds ?? PAUSE_MILLISECONDS;
+  const retryPauseMilliseconds = options.retryPauseMilliseconds ?? RETRY_PAUSE_MILLISECONDS;
   const cookies = new Map<string, string>();
   let lastRequestAt = 0;
+  let unreachable: AllrisUnreachableError | null = null;
 
-  async function request(path: string): Promise<Response> {
-    const wait = lastRequestAt + PAUSE_MILLISECONDS - Date.now();
+  function rememberCookies(response: Response) {
+    for (const header of response.headers.getSetCookie()) {
+      const [pair] = header.split(';');
+      const separator = pair.indexOf('=');
+      cookies.set(pair.slice(0, separator).trim(), pair.slice(separator + 1).trim());
+    }
+  }
+
+  async function fetchOnce(path: string): Promise<Response> {
+    const wait = lastRequestAt + pauseMilliseconds - Date.now();
     if (wait > 0) await Bun.sleep(wait);
     lastRequestAt = Date.now();
+    return await fetchImplementation(`${ALLRIS_BASE_URL}/${path.replace(/^\.?\//, '')}`, {
+      headers: {
+        'User-Agent': userAgent,
+        ...(cookies.size > 0 ? { Cookie: [...cookies].map(([name, value]) => `${name}=${value}`).join('; ') } : {}),
+      },
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MILLISECONDS),
+    });
+  }
+
+  async function request(path: string): Promise<Response> {
+    if (unreachable) throw unreachable;
     for (let attempt = 1; ; attempt++) {
       try {
-        const response = await fetch(`${ALLRIS_BASE_URL}/${path.replace(/^\.?\//, '')}`, {
-          headers: {
-            'User-Agent': userAgent,
-            ...(cookies.size > 0 ? { Cookie: [...cookies].map(([name, value]) => `${name}=${value}`).join('; ') } : {}),
-          },
-          signal: AbortSignal.timeout(REQUEST_TIMEOUT_MILLISECONDS),
-        });
-        for (const header of response.headers.getSetCookie()) {
-          const [pair] = header.split(';');
-          const separator = pair.indexOf('=');
-          cookies.set(pair.slice(0, separator).trim(), pair.slice(separator + 1).trim());
-        }
-        if (response.status >= 500 && attempt < 3) throw new Error(`answered ${response.status}`);
+        const response = await fetchOnce(path);
+        rememberCookies(response);
+        if (response.status >= 500 && attempt < MAXIMUM_ATTEMPTS) throw new Error(`answered ${response.status}`);
         if (!response.ok) throw new Error(`GET ${path} answered ${response.status}`);
         return response;
       } catch (error) {
-        if (attempt >= 3) throw error;
-        await Bun.sleep(5_000 * attempt);
+        if (isTimeout(error)) {
+          unreachable = new AllrisUnreachableError(error);
+          throw unreachable;
+        }
+        if (attempt >= MAXIMUM_ATTEMPTS) throw error;
+        await Bun.sleep(retryPauseMilliseconds * attempt);
       }
     }
   }
