@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-02-25",
-  "generatedAt": "2026-11-11T23:06:28.823Z",
+  "generatedAt": "2026-11-12T14:30:27.490Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260225_RV_livestream.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25022026",
@@ -69,7 +69,80 @@
         "correction": null
       },
       "announced": null,
-      "transcript": [],
+      "transcript": [
+        {
+          "seconds": 2868.28,
+          "timecode": "0:47:48",
+          "text": "Ich bitte Sie um Ihr Votum, wenn Sie dem folgen können.",
+          "highlight": false
+        },
+        {
+          "seconds": 2871.99,
+          "timecode": "0:47:51",
+          "text": "Streichung auch Wiederausleihe.",
+          "highlight": false
+        },
+        {
+          "seconds": 2874.08,
+          "timecode": "0:47:54",
+          "text": "Konnten alle abstimmen? Herr Panowitsch, grün.",
+          "highlight": false
+        },
+        {
+          "seconds": 2897.73,
+          "timecode": "0:48:17",
+          "text": "Dann gibt es 39 Ja-Stimmen, 26 Nein und eine Enthaltung, so positiv votiert.",
+          "highlight": true
+        },
+        {
+          "seconds": 2905.41,
+          "timecode": "0:48:25",
+          "text": "Und wir kommen zum Thema, außer bei Ausleihen über ein Kinderkonto.",
+          "highlight": false
+        },
+        {
+          "seconds": 2910.9,
+          "timecode": "0:48:30",
+          "text": "Da bitte ich Sie ebenfalls um Ihr Votum.",
+          "highlight": false
+        },
+        {
+          "seconds": 2924.76,
+          "timecode": "0:48:44",
+          "text": "Jetzt hat es geklappt bei Herrn Panowitsch.",
+          "highlight": false
+        },
+        {
+          "seconds": 2931.1,
+          "timecode": "0:48:51",
+          "text": "Keine, alle haben abgestimmt, dann bitte ich das Ergebnis aufzurufen.",
+          "highlight": false
+        },
+        {
+          "seconds": 2938.74,
+          "timecode": "0:48:58",
+          "text": "26 Ja, 39 Nein, eine Enthaltung, damit abgelehnt.",
+          "highlight": true
+        },
+        {
+          "seconds": 2943.04,
+          "timecode": "0:49:03",
+          "text": "Wir kommen zum Änderungsantrag der CDU-Fraktion, EA02.",
+          "highlight": false
+        },
+        {
+          "seconds": 2950.14,
+          "timecode": "0:49:10",
+          "text": "Bitte Sie um Ihr Votum.",
+          "highlight": false
+        },
+        {
+          "seconds": 2961.26,
+          "timecode": "0:49:21",
+          "text": "Das Ergebnis ist sehr deutlich, 14 zu 52, zu 0, damit abgelehnt.",
+          "highlight": true
+        }
+      ],
       "neighbours": {
         "previous": {
           "votingIndex": 3,

@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-01-28",
-  "generatedAt": "2026-11-11T23:06:28.813Z",
+  "generatedAt": "2026-11-12T14:30:27.470Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260128_RV_livestream.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28012026",
@@ -69,7 +69,74 @@
         "correction": null
       },
       "announced": null,
-      "transcript": [],
+      "transcript": [
+        {
+          "seconds": 7934.39,
+          "timecode": "2:12:14",
+          "text": "Ich stelle nunmehr den Änderungsantrag der CDU-Fraktion zur Abstimmung, der den kompletten Beschlussvorschlag ersetzen soll.",
+          "highlight": false
+        },
+        {
+          "seconds": 7943.26,
+          "timecode": "2:12:23",
+          "text": "Ich bitte Sie um Ihr Votum.",
+          "highlight": false
+        },
+        {
+          "seconds": 7955.1,
+          "timecode": "2:12:35",
+          "text": "Konnten alle abstimmen?",
+          "highlight": false
+        },
+        {
+          "seconds": 7966.95,
+          "timecode": "2:12:46",
+          "text": "Frau Nagel, wie ist Ihr Votum?",
+          "highlight": false
+        },
+        {
+          "seconds": 7969.9,
+          "timecode": "2:12:49",
+          "text": "Ja, grün.",
+          "highlight": false
+        },
+        {
+          "seconds": 7972.53,
+          "timecode": "2:12:52",
+          "text": "Dann das Ergebnis laut dann 41 zu 23 zu 1.",
+          "highlight": true
+        },
+        {
+          "seconds": 7977.97,
+          "timecode": "2:12:57",
+          "text": "So beschlossen.",
+          "highlight": false
+        },
+        {
+          "seconds": 7979.62,
+          "timecode": "2:12:59",
+          "text": "14.5. Der Ortschaftsrat Engelsdorf beantragt zum Thema Fahrkartenverkauf. Frau Feichtinger wird für den Ortschaftsrat einbringen. Bitte schön.",
+          "highlight": false
+        },
+        {
+          "seconds": 8006.56,
+          "timecode": "2:13:26",
+          "text": "Sehr geehrter Herr Oberbürgermeister, sehr geehrte Damen und Herren. Ich will es auch gar nicht so lange ausführen. Ich glaube, die Neufassung des Ortschaftsrates zu dem Antrag ist eigentlich relativ selbsterklärend.",
+          "highlight": false
+        },
+        {
+          "seconds": 8027.86,
+          "timecode": "2:13:47",
+          "text": "Wo wir uns erstmal sehr drüber freuen, ist, dass wir seit dem Fahrplanwechsel jetzt in unserer Ortschaft Engelsdorf mit den ganzen Ortsteilen das Flexa-Angebot nutzen können.",
+          "highlight": false
+        },
+        {
+          "seconds": 8037.44,
+          "timecode": "2:13:57",
+          "text": "Und daraufhin ist auch sozusagen die Neufassung entstanden, weil wir nämlich festgestellt haben, dass viele ältere Menschen, die sozusagen nicht firm sind mit Handy und App und Ticketautomat bargeldlos, hier ein Problem haben überhaupt, das Flexa zu nutzen, weil eben halt Fahrkarten in den Ortsteilen nicht mehr verkauft werden, beziehungsweise für diese Menschen schwer zugänglich sind.",
+          "highlight": false
+        }
+      ],
       "neighbours": {
         "previous": {
           "votingIndex": 11,
@@ -677,17 +744,40 @@
       ],
       "candidates": [
         {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+          "boardName": "Nagel, Juliane",
+          "reason": "in der Ansage genannt"
+        },
+        {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000047",
+          "boardName": "Feichtinger, Anja",
+          "reason": "in der Ansage genannt"
+        },
+        {
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
           "boardName": "Lehmann, Jens",
           "reason": "anwesend, ohne Stimme"
-        },
-        {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
-          "boardName": "Nagel, Juliane",
-          "reason": "anwesend, ohne Stimme"
         }
       ],
-      "suggestions": [],
+      "suggestions": [
+        {
+          "label": "Stimmen auf das amtliche Ergebnis ändern: Nagel, Juliane → Ja",
+          "correction": {
+            "voting": {
+              "videoSeconds": 7972.5,
+              "agendaItemNumber": "14.4"
+            },
+            "seats": [
+              {
+                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+                "vote": "J"
+              }
+            ],
+            "reason": "Amtliches Ergebnis 41/23/1",
+            "source": "beschlussprotokoll: Abstimmungsergebnis zum ÄÄ:; verlaufsprotokoll: Abstimmung: 41 - 23 - 1. So beschlossen."
+          }
+        }
+      ],
       "reviews": []
     },
     {
@@ -748,7 +838,128 @@
         "correction": null
       },
       "announced": null,
-      "transcript": [],
+      "transcript": [
+        {
+          "seconds": 21395.74,
+          "timecode": "5:56:35",
+          "text": "Frage in die Runde Konten.",
+          "highlight": false
+        },
+        {
+          "seconds": 21406.21,
+          "timecode": "5:56:46",
+          "text": "Alle abstimmen.",
+          "highlight": false
+        },
+        {
+          "seconds": 21408.75,
+          "timecode": "5:56:48",
+          "text": "Frau Falken fehlt noch.",
+          "highlight": false
+        },
+        {
+          "seconds": 21411.43,
+          "timecode": "5:56:51",
+          "text": "Frau Nagel hat noch keine neue Batterie.",
+          "highlight": false
+        },
+        {
+          "seconds": 21417.99,
+          "timecode": "5:56:57",
+          "text": "Also Enthaltungen.",
+          "highlight": true
+        },
+        {
+          "seconds": 21419.13,
+          "timecode": "5:56:59",
+          "text": "Kommt noch eine dazu?",
+          "highlight": false
+        },
+        {
+          "seconds": 21421.26,
+          "timecode": "5:57:01",
+          "text": "Dann schließe ich jetzt die Abstimmung mit 47.6 zu 9.",
+          "highlight": true
+        },
+        {
+          "seconds": 21427.84,
+          "timecode": "5:57:07",
+          "text": "So beschlossen.",
+          "highlight": false
+        },
+        {
+          "seconds": 21429.65,
+          "timecode": "5:57:09",
+          "text": "18.3.",
+          "highlight": false
+        },
+        {
+          "seconds": 21431.49,
+          "timecode": "5:57:11",
+          "text": "Kulquitzer See.",
+          "highlight": false
+        },
+        {
+          "seconds": 21433.13,
+          "timecode": "5:57:13",
+          "text": "Gibt es Gegenstimmen?",
+          "highlight": false
+        },
+        {
+          "seconds": 21437.91,
+          "timecode": "5:57:17",
+          "text": "Enthaltungen?",
+          "highlight": true
+        },
+        {
+          "seconds": 21440.01,
+          "timecode": "5:57:20",
+          "text": "Einstimmig.",
+          "highlight": false
+        },
+        {
+          "seconds": 21440.49,
+          "timecode": "5:57:20",
+          "text": "So beschlossen.",
+          "highlight": false
+        },
+        {
+          "seconds": 21442.94,
+          "timecode": "5:57:22",
+          "text": "Bundesförderprogramm Sanierung kommunaler Sportstätten.",
+          "highlight": false
+        },
+        {
+          "seconds": 21445.76,
+          "timecode": "5:57:25",
+          "text": "Gibt es Gegenstimmen?",
+          "highlight": false
+        },
+        {
+          "seconds": 21447.74,
+          "timecode": "5:57:27",
+          "text": "Enthaltungen, eine Enthaltung mit großer Mehrheit, ohne Gegenstimmen, so beschlossen.",
+          "highlight": true
+        },
+        {
+          "seconds": 21455,
+          "timecode": "5:57:35",
+          "text": "18.05, Feuerwehrzentrum Elferstraße, Gegenstimmen, Enthaltungen, einstimmig, beschlossen.",
+          "highlight": true
+        },
+        {
+          "seconds": 21465.47,
+          "timecode": "5:57:45",
+          "text": "18.06, Schraderhaus, Schule, Gegenstimmen, Enthaltungen, einstimmig, so beschlossen.",
+          "highlight": true
+        },
+        {
+          "seconds": 21477.7,
+          "timecode": "5:57:57",
+          "text": "18.08 war vertagt, 18.09 Gesamtfinanzierungsbeitrag Verkehrsleistungsfinanzierung, Gegenstimmen, Enthaltungen, eine Enthaltung, ansonsten mit großer Mehrheit ohne Gegenstimme, so beschlossen.",
+          "highlight": true
+        }
+      ],
       "neighbours": {
         "previous": {
           "votingIndex": 23,
@@ -1356,9 +1567,14 @@
       ],
       "candidates": [
         {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001506",
+          "boardName": "Falken, Cornelia",
+          "reason": "in der Ansage genannt"
+        },
+        {
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
           "boardName": "Nagel, Juliane",
-          "reason": "anwesend, ohne Stimme"
+          "reason": "in der Ansage genannt"
         },
         {
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/651",
@@ -1366,7 +1582,25 @@
           "reason": "anwesend, ohne Stimme"
         }
       ],
-      "suggestions": [],
+      "suggestions": [
+        {
+          "label": "Stimmen auf das amtliche Ergebnis ändern: Nagel, Juliane → Enthaltung",
+          "correction": {
+            "voting": {
+              "videoSeconds": 21420,
+              "agendaItemNumber": "18.2"
+            },
+            "seats": [
+              {
+                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+                "vote": "E"
+              }
+            ],
+            "reason": "Amtliches Ergebnis 47/6/9",
+            "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 47 - 6 - 9. So beschlossen."
+          }
+        }
+      ],
       "reviews": []
     }
   ]

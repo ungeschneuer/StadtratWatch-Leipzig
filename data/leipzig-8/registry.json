@@ -13,7 +13,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406737&OTYP=41",
-      "approved": true
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2003371"
+      }
     },
     {
       "id": "2025-12-18",
@@ -25,7 +29,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406745&OTYP=41",
-      "approved": true
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2003382"
+      }
     },
     {
       "id": "2026-01-28",
@@ -37,7 +45,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546029&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004593"
+      }
     },
     {
       "id": "2026-02-25",
@@ -49,7 +61,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546014&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004594"
+      }
     },
     {
       "id": "2026-03-25",
@@ -61,7 +77,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545861&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004595"
+      }
     },
     {
       "id": "2026-03-26",
@@ -73,7 +93,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545839&OTYP=41",
-      "approved": true
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004606"
+      }
     },
     {
       "id": "2026-04-29",
@@ -85,7 +109,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545747&OTYP=41",
-      "approved": true
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004596"
+      }
     },
     {
       "id": "2026-05-27",
@@ -97,7 +125,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4589019&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004597"
+      }
     },
     {
       "id": "2026-05-28",
@@ -109,7 +141,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4589020&OTYP=41",
-      "approved": true
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004608"
+      }
     },
     {
       "id": "2026-07-01",
@@ -121,7 +157,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775236&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004598"
+      }
     },
     {
       "id": "2026-07-02",
@@ -133,7 +173,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775237&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004609"
+      }
     },
     {
       "id": "2026-09-02",
@@ -145,7 +189,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4828216&OTYP=41",
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004599"
+      }
     },
     {
       "id": "2026-09-03",
@@ -157,7 +205,11 @@
         "label": "Mediathek"
       },
       "meetingMinutesUrl": null,
-      "approved": false
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004610"
+      }
     },
     {
       "id": "2026-09-30",

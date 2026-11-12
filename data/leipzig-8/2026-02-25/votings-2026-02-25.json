@@ -4,7 +4,7 @@
   "source": {
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25022026",
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260225_RV_livestream.smil/playlist.m3u8",
-    "subtitleFile": null,
+    "subtitleFile": "2026-02-25/subtitles-2026-02-25.vtt",
     "method": "video-board",
     "extractorVersion": 1
   },

@@ -34,8 +34,8 @@
       "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2025/20251218_RV_livestream.smil/playlist.m3u8",
       "durationSeconds": 7314,
       "subtitleUrl": null,
-      "subtitleFile": null,
-      "subtitleSha256": null,
+      "subtitleFile": "2025-12-18/subtitles-2025-12-18.vtt",
+      "subtitleSha256": "91df8126b4c0ca342a70454d22a4b9856b513980a28781d7c2a5261e7d712397",
       "firstSeen": "2026-11-10",
       "goneSince": null
     },
@@ -51,8 +51,8 @@
       "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260128_RV_livestream.smil/playlist.m3u8",
       "durationSeconds": 26044,
       "subtitleUrl": null,
-      "subtitleFile": null,
-      "subtitleSha256": null,
+      "subtitleFile": "2026-01-28/subtitles-2026-01-28.vtt",
+      "subtitleSha256": "a6c4de0f4db910f793631fd1990fd31cd1345cd10219bee33d9a9721d7bc9056",
       "firstSeen": "2026-11-10",
       "goneSince": null
     },
@@ -68,8 +68,8 @@
       "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260225_RV_livestream.smil/playlist.m3u8",
       "durationSeconds": 27092,
       "subtitleUrl": null,
-      "subtitleFile": null,
-      "subtitleSha256": null,
+      "subtitleFile": "2026-02-25/subtitles-2026-02-25.vtt",
+      "subtitleSha256": "c84a9041de31b207ef23e69831576839f02084b041af2f3e29d524de5efb6b8a",
       "firstSeen": "2026-11-10",
       "goneSince": null
     },

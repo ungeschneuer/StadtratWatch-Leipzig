@@ -2,7 +2,7 @@
   "sessionId": "2025-12-18",
   "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2003382",
   "fetchedAt": "2026-11-11T22:35:49.027Z",
-  "parserVersion": 1,
+  "parserVersion": 2,
   "results": [
     {
       "order": 0,
@@ -117,6 +117,2421 @@
       "E": 17,
       "line": "Abstimmung: 41 - 0 - 17. So beschlossen.",
       "context": "Ihr Votum zur Vorlage als Ganzes, bitte. - Jetzt konnten alle abstimmen."
+    }
+  ],
+  "contributions": [
+    {
+      "order": 0,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [],
+      "afterResult": null,
+      "text": "Meine sehr verehrten Kolleginnen und Kollegen! Herzlich willkommen zur Fortsetzung unserer Ratsversammlung. Wie üblich grüße ich alle anderen Gäste ganz herzlich, ganz besonders herzlich die Vertreterinnen und Vertreter der Medien.\n\nDas Beschlussprotokoll wurde gestern bereits festgelegt: Andreas Geisler und Ralf Pannowitsch sind dafür zuständig. Zu den Entschuldigungen: Heute haben sich eine ganze Reihe von Kolleginnen und Kollegen entschuldigt: Herr Lehmann, Herr Dossin, Herr Nowak, Herr Schultz, Herr Beyer, Herr Droese, Herr Farkas, Frau Dr. Naumov, Herr Pellmann, Frau März, Herr Recke, Herr Morlok und Bürgermeister Hörning, der für mich auf Dienstreise ist. Ich verweise wie üblich § 20: Beim Verlassen der Sitzung bitte Mitteilung an uns.\n\nIch komme zur Anwesenheit. Wie viele sind wir? Bitte betätigen Sie Ihr Gerät. - Frau Herbst-Weckel muss ich so dazuzählen, denn ihr Gerät funktioniert nicht. - Wir haben 51 Meldungen. Das sind 71 Prozent Anwesenheit. Wir sind beschlussfähig.\n\nWir kommen zum Ablauf. Wir haben gestern vereinbart, mit den Anfragen zu beginnen. Wir haben nach Abzug der gestern für die Beantwortung der Dringlichen Anfrage benötigten Zeit eine Fragestunde von 40 Minuten, und im Anschluss werde ich dann die Informationsvorlage unter 19.3 und danach die offenen Beschlussvorlagen aufrufen."
+    },
+    {
+      "order": 1,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Herr Schopphoven, nehme ich an?"
+    },
+    {
+      "order": 2,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. - Jetzt ist es natürlich schade, dass Herr Hörning nicht da ist. Fangen wir heute einmal ein bisschen anders an, Herr Oberbürgermeister: Ich würde Sie gern etwas fragen. Sie haben neulich an der Uni die neue Kooperationsvereinbarung unterschrieben. Ich war auch bei der Veranstaltung. In Ihrer Ansprache haben Sie über Probleme gesprochen, von denen Sie sagten, sie müssten angegangen werden, beziehungsweise, was Sie als Herausforderungen sehen. Da haben Sie unter anderem gesagt, dass Sie gerne der Demokratieskepsis begegnen würden.\n\nJetzt würde ich gern wissen: Es ist jetzt das dritte Mal innerhalb weniger Wochen, dass durch Sie ohne große Vorankündigung vollendete Tatsachen geschaffen werden. Im Bereich der Bürgerämter sind es drei Schließungen in kurzer Zeit, die die Leute vor Ort ja doch ziemlich aufgewühlt haben. Da würde mich einmal interessieren: Wie bewerten Sie den Prozess? Können Sie verstehen, wenn man sagt, dass die Leute das Vertrauen verlieren, wenn sich die Stadtverwaltung immer weiter aus den Ortsteilen zurückzieht?"
+    },
+    {
+      "order": 3,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ich will da überhaupt nicht kneifen. Ich glaube, in der Tat liegt eine Gefahr darin, dass wir uns in der Fläche dünner machen. Und ja: Dem Bürger, der Bürgerin begegnet der Staat oftmals in der kommunalen Verwaltung. Er oder sie hat in der Regel damit zu tun, einen Personalausweis zu beantragen, ein Kfz umzuschreiben, eine Geburtsurkunde zu beantragen. Das heißt: Der Staat wird über solche Basisdienstleistungen wahrgenommen. Und das wird natürlich schwieriger mit jeder Schließung eines Bürgerbüros.\n\nDarin steckt in der Tat die Gefahr, dass der Staat weniger wahrgenommen wird. Auf der anderen Seite sind wir in der sehr komfortablen Situation, ein sehr umfassendes Bürgerservice-Netz vorzuhalten, das wir allerdings personell kaum noch richtig aussteuern können. Und es wäre auch unverantwortlich, ein Bürgerbüro mit nur einer Mitarbeiterin oder nur einem Mitarbeiter zu besetzen, wenn durch Krankheit die Personalsituation so ist, wie sie ist.\n\nInsofern habe ich den Vorschlag des Kollegen Hörning mitgetragen - der heute, wie gesagt, leider nicht da sein kann -, dass wir hier ausdünnen, ohne uns in der Fläche komplett zurückzuziehen. Ich denke, mit Standorten wie Liebertwolkwitz, Wiederitzsch, Grünau, Engelsdorf usw. haben wir nach wie vor ein gutes Netz, das man vertreten kann. Aber wir müssen das vernünftig kommunizieren."
+    },
+    {
+      "order": 4,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Also würden Sie an der Stelle auch Verbesserungspotenzial in der Kommunikation sehen? Habe ich Sie da richtig verstanden?"
+    },
+    {
+      "order": 5,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ja. Da kann man immer besser werden."
+    },
+    {
+      "order": 6,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Gut. Dann mache ich einfach einmal weiter. - In der Antwort auf unsere Anfrage wird ja immer wieder auf das Bürgerservice-Konzept verwiesen, das nächstes Jahr präsentiert werden soll. Das war auch schon häufiges Thema hier. Das Konzept muss ja ein ziemlich umfassendes werden, wenn die Antworten bisher so ausweichend sind. Mich würde dann doch interessieren: Welche Sinnhaftigkeit hat dieses Konzept noch, wenn die Fakten jetzt schon geschaffen werden?"
+    },
+    {
+      "order": 7,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Gut, ich kenne das Konzept noch nicht. Das geht natürlich weit über die reine Standortfrage hinaus. Es geht darum: Wie wollen wir in Zukunft modern, digitalisiert, zentral unsere Bürgerservices aufbauen, vielleicht auch noch konzentrierter, vielleicht auch mehr zusammengefasst? Wir sind da in sehr engen Diskussionen auch mit Dezernat III, mit den Angeboten, die Kollege Rosenthal dort vorhält. Vielleicht können wir das auch im Fachausschuss noch einmal vertiefen. Es ist auf jeden Fall ein konzeptioneller Ansatz, der sehr stark auf Digitalisierung, Modernisierung und gleichzeitig Beratungsmöglichkeiten setzt, und ich bin selbst gespannt."
+    },
+    {
+      "order": 8,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ich sehe, Kollege Stange macht sich auch schon bereit, weil wir ja beschlossen hatten, dass wir Punkt 17.3 damit gemeinsam behandeln, aufgrund des Sachzusammenhangs. Wenn Sie jetzt auf den Fachausschuss verweisen, würde ich Sie trotzdem bitten, das zu verschieben. Wenn Sie bei den Fragen jetzt sagen, dass die Kompetenz der Anwesenden nicht ausreicht und das Fachwissen in der Tiefe nicht verfügbar ist, weil Herr Hörning nicht da ist, würde ich darum bitten, dass wir das im Januar hier noch einmal behandeln. Ich würde mich heute ungern auf den Fachausschuss verweisen lassen."
+    },
+    {
+      "order": 9,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Das können wir gern machen. Ich habe aus dem Augenwinkel auch Frau Saur gesehen, die natürlich in der Lage wäre, gegebenenfalls noch eine Detailfrage zu beantworten. - Herr Stange."
+    },
+    {
+      "order": 10,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank, Herr Oberbürgermeister. - Ich würde mich zunächst, wenn wir heute wirklich nicht in die Detailtiefe gehen können, dem Petitum des Kollegen Schopphoven anschließen und beantragen, den Tagesordnungspunkt auf die Januarsitzung zu vertagen, damit wir dort noch einmal tiefer einsteigen können.\n\nIch hätte zudem noch eine Frage. In der Antwort auf unsere Anfrage wurde mitgeteilt, dass der Bürgerservicebus voraussichtlich im Januar in Betrieb genommen wird. Erste Frage: Gibt es - vor dem Hintergrund der Kosten stationärer Bürgerbüros, des damit verbundenen Personalaufwands einerseits und aber auch der Flexibilität eines Bürgerservicebusses andererseits - Überlegungen, gegebenenfalls weitere Bürgerservicebusse anzuschaffen?\n\nZweitens würde mich interessieren, inwieweit Digitalisierung in den nächsten Jahren tatsächlich möglich ist. Wenn man sich den Bericht des Bürgerservice anschaut, zeigt sich ja, dass digitale Angebote, wenn sie angenommen werden, zwar auch durchaus gern angenommen werden, allerdings bislang nur in einem eher geringen Maße. Wie weit kommen wir also mit der Digitalisierung? Wir können die Leute ja nicht zwingen; Sie wissen das, denn Sie sind Lehrer von Beruf."
+    },
+    {
+      "order": 11,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Merkt man immer noch, oder?"
+    },
+    {
+      "order": 12,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Man merkt es immer noch ab und zu. - Man kann die Leute nicht zur Digitalisierung prügeln; Prügeln machen wir ja schon lange nicht mehr in der Schule, denn das funktioniert nicht. - Die Frage ist also: Wie können wir das tatsächlich erreichen? Und welches Pendant brauchen wir analog? Diese Fragen müssen sich ja im Konzept abbilden."
+    },
+    {
+      "order": 13,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Also, wenn Sie gestatten: Herr Bonew hat sich gemeldet, und Frau Saur ist ebenfalls anwesend. - Vielleicht können Sie etwas zum Bus sagen, das wäre jetzt ganz gut."
+    },
+    {
+      "order": 14,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Bonew",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ich habe das ja gemeinsam mit dem Kollegen Hörning durchgefochten. Der Bürgerbus ist eine gute Sache, und ich denke, man sollte jetzt erst einmal einen anschaffen und dann fahren lassen.\n\nWir erleben ja gerade, dass die eigentliche Digitalisierung - also das, was Sie in dem Bericht ansprechen - noch keine vollumfänglichen Digitalisierungsleistungen umfasst hat. Wir haben jetzt zum Beispiel die Onlineummeldung, die seit ein paar Monaten möglich ist. Das ist ja das erste richtige Onlineprodukt. Und da haben wir - glaube ich; so hat Kollege Hörning berichtet - gute Zahlen. Wir sind da auch sachsenweit ziemlich vorn. Wenn Sie sich den Katalog der Bundesregierung zur Ministerpräsidentenkonferenz anschauen, da sehen Sie, welche Bürgerdienstleistungen in Zukunft digitalisiert werden sollen. Und dann, glaube ich, ist es momentan noch zu früh, um ein abschließendes Urteil zu fällen, ob die Digitalisierungsleistungen im Bürgerservice wirklich vollumfänglich angenommen werden. Aber das, was richtig funktioniert, wird derzeit auch sehr gut angenommen, und das muss ja dann auch einen Effekt haben auf die Bedarfe. Ich denke, der Beratungsbus muss mindestens 12 Monate fahren, damit man seine Wirkung vollumfänglich bewerten kann. Dazu sollten wir uns dann zusammensetzen. Ich habe auch Kollege Hörning so verstanden, als er mich heute gebrieft hat, dass das in der nächsten oder übernächsten Bürgerservice- Bilanz ausgewertet werden soll."
+    },
+    {
+      "order": 15,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Frau Saur, könnten Sie als zuständige Amtsleiterin bitte kurz etwas zum aktuellen Stand sagen?"
+    },
+    {
+      "order": 16,
+      "speaker": {
+        "title": "Frau",
+        "name": "Saur",
+        "group": "Amtsleiterin Bürgerservice"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. - Hallo! Mein Name ist Hanna Saur. Ich kann Herrn Bonew nur zustimmen: Beim Bürgerservicebus gilt: Wir müssen erst einmal anfangen. Nach aktueller Planung ist die Auslastung auch so in Ordnung. Ein Bus reicht momentan aus für das, was wir vorhaben, und das, was wir abdecken müssen und wollen.\n\nZur zweiten Frage, Thema Digitalisierung: Auch da stimme ich zu.\n\nWir sehen aber durchaus anhand der Zahlen der Bürgerservice-Bilanz, dass die Zahlen deutlich ansteigen. Noch ist es relativ wenig, aber wir haben bei manchen Dienstleistungen durchaus schon eine Verdopplung der Online-Nutzung festgestellt. Zum Beispiel bei Anmeldungen - das ist eine Massendienstleistung - liegen wir inzwischen bei 12 Prozent, die online erfolgen. Wir sehen auch bei der Bundesregierung, dass wirklich deutliche Fortschritte darin stattfinden, wie Digitalisierung den Bürgerinnen und Bürgern ausgereicht wird. Wir gehen also daher schon davon aus, dass die Zahlen deutlich steigen werden. Das ist ein Bestandteil des Konzepts, und da sind schon noch viele Annahmen zu treffen: Wie stellen wir perspektivisch den Bürgerservice auf? Welche externen Faktoren wirken ein? Deshalb brauchen wir noch ein wenig Zeit. Dazu werden wir das dann gut untersetzt darstellen, wie sich die Digitalisierung aus unserer Sicht in den nächsten fünf bis zehn Jahren auswirken wird und welche Folgen das für die einzelnen Standorte haben soll. Letzter Satz: Wir werden auf jeden Fall jede Dienstleistung auch immer analog anbieten. Schon heute ist es so, dass fast alle Dienstleistungen digital möglich sind, aber jeder Mensch kann weiterhin ins Bürgerbüro kommen, weil wir wissen, dass das nicht jeder digital machen will oder kann."
+    },
+    {
+      "order": 17,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Herr Schopphoven war offenbar noch nicht ganz fertig."
+    },
+    {
+      "order": 18,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ja, ich hätte dazu noch zwei Punkte mitgebracht. - Wenn wir jetzt über Digitalisierung sprechen, würde ich gern einmal auf etwas eingehen, das auch in der Bürgerservice-Bilanz steht, und zwar auf das ganze Thema rund um die i-Kfz, die digitale Kfz-Anmeldung.\n\nDa sind die Nutzungszahlen bei Weitem nicht so hoch, obwohl in dem Bereich viel getan wurde. Das führt direkt zu dem Punkt, den wir in unserer Anfrage angesprochen hatten: Es gibt derzeit kein eigenes Budget, um die digitalen Leistungen der Stadt breiter bekannt zu machen. Denn - und das ist ja logisch - wenn die Leute nicht wissen, dass es diese Angebote gibt, können sie sie auch nicht nutzen. Deshalb noch einmal die Nachfrage: Sollte man da nicht ansetzen, wenn man sagt, wir wollen künftig mehr auf die digitale Schiene verlagern? Und darauf aufbauend die Frage: Wenn wir trotzdem ein breites Netz an Bürgerbüros erhalten wollen, was ja auch richtig ist, müsste man dann nicht überlegen, ob weitere Leistungen, wie zum Beispiel Führerschein- und Kfz-Angelegenheiten, zukünftig auch in die Bürgerbüros integriert werden sollten? Das soll ja in ein Gesamtkonzept eingehen, aber vielleicht können wir uns heute auf eine Vorfestlegung einigen."
+    },
+    {
+      "order": 19,
+      "speaker": {
+        "title": "Frau",
+        "name": "Saur",
+        "group": "Amtsleiterin Bürgerservice"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Es gibt kein eigenes Budget für digitale Vermittlung; gleichwohl wir bereits viele Maßnahmen ergriffen haben, wie wir in der Antwort auf Ihre Anfrage auch dargelegt haben. Es gibt allerdings ein größeres Budget für Digitalisierung, das, wie Sie ja selbst bestätigt haben, auch erhöht wird, und in dem Kommunikationsmaßnahmen mitgedacht werden. Vielleicht haben Sie es auch schon in den Straßenbahnen gesehen: Wir haben zum Beispiel die elektronische Wohnsitzanmeldung intensiv beworben. Gleichzeitig haben wir aber auch die Erfahrung gemacht, dass diese Vermittlungsangebote gar nicht immer so stark wahrgenommen werden. Ich glaube, das Angebot selbst muss gut sein, damit es vermehrt genutzt wird.\n\nAlso, die digitale Vermittlung ist wichtig - keine Frage -, aber sie ist eben nur ein Baustein. Vor allem das digitale Angebot selbst muss pragmatisch und einfach zugänglich sein. Da haben wir noch Ausbaubedarf, und darauf liegt unser Fokus. Aber wir bleiben dran und werden alles, was wir digitalisieren, auch entsprechend bewerben und vermitteln, keine Frage."
+    },
+    {
+      "order": 20,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Genau. Und jetzt aber noch die Frage dazu, mehr Services in die Bürgerbüros zu verlagern: Das machen ja andere Städte, zum Beispiel auch die, die in den Vorlagen immer genannt werden, so anders. Dazu hätte ich gern etwas gehört. - Danke."
+    },
+    {
+      "order": 21,
+      "speaker": {
+        "title": "Frau",
+        "name": "Saur",
+        "group": "Amtsleiterin Bürgerservice"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Dazu vielleicht die Antwort: Wir prüfen das. Im Moment ist es so, dass der Bund angekündigt hat, das Thema Kfz verstärkt an sich zu ziehen. Wir wissen aktuell noch nicht, wie das aussehen wird, aber wir befinden uns in der Diskussion. Da werden wir eben auch das Thema Struktur innerhalb der Stadtverwaltung mitdenken. Aber da müssen wir gerade noch abwarten, wie sich der Bund verhält. Wir werden in dem Konzept auf jeden Fall darauf eingehen."
+    },
+    {
+      "order": 22,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schopphoven",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Alles klar, danke."
+    },
+    {
+      "order": 23,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Herr Stange."
+    },
+    {
+      "order": 24,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Eine Nachfrage hätte ich noch. Wir haben ja gefragt, welche Schließungen von Bürgerbüros für 2026 geplant sind. Da ist jetzt geantwortet worden: Es sind keine geplant. Auf persönliche Nachfrage bei Herrn Bürgermeister Hörning hat er mir aber gesagt: Ja, die Stötteritzer Straße haben wir ja schon per Pressemitteilung gemeldet. Also muss ich sie hier mit einrechnen; eigentlich wäre sie auszuweisen gewesen. Stimmt es, dass über die Schließung dieser drei Bürgerbüros, die wir jetzt hatten, für 2026 nichts in Aussicht ist?"
+    },
+    {
+      "order": 25,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ja."
+    },
+    {
+      "order": 26,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank."
+    },
+    {
+      "order": 27,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Frau Dr. Märtens."
+    },
+    {
+      "order": 28,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Dr. Märtens",
+        "group": "Bündnis90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. - Sie haben einige Beispiele in der Antwort aufgeführt: Stadtbibliotheken, andere soziale Einrichtungen. Erstrecken sich die Prüfungen auch auf Schulen, Kindergärten, andere kulturelle Einrichtungen? Wie breit ist der Prüfungsrahmen? Denn es wäre ja spannend, die Menschen auch ins Museum zu locken mit einem Bürgerservice oder Orte wie die Schule, wo sowieso alle hingehen, zu nutzen. Was ist da der Plan?"
+    },
+    {
+      "order": 29,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Bitte, Frau Saur."
+    },
+    {
+      "order": 30,
+      "speaker": {
+        "title": "Frau",
+        "name": "Saur",
+        "group": "Amtsleiterin Bürgerservice"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Da geht es ja darum: Wo wollen wir uns perspektivisch standortseitig aufstellen? Wir sind da vor allem erst einmal geografisch unterwegs und schauen, welche Stadtgebiete relevant sind. Und innerhalb der Stadtgebiete schauen wir uns natürlich alle städtischen Liegenschaften an. Aber es gibt schon auch Grenzen, denn für ein Bürgerbüro braucht es bestimmte Bedingungen, um das gut betreiben zu können. In einem Schulkontext kann ich mir das aktuell schwer vorstellen, aber es ist erst einmal nichts ausgeschlossen. Wir gucken uns alles an. - Als Bus? - Ach so, ja, klar."
+    },
+    {
+      "order": 31,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Herr Dr. Peter."
+    },
+    {
+      "order": 32,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Peter",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. Ich habe zwei Fragen. - Sie haben ja noch einmal verwiesen auf diese Bürgerservice- Bilanz 2024. Die Bilanz ist ja das eine. Die Frage ist, was für strategische Schlussfolgerungen man daraus zieht. Das war ja, glaube ich, auch ein Stück weit der Ärger oder der Unmut bei den Schließungen, dass man das Gefühl hatte: Das ist ein bisschen erratisch passiert, als so eine Schnellschussaktion, und dahinter steckt nicht so richtig eine Strategie. Wird das im Zweifel noch einmal nachgeliefert? Herr Hörning sagt ja auch immer, wir haben eine vergleichsweise gute Ausstattung, aber es wäre ja schön, wenn man ein Stück weit auch ein strategisches Vorgehen erkennen könnte. Ist das geplant?\n\nDie zweite Frage noch einmal zum Thema Digitalisierung: Ganz viel läuft ja über diesen elektronischen Personalausweis, der ja nun - ich glaube, es sind 5 Millionen, die diesen bundesweit nutzen - heruntergerechnet auf Leipzig nicht von wahnsinnig vielen genutzt wird. Wie ist da die Überlegung, damit umzugehen?\n\nUnd noch ein zweiter Punkt zur Digitalisierung: Die Inanspruchnahme ist noch schleppend. Es geht vorwärts, aber eben noch schleppend. Was mich zum Beispiel beim Thema Wohngeld erreicht: Ja, man kann das digital beantragen, aber eigentlich hat man keinen Vorteil davon, weil es am Ende auf demselben Stapel landet wie ein schriftlicher Antrag. Ein Gedanke wäre ja, zu sagen, man setzt vielleicht auch Anreize, etwa den Abschlag zumindest schon einmal schnell zu zahlen, damit man eben motiviert ist, das digital zu machen. Denn der Anlaufaufwand ist ja erst einmal da, aber wenn man weiß, dass man bestimmte Leistungen schneller bekommt oder dass Zahlungen schneller kommen, dann könnte das ja möglicherweise ein Weg sein. Wird das auch überlegt?"
+    },
+    {
+      "order": 33,
+      "speaker": {
+        "title": "Frau",
+        "name": "Saur",
+        "group": "Amtsleiterin Bürgerservice"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Wir werden im Konzept auf jeden Fall auch noch einmal diese drei Schließungen, die bereits erfolgt sind, reflektieren. Die werden sich in einen großen Bogen einreihen. Wir haben das nicht einfach aus heiterem Himmel gemacht, und wir haben versucht, das im Fachausschuss auch darzustellen. Zum elektronischen Personalausweis: Da haben wir verschiedene Werbe- und Vermittlungsangebote, vom VHS-Kurs über eine eID-Station, und es gibt auch online wirklich ein ganz breites Informationsangebot. Auch das Bürgertelefon ist intensiv geschult, sodass man dort immer Unterstützung bekommt. Ich denke, die braucht der eine oder andere auch. Das könnte noch einfacher sein, und da sind wir auf jeden Fall auch dran, es ist aber auch ein Angebot des Bundes, das wir nicht in der Tiefe beeinflussen können.\n\nZum dritten Punkt, Anreize für digitale Angebote: Da sind wir eigentlich schon ganz gut aufgestellt, könnten aber natürlich noch mehr machen. Wir haben bei verschiedenen digitalen Leistungen Garantiezeiten, die deutlich kürzer sind, als wenn ich den Antrag auf anderem Weg einreiche. Im Standesamt, zum Beispiel bei Urkunden, haben wir eine Garantiezeit von 14 Tagen. Das ist etwas anderes, als wenn ich hingehe oder es anders beantrage. Im Kfz-Bereich ist es sogar so, dass die Gebühren geringer sind, wenn ich online beantrage. Auch bei der elektronischen Wohnsitzanmeldung haben wir eine Garantiezeit von drei Tagen. Also: Wo es uns möglich war, haben wir durchaus schon Anreize gesetzt.\n\nDas heißt aber auch nicht immer, dass die Menschen davon jetzt stark beeinflusst werden. Den einen oder anderen wird es beeinflussen, aber am Ende ist entscheidend, wie praktisch und einfach das Angebot ist.\n\nZum Wohngeld: Da gibt es, wenn ich es richtig weiß, keinen solchen Anreiz. Frau Dr. Münch. Das können wir noch einmal mitnehmen."
+    },
+    {
+      "order": 34,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Jetzt ist für mich die Frage: Ist das jetzt umfassend beantwortet, oder möchten Sie noch einmal nachfragen? Ich weiß jetzt nicht, ob das Thema geschoben ist. Wir führen gerade hier eine richtige Debatte. - Letzte Frage, okay."
+    },
+    {
+      "order": 35,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Mündlein",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Ich hätte nur eine kurze Bitte. Das klang jetzt recht spezifisch, was den Bürgerservicebus angeht. Sie wissen, wofür Sie den einsetzen, so war ungefähr der Wortlaut. Sobald der feste Plan steht, bitte ich um schnellstmögliche Mitteilung, wo der dann auch entsprechend halten soll. - Danke."
+    },
+    {
+      "order": 36,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15",
+        "15.1"
+      ],
+      "afterResult": null,
+      "text": "Danke, Frau Saur."
+    },
+    {
+      "order": 37,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Gibt es Nachfragen? - Herr Ulbrich."
+    },
+    {
+      "order": 38,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Ulbrich",
+        "group": "AfD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank, Herr Oberbürgermeister. - Meine Frage bezieht sich auf die Antwort zu Frage 1, und zwar zum Stichwort Werktreue und Nacktheit. Ich zitiere:\n\nDa die Figur in Andersens beliebtem und im abendländischen Kulturraum klassisch gewordenem Märchen als nackt beschrieben wird, stellt auch das Kostüm im Sinne der Werktreue Nacktheit dar, mit allen entsprechenden Körperteilen.\n\nDazu meine Frage: Ist Ihnen bewusst - und ich meine, das Ganze soll ja geeignet sein für Kinder im Vorschulalter -, dass hier das Geschlechtsteil, der Penis, so aus dem Kostüm heraus dargestellt wird?\n\nNatürlich ist klar: Es ist ein Kostüm, es besteht aus Stoff oder sonstigen Materialien. Ich will auch gleich vorweg sagen: Ich halte das nicht für pornografisch. Aber: Juristisch kann zum Beispiel auch ein Zeichentrickfilm Pornografie darstellen, obwohl dort erkennbar überhaupt nichts Nacktes zu sehen ist. Genau da sehe ich die Problematik einer Verwirrung, vor allem bei Kindern in diesem Alter. Für Erwachsene mag so eine Darstellung in Ordnung sein. Meine Frage ist daher: Ist Ihnen das bewusst, gerade weil Sie in der Antwort so stark auf die Nacktheit abstellen, die natürlich durch dieses Kostüm nicht gegeben ist? Deswegen auch mein Vergleich mit dem Zeichentrickfilm. - Danke schön."
+    },
+    {
+      "order": 39,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Frau Dr. Jennicke."
+    },
+    {
+      "order": 40,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Jennicke",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Sie fragen nach der Authentizität und nach der Werktreue. Soweit mir bekannt ist, ist in dem berühmten Märchen von Hans Christian Andersen „Des Kaisers neue Kleider“ der Kaiser nackt, was die Hofgesellschaft nicht sieht, aber das umliegende Publikum und hier auch die Zuschauer. Sie werden mir recht geben, dass das natürlich nur dann funktioniert, wenn der Kaiser nackt ist. Das ist bei Hans Christian Andersen so beschrieben. Das Schauspiel hat sich eben genau dafür entschieden, das in einem Nacktheit imitierenden Kostüm darzustellen, sodass es zu der von Ihnen unterstellten Verwirrung aus unserer Sicht oder aus Sicht des Künstlerteams und auch aus Sicht der Betriebsleitung nicht kommt."
+    },
+    {
+      "order": 41,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Ulbrich",
+        "group": "AfD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Darf ich dazu nachfragen? - Selbstverständlich muss manchmal vielleicht auch ein wirklich nackter Darsteller auftreten, aus künstlerischen oder dramaturgischen Gründen. Das will ich gar nicht in Abrede stellen. Sonst kann man es vielleicht gar nicht anders gut darstellen. Im Übrigen ist mir bekannt, dass das beispielsweise auch mit einer hautfarbenen Unterhose gelöst werden kann. Aber warum muss das für Kinder im Vorschulalter geeignet sein? Dann muss man eben auch sagen: Diese Darstellung, so wie sie ist, ist dann für Kinder im Vorschulalter - oder vielleicht für Kinder allgemein ungeeignet."
+    },
+    {
+      "order": 42,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Jennicke",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Also, wenn die Frage war, ob diese Vorstellung für Kinder ungeeignet ist, dann weise ich das zurück. Gerade durch die Entfremdung und die Darstellung durch das Kostüm sehe ich da überhaupt gar keine Gefährdung. Auch halte ich die Nacktheit als solche nicht für eine Gefährdung von Menschen im kindlichen Alter. Soweit ich es erkennen kann, sind wir alle nackt auf die Welt gekommen."
+    },
+    {
+      "order": 43,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Ulbrich",
+        "group": "AfD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Ja, ich bedanke mich."
+    },
+    {
+      "order": 44,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Frau Heine hat eine Nachfrage."
+    },
+    {
+      "order": 45,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Heine",
+        "group": "SPD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. - Ich weiß gar nicht, was mich mehr irritiert an dieser Anfrage: die Tatsache, dass die AfD anscheinend einen Kostümpenis nicht von einem echten unterscheiden kann, oder dass wir uns ernsthaft damit auseinandersetzen müssen.\n\nAber eine kurze Nachfrage an die Kulturbürgermeisterin: Hat sich denn irgendjemand sonst über diese Darstellung beschwert? Denn auf der Homepage ist es eindeutig gekennzeichnet. Man sieht die Bilder, es gibt einen Videoausschnitt, man kann sich das alles vorher angucken, es steht im Text drin. Also jede Lehrerin, jeder Lehrer, alle Eltern, die dort hingehen, sind doch vorbereitet und wissen, worauf sie sich einlassen. - Doch, man sieht das. Sie müssen nur einmal auf die Homepage gehen. Es ist beschrieben, und man sieht es."
+    },
+    {
+      "order": 46,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Jennicke",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Es stimmt. Es ist ein Video auf der Homepage des Schauspiels zu sehen, in dem auch der Schauspieler in dem Nacktkostüm zu sehen ist, sodass man sich vorab, sollte man Sorgen aufgrund von Kenntnis des Märchens haben, ein Bild machen kann und einschätzen kann, ob das für die betreffende Schulklasse oder Gruppe geeignet ist, aus Sicht der Erziehungsberechtigten. Mir sind keine Beschwerden bekannt, aber wir können das gern im Rahmen des nächsten Betriebsausschusses beim Intendanten noch einmal erfragen."
+    },
+    {
+      "order": 47,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Herr Keller noch einmal."
+    },
+    {
+      "order": 48,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Keller",
+        "group": "AfD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Herr Ulbrich hat deshalb nachgefragt, weil bei uns mehrere Anfragen entsetzter Eltern angekommen sind. Und es wird ja wohl möglich sein, dass man hier dann noch einmal nachfragt. - Danke."
+    },
+    {
+      "order": 49,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.2"
+      ],
+      "afterResult": null,
+      "text": "Ich schließe 15.2."
+    },
+    {
+      "order": 50,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Herr Dr. Peter."
+    },
+    {
+      "order": 51,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Peter",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Es ist vielleicht nicht so heiter, aber vielleicht auch ein bisschen wichtiger als die vorherige Anfrage. Herr Schülke, erst einmal vielen Dank für die ausführliche Befassung. Das wissen wir sehr zu schätzen, dass Sie noch einmal tief in der Vorlagenhistorie gegraben haben.\n\nIch hätte zur Antwort auf Frage 3 noch einmal eine Nachfrage. Wir diskutieren ja auch schon länger im GVA, dass wir möglichst nicht erst zum Schluss, also wenn die Verkaufs- oder Veräußerungsvorlage vorliegt, eingebunden werden, sondern möglichst schon vorher. Das finde ich so im Prozess noch nicht richtig wieder. Vielleicht können Sie noch einmal darauf eingehen, was Sie sich vorstellen könnten, um den GVA auch im Prozess der Findung beziehungsweise der Suche danach, wie leerstehende Liegenschaften genutzt werden können, stärker einzubinden.\n\nBei der Frage der Vermietung oder Verpachtung an Dritte habe ich noch die Nachfrage, inwiefern möglicherweise Fachausschüsse, aber insbesondere auch Dritte eingebunden werden. Denn vielfach weiß man ja als Verein im kreativen Bereich nicht unbedingt zwangsläufig, dass eine Immobilie leer steht, und dann ist es vielleicht auch schon zu spät. Ist angedacht, hier noch stärker auf potenzielle Dritte zuzugehen, vielleicht auch über Interessenbekundungsverfahren oder Ähnliches? Ist da etwas angedacht?"
+    },
+    {
+      "order": 52,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Schülke",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Grundsätzlich ist es ja so, dass wir uns eine Meinung erst mal innerhalb der Stadtverwaltung bilden, ein Stück weit die Dinge eben vorstrukturieren und überlegen, was wir Ihnen überhaupt vorschlagen wollen. Das sollte ja auch eine Substanz haben, was wir miteinander diskutieren.\n\nWir können aber gern im Ausschuss miteinander besprechen, ob wir irgendwie auch so einen Mittelweg finden und zumindest mal andeuten, welche Themen uns gerade beschäftigen. Das Thema Eigenheimgrundstücke zum Beispiel kennen Sie jetzt schon mal, wir hatten auch schon mal über Connewitz andiskutiert, was da möglicherweise passiert. Da können wir gerne formlos im Austausch bleiben. Ich möchte Ihnen jetzt bloß ungern versprechen, dass wir, bevor wir anfangen zu denken, Ihnen das schon im Ausschuss vortragen.\n\nWie wir Dritte einbeziehen: Dafür haben wir eigentlich ein strukturiertes Veräußerungsverfahren, sei es im Erbbaurecht, im Verkauf, in der Vermietung oder in der Verpachtung. Da haben wir Kollegen, die diese Immobilien an den Markt bringen, auf eine strukturierte Art und Weise. Ich weiß nicht, ob Ihnen das genügt oder ob Sie da noch andere Ideen haben. Auch das können wir gern im Ausschuss dann vertiefen, wenn Ihnen das hilft."
+    },
+    {
+      "order": 53,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Peter",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Das können wir gerne vertiefen. - Zu Frage 4: Da haben Sie ja das Prozedere beim Thema Verkauf noch einmal dargestellt und auch den gemeinsamen Antrag, den ich mit Kollegin Feichtinger und damals auch Kollege Weber gestellt habe, der aber ja sozusagen eher auf das Thema revolvierender Fonds abgestellt hat und darauf, eine Balance zwischen Verkauf und Ankauf darzustellen. Insofern fand ich es interessant, dass Sie den noch einmal hervorgeholt haben. Es schließt sich für mich natürlich die Frage an, ob es auch Überlegungen gibt, noch einmal in Richtung einer revolvierenden Lösung, einer Fonds-Lösung zu denken.\n\nDie zweite Frage auch noch einmal zur Antwort auf Punkt 4. Wir hatten ja in der Tat - Herr Geisler wird vielleicht auch noch einmal ausführen - beim Haushaltsantrag und schließlich beim Beschluss der SPD zum Thema, auch noch einmal Liegenschaftserlöse zu generieren. Da haben wir aber natürlich auch gesagt: Wir brauchen ein Stück weit noch eine Orientierung beim Thema Kriterien und Prozess und wie das funktionieren soll. Da sind Sie jetzt ein Stück weit in der Antwort noch einmal auf die Anfrage eingegangen. Aber die Frage ist natürlich: Kriegen wir da noch einmal eine Vorlage, oder ist jetzt im Grunde genommen mit der Antwort auf die Anfrage dem Genüge getan, was wir eingefordert haben? Das wäre die Frage. Ich fände es schon gut, wenn man da auch noch einmal eine Vorlage oder Ähnliches bekommen würde.\n\nDann haben wir auch noch einige Fragen dazu, wie man mit der Bewertung des mittelfristigen Nutzens umgeht. Wo sind da die Kriterien dafür? Wie gehen wir damit um, dass wir vielleicht auch eine Differenzierung haben? Sie gehen ja auf die Veräußerungen ein, wobei bei uns ja durchaus Verkauf und Erbbaurecht als Veräußerungsformen vorliegen, die vielleicht auch noch einmal differenziert zu betrachten sind."
+    },
+    {
+      "order": 54,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Schülke",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Ich fange mal mit dem Letzteren an. Ich verstehe Ihren Wunsch nach einem strukturierten Vorgehen und nach einer Nachvollziehbarkeit des Vorgehens, dass man sozusagen nicht willkürlich die Dinge in jedem Fall anders entscheidet. Deswegen haben wir Ihnen jetzt mal dargestellt, was uns aktuell beschäftigt, was wir in so eine Überlegung mit einbringen würden und welche Kriterien wir uns auf jeden Fall anschauen.\n\nDie Liste ist ganz bewusst nicht abschließend, weil der Teufel dann doch im Detail liegt und man bei Grundstücksgeschäften nicht umhinkommt, sich jeden Einzelfall anschauen zu müssen. Das ist einfach so. Dafür sind die Transaktionen zu besonders, zu einzelfallbezogen. Da müssen wir dann schon auch noch einmal im Einzelfall diskutieren.\n\nDas wäre jetzt erst einmal unsere Antwort. Wenn Sie sagen, Sie haben noch weitere Fragen, würde ich auch vorschlagen, das gern im Ausschuss anzudiskutieren. Wenn Sie Anregungen haben, Dinge, die wir mit auf den Weg nehmen sollen, die wir im Prozess mit berücksichtigen können, was Ihnen hilft, am Ende auch eine Entscheidung zu treffen - denn wir müssen Ihnen ja sozusagen die Fakten präsentieren, die Sie brauchen, um dann am Ende auch entscheiden zu können -, dann nehmen wir das gerne mit auf.\n\nAber das sind so die zwei großen, groben Linien: Welchen Nutzen können wir mit dem Grundstück stiften, wenn wir es im Portfolio haben? Und was sind die wirtschaftlichen Rahmenbedingungen, unter denen Halten oder Verkaufen die Stadt Leipzig belastet, entlastet oder sogar einen wirtschaftlichen Vorteil mit sich bringt?\n\nDazu, wie wir das Geld dann verwenden, das wir vielleicht aus einem Verkauf oder aus einer Erbpachtentscheidung einnehmen, gibt es bereits eine Kommunikation mit dem Finanzdezernat. Sie lesen bei uns, dass wir grundsätzlich die Idee haben, das Immobilienportfolio stabil zu halten, aber eben nicht am einzelnen Grundstück festzuhalten, sondern eher zu schauen, dass wir die richtigen Grundstücke im Portfolio haben, die wir dann auch für eine kommunale Aufgabe entweder kurzfristig, mittelfristig oder sogar langfristig benötigen.\n\nZu den finanziellen Rahmenbedingungen würde ich jetzt lieber den Ball noch einmal an meinen Kollegen weitergeben, wie das im Haushalt abbildbar ist. Da gibt es ja auch ein paar technische Voraussetzungen, die zu beachten sind."
+    },
+    {
+      "order": 55,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Herr Bonew."
+    },
+    {
+      "order": 56,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Bonew",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Ich würde den Ball gern vom Kollegen Schülke aufnehmen. - Wir haben ja den Grundsatzbeschluss, das Immobilienvermögen innerhalb eines Finanzplanungszeitraums konstant zu halten, was wir auch controllen. Es gibt verschiedene Überlegungen, wie man das darstellen kann. Wo ich gleich wieder sagen muss: Wir haben die engen Restriktionen des sächsischen Haushaltsrechtes.\n\nIch erinnere noch einmal daran, dass wir in diesem Hohen Haus schon ganz oft über den revolvierenden Fonds im Zusammenhang mit Haushaltsplanverfahren gesprochen haben und das bis zur Landesdirektion geklärt haben. Das Ding gibt es einfach in Sachsen nicht. Das gab es nie. Das gab es auch auf Landesebene nie. Das waren Kredite, die ausgereicht wurden, die „revolvierender Fonds“ genannt wurden. Im sächsischen Haushaltsrecht für Kommunen ist das nicht möglich, weil wir immer wieder an die Jährlichkeit des Haushaltes stoßen.\n\nWir müssen andere Konstrukte finden. Ich denke, das haben wir in den letzten Jahren sehr gut hinbekommen. Für die nächsten Jahre, solange wir auch sehr restriktiv mit dem Stichwort „infrastrukturelle Grundvermögen“ umgehen müssen, müssen wir da noch andere Wege finden. Da haben wir noch nicht das Finale gefunden. Das gehört zur Wahrheit dazu."
+    },
+    {
+      "order": 57,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Peter",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Kurze Nachfrage: Gab es oder ist es geplant, da noch einmal auch auf den Freistaat zuzugehen, um diese Restriktionen zu verändern? Ich meine, es ist ja nichts in Stein gemeißelt."
+    },
+    {
+      "order": 58,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Bonew",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Wir gehen da regelmäßig auf den Freistaat zu. Ich muss aber aus meinen Erfahrungen aus dem Finanzausschuss des SSG berichten: Wir sind die Einzigen, die da gern auf den Freistaat zugehen, und uns fehlt ganz oft der willige Ansprechpartner. Also, zu so einem Gespräch gehören ja immer zwei dazu, die dann gern darüber diskutieren - fachlich."
+    },
+    {
+      "order": 59,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Peter",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Dann haben wir zumindest schon mal dasselbe Parteibuch."
+    },
+    {
+      "order": 60,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Herr Geisler."
+    },
+    {
+      "order": 61,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Geisler",
+        "group": "SPD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Herr Oberbürgermeister, würden Sie mir zustimmen, dass es nicht sehr intelligent ist, über Grundstücksstrategie, Grundstücksgeschäfte und grundstücksscharfe Angaben hier im Stadtrat öffentlich zu diskutieren? Wir sollten die Debatte verdammt noch mal im GVA belassen, wo Herr Schülke sehr pragmatisch die Fakten auf den Tisch legt, wie auch Herr Dienberg das bis vor einem halben Jahr gemacht hat. Wir können dort diskutieren und sollten das bitte hier sein lassen, weil das mit Sicherheit nicht mehr Geld, nicht mehr Sicherheit und auch nicht bessere Käufer bringt. - Danke."
+    },
+    {
+      "order": 62,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Rhetorische Fragen werde ich jetzt nicht kommentieren. - Frau Krefft."
+    },
+    {
+      "order": 63,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Krefft",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Herr Bonew, den Satz „Ihnen fehlt da der Ansprechpartner“ höre ich zuletzt häufiger von Ihnen. Würde Ihnen ein Organigramm helfen, oder wie kann man dazu beitragen, dass Sie die richtigen Ansprechpartnerinnen und Ansprechpartner finden?"
+    },
+    {
+      "order": 64,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Bonew",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Soll das noch eine rhetorische Frage sein? - Mir ist die Struktur des sächsischen Innenministeriums sehr wohl bekannt. Meine Aussage bezog sich jetzt aber auf die Gesprächsbereitschaft."
+    },
+    {
+      "order": 65,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Bitte schön, Herr Schröder."
+    },
+    {
+      "order": 66,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schröder",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Danke schön. - Also unserer Fraktion ist ein bisschen der Tonfall sowohl der Anfrage als auch jetzt der Nachfragen hier von der anfragenden Fraktion aufgefallen. Deswegen würde ich gern noch einmal an Sie, Herrn Oberbürgermeister, als ausgewiesenen Experten für die Sächsische Gemeindeordnung und die Hauptsatzung sowie als vermutlich erfahrenstes Mitglied, das hier schon seit 25 Jahren in diesem Rat sitzt und viele Haushalte und viele Jahre mitbekommen hat, ein, zwei Fragen richten. Die erste Frage ist: Ist es richtig, dass es bei allen wesentlichen Grundstücksgeschäften ab einer gewissen Wertgrenze Zustimmungsvorbehalte gibt, dass das Liegenschaftsamt - ganz egal, in welchem Dezernat es sich befindet - keine Verkäufe tätigt, ohne dass diese durch die Dienstberatung des Oberbürgermeisters gehen, und dass diese natürlich in den entsprechenden Gremien - Grundstücksverkehrsausschuss, Ratsversammlung, wo immer auch Mitglieder der anfragenden Fraktion gesessen haben - zuvor bestätigt werden müssen?"
+    },
+    {
+      "order": 67,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Das ist richtig. Wir haben klar definierte Wertgrenzen zu den unterschiedlichen Instanzen, die entscheiden."
+    },
+    {
+      "order": 68,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schröder",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Dann würde ich gern noch hinzufügen: Ist es richtig, dass es - auch, als viele von uns hier noch nicht gesessen haben, in den 2000er und in den 2010er Jahren, Sie aber schon da waren - immer schon so war, dass das Liegenschaftsamt, gleichwohl, wo es war, ein Budget für Ankäufe von Grundstücken hatte und Vorgaben für den Erlös, der durch den Verkauf von Grundstücken in den Haushalt eingebracht werden sollte? Ist es auch richtig, dass diesem Vorgehen dann jedes Jahr oder alle zwei Jahre bei der Haushaltsverabschiedung durch die anfragende Fraktion zugestimmt wurde?"
+    },
+    {
+      "order": 69,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Ja, jetzt muss ich Sie ein bisschen verbessern. Wir hatten auch andere Jahre. Ich bin seit 1999 dabei, und wir haben sehr wohl auch über Verkauf Haushaltssicherungsbeiträge organisiert. Das heißt, wir haben zu bestimmten Zeiten mehr verkauft, als wir gekauft haben. Und ich habe verwaltungsintern diesen Grundsatz etwa 2010 aufgehoben, sodass wir dort wieder einen Ausgleich hinbekommen haben. Das wurde dann im Stadtrat ebenfalls sehr heiß diskutiert. Da müsste ich jetzt einmal in die Unterlagen schauen, Herr Schülke, wann ein Beschluss kam, dass es sich die Waage halten sollte - wenn es einen Beschluss überhaupt gab, das weiß ich nicht. Ansonsten ist es eine interne Festlegung gewesen, dass wir eine Balance halten zwischen Ankauf und Verkauf - am Rand des Haushaltes. Also im Prinzip: ja. Diese Summen, die sozusagen beim Liegenschaftsamt als Einnahme oder Ausgabe stehen, sind natürlich im Stadtrat mit dem Haushaltsbeschluss getroffen worden."
+    },
+    {
+      "order": 70,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schröder",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Danke. - Vielleicht bloß noch kurz ein letzter Punkt: Ist es richtig, dass auch in den vergangenen Jahren - weil hier so eine gewisse Schieflage in dieser Anfrage durchkommt -, in welchen sich das Liegenschaftsamt in einem anderen Dezernat befand, natürlich Grundstücksverkäufe stattgefunden haben? Stichworte dazu wären Reudnitz für den Wohnungsbau oder Gewerbegebiete wie in der Torgauer Straße, bei BMW, oder im Leipziger Nordwesten, wo ein Grundstück nach Schkeuditz verkauft wurde, und so weiter. Ist es außerdem richtig, dass insgesamt durch diesen Tonfall, durch diese reißerische Überschrift der Anfrage der Eindruck entstehen könnte, dass hier - na ja, wie soll ich sagen - gewisse Tatsachen weggelassen oder verdreht werden und dass das dem ganzen Thema nicht gut tut, angesichts der Situation, in der wir uns gerade befinden? Wie würden Sie das bewerten?"
+    },
+    {
+      "order": 71,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Es hat immer Verkäufe gegeben im Einzelfall. Und ich stehe dazu, und ich will es noch einmal wiederholen: Die Liegenschaftspolitik ändert sich nicht durch die Zuordnung zu einem Dezernat."
+    },
+    {
+      "order": 72,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Schröder",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.4"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank."
+    },
+    {
+      "order": 73,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "SPD-Fraktion, Frau Heine."
+    },
+    {
+      "order": 74,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Heine",
+        "group": "SPD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank für die umfangreiche Beantwortung unserer Anfrage zum Gewaltschutz für Männer. - Ich habe eine Nachfrage dahingehend: Es wird ausgeführt, dass es ja zwei Schutzwohnungen vom lemann e.V. gibt. Diese insgesamt 10 Schutzplätze werden durch eine VZÄ betreut, die wiederum vom Land finanziert wird. Das heißt, kommunal geben wir eigentlich keinerlei Unterstützung in diese Schutzwohnungen hinein. Nun sehen wir auch in der Anfrage, dass im vergangenen Jahr 24 Personen abgewiesen werden mussten und nicht aufgenommen werden konnten, weil es keinen Platz mehr in den Schutzwohnungen gab, und dass 89 Personen beim lemann e.V. bei der Beratung abgewiesen werden mussten.\n\nMeine Frage zielt darauf ab, ob angedacht ist, in den nächsten Haushalten gegebenenfalls kommunale Mittel für den Ausbau des Männerschutzangebotes einzustellen, dass man sich also nicht nur auf das Land verlässt, sondern dass gegebenenfalls eine Aufstockung bei den VZÄ angedacht ist oder man sich beim Freistaat dafür einsetzt, dass dort aufgestockt wird."
+    },
+    {
+      "order": 75,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "Frau Dr. Münch."
+    },
+    {
+      "order": 76,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "Liebe Frau Heine, danke für die Anfrage. - Sie haben die Situation ja gerade selbst geschildert. Natürlich gibt es hier einen höheren Bedarf. Aber Sie haben auch gesehen, dass dieser Bedarf teilweise nicht nur Männer in Leipzig betrifft, sondern sich darüber hinaus teilweise bis weit nach Westdeutschland erstreckt, weil es dort vergleichbare Angebote nicht gibt. Das können wir natürlich nicht mit unseren städtischen Mitteln ausgleichen.\n\nGenerell ist das Thema Gewaltschutz ein ganz wichtiges Thema, und das betrifft Männer zwar in geringerem Maße als Frauen, aber wir werden das auch noch einmal im Kontext des Bundesgesetzes diskutieren müssen, auch mit dem Land. Sie kennen auch Ihren Antrag, den Sie im Kontext Haushalt gestellt haben, der derzeit aus den genannten Gründen nicht umgesetzt wird. Das Thema bleibt uns aber auf der Tagesordnung, und wir werden auch mit dem Land - gerade im Kontext des Gewaltschutzgesetzes und des individuellen Rechtsanspruchs, der ab 2030 gilt - dazu noch einmal in die Diskussion gehen."
+    },
+    {
+      "order": 77,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Heine",
+        "group": "SPD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "Da muss ich noch einmal nachfragen: Das Gewalthilfegesetz zielt nur auf Frauen ab, nicht auf Männer."
+    },
+    {
+      "order": 78,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "Ja, das ist richtig.\n\nAber das heißt ja nicht, dass das jetzt perspektivisch so bleiben muss. Dieses Thema ist ja tatsächlich in der gesellschaftlichen Debatte."
+    },
+    {
+      "order": 79,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.5"
+      ],
+      "afterResult": null,
+      "text": "Danke schön."
+    },
+    {
+      "order": 80,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Wir kommen zur letzten Anfrage, die wir mündlich beantworten. - Frau Subat."
+    },
+    {
+      "order": 81,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Subat",
+        "group": "Die Freie Fraktion"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. - Ich habe noch ein paar Nachfragen zur Women´s EURO 2029. Die erste Nachfrage ist zu Frage 1. Der MDR behauptet nämlich, dass die Stadt Leipzig 15 Millionen Euro für die EM 2024 kalkuliert hat. Sie haben geschrieben, dass es dazu noch keine Angaben gibt. Was stimmt denn jetzt: das, was der MDR sagt, oder das, was Sie sagen?"
+    },
+    {
+      "order": 82,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Rosenthal",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Ich wusste nicht, dass der MDR sich beworben hat. Insofern können Sie unseren Angaben dort auch trauen. Wir wissen es noch nicht. Es gibt eine Richtschnur, weil wir wissen, was die EURO 2024 gekostet hat. Das kann ich gern auch noch einmal zu Protokoll geben: Wir haben am Ende 13,3 Millionen Euro Aufwendungen gehabt, 1,4 Millionen Euro Erträge, sodass aus dem Haushalt der Stadt 11,8 Millionen Euro für die EURO 2024 aufgewendet wurden. Jetzt kann man sich ungefähr vorstellen, wie sich das 2029 darstellt."
+    },
+    {
+      "order": 83,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Subat",
+        "group": "Die Freie Fraktion"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Okay. - Dann geht es in Frage 6 um eine Informationsvorlage. Wann kann man denn damit rechnen?"
+    },
+    {
+      "order": 84,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Rosenthal",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Da sind wir im engen Austausch, vor allen Dingen das Wirtschaftsdezernat und das Sportdezernat. Ich denke, wir werden da im Januar, Februar eine gemeinsame Lesart zur Auswertung der EURO 2024 finden, und dann werden Sie auch die Infovorlage mit allen Daten erhalten."
+    },
+    {
+      "order": 85,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Subat",
+        "group": "Die Freie Fraktion"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Dann habe ich noch einmal eine Frage an Sie und an Herrn Jung, und zwar: Wir benannten in der Anfrage das Problem der Grundrechte, unter anderem sprachen wir von einer Bannmeile, also einer Einschränkung der Versammlungsfreiheit. Die UEFA- Turnieranforderungen sagen ausdrücklich, dass so etwas verboten ist, also dass politische Demonstrationen verhindert werden sollen.\n\nDer Oberbürgermeister hat jetzt im Mai gesagt, eine solche Bannmeile sei allerdings mittlerweile aufgrund der Terrorwarnung und der Gefährdung, die wir im Unterschied zu 2006 haben, durchaus angebracht. Sie haben jetzt aber in der Antwort geschrieben, dass es diese nicht gab und auch nicht geben wird. - Worauf kann ich mich da jetzt beziehen? In welche Richtung gehen wir denn?"
+    },
+    {
+      "order": 86,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Rosenthal",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Also, faktisch hat es keine Bannmeile gegeben. Jede Demonstration, die es im Rahmen der EURO 2024 hätte geben können, hätte auch in Stadionnähe stattfinden können. Es ist aber am Ende immer aus Sicht der Versammlungsbehörde eine Einzelfallentscheidung. Sicherheitsrelevante Fragestellungen müssen beachtet werden, und insofern kann natürlich auch im Einzelfall das Versammlungsrecht eingeschränkt werden. Aber es hätte erst einmal formal jede Versammlung auch im unmittelbaren Stadionumfeld der EURO 2024 stattfinden können."
+    },
+    {
+      "order": 87,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Subat",
+        "group": "Die Freie Fraktion"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Okay, solange da nicht unsere Grundrechte …"
+    },
+    {
+      "order": 88,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Rosenthal",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Nein, das ist klar. Insofern haben wir es erst einmal auch so wahrgenommen."
+    },
+    {
+      "order": 89,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Herr Kumbernuß."
+    },
+    {
+      "order": 90,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Kumbernuß",
+        "group": "Die Freie Fraktion"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Ich habe da trotzdem noch einmal eine Nachfrage, weil die UEFA ja gefordert hat, dass es in Stadionnähe im Umkreis von 500 Meter keine Demonstrationen geben darf. Die einzige Bewerberinnenstadt, die sich geweigert hat, so etwas mitzutragen, war Bremen. Überraschenderweise ist Bremen auch nicht bei den Ausrichtern gewesen. Das Stadion in Bremen war nicht Teil der EURO 2024, was wiederum Rückschlüsse zulässt. - Besteht die Möglichkeit, sich einmal die gesamten Bewerbungsunterlagen anzuschauen, oder müsste man das erst beantragen?"
+    },
+    {
+      "order": 91,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Rosenthal",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Nein, alle Unterlagen standen und stehen dem Stadtrat zur Verfügung, weil Sie den Grundsatzbeschluss zur Bewerbung gefasst haben und auch den Beschluss, dass der Oberbürgermeister diese vertraglichen Unterlagen unterzeichnen darf. Da müssen Sie keinen extra Antrag stellen, wenn Sie das noch einmal nachlesen wollen."
+    },
+    {
+      "order": 92,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Kumbernuß",
+        "group": "Die Freie Fraktion"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Da das ein Ehrenamt ist, könnten das auch unsere Fraktionsgeschäftsstellen-Mitarbeitenden machen?"
+    },
+    {
+      "order": 93,
+      "speaker": {
+        "title": "Bürgermeister",
+        "name": "Rosenthal",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Ja."
+    },
+    {
+      "order": 94,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "15.6"
+      ],
+      "afterResult": null,
+      "text": "Das war es so weit? - Dann bedanke ich mich herzlich. Wir schließen die Fragestunde."
+    },
+    {
+      "order": 95,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII (VIII-DS-01694-Ifo-01-NF- 01) 19.3.1 dazu Änderungsantrag (VIII-DS-01694- Ifo-1-NF-1-ÄA-1) Dieser TOP wurde auf Wunsch hier eingeordnet. - Dr. Külow."
+    },
+    {
+      "order": 96,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Külow",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Sehr geehrter Herr Oberbürgermeister! Sehr geehrte Stadträtinnen und Stadträte! - Die Informationsvorlage zu den Kosten der Unterkunft und Heizung betrifft ca. 65.000 Menschen. Das sind über 10 Prozent der Leipzigerinnen und Leipziger. Schon aus diesem Grunde sollten wir den Bezug zur sozialen Realität in unserer Stadt herstellen. Das möchte die Linksfraktion hiermit tun.\n\nDie geringfügige Erhöhung der Kosten der Unterkunft trifft eine Bevölkerungsgruppe, über die der Paritätische Gesamtverband in einer Studie mit dem Titel „Bürgergeld im Realitätstest: Materielle Entbehrung und wachsende Armutslücke“ unlängst Folgendes schrieb. Ich zitiere frei: Fast jeder Fünfte der Betroffenen hat kein zweites Paar Schuhe. Jeder Dritte kann sich keine vollwertige Mahlzeit jeden zweiten Tag leisten. Mehr als die Hälfte kann kaputte Möbel nicht ersetzen. Dies geschieht trotz Lebensmitteltafeln und Sozialkaufhäusern. Und die Bundesregierung hatte gestern nichts Besseres zu tun, als mit der sogenannten neuen Grundsicherung staatlich organisierte Grausamkeiten gegenüber diesen Menschen zu beschließen.\n\nWie sieht es nun in Leipzig konkret aus? Hier berufe ich mich auf die Zahlen, die von der Stadtverwaltung auf meine Anfrage „Armutsschwelle und Armutslücke in Leipzig“ vor wenigen Wochen übermittelt wurden. Diese Zahlen geben Anlass zu politischem Alarm. Die Armutsgefährdungsquote lag im Jahr 2024 in Leipzig auf der Basis der von der Bundesregierung mit 1.381 Euro definierten Armutsschwelle bei dramatischen 26 Prozent. Die Armutslücke unter den Armen und damit die Tiefe der Armut beträgt 29 Prozent. Sie bezeichnet das durchschnittliche Ausmaß, um das das Einkommen armer Haushalte unterhalb der offiziellen Armutsschwelle liegt.\n\nSchaut man sich die Antwort der Verwaltung weiter an, wird deutlich, dass von der Armutsgefährdung mehrere Bevölkerungsgruppen betroffen sind, wie zum Beispiel Arbeitslose, Studierende, Rentnerinnen und Rentner sowie insbesondere Bürgergeldbeziehende. Bei Letzteren liegt die Armutsgefährdungsquote bei 92 Prozent.\n\nDas hat auch mit einer dramatischen Entwicklung zu tun, die von der medialen Aufmerksamkeitsökonomie leider fast nie erfasst wird: der Wohnkostenlücke. Die Zahl derjenigen Haushalte, in denen zwischen den anerkannten Kosten der Unterkunft und den tatsächlich an den Vermieter gezahlten Mieten und Betriebskosten inklusive Heizkosten eine Lücke besteht, wächst ständig. Bestand im Jahr 2022 unter den 30.550 beim Jobcenter gezählten Bedarfsgemeinschaften bei 3.556 Bedarfsgemeinschaften eine Wohnkostenlücke, so stieg diese Zahl bis zum Jahr 2025 auf 4.135.\n\nDie Wohnkostenlücke müssen die Betroffenen aus den Leistungen zum Lebensunterhalt, also dem Regelsatz, bezahlen. Die Wohnkostenlücke führt dazu, dass die betreffenden Familien, auch solche mit Kindern, in gefährliche Bereiche der Unterversorgung geraten. Lebensmittel sind in den vergangenen Jahren zum Beispiel um fast ein Drittel teurer geworden. Im Durchschnitt beträgt die Wohnkostenlücke aktuell monatlich 132,20 Euro.\n\nZum Vergleich: Gestern beschloss der Stadtrat nach einer wochenlangen Debatte, dass die Steuer für gechipte Hunde 120 Euro jährlich beträgt. Ich wähle diesen Vergleich gezielt, weil ich es für bedrückend und bizarr zugleich halte, dass wir uns hier im Leipziger Stadtrat mit der Steuer für circa 25.000 Hunde zig-mal mehr beschäftigen als mit der angespannten Lebenssituation von 31.000 beim Jobcenter registrierten Bedarfsgemeinschaften.\n\nWer meint, dass die Betroffenen sich doch gefälligst eine kostengünstigere Bleibe suchen sollten, kann angesichts der Realitäten auf dem Leipziger Wohnungsmarkt nur als kaltherziger Zyniker bezeichnet werden, denn neben den vom SGB II betroffenen Haushalten müssen ja auch die Beziehenden nach SGB XII, also von Grundsicherung im Alter, Erwerbsminderung und Sozialhilfe, hinzugerechnet werden. Nach dieser Gesamtzählweise kommen für 2025 noch mindestens 558 Haushalte hinzu, in denen eine Wohnkostenlücke besteht. Das sind insgesamt 4.693 Haushalte, ohne jene zu berücksichtigen, die bereits durch eine Mietkostensenkungsaufforderung bedroht sind. Zugleich stehen die genannten Bevölkerungsgruppen in unmittelbarer Konkurrenz mit allen am Wohnungsmarkt, die eine kostengünstige Wohnung suchen oder brauchen, wie zum Beispiel Seniorinnen und Senioren mit niedriger Rente, Menschen im Niedriglohnbereich oder Studierende.\n\nDer obligatorische Hinweis in den Mietsenkungsaufforderungen aus dem Jobcenter und dem Sozialamt, die Betroffenen könnten durch Verhandlungen mit den Vermietern ihre Miete senken, muss angesichts des angespannten Wohnungsmarktes ins Reich der Mythen verwiesen werden. Es sind genau jene Vermieter, denen von der Verwaltung zu Recht vorgehalten wird, auf jede Richtwerterhöhung zu lauern, um davon unmittelbar zu profitieren. Hierbei befinden sich verwaltungsinterne Sichtweisen sowohl miteinander als auch mit der Realität in einem offenkundigen Widerspruch. Zur umfassenden Betrachtung des Gesamtkonzeptes wird Ihnen mein geschätzter Fraktionskollege Enrico Stange noch die Sachlage zum Mietmarkt erläutern. - Ich danke für Ihre Aufmerksamkeit."
+    },
+    {
+      "order": 97,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Herr Stange."
+    },
+    {
+      "order": 98,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Vielen Dank. - Herr Oberbürgermeister! Meine Damen und Herren! Mein geschätzter Kollege Dr. Külow hat Sie umfangreich in die Thematik vor dem Hintergrund gesellschaftlich gravierender Problemlagen wie Armut und Armutsgefährdung ein- und an jenen Punkt geführt, an dem ich Sie jetzt abhole. Er hat ebenfalls dargestellt, dass die betroffenen Leistungsbeziehenden von Bürgergeld, Grundsicherung und Sozialhilfe zugleich mit den Beziehenden kleiner und mittlerer Renten oder Niedrigeinkommen sowie Studierenden um ein und denselben Wohnraum konkurrieren.\n\nDabei haben sie jetzt und künftig umso mehr erhebliche Schwierigkeiten, zum Zug zu kommen, denn die Bundesregierung plant mit der Novelle des SGB II neben den den Leistungsbeziehenden auferlegten Mietrechtsverpflichtungen, die erhebliche Rechtskenntnisse voraussetzen, auch eine bußgeldbewehrte Auskunfts-, Mitwirkungs-, Nachweis- und Formularpflicht für Vermieter. Wer denkt sich so etwas eigentlich aus? Eine solche Regelung wird mit hoher Wahrscheinlichkeit die Mietchancen von Leistungsbeziehenden noch zusätzlich einschränken. Ich empfehle Ihnen die Stellungnahme des Tacheles e. V., eines renommierten Erwerbslosen- und Sozialhilfevereins, Mitglied im Paritätischen Wohlfahrtsverband, zu diesem Gesetzentwurf.\n\nZum Dreh- und Angelpunkt des hier in Rede stehenden Sachverhalts. Die zentrale Frage bei der heutigen Beschlussfassung ist die Verfügbarkeit angemessenen Wohnraums. Ich kann Ihnen an dieser Stelle den Gesetzeswortlaut nicht ersparen:\n\nBedarfe für Unterkunft und Heizung werden in Höhe der tatsächlichen Aufwendungen anerkannt, soweit diese angemessen sind.\n\nUnd weiter:\n\nSoweit die Aufwendungen für Heizung und, nach Ablauf der Karenzzeit, die Aufwendungen der Unterkunft den der Besonderheit des Einzelfalles angemessenen Umfang übersteigen, sind sie als Bedarf so lange anzuerkennen, wie es der oder dem alleinstehenden Leistungsberechtigten oder der Bedarfsgemeinschaft nicht möglich oder nicht zuzumuten ist, [...] auf andere Weise die Aufwendungen zu senken, in der Regel jedoch längstens für sechs Monate.\n\nIn einem weiteren Beitrag werde ich dann fortsetzen. - Vielen Dank bis hierher."
+    },
+    {
+      "order": 99,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Herr Stange hat sich noch einmal gemeldet. Bitte, 2 Minuten."
+    },
+    {
+      "order": 100,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "In § 22a Absatz 3 heißt es:\n\nDie Bestimmung der angemessenen Aufwendungen für Unterkunft und Heizung soll die Verhältnisse des einfachen Standards auf dem örtlichen Wohnungsmarkt abbilden. Sie soll die Auswirkungen auf den örtlichen Wohnungsmarkt berücksichtigen hinsichtlich: 1. der Vermeidung von Mietpreis erhöhenden Wirkungen, 2. der Verfügbarkeit von Wohnraum des einfachen Standards, 3. aller verschiedenen Anbietergruppen und 4. der Schaffung und Erhaltung sozial ausgeglichener Bewohnerstrukturen.\n\nDas können Sie alles in den Quellen in unserem Änderungsantrag nachlesen. - In Leipzig standen den 4.693 Haushalten mit Wohnkostenlücke insgesamt, darunter 974 Bedarfsgemeinschaften mit Kindern, 1.089 Wohnungen im angemessenen Segment mit unmittelbarer Konkurrenz aller anderen, wie schon dargestellt, gegenüber. Geht man in der Herleitung zu den Angemessenheitswerten, Anlage 1 der Vorlage, zu Recht davon aus, dass bei der Ermittlung von verfügbarem Wohnraum zu angemessenen Preisen Mehrfachnennungen vorhanden sind, verringert sich der Wert von 1.089 auf 726 Wohnungen; erfahrungsgemäß etwa zwei Drittel des Wertes. Unbeachtet bleibt dabei die ausgewogene Verteilung des Wohnraums.\n\nFazit: Es kann also keineswegs mehr davon die Rede sein, dass angemessener Wohnraum in ausreichendem Maße verfügbar ist - ich erinnere auch an Ihre Antwort, Frau Dr. Münch, auf die Anfrage - und somit für die Betroffenen auch erreichbar ist. Das Bundessozialgericht hat in seiner Entscheidung vom 12.12.2009 geurteilt:\n\nDie festgestellte angemessene Referenzmiete oder die Mietobergrenze muss mithin so gewählt werden, dass es dem Hilfebedürftigen möglich ist, im konkreten Vergleichsraum eine „angemessene“ Wohnung anzumieten.\n\nDa wir nicht in die Richtlinie selbst hineinkönnen, die Werte verändern - um Himmels willen; ich würde gar nicht behaupten, dass wir mit unserem Taschenrechner so weit kommen -, müssen wir anders an die Problemlage herangehen. Deshalb ist es dringend erforderlich, mit dem Jobcenter und auch dem Sozialamt dahin gehend ins Gespräch zu gehen, diese Praxis der Kürzung der KdU mindestens so lange auszusetzen, bis ausreichend angemessener Wohnraum auch real verfügbar ist."
+    },
+    {
+      "order": 101,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Die Zeit!"
+    },
+    {
+      "order": 102,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Stange",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Wir bitten Sie in diesem Sinne um dieses wichtige Zeichen für die Betroffenen und um Ihre Zustimmung zu unserem Änderungsantrag. - Vielen Dank."
+    },
+    {
+      "order": 103,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Frau Dr. Münch, darf ich Sie um Stellungnahme bitten?"
+    },
+    {
+      "order": 104,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "19.3"
+      ],
+      "afterResult": null,
+      "text": "Herr Stange und Herr Dr. Külow, Sie stellen mich jetzt vor ein wirklich schwieriges Problem, denn die Zahlen, die Sie in der Analyse schildern, zweifle ich überhaupt nicht an; die sind ja richtig. Wir haben ein Problem mit zunehmender Armut. Wir haben ein Problem mit Wohnungsmangel und Konkurrenz unterschiedlichster Gruppierungen im niedrigen Mietbereich. Die Geflüchteten gehören ebenfalls dazu, die aus ihren Gemeinschaftsunterkünften ausziehen und natürlich auch in diesem Segment Wohnungen suchen.\n\nIch frage mich nur: Wie sollen wir mit unserem kommunalen Haushalt dieses Problem lösen? Ich sehe es schlechterdings als unmöglich an, denn was Sie fordern, ist, dass wir als Kommune im Grunde den unangemessen hohen Mietzins weiter bezahlen und weiter tragen, so lange, bis genügend Wohnungen da sind. Das heißt im Grunde, dass wir eigentlich jegliche Karenzzeit und Ähnliches aufheben sollten. Dazu sehe ich uns nicht in der Lage. Das übersteigt unsere finanziellen Möglichkeiten, und es widerspricht auch den Regeln.\n\nSie haben mehrere Punkte genannt. Ich will jetzt keine Grundsatzrede halten; das bekommen wir nicht so aus dem Ärmel geschüttelt. Sie wissen, das schlüssige Konzept haben wir Ihnen vorgestellt. Auf dieser Basis errechnen wir unsere aktuellen Daten. Die Methode der Stadt Leipzig wurde vom Sächsischen Landessozialgericht seit Ende 2023 in mehreren Entscheidungen als rechtmäßig bestätigt. Das heißt, wir gehen hier von realen Zahlen aus. Grundsätzlich geht man davon aus, dass es in ausreichendem Maß Wohnungen zu der abstrakt angemessenen Leistung für die Unterkunft gibt.\n\nDas kann man natürlich infrage stellen, und das kann ich nachvollziehen. Aber wir haben auch die Möglichkeit, dass wir im SGB II und im SGB XII die Regelung haben, dass wir dies für einen Zeitraum von immerhin 18 Monaten tolerieren."
+    },
+    {
+      "order": 105,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "dem wir diese unangemessen hohen Kosten staatlicherseits tragen. Darüber hinaus ist es so: Es werden unangemessen hohe Unterkunftskosten anerkannt, wenn der leistungsberechtigte Haushalt seine erfolglosen Bemühungen zur Senkung nachweist. Ich gehe davon aus, dass das auch in diesem Maße passiert.\n\nAber zu Ihrer Grundsatzfrage: Ja, natürlich brauchen wir mehr preiswerten, bezahlbaren Wohnraum. Wir kümmern uns intensiv darum. Dabei haben wir auch über das wohnungspolitische Konzept und unsere Richtlinien für die LWB diskutiert, dass wir mehr Sozialwohnungen brauchen. Es werden auch permanent Sozialwohnungen gebaut, aber natürlich nicht ausreichend; darin stimme ich Ihnen zu.\n\nAber es gäbe beispielsweise auch diese Möglichkeit - das betrifft den Bundesgesetzgeber -: Man sollte nochmals darüber nachdenken, ob es wirklich sozial gerecht ist, wenn jemand, der einmal, als er vielleicht in einer prekären Situation war oder studiert hat, einen Wohnberechtigungsschein bekommen hat, diese Wohnung für alle Zeiten behalten darf, oder ob man diesen Schein beispielsweise nur befristet ausstellt. Dann würde ich mit einem Schlag mehr Sozialwohnungen zur Verfügung haben. Oder ich könnte als Bundesgesetzgeber darüber diskutieren, ob ich die Sozialbindung im sozialen Wohnungsbau aufhebe, sodass die Bindung nicht nach einer entsprechenden Jahreszahl einfach wegfällt und der Vermieter auf dem freien Wohnungsmarkt weitervermieten kann.\n\nEs gibt also eine Reihe von Ansätzen - vom Bau- Turbo müssen wir hier überhaupt nicht sprechen -, über die wir versuchen müssen, dieses Problem mittelfristig anzugehen. In dem Ansatz, dass wir dieses Problem angehen müssen, bin ich bei Ihnen, nur: Wir können das nicht mit dem von Ihnen vorgeschlagenen Antrag machen, als Stadt diese unangemessenen Kosten sofort zu übernehmen.\n\nDeshalb würde ich Ihnen vorschlagen, dass wir mit dem Beschlusspunkt 4 - damit habe ich überhaupt kein Problem, denn der Oberbürgermeister setzt sich als Präsident des Städtetags fortlaufend auch dafür ein - eine Verbesserung der Situation erreichen. Aber damit sind wir als Kommune schlichtweg überfordert. Dazu brauchen wir Bundesregelungen, die sich verändern, und wir müssen hier vor Ort bauen. Hier sind wir auch intensiv dran. Deshalb kann ich den anderen Punkten nicht zustimmen. Wenn wir sie so beschließen, wäre das ein erheblicher Nachteil für unsere Stadt. Wir können uns das finanziell in keiner Weise leisten.\n\nIn den anderen Punkten bin ich bei Ihnen. Wir können gern gemeinsam auf die Gesetzgeber in Land und Bund zugehen und versuchen, Dinge zu bewegen."
+    },
+    {
+      "order": 106,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Herr Stange, Sie dürfen nicht mehr. - Frau Krefft hat sich gemeldet."
+    },
+    {
+      "order": 107,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Krefft",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Frau Dr. Münch, vielen Dank für die Einordnung, die Sie gegeben haben. Aber es stellt sich doch noch die Frage: Wie ist die Bundesbeteiligung an den KdU? Sie haben jetzt argumentiert, dass Ihnen die Fantasie fehlt, wie wir das aus dem kommunalen Haushalt heraus realisieren können, was DIE LINKE beantragt. Aber wir haben ja doch eine deutliche Bundesbeteiligung bei den Kosten der Unterkunft. Ich weiß jetzt nicht, ob sie pauschal oder spitz abgerechnet werden. Aber vielleicht könnten Sie dazu noch einmal etwas sagen. Meiner Kenntnis nach ist es nicht allein eine Sache des kommunalen Haushalts. Damit könnte man dem Antrag der LINKEN durchaus folgen."
+    },
+    {
+      "order": 108,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Es geht um das Jobcenter, das auch von der Kommune mitfinanziert wird, das diese Kosten weiter tragen soll. Es ist ja nicht nur der Bund, der das bezahlt, und es wird nicht zu 100 Prozent ausgeglichen."
+    },
+    {
+      "order": 109,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Ich kann die Antwort geben: 74,1 Prozent bezahlt der Bund für die Kosten der Unterkunft im Rahmen der gesetzlichen Gegebenheiten. Wenn wir als Stadt freiwillig über die 18 Monate hinausgehen, würden wir sozusagen in die Haftung und die Zahlpflicht kommen, und dann wären wir zu 100 Prozent an den Mehrkosten beteiligt."
+    },
+    {
+      "order": 110,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Krefft",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Aber da wäre es noch einmal wichtig, das en detail auszuführen, denn gesetzlich haben wir als Kommune die Möglichkeit, die Regeln festzulegen, unter Berücksichtigung unserer Wohnsituation. Insofern wäre es gut, Herr Oberbürgermeister, wenn wir den Gesetzesauszug noch schriftlich bekommen. Ich kann mir auch alles selbst suchen, aber Sie wissen, wir sind im Ehrenamt. Es wäre schön, wenn Sie uns das zur Verfügung stellten.\n\nIch habe Ihre Einlassung, Frau Dr. Münch, so verstanden, als ginge es darum: Beim Jobcenter arbeiten ja Mitarbeiter der Stadtverwaltung Leipzig. Wir sprechen hier aber über die Leistung der Kosten der Unterkunft, die bei den Menschen ankommt, und nicht über die Mitarbeitenden und sozusagen den Aufwand, den wir damit haben. Insofern habe ich Ihre Einlassung in keiner Weise verstanden."
+    },
+    {
+      "order": 111,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Wir können das gern im Fachausschuss vertiefen. Dann würden wir auch noch einmal die Zahlen mitbringen, und dann können wir das auf der Basis der aktuellen Zahlen diskutieren."
+    },
+    {
+      "order": 112,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Ich will es noch einmal ganz deutlich sagen: Der Gesetzgeber hat per Gerichtsbeschluss die 18 Monate verankert. Diese sind damit Bestandteil des Gesetzes. 74,1 Prozent der Kosten der Unterkunft übernimmt der Bund im Rahmen dieser Gesetzlichkeit. Wenn wir mit unseren Leistungen über diese gesetzliche Regelung hinausgehen, ist es eine zu 100 Prozent freiwillige Leistung der Stadt. Das könnte man noch einmal vernünftig aufschreiben und vielleicht im Ausschuss zur Kenntnis geben. - Frau Nagel hat sich gemeldet."
+    },
+    {
+      "order": 113,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Nagel",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Ich möchte noch einmal darauf hinweisen, worum es hier geht. Es geht darum, dass Menschen, die ihre Kosten nicht senken können, zu viel Miete zahlen - auch noch einmal an das Auditorium -, aber auch keine Ersatzwohnung finden. Darum geht es doch. Ich weiß, dass die Stadt Leipzig - ich weiß es noch von Herrn Professor Fabian, und ich hoffe, das zieht sich auch durch - dabei durchaus kulant ist und schaut und ermöglicht usw.\n\nWas wir aber mit dem Beschluss wollen, ist eine Aufforderung an das Jobcenter, diesen Menschen zu helfen. Da gibt es kein Ein und Aus. Das ist unser Ansinnen, und ich möchte auch nicht über Bürokratie, Kosten usw. diskutieren. Hier geht es um konkrete Menschen, die keine Ersatzwohnung finden; das ist unser Anliegen. Unser Antrag sagt: mit dem Jobcenter ins Gespräch kommen und eine Lösung finden. Ich bitte den Rat, das wirklich ernst zu nehmen und diesen Prüf- bzw.\n\nKommunikationsauftrag auch auszulösen. Wir beschließen jetzt keine konkrete Geldverauslagung, sondern einen Prozess, in den wir mit dem Jobcenter gehen wollen, um die Möglichkeiten auszuschöpfen, die die Stadt hat.\n\nEs gibt keine ausreichenden Wohnungen. Sie haben auf die Urteile des Landessozialgerichts verwiesen. Es gibt aber an der erstinstanzlichen Kammer auch einige Urteile, durch die sich das die Waage hält. Diese besagen, dass es keinen ausreichend verfügbaren Wohnraum gibt und die Kosten der Unterkunft so nicht funktionieren bzw. das schlüssige Konzept so nicht hinhaut. Ich kenne Anwältinnen und Anwälte, die darauf harren, dass das Landessozialgericht vielleicht auch eine andere Waage vorsieht. Auch in der Juristerei gibt es durchaus verschiedene Urteilslagen. Darauf wollte ich noch einmal hinweisen."
+    },
+    {
+      "order": 114,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Vielleicht noch ein Satz, Frau Nagel: Ich verstehe, dass Sie diesen Menschen helfen wollen. Wir wollen auch niemanden auf der Straße haben, und das Sozialamt bemüht sich nach Kräften, Menschen, die von Wohnungslosigkeit bedroht sind, entsprechende Ersatzwohnungen anzubieten. Das ist ein Dilemma, das wir haben; das gestehe ich Ihnen zu. Aber der Oberbürgermeister hat es Ihnen jetzt auch zweimal noch gesagt: Wenn wir über diese Grenze hinausgehen, sind wir gezwungen, die Kosten zu 100 Prozent selbst zu tragen. Das können wir als Stadt in unserer Situation nicht machen. Trotzdem gestehe ich Ihnen absolut zu, dass es eine Notlage ist, die uns auch bedrückt; da haben Sie vollkommen recht."
+    },
+    {
+      "order": 115,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Ohne dass man das jetzt öffentlich weitertreiben muss: Ich glaube, viele Lösungen, Frau Nagel, werden gefunden, und die sollte man vielleicht nicht so öffentlich diskutieren. - Herr Franke."
+    },
+    {
+      "order": 116,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Franke",
+        "group": "SPD"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Zunächst bin ich froh, dass wir hier insgesamt die gleiche Problemanalyse haben. Der Wohnungsmarkt in Leipzig ist ein Problem, und ja, hier müssen wir an sehr vielen Stellen etwas tun. Ich bin Ihnen aber auch sehr dankbar, Frau Dr. Münch und Herr Jung, dass Sie noch einmal dargestellt haben, wie es aus der Verwaltung heraus versucht wird. Insofern beantragen wir punktweise Abstimmung, sodass wir dem Beschlusspunkt 4 folgen können, um diesen Kommunikationsfaden aufzugreifen. Ich verstehe das Anliegen, aber ich verstehe auch die Zwänge, die wir an dieser Stelle haben."
+    },
+    {
+      "order": 117,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Herr Dr. Külow noch einmal."
+    },
+    {
+      "order": 118,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Külow",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Ich will noch einmal drei Zahlen hervorheben, denn es waren jetzt relativ viele Zahlen; das verstehe ich auch irgendwo. Wir haben uns viel Mühe gegeben. Frau Dr. Münch, wir berufen uns ja immer auf Zahlen aus Ihrem Dezernat, wir haben uns überhaupt nichts aus den Fingern gesaugt. Es ist definitiv so, dass rund 3.500 Wohnungen mit angemessenem Wohnraum und Miete in Leipzig fehlen. Das ist erst einmal unstrittig. Wir haben gleichzeitig rund 4.500 Bedarfsgemeinschaften, bei denen eine Wohnkostenlücke aus dem Regelsatz der Betroffenen gezahlt wird. Bei Bedarfsgemeinschaften mit Kindern sind es sogar 165 Euro anstatt die vorhin von mir genannten 132 Euro, aber das will ich jetzt nicht weiter kommentieren.\n\nIch verstehe natürlich das Dilemma, in dem wir uns als Stadt befinden. Aber wenn wir Ihre Logik zu Ende denken, bedeutet das, dass sich natürlich die Zahl der Bedarfsgemeinschaften, die diese Wohnkostenlücke überbrücken müssen, weiter erhöhen wird. Das ist - Herr Jung, Sie nicken - zwangsläufig der Fall. Dem müssen wir bei der Abstimmung ins Auge blicken - das soll bitte jede Fraktion mit sich selbst ausmachen -, denn das wäre die Konsequenz, wenn der Antrag abgelehnt wird. Das heißt nicht, dass sich, wenn er angenommen wird, alles automatisch verbessert. Aber ich denke, die wenigen Möglichkeiten, die wir haben, können wir damit ausreizen. Deshalb bitte ich noch einmal dezidiert um Zustimmung in allen vier Punkten. - Danke."
+    },
+    {
+      "order": 119,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": null,
+      "text": "Ich darf Sie um Ihr Votum bitten. Es ist punktweise Abstimmung beantragt. Punkt 1 ist: Die Information wird zur Kenntnis genommen. Punkt 2 ist der erste Punkt des Änderungsantrags, über den wir abstimmen. Abstimmung: 26 - 27 - 6. Damit abgelehnt."
+    },
+    {
+      "order": 120,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": 0,
+      "text": "Punkt 3: „Der Oberbürgermeister wird beauftragt, hinsichtlich der im Rechtskreis SGB XII Betroffenen entsprechend Beschlusspunkt 2 zu verfahren.“ - Es konnten alle abstimmen.\n\nAbstimmung: 26 - 27 - 6. Abgelehnt."
+    },
+    {
+      "order": 121,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": 1,
+      "text": "Punkt 4: Ihr Votum, bitte.\n\nAbstimmung: 39 - 20 - 0. So beschlossen. - Vielen Dank."
+    },
+    {
+      "order": 122,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18"
+      ],
+      "afterResult": 2,
+      "text": "Wir kommen zu weiteren Vorlagen."
+    },
+    {
+      "order": 123,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "18.11.1 dazu Änderungsantrag (VIII-DS-01387- ÄA-01) Frau Schneiß, bitte schön."
+    },
+    {
+      "order": 124,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Schneiß",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Sehr geehrter Herr Oberbürgermeister! Sehr geehrte Beigeordnete! Liebe Kolleginnen und Kollegen der demokratischen Fraktionen! Liebe Zuschauerinnen und Zuschauer auf der Tribüne und im Stream! Im Mittelpunkt unseres Änderungsantrags steht das Zentrum für Drogenhilfe und vor allem diejenigen, die dort tagtäglich unverzichtbare Arbeit leisten. Sie arbeiten mit Menschen, die oft am Rand unserer Gesellschaft stehen: suchtkranke Menschen ohne eigene Wohnung, mit schweren gesundheitlichen Belastungen und komplexen sozialen wie psychiatrischen Problemlagen. Diese Arbeit verlangt hohe fachliche Kompetenz, emotionale Stabilität und ein enormes persönliches Engagement.\n\nEin herausragendes Beispiel für diese Arbeit ist die Notschlaf- und Beratungsstelle Alternative I. Seit mehr als 30 Jahren ist sie ein zentraler Anlaufpunkt für Menschen, die oft in akuten Lebenskrisen stecken und keine andere Unterstützung finden. Neben Krisenintervention leistet das Team Schutz, langfristige Begleitung, Substitutionsbehandlung, medizinische Versorgung, Spritzentausch und Safer-Use-Angebote.\n\nEin besonders wichtiger Bestandteil ist auch die Wundversorgung, die für viele Klientinnen und Klienten lebenswichtig ist. Suchtkranke Menschen leiden häufig an chronischen Wunden, Abszessen und Infektionen, die unbehandelt zu schwerwiegenden gesundheitlichen Schäden oder sogar lebensbedrohlichen Situationen führen können. Die fachgerechte Wundversorgung schützt vor Infektionen und verringert die gesundheitlichen Folgeschäden. Gepaart mit den präventiven Angeboten der Harm Reduction reduziert sie langfristige Behandlungskosten immens.\n\nDie Alternative I ist weit mehr als eine Krisenstelle. Sie ist ein Ort von Verlässlichkeit, medizinischer Versorgung, Beratung und Beziehungen. Gerade diese Arbeit rettet Leben und schafft oft überhaupt erst Zugang zu Hilfe für Menschen, die andere Systeme längst verloren haben.\n\nDer vorliegende Wirtschaftsplan wird dieser Realität jedoch nicht gerecht. Deshalb schlagen wir die Schaffung einer zusätzlichen Vollzeitstelle im Zentrum für Drogenhilfe vor. Die intensive Arbeit birgt hohe psychische und physische Belastungen. Überlastung, emotionale Erschöpfung und die tägliche Konfrontation mit schwerwiegenden Krisenlagen können langfristig die Gesundheit der Beschäftigten gefährden. Deshalb ist es essenziell, dass die Beschäftigten nicht nur professionell unterstützt werden, sondern dass ihre Arbeit auch unter Bedingungen stattfindet, die Sicherheit, Schutz und angemessene Entlastung gewährleisten. Rund 700 Überstunden zeigen deutlich, wie hoch die Belastung ist.\n\nDie Konsequenz: Gerade der Tagestreff musste aufgrund der schwachen Personaldecke immer wieder kurzfristig schließen, auch um die anfallenden Überstunden irgendwie im Zaum zu halten. Diese Stelle ist kein Luxus, sondern Voraussetzung für verlässliche, qualitativ hochwertige Arbeit inklusive medizinischer Versorgung sowie einem Mindestmaß an Schutz für die Beschäftigten. Abschließend muss ich noch anmerken, dass in der Alternative I ein erheblicher Platzmangel besteht. Dieser führt dazu, dass die Beratungs- und medizinischen Angebote oft nicht in der erforderlichen Qualität durchgeführt werden können. Frau Krefft wird darauf noch weiter eingehen. - Vielen Dank."
+    },
+    {
+      "order": 125,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Frau Krefft hat das Wort."
+    },
+    {
+      "order": 126,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Krefft",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Vielen Dank. - Wir haben uns die Rede geteilt, und ich gehe jetzt auf den Aspekt der baulichen Situation ein. Wir waren als Arbeitsgruppe Gesundheit und Soziales unseres Kreisverbandes vor Ort und haben uns von der Enge überzeugt. Hier liegen die Räume sehr eng aneinander: die Beratungsräume und die Räume, in denen die Wundversorgung, der Spritzentausch, die Substitution usw. stattfinden. Jeder, der einmal da war, konnte sich bereits davon überzeugen.\n\nWir wollen ganz konkret erreichen, dass das Dachgeschoss wieder nutzbar gemacht wird. Hier gibt es drei Räume - davon zwei voll funktionsfähig -, aber sie dürfen aufgrund des fehlenden Brandschutzes nicht genutzt werden. Denn die Brandschutztreppe führt nur in das erste, nicht in das zweite Obergeschoss. Wir kennen es von anderen Objekten in der Stadt - das ist ja häufig hier im Stadtrat Thema -, zum Beispiel dem Budde- Haus, der Mühlstraße und anderen, dass sich sieben oder acht Personen im Dachgeschoss bei der eindimensionalen Zuwegung aufhalten dürfen. Warum das hier an dieser Stelle nicht möglich ist, konnte mir auch in der Bauordnung nicht beantwortet werden. Es lag dort gar kein Vorgang vor. Wir wollen, dass dieses Problem behoben wird und mindestens die zwei Räume im Dachgeschoss für die Beratungsaufwendungen genutzt werden können, also dass sich dort mindestens zwei Personen aufhalten dürfen.\n\nDarüber hinaus haben wir dort - das ist über den Verbund organisiert - einen ganz hervorragenden Suchtmediziner. Wir wollen, dass hier das Substitutionsangebot für bis zu 200 Menschen, die dort substituiert werden, mit mehr Platz und einem besseren räumlichen Angebot realisiert werden kann. Auf dem Grundstück gibt es eine Garage. Wir wollen, dass das Zentrum für Drogenhilfe hier in die Planung gehen kann und die Räume entsprechend herrichten kann, damit dann wiederum im Haupthaus mehr Platz für die Versorgung der Menschen ist.\n\nDarüber hinaus - das ist der dritte Beschlusspunkt - wollen wir erreichen, dass das Verselbstständigungswohnen, das 2014 beendet wurde, wieder anfängt. Viele der Klienten und Klientinnen, die dort in Übernachtungsstellen sind, sind schon seit zwei Jahren jede Nacht da. Sie haben also gezeigt, dass sie zuverlässig immer wieder an diesen Ort kommen können und dass sie auf jeden Fall in der Lage sind, selbstständig zu wohnen. Wir wollen, dass das Verselbstständigungswohnen durch den Betrieb wieder eingeführt wird. Am Ende ist das kostenneutral. Denn, wie wir ja wissen, gibt es Kosten der Unterkunft oder andere Leistungen, die dazu führen, dass sich die Anmietung über den individuellen Mieter refinanziert. Wir finden es sehr bedauerlich, dass dieser Antrag überhaupt notwendig ist und dass das in der Leitung des Zentrums nicht selbst erkannt wurde. Umso wichtiger ist es aber, dass wir es jetzt hier auf den Weg bringen und Sie diesem Antrag und diesem Anliegen zustimmen. - Danke schön."
+    },
+    {
+      "order": 127,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Frau Dr. Münch."
+    },
+    {
+      "order": 128,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Frau Schneiß, Frau Krefft, auch hier konstatiere ich Ihnen, dass Sie durchaus einen Zustand beschreiben, der uns nicht unbekannt ist. Wir wissen, dass wir hier Nöte haben und dass das Personal hier auch am Rand des Möglichen arbeitet. Trotzdem würde Ihr Antrag angesichts der aktuellen Situation erhebliche Mehrkosten für die Stadt im freiwilligen Bereich, sowohl im Personalbereich als auch im Bereich, was die baulichen Maßnahmen betrifft. Deswegen können wir diesen Leistungen in der derzeitigen Haushaltslage nicht zustimmen.\n\nIch kann Ihnen aber etwas zusagen. Sie wissen sicherlich, dass derzeit die ehemalige Kita in der Koehlerstraße renoviert wird, weil das Team der Sozialarbeitenden und auch andere Bereiche Anfang des Jahres dorthin umziehen werden. Das heißt, wir werden dort eine räumliche Verbesserung und wahrscheinlich auch eine Vergrößerung haben. Insofern sind wir dort in den konzeptionellen Planungen, die in dem Objekt Koehlerstraße perspektivisch umgesetzt werden sollen. Wir sind, auch im Kontext des von Ihnen angesprochenen Problems chronischer Wunden, Frau Schneiß, im Rahmen unseres Plans zur Obdachlosenhilfe dabei, nach Fertigstellung der Notunterkunft in der Kurt-Schumacher-Straße dort auch entsprechende Räumlichkeiten für pflegebedürftige Obdachlose vorzuhalten. Das ist ja auch ein Thema, dem wir uns stellen müssen.\n\nInsofern ist das konzeptionell in unseren Planungen enthalten, aber der Antrag in der vorliegenden Form ist derzeit so nicht finanzierbar."
+    },
+    {
+      "order": 129,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Herr Dr. Külow."
+    },
+    {
+      "order": 130,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Külow",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Auch unsere Fraktion teilt die Grundanalyse und die Argumente, die gerade von Kollegin Schneiß und von Kollegin Krefft vorgetragen wurden.\n\nAber wir haben auch zwei Einwände. Der erste Einwand ist, dass die drei Punkte des Änderungsantrags doch recht kurzfristig kamen und weder im Fachausschuss Soziales, Gesundheit und Vielfalt noch im Eigenbetrieb selbst ausführlich diskutiert werden konnten. Für uns stellen sich eben auch die Fragen: Ist eine ganze VZÄ zum Abbau der Überstunden notwendig? Was bedeutet - Frau Dr. Münch hat es gerade angedeutet der Umzug der Streetworker aus der Chopinstraße in die Koehlerstraße?\n\nEs geht immerhin um eine sechsstellige Summe, die man im Wirtschaftsplan nicht einfach so umtopfen kann. Auch uns stellt sich die Frage, wie der Mehrbedarf finanziert werden kann. Der Wirtschaftsplan 2026 ist bekanntlich mit dem städtischen Gesamthaushalt - ich schaue einmal in Richtung von Herrn Bonew - abgestimmt worden und sollte daher in dieser vorliegenden Form verabschiedet werden, da unter anderem Kreditaufnahmen und viele weitere Sachen dranhängen. Frau Dr. Münch, ich will Sie da nicht festnageln, aber ich finde es gut und richtig, dass Sie eine Brücke bauen. Wenn Sie jetzt noch einen Verweis auf den Wirtschaftsplan 2027 gemacht hätten, dass diese Dinge zumindest in Ihren Überlegungen vielleicht konzeptionell eine Rolle spielen, um diese auch darin aufzunehmen, dann wäre es für alle Beteiligten noch leichter, dass der Wirtschaftsplan in der vorliegenden Form verabschiedet wird. - Danke."
+    },
+    {
+      "order": 131,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Frau Krefft noch einmal."
+    },
+    {
+      "order": 132,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Krefft",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Selbstverständlich sind wir informiert über die Koehlerstraße. Das war ja auch eine Initiative aus den Reihen des Stadtrates, dass die Sozialarbeiter mehr Raum finden und dorthin ziehen können. Insofern ist uns das natürlich geläufig. Frau Dr. Münch, ich finde es sehr schade, dass Sie uns hier kein Angebot machen. Ich habe die Brücke, die Herr Dr. Külow gehört hat, nicht gehört. Wir standen natürlich auch mit der Eigenbetriebsleitung in Kontakt, die uns die wirtschaftliche und wirtschaftsplanerische Problematik, die Herr Dr. Külow ja ausführte, noch einmal beschrieben hat. Wir wollen mitnichten den Wirtschaftsplan gefährden. Aber ich hatte doch verstanden, dass angeboten wurde, dass man die Situation nicht nur in der Analyse teilt, sondern tatsächlich auch vertieft prüft und nach Möglichkeiten sucht. Denn Fakt ist auch: Die Situation wird dadurch, dass die Streetworker jetzt ausziehen, sogar komplizierter, weil sie bislang noch vor Ort unterstützen konnten, um kurzfristige Personalengpässe in den Übergangszeiten zu überbrücken. Das wird jetzt eben nicht mehr möglich sein, da sie - ich weiß es nicht genau - in einem Kilometer Entfernung sein werden. Insofern fände ich es noch einmal sehr gut, wenn Sie hier die vertiefte Prüfung zum Ausdruck bringen würden, die uns im Vorfeld angeboten wurde. - Danke."
+    },
+    {
+      "order": 133,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Frau Dr. Münch."
+    },
+    {
+      "order": 134,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Münch",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Frau Krefft, wir sind selbstverständlich permanent dabei, unsere Konzepte zu aktualisieren und umzustellen, gerade weil wir jetzt auch mit Frau Pfefferle und Herrn Professor Geißler eine neue Leitung für den Eigenbetrieb haben. Ich habe gerade diese Woche mit Frau Pfefferle noch einmal abgestimmt, dass sie sich vor Ort alle Räumlichkeiten anschaut und sich dort intensiv einarbeitet. In diesem Kontext prüfen wir natürlich immer, was möglich ist und was gehen wird."
+    },
+    {
+      "order": 135,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 2,
+      "text": "Dann darf ich Sie bitten, Ihr Votum zum Änderungsvorschlag abzugeben. - Ich denke, alle konnten abstimmen. Abstimmung: 16 - 32 - 9. Damit abgelehnt."
+    },
+    {
+      "order": 136,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 3,
+      "text": "Wir kommen zur Abstimmung über die Vorlage „Wirtschaftsplan“, und ich bitte Sie auch hier um Ihr Votum. - Es konnten alle abstimmen.\n\nAbstimmung: 57 - 0 - 0. So beschlossen."
+    },
+    {
+      "order": 137,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.11"
+      ],
+      "afterResult": 4,
+      "text": "Vielen Dank."
+    },
+    {
+      "order": 138,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "gestalten - Geschichten von mutigen Menschen aus Leipzig“ (AT) und 350 Jahre Leipziger Städtische Bibliotheken (VIII-DS-01518) 18.15.1 dazu Änderungsantrag (VIII-DS-01518- ÄA-01) Bitte schön, Frau Gehrt."
+    },
+    {
+      "order": 139,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Gehrt",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Sehr geehrter Herr Oberbürgermeister! Werte Bürgermeisterinnen und Bürgermeister! Liebe Kolleginnen der demokratischen Fraktionen! Liebe Gäste! Das städtische Themenjahr 2027 heißt „Leipzig gestalten - Geschichten von mutigen Menschen aus Leipzig“, unter anderem aus Anlass des 350. Jubiläums der Leipziger Städtischen Bibliotheken. Außerdem sind im Themenjahr auch noch enthalten der 12. Deutsche Chorwettbewerb, die Jahrestagung des Deutschen Museumsbundes, die Jahrestagung des PEN-Zentrums Deutschland, der Landeswettbewerb „Jugend musiziert“, der 100. Geburtstag von Kurt Masur und der 50. Todestag von Ernst Bloch. Ehrlich gesagt habe ich das Gefühl, dass es sich hier vielmehr um eine Ansammlung von Jubiläen und Großveranstaltungen handelt, denen nachträglich ein Titel übergestülpt wurde, als um ein überzeugendes und konsequent durchdachtes Konzept für ein Themenjahr, wie in den vergangenen Jahren und auch wie in 2026. Mit den Themenjahren erinnern wir an Geschichten, Personen, Bewegungen, bahnbrechende Entwicklungen, Prozesse und Kulturen. Wir bringen Stadtteile und Ortschaften in den Fokus. Damit schreiben wir die Geschichte unserer Stadt fort. Was bzw. wer in den Fokus gerückt wird, bleibt im Gedächtnis. Genau deswegen sind wir der Meinung, dass sich zivilgesellschaftliche Akteurinnen und Akteure an dieser Fortschreibung unserer Leipziger Geschichte beteiligen können sollten. Denn sie gestalten Leipzig mit, und das Themenjahr heißt „Leipzig gestalten - Geschichten von mutigen Menschen aus Leipzig“.\n\nSo wurde es auch bei den Themenjahren der letzten fünf bis sechs Jahre praktiziert. Es gab immer eine öffentliche Ausschreibung, die mit bis zu 90.000 Euro ausgestattet war, auf die sich zivilgesellschaftliche Akteurinnen und Akteure mit ihren eigenen Projektideen bewerben konnten, um den Themenjahren unterschiedliche Perspektiven und größere inhaltliche Tiefe zu geben und so auch diversen Zielgruppen dezentral an verschiedenen Orten der Stadt zugänglich zu machen.\n\nNun wird gerade im Themenjahr zum Thema „Leipzig gestalten - Geschichten von mutigen Menschen aus Leipzig“ mit dieser Praxis gebrochen. Warum? Im Text zum Themenjahr steht doch - Zitat -:\n\nEs geht dabei weder um überhöhte „Heiligenfiguren“ noch allein um große Namen, sondern um engagierte Rollenvorbilder aus der Mitte der Gesellschaft […].\n\nEs geht also um zivilgesellschaftliche Akteurinnen und Akteure. Genau diese sollen im Themenjahr 2027 nicht die Möglichkeit bekommen, sich mit eigenen Projektideen zu beteiligen. Nein, es reicht uns eben nicht, wenn Regiebetriebe der Stadt Akteure einladen, denn damit bliebe es ein Konzept und eine Perspektive eines städtischen Betriebes und eben kein Konzept oder keine Idee aus der Zivilgesellschaft.\n\nWir halten das besonders unter diesem Titel für falsch. Das ist ein falsches Signal - besonders an diejenigen, die aufgrund der schwierigen Haushaltssituation aktuell weniger oder nichts bekommen und sich trotzdem für Leipzig engagieren, denn das ist mutig und riskant. Deswegen beantragen wir mit unserem Änderungsantrag, wenigstens 30.000 Euro - das ist sehr bescheiden - für eine öffentliche Ausschreibung zur Verfügung zu stellen, damit wir in 2027 auch die Perspektiven der Zivilgesellschaft auf „mutige Menschen“ sichtbar und diese vielleicht sogar dezentral in verschiedenen Stadtteilen oder Ortschaften zugänglich machen können. Bitte stimmen Sie dem zu. - Vielen Dank."
+    },
+    {
+      "order": 140,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Frau Dr. Märtens."
+    },
+    {
+      "order": 141,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Dr. Märtens",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Sehr geehrter Herr Oberbürgermeister! Liebe Kolleginnen und Kollegen! Die Analyse des vorgelegten Plans teilen wir, wenngleich nicht ganz die Polemik, die damit verbunden ist. Das Themenjahr, wie es vorgeschlagen ist, atmet auch den Geist eines sparsamen Haushaltes und macht das, was möglich ist, und das goutieren wir sehr. Wir sind auch dankbar, dass unsere Kritik am Titel schon aufgegriffen wurde und eine Einladung ausgesprochen wurde, diesen noch einmal zu überdenken sowie zusammen mit Museumsdirektor Hartinger noch einmal genauer über das Thema „Machen“ nachzudenken und vielleicht auch noch einen Titel zu finden, der auf ein Plakat passt.\n\nWir werden, auch wenn wir die Polemik an sich nicht teilen, dem Änderungsantrag der LINKEN zustimmen, weil es ein gutes Prinzip ist, auf irgendeine Weise auch Konzepte von selbstständigen Künstlern in dieses Themenjahr einzubeziehen. Diese 30.000 Euro sehen wir als einen Puffer, der dann den anderen Projekten verloren geht, sodass diese noch etwas strenger arbeiten und strenger kalkulieren müssen. Aber wir denken, es ist in dieser Haushaltslage zumutbar, dass dann alle etwas konsequenter sind. - Vielen Dank."
+    },
+    {
+      "order": 142,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Frau Gehrt noch einmal."
+    },
+    {
+      "order": 143,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Gehrt",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Ich muss sagen, ich finde das nicht polemisch, sondern einfach logisch. Ich finde es auch sehr schade, wenn die Akteure nicht beteiligt werden. Ich denke dabei nicht nur an die Freie Szene von Kunst und Kultur, sondern alle möglichen zivilgesellschaftlichen Akteure aus verschiedensten Richtungen sollten sich beteiligen können.\n\nZu den 30.000 Euro: Ich habe sehr wohl gesehen und es war in meiner Argumentation mit inbegriffen, dass wir in einer schwierigen Haushaltssituation sind. Ich beantrage nicht, dass diese Mittel obendrauf kommen, sondern ich habe dabei eher an den Posten „Vorbereitung und nicht vorhersehbare Maßnahmen“ gedacht. Das müssen wir gucken. Es ist nicht viel, aber vielleicht lassen sich ein paar kleine Projekte verwirklichen."
+    },
+    {
+      "order": 144,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Frau Dr. Jennicke."
+    },
+    {
+      "order": 145,
+      "speaker": {
+        "title": "Bürgermeisterin",
+        "name": "Dr. Jennicke",
+        "group": null
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Zunächst einmal kann ich zumindest die Enttäuschung nachvollziehen. Aber ich würde es auch so formulieren: Ich bin froh, dass wir trotz Haushaltskonsolidierung 2027 ein solches Themenjahr veranstalten. Und ja, es sind dort auch einige Positionen mit untergebracht - das sage ich bewusst so -, für die wir in den letzten Jahren auch extra Ratsbeschlüsse herbeigeführt haben und extra Haushaltsmittel bereitstellen konnten. Das ist in 2027 nicht der Fall.\n\nEs ist nicht so, dass wir zivilgesellschaftliche Akteure ausschließen. Selbstverständlich sind alle eingeladen, sich im Kontext dieses Themenjahres auch an die Ankerakteure Bibliothek und Stadtgeschichtliches Museum und auch an das Referat Strategische Kulturpolitik zu wenden. Das ist selbstverständlich möglich. Es wird auch im Rahmen des regulären Förderverfahrens im Kulturamt einen Förderschwerpunkt mit diesem Punkt geben. So handhaben wir das ja immer. Es ist zum einen nicht so, dass wir jemanden grundsätzlich ausschließen, und zum anderen kann man auch noch einmal eine Förderung über das reguläre Verfahren beantragen."
+    },
+    {
+      "order": 146,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 4,
+      "text": "Ich bitte um Ihr Votum zum Änderungsantrag. - Alle konnten abstimmen. Abstimmung: 32 - 23 - 3. So beschlossen."
+    },
+    {
+      "order": 147,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.15"
+      ],
+      "afterResult": 5,
+      "text": "Dann kommen wir zur Vorlage selbst. Gibt es zur Vorlage Gegenstimmen? - Enthaltungen?\n\nAbstimmung: Dann ist das einstimmig so beschlossen."
+    },
+    {
+      "order": 148,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Controlling baubezogener Projekte und Programme durch die Stadt Leipzig (BPMS) (VIII-DS-01641) 18.18.1 dazu Änderungsantrag (VIII-DS-01641- ÄA-02) Herr Frommhold."
+    },
+    {
+      "order": 149,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Frommhold",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Das ist jetzt doch etwas überraschend, weil angekündigt wurde, dass der Änderungsantrag übernommen wird."
+    },
+    {
+      "order": 150,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Wir können das gerne übernehmen. Dann können Sie sich wieder hinsetzen."
+    },
+    {
+      "order": 151,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Frommhold",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Aber wenn ich jetzt einmal hier vorne stehe, nutze ich kurz die Zeit. - Nein? - Okay. Ich sehe, Sie sind alle so zufrieden. Dann machen wir das so. - Dann bedanke ich mich für die Übernahme."
+    },
+    {
+      "order": 152,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Herr Frommhold, ich wollte einen Scherz machen. Ich wollte Ihnen nicht irgendwie das Wort entziehen. Entschuldigen Sie bitte, wenn das komisch angekommen ist. Wir können den Änderungsantrag in der Tat übernehmen. Ich nehme aber noch eine Präzisierung vor, und ich lese das jetzt noch mal vor, damit alle wissen, was ich jetzt zum Bestandteil der Vorlage mache:\n\nBei der Vergabe wird berücksichtigt, dass es für absehbare Folgeaufträge zu keiner vergaberechtlich relevanten Alleinstellungssituation kommt, - es ist vergaberechtlich notwendig, dass wir das öffnen soweit dies durch marktübliche, wirtschaftlich vertretbare und technisch angemessene Gestaltungsoptionen vermeidbar ist.\n\nEs gibt manchmal Angebote, die sind so exklusiv, die haben keine Konkurrenz. Deswegen muss man diese Option so ein bisschen deutlich machen. Das ist das relativ junge EuGH-Urteil von Anfang 2025.\n\nFrau Krefft zur Vorlage, bitte schön."
+    },
+    {
+      "order": 153,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Krefft",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Vielen Dank, Herr Oberbürgermeister. - Ich möchte mein abweichendes Votum begründen, warum ich gegen die Vorlage stimme. Ich stimme nicht aus inhaltlichen Gründen dagegen, sondern wir haben eine Haushaltssituation, die aktuell verordnet, dass es keine neuen Projekte gibt. An dieser Stelle machen wir eine Ausnahme. Diese ist begründet.\n\nDennoch möchte ich darauf hinweisen und beklagen, dass andere neue Projekte nicht möglich gemacht werden. Das ist zum einen der Drogenkonsumraum, obwohl wir im letzten Berichtszeitraum 17 verstorbene Menschen hatten. Zum anderen ist das der kinder- und jugendpsychiatrische Dienst. Die gemeinsame Sitzung von Psychiatrie und Suchtbeirat letzten Donnerstag hat gezeigt, wie dramatisch die Situation ist, insbesondere was junge Wohnungslose angeht. Wir brauchen diesen kinder- und jugendpsychiatrischen Dienst. Er ist startklar und würde auch nachhaltige Effekte bringen.\n\nIch will daneben - das ist keine neue, aber eine nicht finanzierte Leistung - die bereits in diesem Jahr erbrachte Leistung der sozialpsychiatrischen Dienste erwähnen. Wir haben hier gemeinsam als Ausschuss und Stadtrat beschlossen, dass diese Mehraufwendungen beglichen werden. Sie wurden nicht beglichen. Ich beklage das. Ich möchte an dieser Stelle einfach nur markieren und darauf hinweisen, dass wir uns zwar wohl begründet, weil es auch nachhaltig wirtschaftlich günstige Effekte gibt, so verhalten und ich das auch alles verstehe, aber dass es in anderen Bereichen ebenfalls dramatische Notwendigkeiten gibt, die nicht neu finanziert werden und die auch nachhaltige und wirtschaftliche Effekte für unsere Stadtgesellschaft hätten."
+    },
+    {
+      "order": 154,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.18"
+      ],
+      "afterResult": 5,
+      "text": "Gibt es zum Beschlussvorschlag Gegenstimmen? - Eine. Enthaltungen? - Keine.\n\nAbstimmung: Mit großer Mehrheit und einer Gegenstimme so beschlossen."
+    },
+    {
+      "order": 155,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24"
+      ],
+      "afterResult": 5,
+      "text": "Wird das Wort gewünscht? - Das ist nicht der Fall. Dann frage ich auch hier: Gibt es Gegenstimmen? - Enthaltungen?\n\nAbstimmung: Das ist einstimmig so beschlossen."
+    },
+    {
+      "order": 156,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "18.28.1 dazu Änderungsantrag (VIII-DS-01978- NF-01-ÄA-01) Frau Dr. Heymann."
+    },
+    {
+      "order": 157,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Dr. Heymann",
+        "group": "CDU"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Sehr geehrte Damen und Herren! Mit dem Änderungsantrag haben wir uns in der ersten Fassung überhaupt nicht schwergetan. Sofort war uns klar: Wir können es nicht einfach durchlaufen lassen, wenn eine Bevölkerungsbefragung so deutlich zeigt, dass das erste Thema für die Menschen lautet: Wo können sie wohnen, wo können sie günstig wohnen, und wer kann das ermöglichen? - Es ist nun einmal vorrangig die LWB, die die am meisten Möglichkeiten einsetzt, um geförderten Wohnungsbau zu betreiben oder den frei finanzierten Wohnungsbau so zu organisieren, sodass er auch für Menschen mit mittleren Einkommen noch bezahlbar bleibt.\n\nNun könnte man sagen: Die LWB hat doch einen unvorhergesehenen zusätzlichen Gewinn - zu großen Teilen ein Buchgewinn; das muss man auch dazu sagen - durch Wertberichtigungen und dergleichen gemacht. Diesen Gewinn in real abzuschöpfen, ist schon eine Sache für sich. Dennoch lässt sich sicherlich sagen, dass sich dieser Gewinn vorrangig in den Bilanzen widerspiegelt. Die LWB würde ja einen höheren Wert bekommen, wenn sie Grundstücke kauft und diese nicht nur übereignet bekommt.\n\nDas mag alles sein. Aber wir entziehen der LWB Liquidität - Liquidität, die sie zwar auf dem ersten Blick nicht sofort braucht, wenn man sich die Wirtschaftspläne und die Mittelfristplanung anschaut. Aber wir haben es in den letzten Jahren erlebt, dass es am Markt immer wieder Angebote gab, die nicht in dieser Form genutzt wurden, etwa Bürohäuser, die angekauft wurden, zu Wohnungen umfunktioniert wurden oder teilweise auch zu Büros, die für die LWB erforderlich waren. Sprich: Wir machen die LWB unflexibel und weniger reaktionsfähig darin, Chancen zu nutzen, die wir dringend brauchen, um dem Thema „Wohnen für alle“ und „Wohnen für viele“ tatsächlich gerecht zu werden.\n\nIn den letzten Tagen gab es sehr viele Anfragen an unsere Fraktion, wir sollten den Antrag bitte mit Blick auf die finanzielle Lage zurückziehen. Wir wären beinahe auch dazu bereit gewesen. Aber mit Blick auf die Diskussion, die wir am Dienstagabend hatten, wurde deutlich, dass wir priorisieren müssen: Wofür geben wir Geld aus?\n\nWenn man sich anschaut, was die Priorität eines jeden Haushaltes ist, geht es darum: Kann ich die Miete bezahlen? Habe ich auch weiterhin eine Wohnung? Danach kommen alle anderen Dinge. Danach richten sich die anderen Dinge. Im Hinblick darauf - nach der Priorisierung wurde ja auch der Oberbürgermeister immer wieder gefragt - ist dies eben ein Thema, das prioritär zu behandeln ist und das der Verwaltung sicherlich eine schwierige Aufgabe stellt. Gleichzeitig können wir den Bürgern einen Lichtblick geben, dass wir der LWB die Chance geben, Chancen wahrzunehmen, die sich in den nächsten Jahren durchaus immer wieder anbieten werden, weil das eine oder andere Bauprojekt durchaus nicht so verlaufen wird, wie es sich mancher vorgestellt hat. Damit kann die LWB dann hier einsteigen, um Wohnraum für Leipzigerinnen und Leipzigern zu schaffen. Deswegen bleiben wir bei unserem Änderungsantrag und bitten dringend um Unterstützung, insbesondere zu Punkt 1. Zu Punkt 2 habe ich schon von einigen das Signal bekommen, dass er nicht nachvollzogen werden kann, dass man das jetzt hier gleich beschließt. Die Fraktion und ich denken, es ist sowieso Aufgabe der Verwaltung, sich damit auseinanderzusetzen. Wir bitten um Unterstützung unseres Änderungsantrags. - Herzlichen Dank."
+    },
+    {
+      "order": 158,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Frau Herbst-Weckel."
+    },
+    {
+      "order": 159,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Herbst-Weckel",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Sehr geehrter Herr Oberbürgermeister!\n\nWerte Bürgermeister! Liebe Kolleginnen und Kollegen, Zuschauerinnen und Zuschauer und Gäste! Wir beraten heute, welchen Beitrag unsere städtischen Beteiligungen zur Haushaltssicherung leisten sollen. Das ist kein Anlass zur Freude, aber in der aktuellen Lage braucht die Stadt kurzfristig Handlungsfähigkeit.\n\nFür uns ist entscheidend, wie das passiert. Die Vorlage folgt dem Grundsatz einer verhältnismäßigen Logik. Es geht überwiegend nicht um pauschale Vollausschüttung, sondern um die Abschöpfung überplanmäßiger Ergebnisse, also um Mittel, die über die beschlossene Wirtschaftsplanung hinaus entstanden sind. Das ist der faire Ansatz, weil er nicht blind Substanz entzieht, sondern sich an tatsächlichen Übererfüllungen orientiert.\n\nGleichzeitig müssen wir ehrlich sein: Das ist ein Einmaleffekt und ausdrücklich nicht nachhaltig. Umso wichtiger ist, dass die Umsetzung nicht zulasten zentraler Eigentümerziele geht - gerade bei bezahlbarem Wohnen, bei der Wärme- und Mobilitätswende sowie bei der Leistungsfähigkeit der Daseinsvorsorge. Unsere kommunalen Unternehmen müssen ihren öffentlichen Auftrag zuverlässig erfüllen können.\n\nWir tragen die Vorlage mit, weil sie kurzfristig einen relevanten Beitrag zur Haushaltsstabilisierung leisten kann. Aber wir verbinden das mit einer klaren Erwartung: Der Stadtrat muss im ersten Halbjahr transparent darüber informiert werden, welche Wirkung das auf Investitionen, Leistungsfähigkeit und den öffentlichen Auftrag hat. Sperren und Moratorien sind eine Notbremse. Wir brauchen parallel den verbindlichen Pfad, damit die Konsolidierung planbar und fair ist.\n\nZum Änderungsantrag der CDU: Wir teilen das Ziel, die Bautätigkeit der LWB zu schützen. Aber das erreicht man nicht, indem man einen zentralen Beitrag einfach streicht und durch einen Prüfauftrag ersetzt. Die Vorlage selbst setzt als Maßstab, dass Eigentümerziele und öffentlicher Auftrag nicht beeinträchtigt werden dürfen. Genau deshalb setzen wir auf klare Leitplanken und auf Transparenz in der Umsetzung statt auf eine Streichung ohne belastbare Alternative. Wenn wir die 10,5 Millionen Euro hier herausnehmen, wer sagt den Trägern freiwilliger sozialer Angebote heute verbindlich, dass nicht genau dort an erster Stelle gespart und gekürzt wird?\n\nDeshalb wollen wir heute aufgrund des zweiten Punkts den Änderungsantrag der CDU ins Verfahren verweisen. Haushaltskonsolidierung ja, aber verantwortungsvoll, transparent und mit Blick auf die Zukunftsfähigkeit Leipzigs. - Vielen Dank."
+    },
+    {
+      "order": 160,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Ich sehe keine weiteren Wortmeldungen mehr. - Ich möchte mich noch einmal dafür stark machen, dass wir den Änderungsantrag nicht beschließen. Ich möchte es noch einmal kurz begründen.\n\nEs ist absolut zumutbar, einen Abkauf eines oder zweier Grundstücke durch die LWB zu legitimieren. Es ist ein Vermögenstausch. Es ist bilanziell untauglich. Wir haben aber im Haushalt der Stadt Leipzig einen direkten Effekt, und wir haben die Möglichkeit, in der LWB mit diesem Grundstück, was uns abgekauft wird, selbstverständlich wieder Wohnungsbau zu realisieren, und das unter Umständen auch mit sozialraumgefördertem Wohnraum, wie wir es bei über 1.000 Wohnungen schon geschafft haben in der LWB.\n\nAlso, ich bitte Sie sehr herzlich darum, mit Blick auf die Gesamtsituation der Stadt, aber auch als Signal für die Landesdirektion hier bei unserem Vorschlag zu bleiben, damit wir eine direkte Entlastung im Haushalt haben. Wir werden selbstverständlich alles tun, um die LWB weiter zu unterstützen auf ihrem Weg.\n\nFrau Riekewald war, glaube ich, die Erste."
+    },
+    {
+      "order": 161,
+      "speaker": {
+        "title": "Stadträtin",
+        "name": "Riekewald",
+        "group": "DIE LINKE"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Ich will nur um punktweise Abstimmung des CDU-Antrags bitten."
+    },
+    {
+      "order": 162,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Herr Dr. Peter."
+    },
+    {
+      "order": 163,
+      "speaker": {
+        "title": "Stadtrat",
+        "name": "Dr. Peter",
+        "group": "Bündnis 90/Die Grünen"
+      },
+      "isChair": false,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Ich würde gerne auch noch mal anschließend an Frau Herbst-Weckel - ich bin ja auch LWB-Aufsichtsrat - wirklich darum werben, dass wir diese Frage jetzt nicht im Schnellverfahren klären. Ich habe viel Sympathie dafür, die LWB auch zu entlasten, aber wir müssen natürlich gut abwägen an der Stelle. Obermeister Jung hat es ja erwähnt, wo wir auch die Themen stellen. Ich glaube, wir können das nicht tun, ohne auch zu wissen, wo denn dann an anderer Stelle die 10 Millionen herkommen. Ich denke, das kann jetzt Herr Bonew wahrscheinlich auch nicht so schnell sagen, sondern das müsste ja dann im Prinzip in der Verwaltungsspitze geklärt werden. Deswegen die Bitte darum, den Punkt auszukoppeln - mit dem Rest sind wir ja fein -, um dann im Januar darüber noch mal auf einer guten Faktengrundlage entscheiden zu können."
+    },
+    {
+      "order": 164,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 5,
+      "text": "Dann steht jetzt zunächst der Antrag zur Abstimmung, den Punkt 2 ins Verfahren zu verweisen. - Ach, den ganzen Änderungsantrag; das hatte ich jetzt nicht verstanden. - Er soll als normaler Antrag ins Verfahren verwiesen werden, der nach drei Monaten wieder hier her zurückkommt. So verstehe ich das. - Werte Kollegen, der Antrag ist gestellt. Das hätten Sie vorher diskutieren müssen.\n\nBitte schön, Ihre Stimme zum Verweis ins Verfahren. - Alle konnten abstimmen.\n\nAbstimmung: 12 - 33 - 12. Damit abgelehnt."
+    },
+    {
+      "order": 165,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 6,
+      "text": "Frau Riekewald hatte punktweise Abstimmung der Punkte 1 und 2 des Änderungsvorschlags beantragt. - Zunächst Punkt 1, die 10,5 Millionen zu streichen.\n\nAbstimmung: 32 - 21 - 5. Damit angenommen."
+    },
+    {
+      "order": 166,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 7,
+      "text": "Wir kommen zu Punkt 2, den alternativen haushaltsentlastenden Maßnahmen. Ihr Votum, bitte. - Alle konnten abstimmen.\n\nAbstimmung: 24 - 31 - 3."
+    },
+    {
+      "order": 167,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 8,
+      "text": "Ihr Votum zur Vorlage als Ganzes, bitte. - Jetzt konnten alle abstimmen.\n\nAbstimmung: 41 - 0 - 17. So beschlossen."
+    },
+    {
+      "order": 168,
+      "speaker": {
+        "title": "Oberbürgermeister",
+        "name": "Jung",
+        "group": null
+      },
+      "isChair": true,
+      "agendaItemNumbers": [
+        "18.24",
+        "18.28"
+      ],
+      "afterResult": 9,
+      "text": "Vielen Dank.\n\nDer öffentliche Teil der Sitzung endet nun. Ich bedanke mich für das Interesse der Medien und der Gäste und bitte darum, den Saal zu verlassen. Ich erlaube ausdrücklich den Geschäftsführern der LVV dabei zu bleiben. Es geht schließlich um unsere gemeinsame Sache.\n\nIch stelle nun mehr Nichtöffentlichkeit her."
     }
   ]
 }

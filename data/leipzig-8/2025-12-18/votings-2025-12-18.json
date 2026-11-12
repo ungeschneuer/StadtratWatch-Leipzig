@@ -4,7 +4,7 @@
   "source": {
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-18122025",
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2025/20251218_RV_livestream.smil/playlist.m3u8",
-    "subtitleFile": null,
+    "subtitleFile": "2025-12-18/subtitles-2025-12-18.vtt",
     "method": "video-board",
     "extractorVersion": 1
   },
