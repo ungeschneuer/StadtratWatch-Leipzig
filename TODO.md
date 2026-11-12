@@ -137,6 +137,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [ ] Antragsteller:innen aus `paper.originatorOrganization`.
 - [ ] **6. Sonderfälle** als `votingMethod` erfassen: keine Tafel (Handzeichen, Anlage ausgefallen), geheime Wahl, en-bloc, punktweise Abstimmung, Befangenheit (§ 20 SächsGemO), Stimme des OB (Sitz 71), `majorityRequirement`. Bisher erkannt: Geschäftsordnungsanträge (`procedural`), ungültige Tafeln (`discarded`).
 - [ ] **Statuspunkt im 1080p-Frame:** Der runde grüne Punkt während der Abstimmung wird manchmal als Ja-Balken gelesen. Betrifft nur Ergebnisse unter einer Sekunde (alle verworfen); Abhilfe: Seitenverhältnis prüfen.
+- [ ] **Irreführender Kommentar in `extract-session.ts`:** Die Suche `searchResultFrames` begründet sich mit „1080p läuft einige Sekunden versetzt“. Gemessen am 12.11.2026: 360p und 1080p sind zeitgleich, die Suche wurde in keiner der 547 Abstimmungen gebraucht. Kommentar richtigstellen, Suche als Rückfall für Überblendungen behalten.
 - [x] **7. Prüfung durch Menschen:** Route `/leipzig` in `session-review` (GitHub Pages), Prüffälle in `review-<datum>.json`, Benachrichtigung per Issue je Sitzung, Speichern als Commit in `corrections-<datum>.json`, Nachprüfung per Workflow. Freigabe per PR-Merge.
   - [ ] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Schreibrechte der Prüfenden, Variable `LEIPZIG_REVIEWERS`.
   - [ ] Workflows einmal auf GitHub durchlaufen lassen (bisher nur lokal getestet).
@@ -177,6 +178,44 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [ ] **Hosting:** GitHub Pages über Actions (empfohlen: keine Build-Minuten-Grenze wie bei Netlify Free) oder Netlify Free.
 - [ ] **Workflows:** `members.yml`, `recordings.yml`, `votings.yml`, `deploy.yml` entsprechend dem Zeitplan. Daten kommen per PR, Fehler als Issue.
 - [ ] **Dokumentation:** README (Fork-Hinweis, Leipzig), `DATA.md` (Codebook, Methodik, Grenzen: mündliche Korrekturen, Abstimmungen ohne Tafel, Liste ≠ Parteimitgliedschaft, Videos nur ca. 12 Monate verfügbar).
+
+---
+
+## Offene Fragen
+
+Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026.
+
+### Mitglieder und Parteien
+- [ ] **Partei von Getu Abraham:** Gewählt auf der SPD-Liste, SPD-Fraktion bis 08.11.2024, CDU-Fraktion 13.03.2025–22.09.2026, seitdem fraktionslos. Ist er noch SPD-Mitglied? Ohne Quelle zeigt die Seite „Partei SPD“. Falls nicht: Override mit Quelle.
+- [ ] **Weitere Parteiwechsel:** Gibt es außer Abraham Mitglieder, deren Partei sich seit der Wahl geändert hat (z. B. Butz, Liste FREIE SACHSEN, jetzt AfD-Fraktion)? Welche Quelle ist zulässig, wenn leipzig.de ignoriert wird (Fraktionsseiten, Presse, Parteiseiten)?
+- [ ] **Franziska Kießling:** ausgeschlossen, weil OParl sie nur am 18.09.2024 als Mitglied führt und sie auf keiner Tafel steht. Gibt es eine Quelle, dass sie das Mandat nicht angetreten hat (z. B. Niederschrift der konstituierenden Sitzung)?
+- [ ] **Bezeichnung „Partei“:** Die Seite nennt die Wahlliste 2024 „Partei“. Reicht das mit Erklärung in `DATA.md`, oder soll die Seite „Wahlliste 2024“ zeigen, solange keine andere Quelle vorliegt?
+- [ ] **Fraktionswebseiten (M1, Stufe 2):** Werden sie überhaupt gebraucht, wenn Overrides mit Quelle die Ausnahmen abdecken?
+- [ ] **`EXTREMIST_CLASSIFICATION`:** Welche Parteien bekommen den Hinweis, mit welcher Quelle (LfV Sachsen) und welchem Wortlaut? Redaktionelle Entscheidung.
+
+### Was veröffentlicht wird
+- [ ] **Vorläufige Abstimmungen:** `provisional` (Prüfungen bestanden, aber noch kein amtliches Ergebnis) erscheint schon auf der Seite, mit dem Hinweis „Prüfung nicht abgeschlossen“. So lassen oder erst nach dem amtlichen Ergebnis veröffentlichen?
+- [ ] **Abstimmungen in Prüfung:** `needs-review` fehlt auf der Seite, bis entschieden ist. Lieber mit Kennzeichnung zeigen?
+- [ ] **Abstimmungen ohne Tafel** (Handzeichen, geheime Wahl): Die Protokolle nennen das Ergebnis, aber nicht die Stimmen je Person. Als Abstimmung ohne Einzelstimmen aufnehmen oder weglassen?
+- [ ] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): Für sie gibt es nur die Ergebnisse aus den Protokollen. Bleibt es bei „nur Sitzungen mit Video“?
+- [ ] **Vorlagen auf der Seite:** Sollen Leipziger Vorlagen eigene Seiten bekommen (Paper-Index aus OParl, ohne PDFs), damit Abstimmungen auf sie verlinken? Bisher ist `voting-paper-map.json` leer.
+- [ ] **Erforderliche Mehrheit:** Woher kommt `majorityRequirement` (Zweidrittelmehrheit u. a.)? Aus den Protokollen, aus der Vorlage oder von Hand?
+
+### Video und Belege
+- [ ] **Nach Ablauf der Mediathek:** Die Stadt löscht Aufzeichnungen nach etwa einem Jahr, danach entfällt der Video-Link. Soll die Seite dann auf die Belegbilder im Release `evidence-<datum>` verlinken? Bisher gibt es Belegbilder nur für Prüffälle.
+- [ ] **Rechte an den Belegbildern:** Dürfen Standbilder aus den Aufzeichnungen der Stadt öffentlich in GitHub Releases liegen? Klären, bevor die Releases öffentlich sind.
+
+### Lizenz, Betrieb, Recht
+- [ ] **Lizenz der eigenen Daten:** CC0 für die aus dem Video gelesenen Stimmen, wie in den Grundsätzen vorgeschlagen? Die Namensnennungen für OParl (CC BY 4.0) und die Bewerberliste (dl-de/by-2-0) bleiben ohnehin.
+- [ ] **Betreiber und Impressum:** Wer betreibt StadtratWatch Leipzig? Impressum, Datenschutz und Kontakt der Seite verweisen noch auf Code for Magdeburg.
+- [ ] **Magdeburg-Daten:** Eine Seite mit beiden Städten (wie jetzt im Build) oder nur Leipzig? Davon hängen M0 (Magdeburg entfernen oder ausblenden) und die Stadt-Konfiguration ab.
+- [ ] **Name der Wahlperiode:** Vorläufig „Leipzig – Wahlperiode VIII“, damit sie sich von Magdeburgs „Wahlperiode VIII“ unterscheidet. Passt das, oder wird mit nur einer Stadt „Wahlperiode VIII“ daraus?
+- [ ] **Hosting und Adresse:** GitHub Pages oder Netlify Free, eigene Domain? Was ersetzt `AWS_CLOUDFRONT_BASE_URL` (Pflichtvariable des Builds, heute für Vorschaubilder und Vorlagen) und die Typesense-Variablen, wenn es keine Suche gibt?
+- [ ] **Prüfende:** Wer prüft die offenen Fälle (`LEIPZIG_REVIEWERS`), und wer bekommt Schreibrechte?
+
+### Arbeitsweise im Repository
+- [ ] **Branches und Pull Requests:** Auf `data/leipzig-votings` liegen bisher Code- und Datencommits gemeinsam, nichts ist gepusht. Code getrennt per PR nach `main` und die Daten über den Daten-Branch? AGENTS.md verlangt für Korrekturen an geprüften Daten einen eigenen PR (betrifft `fe5e413`, Bereinigung der Prüfvermerke).
+- [ ] **Architekturdoku:** `docs/arc42/` beschreibt Leipzig noch nicht. Als eigenes ADR (siehe M0, `LEIPZIG.md` bzw. ADR) oder in die bestehenden Kapitel?
 
 ---
 
