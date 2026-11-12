@@ -7,7 +7,9 @@
       "motionId": "VIII-DF-03637",
       "title": "Angedrohte Gewalt im Zusammenhang mit angekündigten Protesten am 31. Oktober 2026",
       "type": "Sonstige",
-      "authors": []
+      "authors": [
+        "CDU"
+      ]
     },
     "votes": [
       {
@@ -305,7 +307,9 @@
       "motionId": "VIII-DF-03652",
       "title": "Droht schon die nächste Rüstungsansiedlung? - Falk Defence in Leipzig",
       "type": "Sonstige",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -603,7 +607,9 @@
       "motionId": "VIII-DF-03653",
       "title": "Zeppelinbrücke:  Erneute Bauzeitverlängerung und Kostenentwicklung",
       "type": "Sonstige",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -901,7 +907,9 @@
       "motionId": "VIII-A-02476-NF-02",
       "title": "Ertrinkenden-Erkennungssysteme in Bädern der Sportbäder Leipzig GmbH",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -1199,7 +1207,9 @@
       "motionId": "VIII-A-02831-NF-02",
       "title": "Temporäre Halteverbote für eine effizientere Straßenreinigung!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -1497,7 +1507,9 @@
       "motionId": "VIII-A-02839-VSP-01",
       "title": "Die nächsten 50 Jahre Grünau:  Wiederbebauungsplan für die Großwohnsiedlung",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Stadtplanungsamt"
+      ]
     },
     "votes": [
       {
@@ -1795,7 +1807,9 @@
       "motionId": "VIII-A-02985-NF-01-VSP-01",
       "title": "24/7 Abfallentsorgung möglich machen",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Eigenbetrieb Stadtreinigung Leipzig"
+      ]
     },
     "votes": [
       {
@@ -2093,7 +2107,9 @@
       "motionId": "VIII-DS-03431-ÄA-01",
       "title": "Planungsbeschluss – Komplexmodernisierung der Hans-Kroch-Schule - Grundschule der Stadt Leipzig, Schulgebäude und Sporthalle im Jörgen-Schmidtchen-Weg 8",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "SPD"
+      ]
     },
     "votes": [
       {
@@ -2391,7 +2407,9 @@
       "motionId": "VIII-DS-03137-ÄA-03",
       "title": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ]
     },
     "votes": [
       {
@@ -2686,10 +2704,12 @@
     "videoTimestamp": "05:27:47",
     "votingSubject": {
       "agendaItem": "19.4.4",
-      "motionId": "VIII-DS-03137-ÄA-04",
+      "motionId": "VIII-DS-03137-ÄA-04-NF-01",
       "title": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -2987,7 +3007,9 @@
       "motionId": "VIII-DS-03137-ÄA-01",
       "title": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -3285,7 +3307,9 @@
       "motionId": "VIII-DS-03137-ÄA-02",
       "title": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -3583,7 +3607,9 @@
       "motionId": "VIII-DS-03137",
       "title": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Sozialamt"
+      ]
     },
     "votes": [
       {
@@ -3881,7 +3907,9 @@
       "motionId": "VIII-DS-00989-ÄA-01-NF-01",
       "title": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals“, Gottschedstraße 16, Leipzig (Bestätigung gem. §79 (1) SächsGemO)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -4179,7 +4207,9 @@
       "motionId": "VIII-DS-00989",
       "title": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals“, Gottschedstraße 16, Leipzig (Bestätigung gem. §79 (1) SächsGemO)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Kulturamt"
+      ]
     },
     "votes": [
       {

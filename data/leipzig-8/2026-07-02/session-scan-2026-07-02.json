@@ -305,7 +305,9 @@
       "motionId": "VIII-A-02979-VSP-01",
       "title": "Resolution des Stadtrates zu Leipzig zur 100-Prozent-Finanzierung der durch Bund und Land übertragenen Aufgaben sowie umfassenden Steuerreform zur Rettung der Städte, Gemeinden und Landkreise",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Referat Politische Planung"
+      ]
     },
     "votes": [
       {
@@ -603,7 +605,9 @@
       "motionId": "VIII-A-02979-NF-02",
       "title": "Resolution des Stadtrates zu Leipzig zur 100-Prozent-Finanzierung der durch Bund und Land übertragenen Aufgaben zur Rettung der Städte, Gemeinden und Landkreise",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -898,10 +902,12 @@
     "videoTimestamp": "00:52:09",
     "votingSubject": {
       "agendaItem": "12.28",
-      "motionId": "VIII-A-02852",
+      "motionId": "VIII-A-02852-NF-02",
       "title": "Resolution zur Stärkung der kommunalen Finanzen durch die Wiedereinführung einer rechtssicheren Vermögensteuer und Senkung der Freibeträge bei Erbschaftssteuer",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -1196,10 +1202,12 @@
     "videoTimestamp": "00:52:36",
     "votingSubject": {
       "agendaItem": "12.28",
-      "motionId": "VIII-A-02852",
+      "motionId": "VIII-A-02852-NF-02",
       "title": "Resolution zur Stärkung der kommunalen Finanzen durch die Wiedereinführung einer rechtssicheren Vermögensteuer und Senkung der Freibeträge bei Erbschaftssteuer",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -1497,7 +1505,9 @@
       "motionId": "VIII-DS-02350",
       "title": "Entschädigungssatzung für die Leitenden Notärzte des Rettungsdienstbereiches der Stadt Leipzig",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Branddirektion"
+      ]
     },
     "votes": [
       {
@@ -1792,10 +1802,12 @@
     "videoTimestamp": "02:14:18",
     "votingSubject": {
       "agendaItem": "18.4",
-      "motionId": "VIII-DS-10081-DS-02",
+      "motionId": "VII-DS-10081-DS-02",
       "title": "Verfahren zum Umgang mit Leistungen aus dem Erneuerbare-Energien-Ertragsbeteiligungsgesetz (EEErtrBetG)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Dezernat Umwelt, Klima, Ordnung und Sport"
+      ]
     },
     "votes": [
       {
@@ -2093,7 +2105,9 @@
       "motionId": "VIII-DS-01693",
       "title": "Bebauungsplan Nr. 488 „Wohngebiet und Reitsportanlage Sternbachstraße“; Stadtbezirk:  Nordost, Ortsteil:  Schönefeld-Abtnaundorf; Aufstellungsbeschluss",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Stadtplanungsamt"
+      ]
     },
     "votes": [
       {
@@ -2391,7 +2405,9 @@
       "motionId": "VIII-DS-02007-ÄA-01",
       "title": "Förderung des Tourismus der Stadt Leipzig 2027ff:  Evaluation und Optimierung des Prozesses",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -2689,7 +2705,9 @@
       "motionId": "VIII-DS-02007-ÄA-01",
       "title": "Förderung des Tourismus der Stadt Leipzig 2027ff:  Evaluation und Optimierung des Prozesses",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -2987,7 +3005,9 @@
       "motionId": "VIII-DS-02007-ÄA-02",
       "title": "Förderung des Tourismus der Stadt Leipzig 2027ff:  Evaluation und Optimierung des Prozesses",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -3285,7 +3305,9 @@
       "motionId": "VIII-DS-02007-ÄA-03",
       "title": "Förderung des Tourismus der Stadt Leipzig 2027ff:  Evaluation und Optimierung des Prozesses",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "SPD"
+      ]
     },
     "votes": [
       {
@@ -3881,7 +3903,9 @@
       "motionId": "VIII-DS-02007",
       "title": "Förderung des Tourismus der Stadt Leipzig 2027ff:  Evaluation und Optimierung des Prozesses",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Stadtkämmerei"
+      ]
     },
     "votes": [
       {
@@ -4775,7 +4799,9 @@
       "motionId": "VIII-DS-02398-ÄA-02",
       "title": "1. Satzung zur Änderung der Wahlwerbesatzung",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -5371,7 +5397,9 @@
       "motionId": "VIII-DS-02398-ÄA-03",
       "title": "1. Satzung zur Änderung der Wahlwerbesatzung",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ]
     },
     "votes": [
       {
@@ -5669,7 +5697,9 @@
       "motionId": "VIII-DS-02398",
       "title": "1. Satzung zur Änderung der Wahlwerbesatzung",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Mobilitäts- und Tiefbauamt"
+      ]
     },
     "votes": [
       {
@@ -5967,7 +5997,9 @@
       "motionId": "VIII-DS-02605-ÄA-01",
       "title": "Änderung der Verordnung über Beförderungsentgelte und -bedingungen im Gelegenheitsverkehr mit Taxen im Pflichtfahrbereich Leipzig (Beförderungsentgeltverordnung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -6265,7 +6297,9 @@
       "motionId": "VIII-DS-02605",
       "title": "Änderung der Verordnung über Beförderungsentgelte und -bedingungen im Gelegenheitsverkehr mit Taxen im Pflichtfahrbereich Leipzig (Beförderungsentgeltverordnung)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Ordnungsamt"
+      ]
     },
     "votes": [
       {
@@ -6563,7 +6597,9 @@
       "motionId": "VIII-DS-02644-ÄA-01",
       "title": "Fachförderrichtlinie der Stadt Leipzig zur Vergabe von Zuwendungen im Verantwortungsbereich des Sozialamtes",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -6861,7 +6897,9 @@
       "motionId": "VIII-DS-02644",
       "title": "Fachförderrichtlinie der Stadt Leipzig zur Vergabe von Zuwendungen im Verantwortungsbereich des Sozialamtes",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Sozialamt"
+      ]
     },
     "votes": [
       {
@@ -7159,7 +7197,9 @@
       "motionId": "VIII-DS-02743-ÄA-01",
       "title": "Baubeschluss Modernisierung mit Neubauerweiterung der Schule Zweenfurther Straße (Förderschule und Turnhalle), Zweenfurther Str. 21",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ]
     },
     "votes": [
       {
@@ -7457,7 +7497,9 @@
       "motionId": "VIII-Ifo-00863-ÄA-01",
       "title": "Nutzungskonzept Kohlrabizirkus",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -7755,7 +7797,9 @@
       "motionId": "VIII-Ifo-00863-ÄA-01",
       "title": "Nutzungskonzept Kohlrabizirkus",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {

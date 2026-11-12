@@ -1199,7 +1199,9 @@
       "motionId": "VIII-DS-03022",
       "title": "Bestellung der Geschäftsführung der Leipziger Quartiersentwicklungsgesellschaft mbH (LQEG)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Geschäftsbereich des OBM - Kommunalwirtschaft"
+      ]
     },
     "votes": [
       {
@@ -2689,7 +2691,9 @@
       "motionId": "VIII-DS-02330",
       "title": "Erhöhung des Höchstbetrags der Kassenkredite aus der Haushaltssatzung 2026 der Stadt Leipzig",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Stadtkämmerei"
+      ]
     },
     "votes": [
       {
@@ -2987,7 +2991,9 @@
       "motionId": "VIII-A-02485-NF-02-ÄA-01",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -3285,7 +3291,9 @@
       "motionId": "VIII-A-02485-VSP-01",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Kulturamt"
+      ]
     },
     "votes": [
       {
@@ -3583,7 +3591,9 @@
       "motionId": "VIII-A-02485-VSP-01",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Kulturamt"
+      ]
     },
     "votes": [
       {
@@ -3881,7 +3891,9 @@
       "motionId": "VIII-A-02485-VSP-01",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Kulturamt"
+      ]
     },
     "votes": [
       {
@@ -4179,7 +4191,9 @@
       "motionId": "VIII-A-02485-NF-02",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -4477,7 +4491,9 @@
       "motionId": "VIII-A-02485-NF-02",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -4775,7 +4791,9 @@
       "motionId": "VIII-A-02485-NF-02",
       "title": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -5073,7 +5091,9 @@
       "motionId": "VIII-A-02487-VSP-01",
       "title": "Mit Mietrechtsänderung Armut bekämpfen!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Referat Politische Planung"
+      ]
     },
     "votes": [
       {
@@ -5371,7 +5391,9 @@
       "motionId": "VIII-A-01797-NF-02-ÄA-02",
       "title": "Kein Verkauf des Güterschuppens am S-Bahnhof Connewitz – Konzeptvergabe im Erbbaurecht realisieren",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -5669,7 +5691,9 @@
       "motionId": "VIII-A-01797-NF-02",
       "title": "Kein Verkauf des Güterschuppens am S-Bahnhof Connewitz – Konzeptvergabe im Erbbaurecht realisieren",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ]
     },
     "votes": [
       {
@@ -5967,7 +5991,9 @@
       "motionId": "VIII-A-02302-NF-02",
       "title": "Prüfauftrag zur Einführung eines digitalen Parkraummanagements in Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "SPD"
+      ]
     },
     "votes": [
       {
@@ -6563,7 +6589,9 @@
       "motionId": "VIII-A-02468-VSP-01",
       "title": "Durch Umweltschutz Kosten sparen - auf dem Weg zur Schwammstadt",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Mobilitäts- und Tiefbauamt"
+      ]
     },
     "votes": [
       {
@@ -6861,7 +6889,9 @@
       "motionId": "VIII-A-02603",
       "title": "Pilotprojekt:  Freiwilliger Führerscheintausch",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Büro für Ratsangelegenheiten"
+      ]
     },
     "votes": [
       {
@@ -7156,10 +7186,12 @@
     "videoTimestamp": "04:16:55",
     "votingSubject": {
       "agendaItem": "12.16",
-      "motionId": "VIII-A-02618",
+      "motionId": "VIII-A-02618-NF-02",
       "title": "SRL-Kieztage – temporäre mobile Sperrmüllentsorgung in Leipzig ermöglichen!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -7457,7 +7489,9 @@
       "motionId": "VIII-A-02620",
       "title": "Ausbau der Wertstoffannahme im Leipziger Nordosten!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -7755,7 +7789,9 @@
       "motionId": "VIII-A-02627-VSP-01",
       "title": "Machern bleibt Machern - Erhalt der Weiterbildungsstätte Machern im Portfolio der Stadt Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Geschäftsbereich des OBM - Kommunalwirtschaft"
+      ]
     },
     "votes": [
       {
@@ -8053,7 +8089,9 @@
       "motionId": "VIII-A-02627",
       "title": "Machern bleibt Machern - Erhalt der Weiterbildungsstätte Machern im Portfolio der Stadt Leipzig",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ]
     },
     "votes": [
       {
@@ -8351,7 +8389,9 @@
       "motionId": "VIII-A-02632",
       "title": "Endlich Alternativen zum Ersatz der agra-Brücke planen!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -8649,7 +8689,9 @@
       "motionId": "VIII-A-02798-VSP-01",
       "title": "Vielfältige Bestattungsformen auf kommunalen Friedhöfen ermöglichen!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Amt für Stadtgrün und Gewässer"
+      ]
     },
     "votes": [
       {
@@ -8947,7 +8989,9 @@
       "motionId": "VIII-A-02798-VSP-01",
       "title": "Vielfältige Bestattungsformen auf kommunalen Friedhöfen ermöglichen!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Amt für Stadtgrün und Gewässer"
+      ]
     },
     "votes": [
       {
@@ -9245,7 +9289,9 @@
       "motionId": "VIII-A-02835-VSP-01",
       "title": "Kfz-Zulassung in die Bürgerämter!",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Amt Bürgerservice"
+      ]
     },
     "votes": [
       {
@@ -9841,7 +9887,9 @@
       "motionId": "VIII-DS-02692-ÄA-01",
       "title": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -10139,7 +10187,9 @@
       "motionId": "VIII-DS-02692-ÄA-01",
       "title": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -10437,7 +10487,9 @@
       "motionId": "VIII-DS-02692-ÄA-01",
       "title": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -10735,7 +10787,9 @@
       "motionId": "VIII-DS-02692",
       "title": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Dezernat Kultur"
+      ]
     },
     "votes": [
       {

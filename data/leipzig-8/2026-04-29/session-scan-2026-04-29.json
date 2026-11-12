@@ -901,7 +901,9 @@
       "motionId": "VIII-DS-00055-NF-01-DS-04",
       "title": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder (3. Änderung)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Büro für Ratsangelegenheiten"
+      ]
     },
     "votes": [
       {
@@ -1199,7 +1201,9 @@
       "motionId": "VIII-DS-00055-NF-01-DS-04",
       "title": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder (3. Änderung)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Büro für Ratsangelegenheiten"
+      ]
     },
     "votes": [
       {
@@ -1497,7 +1501,9 @@
       "motionId": "VIII-A-00341-NF-02-VSP-02",
       "title": "Sicherheitspaket Hauptbahnhof",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Ordnungsamt"
+      ]
     },
     "votes": [
       {
@@ -1795,7 +1801,9 @@
       "motionId": "VIII-A-00951-NF-02",
       "title": "Integration von Ladeinfrastruktur in Bordsteinen, Straßenlaternen und Stadtmobiliar",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -2093,7 +2101,9 @@
       "motionId": "VIII-A-01628-NF-02-VSP-02",
       "title": "Evaluation und Aktualisierung des lokalen Kinderschutzkonzeptes - Berücksichtigung des Schutzes vor und Intervention gegen sexualisierte Gewalt",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Amt für Jugend und Familie"
+      ]
     },
     "votes": [
       {
@@ -2391,7 +2401,9 @@
       "motionId": "VIII-A-02067-NF-03-ÄA-01",
       "title": "Gremienarbeit braucht fachliche Begleitung",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Beauftragte für Senioren und Menschen mit Behinderungen"
+      ]
     },
     "votes": [
       {
@@ -2689,7 +2701,9 @@
       "motionId": "VIII-A-01796-NF-03",
       "title": "Analoge Formate in zukünftigen Strategieplanungen ausbalanciert sicherstellen",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -2987,7 +3001,9 @@
       "motionId": "VIII-A-02053-NF-02",
       "title": "Antrag zur Prüfung der Linienführung an Sonn- und Feiertagen der Buslinie 62",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Büro für Ratsangelegenheiten"
+      ]
     },
     "votes": [
       {
@@ -3285,7 +3301,9 @@
       "motionId": "VIII-HP-OR-10398",
       "title": "Ankauf von Flächen für einen zukünftigen Sportpark in Mölkau",
       "type": null,
-      "authors": []
+      "authors": [
+        "Büro für Ratsangelegenheiten"
+      ]
     },
     "votes": [
       {
@@ -3583,7 +3601,9 @@
       "motionId": "VIII-A-02314-ÄA-02",
       "title": "Teilfortschreibung Erneuerbare Energien – Vorranggebiete 4b und 4c",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -3881,7 +3901,9 @@
       "motionId": "VIII-A-02314-VSP-01",
       "title": "Teilfortschreibung Erneuerbare Energien – Vorranggebiete 4b und 4c",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Stadtplanungsamt"
+      ]
     },
     "votes": [
       {
@@ -4179,7 +4201,9 @@
       "motionId": "VIII-A-02310",
       "title": "Verfall Hotel Astoria, Willy-Brandt-Platz",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -4477,7 +4501,9 @@
       "motionId": "VIII-A-02058",
       "title": "Einführung einer klimasensiblen Gesundheitsberatung in Leipzig nach bayerischem Vorbild",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -4775,7 +4801,9 @@
       "motionId": "VIII-A-01928-NF-02",
       "title": "Gynäkologische Ambulanz für Prostituierte einrichten",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -5073,7 +5101,9 @@
       "motionId": "VIII-A-01928-NF-02",
       "title": "Gynäkologische Ambulanz für Prostituierte einrichten",
       "type": "Antrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -5666,10 +5696,12 @@
     "videoTimestamp": "05:21:22",
     "votingSubject": {
       "agendaItem": "18.1",
-      "motionId": "VIII-DS-09019-DS-01",
+      "motionId": "VII-DS-09019-DS-01",
       "title": "Erhöhung der finanziellen Unterstützung zum Internationalen Deutschen Turnfest 2025",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Amt für Sport"
+      ]
     },
     "votes": [
       {
@@ -5967,7 +5999,9 @@
       "motionId": "VIII-DS-00156-DS-01",
       "title": "Kurt-Schumacher-Str. 41:  1. Änderung zum Bau- und Ausführungs- beschluss zur Sanierung des Objektes und Schaffung von Plätzen als kostenfreie Notschlafstelle",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Sozialamt"
+      ]
     },
     "votes": [
       {
@@ -6563,7 +6597,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-01",
       "title": "Neuausrichtung Konzeptverfahren 2025",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ]
     },
     "votes": [
       {
@@ -6861,7 +6897,9 @@
       "motionId": "VIII-DS-00941-ÄA-03",
       "title": "Neuausrichtung Konzeptverfahren 2025",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "AfD"
+      ]
     },
     "votes": [
       {
@@ -7159,7 +7197,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-03",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "SPD"
+      ]
     },
     "votes": [
       {
@@ -7457,7 +7497,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-03",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "SPD"
+      ]
     },
     "votes": [
       {
@@ -7755,7 +7797,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-03",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "SPD"
+      ]
     },
     "votes": [
       {
@@ -8053,7 +8097,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-04",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -8351,7 +8397,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-04",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -8649,7 +8697,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-04",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -8947,7 +8997,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-04",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ]
     },
     "votes": [
       {
@@ -9245,7 +9297,9 @@
       "motionId": "VIII-DS-00941-NF-01-ÄA-02",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Die Freie Fraktion"
+      ]
     },
     "votes": [
       {
@@ -9543,7 +9597,9 @@
       "motionId": "VIII-DS-00941-NF-01",
       "title": "Neuausrichtung Konzeptverfahren ab 2026",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Amt für Wohnungsbau und Stadterneuerung"
+      ]
     },
     "votes": [
       {
@@ -9841,7 +9897,9 @@
       "motionId": "VIII-DS-01062-ÄA-02",
       "title": "Aufnahme des Literaturhauses Leipzig e. V. in die institutionelle Förderung ab 2027",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ]
     },
     "votes": [
       {
@@ -10139,7 +10197,9 @@
       "motionId": "VIII-DS-01062",
       "title": "Aufnahme des Literaturhauses Leipzig e. V. in die institutionelle Förderung ab 2027",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Kulturamt"
+      ]
     },
     "votes": [
       {
@@ -10735,7 +10795,9 @@
       "motionId": "VIII-DS-02240",
       "title": "Gemeindliches Einvernehmen zur Abweichung von raumordnerischen Zielen bzgl. der geplanten Windkraftanlage (WKA 05) Knautnaundorf",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Stadtplanungsamt"
+      ]
     },
     "votes": [
       {
