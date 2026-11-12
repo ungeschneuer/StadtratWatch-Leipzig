@@ -67,6 +67,7 @@ jobs:
       - name: Update review issues
         env:
           GH_TOKEN: ${{ github.token }}
+          LEIPZIG_REVIEWERS: ${{ vars.LEIPZIG_REVIEWERS }}
         run: |
           bun src/scripts/leipzig-votings/review-issues.ts --review-ui-url "$REVIEW_UI_URL"
           .github/scripts/leipzig-review-issues.sh output/leipzig-review-issues/issues.json
