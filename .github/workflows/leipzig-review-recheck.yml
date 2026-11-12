@@ -1,13 +1,15 @@
 name: Leipzig review recheck
 
-# Runs whenever a reviewer saves a decision, and daily for new minutes: validates the corrections file, fetches minutes
-# that are not stored yet, applies both to the votings without reading the video, and ticks the cases off in the issues. A broken corrections file fails this check on the data PR.
+# Runs whenever a reviewer saves a decision, and daily: validates the corrections file, applies it and the stored minutes
+# to the votings without reading the video, and ticks the cases off in the issues. A broken corrections file fails this
+# check on the data PR. ALLRIS does not answer GitHub's runners, so new minutes come from the local runner
+# (local-runner/), which commits them to the data branch.
 
 on:
   push:
     branches: [data/leipzig-votings]
     paths: ['data/leipzig-8/*/corrections-*.json']
-  # The minutes appear weeks after a session; this run picks them up and checks the session against them.
+  # Picks up the minutes the local runner committed and updates the review issues.
   schedule:
     - cron: '53 4 * * *'
   workflow_dispatch:

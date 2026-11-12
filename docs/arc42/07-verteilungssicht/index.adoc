@@ -19,7 +19,7 @@
 | `evidence-<datum>`: Zitatbilder aller veröffentlichten Abstimmungen, Tafelbilder der Prüffälle. `deploy.yml` lädt die Zitatbilder nach `public/evidence/`, die Seite liefert sie selbst aus.
 
 | Rechner des Betreibers
-| Nur für Ausnahmen: lokales Whisper für Sitzungen ohne Untertitel (`docs/guides/leipzig-whisper.md`).
+| launchd-Job `local-runner/` (täglich): holt amtliche Ergebnisse und Verlaufsprotokolle aus ALLRIS und committet sie auf `data/leipzig-votings`. ALLRIS nimmt von GitHub Actions keine Verbindung an (geprüft 12.11.2026: Verbindungsaufbau läuft in den Timeout, alle anderen Quellen antworten); in Actions gibt der ALLRIS-Client deshalb nach dem ersten Timeout für den Rest des Laufs auf. Dazu für Ausnahmen: lokales Whisper für Sitzungen ohne Untertitel (`docs/guides/leipzig-whisper.md`).
 |===
 
 Build-Variablen der Seite: `SITE_URL`, `SITE_BASE`, `DATA_REPOSITORY`, `DATA_PULL_REQUEST_URL`, optional `DEFAULT_PARLIAMENT_PERIOD` (Standard `leipzig-8`).
