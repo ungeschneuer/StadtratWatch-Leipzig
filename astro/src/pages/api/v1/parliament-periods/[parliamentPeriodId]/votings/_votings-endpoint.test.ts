@@ -58,7 +58,7 @@ function createVoting(
   votes: SessionScanVote[],
   majorityFields: Pick<
     SessionScanItem,
-    'majorityRequirement' | 'presentMembers'
+    'majorityRequirement' | 'presentMembers' | 'reviewStatus'
   > = {},
 ): SessionScanItem {
   return {
@@ -133,5 +133,25 @@ describe('votings endpoint majority fields', () => {
       },
       votes: [{ personId: 'person-1', vote: 'no' }],
     });
+  });
+});
+
+describe('votings endpoint review status', () => {
+  test('is null for a finally checked voting', async () => {
+    const [voting] = await getVotingsResponseData([
+      createVoting(createVotes({ yes: 1, no: 0, abstain: 0 })),
+    ]);
+
+    expect(voting.reviewStatus).toBeNull();
+  });
+
+  test('names a voting whose check is not finished', async () => {
+    const [voting] = await getVotingsResponseData([
+      createVoting(createVotes({ yes: 1, no: 0, abstain: 0 }), {
+        reviewStatus: 'needs-review',
+      }),
+    ]);
+
+    expect(voting.reviewStatus).toBe('needs-review');
   });
 });

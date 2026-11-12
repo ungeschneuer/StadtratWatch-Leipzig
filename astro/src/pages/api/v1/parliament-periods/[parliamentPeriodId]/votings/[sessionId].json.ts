@@ -68,6 +68,7 @@ export async function GET({
     majorityRequirement: getMajorityRequirement(scan),
     presentMembers: scan.presentMembers ?? null,
     result: votingAccepted(parliamentPeriod, scan) ? 'accepted' : 'rejected',
+    reviewStatus: scan.reviewStatus ?? null,
   }));
 
   const response = {
