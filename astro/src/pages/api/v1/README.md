@@ -1,11 +1,11 @@
-# StadtratWatch API v1 Dokumentation
+# StadtratWatch Leipzig API v1 Dokumentation
 
-Die StadtratWatch API v1 bietet Zugang zu strukturierten Daten über Stadtratssitzungen, Abstimmungen und Redebeiträge. Alle Endpunkte geben JSON-Daten zurück und stehen unter der CC0 1.0 Lizenz.
+Die API v1 bietet Zugang zu strukturierten Daten über die Sitzungen der Leipziger Ratsversammlung, Abstimmungen und Redebeiträge. Alle Endpunkte geben statisches JSON zurück. Die selbst erhobenen Stimmen stehen unter CC0 1.0; Angaben aus OParl stammen von der Stadt Leipzig (CC BY 4.0), die Texte der Redebeiträge aus dem Verlaufsprotokoll (siehe `speeches_source`).
 
 ## Basis-URL
 
 ```
-/api/v1/
+https://ungeschneuer.github.io/StadtratWatch-web/api/v1/
 ```
 
 ## Authentifizierung
@@ -46,8 +46,8 @@ Gibt eine Liste aller verfügbaren Legislaturperioden zurück.
   "meta": { ... },
   "data": [
     {
-      "id": "magdeburg-7",
-      "name": "Wahlperiode VII",
+      "id": "leipzig-8",
+      "name": "Leipzig – Wahlperiode VIII",
       "lastUpdate": "2024-01-15T10:30:00Z"
     }
   ]
@@ -70,7 +70,7 @@ Gibt detaillierte Informationen zu einer spezifischen Legislaturperiode zurück.
 
 **Parameter:**
 
-- `parliamentPeriodId`: ID der Legislaturperiode (z.B. "magdeburg-7")
+- `parliamentPeriodId`: ID der Legislaturperiode (z.B. "leipzig-8")
 
 **Antwort:**
 
@@ -78,8 +78,8 @@ Gibt detaillierte Informationen zu einer spezifischen Legislaturperiode zurück.
 {
   "meta": { ... },
   "parliamentPeriod": {
-    "id": "magdeburg-7",
-    "name": "Wahlperiode VII",
+    "id": "leipzig-8",
+    "name": "Leipzig – Wahlperiode VIII",
     "sessions": [...],
     "persons": [...],
     "factions": [...],
@@ -113,8 +113,7 @@ Gibt alle Redebeiträge einer spezifischen Stadtratssitzung zurück.
       "start": "00:15:30",
       "duration": "00:03:45",
       "onBehalfOf": "Ausschuss für Stadtentwicklung, Bauen und Verkehr",
-      "transcription": "Meine Damen und Herren, ich möchte zu diesem Punkt folgendes sagen...",
-      "aiTextAssessmentLabel": "Mixed"
+      "transcription": "Meine Damen und Herren, ich möchte zu diesem Punkt folgendes sagen..."
     }
   ]
 }
@@ -127,8 +126,7 @@ Gibt alle Redebeiträge einer spezifischen Stadtratssitzung zurück.
 - `start`: Startzeit des Redebeitrags im Video in Sekunden
 - `duration`: Dauer des Redebeitrags in Sekunden
 - `onBehalfOf`: Name des Gremiums, für das die Person spricht (bspw. ein Ausschuss, optional)
-- `transcription`: Transkription des Redebeitrags
-- `aiTextAssessmentLabel`: Ergebnis der Prüfung auf KI-generierten Text, entweder `"AI"` oder `"Mixed"` (optional). Das Feld ist nur vorhanden, wenn der Redebeitrag mit hoher Wahrscheinlichkeit KI-generierte Textanteile enthält und die Bewertung zur aktuellen Transkription passt; andernfalls fehlt es vollständig. Zur Methodik siehe https://www.stadtratwatch.de/transparency/ai-assessment/
+- `transcription`: Text des Redebeitrags laut Verlaufsprotokoll der Stadt Leipzig. Er fällt nicht unter CC0; die Quelle steht in `meta.speeches_source`.
 
 **Hinweise:**
 
@@ -175,7 +173,8 @@ Gibt alle Abstimmungen einer spezifischen Stadtratssitzung zurück.
       ],
       "majorityRequirement": "simple",
       "presentMembers": null,
-      "result": "accepted"
+      "result": "accepted",
+      "reviewStatus": null
     }
   ]
 }
@@ -195,10 +194,12 @@ Gibt alle Abstimmungen einer spezifischen Stadtratssitzung zurück.
   - `two-thirds-of-members`: Zwei Drittel der Mitglieder
   - `three-quarters-of-members`: Drei Viertel der Mitglieder
 
-  Mitglieder meint die gesetzliche Mitgliederzahl, also alle Sitze im Stadtrat einschließlich der Oberbürgermeisterin. Ein unbesetzter Sitz senkt sie nicht.
+  Mitglieder meint die gesetzliche Mitgliederzahl, also alle Sitze in der Ratsversammlung einschließlich des Oberbürgermeisters. Ein unbesetzter Sitz senkt sie nicht.
 
-- `presentMembers`: Zahl der anwesenden Mitglieder („Anwesend“ auf dem Abstimmungsbildschirm) oder `null`, wo sie nicht erfasst ist. Bei `majority-of-present` und `two-thirds-of-present` ist sie immer gesetzt. Bei den anderen Mehrheitserfordernissen kann sie gesetzt sein, geht dann aber nicht in das Ergebnis ein.
+- `presentMembers`: Zahl der anwesenden Mitglieder („Anwesende“ auf der Abstimmungstafel) oder `null`, wo sie nicht erfasst ist. Bei `majority-of-present` und `two-thirds-of-present` ist sie immer gesetzt. Bei den anderen Mehrheitserfordernissen kann sie gesetzt sein, geht dann aber nicht in das Ergebnis ein.
 - `result`: Abstimmungsergebnis, `"accepted"` (angenommen) oder `"rejected"` (abgelehnt). Es wird aus den Stimmen, dem Mehrheitserfordernis und dessen Bezugsgröße berechnet.
+- `reviewStatus`: `null`, wenn die Abstimmung abschließend geprüft ist. `"provisional"`: alle automatischen Prüfungen bestanden, das amtliche Ergebnis steht noch aus. `"needs-review"`: eine Prüfung ist fehlgeschlagen, einzelne Stimmen können falsch gelesen sein; Prüfende entscheiden den Fall.
+- `votingSubject.paperUrl`: Link zur Drucksache im Ratsinformationssystem (optional).
 
 **Abstimmungsoptionen:**
 
@@ -225,21 +226,21 @@ Wenn eine angeforderte Ressource nicht existiert:
 ### Alle Legislaturperioden abrufen
 
 ```bash
-curl -X GET https://www.stadtratwatch.de/api/v1/parliament-periods.json
+curl -X GET https://ungeschneuer.github.io/StadtratWatch-web/api/v1/parliament-periods.json
 ```
 
 ### Redebeiträge einer Sitzung abrufen
 
 ```bash
-curl -X GET https://www.stadtratwatch.de/api/v1/parliament-periods/magdeburg-7/speeches/2024-05-02.json
+curl -X GET https://ungeschneuer.github.io/StadtratWatch-web/api/v1/parliament-periods/leipzig-8/speeches/2026-10-29.json
 ```
 
 ### Abstimmungen einer Sitzung abrufen
 
 ```bash
-curl -X GET https://www.stadtratwatch.de/api/v1/parliament-periods/magdeburg-7/votings/2024-05-02.json
+curl -X GET https://ungeschneuer.github.io/StadtratWatch-web/api/v1/parliament-periods/leipzig-8/votings/2026-10-29.json
 ```
 
 ## Lizenz
 
-Alle über diese API bereitgestellten Daten stehen unter der CC0 1.0 Lizenz (Public Domain). Sie können die Daten frei verwenden, kopieren, verändern und verbreiten.
+Die selbst erhobenen Abstimmungsdaten stehen unter CC0 1.0 (Public Domain). Für Angaben aus OParl (Sitzungen, Personen, Vorlagen) gilt CC BY 4.0 mit der Namensnennung „Stadt Leipzig“; die Texte der Redebeiträge stammen aus dem Verlaufsprotokoll der Stadt Leipzig (§ 48 UrhG) und fallen nicht unter CC0.

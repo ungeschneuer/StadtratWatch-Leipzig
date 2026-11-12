@@ -2,14 +2,31 @@
 = Kontextabgrenzung
 :icons: font
 
-Dieses Kapitel grenzt StadtratWatch von seiner Umgebung ab: Es benennt die
-externen Partner — Menschen, Organisationen und Nachbarsysteme —, mit denen die
-Plattform Daten austauscht, und legt damit die Systemgrenze fest.
+[cols="1,2,2",options="header"]
+|===
+| Nachbarsystem | Liefert | Schnittstelle
 
-Der *fachliche Kontext* beschreibt diese Partner aus Sicht der Domäne, also
-unabhängig von der eingesetzten Technik. Der *technische Kontext* konkretisiert
-dieselbe Abgrenzung anschließend über Kanäle, Protokolle und Datenformate.
+| OParl der Stadt Leipzig (`leipzig.sitzung-online.de/oparl`)
+| Sitzungen, Tagesordnungen, Personen, Mitgliedschaften, Fraktionen, Vorlagen
+| JSON über HTTP, Paginierung
 
-include::01-fachlicher-kontext.adoc[leveloffset=+1]
+| Open-Data-Portal Leipzig
+| Bewerber:innen der Stadtratswahl 2024 (Wahlliste)
+| CSV
 
-include::02-technischer-kontext.adoc[leveloffset=+1]
+| Mediathek leipzig.de, Player bei video-stream-hosting.de
+| Aufzeichnungen (HLS), Untertitel (VTT)
+| HTML-Seite, `POST /player/playerparameter`
+
+| ALLRIS (`ratsinformation.leipzig.de`)
+| Beschlussprotokoll, TOP-Seiten, Verlaufsprotokoll (PDF)
+| HTML und PDF
+
+| GitHub
+| Repository, Actions, Pages, Releases, Issues, Pull Requests, API für die Prüfoberfläche
+| Git, REST
+
+| Besucher:innen, Datennutzende
+| —
+| Website, API v1 (statisches JSON)
+|===

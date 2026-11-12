@@ -44,18 +44,7 @@ Thumbs.db
 /sessions-configs
 /sessions-media-files
 
-# Local Netlify folder
-.netlify
-
 .env
 .env.*
 !.env.sample
-typesense/data
-
-# OParl raw data — fetched from S3/CloudFront at build time (see astro/scripts/fetch-oparl)
-/data/oparl-magdeburg/
-
-# Paper batches — generated to output/ and published to web-assets/papers/ on CloudFront, from where
-# the web build fetches them at runtime (see src/scripts/generate-paper-assets --push). Not committed.
-/data/papers/
 deu.traineddata

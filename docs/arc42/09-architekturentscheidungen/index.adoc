@@ -2,9 +2,7 @@
 = Architekturentscheidungen
 :icons: font
 
-Dieses Kapitel vertieft die wenigen Entscheidungen, die die Architektur am stärksten prägen, am schwersten umkehrbar oder am riskantesten sind. Während Kapitel 4 (Lösungsstrategie) alle wesentlichen Technologieentscheidungen knapp und in der Übersicht begründet, dokumentieren die folgenden _Architecture Decision Records_ (ADR) zusätzlich den Problemkontext, die betrachteten Alternativen und die Konsequenzen.
-
-Die ADRs folgen einem schlanken https://adr.github.io/madr/[MADR]-Format. Die meisten sind nachträglich für bereits umgesetzte Entscheidungen verfasst und tragen den Status _Akzeptiert_; noch nicht umgesetzte, aber bereits getroffene Richtungsentscheidungen tragen _Vorgeschlagen_, bis sie umgesetzt sind. Die zeitliche Nachvollziehbarkeit ergibt sich aus der Git-Historie dieses Dokuments.
+Die folgenden _Architecture Decision Records_ (ADR) dokumentieren Kontext, Alternativen und Konsequenzen der prägenden Entscheidungen. Sie folgen einem schlanken https://adr.github.io/madr/[MADR]-Format. ADR-0001, -0002, -0004 und -0007 stammen aus StadtratWatch Magdeburg und gelten weiter. ADR-0003 (OCR-Pipeline mit Freigabe), -0005 (OParl-Rohdaten auf S3) und -0006 (Web-Assets auf CloudFront) betrafen nur die Magdeburger Pipeline und entfielen mit <<adr-0008,ADR-0008>>; sie stehen in der Git-Historie.
 
 [cols="1,4,1",options="header"]
 |===
@@ -18,37 +16,31 @@ Die ADRs folgen einem schlanken https://adr.github.io/madr/[MADR]-Format. Die me
 | Statisch ausgelieferte Web-Anwendung statt Anwendungsserver
 | Akzeptiert
 
-| <<adr-0003,ADR-0003>>
-| Automatische Datengewinnung aus Video mit menschlicher Freigabe
-| Akzeptiert
-
 | <<adr-0004,ADR-0004>>
 | Geteilte Datenmodelle im Monorepo
 | Akzeptiert
 
-| <<adr-0005,ADR-0005>>
-| OParl-Rohdaten extern statt im Repository
-| Akzeptiert
-
-| <<adr-0006,ADR-0006>>
-| Web-Assets dezentral je Generator publizieren
-| Akzeptiert
-
 | <<adr-0007,ADR-0007>>
 | Bun statt Deno für die Verarbeitungs-Pipeline
-| Vorgeschlagen
+| Akzeptiert
+
+| <<adr-0008,ADR-0008>>
+| Eigenständiger Fork nur für Leipzig, ausgeliefert über GitHub Pages
+| Akzeptiert
+
+| <<adr-0009,ADR-0009>>
+| Stimmen von der Abstimmungstafel, geprüft gegen unabhängige Quellen, freigegeben per Pull Request
+| Akzeptiert
 |===
 
 include::adr-0001-json-datenbestand.adoc[leveloffset=+1]
 
 include::adr-0002-statische-auslieferung.adoc[leveloffset=+1]
 
-include::adr-0003-automatische-datengewinnung.adoc[leveloffset=+1]
-
 include::adr-0004-geteilte-modelle.adoc[leveloffset=+1]
 
-include::adr-0005-externe-oparl-rohdaten.adoc[leveloffset=+1]
-
-include::adr-0006-web-assets-dezentral-publizieren.adoc[leveloffset=+1]
-
 include::adr-0007-bun-statt-deno.adoc[leveloffset=+1]
+
+include::adr-0008-leipzig-fork.adoc[leveloffset=+1]
+
+include::adr-0009-abstimmungstafel.adoc[leveloffset=+1]

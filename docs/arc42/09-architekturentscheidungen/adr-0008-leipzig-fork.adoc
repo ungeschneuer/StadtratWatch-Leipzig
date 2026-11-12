@@ -1,0 +1,28 @@
+[#adr-0008]
+= ADR-0008: Eigenständiger Fork nur für Leipzig, ausgeliefert über GitHub Pages
+
+*Status:* Akzeptiert (12.11.2026)
+
+== Kontext und Problem
+
+StadtratWatch wurde für den Magdeburger Stadtrat entwickelt: OParl-Scraper, OCR der Abstimmungsbilder, Sprechererkennung, Transkription, Volltextsuche mit Typesense, Bilder und Vorlagen auf S3/CloudFront, Hosting bei Netlify. StadtratWatch Leipzig übernimmt die Web-Anwendung und ihre Auswertungen, gewinnt die Daten aber anders (Abstimmungstafel im Video, Verlaufsprotokoll, siehe <<adr-0009,ADR-0009>>) und darf nur kostenlose Dienste nutzen. Mit dem Upstream-Projekt besteht kein Kontakt.
+
+== Betrachtete Optionen
+
+* *Beide Städte in einer Seite* mit Stadt-Konfiguration — Merges von Upstream blieben einfach, aber die Magdeburger Pipeline bräuchte S3, Typesense und Netlify weiter, und die Seite müsste zwei Städte erklären.
+* *Nur Leipzig* (gewählt) — alles Magdeburger entfällt: Daten, Pipeline, Vorlagen- und Suchseiten, KI-Prüfung, Docker, Typesense, Netlify.
+
+== Entscheidung
+
+Der Fork zeigt nur Leipzig unter dem Namen *StadtratWatch Leipzig*. Der Hinweis auf StadtratWatch Magdeburg (Code for Magdeburg) bleibt auf der Seite und in der README, der Urheberrechtsvermerk der MIT-Lizenz bleibt erhalten.
+
+Die Seite wird mit GitHub Actions gebaut und über GitHub Pages ausgeliefert, zusammen mit der Prüfoberfläche unter `/review/` (`.github/workflows/deploy.yml`). Es gibt vorerst keine eigene Domain; die Seite liegt unter dem Namen des Repositorys, und alle internen Links laufen über einen konfigurierbaren Basispfad (`SITE_URL`, `SITE_BASE`).
+
+Code kommt per Pull Request nach `main`; die Daten kommen über den Branch `data/leipzig-votings` und dessen Pull Request.
+
+== Konsequenzen
+
+* Kein Server, keine Kosten, keine Zugangsdaten außer dem `GITHUB_TOKEN`.
+* Merges von Upstream sind nur noch für die Web-Anwendung sinnvoll und brauchen Handarbeit.
+* Volltextsuche und Vorlagenseiten fehlen; Drucksachen verlinken das Ratsinformationssystem der Stadt.
+* Ein Wechsel auf eine eigene Domain ändert nur `SITE_URL` und `SITE_BASE`.

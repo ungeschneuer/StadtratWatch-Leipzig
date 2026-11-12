@@ -2,19 +2,49 @@
 = Einführung und Ziele
 :icons: font
 
-StadtratWatch ist eine zivilgesellschaftliche Plattform für Transparenz und
-Bürgerbeteiligung im Magdeburger Stadtrat. Sie macht Stadtratssitzungen
-nachvollziehbar, indem sie öffentlich verfügbare Quellen — Sitzungsvideos,
-Abstimmungsergebnisse und parlamentarische Dokumente (OParl) — automatisiert
-verarbeitet, miteinander verknüpft und allgemeinverständlich aufbereitet.
+== Aufgabenstellung
 
-Das Projekt wird ehrenamtlich von https://codefor.de/magdeburg/[Code for Magdeburg]
-betrieben. Es besteht aus einer statisch ausgelieferten Web-Anwendung (Astro) und
-einer vorgelagerten Datenverarbeitungs-Pipeline (Deno), die Modelle über einen
-Monorepo-Workspace teilen.
+StadtratWatch Leipzig macht sichtbar, wie die 70 Stadträt:innen und der Oberbürgermeister in der Leipziger Ratsversammlung abstimmen. Die Stadt veröffentlicht Beschlüsse, aber keine Stimmen je Person. Die Plattform liest sie aus der Abstimmungstafel der Video-Aufzeichnungen, ordnet sie Personen, Fraktionen, Wahllisten, Tagesordnungspunkten und Vorlagen zu und stellt sie als Website, als API und als offene Daten bereit. Dazu kommen die Redebeiträge aus dem Verlaufsprotokoll.
 
-include::01-aufgabenstellung.adoc[leveloffset=+1]
+Nicht Ziel: Volltextsuche, Vorlagenarchiv, eigene Transkription, Sitzungen ohne Aufzeichnung, Abstimmungen ohne Tafel.
 
-include::02-qualitaetsziele.adoc[leveloffset=+1]
+== Qualitätsziele
 
-include::03-stakeholder.adoc[leveloffset=+1]
+[cols="1,3",options="header"]
+|===
+| Ziel | Bedeutung
+
+| Korrektheit
+| Keine Stimme wird einer Person falsch zugeschrieben, ohne dass die Seite auf die offene Prüfung hinweist.
+
+| Nachvollziehbarkeit
+| Jede Stimme ist auf Quelle, Methode und Prüfung zurückführbar; jede Änderung ist ein Commit.
+
+| Offenheit
+| Daten maschinenlesbar mit stabilen IDs und klarer Lizenz.
+
+| Betrieb ohne Kosten
+| Nur kostenlose Dienste (GitHub Actions, GitHub Pages, GitHub Releases).
+|===
+
+== Stakeholder
+
+[cols="1,3",options="header"]
+|===
+| Rolle | Erwartung
+
+| Bürger:innen, Presse
+| Verständliche Übersicht, ehrliche Kennzeichnung unsicherer Daten.
+
+| Ratsmitglieder, Fraktionen
+| Korrekte Zuordnung ihrer Stimmen; einfacher Weg, Fehler zu melden.
+
+| Prüfende
+| Prüffälle mit Tafelbild und Video an einer Stelle, Speichern ohne Git-Kenntnisse.
+
+| Betreiber (Marcel Schneuer)
+| Wartbar mit wenig Zeit, ohne Server.
+
+| Datennutzende
+| Stabile API und Dateien, Lizenz und Herkunft je Datensatz.
+|===

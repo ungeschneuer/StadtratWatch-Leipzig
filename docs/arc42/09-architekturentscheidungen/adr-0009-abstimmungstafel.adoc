@@ -1,0 +1,23 @@
+[#adr-0009]
+= ADR-0009: Stimmen von der Abstimmungstafel, geprüft gegen unabhängige Quellen, freigegeben per Pull Request
+
+*Status:* Akzeptiert
+
+== Kontext und Problem
+
+Die Stadt Leipzig veröffentlicht keine Stimmen je Person. Die Aufzeichnungen der Ratsversammlung zeigen nach jeder elektronischen Abstimmung aber die Abstimmungstafel bildschirmfüllend: Sitznummern, Namen und eine Farbe je Stimme. Eine fehlerhaft gelesene Stimme schreibt einem Ratsmitglied ein Verhalten zu, das es nicht gezeigt hat.
+
+== Entscheidung
+
+* Die Ergebnisphasen werden in der ganzen Aufzeichnung gesucht (360p, 2 Bilder je Sekunde), der Endstand in 1080p gelesen: Raster vermessen, Farbe je Feld, Tesseract für Kopfzeile und Zahlen.
+* Jede Abstimmung wird gegen unabhängige Quellen geprüft: die Zahlen der Tafel, ein zweites Bild, die Ansage in den Untertiteln, das Beschlussprotokoll, die TOP-Seiten und das Verlaufsprotokoll.
+* Ergebnis ist ein Status: `verified`, `corrected`, `provisional` (amtliches Ergebnis steht aus), `needs-review` (eine Prüfung schlug fehl), `discarded`, `skipped`.
+* `needs-review` entscheiden Prüfende in der Prüfoberfläche; jede Entscheidung ist ein Commit auf `data/leipzig-votings`. Mit dem Merge des Pull Requests werden die Daten veröffentlicht.
+* Veröffentlicht werden `verified`, `corrected`, `reviewed`, `provisional` und `needs-review`; die letzten beiden mit Kennzeichnung, Erklärung und Link zum Pull Request.
+* Abstimmungen ohne Tafel (Handzeichen, geheime Wahl) und Sitzungen ohne Aufzeichnung werden nicht erfasst.
+
+== Konsequenzen
+
+* Die Daten sind nachvollziehbar: jede Änderung ist ein Commit mit Begründung.
+* Vorläufige Stimmen und Stimmen in Prüfung können falsch sein; die Seite sagt das bei jeder solchen Abstimmung.
+* Nach dem Löschen einer Aufzeichnung lässt sich eine Stimme nicht mehr am Video prüfen; als Beleg bleiben die gesicherten Untertitel und, wo vorhanden, Belegbilder (rechtliche Einschätzung: `docs/research/2026-11-12-rechte-belegbilder.md`).

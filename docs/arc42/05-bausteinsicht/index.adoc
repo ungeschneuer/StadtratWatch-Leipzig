@@ -2,18 +2,56 @@
 = Bausteinsicht
 :icons: font
 
-Dieses Kapitel zeigt die statische Zerlegung von StadtratWatch in seine Bausteine.
-Es beginnt mit dem Gesamtsystem (Ebene 1) und verfeinert anschließend die beiden
-Bausteine mit der höchsten inneren Komplexität — die Verarbeitungs-Pipelines und
-die Web-Anwendung — auf Ebene 2.
+== Ebene 1
 
-Die Sicht ist *strukturell*, nicht ablauforientiert: Sie beschreibt, woraus das
-System besteht und welche Verantwortung jeder Baustein trägt. Wie die Bausteine
-zur Laufzeit zusammenspielen, behandelt Kapitel 6 (Laufzeitsicht); wo sie betrieben
-werden, Kapitel 7 (Verteilungssicht).
+[cols="1,3",options="header"]
+|===
+| Baustein | Aufgabe
 
-include::01-ebene-1-gesamtsystem.adoc[leveloffset=+1]
+| `src/scripts/leipzig-recordings`
+| Aufzeichnungen finden, Stream und Untertitel auflösen, Manifest `recordings.json`, Untertitel archivieren.
 
-include::02-ebene-2-verarbeitungs-pipelines.adoc[leveloffset=+1]
+| `src/scripts/leipzig-members`
+| Mitglieder, Fraktionen mit Zeiträumen und Wahlliste aus OParl und Open Data, Overrides mit Quelle; `members.json`.
 
-include::03-ebene-2-web-anwendung.adoc[leveloffset=+1]
+| `src/scripts/leipzig-votings`
+| Abstimmungstafel lesen, prüfen, mit OParl und Protokollen abgleichen, Prüffälle und Korrekturen; `votings-<datum>.json`, `votes-<datum>.csv`, `verlaufsprotokoll-<datum>.json`.
+
+| `src/scripts/leipzig-papers`
+| Jede Abstimmung mit ihrer OParl-Vorlage und den Einreichenden verknüpfen; `papers.json`.
+
+| `src/scripts/leipzig-site-data`
+| Adapter ins Format der Seite: `registry.json`, `session-scan-*.json` (mit `reviewStatus`), `session-speeches-*.json`.
+
+| `astro/`
+| Website, Auswertungen (`src/data-analysis`), API v1. Konfiguration in `src/utils/site-config.ts`, Basispfad über `src/utils/site-path.ts`.
+
+| `session-review/`
+| Prüfoberfläche (React), speichert Entscheidungen als Commits über die GitHub-API.
+
+| `src/deps/astro`
+| Re-Export der Modelle aus `astro/src/models` für die Skripte (<<adr-0004,ADR-0004>>).
+|===
+
+== Aufbau der Datenablage
+
+[source]
+----
+data/leipzig-8/
+  registry.json              Wahlperiode für die Seite (erzeugt)
+  members.json, *.csv        Mitglieder, Fraktionen, Wahllisten
+  member-overrides.json      Korrekturen mit Begründung und Quelle
+  recordings.json|csv        Manifest der Aufzeichnungen
+  papers.json                Vorlagen der Abstimmungen
+  YYYY-MM-DD/
+    votings-YYYY-MM-DD.json   Abstimmungen mit Status und Prüfungen
+    votes-YYYY-MM-DD.csv      Stimmen im Long-Format
+    corrections-*.json        Entscheidungen der Prüfenden
+    review-*.json             offene Prüffälle
+    subtitles-*.vtt           Untertitel (Hoster oder lokales Whisper)
+    verlaufsprotokoll-*.json  Beiträge aus dem Verlaufsprotokoll
+    session-scan-*.json       Abstimmungen für die Seite (erzeugt)
+    session-speeches-*.json   Redebeiträge für die Seite (erzeugt)
+----
+
+Belegbilder liegen nicht im Repository, sondern als Assets der Releases `evidence-<datum>`.

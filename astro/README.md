@@ -1,12 +1,11 @@
-# StadtratWatch Web Application
+# StadtratWatch Leipzig: Web Application
 
-Web frontend for StadtratWatch, a civic participation platform for tracking Magdeburg city council sessions. Built with Astro 5, Alpine.js, Tailwind CSS, and Chart.js.
+Web frontend of StadtratWatch Leipzig: votes, speeches and analyses of the Leipzig city council (Ratsversammlung). Built with Astro 7, Alpine.js, Tailwind CSS, and Chart.js.
 
 ## Prerequisites
 
-- Node.js 18+ and npm
-- Processed data in `../data/` directory (see root docs/guides/HOWTO.md)
-- Typesense server running (for search functionality)
+- Node.js 22 (a recent 22.x; Astro 7 refuses old minor versions) and npm
+- The data of `data/leipzig-8/` (on `main` once the data pull request is merged, otherwise on the branch `data/leipzig-votings`)
 
 ## Getting Started
 
@@ -29,10 +28,11 @@ astro/
 │   ├── components/      # Reusable Astro/Alpine.js components
 │   ├── data-analysis/   # Voting analysis algorithms
 │   ├── layouts/         # Page layouts
-│   ├── models/          # TypeScript models (shared with Deno)
+│   ├── models/          # TypeScript models (shared with the Bun scripts)
 │   ├── pages/           # Routes (file-based routing)
 │   │   └── api/v1/      # REST API endpoints
-│   └── styles/          # Global CSS
+│   ├── styles/          # Global CSS
+│   └── utils/           # Helpers, site settings (site-config.ts), base path (site-path.ts)
 └── astro.config.mjs     # Astro configuration + env vars
 ```
 
@@ -50,25 +50,25 @@ astro/
 
 ## Configuration
 
-Environment variables are configured in `astro.config.mjs` using Astro's env schema:
+All variables are optional and set by `.github/workflows/deploy.yml` (schema in `astro.config.mjs`):
 
-- `DEFAULT_PARLIAMENT_PERIOD` - Default period ID (e.g., "magdeburg-8")
-- `AWS_CLOUDFRONT_BASE_URL` - CDN base URL for assets
-- Typesense connection details (host, port, API key, protocol)
+- `SITE_URL`, `SITE_BASE` - Address and base path of the site (default: the GitHub project page `/StadtratWatch-web`)
+- `DATA_REPOSITORY` - GitHub repository for source and data links
+- `DATA_PULL_REQUEST_URL` - Open pull request of the data branch (default: a search that finds it)
+- `DEFAULT_PARLIAMENT_PERIOD` - Default period ID (default `leipzig-8`)
+
+Every internal link goes through `sitePath()` so the site works below its base path.
 
 ## Data Sources
 
-The application reads from the `../data/` directory. Its layout is described in `docs/arc42/05-bausteinsicht/01-ebene-1-gesamtsystem.adoc` (section "Aufbau der Datenablage").
-
-Run data processing scripts (see root docs/guides/HOWTO.md) before starting the web app.
+The application reads from the `../data/` directory. Its layout is described in `docs/arc42/05-bausteinsicht/index.adoc` (section "Aufbau der Datenablage"); the files are written by `src/scripts/leipzig-site-data`.
 
 ## Tech Stack
 
-- **Astro 5** - Static site generator with SSR
+- **Astro 7** - Static site generator
 - **Alpine.js** - Lightweight JavaScript framework
 - **Tailwind CSS 4 + DaisyUI** - Styling
 - **Chart.js + D3.js** - Data visualization
-- **Typesense** - Full-text search engine
 
 ## API
 

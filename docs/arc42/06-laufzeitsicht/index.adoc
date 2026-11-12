@@ -2,52 +2,20 @@
 = Laufzeitsicht
 :icons: font
 
-Dieses Kapitel zeigt, wie die in Kapitel 5 (<<bausteinsicht,Bausteinsicht>>)
-beschriebenen Bausteine zur Laufzeit zusammenspielen. Anders als die statische
-Zerlegung dort ist diese Sicht *ablauforientiert*: Sie folgt den Daten auf ihrem
-Weg von den amtlichen Quellen bis zur ausgelieferten Website.
+== Neue Sitzung
 
-Bei StadtratWatch verteilt sich „Laufzeit" auf drei deutlich verschiedene
-Kontexte, weil das System bewusst keinen dauerhaft laufenden Anwendungsserver
-betreibt (siehe Qualitätsziel #3, _Wartbarkeit & geringe Betriebskosten_):
+. `leipzig-recordings` (täglich) findet die Aufzeichnung, trägt sie ins Manifest ein und öffnet einen Pull Request von `data/leipzig-recordings`.
+. `leipzig-votings` (sobald ein neues Manifest auf `main` liegt, sonst wöchentlich) liest die Tafeln, prüft jede Abstimmung, schreibt die Dateien auf `data/leipzig-votings`, legt Belegbilder der Prüffälle in den Release `evidence-<datum>`, öffnet je Sitzung mit Prüffällen ein Issue und hält einen Pull Request nach `main` offen.
+. `leipzig-site-data` erzeugt im selben Lauf die Dateien für die Seite.
+. Nach dem Merge baut `deploy.yml` die Seite neu.
 
-[cols="1,3",options="header"]
-|===
-| Kontext | Charakter
+== Prüfung
 
-| *Datenverarbeitung (bedarfsweise)*
-| Eigenständige Skripte (Deno, Python, Shell), die manuell oder containerisiert
-  gestartet werden und über die Datenablage entkoppelt sind. Hierher gehören die
-  beiden Verarbeitungs-Pipelines.
+. Prüfende öffnen `/review/leipzig/<datum>`, sehen Tafelbild, Video an der Stelle und die fehlgeschlagene Prüfung.
+. Jede Entscheidung wird ein Commit in `corrections-<datum>.json` auf `data/leipzig-votings`.
+. `leipzig-review-recheck` wendet die Korrekturen an, liest neu erschienene amtliche Ergebnisse und Verlaufsprotokolle (täglich) und erzeugt die Seitendaten neu.
+. Bis zum Merge zeigt die Seite die Abstimmung als „in Prüfung“ mit Link zur Prüfoberfläche und zum Pull Request.
 
-| *Build-Zeit*
-| Der Astro-Build liest die Datenablage, berechnet die Auswertungen und erzeugt
-  die statische Website samt API. Findet einmalig je Veröffentlichung statt.
+== Mitglieder
 
-| *Client-Laufzeit*
-| Der Browser der Nutzer:innen — statische Seiten mit progressiver
-  Interaktivität (Alpine.js) und clientseitiger Suche (Typesense).
-|===
-
-Die folgenden vier Szenarien decken diese Kontexte ab. Sie sind nach dem
-Datenfluss geordnet: zwei Verarbeitungs-Pipelines (Szenario 1 und 2), der Build
-(Szenario 3) und die qualitätssichernde menschliche Prüfung, die die
-Datenverarbeitung mit der Veröffentlichung verbindet (Szenario 4).
-
-[cols="1,3,2",options="header"]
-|===
-| Nr. | Szenario | Kontext
-
-| 6.1 | <<lz-sitzungsverarbeitung,Sitzungsverarbeitung (Video-Pipeline)>>   | Datenverarbeitung
-| 6.2 | <<lz-oparl-ingestion,OParl- und Drucksachen-Ingestion>>            | Datenverarbeitung
-| 6.3 | <<lz-build,Statischer Build und Datenauswertung>>                  | Build-Zeit
-| 6.4 | <<lz-pruefung-freigabe,Prüfung und Freigabe einer Sitzung>>        | Datenverarbeitung ↔ Build
-|===
-
-include::01-sitzungsverarbeitung.adoc[leveloffset=+1]
-
-include::02-oparl-ingestion.adoc[leveloffset=+1]
-
-include::03-build-und-auswertung.adoc[leveloffset=+1]
-
-include::04-pruefung-und-freigabe.adoc[leveloffset=+1]
+`leipzig-members` (täglich) gleicht OParl ab und öffnet bei Änderungen einen Pull Request von `data/leipzig-members`; Mehrdeutigkeiten werden Issues.

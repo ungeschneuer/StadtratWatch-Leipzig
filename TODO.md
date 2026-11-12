@@ -2,16 +2,19 @@
 
 Ziel: einen Fork von [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) (Magdeburg) für die Leipziger Ratsversammlung bauen. Der Umfang sind **nur die Abstimmungen** pro Person, für **alle Sitzungen mit verfügbarem Video**. Der Betrieb läuft ausschließlich über **kostenlose Dienste**. Alle erzeugten Daten sind maschinenlesbar und werden automatisch aktuell gehalten.
 
-Stand: 12.11.2026
+Stand: 12.11.2026 (abends)
 
 ## Entscheidungen
 
 | Frage | Entscheidung |
 |---|---|
-| Repository | Fork, kein Kontakt zum Upstream. Änderungen sollen konfigurierbar bleiben, damit spätere Merges von upstream möglich sind. |
+| Repository | Fork, kein Kontakt zum Upstream. Seit 12.11.2026 nur Leipzig: alles Magdeburger ist entfernt, der Hinweis auf StadtratWatch Magdeburg und dessen MIT-Vermerk bleiben (ADR-0008). Merges von upstream nur noch von Hand. |
+| Branches | Code per PR nach `main`, Daten über `data/leipzig-votings` und dessen PR (12.11.2026). |
 | Umfang | Abstimmungen, dazu seit 12.11.2026 Reden aus dem Verlaufsprotokoll (siehe M5). Keine Volltextsuche. |
 | Zeitraum | Alle Sitzungen, zu denen es ein Video gibt. |
-| Betrieb | Nur kostenlose Dienste: GitHub Actions, GitHub Pages bzw. Netlify Free, Git als Datenspeicher. Kein S3, kein VPS, kein Typesense. |
+| Betrieb | Nur kostenlose Dienste: GitHub Actions, GitHub Pages, Git als Datenspeicher. Kein S3, kein VPS, kein Typesense. Vorerst keine eigene Domain. |
+| Betreiber | Marcel Schneuer, Impressum wie schneuer.online (12.11.2026). |
+| Veröffentlichung | Sitzungen ohne Video und Abstimmungen ohne Tafel werden nicht erfasst. `provisional` und `needs-review` erscheinen mit Hinweis, wie der Fall behoben wird, und Link zum Daten-PR (12.11.2026). |
 | Stadt Leipzig | Wird nicht kontaktiert. Es wird nur mit öffentlich zugänglichen Daten gearbeitet. |
 | Mitgliederquellen | leipzig.de wird ignoriert. Mitglieder und Fraktionen kommen aus OParl, Parteien aus dem Open-Data-Datensatz und ggf. aus den Fraktionswebseiten. |
 
@@ -26,10 +29,10 @@ Stand: 12.11.2026
 | **Datenqualität OParl** | Tippfehler wie „CHristoph Neumann“. Bei Prof. Dr. Getu Abraham fehlt eine Fraktionsmitgliedschaft, OParl und Abstimmungstafel führen ihn als fraktionslos. Die CDU-Webseite listet ihn nicht. |
 | **Fraktionswebseiten** | Uneinheitlich aufgebaut. Die CDU-Seite ist Latin-1-kodiert, die AfD-Seite ist WordPress mit nachgeladenem Inhalt (die `wp-json`-API wäre nutzbar), die übrigen sind statisches HTML. Sie taugen nur als Zusatzquelle, nicht als Primärquelle. |
 | **Mediathek** | Es gibt Seiten `leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-{slug}`. Der Slug ist meist `DDMMYYYY`, einmal aber `29-oktober-2026`. Das Video wird über einen Wowza-Player von video-stream-hosting.de eingebettet. `POST start.video-stream-hosting.de/player/playerparameter` liefert den HLS-Host und eine **VTT-Untertiteldatei** (KI-generiert, `large-v3-turbo-german`). Der HLS-Stream ist in 360p, 480p, 720p und 1080p verfügbar. |
-| **Archivtiefe** | Von 34 Sitzungstagen seit 18.09.2024 haben nur **16 eine Video-Seite**, alle ab dem **17.12.2025**. Ältere Seiten existieren nicht mehr, und die Wayback Machine hat nur eine einzige Aufzeichnungsseite archiviert. Vermutlich hält die Stadt die Videos nur rollierend etwa 12 Monate vor. |
+| **Archivtiefe** | Von 34 Sitzungstagen seit 18.09.2024 haben nur **16 eine Video-Seite**, alle ab dem **17.12.2025**. Ältere Seiten existieren nicht mehr, und die Wayback Machine hat nur eine einzige Aufzeichnungsseite archiviert. Vermutlich hält die Stadt die Videos nur rollierend etwa 12 Monate vor. Die Geschäftsordnung (§ 11 Abs. 8, Fassung 2024) sagt dagegen „bis zum Ende der Wahlperiode öffentlich verfügbar“; vermutlich begann die Aufzeichnung erst im Dezember 2025 (siehe `docs/research/2026-11-12-rechte-belegbilder.md`). Ob die Aufzeichnung vom 17.12.2025 im Dezember 2026 noch abrufbar ist, zeigt `recordings.json`. |
 | **Abstimmungstafel** | Die Tafel wird vollbildig eingeblendet. Die Kopfzeile enthält TOP, Drucksache und Titel (`19.10.2 VIII-DS-02186-ÄA-02 Masterplan Grün …`). Darunter stehen 4 Spalten nach Fraktionen mit festen Sitznummern 1–71. Die **Farbe** im Nummernfeld zeigt die Stimme: grün = Ja, rot = Nein, gelb = Enthaltung, weiß = keine Stimme. Unten stehen „Anwesende“ und „Abgegebene Stimmen“, nach Schluss erscheint ein Ergebnisbalken. |
 | **Mündliche Korrekturen** | Beispiel: „Herr Stange wird hinzugezählt, 21 zu 36 zu 0“. Auf der Tafel ist Stange weiß, die Tafel zeigt 20 Ja. Die Tafel entspricht also nicht immer dem amtlichen Ergebnis. |
-| **StadtratWatch** | Astro (statisch) + Bun/Deno-Skripte. `registry.json` ist die Quelle der Wahrheit, Abstimmungen liegen in `session-scan-YYYY-MM-DD.json`. YouTube ist in ca. 15 Dateien fest verdrahtet. Binärdaten (Abstimmungs-PNGs, Drucksachen) werden über S3/CloudFront ausgeliefert, die Suche läuft über Typesense auf einem VPS. Es gibt keinen Scheduler. |
+| **StadtratWatch (upstream, Stand 10.11.2026)** | Astro (statisch) + Bun/Deno-Skripte. `registry.json` ist die Quelle der Wahrheit, Abstimmungen liegen in `session-scan-YYYY-MM-DD.json`. YouTube ist in ca. 15 Dateien fest verdrahtet. Binärdaten (Abstimmungs-PNGs, Drucksachen) werden über S3/CloudFront ausgeliefert, die Suche läuft über Typesense auf einem VPS. Es gibt keinen Scheduler. |
 
 **Wichtigste Folge der Archivtiefe:** Die 16 verfügbaren Videos sollten **so bald wie möglich** verarbeitet und die Belege gesichert werden. Die ältesten (Dezember 2025) könnten bald verschwinden. Danach läuft die Verarbeitung neuer Sitzungen laufend weiter, damit keine Sitzung verloren geht.
 
@@ -71,10 +74,10 @@ Stand: 12.11.2026
 ## M0: Fork und Grundgerüst
 
 - [x] `JensWinter/StadtratWatch-web` geforkt: https://github.com/ungeschneuer/StadtratWatch-web. Hinweis auf den Ursprung steht in der README.
-- [ ] Datei `LEIPZIG.md` bzw. ein ADR anlegen: Fork-Strategie, Abweichungen von upstream, Entscheidungen von oben.
-- [ ] Magdeburg-Daten (`data/magdeburg-*`) entfernen oder ausblenden, Wahlperiode `leipzig-8` anlegen (Beginn 18.09.2024).
-- [ ] CI des Forks zum Laufen bringen (`ci.yml`: Deno-, Bun- und Astro-Checks).
-- [x] Leipzig-Skripte als eigene Bun-Ordner `src/scripts/leipzig-*` (in `tsconfig.json` und `deno.json` registriert wie upstream).
+- [x] ADR-0008 (Fork nur für Leipzig, GitHub Pages) und ADR-0009 (Tafel, Prüfung, Freigabe per PR); arc42 für Leipzig neu geschrieben (12.11.2026).
+- [x] Magdeburg entfernt: Daten, Pipeline-Skripte, Docker, Typesense, Netlify, Vorlagen-, Such- und KI-Seiten, Magdeburger Ansichten der Prüfoberfläche. Wahlperiode `leipzig-8` angelegt.
+- [ ] CI des Forks auf GitHub zum Laufen bringen (`ci.yml`: Deno-Lint, Bun- und Astro-Checks; lokal grün am 12.11.2026).
+- [x] Leipzig-Skripte als eigene Bun-Ordner `src/scripts/leipzig-*` (in `tsconfig.json` registriert; Deno lintet nur noch).
 
 ## M1: Mitgliederliste mit Partei
 
@@ -114,7 +117,7 @@ Umgesetzt in `src/scripts/leipzig-members` (siehe README dort), Workflow `.githu
 - [x] **Manifest** `recordings.json|csv` mit `session_id`, `oparl_meeting_id`, `mediathek_url`, `smil`, `hls_url`, `vtt_url`, `duration`, `vtt_sha256`, `first_seen`, `last_seen`, `available`.
 - [x] **VTT archivieren** im Repo (klein; dient in M3 als Index für Abstimmungen und als Beleg für mündliche Ergebnisse).
 - [x] **Verfügbarkeit überwachen:** Verschwindet eine Seite, wird `available: false` gesetzt und `last_seen` bleibt erhalten. Daraus lässt sich die tatsächliche Vorhaltedauer ablesen.
-- [x] **Deep-Links:** Der Player des Hosters (die Seite, die leipzig.de als iframe einbindet, in `recordings.json` als `playerUrl`) springt mit `startsekunde=<s>` an die Stelle; `videostartoffset` schneidet dagegen den Anfang weg (an 4 Tagen 11–15 Minuten Wartezeit). Gemessen 12.11.2026: mit `startpos=660` ist der Stream genau 660 s kürzer, die Zeit im Player läuft also um den Schnitt hinter unseren Zeiten; `sessionVideoLink` rechnet ihn heraus. Noch nicht im Browser angeklickt.
+- [x] **Deep-Links:** Der Player des Hosters (die Seite, die leipzig.de als iframe einbindet, in `recordings.json` als `playerUrl`) springt mit `startsekunde=<s>` an die Stelle; `videostartoffset` schneidet dagegen den Anfang weg (an 4 Tagen 11–15 Minuten Wartezeit). Gemessen 12.11.2026: mit `startpos=660` ist der Stream genau 660 s kürzer, die Zeit im Player läuft also um den Schnitt hinter unseren Zeiten; `sessionVideoLink` rechnet ihn heraus. Im Browser bestätigt (12.11.2026).
 - [x] **Backfill:** 16 Sitzungstage (17.12.2025–29.10.2026) erfasst, 13 davon mit Untertiteln. Für 2025-12-18, 2026-01-28 und 2026-02-25 veröffentlicht der Hoster keine VTT, dort braucht M3 den Frame-Scan-Fallback.
 - [x] **Workflow** `.github/workflows/leipzig-recordings.yml`: täglich 05:17 UTC, Daten per PR, Fehler als Issue.
 - [x] **Belegframes sichern:** Tafelbilder jeder zu prüfenden Abstimmung als Assets des Releases `evidence-<datum>`.
@@ -152,20 +155,17 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 
 ## M4: Umsetzung im Fork
 
-- [ ] **Stadt-Konfiguration** (Name, OParl-URL, Wahlperiode, Texte) statt fest verdrahtetem Magdeburg. Beispiele im Build: Fußzeile „keine offizielle Seite der Stadt Magdeburg … Code for Magdeburg“, YouTube-Kanal der Stadt Magdeburg auf der Übersicht der Wahlperiode. Dadurch bleiben Merges von upstream möglich.
+- [x] **Seitenkonfiguration** `astro/src/utils/site-config.ts` (Name, Kontakt, Repository, Daten-PR, Hinweis auf upstream); Texte, Impressum, Kontakt und Datenschutz für Leipzig (12.11.2026).
 - [x] **Video-Abstraktion:** `RegistrySession.video` (`url`, `label`) neben `youtubeUrl` (abwärtskompatibel, Magdeburg unverändert); `sessionVideoLink()` in `astro/src/models/session-video.ts` wählt den Link für Sitzungs- und Abstimmungsseite. Leipzig verlinkt die Mediathek-Seite, solange sie online ist.
   - [x] Zeitgenaue Links für Reden und Abstimmungen über `video.playerUrl` (siehe M2, Deep-Links).
   - [x] `Speech.astro` nutzt `sessionVideoLink()`.
 - [x] **Reden-Funktionen:** Speech-Seiten und Redezeit-Statistiken werden mit M5 gefüllt statt ausgeblendet. `speech-to-text`, `speaker-diarization` und `detect-ai-text` aus upstream werden nicht genutzt. `Speech.astro` braucht dafür `sessionVideoLink()` statt `youtubeUrl`.
 - [x] **Registry `data/leipzig-8/registry.json`** aus `members.json` und den Sitzungen mit Abstimmungen, Skript `src/scripts/leipzig-site-data`. `approved`, sobald keine Abstimmung mehr auf Prüfung oder amtliches Ergebnis wartet (Stand 12.11.2026: 5 von 16).
-- [ ] **OParl-Pipeline schlank halten:** nur Sitzungen, TOPs und die **in Abstimmungen vorkommenden** Vorlagen (Titel, Nummer, Link zum Ratsinfo). Kein Download aller PDFs, kein Tika, kein Typesense.
+- [x] **OParl schlank:** nur Sitzungen, TOPs und die in Abstimmungen vorkommenden Vorlagen; Drucksachen verlinken das Ratsinformationssystem (`paperUrl`). Keine PDFs, kein Tika, kein Typesense.
 - [x] **Adapter M3 → `session-scan-*.json`** (`src/scripts/leipzig-site-data`): veröffentlicht `verified`, `corrected`, `reviewed`, `provisional` (510 von 547), Namen wie in der Registry, Titel aus OParl, Typ aus der Drucksachennummer. Läuft in den Workflows `leipzig-votings` und `leipzig-review-recheck`. Site-Build mit Leipzig geprüft (12.11.2026, 4878 Seiten, keine Fehler).
   - [x] `authors` aus `papers.json`: Fraktionen unter ihrem Namen auf der Seite, Ämter und Dezernate ohne Nummer; `motionId` aus OParl (behebt VII/VIII aus der OCR).
   - [ ] `majorityRequirement` (siehe M3, Schritt 6).
-  - [ ] `voting-paper-map.json` ist leer, bis Leipziger Vorlagen eigene Seiten haben.
-- [ ] **S3/CloudFront ersetzen:**
-  - [ ] Abstimmungs-PNGs (`generate-image-assets`) beim Build erzeugen oder als GitHub-Release-Assets ablegen
-  - [ ] `paper-votings` als statische JSON-Dateien im Build
+- [x] **S3/CloudFront entfallen:** keine Abstimmungs-PNGs und Vorschaubilder mehr, Belegbilder in GitHub Releases.
 - [x] **Zeitverlauf von Fraktion und Partei in Auswertungen und Datenverarbeitung** (12.11.2026):
   - [x] **Datenmodell:** `RegistryPerson.factionMemberships` und `partyMemberships` (optional, Magdeburg unverändert); `factionIdOn()`/`partyIdOn()` in `astro/src/models/person-affiliation.ts`. `members.json` führt die Parteizugehörigkeit mit Zeiträumen und Quelle je Zeitraum; ein Override mit `party` und `since` beginnt einen neuen Zeitraum. Die Wahlliste 2024 ist der Ausgangswert.
   - [x] **Datenverarbeitung:** Die Registry trägt den Verlauf, deshalb braucht `session-scan-*.json` keine Fraktion je Stimme. `votes-<datum>.csv` hat Fraktion und Partei am Sitzungstag.
@@ -175,12 +175,14 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] Parteiwechsel mit Quelle: Getu Abraham seit 09.11.2024 parteilos (Leipziger Zeitung, 8.11.2024). Weitere, sobald eine Quelle vorliegt (siehe Offene Fragen: Butz).
 - [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Die Seite zeigt die Wahlliste 2024 als „Partei“; bei Fraktionswechseln (z. B. Abraham: Liste SPD, heute fraktionslos) prüfen, ob ein Override mit Quelle nötig ist. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
 - [ ] **Offene Daten ausliefern:**
-  - [ ] API v1 unverändert (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`)
+  - [x] API v1 (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`), mit `reviewStatus` und `paperUrl`
   - [ ] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json`
-  - [ ] Lizenz und Provenienz in jeder Antwort
-- [ ] **Hosting:** GitHub Pages über Actions (empfohlen: keine Build-Minuten-Grenze wie bei Netlify Free) oder Netlify Free.
-- [ ] **Workflows:** `members.yml`, `recordings.yml`, `votings.yml`, `deploy.yml` entsprechend dem Zeitplan. Daten kommen per PR, Fehler als Issue.
-- [ ] **Dokumentation:** README (Fork-Hinweis, Leipzig), `DATA.md` (Codebook, Methodik, Grenzen: mündliche Korrekturen, Abstimmungen ohne Tafel, Liste ≠ Parteimitgliedschaft, Videos nur ca. 12 Monate verfügbar).
+  - [ ] Lizenz und Provenienz in jeder Antwort: `meta` nennt noch pauschal CC0, auch für Angaben aus OParl (CC BY 4.0)
+- [x] **Hosting:** GitHub Pages über `deploy.yml`, Seite und Prüfoberfläche (`/review/`) in einem Artefakt; Basispfad über `SITE_BASE`, alle Links über `sitePath()`.
+  - [ ] Einmalig einrichten: Pages-Quelle „GitHub Actions“, erster Lauf von `deploy.yml`, private Sicherheitsmeldungen aktivieren (`SECURITY.md`).
+- [x] **Workflows:** `leipzig-members`, `leipzig-recordings`, `leipzig-votings`, `leipzig-review-recheck`, `leipzig-review-reminder`, `deploy`. Daten kommen per PR, Fehler als Issue.
+- [x] README, AGENTS.md, GLOSSARY.md, API-Doku und arc42 für Leipzig (12.11.2026).
+- [ ] **Dokumentation:** `DATA.md` (Codebook, Methodik, Grenzen: mündliche Korrekturen, Abstimmungen ohne Tafel, Liste ≠ Parteimitgliedschaft, Verfügbarkeit der Videos).
 
 ---
 
@@ -202,7 +204,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Ausgabe:** `session-speeches-<datum>.json` je Sitzung mit Verlaufsprotokoll und Untertiteln, erzeugt von `leipzig-site-data`; die Registry nennt das Protokoll als `speechesSource`.
 - [x] **Rechte umgesetzt (§ 48 UrhG):** Volltexte nur auf der Sitzungsseite mit Quellenhinweis; die Personenseite listet Datum und Dauer mit Link; die API nennt die Quelle und nimmt die Texte von CC0 aus. Videolink der Reden über `sessionVideoLink` (Mediathek, ohne Zeitsprung).
 - [ ] **Stichprobe von Hand** an einer Sitzung auf der Seite (Sprecher, Text, Zeit), z. B. 28./29.10.2026, sobald das Protokoll da ist.
-- [ ] **Suche:** Die Leipziger Reden sind noch nicht im Typesense-Index (`index-search`); das Indexieren ganzer Protokolltexte ist rechtlich wie die Sitzungsseite zu sehen, aber nicht geprüft. Hängt an der Entscheidung, ob es überhaupt eine Suche gibt (Typesense ist kein kostenloser Dienst, siehe M4 „OParl-Pipeline schlank halten“ und die offene Frage zu Hosting und Adresse).
+- [ ] **Suche:** gibt es nicht (Typesense ist kein kostenloser Dienst, die Suchseite ist mit Magdeburg entfallen). Eine statische Suche (z. B. Pagefind) wäre kostenlos möglich; das Indexieren ganzer Protokolltexte ist rechtlich wie die Sitzungsseite zu sehen, aber nicht geprüft.
 - [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der tägliche Recheck (`--corrections-only`) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
 
 ---
@@ -221,11 +223,11 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [ ] **`EXTREMIST_CLASSIFICATION`:** Welche Parteien bekommen den Hinweis, mit welcher Quelle (LfV Sachsen) und welchem Wortlaut? Redaktionelle Entscheidung.
 
 ### Was veröffentlicht wird
-- [ ] **Vorläufige Abstimmungen:** `provisional` (Prüfungen bestanden, aber noch kein amtliches Ergebnis) erscheint schon auf der Seite, mit dem Hinweis „Prüfung nicht abgeschlossen“. So lassen oder erst nach dem amtlichen Ergebnis veröffentlichen?
-- [ ] **Abstimmungen in Prüfung:** `needs-review` fehlt auf der Seite, bis entschieden ist. Lieber mit Kennzeichnung zeigen?
-- [ ] **Abstimmungen ohne Tafel** (Handzeichen, geheime Wahl): Die Protokolle nennen das Ergebnis, aber nicht die Stimmen je Person. Als Abstimmung ohne Einzelstimmen aufnehmen oder weglassen?
-- [ ] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): Für sie gibt es nur die Ergebnisse aus den Protokollen. Bleibt es bei „nur Sitzungen mit Video“?
-- [ ] **Vorlagen auf der Seite:** Sollen Leipziger Vorlagen eigene Seiten bekommen (Paper-Index aus OParl, ohne PDFs), damit Abstimmungen auf sie verlinken? Bisher ist `voting-paper-map.json` leer.
+- [x] **Vorläufige Abstimmungen:** `provisional` erscheint mit Kennzeichnung „vorläufig“, Erklärung und Link zum Daten-PR (12.11.2026).
+- [x] **Abstimmungen in Prüfung:** `needs-review` erscheint mit Kennzeichnung „in Prüfung“, Erklärung, Link zur Prüfoberfläche und zum Daten-PR; die Stimmen zählen in den Auswertungen mit (12.11.2026).
+- [x] **Abstimmungen ohne Tafel** (Handzeichen, geheime Wahl): werden nicht aufgenommen (12.11.2026).
+- [x] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): werden nicht aufgenommen (12.11.2026).
+- [x] **Vorlagen auf der Seite:** keine eigenen Seiten; Abstimmungen verlinken die Drucksache im Ratsinformationssystem (12.11.2026).
 - [ ] **Erforderliche Mehrheit:** Woher kommt `majorityRequirement` (Zweidrittelmehrheit u. a.)? Aus den Protokollen, aus der Vorlage oder von Hand?
 
 ### Reden (M5)
@@ -237,20 +239,22 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Whisper lokal:** `whisper-cpp` per Homebrew, Modell `ggml-large-v3-turbo.bin` (1,6 GB, SHA-256 `1fc70f77…e2bc69`) in `output/whisper/`. Test 12.11.2026 an 10 Minuten von 2026-09-03: 78,5 s Rechenzeit (7,6-fach schneller als Echtzeit); 96 % Wortübereinstimmung mit den Untertiteln des Hosters, 74 % mit dem redigierten Verlaufsprotokoll (Hoster: 73 %).
 
 ### Video und Belege
-- [ ] **Nach Ablauf der Mediathek:** Die Stadt löscht Aufzeichnungen nach etwa einem Jahr, danach entfällt der Video-Link. Soll die Seite dann auf die Belegbilder im Release `evidence-<datum>` verlinken? Bisher gibt es Belegbilder nur für Prüffälle.
-- [ ] **Rechte an den Belegbildern:** Dürfen Standbilder aus den Aufzeichnungen der Stadt öffentlich in GitHub Releases liegen? Klären, bevor die Releases öffentlich sind.
+- [ ] **Nach Ablauf der Mediathek:** Verschwindet eine Aufzeichnung, entfällt der Video-Link (laut GO § 11 Abs. 8 erst mit Ende der Wahlperiode, beobachtet wird `last_seen`). Soll die Seite dann auf die Belegbilder im Release `evidence-<datum>` verlinken? Bisher gibt es Belegbilder nur für Prüffälle.
+- [x] **Rechte an den Belegbildern** (recherchiert 12.11.2026, keine Rechtsberatung): `docs/research/2026-11-12-rechte-belegbilder.md`. Die Tafel selbst ist eine Bildschirmgrafik ohne Werk- oder Lichtbildschutz; Hindernis ist das Recht des Laufbildherstellers (§§ 94, 95 UrhG), das schon kleinste Teile schützt. Tragfähig ist nur das Zitat (§ 51): je Abstimmung ein verkleinerter Ausschnitt nur der Tafel, ohne Personen, an der Abstimmung, die er belegt, mit Quelle „Stadt Leipzig, Aufzeichnung vom …“, ohne eigene Lizenz, Löschung auf Verlangen. Kein Bildarchiv.
+  - [ ] Entscheiden: Belegbilder so veröffentlichen, oder nur für Prüfende in einem privaten Repository und öffentlich nur Prüfsummen.
+  - [ ] Release-Texte und `datapackage.json`: Bilder ausdrücklich von CC0 ausnehmen, Quelle nennen.
 
 ### Lizenz, Betrieb, Recht
 - [ ] **Lizenz der eigenen Daten:** CC0 für die aus dem Video gelesenen Stimmen, wie in den Grundsätzen vorgeschlagen? Die Namensnennungen für OParl (CC BY 4.0) und die Bewerberliste (dl-de/by-2-0) bleiben ohnehin.
-- [ ] **Betreiber und Impressum:** Wer betreibt StadtratWatch Leipzig? Impressum, Datenschutz und Kontakt der Seite verweisen noch auf Code for Magdeburg.
-- [ ] **Magdeburg-Daten:** Eine Seite mit beiden Städten (wie jetzt im Build) oder nur Leipzig? Davon hängen M0 (Magdeburg entfernen oder ausblenden) und die Stadt-Konfiguration ab.
+- [x] **Betreiber und Impressum:** Marcel Schneuer, Angaben wie schneuer.online; Impressum, Datenschutz (GitHub Pages, keine Cookies) und Kontakt umgestellt (12.11.2026).
+- [x] **Magdeburg-Daten:** nur Leipzig, Magdeburg entfernt, Hinweis auf upstream bleibt (12.11.2026).
 - [ ] **Name der Wahlperiode:** Vorläufig „Leipzig – Wahlperiode VIII“, damit sie sich von Magdeburgs „Wahlperiode VIII“ unterscheidet. Passt das, oder wird mit nur einer Stadt „Wahlperiode VIII“ daraus?
-- [ ] **Hosting und Adresse:** GitHub Pages oder Netlify Free, eigene Domain? Was ersetzt `AWS_CLOUDFRONT_BASE_URL` (Pflichtvariable des Builds, heute für Vorschaubilder und Vorlagen) und die Typesense-Variablen, wenn es keine Suche gibt?
+- [x] **Hosting und Adresse:** GitHub Pages ohne eigene Domain; CloudFront- und Typesense-Variablen entfallen (12.11.2026).
 - [ ] **Prüfende:** Wer prüft die offenen Fälle (`LEIPZIG_REVIEWERS`), und wer bekommt Schreibrechte?
 
 ### Arbeitsweise im Repository
-- [ ] **Branches und Pull Requests:** Auf `data/leipzig-votings` liegen bisher Code- und Datencommits gemeinsam, nichts ist gepusht. Code getrennt per PR nach `main` und die Daten über den Daten-Branch? AGENTS.md verlangt für Korrekturen an geprüften Daten einen eigenen PR (betrifft `fe5e413`, Bereinigung der Prüfvermerke).
-- [ ] **Architekturdoku:** `docs/arc42/` beschreibt Leipzig noch nicht. Als eigenes ADR (siehe M0, `LEIPZIG.md` bzw. ADR) oder in die bestehenden Kapitel?
+- [x] **Branches und Pull Requests:** Code getrennt per PR nach `main` (`leipzig/code`), Daten über `data/leipzig-votings` (12.11.2026). Die Bereinigung der Prüfvermerke betrifft Daten, die nie veröffentlicht waren, und bleibt deshalb im Daten-PR.
+- [x] **Architekturdoku:** arc42 für Leipzig neu geschrieben, ADR-0008 und ADR-0009 (12.11.2026).
 
 ---
 

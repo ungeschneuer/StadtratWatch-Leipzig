@@ -1,79 +1,60 @@
 # StadtratWatch Leipzig
 
-> Dieser Fork von [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) (Code for Magdeburg) passt die Plattform
-> an die **Leipziger Ratsversammlung** an. Ziel ist eine offene, maschinenlesbare Datenbasis zum Abstimmungsverhalten
-> jedes Ratsmitglieds. Plan und Stand: [TODO.md](./TODO.md). Datenquellen und Pipeline-Schritte für Leipzig:
-> [`src/scripts/leipzig-recordings/`](./src/scripts/leipzig-recordings/README.md).
->
-> Daten aus OParl und dem Open-Data-Portal: © Stadt Leipzig, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Wie stimmen die Mitglieder der Leipziger Ratsversammlung ab? StadtratWatch Leipzig liest die Stimmen jedes
+Ratsmitglieds aus der Abstimmungstafel der Video-Aufzeichnungen, gleicht sie mit den Protokollen der Stadt ab und
+veröffentlicht sie als Website, als API und als offene Daten. Dazu kommen die Redebeiträge aus dem Verlaufsprotokoll.
 
-# StadtratWatch
+**Website:** <https://ungeschneuer.github.io/StadtratWatch-web/>
 
-Eine umfassende Plattform für Bürgerbeteiligung und Transparenz im Magdeburger Stadtrat. StadtratWatch verfolgt Stadtratssitzungen, analysiert Abstimmungsverhalten und bietet Werkzeuge für demokratische Teilhabe.
+StadtratWatch Leipzig ist ein unabhängiges, ehrenamtliches Projekt und keine Seite der Stadt Leipzig. Es ist ein Fork
+von [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) für den Magdeburger Stadtrat
+([stadtratwatch.de](https://www.stadtratwatch.de), [Code for Magdeburg](https://codefor.de/magdeburg/)) und übernimmt
+dessen Web-Anwendung und Auswertungen.
 
-## Hauptfunktionen
+## Was die Seite zeigt
 
-- **Mehrdimensionale politische Analyse** - Umfassende Dashboards für Abstimmungsverhalten und Beteiligung
-- **Sitzungsverfolgung** - Video/Audio-Verarbeitung mit Redner-Identifikation
-- **Abstimmungsanalyse** - Statistische Auswertung von Abstimmungsmustern
-- **Personenspezifische Matrizen** - Detaillierte Abstimmungsübersichten für einzelne Stadtratsmitglieder
-- **Redebeitragsanalyse** - Transkription und Analyse von Redebeiträgen
-- **Fraktions- und Parteivergleiche** - Vergleichende Analyse politischer Gruppierungen
-- **Öffentliche API** - Programmatischer Zugang zu Parlamentsdaten
-- **Volltext-Suche** - Durchsuchung aller Dokumente und Protokolle
+- Abstimmungen jeder Sitzung mit Aufzeichnung, Stimme je Person, Fraktion und Wahlliste am Sitzungstag
+- Auswertungen je Person, Fraktion und Partei: Teilnahme, Enthaltungen, Abstimmungserfolg, Geschlossenheit, Redezeit
+- Redebeiträge aus dem Verlaufsprotokoll mit Zeitsprung in die Aufzeichnung
+- Öffentliche API v1 ([Dokumentation](./astro/src/pages/api/v1/README.md))
 
-## Technische Architektur
+Erfasst sind nur Sitzungen mit Aufzeichnung und nur Abstimmungen über die elektronische Tafel. Vorläufige Ergebnisse
+und Abstimmungen, deren Prüfung noch läuft, sind auf der Seite gekennzeichnet.
 
-### Frontend
-- **Astro** - Modern Static Site Generator
-- **Alpine.js** - Leichtgewichtiges Framework für interaktive Komponenten
-- **TypeScript** - Typsichere Entwicklung
-- **Tailwind CSS + DaisyUI** - Modernes Styling-Framework
-- **Chart.js + D3.js** - Datenvisualisierung
+## Wie die Daten entstehen
 
-### Backend & Datenverarbeitung
-- **Deno** - Moderne JavaScript/TypeScript-Runtime
-- **Docker** - Containerisierte Verarbeitungspipeline
-- **Typesense** - Hochperformante Suchmaschine
-- **OpenAI API** - Sprachtranskription
+| Schritt | Skript | Ergebnis |
+| --- | --- | --- |
+| Aufzeichnungen finden, Untertitel sichern | [`leipzig-recordings`](./src/scripts/leipzig-recordings/README.md) | `recordings.json`, `subtitles-*.vtt` |
+| Mitglieder, Fraktionen, Wahllisten | [`leipzig-members`](./src/scripts/leipzig-members/README.md) | `members.json` |
+| Stimmen von der Tafel lesen und prüfen | [`leipzig-votings`](./src/scripts/leipzig-votings/README.md) | `votings-*.json`, `votes-*.csv` |
+| Vorlagen und Einreichende | [`leipzig-papers`](./src/scripts/leipzig-papers/README.md) | `papers.json` |
+| Dateien für die Seite | [`leipzig-site-data`](./src/scripts/leipzig-site-data/README.md) | `registry.json`, `session-scan-*.json`, `session-speeches-*.json` |
 
-## Projektstruktur
+Die Workflows unter `.github/workflows/` führen die Schritte aus. Neue Daten und Korrekturen kommen über den Branch
+`data/leipzig-votings` und dessen Pull Request; Abstimmungen, deren Prüfung fehlschlägt, entscheiden Prüfende in der
+[Prüfoberfläche](./session-review/README.md). Die Architektur beschreibt [`docs/arc42/`](./docs/arc42/index.adoc),
+den Stand der Arbeit [TODO.md](./TODO.md).
 
-```
-StadtratWatch-web/
-├── astro/                      # Web-Anwendung
-│   ├── src/
-│   │   ├── components/         # Wiederverwendbare Komponenten
-│   │   ├── data-analysis/      # Analysealgorithmen
-│   │   ├── models/            # Datenmodelle
-│   │   ├── pages/             # Seiten und API-Routen
-│   │   └── utils/             # Hilfsfunktionen
-│   └── package.json
-├── data/                       # Parlamentsdaten
-├── docker/                     # Container-Definitionen
-├── src/                        # Deno-Skripte
-└── typesense/                  # Suchindex-Konfiguration
+## Entwicklung
+
+```bash
+bun install                       # Abhängigkeiten der Skripte
+bun run test                      # Tests der Skripte
+cd astro && npm install && npm run dev   # Website lokal
 ```
 
-## Öffentliche API
+Mehr in [AGENTS.md](./AGENTS.md).
 
-StadtratWatch bietet eine öffentliche REST API v1 für den Zugriff auf Parlamentsdaten. Mehr Informationen finden Sie in der [API-Dokumentation](./astro/src/pages/api/v1/README.md).
+## Lizenzen
 
-### Daten-Lizenz
-
-Die über die API bereitgestellten Daten stehen unter der CC0 1.0 Universal Lizenz zur freien Verfügung.
-
-
-## Lizenz
-
-Dieses Projekt steht unter der MIT-Lizenz. Siehe [LICENSE](LICENSE) für Details.
+- **Code:** MIT, siehe [LICENSE](LICENSE). Der Urheberrechtsvermerk von StadtratWatch bleibt erhalten.
+- **Daten aus OParl und dem Open-Data-Portal:** © Stadt Leipzig, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+  bzw. [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0).
+- **Selbst erhobene Stimmen:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+- **Redetexte:** aus dem Verlaufsprotokoll der Stadt Leipzig (§ 48 UrhG), nicht unter CC0.
 
 ## Kontakt
 
-- **Projekt**: [Code for Magdeburg](https://codefor.de/magdeburg/)
-- **Issues**: [GitHub Issues](https://github.com/CodeForMD/StadtratWatch-web/issues)
-- **Website**: [stadtratwatch.de](https://stadtratwatch.de)
-
----
-
-*StadtratWatch ist eine Initiative von Code for Magdeburg zur Förderung von Transparenz und Bürgerbeteiligung in der Kommunalpolitik.*
+Marcel Schneuer, [hallo@schneuer.online](mailto:hallo@schneuer.online) ·
+[Issues](https://github.com/ungeschneuer/StadtratWatch-web/issues)

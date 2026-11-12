@@ -5,7 +5,7 @@
 
 == Kontext und Problem
 
-StadtratWatch verarbeitet Sitzungsdaten des Magdeburger Stadtrats (Abstimmungen, Redebeiträge, Stammdaten zu Personen, Fraktionen und Parteien) und stellt daraus Auswertungen bereit. Der Bestand ändert sich selten, wird überwiegend lesend genutzt und muss für die Bürgerinnen und Bürger nachvollziehbar sein. Zu klären war, wie dieser Bestand gehalten und zwischen Verarbeitungs-Pipeline und Web-Anwendung übergeben wird.
+StadtratWatch verarbeitete ursprünglich Sitzungsdaten des Magdeburger Stadtrats, StadtratWatch Leipzig die der Leipziger Ratsversammlung (Abstimmungen, Redebeiträge, Stammdaten zu Personen, Fraktionen und Parteien) und stellt daraus Auswertungen bereit. Der Bestand ändert sich selten, wird überwiegend lesend genutzt und muss für die Bürgerinnen und Bürger nachvollziehbar sein. Zu klären war, wie dieser Bestand gehalten und zwischen Verarbeitungs-Pipeline und Web-Anwendung übergeben wird.
 
 == Betrachtete Optionen
 

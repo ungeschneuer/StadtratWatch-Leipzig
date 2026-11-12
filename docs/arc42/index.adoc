@@ -1,5 +1,4 @@
-= StadtratWatch — Architekturdokumentation
-Code for Magdeburg
+= StadtratWatch Leipzig — Architekturdokumentation
 :toc: left
 :toclevels: 3
 :sectnums:
@@ -8,12 +7,9 @@ Code for Magdeburg
 :source-highlighter: rouge
 :imagesdir: .
 
-Diese Dokumentation beschreibt die Softwarearchitektur von *StadtratWatch* —
-einer Plattform für Bürgerbeteiligung und Transparenz im Magdeburger Stadtrat.
-Sie folgt dem https://arc42.org[arc42]-Template für Architekturdokumentation.
+Diese Dokumentation beschreibt die Softwarearchitektur von *StadtratWatch Leipzig*, einer unabhängigen, ehrenamtlichen Plattform zum Abstimmungsverhalten der Mitglieder der Leipziger Ratsversammlung. Sie ist ein Fork von https://github.com/JensWinter/StadtratWatch-web[StadtratWatch Magdeburg] (Code for Magdeburg) und folgt dem https://arc42.org[arc42]-Template.
 
-Jedes Kapitel liegt in einem eigenen Verzeichnis mit einer `index.adoc` und kann
-sowohl eigenständig als auch über dieses Hauptdokument gelesen werden.
+Jedes Kapitel liegt in einem eigenen Verzeichnis mit einer `index.adoc`.
 
 include::01-einfuehrung-und-ziele/index.adoc[leveloffset=+1]
 include::02-randbedingungen/index.adoc[leveloffset=+1]

@@ -2,8 +2,9 @@
 = Lösungsstrategie
 :icons: font
 
-Dieses Kapitel fasst die grundlegenden Lösungsentscheidungen zusammen, mit denen StadtratWatch seine Aufgabe erfüllt: die zentralen Technologieentscheidungen und die architektonischen Ansätze, mit denen die Qualitätsziele aus Kapitel 1 (Einführung und Ziele) erreicht werden. Es bleibt bewusst knapp und verweist für Details auf die nachfolgenden Kapitel.
-
-include::01-technologieentscheidungen.adoc[leveloffset=+1]
-
-include::02-ansaetze-je-qualitaetsziel.adoc[leveloffset=+1]
+* *Daten als versionierte JSON-Dateien im Repository* (<<adr-0001,ADR-0001>>); Git ist das Änderungsprotokoll.
+* *Statische Seite* (<<adr-0002,ADR-0002>>) mit Astro, gebaut in GitHub Actions, ausgeliefert über GitHub Pages (<<adr-0008,ADR-0008>>).
+* *Stimmen von der Tafel*, geprüft gegen unabhängige Quellen, mit menschlicher Prüfung der Abweichungen (<<adr-0009,ADR-0009>>).
+* *Eine Stelle für Freigaben:* Daten kommen über Daten-Branches und Pull Requests; Fehler der Workflows werden Issues.
+* *Format von StadtratWatch:* Ein Adapter (`leipzig-site-data`) erzeugt `registry.json` und `session-scan-*.json`, damit Seite, Auswertungen und API v1 unverändert arbeiten.
+* *Zeitverlauf:* Fraktion und Partei gelten je Sitzungstag (`factionMemberships`, `partyMemberships`).

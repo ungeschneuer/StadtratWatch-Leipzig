@@ -2,41 +2,28 @@
 = Querschnittliche Konzepte
 :icons: font
 
-Dieses Kapitel beschreibt die durchgängigen Konzepte, die sich nicht einem einzelnen Baustein zuordnen lassen, sondern quer durch Pipelines, Datenablage und Web-Anwendung wirken. Sie konkretisieren die Lösungsstrategie aus Kapitel 4 und stützen die Qualitätsziele aus Kapitel 1. Wo ein Konzept einen Ablauf betrifft, verweist der Text auf die Laufzeitsicht (Kapitel 6), ohne sie zu wiederholen.
+== Fachliches Datenmodell
 
-Die folgende Übersicht ordnet jedes Konzept dem Qualitätsziel zu, das es vorrangig stützt (Priorität wie in Kapitel 1). Wie diese Qualitätsziele zu überprüfbaren Szenarien verfeinert werden, beschreibt <<qualitaetsanforderungen,Kapitel 10 (Qualitätsanforderungen)>>.
+Die Wahlperiode (`registry.json`) führt Sitzungen, Personen, Fraktionen und Parteien. Eine Person hat Mitgliedschaften in Fraktionen und Parteien mit Zeiträumen; Auswertungen rechnen mit der Zugehörigkeit am Sitzungstag. „Partei“ ist in Leipzig die Wahlliste 2024, solange keine Quelle einen Wechsel belegt. Eine Abstimmung (`SessionScanItem`) hat Gegenstand (TOP, Drucksache, Titel, Typ, Einreichende, `paperUrl`), Stimmen je Person und optional `reviewStatus`.
 
-[cols="3,3",options="header"]
-|===
-| Konzept | Vorrangig gestütztes Qualitätsziel
+== Datengewinnung und Qualität
 
-| <<konzept-datenmodell,Fachliches Datenmodell>>
-| Datenkorrektheit & Glaubwürdigkeit (2), Wartbarkeit (3)
+Siehe <<adr-0009,ADR-0009>>. Statusgrößen: `verified`, `corrected`, `reviewed` und ohne Kennzeichnung veröffentlicht; `provisional` und `needs-review` mit Kennzeichnung; `discarded` und `skipped` nicht veröffentlicht.
 
-| <<konzept-datenhaltung,Datenhaltung & Versionierung>>
-| Transparenz & Nachvollziehbarkeit (1), Wartbarkeit (3)
+== Offene Daten und Lizenz
 
-| <<konzept-datengewinnung,Datengewinnung & -qualität>>
-| Datenkorrektheit & Glaubwürdigkeit (2), Transparenz (1)
+* Code: MIT (mit Vermerk von StadtratWatch Magdeburg).
+* Aus OParl und Open Data übernommene Angaben: © Stadt Leipzig, CC BY 4.0 bzw. Datenlizenz Deutschland – Namensnennung 2.0.
+* Selbst erhobene Stimmen: CC0 (API-Metadaten).
+* Redetexte: Verlaufsprotokoll der Stadt, § 48 UrhG; in der API von CC0 ausgenommen und mit Quelle.
+* Belegbilder: keine eigene Lizenz, nur als Beleg zur einzelnen Abstimmung.
 
-| <<konzept-sicherheit,Sicherheit & Datenschutz>>
-| Datenkorrektheit & Glaubwürdigkeit (2), Wartbarkeit (3)
+== Sicherheit und Datenschutz
 
-| <<konzept-offene-daten,Offene Daten & Lizenzierung>>
-| Transparenz & Nachvollziehbarkeit (1)
+* Keine Cookies, kein Tracking, keine Inhalte Dritter auf der Seite.
+* Prüfende nutzen eigene GitHub-Tokens, die im Browser bleiben; Schreibrechte steuert GitHub.
+* Personenbezogene Daten nur von Mandatsträger:innen und Verwaltungsspitze aus öffentlichen Sitzungen; Einwohner:innen werden nicht veröffentlicht.
 
-| <<konzept-barrierefreiheit,Barrierefreiheit & UI/UX>>
-| Barrierefreiheit & Zugänglichkeit (4)
-|===
+== Basispfad
 
-include::01-fachliches-datenmodell.adoc[leveloffset=+1]
-
-include::02-datenhaltung-und-versionierung.adoc[leveloffset=+1]
-
-include::03-datengewinnung-und-qualitaet.adoc[leveloffset=+1]
-
-include::04-sicherheit-und-datenschutz.adoc[leveloffset=+1]
-
-include::05-offene-daten-und-lizenzierung.adoc[leveloffset=+1]
-
-include::06-barrierefreiheit-und-ui.adoc[leveloffset=+1]
+Die Seite kann unter einem Pfad liegen. Server-seitige Links nutzen `sitePath()`, Alpine-Ausdrücke `window.sitePath()`, Tabs ändern nur die Query.

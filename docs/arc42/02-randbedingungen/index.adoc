@@ -2,11 +2,9 @@
 = Randbedingungen
 :icons: font
 
-Dieses Kapitel benennt die Randbedingungen, die den Entwurf von StadtratWatch
-einschränken — also Vorgaben, die nicht frei gewählt wurden, sondern von außen
-gesetzt sind. Die eingesetzten Technologien selbst sind frei gewählt und daher
-keine Randbedingungen; ihre Begründung folgt in der Lösungsstrategie.
-
-include::01-technische-randbedingungen.adoc[leveloffset=+1]
-
-include::02-organisatorische-randbedingungen.adoc[leveloffset=+1]
+* *Nur kostenlose Dienste:* GitHub Actions (öffentliches Repository), GitHub Pages, GitHub Releases. Kein S3, kein VPS, kein Typesense.
+* *Kein Kontakt zur Stadt Leipzig:* Es werden nur öffentlich zugängliche Quellen genutzt.
+* *Quellen:* OParl 1.1 der Stadt (CC BY 4.0), Open-Data-Portal (Datenlizenz Deutschland – Namensnennung 2.0), Mediathek der Stadt (Hoster video-stream-hosting.de), Ratsinformationssystem ALLRIS.
+* *Rechtliches:* Reden aus öffentlichen Sitzungen nach § 48 UrhG nur auf der Sitzungsseite im Volltext; Belegbilder nur unter den Bedingungen aus `docs/research/2026-11-12-rechte-belegbilder.md`. Keine Daten von Einwohner:innen.
+* *Technik:* Astro und Node für die Seite, Bun für die Skripte, TypeScript überall, geteilte Modelle (<<adr-0004,ADR-0004>>).
+* *Lizenz:* Code MIT wie Upstream, mit dessen Urheberrechtsvermerk.

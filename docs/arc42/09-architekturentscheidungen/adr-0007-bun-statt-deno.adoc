@@ -1,7 +1,7 @@
 [#adr-0007]
 = ADR-0007: Bun statt Deno für die Verarbeitungs-Pipeline
 
-*Status:* Vorgeschlagen (entschieden in https://github.com/JensWinter/StadtratWatch-web/issues/537[#537], Teil von https://github.com/JensWinter/StadtratWatch-web/issues/530[#530])
+*Status:* Akzeptiert, umgesetzt: alle Skripte unter `src/` laufen auf Bun, Deno lintet nur noch (entschieden in https://github.com/JensWinter/StadtratWatch-web/issues/537[#537], Teil von https://github.com/JensWinter/StadtratWatch-web/issues/530[#530])
 
 == Kontext und Problem
 
