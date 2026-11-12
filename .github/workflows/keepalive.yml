@@ -1,0 +1,35 @@
+name: Keepalive
+
+# GitHub disables scheduled workflows after 60 days without activity in the repository. In the summer break the council
+# does not meet, nothing changes, and the data workflows would stop for good. Enabling them again through the API
+# restarts the 60 days without a commit. This workflow enables itself as well.
+
+on:
+  schedule:
+    - cron: '41 3 1 * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  keepalive:
+    name: Keep scheduled workflows enabled
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # A workflow switched off by hand (disabled_manually) stays off.
+      - name: Enable the workflows
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/actions/workflows" --paginate \
+            --jq '.workflows[] | select(.state == "active" or .state == "disabled_inactivity") | "\(.id) \(.path)"' |
+            while read -r id path; do
+              # Workflows whose file is gone and GitHub's own (Dependabot) cannot be enabled.
+              if gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/$id/enable" --silent; then
+                echo "enabled $path"
+              else
+                echo "skipped $path"
+              fi
+            done

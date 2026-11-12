@@ -78,7 +78,7 @@ bun src/scripts/leipzig-site-data/index.ts
 | -------------------------- | --------------------------------------------------------------- |
 | `-d, --data-dir`           | Directory of the parliament period. Default: `data/leipzig-8/`. |
 | `--parliament-period`      | ID of the parliament period. Default: `leipzig-8`.              |
-| `--parliament-period-name` | Name shown on the site. Default: `Leipzig – Wahlperiode VIII`.  |
+| `--parliament-period-name` | Name shown on the site. Default: `Wahlperiode VIII`.            |
 | `-h, --help`               | Show the help text and exit.                                    |
 
 The workflows `leipzig-votings.yml` and `leipzig-review-recheck.yml` run it after every extraction and every review

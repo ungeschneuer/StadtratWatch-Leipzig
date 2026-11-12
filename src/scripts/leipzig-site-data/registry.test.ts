@@ -46,7 +46,7 @@ function recording(date: string, goneSince: string | null = null): Recording {
 }
 
 describe('buildRegistry', () => {
-  const registry = buildRegistry({ id: 'leipzig-8', name: 'Leipzig – Wahlperiode VIII' }, members, [
+  const registry = buildRegistry({ id: 'leipzig-8', name: 'Wahlperiode VIII' }, members, [
     { recording: recording('2026-10-29'), pendingVotings: 1, meetingMinutesUrl: null, speechesSourceUrl: null },
     {
       recording: recording('2025-12-17', '2026-12-20'),

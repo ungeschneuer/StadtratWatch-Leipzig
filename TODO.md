@@ -16,7 +16,7 @@ Stand: 12.11.2026 (abends)
 | Betreiber | Marcel Schneuer, Impressum wie schneuer.online (12.11.2026). |
 | Veröffentlichung | Sitzungen ohne Video und Abstimmungen ohne Tafel werden nicht erfasst. `provisional` und `needs-review` erscheinen mit Hinweis, wie der Fall behoben wird, und Link zum Daten-PR (12.11.2026). |
 | Stadt Leipzig | Wird nicht kontaktiert. Es wird nur mit öffentlich zugänglichen Daten gearbeitet. |
-| Mitgliederquellen | leipzig.de wird ignoriert. Mitglieder und Fraktionen kommen aus OParl, Parteien aus dem Open-Data-Datensatz und ggf. aus den Fraktionswebseiten. |
+| Mitgliederquellen | leipzig.de wird ignoriert. Mitglieder und Fraktionen kommen aus OParl, Parteien aus dem Open-Data-Datensatz der Wahl 2024, Abweichungen als Override mit Quelle. Fraktionswebseiten werden nicht genutzt (12.11.2026). |
 
 ---
 
@@ -42,29 +42,29 @@ Stand: 12.11.2026 (abends)
 
 ### Maschinenlesbarkeit
 - [ ] **Kanonisch JSON** im StadtratWatch-Format, erweitert um stabile IDs.
-- [ ] **Stabile IDs:** OParl-IDs für Personen, Fraktionen, Sitzungen, TOPs und Vorlagen. Namen sind nie der Schlüssel.
+- [ ] **Stabile IDs:** OParl-IDs für Personen, Fraktionen, Sitzungen, TOPs und Vorlagen in Downloads und API. Namen sind nie der Schlüssel; die Adressen der Seite bleiben lesbar (Entscheidung 12.11.2026).
+- [ ] **Lesbare Links:** deutsche Adressen (`/wahlperiode-8/sitzung/<datum>/abstimmung/<top>`), Abstimmungen nach TOP statt laufender Nummer, sprechende Linktexte; alte Adressen leiten weiter (Entscheidung 12.11.2026).
 - [x] **CSV im Long-Format:** `votings.csv`, `votes.csv`, `sessions.csv`, `persons.csv`, `faction-memberships.csv` unter `/data/leipzig-8/`, geschrieben von `leipzig-site-data` (12.11.2026).
 - [x] **Frictionless `datapackage.json`** mit Spalten, Typen, Schlüsseln, Lizenzen und Quellen; lokal mit `frictionless validate` geprüft (alle Tabellen VALID), ein Test hält Beschreibung und CSV-Köpfe gleich (12.11.2026).
 - [ ] **Provenienz pro Datensatz:** `source_url`, `retrieved_at`, `method` (`oparl` | `opendata-csv` | `faction-website` | `video-board` | `subtitle` | `manual`), `confidence`, `reviewed`.
-- [ ] **Git als Änderungsprotokoll** („Git Scraping“): jede Aktualisierung ein Commit.
-- [ ] **Lizenzen:** OParl steht unter CC BY 4.0 (`oparl/system`), der Open-Data-Datensatz der Bewerber:innen unter Datenlizenz Deutschland – Namensnennung 2.0. Die Namensnennung „Stadt Leipzig“ gehört in `datapackage.json` und in die API-Metadaten (in `members.json` bereits unter `sources`). Die selbst aus dem Video erhobenen Stimmen können unter CC0 stehen. Code MIT wie upstream.
+- [x] **Git als Änderungsprotokoll** („Git Scraping“): jede Aktualisierung ein Commit.
+- [x] **Lizenzen:** OParl steht unter CC BY 4.0 (`oparl/system`), der Open-Data-Datensatz der Bewerber:innen unter Datenlizenz Deutschland – Namensnennung 2.0. Die Namensnennung „Stadt Leipzig“ gehört in `datapackage.json` und in die API-Metadaten (in `members.json` bereits unter `sources`). Die selbst aus dem Video erhobenen Stimmen können unter CC0 stehen. Code MIT wie upstream.
 - [x] **Codebook** `DATA.md`: Downloads, Felder, Stimmcodes, Mehrheiten, Prüfstatus, Methodik, Grenzen, Lizenzen (12.11.2026).
 
 ### Ressourcenschonung und Aktualität (nur kostenlose Dienste)
-- [ ] **GitHub Actions mit `schedule`**: Das öffentliche Repo bekommt unbegrenzt Minuten auf Standard-Runnern. Ein Job darf bis zu 6 h laufen.
+- [x] **GitHub Actions mit `schedule`**: Das öffentliche Repo bekommt unbegrenzt Minuten auf Standard-Runnern. Ein Job darf bis zu 6 h laufen.
 - [ ] **Inkrementell abrufen** über OParl `modified_since` und HTTP `ETag`/`If-Modified-Since`. Nur committen, wenn sich etwas geändert hat.
-- [ ] **Höflich abrufen:** User-Agent mit Projekt-URL, 0,3–1 s Pause zwischen Requests.
-- [ ] **Keine Videos speichern.** Gespeichert werden nur Metadaten, die VTT (ca. 270 KB pro Sitzung) und kleine Belegbilder.
-- [ ] **Belegbilder sparsam:** nur den Endstand jeder Abstimmung, verkleinert bzw. als PNG mit reduzierter Palette (Ziel: < 50 KB pro Bild). Sie kommen nicht ins Git, sondern in **GitHub Releases** (ein Release pro Sitzung, kostenlos, keine Repo-Aufblähung). Das ersetzt S3.
-- [ ] **Bei Fehlern ein Issue öffnen** statt still falsche Daten zu schreiben. Neue Daten kommen als **Pull Request**, nicht als direkter Push.
-- [ ] **Keepalive:** GitHub deaktiviert `schedule`-Workflows nach 60 Tagen ohne Repo-Aktivität. Die regelmäßigen Daten-Commits verhindern das, in der Sommerpause hilft ein Keepalive-Commit.
+- [x] **Höflich abrufen:** User-Agent mit Projekt-URL, 0,3–1 s Pause zwischen Requests.
+- [x] **Keine Videos speichern.** Gespeichert werden nur Metadaten, die VTT (ca. 270 KB pro Sitzung) und kleine Belegbilder.
+- [x] **Belegbilder:** je veröffentlichter Abstimmung ein Zitatbild (960 px, 16 Farbstufen, ca. 135 KB statt der ursprünglich angepeilten 50 KB, zugunsten der Lesbarkeit) in GitHub Releases, nicht im Git (Entscheidung 12.11.2026).
+- [x] **Bei Fehlern ein Issue öffnen** statt still falsche Daten zu schreiben. Neue Daten kommen als **Pull Request**, nicht als direkter Push.
+- [x] **Keepalive:** GitHub deaktiviert `schedule`-Workflows nach 60 Tagen ohne Aktivität. `keepalive.yml` aktiviert sie monatlich über die API wieder, ohne Commit (12.11.2026).
 
 ### Zeitplan
 
 | Job | Häufigkeit | Aufwand pro Lauf |
 |---|---|---|
 | OParl inkrementell (Personen, Mitgliedschaften, Sitzungen, TOPs, betroffene Vorlagen) | täglich, nachts | < 1 min |
-| Parteien-Abgleich (Fraktionswebseiten) | wöchentlich | < 1 min |
 | Neue Aufzeichnungen suchen | täglich in den 21 Tagen nach einem Sitzungstermin (aus OParl), sonst wöchentlich | Sekunden |
 | Abstimmungen aus dem Video extrahieren | einmal pro neuer Aufzeichnung | ca. 5–15 min |
 | Statische Seite bauen und veröffentlichen | bei jedem Merge auf `main` | wenige Minuten |
@@ -92,10 +92,7 @@ Umgesetzt in `src/scripts/leipzig-members` (siehe README dort), Workflow `.githu
   - [x] Zuordnen über Nachname + erster Vorname, Fallback über einen Teil des Doppelnamens (`match: former-name`, Fall „Schreyer“ → „Schreyer-Krieg“).
   - [x] Mehrdeutige oder fehlende Treffer werden gemeldet (Exit 1, Issue im Workflow).
   - [x] Die Herkunft steht in `partySource` (`election-list` mit Listenname oder `override` mit Quelle), nicht als „Parteimitglied“.
-- [ ] **Partei, Stufe 2: Fraktionswebseiten** (nur ergänzend, wenn die Seite eine Partei nennt, z. B. bei der Freien Fraktion oder Parteilosen):
-  - [ ] Je Seite ein kleiner Parser (Kodierung erkennen, Latin-1 bei der CDU; AfD möglichst über `wp-json` statt HTML).
-  - [ ] Ein Treffer setzt die Partei nur, wenn die Seite sie ausdrücklich nennt. Widersprüche zur CSV werden gemeldet.
-  - [ ] Bricht ein Parser (Struktur geändert), schlägt der Job **nicht** fehl. Es entsteht ein Hinweis, die bisherigen Daten bleiben.
+- [x] **Partei, Stufe 2: Fraktionswebseiten** entfällt: Overrides mit Quelle decken die Ausnahmen ab (Entscheidung 12.11.2026).
 - [x] **Override-Datei** `data/leipzig-8/member-overrides.json` (JSON wie die Korrekturen der Abstimmungen): Ausschluss, Schreibweise, Partei. Jeder Eintrag mit Begründung und Quelle, bei jedem Lauf angewendet. Bisher: Partei des OB (OB-Wahl 2020), „CHristoph“ Neumann, Franziska Kießling (Mitgliedschaft nur am 18.09.2024, auf keiner Tafel).
 - [x] **Plausibilitätsprüfungen:** genau 70 Stadträt:innen + OB aktiv; jede aktive Person hat eine Fraktion oder ist fraktionslos; jede Person hat eine Partei; Overrides treffen Mitglieder; IDs eindeutig; Abgleich mit der Abstimmungstafel (wer auf der Tafel steht, ist an dem Tag Mitglied; Vereidigung bis 7 Tage vor dem OParl-Beginn verschiebt den Beginn).
 - [x] **Ausgabe:** `members.json` (Fraktionen, Parteien, Personen im Format der StadtratWatch-Registry, erweitert um `oparlId`, `factionMemberships`, `partySource`; Typ `LeipzigMembersFile`), `persons.csv`, `faction-memberships.csv`. `votes-<datum>.csv` hat die Spalten `factionId` (am Sitzungstag) und `partyId`.
@@ -173,13 +170,13 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] **Anzeige:** Personenseite mit Verlauf („Fraktionen in der Wahlperiode: …“), Fraktions- und Parteiseiten mit allen, die je dazugehörten, mit Zeitraum bei Wechsel; Parteiseite zeigt die Fraktion statt nochmals die Partei.
   - [x] Sitzzahlen je Zeitpunkt: `seats` bleibt der Stand heute; die Fraktionsaufteilung jeder Abstimmung ordnet nach den Mitgliedern am Sitzungstag und lässt Fraktionen ohne Mitglieder an dem Tag weg; Fraktions- und Parteiseiten zeigen den Sitzverlauf (`astro/src/data-analysis/Seats.ts`).
   - [x] Parteiwechsel mit Quelle: Getu Abraham seit 09.11.2024 parteilos (Leipziger Zeitung, 8.11.2024). Weitere, sobald eine Quelle vorliegt (siehe Offene Fragen: Butz).
-- [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Die Seite zeigt die Wahlliste 2024 als „Partei“; bei Fraktionswechseln (z. B. Abraham: Liste SPD, heute fraktionslos) prüfen, ob ein Override mit Quelle nötig ist. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
+- [ ] **Partei-Metadaten:** `EXTREMIST_CLASSIFICATION` nach Einstufung durch das LfV **Sachsen** mit Quellenangabe (Recherche läuft, 12.11.2026). „Partei“ meint die Wahlliste 2024, erklärt auf Partei- und Personenseite und in `DATA.md` (Entscheidung 12.11.2026).
 - [ ] **Offene Daten ausliefern:**
   - [x] API v1 (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`), mit `reviewStatus` und `paperUrl`
   - [x] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json` (12.11.2026)
   - [x] Lizenz und Herkunft in jeder Antwort: `meta.license_note` und `meta.attribution` nennen CC BY 4.0 (OParl) und dl-de/by-2-0 (Wahlliste) (12.11.2026)
 - [x] **Hosting:** GitHub Pages über `deploy.yml`, Seite und Prüfoberfläche (`/review/`) in einem Artefakt; Basispfad über `SITE_BASE`, alle Links über `sitePath()`.
-  - [ ] Einmalig einrichten: private Sicherheitsmeldungen aktivieren (`SECURITY.md`). Pages-Quelle und erster Lauf von `deploy.yml` erledigt (12.11.2026).
+  - [x] Einmalig eingerichtet: private Sicherheitsmeldungen, Pages-Quelle, erster Lauf von `deploy.yml` (12.11.2026).
 - [x] **Workflows:** `leipzig-members`, `leipzig-recordings`, `leipzig-votings`, `leipzig-review-recheck`, `leipzig-review-reminder`, `deploy`. Daten kommen per PR, Fehler als Issue.
 - [x] README, AGENTS.md, GLOSSARY.md, API-Doku und arc42 für Leipzig (12.11.2026).
 - [x] **Dokumentation:** `DATA.md` (12.11.2026).
@@ -204,7 +201,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Ausgabe:** `session-speeches-<datum>.json` je Sitzung mit Verlaufsprotokoll und Untertiteln, erzeugt von `leipzig-site-data`; die Registry nennt das Protokoll als `speechesSource`.
 - [x] **Rechte umgesetzt (§ 48 UrhG):** Volltexte nur auf der Sitzungsseite mit Quellenhinweis; die Personenseite listet Datum und Dauer mit Link; die API nennt die Quelle und nimmt die Texte von CC0 aus. Videolink der Reden über `sessionVideoLink` (Mediathek, ohne Zeitsprung).
 - [ ] **Stichprobe von Hand** an einer Sitzung auf der Seite (Sprecher, Text, Zeit), z. B. 28./29.10.2026, sobald das Protokoll da ist.
-- [ ] **Suche:** gibt es nicht (Typesense ist kein kostenloser Dienst, die Suchseite ist mit Magdeburg entfallen). Eine statische Suche (z. B. Pagefind) wäre kostenlos möglich; das Indexieren ganzer Protokolltexte ist rechtlich wie die Sitzungsseite zu sehen, aber nicht geprüft.
+- [ ] **Suche:** statisch mit Pagefind, im Build erzeugt und auf GitHub Pages ausgeliefert, kein eigener Dienst (Entscheidung 12.11.2026).
 - [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der ALLRIS-Runner (`minutes-runner/`, täglich auf dem Server) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
   - [ ] ALLRIS-Runner auf dem Server einrichten (`minutes-runner/README.md`), Deploy-Key mit Schreibzugriff eintragen, Probelauf.
 
@@ -219,9 +216,9 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Jürgen Günter Butz** (12.11.2026 recherchiert): bleibt bei FREIE SACHSEN. Leipziger Zeitung und Kreuzer führen ihn durchgehend als „Freien Sachsen“, auch nach dem Wechsel in die AfD-Fraktion; ein Austritt wird nirgends genannt. Eine Mitgliedschaft belegt keine Quelle, nur die AfD-Fraktion nennt ihn „parteilos“. Als Override mit allen Quellen festgehalten; bei einer belastbaren Quelle neu entscheiden.
 - [ ] **Weitere Parteiwechsel:** Gibt es weitere Mitglieder, deren Partei sich seit der Wahl geändert hat? Welche Quellen sind zulässig, wenn leipzig.de ignoriert wird (bisher: Presse, Fraktionsseiten)?
 - [ ] **Franziska Kießling:** ausgeschlossen, weil OParl sie nur am 18.09.2024 als Mitglied führt und sie auf keiner Tafel steht. Gibt es eine Quelle, dass sie das Mandat nicht angetreten hat (z. B. Niederschrift der konstituierenden Sitzung)?
-- [ ] **Bezeichnung „Partei“:** Die Seite nennt die Wahlliste 2024 „Partei“. Reicht das mit Erklärung in `DATA.md`, oder soll die Seite „Wahlliste 2024“ zeigen, solange keine andere Quelle vorliegt?
-- [ ] **Fraktionswebseiten (M1, Stufe 2):** Werden sie überhaupt gebraucht, wenn Overrides mit Quelle die Ausnahmen abdecken?
-- [ ] **`EXTREMIST_CLASSIFICATION`:** Welche Parteien bekommen den Hinweis, mit welcher Quelle (LfV Sachsen) und welchem Wortlaut? Redaktionelle Entscheidung.
+- [x] **Bezeichnung „Partei“:** bleibt „Partei“ und meint die Wahlliste 2024; Hinweis auf der Parteien- und Personenseite, Erklärung in `DATA.md` (Entscheidung 12.11.2026).
+- [x] **Fraktionswebseiten:** werden nicht genutzt (Entscheidung 12.11.2026).
+- [x] **`EXTREMIST_CLASSIFICATION`:** Quelle ist das LfV Sachsen; welche Parteien und welcher Wortlaut, klärt die Recherche `docs/research/2026-11-12-lfv-sachsen-einstufungen.md` (Entscheidung 12.11.2026).
 
 ### Was veröffentlicht wird
 - [x] **Vorläufige Abstimmungen:** `provisional` erscheint mit Kennzeichnung „vorläufig“, Erklärung und Link zum Daten-PR (12.11.2026).
@@ -245,13 +242,13 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
   - [x] Entschieden: als Zitat veröffentlichen (12.11.2026). Je veröffentlichter Abstimmung `<abstimmung>-zitat.png` (960 px breit, 16 Farbstufen je Kanal, ca. 135 KB, sonst unverändert), auf der Abstimmungsseite mit „Zitiert von Marcel Schneuer (Kontakt)“ und Quelle Stadt Leipzig; Release-Text `.github/evidence-release-notes.md` nennt zuerst den Betreiber, nimmt die Bilder von CC0 aus und bietet Entfernung an.
   - [x] Zitatbilder für die 16 Sitzungen erzeugt: 527 Bilder in 16 Releases, auf der Seite (12.11.2026).
   - [x] Bilder gehören nicht zum Datenpaket; `DATA.md` nimmt sie ausdrücklich von CC0 aus (12.11.2026).
-  - [ ] Die Tafelbilder der Prüffälle (`*-board.png` u. a.) sind in voller Auflösung öffentlich; für das Zitat reichte das verkleinerte Bild. Entscheiden, ob die Prüfung damit auskommt.
+  - [x] Tafelbilder der Prüffälle bleiben in voller Auflösung öffentlich, weil die Prüfung sie braucht (Entscheidung 12.11.2026). Für die 17 offenen Fälle fehlen sie noch (der Lauf vom 12.11.2026 erzeugte nur Zitatbilder).
 
 ### Lizenz, Betrieb, Recht
-- [ ] **Lizenz der eigenen Daten:** CC0 für die aus dem Video gelesenen Stimmen, wie in den Grundsätzen vorgeschlagen? Die Namensnennungen für OParl (CC BY 4.0) und die Bewerberliste (dl-de/by-2-0) bleiben ohnehin.
+- [x] **Lizenz der eigenen Daten:** CC0 1.0 für alles, was StadtratWatch Leipzig selbst erhebt (Stimmen, Ergebnisse, Prüfstatus, Zuordnungen) (Entscheidung 12.11.2026). Namensnennung für OParl (CC BY 4.0) und Bewerberliste (dl-de/by-2-0) bleibt, Reden und Belegbilder sind ausgenommen.
 - [x] **Betreiber und Impressum:** Marcel Schneuer, Angaben wie schneuer.online; Impressum, Datenschutz (GitHub Pages, keine Cookies) und Kontakt umgestellt (12.11.2026).
 - [x] **Magdeburg-Daten:** nur Leipzig, Magdeburg entfernt, Hinweis auf upstream bleibt (12.11.2026).
-- [ ] **Name der Wahlperiode:** Vorläufig „Leipzig – Wahlperiode VIII“, damit sie sich von Magdeburgs „Wahlperiode VIII“ unterscheidet. Passt das, oder wird mit nur einer Stadt „Wahlperiode VIII“ daraus?
+- [x] **Name der Wahlperiode:** „Wahlperiode VIII“ (Entscheidung 12.11.2026).
 - [x] **Hosting und Adresse:** GitHub Pages ohne eigene Domain; CloudFront- und Typesense-Variablen entfallen (12.11.2026).
 - [x] **Prüfende:** vorerst nur Marcel Schneuer (`LEIPZIG_REVIEWERS=ungeschneuer`, 12.11.2026).
 

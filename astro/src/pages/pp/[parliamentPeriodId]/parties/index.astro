@@ -1,5 +1,6 @@
 ---
 import { sitePath } from '@utils/site-path';
+import { SOURCE_REPOSITORY_URL } from '@utils/site-config';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithSessionsProps,
@@ -131,6 +132,18 @@ const barHeight = parties.length * 40;
   breadcrumbItems={breadcrumbItems}
 >
   <div class="space-y-3">
+    <p class="text-sm text-base-content/70">
+      „Partei“ ist die Liste, auf der jemand bei der Stadtratswahl 2024
+      kandidiert hat, nicht unbedingt die Parteimitgliedschaft. Spätere Wechsel
+      sind nur mit Quelle eingetragen (
+      <a
+        href={`${SOURCE_REPOSITORY_URL}/blob/main/DATA.md#fraktion-und-partei-factionid-partyid`}
+        class="link"
+      >
+        Erläuterung
+      </a>
+      ).
+    </p>
     <div class="bg-base-100 border border-base-200 rounded-box">
       <div class="overflow-x-auto">
         <table
