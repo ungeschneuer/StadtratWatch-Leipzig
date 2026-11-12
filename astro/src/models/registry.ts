@@ -32,6 +32,8 @@ export type RegistrySpeechesSource = {
 export type RegistrySessionVideo = {
   url: string;
   label: string;
+  // A player page that starts at a given second when `startsekunde` is added (Leipzig's video hoster).
+  playerUrl?: string;
 };
 
 export type RegistryFaction = {

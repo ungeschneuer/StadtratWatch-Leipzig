@@ -16,6 +16,7 @@ function observed(sessionId: string, overrides: Partial<ObservedRecording> = {})
     meetingName: 'Ratsversammlung',
     mediathekUrl: `https://www.leipzig.de/mediathek/video/${sessionId}`,
     pageTitle: `Aufzeichnung vom ${sessionId}`,
+    playerUrl: `https://player/${sessionId}.html?serverip=1`,
     serverApp: 'stadtleipzig-vod',
     streamName: `${sessionId}.smil`,
     hlsUrl: `https://host/${sessionId}/playlist.m3u8`,

@@ -1,5 +1,5 @@
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
-import type { Registry, RegistrySession } from '@srw-astro/models/registry';
+import type { Registry, RegistrySession, RegistrySessionVideo } from '@srw-astro/models/registry';
 
 import type { Recording } from '../leipzig-recordings/recordings-manifest.ts';
 
@@ -61,11 +61,19 @@ function toRegistrySession({
     title: recording.meetingName ?? 'Ratsversammlung',
     youtubeUrl: '',
     // The city keeps recordings for about a year; a link to a page that is gone would only lead nowhere.
-    ...(recording.goneSince === null ? { video: { url: recording.mediathekUrl, label: 'Mediathek' } } : {}),
+    ...(recording.goneSince === null ? { video: sessionVideo(recording) } : {}),
     meetingMinutesUrl,
     approved: pendingVotings === 0,
     ...(speechesSourceUrl
       ? { speechesSource: { label: 'Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig', url: speechesSourceUrl } }
       : {}),
+  };
+}
+
+function sessionVideo(recording: Recording): RegistrySessionVideo {
+  return {
+    url: recording.mediathekUrl,
+    label: 'Mediathek',
+    ...(recording.playerUrl ? { playerUrl: recording.playerUrl } : {}),
   };
 }

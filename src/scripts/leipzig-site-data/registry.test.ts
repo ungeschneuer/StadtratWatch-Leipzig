@@ -40,6 +40,7 @@ function recording(date: string, goneSince: string | null = null): Recording {
     date,
     meetingName: 'Ratsversammlung',
     mediathekUrl: `https://www.leipzig.de/mediathek/video/${date}`,
+    playerUrl: `https://player/${date}.html`,
     goneSince,
   } as Recording;
 }
@@ -74,7 +75,11 @@ describe('buildRegistry', () => {
         date: '2026-10-29',
         title: 'Ratsversammlung',
         youtubeUrl: '',
-        video: { url: 'https://www.leipzig.de/mediathek/video/2026-10-29', label: 'Mediathek' },
+        video: {
+          url: 'https://www.leipzig.de/mediathek/video/2026-10-29',
+          label: 'Mediathek',
+          playerUrl: 'https://player/2026-10-29.html',
+        },
         meetingMinutesUrl: null,
         approved: false,
       },

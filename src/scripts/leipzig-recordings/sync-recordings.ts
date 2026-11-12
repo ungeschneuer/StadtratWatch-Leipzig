@@ -160,6 +160,7 @@ async function observeRecording(
     meetingName: meeting?.name ?? null,
     mediathekUrl: url,
     pageTitle: page.title,
+    playerUrl: page.playerUrl,
     serverApp: page.player.serverApp,
     streamName: page.player.streamName,
     hlsUrl: stream.hlsUrl,

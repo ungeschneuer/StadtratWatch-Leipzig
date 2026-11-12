@@ -58,17 +58,23 @@ was transcribed locally with whisper.cpp; the header of the file names model and
 `null`. The sync keeps such a file, as it keeps every archived copy. How to transcribe another day:
 [`docs/guides/leipzig-whisper.md`](../../../docs/guides/leipzig-whisper.md).
 
-| Field             | Meaning                                                   |
-| ----------------- | --------------------------------------------------------- |
-| `sessionId`       | Session day, `YYYY-MM-DD`                                 |
-| `oparlMeetingId`  | OParl meeting of that day, `null` if OParl has none       |
-| `hlsUrl`          | HLS master playlist (360p to 1080p)                       |
-| `durationSeconds` | Length of the recording                                   |
-| `subtitleUrl`     | Subtitle file at the hoster, `null` if none is published  |
-| `subtitleFile`    | Archived copy, kept even after the hoster removes it      |
-| `subtitleSha256`  | Hash of the archived subtitles                            |
-| `firstSeen`       | Day the recording was first found                         |
-| `goneSince`       | Day its page stopped answering, `null` while it is online |
+| Field             | Meaning                                                    |
+| ----------------- | ---------------------------------------------------------- |
+| `sessionId`       | Session day, `YYYY-MM-DD`                                  |
+| `oparlMeetingId`  | OParl meeting of that day, `null` if OParl has none        |
+| `hlsUrl`          | HLS master playlist (360p to 1080p)                        |
+| `playerUrl`       | Hoster's player page as embedded by leipzig.de (see below) |
+| `durationSeconds` | Length of the recording                                    |
+| `subtitleUrl`     | Subtitle file at the hoster, `null` if none is published   |
+| `subtitleFile`    | Archived copy, kept even after the hoster removes it       |
+| `subtitleSha256`  | Hash of the archived subtitles                             |
+| `firstSeen`       | Day the recording was first found                          |
+| `goneSince`       | Day its page stopped answering, `null` while it is online  |
+
+The player page takes `startsekunde=<seconds>` to start at a moment; the site links speeches and votings that way. For
+some days the city sets `videostartoffset` to cut the waiting time before the session: the hoster then serves the
+stream from that second on, so the player's clock runs that far behind `hlsUrl` and the subtitles, which all times in
+`data/` refer to. `sessionVideoLink` subtracts it.
 
 ## Tests
 

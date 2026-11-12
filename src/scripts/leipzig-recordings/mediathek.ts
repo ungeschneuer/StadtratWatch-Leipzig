@@ -43,6 +43,8 @@ export type RecordingPage = {
   title: string;
   date: string;
   player: PlayerReference;
+  // The hoster's player page that leipzig.de embeds; it accepts `startsekunde` for links to a moment.
+  playerUrl: string;
 };
 
 export function findRecordingPageUrls(listingHtml: string): string[] {
@@ -68,7 +70,8 @@ export function parseRecordingPage(html: string): RecordingPage {
   if (!date) {
     throw new Error(`No session date in page title "${title}"`);
   }
-  return { title, date, player: parsePlayerReference(html) };
+  const playerUrl = parsePlayerUrl(html);
+  return { title, date, player: parsePlayerReference(playerUrl), playerUrl };
 }
 
 export function parseGermanDate(text: string): string | undefined {
@@ -86,9 +89,12 @@ export function parseGermanDate(text: string): string | undefined {
   return undefined;
 }
 
-function parsePlayerReference(html: string): PlayerReference {
+function parsePlayerUrl(html: string): string {
   const iframeTag = matchOrThrow(html, /<iframe[^>]*class="media-player-iframe"[^>]*>/, 'media player iframe');
-  const source = decodeHtmlEntities(matchOrThrow(iframeTag, /\bsrc="([^"]+)"/, 'media player iframe src'));
+  return decodeHtmlEntities(matchOrThrow(iframeTag, /\bsrc="([^"]+)"/, 'media player iframe src'));
+}
+
+function parsePlayerReference(source: string): PlayerReference {
   const parameters = new URL(source).searchParams;
   const serverIp = parameters.get('serverip');
   const serverApp = parameters.get('serverapp');

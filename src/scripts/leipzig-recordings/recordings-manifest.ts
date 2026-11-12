@@ -5,6 +5,8 @@ export type Recording = {
   meetingName: string | null;
   mediathekUrl: string;
   pageTitle: string;
+  // Null for recordings last seen before the player page was recorded.
+  playerUrl: string | null;
   serverApp: string;
   streamName: string;
   hlsUrl: string;
@@ -78,6 +80,7 @@ const CSV_COLUMNS: (keyof Recording)[] = [
   'meetingName',
   'mediathekUrl',
   'pageTitle',
+  'playerUrl',
   'serverApp',
   'streamName',
   'hlsUrl',

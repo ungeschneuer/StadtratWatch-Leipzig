@@ -65,6 +65,12 @@ describe('parseRecordingPage', () => {
     });
   });
 
+  it('keeps the player page, decoded, for links to a moment', () => {
+    expect(parseRecordingPage(fixture('recording-page.html')).playerUrl).toStartWith(
+      'https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=',
+    );
+  });
+
   it('fails loudly when the player is missing', () => {
     expect(() => parseRecordingPage('<title>Aufzeichnung vom 29.10.2026</title>')).toThrow('media player iframe');
   });

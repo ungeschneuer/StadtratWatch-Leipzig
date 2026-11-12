@@ -61,7 +61,7 @@ function cachedPdf(context: SourceContext, name: string): string {
   return join(context.cacheDir, 'official', `${name}-${context.sessionId}.pdf`);
 }
 
-async function readJson<T>(path: string): Promise<T | null> {
+function readJson<T>(path: string): Promise<T | null> {
   return readFile(path, 'utf-8')
     .then((json) => JSON.parse(json) as T)
     .catch(() => null);
@@ -72,7 +72,7 @@ async function writeJson(path: string, value: unknown): Promise<void> {
   await writeFile(path, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-async function readCachedPdf(path: string): Promise<Uint8Array | null> {
+function readCachedPdf(path: string): Promise<Uint8Array | null> {
   return readFile(path)
     .then((bytes) => new Uint8Array(bytes))
     .catch(() => null);

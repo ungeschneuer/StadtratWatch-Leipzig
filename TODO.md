@@ -114,7 +114,7 @@ Umgesetzt in `src/scripts/leipzig-members` (siehe README dort), Workflow `.githu
 - [x] **Manifest** `recordings.json|csv` mit `session_id`, `oparl_meeting_id`, `mediathek_url`, `smil`, `hls_url`, `vtt_url`, `duration`, `vtt_sha256`, `first_seen`, `last_seen`, `available`.
 - [x] **VTT archivieren** im Repo (klein; dient in M3 als Index für Abstimmungen und als Beleg für mündliche Ergebnisse).
 - [x] **Verfügbarkeit überwachen:** Verschwindet eine Seite, wird `available: false` gesetzt und `last_seen` bleibt erhalten. Daraus lässt sich die tatsächliche Vorhaltedauer ablesen.
-- [ ] **Deep-Links:** Prüfen, ob der Player-Parameter `videostartoffset` zeitgenaue Links auf die Mediathek erlaubt. Das ersetzt die YouTube-Zeitstempel, solange das Video online ist.
+- [x] **Deep-Links:** Der Player des Hosters (die Seite, die leipzig.de als iframe einbindet, in `recordings.json` als `playerUrl`) springt mit `startsekunde=<s>` an die Stelle; `videostartoffset` schneidet dagegen den Anfang weg (an 4 Tagen 11–15 Minuten Wartezeit). Gemessen 12.11.2026: mit `startpos=660` ist der Stream genau 660 s kürzer, die Zeit im Player läuft also um den Schnitt hinter unseren Zeiten; `sessionVideoLink` rechnet ihn heraus. Noch nicht im Browser angeklickt.
 - [x] **Backfill:** 16 Sitzungstage (17.12.2025–29.10.2026) erfasst, 13 davon mit Untertiteln. Für 2025-12-18, 2026-01-28 und 2026-02-25 veröffentlicht der Hoster keine VTT, dort braucht M3 den Frame-Scan-Fallback.
 - [x] **Workflow** `.github/workflows/leipzig-recordings.yml`: täglich 05:17 UTC, Daten per PR, Fehler als Issue.
 - [x] **Belegframes sichern:** Tafelbilder jeder zu prüfenden Abstimmung als Assets des Releases `evidence-<datum>`.
@@ -154,9 +154,9 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 
 - [ ] **Stadt-Konfiguration** (Name, OParl-URL, Wahlperiode, Texte) statt fest verdrahtetem Magdeburg. Beispiele im Build: Fußzeile „keine offizielle Seite der Stadt Magdeburg … Code for Magdeburg“, YouTube-Kanal der Stadt Magdeburg auf der Übersicht der Wahlperiode. Dadurch bleiben Merges von upstream möglich.
 - [x] **Video-Abstraktion:** `RegistrySession.video` (`url`, `label`) neben `youtubeUrl` (abwärtskompatibel, Magdeburg unverändert); `sessionVideoLink()` in `astro/src/models/session-video.ts` wählt den Link für Sitzungs- und Abstimmungsseite. Leipzig verlinkt die Mediathek-Seite, solange sie online ist.
-  - [ ] Zeitgenaue Links auf die Mediathek (hängt an `videostartoffset`, siehe M2) oder eingebetteter Player.
-  - [ ] `Speech.astro` nutzt noch `youtubeUrl` (betrifft nur Reden, siehe nächster Punkt).
-- [ ] **Reden-Funktionen:** Speech-Seiten und Redezeit-Statistiken werden mit M5 gefüllt statt ausgeblendet. `speech-to-text`, `speaker-diarization` und `detect-ai-text` aus upstream werden nicht genutzt. `Speech.astro` braucht dafür `sessionVideoLink()` statt `youtubeUrl`.
+  - [x] Zeitgenaue Links für Reden und Abstimmungen über `video.playerUrl` (siehe M2, Deep-Links).
+  - [x] `Speech.astro` nutzt `sessionVideoLink()`.
+- [x] **Reden-Funktionen:** Speech-Seiten und Redezeit-Statistiken werden mit M5 gefüllt statt ausgeblendet. `speech-to-text`, `speaker-diarization` und `detect-ai-text` aus upstream werden nicht genutzt. `Speech.astro` braucht dafür `sessionVideoLink()` statt `youtubeUrl`.
 - [x] **Registry `data/leipzig-8/registry.json`** aus `members.json` und den Sitzungen mit Abstimmungen, Skript `src/scripts/leipzig-site-data`. `approved`, sobald keine Abstimmung mehr auf Prüfung oder amtliches Ergebnis wartet (Stand 12.11.2026: 5 von 16).
 - [ ] **OParl-Pipeline schlank halten:** nur Sitzungen, TOPs und die **in Abstimmungen vorkommenden** Vorlagen (Titel, Nummer, Link zum Ratsinfo). Kein Download aller PDFs, kein Tika, kein Typesense.
 - [x] **Adapter M3 → `session-scan-*.json`** (`src/scripts/leipzig-site-data`): veröffentlicht `verified`, `corrected`, `reviewed`, `provisional` (510 von 547), Namen wie in der Registry, Titel aus OParl, Typ aus der Drucksachennummer. Läuft in den Workflows `leipzig-votings` und `leipzig-review-recheck`. Site-Build mit Leipzig geprüft (12.11.2026, 4878 Seiten, keine Fehler).
@@ -202,7 +202,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Ausgabe:** `session-speeches-<datum>.json` je Sitzung mit Verlaufsprotokoll und Untertiteln, erzeugt von `leipzig-site-data`; die Registry nennt das Protokoll als `speechesSource`.
 - [x] **Rechte umgesetzt (§ 48 UrhG):** Volltexte nur auf der Sitzungsseite mit Quellenhinweis; die Personenseite listet Datum und Dauer mit Link; die API nennt die Quelle und nimmt die Texte von CC0 aus. Videolink der Reden über `sessionVideoLink` (Mediathek, ohne Zeitsprung).
 - [ ] **Stichprobe von Hand** an einer Sitzung auf der Seite (Sprecher, Text, Zeit), z. B. 28./29.10.2026, sobald das Protokoll da ist.
-- [ ] **Suche:** Die Leipziger Reden sind noch nicht im Typesense-Index (`index-search`); das Indexieren ganzer Protokolltexte ist rechtlich wie die Sitzungsseite zu sehen, aber nicht geprüft.
+- [ ] **Suche:** Die Leipziger Reden sind noch nicht im Typesense-Index (`index-search`); das Indexieren ganzer Protokolltexte ist rechtlich wie die Sitzungsseite zu sehen, aber nicht geprüft. Hängt an der Entscheidung, ob es überhaupt eine Suche gibt (Typesense ist kein kostenloser Dienst, siehe M4 „OParl-Pipeline schlank halten“ und die offene Frage zu Hosting und Adresse).
 - [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der tägliche Recheck (`--corrections-only`) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
 
 ---
