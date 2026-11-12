@@ -1,0 +1,279 @@
+{
+  "sessionId": "2026-03-26",
+  "kind": "beschlussprotokoll",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545839&OTYP=41",
+  "fetchedAt": "2026-11-11T22:36:04.831Z",
+  "parserVersion": 4,
+  "votes": [
+    {
+      "order": 0,
+      "agendaItemNumber": "19.5",
+      "paperReference": "VIII-DS-01619-NF-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 38,
+      "N": 7,
+      "E": 15
+    },
+    {
+      "order": 1,
+      "agendaItemNumber": "19.5.2",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 10,
+      "N": 36,
+      "E": 14
+    },
+    {
+      "order": 2,
+      "agendaItemNumber": "19.5.3",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-03",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 27,
+      "N": 30,
+      "E": 3
+    },
+    {
+      "order": 3,
+      "agendaItemNumber": "19.5.4",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-04",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 30,
+      "N": 28,
+      "E": 1
+    },
+    {
+      "order": 4,
+      "agendaItemNumber": "19.5.5",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-05",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 18,
+      "N": 41,
+      "E": 1
+    },
+    {
+      "order": 5,
+      "agendaItemNumber": "19.5.6",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-06",
+      "label": "Abstimmungsergebnis zu Punkt 1:",
+      "procedural": false,
+      "J": 28,
+      "N": 31,
+      "E": 1
+    },
+    {
+      "order": 6,
+      "agendaItemNumber": "19.5.6",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-06",
+      "label": "Abstimmungsergebnis zu Punkt 2:",
+      "procedural": false,
+      "J": 29,
+      "N": 31,
+      "E": 0
+    },
+    {
+      "order": 7,
+      "agendaItemNumber": "19.5.6",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-06",
+      "label": "Abstimmungsergebnis zu Punkt 3:",
+      "procedural": false,
+      "J": 30,
+      "N": 25,
+      "E": 5
+    },
+    {
+      "order": 8,
+      "agendaItemNumber": "19.5.6",
+      "paperReference": "VIII-DS-01619-NF-02-ÄA-06",
+      "label": "Abstimmungsergebnis zu Punkt 4:",
+      "procedural": false,
+      "J": 30,
+      "N": 26,
+      "E": 4
+    },
+    {
+      "order": 9,
+      "agendaItemNumber": "19.7",
+      "paperReference": "VIII-DS-01851",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 53,
+      "N": 1,
+      "E": 3
+    },
+    {
+      "order": 10,
+      "agendaItemNumber": "19.12",
+      "paperReference": "VIII-DS-02081",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 49,
+      "N": 8,
+      "E": 1
+    },
+    {
+      "order": 11,
+      "agendaItemNumber": "19.13",
+      "paperReference": "VIII-DS-02106",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 49,
+      "N": 9,
+      "E": 0
+    },
+    {
+      "order": 12,
+      "agendaItemNumber": "19.13.1",
+      "paperReference": "VIII-DS-02106-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 54,
+      "N": 1,
+      "E": 2
+    },
+    {
+      "order": 13,
+      "agendaItemNumber": "19.14",
+      "paperReference": "VIII-DS-02107",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 36,
+      "N": 22,
+      "E": 0
+    },
+    {
+      "order": 14,
+      "agendaItemNumber": "19.14.1",
+      "paperReference": "VIII-DS-02107-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 11,
+      "N": 47,
+      "E": 0
+    },
+    {
+      "order": 15,
+      "agendaItemNumber": "19.15",
+      "paperReference": "VIII-DS-02110",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 36,
+      "N": 22,
+      "E": 0
+    },
+    {
+      "order": 16,
+      "agendaItemNumber": "19.15.1",
+      "paperReference": "VIII-DS-02110-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 12,
+      "N": 46,
+      "E": 0
+    },
+    {
+      "order": 17,
+      "agendaItemNumber": "19.16",
+      "paperReference": "VIII-DS-02209",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 42,
+      "N": 2,
+      "E": 12
+    },
+    {
+      "order": 18,
+      "agendaItemNumber": "19.16.1",
+      "paperReference": "VIII-DS-02209-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 17,
+      "N": 38,
+      "E": 2
+    },
+    {
+      "order": 19,
+      "agendaItemNumber": "19.17",
+      "paperReference": "VIII-DS-02112",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 46,
+      "N": 9,
+      "E": 2
+    },
+    {
+      "order": 20,
+      "agendaItemNumber": "19.17.1",
+      "paperReference": "VIII-DS-02112-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 52,
+      "N": 3,
+      "E": 1
+    },
+    {
+      "order": 21,
+      "agendaItemNumber": "19.18",
+      "paperReference": "VIII-DS-01839",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 42,
+      "N": 9,
+      "E": 5
+    },
+    {
+      "order": 22,
+      "agendaItemNumber": "19.20",
+      "paperReference": "VIII-DS-02190",
+      "label": "§ 79 (1) SächsGemO) Dezernat Stadtentwicklung und Bau Ein Antrag von Stadträtin Frau Krefft (Fraktion Bündnis 90/Die Grünen) zur Vertagung des Tagesordnungspunktes wird abgelehnt",
+      "procedural": true,
+      "J": 25,
+      "N": 28,
+      "E": 0
+    },
+    {
+      "order": 23,
+      "agendaItemNumber": "19.20",
+      "paperReference": "VIII-DS-02190",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 54,
+      "N": 0,
+      "E": 0
+    },
+    {
+      "order": 24,
+      "agendaItemNumber": "19.20.1",
+      "paperReference": "VIII-DS-02190-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 9,
+      "N": 29,
+      "E": 16
+    },
+    {
+      "order": 25,
+      "agendaItemNumber": "19.21",
+      "paperReference": "VIII-DS-02272",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 42,
+      "N": 0,
+      "E": 11
+    },
+    {
+      "order": 26,
+      "agendaItemNumber": "19.21.1",
+      "paperReference": "VIII-DS-02272-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 23,
+      "N": 28,
+      "E": 2
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "sessionId": "2026-07-01",
+  "kind": "beschlussprotokoll",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775236&OTYP=41",
+  "fetchedAt": "2026-11-11T22:36:21.624Z",
+  "parserVersion": 4,
+  "votes": [
+    {
+      "order": 0,
+      "agendaItemNumber": "3",
+      "paperReference": null,
+      "label": "bis 3.3) unter dem TOP Bericht des Oberbürgermeisters zu beantworten. Somit entfällt die Abstimmung. Stadtrat Geisler stellt einen Absetzungsantrag zu TOP 18.21 – VII-DS-02692 – Zoo der Zu kunft. Dieser wird mit folgendem Abstimmungsergebnis abgelehnt:",
+      "procedural": true,
+      "J": 16,
+      "N": 35,
+      "E": 7
+    },
+    {
+      "order": 1,
+      "agendaItemNumber": "3",
+      "paperReference": null,
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 40,
+      "N": 17,
+      "E": 2
+    },
+    {
+      "order": 2,
+      "agendaItemNumber": "3",
+      "paperReference": null,
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 30,
+      "N": 30,
+      "E": 0
+    },
+    {
+      "order": 3,
+      "agendaItemNumber": "9.1",
+      "paperReference": "VIII-DS-03022",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 28,
+      "N": 23,
+      "E": 8
+    },
+    {
+      "order": 4,
+      "agendaItemNumber": "9.1",
+      "paperReference": "VIII-DS-03022",
+      "label": "Abstimmungsergebnis: zu den Beschlusspunkten 2 & 3:",
+      "procedural": false,
+      "J": 28,
+      "N": 23,
+      "E": 8
+    },
+    {
+      "order": 5,
+      "agendaItemNumber": "12.1",
+      "paperReference": "VIII-A-02485-NF-02",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 44,
+      "N": 11,
+      "E": 5
+    },
+    {
+      "order": 6,
+      "agendaItemNumber": "12.1",
+      "paperReference": "VIII-A-02485-NF-02",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 3:",
+      "procedural": false,
+      "J": 35,
+      "N": 22,
+      "E": 3
+    },
+    {
+      "order": 7,
+      "agendaItemNumber": "12.1",
+      "paperReference": "VIII-A-02485-NF-02",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 4:",
+      "procedural": false,
+      "J": 48,
+      "N": 9,
+      "E": 2
+    },
+    {
+      "order": 8,
+      "agendaItemNumber": "12.1.1",
+      "paperReference": "VIII-A-02485-NF-02-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 11,
+      "N": 48,
+      "E": 0
+    },
+    {
+      "order": 9,
+      "agendaItemNumber": "12.1.2",
+      "paperReference": "VIII-A-02485-VSP-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 58,
+      "N": 1,
+      "E": 0
+    },
+    {
+      "order": 10,
+      "agendaItemNumber": "12.1.2",
+      "paperReference": "VIII-A-02485-VSP-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 16,
+      "N": 39,
+      "E": 5
+    },
+    {
+      "order": 11,
+      "agendaItemNumber": "12.2",
+      "paperReference": "VIII-A-02487",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 35,
+      "N": 20,
+      "E": 0
+    },
+    {
+      "order": 12,
+      "agendaItemNumber": "12.6",
+      "paperReference": "VIII-A-01797-NF-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 31,
+      "N": 24,
+      "E": 6
+    },
+    {
+      "order": 13,
+      "agendaItemNumber": "12.6.1",
+      "paperReference": "VIII-A-01797-NF-02-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 24,
+      "N": 36,
+      "E": 0
+    },
+    {
+      "order": 14,
+      "agendaItemNumber": "12.10",
+      "paperReference": "VIII-A-02302-NF-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 44,
+      "N": 12,
+      "E": 1
+    },
+    {
+      "order": 15,
+      "agendaItemNumber": "12.12",
+      "paperReference": "VIII-A-02468-NF-02",
+      "label": "Abstimmungsergebnis zum ÄA in der Fassung des VSP:",
+      "procedural": false,
+      "J": 34,
+      "N": 27,
+      "E": 0
+    },
+    {
+      "order": 16,
+      "agendaItemNumber": "12.12.1",
+      "paperReference": "VIII-A-02468-VSP-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 34,
+      "N": 27,
+      "E": 0
+    },
+    {
+      "order": 17,
+      "agendaItemNumber": "12.15",
+      "paperReference": "VIII-A-02603",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 19,
+      "N": 41,
+      "E": 3
+    },
+    {
+      "order": 18,
+      "agendaItemNumber": "12.16",
+      "paperReference": "VIII-A-02618-NF-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 33,
+      "N": 29,
+      "E": 0
+    },
+    {
+      "order": 19,
+      "agendaItemNumber": "12.17",
+      "paperReference": "VIII-A-02620",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 12,
+      "N": 40,
+      "E": 9
+    },
+    {
+      "order": 20,
+      "agendaItemNumber": "12.18",
+      "paperReference": "VIII-A-02627",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 29,
+      "N": 24,
+      "E": 9
+    },
+    {
+      "order": 21,
+      "agendaItemNumber": "12.18.1",
+      "paperReference": "VIII-A-02627-VSP-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 22,
+      "N": 31,
+      "E": 9
+    },
+    {
+      "order": 22,
+      "agendaItemNumber": "12.19",
+      "paperReference": "VIII-A-02632",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 30,
+      "N": 25,
+      "E": 6
+    },
+    {
+      "order": 23,
+      "agendaItemNumber": "12.23",
+      "paperReference": "VIII-A-02798",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 56,
+      "N": 0,
+      "E": 1
+    },
+    {
+      "order": 24,
+      "agendaItemNumber": "12.23",
+      "paperReference": "VIII-A-02798",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 33,
+      "N": 23,
+      "E": 1
+    },
+    {
+      "order": 25,
+      "agendaItemNumber": "12.24",
+      "paperReference": "VIII-A-02835",
+      "label": "Abstimmungsergebnis zum ÄA in der Fassung des VSP:",
+      "procedural": false,
+      "J": 41,
+      "N": 0,
+      "E": 20
+    },
+    {
+      "order": 26,
+      "agendaItemNumber": "12.24.1",
+      "paperReference": "VIII-A-02835-VSP-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 41,
+      "N": 0,
+      "E": 20
+    },
+    {
+      "order": 27,
+      "agendaItemNumber": "18.1",
+      "paperReference": "VIII-DS-02330",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 49,
+      "N": 11,
+      "E": 1
+    },
+    {
+      "order": 28,
+      "agendaItemNumber": "18.1.1",
+      "paperReference": "VIII-DS-02330-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 39,
+      "N": 12,
+      "E": 10
+    },
+    {
+      "order": 29,
+      "agendaItemNumber": "18.1.1",
+      "paperReference": "VIII-DS-02330-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 36,
+      "N": 5,
+      "E": 20
+    },
+    {
+      "order": 30,
+      "agendaItemNumber": "18.1.1",
+      "paperReference": "VIII-DS-02330-ÄA-01",
+      "label": "Abstimmungsergebnis: zur Streichung Satz 2 im Beschlusspunkt 3:",
+      "procedural": false,
+      "J": 24,
+      "N": 32,
+      "E": 4
+    },
+    {
+      "order": 31,
+      "agendaItemNumber": "18.1.1",
+      "paperReference": "VIII-DS-02330-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 3:",
+      "procedural": false,
+      "J": 32,
+      "N": 27,
+      "E": 2
+    },
+    {
+      "order": 32,
+      "agendaItemNumber": "18.21",
+      "paperReference": "VIII-DS-02692",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 36,
+      "N": 4,
+      "E": 20
+    },
+    {
+      "order": 33,
+      "agendaItemNumber": "18.21.1",
+      "paperReference": "VIII-DS-02692-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 3:",
+      "procedural": false,
+      "J": 12,
+      "N": 45,
+      "E": 4
+    },
+    {
+      "order": 34,
+      "agendaItemNumber": "18.21.1",
+      "paperReference": "VIII-DS-02692-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 4:",
+      "procedural": false,
+      "J": 11,
+      "N": 35,
+      "E": 14
+    },
+    {
+      "order": 35,
+      "agendaItemNumber": "18.21.1",
+      "paperReference": "VIII-DS-02692-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 5:",
+      "procedural": false,
+      "J": 13,
+      "N": 38,
+      "E": 8
+    },
+    {
+      "order": 36,
+      "agendaItemNumber": "18.21.2",
+      "paperReference": "VIII-DS-02692-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 28,
+      "N": 28,
+      "E": 2
+    }
+  ]
+}

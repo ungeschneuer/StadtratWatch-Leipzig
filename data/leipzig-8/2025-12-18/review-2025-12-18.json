@@ -1,0 +1,15 @@
+{
+  "sessionId": "2025-12-18",
+  "generatedAt": "2026-11-11T23:06:28.802Z",
+  "video": {
+    "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2025/20251218_RV_livestream.smil/playlist.m3u8",
+    "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-18122025",
+    "available": true
+  },
+  "summary": {
+    "cases": 0,
+    "open": 0,
+    "reviewed": 0
+  },
+  "cases": []
+}

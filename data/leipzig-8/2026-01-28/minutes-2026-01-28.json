@@ -1,0 +1,309 @@
+{
+  "sessionId": "2026-01-28",
+  "kind": "beschlussprotokoll",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546029&OTYP=41",
+  "fetchedAt": "2026-11-11T22:35:51.348Z",
+  "parserVersion": 4,
+  "votes": [
+    {
+      "order": 0,
+      "agendaItemNumber": "3",
+      "paperReference": null,
+      "label": "lehnt:",
+      "procedural": false,
+      "J": 29,
+      "N": 35,
+      "E": 1
+    },
+    {
+      "order": 1,
+      "agendaItemNumber": "3.1",
+      "paperReference": "VIII-DF-02312",
+      "label": "Abstimmungsergebnis zur Aufnahme auf die Tagesordnung:",
+      "procedural": false,
+      "J": 53,
+      "N": 11,
+      "E": 0
+    },
+    {
+      "order": 2,
+      "agendaItemNumber": "10.4",
+      "paperReference": "VIII-DS-00266-DS-04",
+      "label": "Abstimmungsergebnis: Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 32,
+      "N": 33,
+      "E": 0
+    },
+    {
+      "order": 3,
+      "agendaItemNumber": "10.4",
+      "paperReference": "VIII-DS-00266-DS-04",
+      "label": "Abstimmungsergebnis: Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 65,
+      "N": 0,
+      "E": 0
+    },
+    {
+      "order": 4,
+      "agendaItemNumber": "11.1",
+      "paperReference": "VIII-DS-01996",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 50,
+      "N": 0,
+      "E": 15
+    },
+    {
+      "order": 5,
+      "agendaItemNumber": "11.2",
+      "paperReference": "VIII-DS-01997",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 53,
+      "N": 0,
+      "E": 11
+    },
+    {
+      "order": 6,
+      "agendaItemNumber": "12.7",
+      "paperReference": "VIII-DS-02248",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 35,
+      "N": 30,
+      "E": 0
+    },
+    {
+      "order": 7,
+      "agendaItemNumber": "14.1",
+      "paperReference": "VIII-A-00449-NF-03",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 41,
+      "N": 14,
+      "E": 9
+    },
+    {
+      "order": 8,
+      "agendaItemNumber": "14.1.1",
+      "paperReference": "VIII-A-00449-ÄA-02-NF-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 13,
+      "N": 39,
+      "E": 12
+    },
+    {
+      "order": 9,
+      "agendaItemNumber": "14.2",
+      "paperReference": "VIII-A-00864",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 41,
+      "N": 21,
+      "E": 3
+    },
+    {
+      "order": 10,
+      "agendaItemNumber": "14.3",
+      "paperReference": "VIII-A-01178-NF-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 65,
+      "N": 0,
+      "E": 0
+    },
+    {
+      "order": 11,
+      "agendaItemNumber": "14.4",
+      "paperReference": "VIII-A-01246-NF-02",
+      "label": "Abstimmungsergebnis zum ÄÄ:",
+      "procedural": false,
+      "J": 41,
+      "N": 23,
+      "E": 1
+    },
+    {
+      "order": 12,
+      "agendaItemNumber": "14.4.1",
+      "paperReference": "VIII-A-01246-NF-02-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 41,
+      "N": 23,
+      "E": 1
+    },
+    {
+      "order": 13,
+      "agendaItemNumber": "14.5",
+      "paperReference": "VIII-A-01278-NF-03",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 28,
+      "N": 22,
+      "E": 13
+    },
+    {
+      "order": 14,
+      "agendaItemNumber": "14.9",
+      "paperReference": "VIII-A-01775-NF-02",
+      "label": "Abstimmungsergebnis zum Änderungsantrag in der Fassung des VSP:",
+      "procedural": false,
+      "J": 38,
+      "N": 21,
+      "E": 7
+    },
+    {
+      "order": 15,
+      "agendaItemNumber": "14.9.1",
+      "paperReference": "VIII-A-01775-VSP-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 38,
+      "N": 21,
+      "E": 7
+    },
+    {
+      "order": 16,
+      "agendaItemNumber": "14.11",
+      "paperReference": "VIII-A-01788-NF-03",
+      "label": "Abstimmungsergebnis: Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 38,
+      "N": 15,
+      "E": 11
+    },
+    {
+      "order": 17,
+      "agendaItemNumber": "14.11",
+      "paperReference": "VIII-A-01788-NF-03",
+      "label": "Abstimmungsergebnis: Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 42,
+      "N": 12,
+      "E": 11
+    },
+    {
+      "order": 18,
+      "agendaItemNumber": "14.11.1",
+      "paperReference": "VIII-A-01788-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 34,
+      "N": 18,
+      "E": 13
+    },
+    {
+      "order": 19,
+      "agendaItemNumber": "14.16",
+      "paperReference": "VIII-A-01925",
+      "label": "Abstimmungsergebnis zum Änderungsantrag:",
+      "procedural": false,
+      "J": 32,
+      "N": 30,
+      "E": 2
+    },
+    {
+      "order": 20,
+      "agendaItemNumber": "14.16.1",
+      "paperReference": "VIII-A-01925-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 32,
+      "N": 30,
+      "E": 2
+    },
+    {
+      "order": 21,
+      "agendaItemNumber": "14.17",
+      "paperReference": "VIII-A-01935",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 32,
+      "N": 34,
+      "E": 0
+    },
+    {
+      "order": 22,
+      "agendaItemNumber": "14.17.1",
+      "paperReference": "VIII-A-01935-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 33,
+      "N": 33,
+      "E": 0
+    },
+    {
+      "order": 23,
+      "agendaItemNumber": "14.18",
+      "paperReference": "VIII-A-02035",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 54,
+      "N": 11,
+      "E": 1
+    },
+    {
+      "order": 24,
+      "agendaItemNumber": "14.18.1",
+      "paperReference": "VIII-A-02035-ÄA-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 19,
+      "N": 47,
+      "E": 0
+    },
+    {
+      "order": 25,
+      "agendaItemNumber": "18.1",
+      "paperReference": "VIII-DS-01122-NF-02",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 35,
+      "N": 15,
+      "E": 11
+    },
+    {
+      "order": 26,
+      "agendaItemNumber": "18.2",
+      "paperReference": "VIII-DS-01960",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 47,
+      "N": 6,
+      "E": 9
+    },
+    {
+      "order": 27,
+      "agendaItemNumber": "18.10",
+      "paperReference": "VIII-DS-01727",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 44,
+      "N": 7,
+      "E": 10
+    },
+    {
+      "order": 28,
+      "agendaItemNumber": "18.14",
+      "paperReference": "VIII-DS-01777",
+      "label": "euzuordnung des Schulstandortes Dachsstraße 1, 04329 Leipzig – Aufhebung und Neueinrichtung einer Außenstelle entsprechend § 24 Sächsisches Schulgesetz Dezernat Jugend, Schule und Demokratie Der Geschäftsordnungsantrag der BSW-Fraktion auf Vertagung des Tagesordnungspunktes wird abgelehnt",
+      "procedural": true,
+      "J": 24,
+      "N": 34,
+      "E": 2
+    },
+    {
+      "order": 29,
+      "agendaItemNumber": "18.14",
+      "paperReference": "VIII-DS-01777",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 40,
+      "N": 19,
+      "E": 1
+    }
+  ]
+}

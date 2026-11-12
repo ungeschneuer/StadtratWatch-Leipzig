@@ -1,0 +1,2102 @@
+{
+  "id": "leipzig-8",
+  "name": "Leipzig – Wahlperiode VIII",
+  "lastUpdate": "2026-11-12T00:00:00Z",
+  "sessions": [
+    {
+      "id": "2025-12-17",
+      "date": "2025-12-17",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-17122025",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2025/20251217_RV_livestream.smil&videostartoffset=914&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/ratsversammlung-aufzeichnung-17.12.2025.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406737&OTYP=41",
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2003371"
+      }
+    },
+    {
+      "id": "2025-12-18",
+      "date": "2025-12-18",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-18122025",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2025/20251218_RV_livestream.smil&videostartoffset=660&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/aufzeichnung-ratsversammlung-18.12.2025.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406745&OTYP=41",
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2003382"
+      }
+    },
+    {
+      "id": "2026-01-28",
+      "date": "2026-01-28",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28012026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/20260128_RV_livestream.smil&videostartoffset=890&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_28.01.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546029&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004593"
+      }
+    },
+    {
+      "id": "2026-02-25",
+      "date": "2026-02-25",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25022026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/20260225_RV_livestream.smil&videostartoffset=646&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_25.02.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4546014&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004594"
+      }
+    },
+    {
+      "id": "2026-03-25",
+      "date": "2026-03-25",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25032026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_25_Mrz_2026.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_25.03.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545861&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004595"
+      }
+    },
+    {
+      "id": "2026-03-26",
+      "date": "2026-03-26",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-26032026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_26_Mrz_2026.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/videopreview_Livestream_Stadtrat_Leipzig-26-M%C3%A4rz-2026.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545839&OTYP=41",
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004606"
+      }
+    },
+    {
+      "id": "2026-04-29",
+      "date": "2026-04-29",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-29042026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_29_April_2026.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Aufzeichnung_Ratsversammlung_29.04.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4545747&OTYP=41",
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004596"
+      }
+    },
+    {
+      "id": "2026-05-27",
+      "date": "2026-05-27",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-27052026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_27_Mai_2026.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_27.05.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4589019&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004597"
+      }
+    },
+    {
+      "id": "2026-05-28",
+      "date": "2026-05-28",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28052026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_28_Mai_2026_-_04-05-16.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/videopreview_Ratsversammlung_28052026.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4589020&OTYP=41",
+      "approved": true,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004608"
+      }
+    },
+    {
+      "id": "2026-07-01",
+      "date": "2026-07-01",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-01072026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_01_Juli_2026_-_02-07-21.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_20260701.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775236&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004598"
+      }
+    },
+    {
+      "id": "2026-07-02",
+      "date": "2026-07-02",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-02072026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_02_Juli_2026_-_04-07-32.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_02.07.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775237&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004609"
+      }
+    },
+    {
+      "id": "2026-09-02",
+      "date": "2026-09-02",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-02092026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_02_September_2026_-_02-08-10.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview-Ratsversammlung-02092026.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4828216&OTYP=41",
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004599"
+      }
+    },
+    {
+      "id": "2026-09-03",
+      "date": "2026-09-03",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-03092026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_03_September_2026_-_04-07-39.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/01.1_Geschaeftsbereich_OBM/12_Ref_Kommunikation/Videostream_Ratsversammlung_03.09.2026.png&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": null,
+      "approved": false,
+      "speechesSource": {
+        "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
+        "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004610"
+      }
+    },
+    {
+      "id": "2026-09-30",
+      "date": "2026-09-30",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-30092026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_30_September_2026_-_02-06-35.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videostream_Ratsversammlung_30.09.2026.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4877966&OTYP=41",
+      "approved": false
+    },
+    {
+      "id": "2026-10-28",
+      "date": "2026-10-28",
+      "title": "Ratsversammlung",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_28_Oktober_2026_-_02-06-08.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_28102026.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": null,
+      "approved": false
+    },
+    {
+      "id": "2026-10-29",
+      "date": "2026-10-29",
+      "title": "Ratsversammlung (Fortsetzung)",
+      "youtubeUrl": "",
+      "video": {
+        "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-29-oktober-2026",
+        "label": "Mediathek",
+        "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_29_Oktober_2026_-_04-05-14.smil&videostartoffset=1&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_Stadtrat_OBM_2026-10-29.jpg&untertitelAutoaktiv=1&autostart=0"
+      },
+      "meetingMinutesUrl": null,
+      "approved": false
+    }
+  ],
+  "factions": [
+    {
+      "id": "afd",
+      "name": "AfD",
+      "seats": 13
+    },
+    {
+      "id": "cdu",
+      "name": "CDU",
+      "seats": 13
+    },
+    {
+      "id": "die-linke",
+      "name": "DIE LINKE",
+      "seats": 12
+    },
+    {
+      "id": "buendnis-90-die-gruenen",
+      "name": "Bündnis 90/Die Grünen",
+      "seats": 11
+    },
+    {
+      "id": "bsw",
+      "name": "BSW",
+      "seats": 7
+    },
+    {
+      "id": "spd",
+      "name": "SPD",
+      "seats": 7
+    },
+    {
+      "id": "die-freie-fraktion",
+      "name": "Die Freie Fraktion",
+      "seats": 4
+    },
+    {
+      "id": "fraktionslos",
+      "name": "fraktionslos",
+      "seats": 3
+    },
+    {
+      "id": "oberbuergermeister",
+      "name": "Oberbürgermeister",
+      "seats": 1
+    }
+  ],
+  "parties": [
+    {
+      "id": "cdu",
+      "name": "CDU",
+      "seats": 13
+    },
+    {
+      "id": "afd",
+      "name": "AfD",
+      "seats": 12
+    },
+    {
+      "id": "die-linke",
+      "name": "DIE LINKE",
+      "seats": 12
+    },
+    {
+      "id": "buendnis-90-die-gruenen",
+      "name": "Bündnis 90/Die Grünen",
+      "seats": 11
+    },
+    {
+      "id": "spd",
+      "name": "SPD",
+      "seats": 8
+    },
+    {
+      "id": "bsw",
+      "name": "BSW",
+      "seats": 7
+    },
+    {
+      "id": "die-partei",
+      "name": "Die PARTEI",
+      "seats": 2
+    },
+    {
+      "id": "fdp",
+      "name": "FDP",
+      "seats": 2
+    },
+    {
+      "id": "freie-sachsen",
+      "name": "FREIE SACHSEN",
+      "seats": 1
+    },
+    {
+      "id": "freie-waehler",
+      "name": "FREIE WÄHLER",
+      "seats": 1
+    },
+    {
+      "id": "parteilos",
+      "name": "parteilos",
+      "seats": 1
+    },
+    {
+      "id": "piraten",
+      "name": "PIRATEN",
+      "seats": 1
+    }
+  ],
+  "persons": [
+    {
+      "id": "alexandra-hachmeister",
+      "name": "Alexandra Hachmeister",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "andre-moellmer",
+      "name": "André Möllmer",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "andreas-geisler",
+      "name": "Andreas Geisler",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "andreas-nowak",
+      "name": "Andreas Nowak",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "andreas-schultz",
+      "name": "Andreas Schultz",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "anja-feichtinger",
+      "name": "Anja Feichtinger",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "anna-lisa-moebius",
+      "name": "Anna-Lisa Möbius",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": "2025-06-25",
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2025-06-25",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2025-06-25",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "anne-vollerthun",
+      "name": "Anne Vollerthun",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "beate-ehms",
+      "name": "Beate Ehms",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "bernd-bahr",
+      "name": "Bernd Bahr",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": "2025-04-16",
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2025-04-16",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2025-04-16",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "chantal-schneiss",
+      "name": "Chantal Schneiß",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "christian-kriegel",
+      "name": "Christian Kriegel",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "christina-maerz",
+      "name": "Christina März",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "christoph-neumann",
+      "name": "Christoph Neumann",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "christopher-zenker",
+      "name": "Christopher Zenker",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": "2025-01-31",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": "2025-01-31"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": "2025-01-31"
+        }
+      ]
+    },
+    {
+      "id": "cornelia-falken",
+      "name": "Cornelia Falken",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "danilo-streller",
+      "name": "Danilo Streller",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": "2025-12-17",
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2025-12-17",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2025-12-17",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "elisa-gerbsch",
+      "name": "Dr. Elisa Gerbsch",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "gesine-maertens",
+      "name": "Dr. Gesine Märtens",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "klaus-peter-reinhold",
+      "name": "Dr. med. Klaus-Peter Reinhold",
+      "factionId": "fraktionslos",
+      "partyId": "fdp",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "fdp",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "nicole-schreyer-krieg",
+      "name": "Dr. med. Nicole Schreyer-Krieg",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "olga-naumov",
+      "name": "Dr. Olga Naumov",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "paula-piechotta",
+      "name": "Dr. Paula Piechotta",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": "2025-06-24",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": "2025-06-24"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": "2025-06-24"
+        }
+      ]
+    },
+    {
+      "id": "sabine-heymann",
+      "name": "Dr. Sabine Heymann",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "tobias-peter",
+      "name": "Dr. Tobias Peter",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "volker-kuelow",
+      "name": "Dr. Volker Külow",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "enrico-stange",
+      "name": "Enrico Stange",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "eric-recke",
+      "name": "Eric Recke",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "falk-dossin",
+      "name": "Falk Dossin",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "frank-franke",
+      "name": "Frank Franke",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "franziska-riekewald",
+      "name": "Franziska Riekewald",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "hans-juergen-raque",
+      "name": "Hans-Jürgen Raqué",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "jan-paul-helbig",
+      "name": "Jan-Paul Helbig",
+      "factionId": "die-freie-fraktion",
+      "partyId": "piraten",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "piraten",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "jens-lehmann",
+      "name": "Jens Lehmann",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "jessica-steiner",
+      "name": "Jessica Steiner",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": "2025-01-14",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": "2025-01-14"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": "2025-01-14"
+        }
+      ]
+    },
+    {
+      "id": "joerg-kuehne",
+      "name": "Jörg Kühne",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "julian-schroeder",
+      "name": "Julian Schröder",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "juliane-nagel",
+      "name": "Juliane Nagel",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "juergen-guenter-butz",
+      "name": "Jürgen Günter Butz",
+      "factionId": "afd",
+      "partyId": "freie-sachsen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": "2025-09-17"
+        },
+        {
+          "factionId": "afd",
+          "start": "2025-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "freie-sachsen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "karsten-albrecht",
+      "name": "Karsten Albrecht",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "karsten-fiedler",
+      "name": "Karsten Fiedler",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "katharina-krefft",
+      "name": "Katharina Krefft",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "katharina-subat",
+      "name": "Katharina Subat",
+      "factionId": "die-freie-fraktion",
+      "partyId": "die-partei",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-partei",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "kristina-weyh",
+      "name": "Kristina Weyh",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "lucas-schopphoven",
+      "name": "Lucas Schopphoven",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "mandy-gehrt",
+      "name": "Mandy Gehrt",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marco-goetze",
+      "name": "Marco Götze",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marco-zscherny",
+      "name": "Marco Zscherny",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marcus-muendlein",
+      "name": "Marcus Mündlein",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": "2025-01-16",
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2025-01-16",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2025-01-16",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marius-beyer",
+      "name": "Marius Beyer",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marius-wittwer",
+      "name": "Marius Wittwer",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": "2025-02-12",
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2025-02-12",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2025-02-12",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marsha-richarz",
+      "name": "Marsha Richarz",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "marvin-frommhold",
+      "name": "Marvin Frommhold",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "maximilian-kretschmar",
+      "name": "Maximilian Kretschmar",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": "2025-12-16",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-12-16"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-12-16"
+        }
+      ]
+    },
+    {
+      "id": "michael-weickert",
+      "name": "Michael Weickert",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "nora-reinhardt",
+      "name": "Nora Reinhardt",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": "2026-02-25",
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2026-02-25",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2026-02-25",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "burkhard-jung",
+      "name": "Burkhard Jung",
+      "factionId": "oberbuergermeister",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "oberbuergermeister",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "pia-heine",
+      "name": "Pia Heine",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "getu-abraham",
+      "name": "Prof. Dr. Getu Abraham",
+      "factionId": "fraktionslos",
+      "partyId": "parteilos",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": "2024-11-08"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-11-09",
+          "end": "2025-03-12"
+        },
+        {
+          "factionId": "cdu",
+          "start": "2025-03-13",
+          "end": "2026-09-22"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2026-09-23",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": "2024-11-08"
+        },
+        {
+          "partyId": "parteilos",
+          "start": "2024-11-09",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "ralf-pannowitsch",
+      "name": "Ralf Pannowitsch",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "ringo-haustein",
+      "name": "Ringo Haustein",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": "2025-04-15",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-04-15"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-04-15"
+        }
+      ]
+    },
+    {
+      "id": "rocco-farkas",
+      "name": "Rocco Farkas",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "roland-ulbrich",
+      "name": "Roland Ulbrich",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "sascha-jecht",
+      "name": "Sascha Jecht",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "siegbert-droese",
+      "name": "Siegbert Droese",
+      "factionId": "fraktionslos",
+      "partyId": "afd",
+      "start": null,
+      "end": "2026-01-27",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": "2025-12-31"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2026-01-01",
+          "end": "2026-01-27"
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": "2026-01-27"
+        }
+      ]
+    },
+    {
+      "id": "soeren-pellmann",
+      "name": "Sören Pellmann",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "stefan-artmann",
+      "name": "Stefan Artmann",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "stefan-rieger",
+      "name": "Stefan Rieger",
+      "factionId": "fraktionslos",
+      "partyId": "freie-waehler",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "freie-waehler",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "susanne-scheidereiter",
+      "name": "Susanne Scheidereiter",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "sven-morlok",
+      "name": "Sven Morlok",
+      "factionId": "die-freie-fraktion",
+      "partyId": "fdp",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "fdp",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "sylvia-deubel",
+      "name": "Sylvia Deubel",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "sylvia-herbst-weckel",
+      "name": "Sylvia Herbst-Weckel",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "thomas-kachel",
+      "name": "Thomas Kachel",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "thomas-kumbernuss",
+      "name": "Thomas Kumbernuß",
+      "factionId": "die-freie-fraktion",
+      "partyId": "die-partei",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "die-partei",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "tobias-keller",
+      "name": "Tobias Keller",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "udo-buetow",
+      "name": "Udo Bütow",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "ute-koehler-siegel",
+      "name": "Ute Köhler-Siegel",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partyMemberships": [
+        {
+          "partyId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "sessionId": "2025-12-18",
+  "kind": "beschlussprotokoll",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4406745&OTYP=41",
+  "fetchedAt": "2026-11-11T22:35:49.027Z",
+  "parserVersion": 4,
+  "votes": [
+    {
+      "order": 0,
+      "agendaItemNumber": "18.11",
+      "paperReference": "VIII-DS-01387",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 57,
+      "N": 0,
+      "E": 0
+    },
+    {
+      "order": 1,
+      "agendaItemNumber": "18.11.1",
+      "paperReference": "VIII-DS-01387-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 16,
+      "N": 32,
+      "E": 9
+    },
+    {
+      "order": 2,
+      "agendaItemNumber": "18.15.1",
+      "paperReference": "VIII-DS-01518-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 32,
+      "N": 23,
+      "E": 3
+    },
+    {
+      "order": 3,
+      "agendaItemNumber": "18.28",
+      "paperReference": "VIII-DS-01978-NF-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 41,
+      "N": 0,
+      "E": 17
+    },
+    {
+      "order": 4,
+      "agendaItemNumber": "18.28.1",
+      "paperReference": "VIII-DS-01978-NF-01-ÄA-01",
+      "label": "Abstimmungsergebnis zur Verweisung:",
+      "procedural": false,
+      "J": 12,
+      "N": 33,
+      "E": 12
+    },
+    {
+      "order": 5,
+      "agendaItemNumber": "18.28.1",
+      "paperReference": "VIII-DS-01978-NF-01-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 1:",
+      "procedural": false,
+      "J": 32,
+      "N": 21,
+      "E": 5
+    },
+    {
+      "order": 6,
+      "agendaItemNumber": "18.28.1",
+      "paperReference": "VIII-DS-01978-NF-01-ÄA-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 24,
+      "N": 31,
+      "E": 3
+    },
+    {
+      "order": 7,
+      "agendaItemNumber": "19.3",
+      "paperReference": "VIII-DS-01694-Ifo-01-NF-01",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2 (Änderungsantrag BP4):",
+      "procedural": false,
+      "J": 39,
+      "N": 20,
+      "E": 0
+    },
+    {
+      "order": 8,
+      "agendaItemNumber": "19.3.1",
+      "paperReference": "VIII-DS-01694-Ifo-1-NF-1-ÄA-1",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 26,
+      "N": 27,
+      "E": 6
+    },
+    {
+      "order": 9,
+      "agendaItemNumber": "19.3.1",
+      "paperReference": "VIII-DS-01694-Ifo-1-NF-1-ÄA-1",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 3:",
+      "procedural": false,
+      "J": 26,
+      "N": 27,
+      "E": 6
+    },
+    {
+      "order": 10,
+      "agendaItemNumber": "19.3.1",
+      "paperReference": "VIII-DS-01694-Ifo-1-NF-1-ÄA-1",
+      "label": "Abstimmungsergebnis: zu Beschlusspunkt 4:",
+      "procedural": false,
+      "J": 39,
+      "N": 20,
+      "E": 0
+    }
+  ]
+}

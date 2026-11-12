@@ -1,0 +1,159 @@
+{
+  "sessionId": "2026-09-03",
+  "kind": "agenda-item-pages",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004610",
+  "fetchedAt": "2026-11-11T22:36:38.589Z",
+  "parserVersion": 4,
+  "votes": [
+    {
+      "order": 0,
+      "agendaItemNumber": "11.4",
+      "paperReference": "VIII-DS-03296",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 37,
+      "N": 23,
+      "E": 0
+    },
+    {
+      "order": 1,
+      "agendaItemNumber": "13.20",
+      "paperReference": "VIII-A-02842",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 37,
+      "N": 18,
+      "E": 1
+    },
+    {
+      "order": 2,
+      "agendaItemNumber": "13.22",
+      "paperReference": "VIII-A-02848",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 11,
+      "N": 37,
+      "E": 5
+    },
+    {
+      "order": 3,
+      "agendaItemNumber": "13.24",
+      "paperReference": "VIII-A-02980",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 13,
+      "N": 32,
+      "E": 14
+    },
+    {
+      "order": 4,
+      "agendaItemNumber": "13.25",
+      "paperReference": "VIII-A-03110",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 23,
+      "N": 32,
+      "E": 6
+    },
+    {
+      "order": 5,
+      "agendaItemNumber": "19.9",
+      "paperReference": "VII-DS-09678",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 38,
+      "N": 10,
+      "E": 11
+    },
+    {
+      "order": 6,
+      "agendaItemNumber": "19.9.1",
+      "paperReference": "VII-DS-09678-ÄA-01-NF-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 25,
+      "N": 32,
+      "E": 2
+    },
+    {
+      "order": 7,
+      "agendaItemNumber": "19.13",
+      "paperReference": "VIII-DS-01570",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 57,
+      "N": 0,
+      "E": 2
+    },
+    {
+      "order": 8,
+      "agendaItemNumber": "19.16",
+      "paperReference": "VIII-DS-02229-NF-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 52,
+      "N": 0,
+      "E": 4
+    },
+    {
+      "order": 9,
+      "agendaItemNumber": "19.16.1",
+      "paperReference": "VIII-DS-02229-NF-01-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 27,
+      "N": 23,
+      "E": 7
+    },
+    {
+      "order": 10,
+      "agendaItemNumber": "19.20",
+      "paperReference": "VIII-DS-02865",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 43,
+      "N": 8,
+      "E": 2
+    },
+    {
+      "order": 11,
+      "agendaItemNumber": "19.22",
+      "paperReference": "VIII-DS-02925",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 40,
+      "N": 0,
+      "E": 11
+    },
+    {
+      "order": 12,
+      "agendaItemNumber": "19.22.2",
+      "paperReference": "VIII-DS-02925-ÄA-03",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 18,
+      "N": 29,
+      "E": 7
+    },
+    {
+      "order": 13,
+      "agendaItemNumber": "19.22.3",
+      "paperReference": "VIII-DS-02925-ÄA-04",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 13,
+      "N": 39,
+      "E": 2
+    },
+    {
+      "order": 14,
+      "agendaItemNumber": "20.1.1",
+      "paperReference": "VIII-Ifo-02076-ÄA-01",
+      "label": "Abstimmungsergebnis:",
+      "procedural": false,
+      "J": 23,
+      "N": 26,
+      "E": 0
+    }
+  ]
+}

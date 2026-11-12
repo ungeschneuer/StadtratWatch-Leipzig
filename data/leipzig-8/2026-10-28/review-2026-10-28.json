@@ -1,0 +1,1498 @@
+{
+  "sessionId": "2026-10-28",
+  "generatedAt": "2026-11-11T23:06:28.978Z",
+  "video": {
+    "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_28_Oktober_2026_-_02-06-08.smil/playlist.m3u8",
+    "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026",
+    "available": true
+  },
+  "summary": {
+    "cases": 2,
+    "open": 2,
+    "reviewed": 0
+  },
+  "cases": [
+    {
+      "votingIndex": 10,
+      "open": true,
+      "priority": "hoch",
+      "videoSeconds": 17638,
+      "timecode": "4:53:58",
+      "agendaItemNumber": "19.1.1",
+      "paperReference": "VIII-DS-03309-ÄA-01",
+      "title": "Planungsbeschluss - Komplexmodernisierung der Brüder-Grimm-Schule in der Goldsternstraße 23",
+      "problems": [
+        {
+          "check": "matches-official",
+          "message": "Das amtliche Ergebnis ist 21/22/19, die Tafel zeigt 21/21/19; jemand wurde von Hand gezählt, aber das Verlaufsprotokoll nennt nicht eindeutig, wer.",
+          "detail": "official 21/22/19 for TOP 19.1.1 (VIII-DS-03309-ÄA-01) differs from the board"
+        }
+      ],
+      "board": {
+        "J": 21,
+        "N": 21,
+        "E": 19,
+        "castVotes": 61,
+        "presentMembers": 64
+      },
+      "official": {
+        "J": 21,
+        "N": 22,
+        "E": 19,
+        "agendaItemNumber": "19.1.1",
+        "paperReference": "VIII-DS-03309-ÄA-01",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "19.1.1"
+            ],
+            "paperReference": "VIII-DS-03309-ÄA-01",
+            "label": "Abstimmungsergebnis:",
+            "J": 21,
+            "N": 22,
+            "E": 19
+          }
+        ],
+        "correction": null
+      },
+      "announced": null,
+      "transcript": [
+        {
+          "seconds": 17599.64,
+          "timecode": "4:53:19",
+          "text": "Okay, dann Ihr Botum zum Änderungsantrag.",
+          "highlight": false
+        },
+        {
+          "seconds": 17616.86,
+          "timecode": "4:53:36",
+          "text": "Mit dem Ergebnis 21, 21, 19, unabhängig von diesem Ergebnis, was Ablehnung,",
+          "highlight": false
+        },
+        {
+          "seconds": 17638.11,
+          "timecode": "4:53:58",
+          "text": "Sie konnten nicht abstimmen, heisst?",
+          "highlight": false
+        },
+        {
+          "seconds": 17646.86,
+          "timecode": "4:54:06",
+          "text": "Nein, gut, das ist dann nochmal bekräftigt, die Ablehnung, also 21, 22, 19, unabhängig",
+          "highlight": false
+        },
+        {
+          "seconds": 17654.64,
+          "timecode": "4:54:14",
+          "text": "von diesem Ergebnis werden wir uns der Sache gezielt stellen, ja?",
+          "highlight": false
+        },
+        {
+          "seconds": 17658.88,
+          "timecode": "4:54:18",
+          "text": "Dann kommen wir zur Vorlage selbst, gibt es Gegenstimmen zur Vorlage, Enthaltungen,",
+          "highlight": true
+        },
+        {
+          "seconds": 17666.64,
+          "timecode": "4:54:26",
+          "text": "dann ist einstimmig so beschlossen und ich kürze mal 19, 2 ab, Hans-Kroch-Schule,",
+          "highlight": false
+        },
+        {
+          "seconds": 17675.08,
+          "timecode": "4:54:35",
+          "text": "gibt es hier weiteren Beratungsbedarf, selbe Änderungsantrag, sollen wir noch",
+          "highlight": false
+        },
+        {
+          "seconds": 17684.44,
+          "timecode": "4:54:44",
+          "text": "mal abstimmen, ja, könnt ihr ja zurückziehen, also noch mal bitte ihr Votum",
+          "highlight": false
+        },
+        {
+          "seconds": 17692.36,
+          "timecode": "4:54:52",
+          "text": "zum Änderungsantrag.",
+          "highlight": false
+        },
+        {
+          "seconds": 17705.08,
+          "timecode": "4:55:05",
+          "text": "Und das heisst, konnten alle abstimmen, wer noch nicht?",
+          "highlight": false
+        }
+      ],
+      "neighbours": {
+        "previous": {
+          "votingIndex": 9,
+          "agendaItemNumber": "13.8.1",
+          "title": "24/7 Abfallentsorgung möglich machen",
+          "result": "44/19/1",
+          "timecode": "2:15:44"
+        },
+        "next": {
+          "votingIndex": 11,
+          "agendaItemNumber": "19.2.1",
+          "title": "Planungsbeschluss — Komplexmodernisierung der Hans-Kroch-Schule - Grundschule der Stadt Leipzig, Schulgebäude und Sporthalle im Jöraen-Schmidtchan-Wacn 8",
+          "result": "21/23/19",
+          "timecode": "4:55:17"
+        }
+      },
+      "links": [
+        {
+          "label": "Aufzeichnung in der Mediathek",
+          "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026"
+        },
+        {
+          "label": "Sitzung in ALLRIS (Ergebnisse je TOP)",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004601"
+        },
+        {
+          "label": "TOP 19.1 in ALLRIS",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to020?TOLFDNR=2212834"
+        },
+        {
+          "label": "TOP in OParl",
+          "url": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2212834"
+        },
+        {
+          "label": "Tagesordnung der Sitzung in ALLRIS",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004601"
+        }
+      ],
+      "images": [],
+      "seats": [
+        {
+          "column": 0,
+          "row": 1,
+          "boardName": "Albrecht, Karsten",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/73",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "boardName": "Artmann, Stefan",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000067",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "boardName": "Dossin, Falk",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/385",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "boardName": "Dr. Heymann, Sabine",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/302",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "boardName": "Lehmann, Jens",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
+          "vote": "O",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "boardName": "Möllmer, Andre",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001177",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 7,
+          "boardName": "Nowak, Andreas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001505",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 0,
+          "row": 8,
+          "boardName": "Raque, Hans-Jürgen",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000358",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 9,
+          "boardName": "Schopphoven, Lucas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 10,
+          "boardName": "Schröder, Julian",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014062",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 11,
+          "boardName": "Schultz, Andreas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000726",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 0,
+          "row": 12,
+          "boardName": "Mündlein, Marcus",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000014",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 13,
+          "boardName": "Weickert, Michael",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/83",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 16,
+          "boardName": "Ehms, Beate",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000342",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 17,
+          "boardName": "Falken, Cornelia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001506",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 18,
+          "boardName": "Gehrt, Mandy",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/446",
+          "vote": "O",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 19,
+          "boardName": "Dr. Gerbsch, Elisa",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000821",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 20,
+          "boardName": "Götze, Marco",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/422",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 21,
+          "boardName": "Dr. Külow, Volker",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000891",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "boardName": "Nagel, Juliane",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "boardName": "Dr. Naumov, Olga",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000893",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "boardName": "Pellmann, Sören",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/651",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "boardName": "Riekewald, Franziska",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "boardName": "Scheidereiter, Susanne",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000809",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "boardName": "Stange, Enrico",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1013978",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 8,
+          "boardName": "Beyer, Marius",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000899",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 9,
+          "boardName": "Bütow, Udo",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1001123",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 10,
+          "boardName": "Deubel, Sylvia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 11,
+          "boardName": "Reinhardt, Nora",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001634",
+          "vote": "O",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 12,
+          "boardName": "Farkas, Rocco",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001514",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 13,
+          "boardName": "Fiedler, Karsten",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 14,
+          "boardName": "Hachmeister, Alexandra",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001498",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 1,
+          "row": 15,
+          "boardName": "Keller, Tobias",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 16,
+          "boardName": "Kriegel, Christian",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000321",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 17,
+          "boardName": "Kühne, Jörg",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/565",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 18,
+          "boardName": "Neumann, CHristoph",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000483",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 19,
+          "boardName": "Ulbrich, Roland",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000902",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 20,
+          "boardName": "Butz, Jürgen Günter",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001511",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "boardName": "Frommhold, Marvin",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000960",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "boardName": "Herbst-Weckel, Sylvia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2000356",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "boardName": "Krefft, Katharina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/546",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "boardName": "Dr. Märtens, Gesine",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/333",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "boardName": "Dr. Peter, Tobias",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000898",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "boardName": "Möbius, Anna-Lisa",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001626",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 7,
+          "boardName": "Richarz, Marsha",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2000485",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 8,
+          "boardName": "Schneiß, Chantal",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001036",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 9,
+          "boardName": "Dr. Schreyer-Krieg, Nicole",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 10,
+          "boardName": "Vollerthun, Anne",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014098",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 2,
+          "row": 11,
+          "boardName": "Weyh, Kristina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/364",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 14,
+          "boardName": "Feichtinger, Anja",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000047",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 15,
+          "boardName": "Franke, Frank",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1001119",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 16,
+          "boardName": "Geisler, Andreas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/126",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 17,
+          "boardName": "Heine, Pia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001510",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 18,
+          "boardName": "Köhler-Siegel, Ute",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/223",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 19,
+          "boardName": "März, Christina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000896",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 20,
+          "boardName": "Wittwer, Marius",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014052",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "boardName": "Bahr, Bernd",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001638",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "boardName": "Jecht, Sascha",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001499",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "boardName": "Kachel, Thomas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001576",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "boardName": "Streiler, Danilo",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001600",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "boardName": "Pannowitsch, Ralf",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001502",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "boardName": "Recke, Eric",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001504",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 7,
+          "boardName": "Zscherny, Marco",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001538",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 10,
+          "boardName": "Helbig, Jan-Paul",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000716",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 11,
+          "boardName": "Kumbernuß, Thomas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 12,
+          "boardName": "Morlok, Sven",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/293",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 13,
+          "boardName": "Subat, Katharina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001513",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 16,
+          "boardName": "Prof. Dr. Abraham, Getu",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000895",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 17,
+          "boardName": "Dr. Reinhold, Klaus-Peter",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000903",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 18,
+          "boardName": "Rieger, Stefan",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001509",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 21,
+          "boardName": "Jung, Burkhard",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1011224",
+          "vote": "J",
+          "attendance": "present"
+        }
+      ],
+      "candidates": [
+        {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
+          "boardName": "Lehmann, Jens",
+          "reason": "anwesend, ohne Stimme"
+        },
+        {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/446",
+          "boardName": "Gehrt, Mandy",
+          "reason": "anwesend, ohne Stimme"
+        },
+        {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001634",
+          "boardName": "Reinhardt, Nora",
+          "reason": "anwesend, ohne Stimme"
+        }
+      ],
+      "suggestions": [],
+      "reviews": []
+    },
+    {
+      "votingIndex": 18,
+      "open": true,
+      "priority": "hoch",
+      "videoSeconds": 22267.6,
+      "timecode": "6:11:07",
+      "agendaItemNumber": "19.9.2",
+      "paperReference": "VIII-DS-00989-ÄA-02",
+      "title": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals‘, Gottschedstraße 16, Leipzig (Bestätigung gem. 879 (1) SächsGemO)",
+      "problems": [
+        {
+          "check": "matches-official",
+          "message": "Das amtliche Ergebnis ist 22/39/4, die Tafel zeigt 22/39/2; jemand wurde von Hand gezählt, aber das Verlaufsprotokoll nennt nicht eindeutig, wer.",
+          "detail": "official 22/39/4 for TOP 19.9.2 (VIII-DS-00989-ÄA-02) differs from the board"
+        }
+      ],
+      "board": {
+        "J": 22,
+        "N": 39,
+        "E": 2,
+        "castVotes": 63,
+        "presentMembers": 64
+      },
+      "official": {
+        "J": 22,
+        "N": 39,
+        "E": 4,
+        "agendaItemNumber": "19.9.2",
+        "paperReference": "VIII-DS-00989-ÄA-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "19.9.2"
+            ],
+            "paperReference": "VIII-DS-00989-ÄA-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 22,
+            "N": 39,
+            "E": 4
+          }
+        ],
+        "correction": null
+      },
+      "announced": {
+        "J": 22,
+        "N": 39,
+        "E": 2,
+        "timecode": "6:10:48",
+        "quote": "Ja? Haben alle abstimmen können? Dann ist das Ergebnis 22 zu 39 zu 2 abgelehnt. Dann kommen wir auf Wunsch der Fraktion CDU noch einmal zum Sondervotum jetzt"
+      },
+      "transcript": [
+        {
+          "seconds": 22232.1,
+          "timecode": "6:10:32",
+          "text": "Also, ich bitte Sie ganz herzlich um Zustimmung zur Vorlage, aber wir kommen",
+          "highlight": false
+        },
+        {
+          "seconds": 22236.3,
+          "timecode": "6:10:36",
+          "text": "jetzt erst einmal zu dem Änderungsantrag der AfD-Fraktion. Bitte Ihr Votum zum",
+          "highlight": false
+        },
+        {
+          "seconds": 22242.25,
+          "timecode": "6:10:42",
+          "text": "AfD-Antrag.",
+          "highlight": false
+        },
+        {
+          "seconds": 22248.98,
+          "timecode": "6:10:48",
+          "text": "Ja? Haben alle abstimmen können? Dann ist das Ergebnis 22 zu 39 zu 2 abgelehnt.",
+          "highlight": true
+        },
+        {
+          "seconds": 22270.3,
+          "timecode": "6:11:10",
+          "text": "Dann kommen wir auf Wunsch der Fraktion CDU noch einmal zum Sondervotum jetzt",
+          "highlight": false
+        },
+        {
+          "seconds": 22275.67,
+          "timecode": "6:11:15",
+          "text": "auch über den Änderungsantrag von Fraktion Bündnis 90 die Grünen.",
+          "highlight": false
+        },
+        {
+          "seconds": 22279.14,
+          "timecode": "6:11:19",
+          "text": "Ihr Votum bitte.",
+          "highlight": false
+        },
+        {
+          "seconds": 22294.3,
+          "timecode": "6:11:34",
+          "text": "Konnten alle und das Ergebnis lautet 33 zu 26 zu 4 und bekommen zur Vorlage",
+          "highlight": true
+        },
+        {
+          "seconds": 22302.55,
+          "timecode": "6:11:42",
+          "text": "selbst und ich bitte auch hier um ihr Votum.",
+          "highlight": false
+        },
+        {
+          "seconds": 22322.14,
+          "timecode": "6:12:02",
+          "text": "Und das Ergebnis lautet 34 zu 24 zu 5 so beschlossen.",
+          "highlight": true
+        },
+        {
+          "seconds": 22329.9,
+          "timecode": "6:12:09",
+          "text": "Herzlichen Dank.",
+          "highlight": false
+        }
+      ],
+      "neighbours": {
+        "previous": {
+          "votingIndex": 17,
+          "agendaItemNumber": null,
+          "title": "Abstimmung",
+          "result": "43/11/5",
+          "timecode": "6:06:11"
+        },
+        "next": {
+          "votingIndex": 19,
+          "agendaItemNumber": "19.9.1",
+          "title": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals“, Gottschedstraße 16, Leipzig (Bestätigung gem. 879 (1) SächeGam0O)}",
+          "result": "33/26/4",
+          "timecode": "6:11:39"
+        }
+      },
+      "links": [
+        {
+          "label": "Aufzeichnung in der Mediathek",
+          "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026"
+        },
+        {
+          "label": "Sitzung in ALLRIS (Ergebnisse je TOP)",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004601"
+        },
+        {
+          "label": "TOP 19.9.2 in ALLRIS",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to020?TOLFDNR=2216034"
+        },
+        {
+          "label": "TOP in OParl",
+          "url": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216034"
+        },
+        {
+          "label": "Tagesordnung der Sitzung in ALLRIS",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004601"
+        }
+      ],
+      "images": [],
+      "seats": [
+        {
+          "column": 0,
+          "row": 1,
+          "boardName": "Albrecht, Karsten",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/73",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "boardName": "Artmann, Stefan",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000067",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "boardName": "Dossin, Falk",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/385",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "boardName": "Dr. Heymann, Sabine",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/302",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "boardName": "Lehmann, Jens",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "boardName": "Möllmer, Andre",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001177",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 7,
+          "boardName": "Nowak, Andreas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001505",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 0,
+          "row": 8,
+          "boardName": "Raque, Hans-Jürgen",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000358",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 9,
+          "boardName": "Schopphoven, Lucas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 10,
+          "boardName": "Schröder, Julian",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014062",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 11,
+          "boardName": "Schultz, Andreas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000726",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 0,
+          "row": 12,
+          "boardName": "Mündlein, Marcus",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000014",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 13,
+          "boardName": "Weickert, Michael",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/83",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 16,
+          "boardName": "Ehms, Beate",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000342",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 17,
+          "boardName": "Falken, Cornelia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001506",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 18,
+          "boardName": "Gehrt, Mandy",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/446",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 19,
+          "boardName": "Dr. Gerbsch, Elisa",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000821",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 20,
+          "boardName": "Götze, Marco",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/422",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 0,
+          "row": 21,
+          "boardName": "Dr. Külow, Volker",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000891",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "boardName": "Nagel, Juliane",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "boardName": "Dr. Naumov, Olga",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000893",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "boardName": "Pellmann, Sören",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/651",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "boardName": "Riekewald, Franziska",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "boardName": "Scheidereiter, Susanne",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000809",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "boardName": "Stange, Enrico",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1013978",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 8,
+          "boardName": "Beyer, Marius",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000899",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 9,
+          "boardName": "Bütow, Udo",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1001123",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 10,
+          "boardName": "Deubel, Sylvia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 11,
+          "boardName": "Reinhardt, Nora",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001634",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 12,
+          "boardName": "Farkas, Rocco",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001514",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 13,
+          "boardName": "Fiedler, Karsten",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 14,
+          "boardName": "Hachmeister, Alexandra",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001498",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 1,
+          "row": 15,
+          "boardName": "Keller, Tobias",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 16,
+          "boardName": "Kriegel, Christian",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000321",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 17,
+          "boardName": "Kühne, Jörg",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/565",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 18,
+          "boardName": "Neumann, CHristoph",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000483",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 19,
+          "boardName": "Ulbrich, Roland",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000902",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 1,
+          "row": 20,
+          "boardName": "Butz, Jürgen Günter",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001511",
+          "vote": "J",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "boardName": "Frommhold, Marvin",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000960",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "boardName": "Herbst-Weckel, Sylvia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2000356",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "boardName": "Krefft, Katharina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/546",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "boardName": "Dr. Märtens, Gesine",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/333",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "boardName": "Dr. Peter, Tobias",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000898",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "boardName": "Möbius, Anna-Lisa",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001626",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 7,
+          "boardName": "Richarz, Marsha",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2000485",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 8,
+          "boardName": "Schneiß, Chantal",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001036",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 9,
+          "boardName": "Dr. Schreyer-Krieg, Nicole",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 10,
+          "boardName": "Vollerthun, Anne",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014098",
+          "vote": "O",
+          "attendance": "absent"
+        },
+        {
+          "column": 2,
+          "row": 11,
+          "boardName": "Weyh, Kristina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/364",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 14,
+          "boardName": "Feichtinger, Anja",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000047",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 15,
+          "boardName": "Franke, Frank",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1001119",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 16,
+          "boardName": "Geisler, Andreas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/126",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 17,
+          "boardName": "Heine, Pia",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001510",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 18,
+          "boardName": "Köhler-Siegel, Ute",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/223",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 19,
+          "boardName": "März, Christina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000896",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 2,
+          "row": 20,
+          "boardName": "Wittwer, Marius",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014052",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "boardName": "Bahr, Bernd",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001638",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "boardName": "Jecht, Sascha",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001499",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "boardName": "Kachel, Thomas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001576",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "boardName": "Streiler, Danilo",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001600",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "boardName": "Pannowitsch, Ralf",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001502",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "boardName": "Recke, Eric",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001504",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 7,
+          "boardName": "Zscherny, Marco",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001538",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 10,
+          "boardName": "Helbig, Jan-Paul",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000716",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 11,
+          "boardName": "Kumbernuß, Thomas",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 12,
+          "boardName": "Morlok, Sven",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/293",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 13,
+          "boardName": "Subat, Katharina",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001513",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 16,
+          "boardName": "Prof. Dr. Abraham, Getu",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000895",
+          "vote": "N",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 17,
+          "boardName": "Dr. Reinhold, Klaus-Peter",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000903",
+          "vote": "O",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 18,
+          "boardName": "Rieger, Stefan",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001509",
+          "vote": "E",
+          "attendance": "present"
+        },
+        {
+          "column": 3,
+          "row": 21,
+          "boardName": "Jung, Burkhard",
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1011224",
+          "vote": "N",
+          "attendance": "present"
+        }
+      ],
+      "candidates": [
+        {
+          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000903",
+          "boardName": "Dr. Reinhold, Klaus-Peter",
+          "reason": "anwesend, ohne Stimme"
+        }
+      ],
+      "suggestions": [],
+      "reviews": []
+    }
+  ]
+}
