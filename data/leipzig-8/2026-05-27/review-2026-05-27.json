@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-05-27",
-  "generatedAt": "2026-11-11T23:06:28.878Z",
+  "generatedAt": "2026-11-12T16:59:33.075Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_27_Mai_2026.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-27052026",
@@ -182,15 +182,15 @@
       "images": [
         {
           "label": "Überschrift",
-          "url": "https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-2026-05-27/2026-05-27-031-heading.png"
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-05-27/2026-05-27-031-heading.png"
         },
         {
           "label": "Ergebnis",
-          "url": "https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-2026-05-27/2026-05-27-031-bars.png"
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-05-27/2026-05-27-031-bars.png"
         },
         {
           "label": "Ganze Tafel",
-          "url": "https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-2026-05-27/2026-05-27-031-board.png"
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-05-27/2026-05-27-031-board.png"
         }
       ],
       "seats": [

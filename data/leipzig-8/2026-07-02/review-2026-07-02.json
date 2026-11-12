@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-07-02",
-  "generatedAt": "2026-11-11T23:06:28.920Z",
+  "generatedAt": "2026-11-12T16:59:33.122Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_02_Juli_2026_-_04-07-32.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-02072026",
@@ -227,15 +227,15 @@
       "images": [
         {
           "label": "Überschrift",
-          "url": "https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-2026-07-02/2026-07-02-006-heading.png"
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-02/2026-07-02-006-heading.png"
         },
         {
           "label": "Ergebnis",
-          "url": "https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-2026-07-02/2026-07-02-006-bars.png"
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-02/2026-07-02-006-bars.png"
         },
         {
           "label": "Ganze Tafel",
-          "url": "https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-2026-07-02/2026-07-02-006-board.png"
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-02/2026-07-02-006-board.png"
         }
       ],
       "seats": [
