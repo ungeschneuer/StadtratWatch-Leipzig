@@ -142,7 +142,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Statuspunkt im 1080p-Frame:** Ein Ergebnisbalken muss mindestens drei Viertel einer Tabellenzeile hoch sein (Balken 32–38 px, Punkt 13–17 px). Testbild `board-2026-09-status-dot.png`.
 - [x] **Irreführender Kommentar in `extract-session.ts`:** richtiggestellt (360p und 1080p zeitgleich), Suche als Rückfall für Überblendungen behalten.
 - [x] **7. Prüfung durch Menschen:** Route `/leipzig` in `session-review` (GitHub Pages), Prüffälle in `review-<datum>.json`, Benachrichtigung per Issue je Sitzung, Speichern als Commit in `corrections-<datum>.json`, Nachprüfung per Workflow. Freigabe per PR-Merge.
-  - [ ] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Schreibrechte der Prüfenden, Variable `LEIPZIG_REVIEWERS`.
+  - [x] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Variable `LEIPZIG_REVIEWERS=ungeschneuer` (12.11.2026; vorerst prüft nur der Betreiber, weitere Prüfende brauchen Schreibrechte).
   - [ ] Workflows einmal auf GitHub durchlaufen lassen (bisher nur lokal getestet).
   - [ ] Die 17 offenen Fälle entscheiden.
 - [ ] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
@@ -179,7 +179,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [ ] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json`
   - [ ] Lizenz und Provenienz in jeder Antwort: `meta` nennt noch pauschal CC0, auch für Angaben aus OParl (CC BY 4.0)
 - [x] **Hosting:** GitHub Pages über `deploy.yml`, Seite und Prüfoberfläche (`/review/`) in einem Artefakt; Basispfad über `SITE_BASE`, alle Links über `sitePath()`.
-  - [ ] Einmalig einrichten: Pages-Quelle „GitHub Actions“, erster Lauf von `deploy.yml`, private Sicherheitsmeldungen aktivieren (`SECURITY.md`).
+  - [ ] Einmalig einrichten: private Sicherheitsmeldungen aktivieren (`SECURITY.md`). Pages-Quelle und erster Lauf von `deploy.yml` erledigt (12.11.2026).
 - [x] **Workflows:** `leipzig-members`, `leipzig-recordings`, `leipzig-votings`, `leipzig-review-recheck`, `leipzig-review-reminder`, `deploy`. Daten kommen per PR, Fehler als Issue.
 - [x] README, AGENTS.md, GLOSSARY.md, API-Doku und arc42 für Leipzig (12.11.2026).
 - [ ] **Dokumentation:** `DATA.md` (Codebook, Methodik, Grenzen: mündliche Korrekturen, Abstimmungen ohne Tafel, Liste ≠ Parteimitgliedschaft, Verfügbarkeit der Videos).
@@ -253,7 +253,7 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Magdeburg-Daten:** nur Leipzig, Magdeburg entfernt, Hinweis auf upstream bleibt (12.11.2026).
 - [ ] **Name der Wahlperiode:** Vorläufig „Leipzig – Wahlperiode VIII“, damit sie sich von Magdeburgs „Wahlperiode VIII“ unterscheidet. Passt das, oder wird mit nur einer Stadt „Wahlperiode VIII“ daraus?
 - [x] **Hosting und Adresse:** GitHub Pages ohne eigene Domain; CloudFront- und Typesense-Variablen entfallen (12.11.2026).
-- [ ] **Prüfende:** Wer prüft die offenen Fälle (`LEIPZIG_REVIEWERS`), und wer bekommt Schreibrechte?
+- [x] **Prüfende:** vorerst nur Marcel Schneuer (`LEIPZIG_REVIEWERS=ungeschneuer`, 12.11.2026).
 
 ### Arbeitsweise im Repository
 - [x] **Branches und Pull Requests:** Code getrennt per PR nach `main` (`leipzig/code`), Daten über `data/leipzig-votings` (12.11.2026). Die Bereinigung der Prüfvermerke betrifft Daten, die nie veröffentlicht waren, und bleibt deshalb im Daten-PR.
