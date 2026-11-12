@@ -1,0 +1,21 @@
+[
+  {
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1011224",
+    "party": "SPD",
+    "reason": "Der Oberbürgermeister kandidierte nicht für den Stadtrat und steht daher nicht in der Bewerberliste 2024.",
+    "source": "Open-Data-Portal Leipzig, Oberbürgermeisterwahl 2020 (Kandidat „Burkhard Jung“, Partei „SPD“): https://opendata.leipzig.de/dataset/oberburgermeisterwahl-2020-reprasentative-nachwahlbefragung"
+  },
+  {
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000998",
+    "exclude": true,
+    "reason": "OParl führt eine Ratsmitgliedschaft nur für den 18.09.2024 (Rolle „Mitglied“), ohne Fraktion; auf keiner Abstimmungstafel der Wahlperiode. Das Mandat wurde offenbar nicht angetreten.",
+    "source": "OParl-Mitgliedschaften der Ratsversammlung (organizations/gr/2387); data/leipzig-8/*/votes-*.csv"
+  },
+  {
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000483",
+    "name": "Christoph Neumann",
+    "givenName": "Christoph",
+    "reason": "Tippfehler im Vornamen in OParl („CHristoph“).",
+    "source": "Abstimmungstafel der Aufzeichnungen („Neumann, Christoph“)"
+  }
+]

@@ -1,0 +1,1936 @@
+{
+  "parliamentPeriodId": "leipzig-8",
+  "generatedAt": "2026-11-12T07:52:54.768Z",
+  "sources": [
+    {
+      "name": "Ratsinformationssystem der Stadt Leipzig (OParl): Mitgliedschaften, Personen, Fraktionen",
+      "url": "https://www.leipzig.sitzung-online.de/oparl/bodies/2387",
+      "license": "CC BY 4.0, Stadt Leipzig"
+    },
+    {
+      "name": "Open-Data-Portal Leipzig: Stadtratswahl 2024, Bewerberinnen und Bewerber",
+      "url": "https://opendata.leipzig.de/dataset/stadtratswahl-2024-bewerberinnen-und-bewerber",
+      "license": "Datenlizenz Deutschland – Namensnennung 2.0, Stadt Leipzig"
+    }
+  ],
+  "factions": [
+    {
+      "id": "afd",
+      "name": "AfD",
+      "seats": 13,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008",
+      "oparlName": "AfD-Fraktion"
+    },
+    {
+      "id": "cdu",
+      "name": "CDU",
+      "seats": 13,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2241",
+      "oparlName": "CDU-Fraktion"
+    },
+    {
+      "id": "die-linke",
+      "name": "DIE LINKE",
+      "seats": 12,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239",
+      "oparlName": "Fraktion DIE LINKE"
+    },
+    {
+      "id": "buendnis-90-die-gruenen",
+      "name": "Bündnis 90/Die Grünen",
+      "seats": 11,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2243",
+      "oparlName": "Fraktion Bündnis 90/Die Grünen"
+    },
+    {
+      "id": "bsw",
+      "name": "BSW",
+      "seats": 7,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041",
+      "oparlName": "Fraktion BSW"
+    },
+    {
+      "id": "spd",
+      "name": "SPD",
+      "seats": 7,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2242",
+      "oparlName": "SPD-Fraktion"
+    },
+    {
+      "id": "die-freie-fraktion",
+      "name": "Die Freie Fraktion",
+      "seats": 4,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000040",
+      "oparlName": "Die Freie Fraktion"
+    },
+    {
+      "id": "fraktionslos",
+      "name": "fraktionslos",
+      "seats": 3,
+      "oparlId": null,
+      "oparlName": null
+    },
+    {
+      "id": "oberbuergermeister",
+      "name": "Oberbürgermeister",
+      "seats": 1,
+      "oparlId": null,
+      "oparlName": null
+    }
+  ],
+  "parties": [
+    {
+      "id": "cdu",
+      "name": "CDU",
+      "seats": 13
+    },
+    {
+      "id": "afd",
+      "name": "AfD",
+      "seats": 12
+    },
+    {
+      "id": "die-linke",
+      "name": "DIE LINKE",
+      "seats": 12
+    },
+    {
+      "id": "buendnis-90-die-gruenen",
+      "name": "Bündnis 90/Die Grünen",
+      "seats": 11
+    },
+    {
+      "id": "spd",
+      "name": "SPD",
+      "seats": 9
+    },
+    {
+      "id": "bsw",
+      "name": "BSW",
+      "seats": 7
+    },
+    {
+      "id": "die-partei",
+      "name": "Die PARTEI",
+      "seats": 2
+    },
+    {
+      "id": "fdp",
+      "name": "FDP",
+      "seats": 2
+    },
+    {
+      "id": "freie-sachsen",
+      "name": "FREIE SACHSEN",
+      "seats": 1
+    },
+    {
+      "id": "freie-waehler",
+      "name": "FREIE WÄHLER",
+      "seats": 1
+    },
+    {
+      "id": "piraten",
+      "name": "PIRATEN",
+      "seats": 1
+    }
+  ],
+  "persons": [
+    {
+      "id": "alexandra-hachmeister",
+      "name": "Alexandra Hachmeister",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001498",
+      "familyName": "Hachmeister",
+      "givenName": "Alexandra",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "andre-moellmer",
+      "name": "André Möllmer",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001177",
+      "familyName": "Möllmer",
+      "givenName": "André",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "andreas-geisler",
+      "name": "Andreas Geisler",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/126",
+      "familyName": "Geisler",
+      "givenName": "Andreas",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "andreas-nowak",
+      "name": "Andreas Nowak",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001505",
+      "familyName": "Nowak",
+      "givenName": "Andreas",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "andreas-schultz",
+      "name": "Andreas Schultz",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000726",
+      "familyName": "Schultz",
+      "givenName": "Andreas",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "anja-feichtinger",
+      "name": "Anja Feichtinger",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000047",
+      "familyName": "Feichtinger",
+      "givenName": "Anja",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "anna-lisa-moebius",
+      "name": "Anna-Lisa Möbius",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": "2025-06-25",
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001626",
+      "familyName": "Möbius",
+      "givenName": "Anna-Lisa",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2025-06-25",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "anne-vollerthun",
+      "name": "Anne Vollerthun",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014098",
+      "familyName": "Vollerthun",
+      "givenName": "Anne",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "beate-ehms",
+      "name": "Beate Ehms",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000342",
+      "familyName": "Ehms",
+      "givenName": "Beate",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "bernd-bahr",
+      "name": "Bernd Bahr",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": "2025-04-16",
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001638",
+      "familyName": "Bahr",
+      "givenName": "Bernd",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2025-04-16",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "chantal-schneiss",
+      "name": "Chantal Schneiß",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001036",
+      "familyName": "Schneiß",
+      "givenName": "Chantal",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "christian-kriegel",
+      "name": "Christian Kriegel",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000321",
+      "familyName": "Kriegel",
+      "givenName": "Christian",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "christina-maerz",
+      "name": "Christina März",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000896",
+      "familyName": "März",
+      "givenName": "Christina",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "christoph-neumann",
+      "name": "Christoph Neumann",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000483",
+      "familyName": "Neumann",
+      "givenName": "Christoph",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "christopher-zenker",
+      "name": "Christopher Zenker",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": "2025-01-31",
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000003",
+      "familyName": "Zenker",
+      "givenName": "Christopher",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": "2025-01-31"
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "cornelia-falken",
+      "name": "Cornelia Falken",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001506",
+      "familyName": "Falken",
+      "givenName": "Cornelia",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "danilo-streller",
+      "name": "Danilo Streller",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": "2025-12-17",
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001600",
+      "familyName": "Streller",
+      "givenName": "Danilo",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2025-12-17",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "elisa-gerbsch",
+      "name": "Dr. Elisa Gerbsch",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000821",
+      "familyName": "Gerbsch",
+      "givenName": "Elisa",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "gesine-maertens",
+      "name": "Dr. Gesine Märtens",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/333",
+      "familyName": "Märtens",
+      "givenName": "Gesine",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "klaus-peter-reinhold",
+      "name": "Dr. med. Klaus-Peter Reinhold",
+      "factionId": "fraktionslos",
+      "partyId": "fdp",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000903",
+      "familyName": "Reinhold",
+      "givenName": "Klaus-Peter",
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Freie Demokratische Partei"
+      }
+    },
+    {
+      "id": "nicole-schreyer-krieg",
+      "name": "Dr. med. Nicole Schreyer-Krieg",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
+      "familyName": "Schreyer-Krieg",
+      "givenName": "Nicole",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "former-name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "olga-naumov",
+      "name": "Dr. Olga Naumov",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000893",
+      "familyName": "Naumov",
+      "givenName": "Olga",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "paula-piechotta",
+      "name": "Dr. Paula Piechotta",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": "2025-06-24",
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001507",
+      "familyName": "Piechotta",
+      "givenName": "Paula",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": "2025-06-24"
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "sabine-heymann",
+      "name": "Dr. Sabine Heymann",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/302",
+      "familyName": "Heymann",
+      "givenName": "Sabine",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "tobias-peter",
+      "name": "Dr. Tobias Peter",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000898",
+      "familyName": "Peter",
+      "givenName": "Tobias",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "volker-kuelow",
+      "name": "Dr. Volker Külow",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000891",
+      "familyName": "Külow",
+      "givenName": "Volker",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "enrico-stange",
+      "name": "Enrico Stange",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1013978",
+      "familyName": "Stange",
+      "givenName": "Enrico",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "eric-recke",
+      "name": "Eric Recke",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001504",
+      "familyName": "Recke",
+      "givenName": "Eric",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "falk-dossin",
+      "name": "Falk Dossin",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/385",
+      "familyName": "Dossin",
+      "givenName": "Falk",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "frank-franke",
+      "name": "Frank Franke",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1001119",
+      "familyName": "Franke",
+      "givenName": "Frank",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "franziska-riekewald",
+      "name": "Franziska Riekewald",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
+      "familyName": "Riekewald",
+      "givenName": "Franziska",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "hans-juergen-raque",
+      "name": "Hans-Jürgen Raqué",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000358",
+      "familyName": "Raqué",
+      "givenName": "Hans-Jürgen",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "jan-paul-helbig",
+      "name": "Jan-Paul Helbig",
+      "factionId": "die-freie-fraktion",
+      "partyId": "piraten",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000716",
+      "familyName": "Helbig",
+      "givenName": "Jan-Paul",
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Piratenpartei Deutschland"
+      }
+    },
+    {
+      "id": "jens-lehmann",
+      "name": "Jens Lehmann",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
+      "familyName": "Lehmann",
+      "givenName": "Jens",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "jessica-steiner",
+      "name": "Jessica Steiner",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": "2025-01-14",
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000368",
+      "familyName": "Steiner",
+      "givenName": "Jessica",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": "2025-01-14"
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "joerg-kuehne",
+      "name": "Jörg Kühne",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/565",
+      "familyName": "Kühne",
+      "givenName": "Jörg",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "julian-schroeder",
+      "name": "Julian Schröder",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014062",
+      "familyName": "Schröder",
+      "givenName": "Julian",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "juliane-nagel",
+      "name": "Juliane Nagel",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+      "familyName": "Nagel",
+      "givenName": "Juliane",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "juergen-guenter-butz",
+      "name": "Jürgen Günter Butz",
+      "factionId": "afd",
+      "partyId": "freie-sachsen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001511",
+      "familyName": "Butz",
+      "givenName": "Jürgen Günter",
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": "2025-09-17"
+        },
+        {
+          "factionId": "afd",
+          "start": "2025-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "FREIE SACHSEN"
+      }
+    },
+    {
+      "id": "karsten-albrecht",
+      "name": "Karsten Albrecht",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/73",
+      "familyName": "Albrecht",
+      "givenName": "Karsten",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "karsten-fiedler",
+      "name": "Karsten Fiedler",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
+      "familyName": "Fiedler",
+      "givenName": "Karsten",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "katharina-krefft",
+      "name": "Katharina Krefft",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/546",
+      "familyName": "Krefft",
+      "givenName": "Katharina",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "katharina-subat",
+      "name": "Katharina Subat",
+      "factionId": "die-freie-fraktion",
+      "partyId": "die-partei",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001513",
+      "familyName": "Subat",
+      "givenName": "Katharina",
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Partei für Arbeit Rechtsstaat Tierschutz Elitenförderung und basisdemokratische Initiative"
+      }
+    },
+    {
+      "id": "kristina-weyh",
+      "name": "Kristina Weyh",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/364",
+      "familyName": "Weyh",
+      "givenName": "Kristina",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "lucas-schopphoven",
+      "name": "Lucas Schopphoven",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
+      "familyName": "Schopphoven",
+      "givenName": "Lucas",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "mandy-gehrt",
+      "name": "Mandy Gehrt",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/446",
+      "familyName": "Gehrt",
+      "givenName": "Mandy",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "marco-goetze",
+      "name": "Marco Götze",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/422",
+      "familyName": "Götze",
+      "givenName": "Marco",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "marco-zscherny",
+      "name": "Marco Zscherny",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001538",
+      "familyName": "Zscherny",
+      "givenName": "Marco",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "marcus-muendlein",
+      "name": "Marcus Mündlein",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": "2025-01-16",
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000014",
+      "familyName": "Mündlein",
+      "givenName": "Marcus",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2025-01-16",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "marius-beyer",
+      "name": "Marius Beyer",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000899",
+      "familyName": "Beyer",
+      "givenName": "Marius",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "marius-wittwer",
+      "name": "Marius Wittwer",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": "2025-02-12",
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1014052",
+      "familyName": "Wittwer",
+      "givenName": "Marius",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2025-02-12",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "marsha-richarz",
+      "name": "Marsha Richarz",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2000485",
+      "familyName": "Richarz",
+      "givenName": "Marsha",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "marvin-frommhold",
+      "name": "Marvin Frommhold",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000960",
+      "familyName": "Frommhold",
+      "givenName": "Marvin",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "maximilian-kretschmar",
+      "name": "Maximilian Kretschmar",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": "2025-12-16",
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001500",
+      "familyName": "Kretschmar",
+      "givenName": "Maximilian",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-12-16"
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "michael-weickert",
+      "name": "Michael Weickert",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/83",
+      "familyName": "Weickert",
+      "givenName": "Michael",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "nora-reinhardt",
+      "name": "Nora Reinhardt",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": "2026-02-25",
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001634",
+      "familyName": "Reinhardt",
+      "givenName": "Nora",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2026-02-25",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "burkhard-jung",
+      "name": "Burkhard Jung",
+      "factionId": "oberbuergermeister",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1011224",
+      "familyName": "Jung",
+      "givenName": "Burkhard",
+      "factionMemberships": [
+        {
+          "factionId": "oberbuergermeister",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "override",
+        "reason": "Der Oberbürgermeister kandidierte nicht für den Stadtrat und steht daher nicht in der Bewerberliste 2024.",
+        "source": "Open-Data-Portal Leipzig, Oberbürgermeisterwahl 2020 (Kandidat „Burkhard Jung“, Partei „SPD“): https://opendata.leipzig.de/dataset/oberburgermeisterwahl-2020-reprasentative-nachwahlbefragung"
+      }
+    },
+    {
+      "id": "pia-heine",
+      "name": "Pia Heine",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001510",
+      "familyName": "Heine",
+      "givenName": "Pia",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "getu-abraham",
+      "name": "Prof. Dr. Getu Abraham",
+      "factionId": "fraktionslos",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000895",
+      "familyName": "Abraham",
+      "givenName": "Getu",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": "2024-11-08"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-11-09",
+          "end": "2025-03-12"
+        },
+        {
+          "factionId": "cdu",
+          "start": "2025-03-13",
+          "end": "2026-09-22"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2026-09-23",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    },
+    {
+      "id": "ralf-pannowitsch",
+      "name": "Ralf Pannowitsch",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001502",
+      "familyName": "Pannowitsch",
+      "givenName": "Ralf",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "ringo-haustein",
+      "name": "Ringo Haustein",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": "2025-04-15",
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001497",
+      "familyName": "Haustein",
+      "givenName": "Ringo",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": "2025-04-15"
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "rocco-farkas",
+      "name": "Rocco Farkas",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001514",
+      "familyName": "Farkas",
+      "givenName": "Rocco",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "roland-ulbrich",
+      "name": "Roland Ulbrich",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000902",
+      "familyName": "Ulbrich",
+      "givenName": "Roland",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "sascha-jecht",
+      "name": "Sascha Jecht",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001499",
+      "familyName": "Jecht",
+      "givenName": "Sascha",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "siegbert-droese",
+      "name": "Siegbert Droese",
+      "factionId": "fraktionslos",
+      "partyId": "afd",
+      "start": null,
+      "end": "2026-01-27",
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000526",
+      "familyName": "Droese",
+      "givenName": "Siegbert",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": "2025-12-31"
+        },
+        {
+          "factionId": "fraktionslos",
+          "start": "2026-01-01",
+          "end": "2026-01-27"
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "soeren-pellmann",
+      "name": "Sören Pellmann",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/651",
+      "familyName": "Pellmann",
+      "givenName": "Sören",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "stefan-artmann",
+      "name": "Stefan Artmann",
+      "factionId": "cdu",
+      "partyId": "cdu",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000067",
+      "familyName": "Artmann",
+      "givenName": "Stefan",
+      "factionMemberships": [
+        {
+          "factionId": "cdu",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Christlich Demokratische Union Deutschlands"
+      }
+    },
+    {
+      "id": "stefan-rieger",
+      "name": "Stefan Rieger",
+      "factionId": "fraktionslos",
+      "partyId": "freie-waehler",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001509",
+      "familyName": "Rieger",
+      "givenName": "Stefan",
+      "factionMemberships": [
+        {
+          "factionId": "fraktionslos",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "WVL - Wählervereinigung Leipzig (FREIE WÄHLER) e.V."
+      }
+    },
+    {
+      "id": "susanne-scheidereiter",
+      "name": "Susanne Scheidereiter",
+      "factionId": "die-linke",
+      "partyId": "die-linke",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000809",
+      "familyName": "Scheidereiter",
+      "givenName": "Susanne",
+      "factionMemberships": [
+        {
+          "factionId": "die-linke",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "DIE LINKE"
+      }
+    },
+    {
+      "id": "sven-morlok",
+      "name": "Sven Morlok",
+      "factionId": "die-freie-fraktion",
+      "partyId": "fdp",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/293",
+      "familyName": "Morlok",
+      "givenName": "Sven",
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Freie Demokratische Partei"
+      }
+    },
+    {
+      "id": "sylvia-deubel",
+      "name": "Sylvia Deubel",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
+      "familyName": "Deubel",
+      "givenName": "Sylvia",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "sylvia-herbst-weckel",
+      "name": "Sylvia Herbst-Weckel",
+      "factionId": "buendnis-90-die-gruenen",
+      "partyId": "buendnis-90-die-gruenen",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2000356",
+      "familyName": "Herbst-Weckel",
+      "givenName": "Sylvia",
+      "factionMemberships": [
+        {
+          "factionId": "buendnis-90-die-gruenen",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "BÜNDNIS 90/DIE GRÜNEN"
+      }
+    },
+    {
+      "id": "thomas-kachel",
+      "name": "Thomas Kachel",
+      "factionId": "bsw",
+      "partyId": "bsw",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001576",
+      "familyName": "Kachel",
+      "givenName": "Thomas",
+      "factionMemberships": [
+        {
+          "factionId": "bsw",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Bündnis Sahra Wagenknecht - Vernunft und Gerechtigkeit"
+      }
+    },
+    {
+      "id": "thomas-kumbernuss",
+      "name": "Thomas Kumbernuß",
+      "factionId": "die-freie-fraktion",
+      "partyId": "die-partei",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
+      "familyName": "Kumbernuß",
+      "givenName": "Thomas",
+      "factionMemberships": [
+        {
+          "factionId": "die-freie-fraktion",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Partei für Arbeit Rechtsstaat Tierschutz Elitenförderung und basisdemokratische Initiative"
+      }
+    },
+    {
+      "id": "tobias-keller",
+      "name": "Tobias Keller",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
+      "familyName": "Keller",
+      "givenName": "Tobias",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "udo-buetow",
+      "name": "Udo Bütow",
+      "factionId": "afd",
+      "partyId": "afd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1001123",
+      "familyName": "Bütow",
+      "givenName": "Udo",
+      "factionMemberships": [
+        {
+          "factionId": "afd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Alternative für Deutschland"
+      }
+    },
+    {
+      "id": "ute-koehler-siegel",
+      "name": "Ute Köhler-Siegel",
+      "factionId": "spd",
+      "partyId": "spd",
+      "start": null,
+      "end": null,
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/223",
+      "familyName": "Köhler-Siegel",
+      "givenName": "Ute",
+      "factionMemberships": [
+        {
+          "factionId": "spd",
+          "start": "2024-09-18",
+          "end": null
+        }
+      ],
+      "partySource": {
+        "method": "election-list",
+        "match": "name",
+        "listName": "Sozialdemokratische Partei Deutschlands"
+      }
+    }
+  ]
+}
