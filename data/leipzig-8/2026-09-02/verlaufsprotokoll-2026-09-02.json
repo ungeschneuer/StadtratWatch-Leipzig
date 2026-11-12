@@ -2,7 +2,7 @@
   "sessionId": "2026-09-02",
   "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004599",
   "fetchedAt": "2026-11-11T22:36:31.297Z",
-  "parserVersion": 1,
+  "parserVersion": 2,
   "results": [
     {
       "order": 0,
@@ -471,7 +471,8 @@
         "19.11",
         "19.12",
         "19.17",
-        "19.18"
+        "19.18",
+        "19.19"
       ],
       "J": 63,
       "N": 0,
