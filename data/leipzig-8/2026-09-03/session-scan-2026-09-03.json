@@ -9,7 +9,8 @@
       "type": "Antrag",
       "authors": [
         "Amt für Wohnungsbau und Stadterneuerung"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030157"
     },
     "votes": [
       {
@@ -309,7 +310,8 @@
       "type": "Antrag",
       "authors": [
         "BSW"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030040"
     },
     "votes": [
       {
@@ -609,7 +611,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030446"
     },
     "votes": [
       {
@@ -900,6 +903,308 @@
     "presentMembers": 62
   },
   {
+    "votingFilename": "2026-09-03-005.png",
+    "videoTimestamp": "01:12:53",
+    "votingSubject": {
+      "agendaItem": "13.25",
+      "motionId": "VIII-A-03110",
+      "title": "Auflösung der LQEG",
+      "type": "Antrag",
+      "authors": [
+        "CDU"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030784"
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "J"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "J"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "J"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "O"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "J"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "O"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "J"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "J"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "J"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "O"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "N"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "N"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "N"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "N"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "N"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "O"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "N"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "N"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "N"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "J"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "J"
+      },
+      {
+        "name": "Nora Reinhardt",
+        "vote": "J"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "O"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "O"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "J"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "J"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "J"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "J"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "J"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "J"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "J"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "N"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "N"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "N"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "N"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "N"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "N"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "N"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "N"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "N"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "N"
+      },
+      {
+        "name": "Christina März",
+        "vote": "O"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "O"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "O"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "O"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "E"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "E"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "E"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "E"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "E"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "N"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "N"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "N"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "J"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "N"
+      }
+    ],
+    "presentMembers": 62,
+    "reviewStatus": "needs-review"
+  },
+  {
     "votingFilename": "2026-09-03-006.png",
     "videoTimestamp": "01:13:43",
     "votingSubject": {
@@ -909,7 +1214,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Geschäftsbereich des OBM - Kommunalwirtschaft"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031300"
     },
     "votes": [
       {
@@ -1209,7 +1515,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "CDU"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031741"
     },
     "votes": [
       {
@@ -1509,7 +1816,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Mobilitäts- und Tiefbauamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015044"
     },
     "votes": [
       {
@@ -1809,7 +2117,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "Bündnis 90/Die Grünen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031511"
     },
     "votes": [
       {
@@ -2109,7 +2418,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "Bündnis 90/Die Grünen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031511"
     },
     "votes": [
       {
@@ -2409,7 +2719,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtkämmerei"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026297"
     },
     "votes": [
       {
@@ -3007,7 +3318,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031648"
     },
     "votes": [
       {
@@ -3605,7 +3917,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030089"
     },
     "votes": [
       {
@@ -4501,7 +4814,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030265"
     },
     "votes": [
       {
@@ -4801,7 +5115,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031711"
     },
     "votes": [
       {

@@ -295,7 +295,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66
+    "presentMembers": 66,
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-09-02-002.png",
@@ -1499,7 +1500,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031224"
     },
     "votes": [
       {
@@ -1799,7 +1801,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311"
     },
     "votes": [
       {
@@ -2099,7 +2102,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311"
     },
     "votes": [
       {
@@ -2399,7 +2403,8 @@
       "type": "Antrag",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026984"
     },
     "votes": [
       {
@@ -2699,7 +2704,8 @@
       "type": "Antrag",
       "authors": [
         "Amt für Stadtgrün und Gewässer"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2008797"
     },
     "votes": [
       {
@@ -2999,7 +3005,8 @@
       "type": "Antrag",
       "authors": [
         "CDU"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031662"
     },
     "votes": [
       {
@@ -3299,7 +3306,8 @@
       "type": "Antrag",
       "authors": [
         "Bündnis 90/Die Grünen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030986"
     },
     "votes": [
       {
@@ -3599,7 +3607,8 @@
       "type": "Antrag",
       "authors": [
         "Amt für Wohnungsbau und Stadterneuerung"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029536"
     },
     "votes": [
       {
@@ -3899,7 +3908,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031668"
     },
     "votes": [
       {
@@ -4199,7 +4209,8 @@
       "type": "Antrag",
       "authors": [
         "CDU"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030639"
     },
     "votes": [
       {
@@ -4499,7 +4510,8 @@
       "type": "Antrag",
       "authors": [
         "Demokratiereferat Leipzig"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030245"
     },
     "votes": [
       {
@@ -4799,7 +4811,8 @@
       "type": "Antrag",
       "authors": [
         "Amt für Wohnungsbau und Stadterneuerung"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030347"
     },
     "votes": [
       {
@@ -5099,7 +5112,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707"
     },
     "votes": [
       {
@@ -5399,7 +5413,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707"
     },
     "votes": [
       {
@@ -5699,7 +5714,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
     },
     "votes": [
       {
@@ -5999,7 +6015,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
     },
     "votes": [
       {
@@ -6299,7 +6316,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
     },
     "votes": [
       {
@@ -6599,7 +6617,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
     },
     "votes": [
       {
@@ -6899,7 +6918,8 @@
       "type": "Sonstige",
       "authors": [
         "Mobilitäts- und Tiefbauamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028739"
     },
     "votes": [
       {
@@ -7199,7 +7219,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
     },
     "votes": [
       {
@@ -7499,7 +7520,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
     },
     "votes": [
       {
@@ -7799,7 +7821,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
     },
     "votes": [
       {
@@ -8099,7 +8122,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
     },
     "votes": [
       {
@@ -8399,7 +8423,8 @@
       "type": "Sonstige",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569"
     },
     "votes": [
       {
@@ -8699,7 +8724,8 @@
       "type": "Sonstige",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569"
     },
     "votes": [
       {
@@ -8999,7 +9025,8 @@
       "type": "Sonstige",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569"
     },
     "votes": [
       {
@@ -9299,7 +9326,8 @@
       "type": "Sonstige",
       "authors": [
         "Sozialamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030260"
     },
     "votes": [
       {
@@ -9599,7 +9627,8 @@
       "type": "Sonstige",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030698"
     },
     "votes": [
       {
@@ -9899,7 +9928,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Referat Nachhaltige Entwicklung und Klimaschutz"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028343"
     },
     "votes": [
       {
@@ -10199,7 +10229,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Referat Nachhaltige Entwicklung und Klimaschutz"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027849"
     },
     "votes": [
       {
@@ -10499,7 +10530,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Dezernat Finanzen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025028"
     },
     "votes": [
       {
@@ -10799,7 +10831,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Referat Internationale Zusammenarbeit"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029342"
     },
     "votes": [
       {
@@ -11099,7 +11132,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Ordnungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029540"
     },
     "votes": [
       {
@@ -11399,7 +11433,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Mobilitäts- und Tiefbauamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029955"
     },
     "votes": [
       {
@@ -11699,7 +11734,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Sozialamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030894"
     },
     "votes": [
       {
@@ -11999,7 +12035,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031722"
     },
     "votes": [
       {

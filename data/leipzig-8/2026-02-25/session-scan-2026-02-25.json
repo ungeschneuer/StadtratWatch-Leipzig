@@ -307,7 +307,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028755"
     },
     "votes": [
       {
@@ -607,7 +608,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026973"
     },
     "votes": [
       {
@@ -898,6 +900,308 @@
     "presentMembers": 68
   },
   {
+    "votingFilename": "2026-02-25-005.png",
+    "videoTimestamp": "00:48:18",
+    "votingSubject": {
+      "agendaItem": "9.2.1",
+      "motionId": "VIII-DS-01822-ÄA-01",
+      "title": "Satzung für die Leipziger Städtischen Bibliotheken",
+      "type": "Änderungsantrag",
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028575"
+    },
+    "votes": [
+      {
+        "name": "Karsten Albrecht",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Artmann",
+        "vote": "N"
+      },
+      {
+        "name": "Falk Dossin",
+        "vote": "N"
+      },
+      {
+        "name": "Dr. Sabine Heymann",
+        "vote": "N"
+      },
+      {
+        "name": "Jens Lehmann",
+        "vote": "O"
+      },
+      {
+        "name": "André Möllmer",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Nowak",
+        "vote": "N"
+      },
+      {
+        "name": "Hans-Jürgen Raqué",
+        "vote": "N"
+      },
+      {
+        "name": "Lucas Schopphoven",
+        "vote": "N"
+      },
+      {
+        "name": "Julian Schröder",
+        "vote": "N"
+      },
+      {
+        "name": "Andreas Schultz",
+        "vote": "N"
+      },
+      {
+        "name": "Marcus Mündlein",
+        "vote": "N"
+      },
+      {
+        "name": "Michael Weickert",
+        "vote": "N"
+      },
+      {
+        "name": "Prof. Dr. Getu Abraham",
+        "vote": "N"
+      },
+      {
+        "name": "Beate Ehms",
+        "vote": "J"
+      },
+      {
+        "name": "Cornelia Falken",
+        "vote": "J"
+      },
+      {
+        "name": "Mandy Gehrt",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Elisa Gerbsch",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Götze",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Volker Külow",
+        "vote": "J"
+      },
+      {
+        "name": "Juliane Nagel",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Olga Naumov",
+        "vote": "O"
+      },
+      {
+        "name": "Sören Pellmann",
+        "vote": "J"
+      },
+      {
+        "name": "Franziska Riekewald",
+        "vote": "J"
+      },
+      {
+        "name": "Susanne Scheidereiter",
+        "vote": "J"
+      },
+      {
+        "name": "Enrico Stange",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Beyer",
+        "vote": "N"
+      },
+      {
+        "name": "Udo Bütow",
+        "vote": "N"
+      },
+      {
+        "name": "Sylvia Deubel",
+        "vote": "N"
+      },
+      {
+        "name": "Nora Reinhardt",
+        "vote": "N"
+      },
+      {
+        "name": "Rocco Farkas",
+        "vote": "N"
+      },
+      {
+        "name": "Karsten Fiedler",
+        "vote": "N"
+      },
+      {
+        "name": "Alexandra Hachmeister",
+        "vote": "O"
+      },
+      {
+        "name": "Tobias Keller",
+        "vote": "N"
+      },
+      {
+        "name": "Christian Kriegel",
+        "vote": "N"
+      },
+      {
+        "name": "Jörg Kühne",
+        "vote": "N"
+      },
+      {
+        "name": "Christoph Neumann",
+        "vote": "N"
+      },
+      {
+        "name": "Roland Ulbrich",
+        "vote": "N"
+      },
+      {
+        "name": "Jürgen Günter Butz",
+        "vote": "N"
+      },
+      {
+        "name": "Marvin Frommhold",
+        "vote": "J"
+      },
+      {
+        "name": "Sylvia Herbst-Weckel",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Krefft",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Gesine Märtens",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. Tobias Peter",
+        "vote": "O"
+      },
+      {
+        "name": "Anna-Lisa Möbius",
+        "vote": "J"
+      },
+      {
+        "name": "Marsha Richarz",
+        "vote": "J"
+      },
+      {
+        "name": "Chantal Schneiß",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Nicole Schreyer-Krieg",
+        "vote": "J"
+      },
+      {
+        "name": "Anne Vollerthun",
+        "vote": "J"
+      },
+      {
+        "name": "Kristina Weyh",
+        "vote": "J"
+      },
+      {
+        "name": "Anja Feichtinger",
+        "vote": "O"
+      },
+      {
+        "name": "Frank Franke",
+        "vote": "J"
+      },
+      {
+        "name": "Andreas Geisler",
+        "vote": "J"
+      },
+      {
+        "name": "Pia Heine",
+        "vote": "J"
+      },
+      {
+        "name": "Ute Köhler-Siegel",
+        "vote": "J"
+      },
+      {
+        "name": "Christina März",
+        "vote": "J"
+      },
+      {
+        "name": "Marius Wittwer",
+        "vote": "J"
+      },
+      {
+        "name": "Bernd Bahr",
+        "vote": "J"
+      },
+      {
+        "name": "Sascha Jecht",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kachel",
+        "vote": "J"
+      },
+      {
+        "name": "Danilo Streller",
+        "vote": "J"
+      },
+      {
+        "name": "Ralf Pannowitsch",
+        "vote": "O"
+      },
+      {
+        "name": "Eric Recke",
+        "vote": "J"
+      },
+      {
+        "name": "Marco Zscherny",
+        "vote": "J"
+      },
+      {
+        "name": "Jan-Paul Helbig",
+        "vote": "J"
+      },
+      {
+        "name": "Thomas Kumbernuß",
+        "vote": "E"
+      },
+      {
+        "name": "Sven Morlok",
+        "vote": "J"
+      },
+      {
+        "name": "Katharina Subat",
+        "vote": "J"
+      },
+      {
+        "name": "Dr. med. Klaus-Peter Reinhold",
+        "vote": "N"
+      },
+      {
+        "name": "Stefan Rieger",
+        "vote": "J"
+      },
+      {
+        "name": "Burkhard Jung",
+        "vote": "J"
+      }
+    ],
+    "presentMembers": 67,
+    "reviewStatus": "needs-review"
+  },
+  {
     "votingFilename": "2026-02-25-006.png",
     "videoTimestamp": "00:48:57",
     "votingSubject": {
@@ -907,7 +1211,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "Bündnis 90/Die Grünen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028575"
     },
     "votes": [
       {
@@ -1207,7 +1512,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "CDU"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028583"
     },
     "votes": [
       {
@@ -1507,7 +1813,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028596"
     },
     "votes": [
       {
@@ -1807,7 +2114,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Leipziger Städtische Bibliotheken"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
     },
     "votes": [
       {
@@ -2107,7 +2415,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Leipziger Städtische Bibliotheken"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
     },
     "votes": [
       {
@@ -2407,7 +2716,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Leipziger Städtische Bibliotheken"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
     },
     "votes": [
       {
@@ -2707,7 +3017,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "Büro für Ratsangelegenheiten"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029021"
     },
     "votes": [
       {
@@ -3007,7 +3318,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Leipziger Städtische Bibliotheken"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025404"
     },
     "votes": [
       {
@@ -3307,7 +3619,8 @@
       "type": "Antrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024449"
     },
     "votes": [
       {
@@ -3607,7 +3920,8 @@
       "type": "Antrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025624"
     },
     "votes": [
       {
@@ -3907,7 +4221,8 @@
       "type": "Antrag",
       "authors": [
         "Amt für Schule"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026741"
     },
     "votes": [
       {
@@ -4207,7 +4522,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "Bündnis 90/Die Grünen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027974"
     },
     "votes": [
       {
@@ -4507,7 +4823,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864"
     },
     "votes": [
       {
@@ -4807,7 +5124,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864"
     },
     "votes": [
       {
@@ -5107,7 +5425,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864"
     },
     "votes": [
       {
@@ -5407,7 +5726,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864"
     },
     "votes": [
       {
@@ -5707,7 +6027,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864"
     },
     "votes": [
       {
@@ -6007,7 +6328,8 @@
       "type": "Antrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864"
     },
     "votes": [
       {
@@ -6307,7 +6629,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028786"
     },
     "votes": [
       {
@@ -6607,7 +6930,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803"
     },
     "votes": [
       {
@@ -6907,7 +7231,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803"
     },
     "votes": [
       {
@@ -7207,7 +7532,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803"
     },
     "votes": [
       {
@@ -7507,7 +7833,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "DIE LINKE"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803"
     },
     "votes": [
       {
@@ -7807,7 +8134,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "BSW"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028936"
     },
     "votes": [
       {
@@ -8107,7 +8435,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "CDU"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029020"
     },
     "votes": [
       {
@@ -8407,7 +8736,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102"
     },
     "votes": [
       {
@@ -8707,7 +9037,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102"
     },
     "votes": [
       {
@@ -9007,7 +9338,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102"
     },
     "votes": [
       {
@@ -9605,7 +9937,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "CDU"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029013"
     },
     "votes": [
       {
@@ -9905,7 +10238,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027063"
     },
     "votes": [
       {
@@ -10205,7 +10539,8 @@
       "type": "Beschlussvorlage",
       "authors": [
         "Stadtplanungsamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027062"
     },
     "votes": [
       {
@@ -10505,7 +10840,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "Bündnis 90/Die Grünen"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029008"
     },
     "votes": [
       {
@@ -11103,7 +11439,8 @@
       "type": "Änderungsantrag",
       "authors": [
         "AfD"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029055"
     },
     "votes": [
       {
@@ -11403,7 +11740,8 @@
       "type": "Antrag",
       "authors": [
         "Kulturamt"
-      ]
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029082"
     },
     "votes": [
       {
