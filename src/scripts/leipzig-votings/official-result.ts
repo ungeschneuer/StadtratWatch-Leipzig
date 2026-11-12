@@ -73,14 +73,16 @@ export function applyOfficialResults(votings: ExtractedVoting[], sources: Offici
     : new Map<number, MinutesVote>();
   return cleared.map((voting, position) =>
     withStatus(
-      withProcedural(
-        withOfficialResult(
-          voting,
-          minutesMatches.get(voting.index) ?? null,
-          sources.minutes?.kind ?? null,
-          verlaufMatches.get(voting.index) ?? null,
+      withAttendanceCountCheck(
+        withProcedural(
+          withOfficialResult(
+            voting,
+            minutesMatches.get(voting.index) ?? null,
+            sources.minutes?.kind ?? null,
+            verlaufMatches.get(voting.index) ?? null,
+          ),
+          verlaufMatches.get(voting.index)?.context ?? spokenBefore(sources.cues ?? null, cleared, position),
         ),
-        verlaufMatches.get(voting.index)?.context ?? spokenBefore(sources.cues ?? null, cleared, position),
       ),
     ),
   );
@@ -366,7 +368,30 @@ const NO_RESULT_OF_ITS_OWN = new Set([
   'most-present-members-voted',
   'not-repeated',
   'distinct-from-previous',
+  'not-attendance-count',
 ]);
+
+// The chair has the members press a button to establish the quorum, at the opening and before an open election. The
+// board then looks like a vote, but yes, no and abstention mean nothing (research on majority requirements, 2026-11-12).
+// Counts before an election share the election's agenda item; the other checks discard them (27.05.2026 TOP 8.1).
+const ATTENDANCE_COUNT_AGENDA_ITEM =
+  /^(Eröffnung\b|Feststellung der (ordnungsgemäßen Einberufung und der )?Beschlussfähigkeit)/i;
+
+function withAttendanceCountCheck(voting: ExtractedVoting): ExtractedVoting {
+  const agendaItemName = voting.oparl && !voting.oparl.isParentAgendaItem ? voting.oparl.name : voting.heading.title;
+  const isAttendanceCount = ATTENDANCE_COUNT_AGENDA_ITEM.test(agendaItemName.trim());
+  return {
+    ...voting,
+    checks: [
+      ...voting.checks.filter((check) => check.check !== 'not-attendance-count'),
+      {
+        check: 'not-attendance-count',
+        passed: !isAttendanceCount,
+        detail: isAttendanceCount ? `attendance count at „${agendaItemName}“` : 'agenda item is no opening or quorum',
+      },
+    ],
+  };
+}
 
 function withStatus(voting: ExtractedVoting): ExtractedVoting {
   const failed = voting.checks.filter((check) => !check.passed).map((check) => check.check);
