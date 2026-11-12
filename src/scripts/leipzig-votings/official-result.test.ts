@@ -260,3 +260,54 @@ describe('applyOfficialResults', () => {
     expect(realResult.status).toEqual('verified');
   });
 });
+
+describe('attendance counts', () => {
+  function atAgendaItem(agendaItemNumber: string, name: string, [J, N, E]: [number, number, number]): ExtractedVoting {
+    const base = voting(0, agendaItemNumber, [J, N, E]);
+    return {
+      ...base,
+      oparl: {
+        agendaItemId: 'a/1',
+        number: agendaItemNumber,
+        isParentAgendaItem: false,
+        name,
+        result: null,
+        paperReference: null,
+      },
+    };
+  }
+
+  it('discards the board that establishes the quorum, whose yes and no mean nothing', () => {
+    const [applied] = applyOfficialResults([atAgendaItem('2', 'Feststellung der Beschlussfähigkeit', [41, 17, 6])], {
+      minutes: null,
+      verlauf: null,
+    });
+    expect(applied.status).toEqual('discarded');
+    expect(applied.checks.find((check) => check.check === 'not-attendance-count')?.passed).toBe(false);
+  });
+
+  it('discards a board shown while the session is opened', () => {
+    const [applied] = applyOfficialResults([atAgendaItem('1', 'Eröffnung und Begrüßung', [35, 19, 4])], {
+      minutes: null,
+      verlauf: null,
+    });
+    expect(applied.status).toEqual('discarded');
+  });
+
+  it('keeps a vote on an agenda item that only mentions an opening', () => {
+    const [applied] = applyOfficialResults(
+      [atAgendaItem('18.4', 'Wiedereröffnung des Freibads Schönefeld', [40, 20, 1])],
+      { minutes: null, verlauf: null },
+    );
+    expect(applied.status).toEqual('provisional');
+  });
+
+  it('checks once, however often the official results are applied', () => {
+    const sources = { minutes: null, verlauf: null };
+    const twice = applyOfficialResults(
+      applyOfficialResults([atAgendaItem('2', 'Feststellung der Beschlussfähigkeit', [41, 17, 6])], sources),
+      sources,
+    );
+    expect(twice[0].checks.filter((check) => check.check === 'not-attendance-count')).toHaveLength(1);
+  });
+});
