@@ -15,6 +15,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  actions: write
 
 concurrency:
   group: leipzig-recordings
@@ -42,6 +43,7 @@ jobs:
         run: bun src/scripts/leipzig-recordings/index.ts ${{ inputs.backfill && '--backfill' || '' }} 2>&1 | tee sync.log; exit ${PIPESTATUS[0]}
 
       - name: Propose data changes
+        id: proposal
         uses: peter-evans/create-pull-request@v7
         with:
           branch: data/leipzig-recordings
@@ -50,6 +52,13 @@ jobs:
           title: 'data(leipzig): Aufzeichnungen der Ratsversammlung aktualisieren'
           body: Automatisch erzeugt vom Workflow „Leipzig recordings“. Neue oder geänderte Aufzeichnungen und Untertitel.
           delete-branch: true
+
+      # See ci.yml: a branch pushed with GITHUB_TOKEN starts no CI by itself.
+      - name: Run CI on the data branch
+        if: steps.proposal.outputs.pull-request-operation == 'created' || steps.proposal.outputs.pull-request-operation == 'updated'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ci.yml --ref data/leipzig-recordings
 
       - name: Report failure
         if: steps.sync.outcome == 'failure'

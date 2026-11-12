@@ -9,6 +9,9 @@ on:
     branches: [main]
     paths-ignore:
       - .claude/**
+  # Commits a workflow pushes with GITHUB_TOKEN start no other workflow, so the data workflows start this one on their
+  # branch; its checks then show on the data pull request.
+  workflow_dispatch:
 
 permissions:
   contents: read
