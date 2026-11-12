@@ -16,7 +16,7 @@ Siehe <<adr-0009,ADR-0009>>. Statusgrößen: `verified`, `corrected`, `reviewed`
 * Aus OParl und Open Data übernommene Angaben: © Stadt Leipzig, CC BY 4.0 bzw. Datenlizenz Deutschland – Namensnennung 2.0.
 * Selbst erhobene Stimmen: CC0 (API-Metadaten).
 * Redetexte: Verlaufsprotokoll der Stadt, § 48 UrhG; in der API von CC0 ausgenommen und mit Quelle.
-* Belegbilder: Zitat nach § 51 UrhG. Je veröffentlichter Abstimmung ein verkleinertes, unverändertes Standbild nur der Tafel (`<abstimmung>-zitat.png`), gezeigt an dieser Abstimmung mit Nennung des Betreibers (Marcel Schneuer, Kontakt) und der Quelle (Stadt Leipzig, Aufzeichnung, Zeitpunkt). Keine eigene Lizenz, Entfernung auf Verlangen.
+* Belegbilder: Zitat nach § 51 UrhG. Je veröffentlichter Abstimmung ein verkleinertes (960 px, 16 Farbstufen je Kanal), sonst unverändertes Standbild nur der Tafel (`<abstimmung>-zitat.png`), gezeigt an dieser Abstimmung mit Nennung des Betreibers (Marcel Schneuer, Kontakt) und der Quelle (Stadt Leipzig, Aufzeichnung, Zeitpunkt). Keine eigene Lizenz, Entfernung auf Verlangen.
 
 == Sicherheit und Datenschutz
 

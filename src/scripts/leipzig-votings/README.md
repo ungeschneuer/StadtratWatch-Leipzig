@@ -174,7 +174,7 @@ them as assets of the release `evidence-<date>`, so a review stays possible afte
 Mediathek.
 
 Every vote the site shows also gets its quotation image `<date>-<NNN>-zitat.png`, named after its `votingFilename`: the
-frame the votes were read from, halved to 960 px and otherwise unchanged. It is published as a quotation (§ 51 UrhG) and
+frame the votes were read from, halved to 960 px with 16 levels per colour channel, otherwise unchanged. It is published as a quotation (§ 51 UrhG) and
 shown only on the page of that vote, crediting Marcel Schneuer first and the city's recording as the source; the
 release text (`.github/evidence-release-notes.md`) says the same and excludes the images from CC0. The deploy fetches
 the images into the site. For sessions read before, `--quotation-images-only` grabs the stored frame of each vote again

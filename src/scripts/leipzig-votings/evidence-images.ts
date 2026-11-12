@@ -16,13 +16,21 @@ export function cropEvidence(boardPng: Uint8Array): { heading: Uint8Array; bars:
 }
 
 // A vote's image is published as a quotation backing the votes read from it (§ 51 UrhG), so it shows only the board
-// the votes were read from, unmarked and at a reduced size rather than as the city's full-HD frame.
+// the votes were read from, unmarked and at a reduced size rather than as the city's full-HD frame. Fewer colour
+// levels drop the video noise that keeps the PNG large; changes of size and of the copying process are allowed
+// (§ 62 Abs. 3 UrhG).
 const QUOTATION_IMAGE_WIDTH = 960;
+const QUOTATION_COLOUR_LEVELS = 16;
 
 export function toQuotationImage(boardPng: Uint8Array): Uint8Array {
   const frame = decodePngFrame(boardPng);
   const factor = Math.max(1, Math.round(frame.width / QUOTATION_IMAGE_WIDTH));
-  return encodePngFrame(downscale(frame, factor));
+  return encodePngFrame(reduceColourLevels(downscale(frame, factor), QUOTATION_COLOUR_LEVELS));
+}
+
+function reduceColourLevels(frame: RgbFrame, levels: number): RgbFrame {
+  const step = 255 / (levels - 1);
+  return { ...frame, data: frame.data.map((value) => Math.round(Math.round(value / step) * step)) };
 }
 
 function downscale(frame: RgbFrame, factor: number): RgbFrame {
