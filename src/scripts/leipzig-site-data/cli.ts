@@ -15,7 +15,7 @@ export function parseCliArgs(args: string[]): LeipzigSiteDataArgs {
       help: { type: 'boolean', short: 'h', default: false },
       'data-dir': { type: 'string', short: 'd', default: 'data/leipzig-8/' },
       'parliament-period': { type: 'string', default: 'leipzig-8' },
-      'parliament-period-name': { type: 'string', default: 'Leipzig – Wahlperiode VIII' },
+      'parliament-period-name': { type: 'string', default: 'Wahlperiode VIII' },
     },
   });
   return {
@@ -44,6 +44,6 @@ Reads only local files. Exits with code 1 if a seat has no member; the files are
 -h, --help                     Show this help message and exit.
 -d, --data-dir                 Directory of the parliament period. Default: data/leipzig-8/
     --parliament-period        ID of the parliament period. Default: leipzig-8
-    --parliament-period-name   Name shown on the site. Default: Leipzig – Wahlperiode VIII
+    --parliament-period-name   Name shown on the site. Default: Wahlperiode VIII
   `);
 }

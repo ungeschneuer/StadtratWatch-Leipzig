@@ -52,7 +52,7 @@ Gibt eine Liste aller verfügbaren Legislaturperioden zurück.
   "data": [
     {
       "id": "leipzig-8",
-      "name": "Leipzig – Wahlperiode VIII",
+      "name": "Wahlperiode VIII",
       "lastUpdate": "2024-01-15T10:30:00Z"
     }
   ]
@@ -84,7 +84,7 @@ Gibt detaillierte Informationen zu einer spezifischen Legislaturperiode zurück.
   "meta": { ... },
   "parliamentPeriod": {
     "id": "leipzig-8",
-    "name": "Leipzig – Wahlperiode VIII",
+    "name": "Wahlperiode VIII",
     "sessions": [...],
     "persons": [...],
     "factions": [...],
