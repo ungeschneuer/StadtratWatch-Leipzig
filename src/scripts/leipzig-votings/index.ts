@@ -126,11 +126,24 @@ async function saveEvidenceFrames(sessionId: string, votings: ExtractedVoting[],
   const directory = evidenceDirectory(sessionId);
   await rm(directory, { recursive: true, force: true });
   await mkdir(directory, { recursive: true });
-  for (const voting of votings.filter((candidate) => candidate.checkStatus === 'needs-review')) {
-    const png = boardImages.get(voting.index);
-    if (png) await writeFile(join(directory, evidenceImageNames(sessionId, voting.index).board), png);
-  }
+  await saveReviewBoardImages(sessionId, votings, (voting) => boardImages.get(voting.index));
   await saveQuotationImages(sessionId, votings, (voting) => boardImages.get(voting.index));
+}
+
+type BoardFrameOf = (voting: ExtractedVoting) => Uint8Array | undefined | Promise<Uint8Array | undefined>;
+
+// Reviewers decide from the board in full resolution; heading and result are cut from it when the review is written.
+async function saveReviewBoardImages(sessionId: string, votings: ExtractedVoting[], boardOf: BoardFrameOf) {
+  const directory = evidenceDirectory(sessionId);
+  await mkdir(directory, { recursive: true });
+  let saved = 0;
+  for (const voting of votings.filter((candidate) => candidate.checkStatus === 'needs-review')) {
+    const png = await boardOf(voting);
+    if (!png) continue;
+    await writeFile(join(directory, evidenceImageNames(sessionId, voting.index).board), png);
+    saved++;
+  }
+  console.log(`${sessionId}: ${saved} board images of review cases`);
 }
 
 // Discarded and skipped boards are no votes on the site, so they have nothing to back.
@@ -142,11 +155,7 @@ const QUOTED_STATUSES = new Set<ExtractedVoting['status']>([
   'needs-review',
 ]);
 
-async function saveQuotationImages(
-  sessionId: string,
-  votings: ExtractedVoting[],
-  boardOf: (voting: ExtractedVoting) => Uint8Array | undefined | Promise<Uint8Array | undefined>,
-) {
+async function saveQuotationImages(sessionId: string, votings: ExtractedVoting[], boardOf: BoardFrameOf) {
   const directory = evidenceDirectory(sessionId);
   await mkdir(directory, { recursive: true });
   let saved = 0;
@@ -160,16 +169,28 @@ async function saveQuotationImages(
   console.log(`${sessionId}: ${saved} quotation images`);
 }
 
-// Sessions read before the quotation images existed get them from the frame each vote was read from.
-async function backfillQuotationImages(recording: Recording) {
+// Sessions read before these images existed get them from the frame each vote was read from, without reading the
+// recording again: the quotation image of every published vote and the board of every review case. Writing the votings
+// file again cuts heading and result for the review and lists the images in review-<date>.json.
+async function backfillEvidenceImages(recording: Recording) {
   const variants = listVariantUrlsByBandwidth(await getTextOrThrow(http, recording.hlsUrl), recording.hlsUrl);
   const hdVideoUrl = variants[variants.length - 1];
   if (!hdVideoUrl) throw new Error(`No HLS variants in ${recording.hlsUrl}`);
   const file = JSON.parse(await readFile(votingsPath(recording), 'utf-8')) as SessionVotingsFile;
-  await saveQuotationImages(recording.sessionId, file.votings, async (voting) => {
-    const seconds = voting.videoSeconds.frames[0];
-    return seconds === undefined ? undefined : await video.grabFramePng(hdVideoUrl, seconds);
-  });
+  const frames = new Map<number, Promise<Uint8Array | undefined>>();
+  const frameOf = (voting: ExtractedVoting) => {
+    if (!frames.has(voting.index)) {
+      const seconds = voting.videoSeconds.frames[0];
+      frames.set(
+        voting.index,
+        seconds === undefined ? Promise.resolve(undefined) : video.grabFramePng(hdVideoUrl, seconds),
+      );
+    }
+    return frames.get(voting.index);
+  };
+  await saveQuotationImages(recording.sessionId, file.votings, frameOf);
+  await saveReviewBoardImages(recording.sessionId, file.votings, frameOf);
+  await writeSessionVotings(recording, file.votings);
 }
 
 function evidenceDirectory(sessionId: string): string {
@@ -357,12 +378,12 @@ function fileExists(path: string): Promise<boolean> {
 await main();
 
 async function main() {
-  if (args.quotationImagesOnly) {
+  if (args.evidenceImagesOnly) {
     const recordings = (await selectRecordingsWithVotings(manifest.recordings)).filter(
       (recording) => recording.goneSince === null,
     );
     for (const recording of recordings) {
-      await runForSession(recording, () => backfillQuotationImages(recording));
+      await runForSession(recording, () => backfillEvidenceImages(recording));
     }
   } else if (args.correctionsOnly) {
     for (const recording of await selectRecordingsWithVotings(manifest.recordings)) {

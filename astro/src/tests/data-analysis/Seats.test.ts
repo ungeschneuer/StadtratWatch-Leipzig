@@ -20,7 +20,7 @@ function session(date: string): SessionInput {
 
 const registry: Registry = {
   id: 'leipzig-8',
-  name: 'Leipzig – Wahlperiode VIII',
+  name: 'Wahlperiode VIII',
   lastUpdate: '2026-11-12',
   sessions: [],
   factions: [

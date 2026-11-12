@@ -13,6 +13,13 @@ the API v1 then work for Leipzig as they did for StadtratWatch Magdeburg, which 
 | `data/leipzig-8/{date}/votings-{date}.json`, minutes  | [`leipzig-votings`](../leipzig-votings/README.md)       |
 | `data/leipzig-8/{date}/verlaufsprotokoll-{date}.json` | [`leipzig-votings`](../leipzig-votings/README.md)       |
 | `data/leipzig-8/{date}/subtitles-{date}.vtt`          | [`leipzig-recordings`](../leipzig-recordings/README.md) |
+| `data/leipzig-8/party-classifications.json`           | kept by hand, optional                                  |
+
+`party-classifications.json` lists the parties the Landesamt für Verfassungsschutz Sachsen classifies as extremist,
+with `partyId`, `classification`, `reason` (the sentence the site shows), `source` and `sourceUrl`; the research is in
+[`docs/research/2026-11-12-lfv-sachsen-einstufungen.md`](../../../docs/research/2026-11-12-lfv-sachsen-einstufungen.md).
+The registry carries them as `EXTREMIST_CLASSIFICATION*` of the party; an entry for a party the period does not have
+stops the run.
 
 ## How it works
 
@@ -78,7 +85,7 @@ bun src/scripts/leipzig-site-data/index.ts
 | -------------------------- | --------------------------------------------------------------- |
 | `-d, --data-dir`           | Directory of the parliament period. Default: `data/leipzig-8/`. |
 | `--parliament-period`      | ID of the parliament period. Default: `leipzig-8`.              |
-| `--parliament-period-name` | Name shown on the site. Default: `Leipzig – Wahlperiode VIII`.  |
+| `--parliament-period-name` | Name shown on the site. Default: `Wahlperiode VIII`.            |
 | `-h, --help`               | Show the help text and exit.                                    |
 
 The workflows `leipzig-votings.yml` and `leipzig-review-recheck.yml` run it after every extraction and every review

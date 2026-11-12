@@ -46,7 +46,7 @@ function recording(date: string, goneSince: string | null = null): Recording {
 }
 
 describe('buildRegistry', () => {
-  const registry = buildRegistry({ id: 'leipzig-8', name: 'Leipzig – Wahlperiode VIII' }, members, [
+  const registry = buildRegistry({ id: 'leipzig-8', name: 'Wahlperiode VIII' }, members, [
     { recording: recording('2026-10-29'), pendingVotings: 1, meetingMinutesUrl: null, speechesSourceUrl: null },
     {
       recording: recording('2025-12-17', '2026-12-20'),
@@ -101,5 +101,41 @@ describe('buildRegistry', () => {
     ]);
     expect(registry.factions).toEqual([{ id: 'spd', name: 'SPD', seats: 7 }]);
     expect(registry.lastUpdate).toEqual('2026-11-12T00:00:00Z');
+  });
+});
+
+describe('party classifications', () => {
+  const classification = {
+    partyId: 'spd',
+    classification: 'RIGHT_WING',
+    reason: 'Das Landesamt stuft die Partei seit dem 1. Januar 2026 als rechtsextremistische Bestrebung ein.',
+    source: 'Landesamt für Verfassungsschutz Sachsen, Medieninformation vom 01.01.2026',
+    sourceUrl: 'https://www.verfassungsschutz.sachsen.de/',
+  };
+
+  it('gives the party the notice the site shows on the party and person pages', () => {
+    const registry = buildRegistry({ id: 'leipzig-8', name: 'Wahlperiode VIII' }, members, [], [classification]);
+    expect(registry.parties[0].additionalInformation).toEqual([
+      { key: 'EXTREMIST_CLASSIFICATION', value: 'RIGHT_WING' },
+      { key: 'EXTREMIST_CLASSIFICATION_REASON', value: classification.reason },
+      { key: 'EXTREMIST_CLASSIFICATION_SOURCE', value: classification.source },
+      { key: 'EXTREMIST_CLASSIFICATION_SOURCE_URL', value: classification.sourceUrl },
+    ]);
+  });
+
+  it('leaves parties without classification without notice', () => {
+    const registry = buildRegistry({ id: 'leipzig-8', name: 'Wahlperiode VIII' }, members, []);
+    expect(registry.parties[0]).toEqual({ id: 'spd', name: 'SPD', seats: 9 });
+  });
+
+  it('refuses a classification of a party the period does not have', () => {
+    expect(() =>
+      buildRegistry(
+        { id: 'leipzig-8', name: 'Wahlperiode VIII' },
+        members,
+        [],
+        [{ ...classification, partyId: 'npd' }],
+      ),
+    ).toThrow('party-classifications.json: no party "npd"');
   });
 });

@@ -8,7 +8,7 @@ export type LeipzigVotingsArgs = {
   rescan: boolean;
   force: boolean;
   correctionsOnly: boolean;
-  quotationImagesOnly: boolean;
+  evidenceImagesOnly: boolean;
   imageBaseUrl: string;
   offline: boolean;
 };
@@ -28,7 +28,7 @@ export function parseCliArgs(args: string[]): LeipzigVotingsArgs {
       rescan: { type: 'boolean', default: false },
       force: { type: 'boolean', default: false },
       'corrections-only': { type: 'boolean', default: false },
-      'quotation-images-only': { type: 'boolean', default: false },
+      'evidence-images-only': { type: 'boolean', default: false },
       'image-base-url': { type: 'string', default: DEFAULT_IMAGE_BASE_URL },
       offline: { type: 'boolean', default: false },
     },
@@ -41,7 +41,7 @@ export function parseCliArgs(args: string[]): LeipzigVotingsArgs {
     rescan: values.rescan,
     force: values.force,
     correctionsOnly: values['corrections-only'],
-    quotationImagesOnly: values['quotation-images-only'],
+    evidenceImagesOnly: values['evidence-images-only'],
     imageBaseUrl: values['image-base-url'],
     offline: values.offline,
   };
@@ -58,7 +58,7 @@ export function checkArgs(args: LeipzigVotingsArgs) {
 export function printHelpText() {
   console.log(`
 Usage: bun index.ts [-d <data-dir>] [-c <cache-dir>] [-s <YYYY-MM-DD> …] [--rescan] [--force] [--corrections-only]
-                    [--quotation-images-only]
+                    [--evidence-images-only]
 
 Reads every vote of a Leipzig council session from the voting board shown in the recording. The video is scanned at
 low resolution for the phases in which the board shows its result bars; two full-HD frames of each phase are read and
@@ -73,9 +73,10 @@ corrections-<date>.json. Needs ffmpeg (FFMPEG_PATH or PATH).
     --rescan            Scan the video again even if a cached scan exists.
     --force             Process sessions that already have a votings file.
     --corrections-only  Re-apply corrections-<date>.json to existing votings files without reading the video.
-    --quotation-images-only
-                        Only write the quotation image of every published vote of existing votings files into
-                        <cache-dir>/evidence/<date>/, from the frame the vote was read from.
+    --evidence-images-only
+                        Only write the evidence images of existing votings files into <cache-dir>/evidence/<date>/,
+                        from the frame each vote was read from: the quotation image of every published vote and the
+                        board of every review case.
     --offline           Do not look for minutes that are not stored yet.
     --image-base-url    Where the evidence images are published; {session} is replaced by the session date.
                         Default: the release evidence-{session} of the fork on GitHub.
