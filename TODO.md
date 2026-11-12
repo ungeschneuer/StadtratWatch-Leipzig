@@ -164,7 +164,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **OParl schlank:** nur Sitzungen, TOPs und die in Abstimmungen vorkommenden Vorlagen; Drucksachen verlinken das Ratsinformationssystem (`paperUrl`). Keine PDFs, kein Tika, kein Typesense.
 - [x] **Adapter M3 → `session-scan-*.json`** (`src/scripts/leipzig-site-data`): veröffentlicht `verified`, `corrected`, `reviewed`, `provisional` (510 von 547), Namen wie in der Registry, Titel aus OParl, Typ aus der Drucksachennummer. Läuft in den Workflows `leipzig-votings` und `leipzig-review-recheck`. Site-Build mit Leipzig geprüft (12.11.2026, 4878 Seiten, keine Fehler).
   - [x] `authors` aus `papers.json`: Fraktionen unter ihrem Namen auf der Seite, Ämter und Dezernate ohne Nummer; `motionId` aus OParl (behebt VII/VIII aus der OCR).
-  - [ ] `majorityRequirement` (siehe M3, Schritt 6).
+  - [x] `majorityRequirement` aus dem Titel (`leipzig-site-data/majority-requirement.ts`, Recherche `docs/research/2026-11-12-mehrheitserfordernisse-leipzig.md`): Hauptsatzung 36 Ja, Ehrenbürger/Ehrenmedaille und Ratsbürgerentscheid 48 Ja, Wahlen Mehrheit der Anwesenden. Bisher ein Fall: 25.03.2026 TOP 19.10 (12.11.2026).
 - [x] **S3/CloudFront entfallen:** keine Abstimmungs-PNGs und Vorschaubilder mehr, Belegbilder in GitHub Releases.
 - [x] **Zeitverlauf von Fraktion und Partei in Auswertungen und Datenverarbeitung** (12.11.2026):
   - [x] **Datenmodell:** `RegistryPerson.factionMemberships` und `partyMemberships` (optional, Magdeburg unverändert); `factionIdOn()`/`partyIdOn()` in `astro/src/models/person-affiliation.ts`. `members.json` führt die Parteizugehörigkeit mit Zeiträumen und Quelle je Zeitraum; ein Override mit `party` und `since` beginnt einen neuen Zeitraum. Die Wahlliste 2024 ist der Ausgangswert.
@@ -229,7 +229,7 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Abstimmungen ohne Tafel** (Handzeichen, geheime Wahl): werden nicht aufgenommen (12.11.2026).
 - [x] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): werden nicht aufgenommen (12.11.2026).
 - [x] **Vorlagen auf der Seite:** keine eigenen Seiten; Abstimmungen verlinken die Drucksache im Ratsinformationssystem (12.11.2026).
-- [ ] **Erforderliche Mehrheit:** Woher kommt `majorityRequirement` (Zweidrittelmehrheit u. a.)? Aus den Protokollen, aus der Vorlage oder von Hand?
+- [x] **Erforderliche Mehrheit:** aus dem Titel nach SächsGemO, Hauptsatzung, GO und Ehrenbürgersatzung; Regelfall Ja > Nein, Enthaltungen zählen nicht, Gleichstand abgelehnt; keine Zwei-Drittel-Regel für die Tagesordnung (Recherche 12.11.2026). Offen: Änderungsanträge zur Hauptsatzung, Vorlagen mit mehreren Beschlusspunkten.
 
 ### Reden (M5)
 - [x] **Rechte am Verlaufsprotokoll** (recherchiert 12.11.2026, keine Rechtsberatung):
