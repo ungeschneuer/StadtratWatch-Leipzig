@@ -106,7 +106,7 @@ truth for a parliament period (persons, factions, parties, sessions); persons ca
 
 ### Issue tracker
 
-Issues live in GitHub Issues (ungeschneuer/StadtratWatch-web), via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+Issues live in GitHub Issues (ungeschneuer/StadtratWatch-Leipzig), via the `gh` CLI. See `docs/agents/issue-tracker.md`.
 
 ### Triage labels
 

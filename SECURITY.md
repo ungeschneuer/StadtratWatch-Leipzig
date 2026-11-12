@@ -3,14 +3,14 @@
 Du hast eine Sicherheitslücke in StadtratWatch Leipzig gefunden? Danke, dass du sie uns mitteilst.
 
 **Bitte melde sie vertraulich und nicht als öffentliches Issue.** Nutze dafür die private Meldung über GitHub:
-[Sicherheitslücke melden](https://github.com/ungeschneuer/StadtratWatch-web/security/advisories/new) (im Reiter
+[Sicherheitslücke melden](https://github.com/ungeschneuer/StadtratWatch-Leipzig/security/advisories/new) (im Reiter
 „Security“ der Schaltfläche „Report a vulnerability“).
 
 _Please report vulnerabilities privately via the link above, not as a public issue. Reports in English are welcome._
 
 ## Was betroffen sein kann
 
-- die Website [ungeschneuer.github.io/StadtratWatch-web](https://ungeschneuer.github.io/StadtratWatch-web/)
+- die Website [ungeschneuer.github.io/StadtratWatch-Leipzig](https://ungeschneuer.github.io/StadtratWatch-Leipzig/)
 - die öffentliche API unter `/api/v1/`
 - die Prüfoberfläche unter `/review/`
 - die Workflows und der Code in diesem Repository

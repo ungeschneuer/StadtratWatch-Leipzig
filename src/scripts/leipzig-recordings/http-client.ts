@@ -6,7 +6,7 @@ export type HttpClient = {
 };
 
 export const DEFAULT_USER_AGENT =
-  'StadtratWatch-Leipzig-Scraper/0.1 (+https://github.com/ungeschneuer/StadtratWatch-web)';
+  'StadtratWatch-Leipzig-Scraper/0.1 (+https://github.com/ungeschneuer/StadtratWatch-Leipzig)';
 
 // A pause between requests keeps the load on the city's and the hoster's servers low.
 export function createPoliteHttpClient(userAgent: string, pauseMilliseconds: number): HttpClient {

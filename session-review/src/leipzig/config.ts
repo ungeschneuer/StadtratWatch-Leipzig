@@ -10,7 +10,7 @@ const SETTINGS_KEY = 'leipzig-review-settings';
 const TOKEN_KEY = 'leipzig-review-github-token';
 
 export const defaultSettings: LeipzigSettings = {
-  repository: import.meta.env.VITE_LEIPZIG_REPOSITORY ?? 'ungeschneuer/StadtratWatch-web',
+  repository: import.meta.env.VITE_LEIPZIG_REPOSITORY ?? 'ungeschneuer/StadtratWatch-Leipzig',
   branch: import.meta.env.VITE_LEIPZIG_BRANCH ?? 'data/leipzig-votings',
 };
 

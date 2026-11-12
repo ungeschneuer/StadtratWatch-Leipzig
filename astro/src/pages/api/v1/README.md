@@ -5,7 +5,7 @@ Die API v1 bietet Zugang zu strukturierten Daten über die Sitzungen der Leipzig
 ## Basis-URL
 
 ```
-https://ungeschneuer.github.io/StadtratWatch-web/api/v1/
+https://ungeschneuer.github.io/StadtratWatch-Leipzig/api/v1/
 ```
 
 ## Authentifizierung
@@ -226,19 +226,19 @@ Wenn eine angeforderte Ressource nicht existiert:
 ### Alle Legislaturperioden abrufen
 
 ```bash
-curl -X GET https://ungeschneuer.github.io/StadtratWatch-web/api/v1/parliament-periods.json
+curl -X GET https://ungeschneuer.github.io/StadtratWatch-Leipzig/api/v1/parliament-periods.json
 ```
 
 ### Redebeiträge einer Sitzung abrufen
 
 ```bash
-curl -X GET https://ungeschneuer.github.io/StadtratWatch-web/api/v1/parliament-periods/leipzig-8/speeches/2026-10-29.json
+curl -X GET https://ungeschneuer.github.io/StadtratWatch-Leipzig/api/v1/parliament-periods/leipzig-8/speeches/2026-10-29.json
 ```
 
 ### Abstimmungen einer Sitzung abrufen
 
 ```bash
-curl -X GET https://ungeschneuer.github.io/StadtratWatch-web/api/v1/parliament-periods/leipzig-8/votings/2026-10-29.json
+curl -X GET https://ungeschneuer.github.io/StadtratWatch-Leipzig/api/v1/parliament-periods/leipzig-8/votings/2026-10-29.json
 ```
 
 ## Lizenz

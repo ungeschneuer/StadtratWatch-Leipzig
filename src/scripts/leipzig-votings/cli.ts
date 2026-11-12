@@ -15,7 +15,7 @@ export type LeipzigVotingsArgs = {
 
 // Evidence images are published as assets of one GitHub release per session.
 export const DEFAULT_IMAGE_BASE_URL =
-  'https://github.com/ungeschneuer/StadtratWatch-web/releases/download/evidence-{session}';
+  'https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-{session}';
 
 export function parseCliArgs(args: string[]): LeipzigVotingsArgs {
   const { values } = parseArgs({

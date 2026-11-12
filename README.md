@@ -4,7 +4,7 @@ Wie stimmen die Mitglieder der Leipziger Ratsversammlung ab? StadtratWatch Leipz
 Ratsmitglieds aus der Abstimmungstafel der Video-Aufzeichnungen, gleicht sie mit den Protokollen der Stadt ab und
 veröffentlicht sie als Website, als API und als offene Daten. Dazu kommen die Redebeiträge aus dem Verlaufsprotokoll.
 
-**Website:** <https://ungeschneuer.github.io/StadtratWatch-web/>
+**Website:** <https://ungeschneuer.github.io/StadtratWatch-Leipzig/>
 
 Ein ehrenamtliches Projekt von **Marcel Schneuer** ([hallo@schneuer.online](mailto:hallo@schneuer.online)), keine
 Seite der Stadt Leipzig.
@@ -62,4 +62,4 @@ Mehr in [AGENTS.md](./AGENTS.md).
 ## Kontakt
 
 Marcel Schneuer, [hallo@schneuer.online](mailto:hallo@schneuer.online) ·
-[Issues](https://github.com/ungeschneuer/StadtratWatch-web/issues)
+[Issues](https://github.com/ungeschneuer/StadtratWatch-Leipzig/issues)

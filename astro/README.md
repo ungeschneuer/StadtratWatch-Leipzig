@@ -52,7 +52,7 @@ astro/
 
 All variables are optional and set by `.github/workflows/deploy.yml` (schema in `astro.config.mjs`):
 
-- `SITE_URL`, `SITE_BASE` - Address and base path of the site (default: the GitHub project page `/StadtratWatch-web`)
+- `SITE_URL`, `SITE_BASE` - Address and base path of the site (default: the GitHub project page `/StadtratWatch-Leipzig`)
 - `DATA_REPOSITORY` - GitHub repository for source and data links
 - `DATA_PULL_REQUEST_URL` - Open pull request of the data branch (default: a search that finds it)
 - `DEFAULT_PARLIAMENT_PERIOD` - Default period ID (default `leipzig-8`)

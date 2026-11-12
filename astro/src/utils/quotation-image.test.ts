@@ -6,7 +6,7 @@ import { quotationImageUrl } from './quotation-image';
 
 describe('quotationImageUrl', () => {
   it('links the image of a vote only when it was fetched', () => {
-    vi.stubEnv('BASE_URL', '/StadtratWatch-web/');
+    vi.stubEnv('BASE_URL', '/StadtratWatch-Leipzig/');
     const publicDirectory = mkdtempSync(join(tmpdir(), 'public-'));
     mkdirSync(join(publicDirectory, 'evidence', '2026-10-29'), {
       recursive: true,
@@ -23,7 +23,9 @@ describe('quotationImageUrl', () => {
 
     expect(
       quotationImageUrl('2026-10-29', '2026-10-29-005.png', publicDirectory),
-    ).toBe('/StadtratWatch-web/evidence/2026-10-29/2026-10-29-005-zitat.png');
+    ).toBe(
+      '/StadtratWatch-Leipzig/evidence/2026-10-29/2026-10-29-005-zitat.png',
+    );
     expect(
       quotationImageUrl('2026-10-29', '2026-10-29-006.png', publicDirectory),
     ).toBeNull();

@@ -73,7 +73,7 @@ Stand: 12.11.2026 (abends)
 
 ## M0: Fork und Grundgerüst
 
-- [x] `JensWinter/StadtratWatch-web` geforkt: https://github.com/ungeschneuer/StadtratWatch-web. Hinweis auf den Ursprung steht in der README.
+- [x] `JensWinter/StadtratWatch-web` geforkt, seit 12.11.2026 als eigenständiges Repository (kein GitHub-Fork) https://github.com/ungeschneuer/StadtratWatch-Leipzig, Upstream als Remote `upstream`. Hinweis auf den Ursprung steht in der README.
 - [x] ADR-0008 (Fork nur für Leipzig, GitHub Pages) und ADR-0009 (Tafel, Prüfung, Freigabe per PR); arc42 für Leipzig neu geschrieben (12.11.2026).
 - [x] Magdeburg entfernt: Daten, Pipeline-Skripte, Docker, Typesense, Netlify, Vorlagen-, Such- und KI-Seiten, Magdeburger Ansichten der Prüfoberfläche. Wahlperiode `leipzig-8` angelegt.
 - [ ] CI des Forks auf GitHub zum Laufen bringen (`ci.yml`: Deno-Lint, Bun- und Astro-Checks; lokal grün am 12.11.2026).
