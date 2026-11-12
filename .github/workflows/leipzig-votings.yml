@@ -87,6 +87,12 @@ jobs:
             2>&1 | tee extract.log
           exit "${PIPESTATUS[0]}"
 
+      # registry.json and session-scan-<date>.json for the site, from the votings and members.json; no network.
+      - name: Build site data
+        id: site_data
+        continue-on-error: true
+        run: bun src/scripts/leipzig-site-data/index.ts 2>&1 | tee -a extract.log; exit "${PIPESTATUS[0]}"
+
       - name: Commit data
         run: |
           git add data/leipzig-8
@@ -132,7 +138,7 @@ jobs:
           .github/scripts/leipzig-review-issues.sh output/leipzig-review-issues/issues.json
 
       - name: Report failure
-        if: steps.extract.outcome == 'failure'
+        if: steps.extract.outcome == 'failure' || steps.site_data.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

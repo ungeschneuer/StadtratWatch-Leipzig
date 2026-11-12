@@ -151,16 +151,25 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 
 ## M4: Umsetzung im Fork
 
-- [ ] **Stadt-Konfiguration** (Name, OParl-URL, Wahlperiode, Texte) statt fest verdrahtetem Magdeburg. Dadurch bleiben Merges von upstream möglich.
-- [ ] **Video-Abstraktion:** `youtubeUrl` ersetzen durch `video: { provider: "youtube" | "leipzig-mediathek", pageUrl, hlsUrl? }`. Betroffen sind ca. 15 Dateien (Modelle, Session- und Voting-Seiten, session-review). Wiedergabe als Link auf die Mediathek mit Zeitstempel oder als eingebetteter Player. Ist das Video offline, bleibt das Belegbild.
+- [ ] **Stadt-Konfiguration** (Name, OParl-URL, Wahlperiode, Texte) statt fest verdrahtetem Magdeburg. Beispiele im Build: Fußzeile „keine offizielle Seite der Stadt Magdeburg … Code for Magdeburg“, YouTube-Kanal der Stadt Magdeburg auf der Übersicht der Wahlperiode. Dadurch bleiben Merges von upstream möglich.
+- [x] **Video-Abstraktion:** `RegistrySession.video` (`url`, `label`) neben `youtubeUrl` (abwärtskompatibel, Magdeburg unverändert); `sessionVideoLink()` in `astro/src/models/session-video.ts` wählt den Link für Sitzungs- und Abstimmungsseite. Leipzig verlinkt die Mediathek-Seite, solange sie online ist.
+  - [ ] Zeitgenaue Links auf die Mediathek (hängt an `videostartoffset`, siehe M2) oder eingebetteter Player.
+  - [ ] `Speech.astro` nutzt noch `youtubeUrl` (betrifft nur Reden, siehe nächster Punkt).
 - [ ] **Reden-Funktionen deaktivieren:** Speech-Seiten, Redezeit-Statistiken, `speech-to-text`, `speaker-diarization`, `detect-ai-text` werden nicht genutzt, per Konfiguration ausblenden.
-- [ ] **Registry `data/leipzig-8/registry.json`** aus `members.json` (Fraktionen, Parteien, Personen) und den Sitzungen generieren.
+- [x] **Registry `data/leipzig-8/registry.json`** aus `members.json` und den Sitzungen mit Abstimmungen, Skript `src/scripts/leipzig-site-data`. `approved`, sobald keine Abstimmung mehr auf Prüfung oder amtliches Ergebnis wartet (Stand 12.11.2026: 5 von 16).
 - [ ] **OParl-Pipeline schlank halten:** nur Sitzungen, TOPs und die **in Abstimmungen vorkommenden** Vorlagen (Titel, Nummer, Link zum Ratsinfo). Kein Download aller PDFs, kein Tika, kein Typesense.
-- [ ] **Adapter M3 → `session-scan-*.json`** mit optionalem `personId` (abwärtskompatibel zu upstream).
+- [x] **Adapter M3 → `session-scan-*.json`** (`src/scripts/leipzig-site-data`): veröffentlicht `verified`, `corrected`, `reviewed`, `provisional` (510 von 547), Namen wie in der Registry, Titel aus OParl, Typ aus der Drucksachennummer. Läuft in den Workflows `leipzig-votings` und `leipzig-review-recheck`. Site-Build mit Leipzig geprüft (12.11.2026, 4878 Seiten, keine Fehler).
+  - [ ] `authors` aus `paper.originatorOrganization` (siehe M3, Schritt 5), `majorityRequirement` (siehe M3, Schritt 6).
+  - [ ] `voting-paper-map.json` ist leer, bis Leipziger Vorlagen eigene Seiten haben.
 - [ ] **S3/CloudFront ersetzen:**
   - [ ] Abstimmungs-PNGs (`generate-image-assets`) beim Build erzeugen oder als GitHub-Release-Assets ablegen
   - [ ] `paper-votings` als statische JSON-Dateien im Build
-- [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
+- [ ] **Zeitverlauf von Fraktion und Partei in Auswertungen und Datenverarbeitung:** Heute ordnet die Seite jede Person für alle Abstimmungen ihrer aktuellen Fraktion und einer festen Partei zu (`RegistryPerson.factionId`, `partyId`). Fraktions- und Parteiwechsel (z. B. Abraham: SPD → fraktionslos → CDU → fraktionslos; Butz: Liste FREIE SACHSEN, seit 18.09.2025 AfD-Fraktion) verfälschen damit die Auswertungen.
+  - [ ] **Datenmodell:** Parteizugehörigkeit mit Zeiträumen (`partyMemberships` wie `factionMemberships`), Quellen und Overrides für Parteiwechsel; die Wahlliste 2024 bleibt der Ausgangswert.
+  - [ ] **Datenverarbeitung:** Fraktion und Partei am Sitzungstag in jede Stimme übernehmen (`session-scan-*.json`, optional und abwärtskompatibel, z. B. `factionId`/`partyId` je Stimme); `votes-<datum>.csv` hat die Fraktion bereits, die Partei noch fest.
+  - [ ] **Auswertungen** (`astro/src/data-analysis/`: VotingMatrix, UniformityScore, MotionsSuccess, PersonsForces, Fraktions- und Parteiseiten, Abstimmungsseite nach Fraktionen) rechnen mit der Zugehörigkeit am Abstimmungstag statt der aktuellen; Sitzzahlen je Zeitpunkt.
+  - [ ] **Anzeige:** Wechsel auf der Personenseite als Verlauf (Fraktion/Partei mit Zeitraum), auf Fraktions- und Parteiseiten auch ehemalige Mitglieder.
+- [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Die Seite zeigt die Wahlliste 2024 als „Partei“; bei Fraktionswechseln (z. B. Abraham: Liste SPD, heute fraktionslos) prüfen, ob ein Override mit Quelle nötig ist. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
 - [ ] **Offene Daten ausliefern:**
   - [ ] API v1 unverändert (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`)
   - [ ] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json`

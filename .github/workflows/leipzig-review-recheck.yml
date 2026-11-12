@@ -49,6 +49,10 @@ jobs:
           bun src/scripts/leipzig-votings/index.ts --corrections-only \
             --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}"
 
+      # A decided vote goes onto the site; registry.json says whether its session is fully checked.
+      - name: Build site data
+        run: bun src/scripts/leipzig-site-data/index.ts
+
       - name: Commit data
         run: |
           git config user.name 'github-actions[bot]'

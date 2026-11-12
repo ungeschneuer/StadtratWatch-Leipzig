@@ -22,6 +22,7 @@
     "src/scripts/index-search",
     "src/scripts/leipzig-members",
     "src/scripts/leipzig-recordings",
+    "src/scripts/leipzig-site-data",
     "src/scripts/leipzig-votings",
     "src/scripts/parse-speakers",
     "src/scripts/scan-voting-images",

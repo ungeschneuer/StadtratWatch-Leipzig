@@ -12,9 +12,17 @@ export type RegistrySession = {
   id: string;
   date: string;
   title: string;
+  // Empty when the recording is not on YouTube; `video` then names where it is.
   youtubeUrl: string;
+  video?: RegistrySessionVideo;
   meetingMinutesUrl: string | null;
   approved: boolean;
+};
+
+// A recording outside YouTube, such as a city's own media library. Links to it cannot jump to a time.
+export type RegistrySessionVideo = {
+  url: string;
+  label: string;
 };
 
 export type RegistryFaction = {

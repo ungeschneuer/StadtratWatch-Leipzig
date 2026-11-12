@@ -8,6 +8,7 @@ import {
 import { getPaperId, getVotingPaperMap } from '../../../../_helpers2';
 import MetaTags from '@components/MetaTags.astro';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
+import { sessionVideoLink } from '@models/session-video';
 import { getVoteCounts, votingAccepted } from '@models/voting-breakdown';
 import {
   getMajorityRequirement,
@@ -79,7 +80,10 @@ const groupsSortedByVotes = Object.entries(votesGroupedByFaction).sort(
 
 const paperId = getPaperId(votingPaperMap, sessionInput.session.date, voting);
 
-const youtubeUrl = `${sessionInput.session.youtubeUrl}?t=${getVideoTimestampAsSeconds(voting)}s`;
+const videoLink = sessionVideoLink(
+  sessionInput.session,
+  getVideoTimestampAsSeconds(voting),
+);
 
 const { J: votedFor, N: votedAgainst, E: abstentions } = getVoteCounts(voting);
 const totalVotes = votedFor + votedAgainst + abstentions;
@@ -103,11 +107,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
     votingId={+votingId}
   />
 
-  {youtubeUrl && (
+  {videoLink && (
     <div slot="sub-page-header">
-      <a href={youtubeUrl} target="_blank" class="link link-primary text-xs">
-        <span class="iconify lucide--youtube" />
-        YouTube
+      <a href={videoLink.url} target="_blank" class="link link-primary text-xs">
+        <span class:list={['iconify', videoLink.icon]} />
+        {videoLink.label}
       </a>
     </div>
   )}

@@ -10,6 +10,7 @@ import Speeches from './_speeches.astro';
 import SpeakingTimes from './_speaking-times.astro';
 import { formatDate } from '@utils/format-date';
 import MetaTags from '@components/MetaTags.astro';
+import { sessionVideoLink } from '@models/session-video';
 
 export const getStaticPaths = getParliamentPeriodWithSessionPaths;
 
@@ -33,7 +34,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
 ];
 
 const meetingMinutesUrl = sessionInput.session.meetingMinutesUrl;
-const youtubeUrl = sessionInput.session.youtubeUrl;
+const videoLink = sessionVideoLink(sessionInput.session);
 ---
 
 <PageLayout
@@ -55,10 +56,14 @@ const youtubeUrl = sessionInput.session.youtubeUrl;
           Niederschrift
         </a>
       )}
-      {youtubeUrl && (
-        <a href={youtubeUrl} target="_blank" class="link link-primary text-xs">
-          <span class="iconify lucide--youtube" />
-          YouTube
+      {videoLink && (
+        <a
+          href={videoLink.url}
+          target="_blank"
+          class="link link-primary text-xs"
+        >
+          <span class:list={['iconify', videoLink.icon]} />
+          {videoLink.label}
         </a>
       )}
     </div>
