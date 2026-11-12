@@ -32,10 +32,15 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - name: Checkout the data branch
+      - name: Checkout code
         uses: actions/checkout@v7
         with:
-          ref: ${{ env.LEIPZIG_DATA_BRANCH }}
+          fetch-depth: 0
+
+      # The data branch carries the code it was last brought up to date with; without main the recheck would run
+      # yesterday's scripts on today's data.
+      - name: Check out the data branch
+        run: .github/scripts/leipzig-data-branch.sh
 
       - name: Name the review UI
         run: echo "REVIEW_UI_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/review" >> "$GITHUB_ENV"

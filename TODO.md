@@ -43,12 +43,12 @@ Stand: 12.11.2026 (abends)
 ### Maschinenlesbarkeit
 - [ ] **Kanonisch JSON** im StadtratWatch-Format, erweitert um stabile IDs.
 - [ ] **Stabile IDs:** OParl-IDs für Personen, Fraktionen, Sitzungen, TOPs und Vorlagen. Namen sind nie der Schlüssel.
-- [ ] **CSV im Long-Format** für jede Tabelle: `persons.csv`, `memberships.csv`, `sessions.csv`, `votings.csv`, `votes.csv` (`session_id, voting_id, person_id, vote`).
-- [ ] **JSON Schema** je Datei und ein **Frictionless `datapackage.json`** (Beschreibung, Lizenz, Quellen). Die Pakete werden in CI automatisch validiert (`frictionless validate`).
+- [x] **CSV im Long-Format:** `votings.csv`, `votes.csv`, `sessions.csv`, `persons.csv`, `faction-memberships.csv` unter `/data/leipzig-8/`, geschrieben von `leipzig-site-data` (12.11.2026).
+- [x] **Frictionless `datapackage.json`** mit Spalten, Typen, Schlüsseln, Lizenzen und Quellen; lokal mit `frictionless validate` geprüft (alle Tabellen VALID), ein Test hält Beschreibung und CSV-Köpfe gleich (12.11.2026).
 - [ ] **Provenienz pro Datensatz:** `source_url`, `retrieved_at`, `method` (`oparl` | `opendata-csv` | `faction-website` | `video-board` | `subtitle` | `manual`), `confidence`, `reviewed`.
 - [ ] **Git als Änderungsprotokoll** („Git Scraping“): jede Aktualisierung ein Commit.
 - [ ] **Lizenzen:** OParl steht unter CC BY 4.0 (`oparl/system`), der Open-Data-Datensatz der Bewerber:innen unter Datenlizenz Deutschland – Namensnennung 2.0. Die Namensnennung „Stadt Leipzig“ gehört in `datapackage.json` und in die API-Metadaten (in `members.json` bereits unter `sources`). Die selbst aus dem Video erhobenen Stimmen können unter CC0 stehen. Code MIT wie upstream.
-- [ ] **Codebook** (`DATA.md`): Bedeutung aller Felder, Stimmcodes J/N/E/O, Methodik und bekannte Grenzen.
+- [x] **Codebook** `DATA.md`: Downloads, Felder, Stimmcodes, Mehrheiten, Prüfstatus, Methodik, Grenzen, Lizenzen (12.11.2026).
 
 ### Ressourcenschonung und Aktualität (nur kostenlose Dienste)
 - [ ] **GitHub Actions mit `schedule`**: Das öffentliche Repo bekommt unbegrenzt Minuten auf Standard-Runnern. Ein Job darf bis zu 6 h laufen.
@@ -99,7 +99,7 @@ Umgesetzt in `src/scripts/leipzig-members` (siehe README dort), Workflow `.githu
 - [x] **Override-Datei** `data/leipzig-8/member-overrides.json` (JSON wie die Korrekturen der Abstimmungen): Ausschluss, Schreibweise, Partei. Jeder Eintrag mit Begründung und Quelle, bei jedem Lauf angewendet. Bisher: Partei des OB (OB-Wahl 2020), „CHristoph“ Neumann, Franziska Kießling (Mitgliedschaft nur am 18.09.2024, auf keiner Tafel).
 - [x] **Plausibilitätsprüfungen:** genau 70 Stadträt:innen + OB aktiv; jede aktive Person hat eine Fraktion oder ist fraktionslos; jede Person hat eine Partei; Overrides treffen Mitglieder; IDs eindeutig; Abgleich mit der Abstimmungstafel (wer auf der Tafel steht, ist an dem Tag Mitglied; Vereidigung bis 7 Tage vor dem OParl-Beginn verschiebt den Beginn).
 - [x] **Ausgabe:** `members.json` (Fraktionen, Parteien, Personen im Format der StadtratWatch-Registry, erweitert um `oparlId`, `factionMemberships`, `partySource`; Typ `LeipzigMembersFile`), `persons.csv`, `faction-memberships.csv`. `votes-<datum>.csv` hat die Spalten `factionId` (am Sitzungstag) und `partyId`.
-- [ ] **`registry.json`** erst mit M4 schreiben: Astro lädt jede `registry.json` unter `data/` sofort, und die Sitzungen brauchen dafür die Video-Abstraktion und `session-scan-*.json`.
+- [x] **`registry.json`** schreibt `leipzig-site-data` (M4).
 
 ## M2: Aufzeichnungen beziehen
 
@@ -143,11 +143,11 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Irreführender Kommentar in `extract-session.ts`:** richtiggestellt (360p und 1080p zeitgleich), Suche als Rückfall für Überblendungen behalten.
 - [x] **7. Prüfung durch Menschen:** Route `/leipzig` in `session-review` (GitHub Pages), Prüffälle in `review-<datum>.json`, Benachrichtigung per Issue je Sitzung, Speichern als Commit in `corrections-<datum>.json`, Nachprüfung per Workflow. Freigabe per PR-Merge.
   - [x] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Variable `LEIPZIG_REVIEWERS=ungeschneuer` (12.11.2026; vorerst prüft nur der Betreiber, weitere Prüfende brauchen Schreibrechte).
-  - [ ] Workflows einmal auf GitHub durchlaufen lassen (bisher nur lokal getestet).
+  - [x] Workflows auf GitHub gelaufen: members, recordings, votings, recheck, deploy (12.11.2026).
   - [ ] Die 17 offenen Fälle entscheiden.
 - [ ] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
 - [x] **Ausgabe:** `votings-<datum>.json` und `votes-<datum>.csv` (mit `personId`, Fraktion und Partei).
-  - [ ] StadtratWatch-kompatible `session-scan-YYYY-MM-DD.json` (Adapter, siehe M4) und `votings.csv`.
+  - [x] StadtratWatch-kompatible `session-scan-YYYY-MM-DD.json` (Adapter, siehe M4) und `votings.csv`.
 
 ### Ressourcen (Schätzung pro Sitzung)
 - 60–120 Abstimmungen. Dekodiert werden nur die Zeitfenster in 360p, dazu ein 1080p-Frame pro Abstimmung.
@@ -176,13 +176,13 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Die Seite zeigt die Wahlliste 2024 als „Partei“; bei Fraktionswechseln (z. B. Abraham: Liste SPD, heute fraktionslos) prüfen, ob ein Override mit Quelle nötig ist. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
 - [ ] **Offene Daten ausliefern:**
   - [x] API v1 (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`), mit `reviewStatus` und `paperUrl`
-  - [ ] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json`
-  - [ ] Lizenz und Provenienz in jeder Antwort: `meta` nennt noch pauschal CC0, auch für Angaben aus OParl (CC BY 4.0)
+  - [x] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json` (12.11.2026)
+  - [x] Lizenz und Herkunft in jeder Antwort: `meta.license_note` und `meta.attribution` nennen CC BY 4.0 (OParl) und dl-de/by-2-0 (Wahlliste) (12.11.2026)
 - [x] **Hosting:** GitHub Pages über `deploy.yml`, Seite und Prüfoberfläche (`/review/`) in einem Artefakt; Basispfad über `SITE_BASE`, alle Links über `sitePath()`.
   - [ ] Einmalig einrichten: private Sicherheitsmeldungen aktivieren (`SECURITY.md`). Pages-Quelle und erster Lauf von `deploy.yml` erledigt (12.11.2026).
 - [x] **Workflows:** `leipzig-members`, `leipzig-recordings`, `leipzig-votings`, `leipzig-review-recheck`, `leipzig-review-reminder`, `deploy`. Daten kommen per PR, Fehler als Issue.
 - [x] README, AGENTS.md, GLOSSARY.md, API-Doku und arc42 für Leipzig (12.11.2026).
-- [ ] **Dokumentation:** `DATA.md` (Codebook, Methodik, Grenzen: mündliche Korrekturen, Abstimmungen ohne Tafel, Liste ≠ Parteimitgliedschaft, Verfügbarkeit der Videos).
+- [x] **Dokumentation:** `DATA.md` (12.11.2026).
 
 ---
 
@@ -243,8 +243,8 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Nach Ablauf der Mediathek:** Verschwindet eine Aufzeichnung, entfällt der Video-Link (laut GO § 11 Abs. 8 erst mit Ende der Wahlperiode, beobachtet wird `last_seen`); die Abstimmungsseite zeigt weiter das Zitatbild.
 - [x] **Rechte an den Belegbildern** (recherchiert 12.11.2026, keine Rechtsberatung): `docs/research/2026-11-12-rechte-belegbilder.md`. Die Tafel selbst ist eine Bildschirmgrafik ohne Werk- oder Lichtbildschutz; Hindernis ist das Recht des Laufbildherstellers (§§ 94, 95 UrhG), das schon kleinste Teile schützt. Tragfähig ist nur das Zitat (§ 51): je Abstimmung ein verkleinerter Ausschnitt nur der Tafel, ohne Personen, an der Abstimmung, die er belegt, mit Quelle „Stadt Leipzig, Aufzeichnung vom …“, ohne eigene Lizenz, Löschung auf Verlangen. Kein Bildarchiv.
   - [x] Entschieden: als Zitat veröffentlichen (12.11.2026). Je veröffentlichter Abstimmung `<abstimmung>-zitat.png` (960 px breit, 16 Farbstufen je Kanal, ca. 135 KB, sonst unverändert), auf der Abstimmungsseite mit „Zitiert von Marcel Schneuer (Kontakt)“ und Quelle Stadt Leipzig; Release-Text `.github/evidence-release-notes.md` nennt zuerst den Betreiber, nimmt die Bilder von CC0 aus und bietet Entfernung an.
-  - [ ] Zitatbilder für die 16 vorhandenen Sitzungen erzeugen: Workflow „Leipzig votings“ mit `quotation_images_only` (nach dem Merge des Code-PRs).
-  - [ ] `datapackage.json`: Bilder ausdrücklich von CC0 ausnehmen.
+  - [x] Zitatbilder für die 16 Sitzungen erzeugt: 527 Bilder in 16 Releases, auf der Seite (12.11.2026).
+  - [x] Bilder gehören nicht zum Datenpaket; `DATA.md` nimmt sie ausdrücklich von CC0 aus (12.11.2026).
   - [ ] Die Tafelbilder der Prüffälle (`*-board.png` u. a.) sind in voller Auflösung öffentlich; für das Zitat reichte das verkleinerte Bild. Entscheiden, ob die Prüfung damit auskommt.
 
 ### Lizenz, Betrieb, Recht
