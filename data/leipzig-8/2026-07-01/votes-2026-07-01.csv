@@ -12,7 +12,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",E,present,E,provisional,false,cdu,cdu
 2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",E,present,E,provisional,false,cdu,cdu
 2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,provisional,false,cdu,cdu
-2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,provisional,false,cdu,spd
+2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,provisional,false,cdu,parteilos
 2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,provisional,false,die-linke,die-linke
 2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,provisional,false,die-linke,die-linke
 2026-07-01,0,126.5,1,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,provisional,false,die-linke,die-linke
@@ -83,7 +83,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,true,cdu,cdu
 2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,true,cdu,cdu
 2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,true,cdu,cdu
-2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,true,cdu,spd
+2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,true,cdu,parteilos
 2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,true,die-linke,die-linke
 2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,true,die-linke,die-linke
 2026-07-01,1,246.9,3,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,true,die-linke,die-linke
@@ -154,7 +154,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,cdu,spd
+2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,cdu,parteilos
 2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,2,360.8,3,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -225,7 +225,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,cdu,spd
+2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,cdu,parteilos
 2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,3,473.4,3,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -296,7 +296,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,needs-review,false,cdu,cdu
 2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,needs-review,false,cdu,cdu
 2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,needs-review,false,cdu,cdu
-2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,needs-review,false,cdu,spd
+2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,needs-review,false,cdu,parteilos
 2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,needs-review,false,die-linke,die-linke
 2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,needs-review,false,die-linke,die-linke
 2026-07-01,4,1067.7,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,needs-review,false,die-linke,die-linke
@@ -367,7 +367,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,cdu,spd
+2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,cdu,parteilos
 2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,5,1099.8,9.1,VIII-DS-03022,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -438,7 +438,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,6,4653.9,18,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -509,7 +509,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,7,4689.1,18,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false,die-linke,die-linke
@@ -580,7 +580,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,9,4810.6,18,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -651,7 +651,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,10,4842.3,18,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -722,7 +722,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,11,4879.9,18.1,VIII-DS-02330,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -793,7 +793,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,corrected,false,cdu,cdu
 2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,corrected,false,cdu,cdu
 2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,corrected,false,cdu,cdu
-2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,corrected,false,cdu,spd
+2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,corrected,false,cdu,parteilos
 2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,corrected,false,die-linke,die-linke
 2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,corrected,false,die-linke,die-linke
 2026-07-01,12,5913.3,12.1.1,VIII-A-02485-NF-02-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,corrected,false,die-linke,die-linke
@@ -864,7 +864,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,provisional,false,cdu,cdu
 2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,provisional,false,cdu,cdu
 2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,provisional,false,cdu,cdu
-2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,provisional,false,cdu,spd
+2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,provisional,false,cdu,parteilos
 2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,provisional,false,die-linke,die-linke
 2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,provisional,false,die-linke,die-linke
 2026-07-01,13,6023.6,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,provisional,false,die-linke,die-linke
@@ -935,7 +935,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,14,6162.1,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1006,7 +1006,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,15,6198.5,12.1.2,VIII-A-02485-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1077,7 +1077,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",E,present,E,verified,false,cdu,cdu
 2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,16,6245.3,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1148,7 +1148,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,17,6293.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1219,7 +1219,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,18,6327.1,12.1,VIII-A-02485-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1290,7 +1290,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,19,6812.6,12.2.2,VIII-A-02487-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1361,7 +1361,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,20,8244.1,12.6.1,VIII-A-01797-NF-02-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1432,7 +1432,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,21,8322.4,12.6,VIII-A-01797-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1503,7 +1503,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,present,O,verified,false,cdu,cdu
 2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,22,8475.4,12.10,VIII-A-02302-NF-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -1574,7 +1574,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,present,O,verified,false,cdu,cdu
 2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",O,present,O,verified,false,cdu,cdu
-2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,23,11966.9,13,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1645,7 +1645,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,25,13649.5,12.12.1,VIII-A-02468-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1716,7 +1716,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,26,14429.7,12.15,VIII-A-02603,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1787,7 +1787,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",O,present,O,verified,false,cdu,cdu
 2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,27,15417.6,12.16,VIII-A-02618,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1858,7 +1858,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,28,15680.6,12.17,VIII-A-02620,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -1929,7 +1929,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,29,16271.9,12.18.1,VIII-A-02627-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -2000,7 +2000,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,30,16305.7,12.18,VIII-A-02627,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -2071,7 +2071,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",O,present,O,verified,false,die-linke,die-linke
 2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,31,18775.8,12.19,VIII-A-02632,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -2142,7 +2142,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,32,20531.3,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -2213,7 +2213,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,33,20566.6,12.23.1,VIII-A-02798-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -2284,7 +2284,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,34,22003.8,12.24.1,VIII-A-02835-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false,die-linke,die-linke
@@ -2355,7 +2355,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,present,O,verified,false,cdu,cdu
 2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,verified,false,die-linke,die-linke
 2026-07-01,35,22525.6,14,,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,verified,false,die-linke,die-linke
@@ -2426,7 +2426,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,36,23607.6,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",N,present,N,verified,false,die-linke,die-linke
@@ -2497,7 +2497,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,37,23637.1,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false,die-linke,die-linke
@@ -2568,7 +2568,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,verified,false,cdu,cdu
 2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,verified,false,cdu,cdu
 2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,verified,false,cdu,cdu
-2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,verified,false,die-linke,die-linke
 2026-07-01,38,23670.3,18.21.1,VIII-DS-02692-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false,die-linke,die-linke
@@ -2639,7 +2639,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",N,present,N,needs-review,false,cdu,cdu
 2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,needs-review,false,cdu,cdu
 2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,needs-review,false,cdu,cdu
-2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,needs-review,false,cdu,spd
+2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,needs-review,false,cdu,parteilos
 2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,needs-review,false,die-linke,die-linke
 2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,needs-review,false,die-linke,die-linke
 2026-07-01,39,23715.8,18.21.2,VIII-DS-02692-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,needs-review,false,die-linke,die-linke
@@ -2710,7 +2710,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",J,present,J,verified,false,cdu,cdu
 2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,verified,false,cdu,cdu
 2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,verified,false,cdu,cdu
-2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,spd
+2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,absent,O,verified,false,cdu,parteilos
 2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",E,present,E,verified,false,die-linke,die-linke
 2026-07-01,40,23757.3,18.21,VIII-DS-02692,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",E,present,E,verified,false,die-linke,die-linke

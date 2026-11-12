@@ -1,6 +1,6 @@
 {
   "parliamentPeriodId": "leipzig-8",
-  "generatedAt": "2026-11-12T09:51:35.844Z",
+  "generatedAt": "2026-11-12T09:59:08.401Z",
   "sources": [
     {
       "name": "Ratsinformationssystem der Stadt Leipzig (OParl): Mitgliedschaften, Personen, Fraktionen",
@@ -102,7 +102,7 @@
     {
       "id": "spd",
       "name": "SPD",
-      "seats": 9
+      "seats": 8
     },
     {
       "id": "bsw",
@@ -127,6 +127,11 @@
     {
       "id": "freie-waehler",
       "name": "FREIE WÄHLER",
+      "seats": 1
+    },
+    {
+      "id": "parteilos",
+      "name": "parteilos",
       "seats": 1
     },
     {
@@ -2175,7 +2180,7 @@
       "id": "getu-abraham",
       "name": "Prof. Dr. Getu Abraham",
       "factionId": "fraktionslos",
-      "partyId": "spd",
+      "partyId": "parteilos",
       "start": null,
       "end": null,
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000895",
@@ -2207,18 +2212,28 @@
         {
           "partyId": "spd",
           "start": "2024-09-18",
-          "end": null,
+          "end": "2024-11-08",
           "source": {
             "method": "election-list",
             "match": "name",
             "listName": "Sozialdemokratische Partei Deutschlands"
           }
+        },
+        {
+          "partyId": "parteilos",
+          "start": "2024-11-09",
+          "end": null,
+          "source": {
+            "method": "override",
+            "reason": "Austritt aus SPD-Fraktion und SPD, bekanntgegeben am 8. November 2024; seitdem parteilos (2027 als unabhängiger OB-Kandidat angekündigt).",
+            "source": "Leipziger Zeitung, 8.11.2024: „Professor Getu Abraham gab am Freitag, dem 8. November, offiziell seinen Austritt aus der SPD-Fraktion und der SPD bekannt.“ https://www.l-iz.de/politik/leipzig/2024/11/leipziger-stadtrat-prof-getu-abrahamn-fraktion-spd-608264"
+          }
         }
       ],
       "partySource": {
-        "method": "election-list",
-        "match": "name",
-        "listName": "Sozialdemokratische Partei Deutschlands"
+        "method": "override",
+        "reason": "Austritt aus SPD-Fraktion und SPD, bekanntgegeben am 8. November 2024; seitdem parteilos (2027 als unabhängiger OB-Kandidat angekündigt).",
+        "source": "Leipziger Zeitung, 8.11.2024: „Professor Getu Abraham gab am Freitag, dem 8. November, offiziell seinen Austritt aus der SPD-Fraktion und der SPD bekannt.“ https://www.l-iz.de/politik/leipzig/2024/11/leipziger-stadtrat-prof-getu-abrahamn-fraktion-spd-608264"
       }
     },
     {

@@ -17,5 +17,12 @@
     "givenName": "Christoph",
     "reason": "Tippfehler im Vornamen in OParl („CHristoph“).",
     "source": "Abstimmungstafel der Aufzeichnungen („Neumann, Christoph“)"
+  },
+  {
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000895",
+    "party": "parteilos",
+    "since": "2024-11-09",
+    "reason": "Austritt aus SPD-Fraktion und SPD, bekanntgegeben am 8. November 2024; seitdem parteilos (2027 als unabhängiger OB-Kandidat angekündigt).",
+    "source": "Leipziger Zeitung, 8.11.2024: „Professor Getu Abraham gab am Freitag, dem 8. November, offiziell seinen Austritt aus der SPD-Fraktion und der SPD bekannt.“ https://www.l-iz.de/politik/leipzig/2024/11/leipziger-stadtrat-prof-getu-abrahamn-fraktion-spd-608264"
   }
 ]

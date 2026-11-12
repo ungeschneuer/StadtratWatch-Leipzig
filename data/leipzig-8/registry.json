@@ -267,7 +267,7 @@
     {
       "id": "spd",
       "name": "SPD",
-      "seats": 9
+      "seats": 8
     },
     {
       "id": "bsw",
@@ -292,6 +292,11 @@
     {
       "id": "freie-waehler",
       "name": "FREIE WÄHLER",
+      "seats": 1
+    },
+    {
+      "id": "parteilos",
+      "name": "parteilos",
       "seats": 1
     },
     {
@@ -1586,7 +1591,7 @@
       "id": "getu-abraham",
       "name": "Prof. Dr. Getu Abraham",
       "factionId": "fraktionslos",
-      "partyId": "spd",
+      "partyId": "parteilos",
       "start": null,
       "end": null,
       "factionMemberships": [
@@ -1615,6 +1620,11 @@
         {
           "partyId": "spd",
           "start": "2024-09-18",
+          "end": "2024-11-08"
+        },
+        {
+          "partyId": "parteilos",
+          "start": "2024-11-09",
           "end": null
         }
       ]

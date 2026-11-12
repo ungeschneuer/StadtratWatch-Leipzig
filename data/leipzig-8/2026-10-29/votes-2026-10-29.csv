@@ -66,7 +66,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,0,2604.4,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -137,7 +137,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",E,present,E,verified,false,fraktionslos,freie-waehler
 2026-10-29,1,2647.5,19.10.1,VIII-DS-02186-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -208,7 +208,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,corrected,false,die-freie-fraktion,die-partei
 2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,corrected,false,die-freie-fraktion,fdp
 2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,corrected,false,die-freie-fraktion,die-partei
-2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,corrected,false,fraktionslos,spd
+2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,corrected,false,fraktionslos,parteilos
 2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,corrected,false,fraktionslos,fdp
 2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,corrected,false,fraktionslos,freie-waehler
 2026-10-29,2,2717.8,19.10.2,VIII-DS-02186-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,corrected,false,oberbuergermeister,spd
@@ -279,7 +279,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,corrected,false,die-freie-fraktion,die-partei
 2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,corrected,false,die-freie-fraktion,fdp
 2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,corrected,false,die-freie-fraktion,die-partei
-2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,corrected,false,fraktionslos,spd
+2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,corrected,false,fraktionslos,parteilos
 2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,corrected,false,fraktionslos,fdp
 2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,corrected,false,fraktionslos,freie-waehler
 2026-10-29,3,2752.8,19.10,VIII-DS-02186,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,corrected,false,oberbuergermeister,spd
@@ -350,7 +350,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,4,2830.7,19.11.1,VIII-DS-01237-NF-01-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -421,7 +421,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,5,2869.8,19.11.2,VIII-DS-01237-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -492,7 +492,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,6,2916.8,19.11,VIII-DS-01237-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -563,7 +563,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",E,present,E,verified,false,fraktionslos,freie-waehler
 2026-10-29,7,4136.5,19.14.3,VIII-DS-02149-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -634,7 +634,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,8,4194.8,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -705,7 +705,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,9,4224.7,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -776,7 +776,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,10,4256.5,19.14.1,VIII-DS-02149-ÄA-01-NF-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -847,7 +847,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,11,4292.3,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -918,7 +918,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,12,4325.1,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -989,7 +989,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,13,4352.6,19.14.2,VIII-DS-02149-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -1060,7 +1060,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,verified,false,fraktionslos,fdp
 2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,14,4383,19.14,VIII-DS-02149,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -1131,7 +1131,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,corrected,false,die-freie-fraktion,die-partei
 2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,corrected,false,die-freie-fraktion,fdp
 2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,corrected,false,die-freie-fraktion,die-partei
-2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,corrected,false,fraktionslos,spd
+2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,corrected,false,fraktionslos,parteilos
 2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,O,corrected,false,fraktionslos,fdp
 2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,corrected,false,fraktionslos,freie-waehler
 2026-10-29,15,5545.2,19.13.1,VIII-DS-01507-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,corrected,false,oberbuergermeister,spd
@@ -1202,7 +1202,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,16,5586.9,19.13,VIII-DS-01507,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -1273,7 +1273,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,17,5660.4,19.16,VIII-DS-02993,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -1344,7 +1344,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",E,present,E,verified,false,fraktionslos,freie-waehler
 2026-10-29,18,6572,19.18.1,VIII-DS-02188-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",O,present,O,verified,false,oberbuergermeister,spd
@@ -1415,7 +1415,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,19,6603.5,19.18,VIII-DS-02188,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",O,present,O,verified,false,oberbuergermeister,spd
@@ -1486,7 +1486,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,fraktionslos,spd
+2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,fraktionslos,parteilos
 2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,20,7686.8,19.21,VIII-DS-02953,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -1557,7 +1557,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,fraktionslos,spd
+2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",O,present,O,verified,false,fraktionslos,parteilos
 2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,21,7732.3,19.22,VIII-DS-02693,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -1628,7 +1628,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,22,8577.2,19.23.1,VIII-DS-02859-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -1699,7 +1699,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,23,8603.4,19.23.2,VIII-DS-02859-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -1770,7 +1770,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,provisional,false,die-freie-fraktion,die-partei
 2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,provisional,false,die-freie-fraktion,fdp
 2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,provisional,false,die-freie-fraktion,die-partei
-2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,provisional,false,fraktionslos,spd
+2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,provisional,false,fraktionslos,parteilos
 2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,provisional,false,fraktionslos,fdp
 2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",E,present,E,provisional,false,fraktionslos,freie-waehler
 2026-10-29,24,8628.4,19.23,VIII-DS-02859,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,provisional,false,oberbuergermeister,spd
@@ -1841,7 +1841,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,25,9225.6,19.24.2,VIII-DS-02913-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",O,present,O,verified,false,oberbuergermeister,spd
@@ -1912,7 +1912,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,verified,false,die-freie-fraktion,die-partei
-2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,26,9268.7,19.24.1,VIII-DS-02913-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",O,present,O,verified,false,oberbuergermeister,spd
@@ -1983,7 +1983,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,verified,false,die-freie-fraktion,die-partei
-2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,27,9310.6,19.24,VIII-DS-02913,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",O,present,O,verified,false,oberbuergermeister,spd
@@ -2054,7 +2054,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,28,11409.8,19.26.1,VIII-DS-03145-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -2125,7 +2125,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,29,11435.1,19.26.2,VIII-DS-03145-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -2196,7 +2196,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,30,11460.6,19.26.3,VIII-DS-03145-ÄA-03,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -2267,7 +2267,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,31,11512.9,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -2338,7 +2338,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,32,11551.2,19.26,VIII-DS-03145,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -2409,7 +2409,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,verified,false,die-freie-fraktion,die-partei
 2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,spd
+2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,verified,false,fraktionslos,parteilos
 2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,verified,false,fraktionslos,freie-waehler
 2026-10-29,33,12478.2,19.27.1,VIII-DS-03190-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
@@ -2480,7 +2480,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,verified,false,die-freie-fraktion,fdp
 2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,present,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,34,12502.9,19.27,VIII-DS-03190,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,verified,false,oberbuergermeister,spd
@@ -2551,7 +2551,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,verified,false,die-freie-fraktion,die-partei
 2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,verified,false,die-freie-fraktion,fdp
 2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",O,absent,O,verified,false,die-freie-fraktion,die-partei
-2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,spd
+2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,verified,false,fraktionslos,parteilos
 2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-10-29,35,13496.3,20.3.1,VIII-Ifo-03193-ÄA-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
