@@ -28,6 +28,7 @@ const parliamentPeriod: Registry = {
   persons: [
     {
       id: 'person-1',
+      oparlId: 'https://oparl.example/persons/1',
       name: 'Max Mustermann',
       factionId: 'council',
       partyId: 'party',
@@ -131,7 +132,13 @@ describe('votings endpoint majority fields', () => {
         type: 'Tagesordnung',
         authors: [],
       },
-      votes: [{ personId: 'person-1', vote: 'no' }],
+      votes: [
+        {
+          personId: 'person-1',
+          personOparlId: 'https://oparl.example/persons/1',
+          vote: 'no',
+        },
+      ],
     });
   });
 });

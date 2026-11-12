@@ -40,7 +40,12 @@ export function buildRegistry(
     name: parliamentPeriod.name,
     lastUpdate: `${latestSession > membersDay ? latestSession : membersDay}T00:00:00Z`,
     sessions: sortedSessions.map(toRegistrySession),
-    factions: members.factions.map(({ id, name, seats }) => ({ id, name, seats })),
+    factions: members.factions.map(({ id, name, seats, oparlId }) => ({
+      id,
+      name,
+      seats,
+      ...(oparlId ? { oparlId } : {}),
+    })),
     parties: members.parties.map(({ id, name, seats }) =>
       withClassification(
         { id, name, seats },
@@ -49,8 +54,9 @@ export function buildRegistry(
     ),
     // The history lets the site count each vote for the faction and party of its session day.
     persons: members.persons.map(
-      ({ id, name, factionId, partyId, start, end, factionMemberships, partyMemberships }) => ({
+      ({ id, oparlId, name, factionId, partyId, start, end, factionMemberships, partyMemberships }) => ({
         id,
+        oparlId,
         name,
         factionId,
         partyId,
@@ -95,6 +101,7 @@ function toRegistrySession({
     ...(recording.goneSince === null ? { video: sessionVideo(recording) } : {}),
     meetingMinutesUrl,
     approved: pendingVotings === 0,
+    ...(recording.oparlMeetingId ? { oparlMeetingId: recording.oparlMeetingId } : {}),
     ...(speechesSourceUrl
       ? { speechesSource: { label: 'Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig', url: speechesSourceUrl } }
       : {}),

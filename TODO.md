@@ -42,7 +42,7 @@ Stand: 12.11.2026 (abends)
 
 ### Maschinenlesbarkeit
 - [ ] **Kanonisch JSON** im StadtratWatch-Format, erweitert um stabile IDs.
-- [ ] **Stabile IDs:** OParl-IDs für Personen, Fraktionen, Sitzungen, TOPs und Vorlagen in Downloads und API. Namen sind nie der Schlüssel; die Adressen der Seite bleiben lesbar (Entscheidung 12.11.2026).
+- [x] **Stabile IDs:** OParl-IDs für Personen, Fraktionen, Sitzungen, TOPs und Vorlagen in Downloads und API (13.11.2026). Namen sind nie der Schlüssel; die Adressen der Seite bleiben lesbar (Entscheidung 12.11.2026).
 - [ ] **Lesbare Links:** deutsche Adressen (`/wahlperiode-8/sitzung/<datum>/abstimmung/<top>`), Abstimmungen nach TOP statt laufender Nummer, sprechende Linktexte; alte Adressen leiten weiter (Entscheidung 12.11.2026).
 - [x] **CSV im Long-Format:** `votings.csv`, `votes.csv`, `sessions.csv`, `persons.csv`, `faction-memberships.csv` unter `/data/leipzig-8/`, geschrieben von `leipzig-site-data` (12.11.2026).
 - [x] **Frictionless `datapackage.json`** mit Spalten, Typen, Schlüsseln, Lizenzen und Quellen; lokal mit `frictionless validate` geprüft (alle Tabellen VALID), ein Test hält Beschreibung und CSV-Köpfe gleich (12.11.2026).

@@ -98,6 +98,9 @@ export type SessionScanVotingSubject = {
   type: string | null; // TODO: remove null?
   authors: string[];
   paperUrl?: string;
+  // Stable keys of the agenda item and the paper in the council's OParl, where the city publishes one.
+  oparlAgendaItemId?: string;
+  oparlPaperId?: string;
 };
 
 export type SessionScanVote = {

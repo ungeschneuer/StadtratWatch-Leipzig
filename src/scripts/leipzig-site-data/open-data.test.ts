@@ -18,16 +18,18 @@ const registry: Registry = {
       video: { url: 'https://www.leipzig.de/mediathek/video/aufzeichnung', label: 'Mediathek' },
       meetingMinutesUrl: 'https://ratsinformation.leipzig.de/minutes',
       approved: true,
+      oparlMeetingId: 'oparl/meetings/1',
     },
   ],
   factions: [
-    { id: 'cdu', name: 'CDU', seats: 36 },
-    { id: 'spd', name: 'SPD', seats: 35 },
+    { id: 'cdu', name: 'CDU', seats: 36, oparlId: 'oparl/organizations/cdu' },
+    { id: 'spd', name: 'SPD', seats: 35, oparlId: 'oparl/organizations/spd' },
   ] as Registry['factions'],
   parties: [],
   persons: [
     {
       id: 'getu-abraham',
+      oparlId: 'oparl/persons/abraham',
       name: 'Getu Abraham',
       factionId: 'fraktionslos',
       partyId: 'parteilos',
@@ -38,7 +40,15 @@ const registry: Registry = {
         { factionId: 'fraktionslos', start: '2024-11-09', end: null },
       ],
     },
-    { id: 'karsten-albrecht', name: 'Karsten Albrecht', factionId: 'cdu', partyId: 'cdu', start: null, end: null },
+    {
+      id: 'karsten-albrecht',
+      oparlId: 'oparl/persons/albrecht',
+      name: 'Karsten Albrecht',
+      factionId: 'cdu',
+      partyId: 'cdu',
+      start: null,
+      end: null,
+    },
   ] as Registry['persons'],
 };
 
@@ -52,6 +62,8 @@ const hauptsatzung: SessionScanItem = {
     type: 'Beschlussvorlage',
     authors: ['Stadtplanungsamt'],
     paperUrl: 'https://ratsinformation.leipzig.de/vo020?VOLFDNR=1',
+    oparlAgendaItemId: 'oparl/agendaItems/7',
+    oparlPaperId: 'oparl/papers/9',
   },
   votes: [
     { name: 'Getu Abraham', vote: 'J' },
@@ -67,18 +79,18 @@ const scans = new Map([['2026-03-25', [hauptsatzung]]]);
 describe('votingsToCsv', () => {
   it('writes one row per published vote with counts, requirement, result and check status', () => {
     expect(votingsToCsv(registry, scans)).toBe(
-      'sessionId,votingId,agendaItem,paperReference,title,type,paperUrl,videoTimestamp,yes,no,abstentions,notVoted,presentMembers,majorityRequirement,result,reviewStatus\n' +
-        '2026-03-25,2026-03-25-029,19.10,VIII-DS-02011-NF-01-DS-01,"5. Satzung zur Änderung der Hauptsatzung, „Bauturbo“",Beschlussvorlage,https://ratsinformation.leipzig.de/vo020?VOLFDNR=1,05:12:40,1,0,0,1,2,majority-of-members,rejected,provisional\n',
+      'sessionId,votingId,agendaItem,oparlAgendaItemId,paperReference,oparlPaperId,title,type,paperUrl,videoTimestamp,yes,no,abstentions,notVoted,presentMembers,majorityRequirement,result,reviewStatus\n' +
+        '2026-03-25,2026-03-25-029,19.10,oparl/agendaItems/7,VIII-DS-02011-NF-01-DS-01,oparl/papers/9,"5. Satzung zur Änderung der Hauptsatzung, „Bauturbo“",Beschlussvorlage,https://ratsinformation.leipzig.de/vo020?VOLFDNR=1,05:12:40,1,0,0,1,2,majority-of-members,rejected,provisional\n',
     );
   });
 });
 
 describe('votesToCsv', () => {
-  it('writes one row per person and vote, with faction and party of the session day', () => {
+  it('writes one row per person and vote, keyed by OParl IDs, with faction and party of the session day', () => {
     expect(votesToCsv(registry, scans)).toBe(
       'sessionId,votingId,personId,name,vote,factionId,partyId\n' +
-        '2026-03-25,2026-03-25-029,getu-abraham,Getu Abraham,J,fraktionslos,parteilos\n' +
-        '2026-03-25,2026-03-25-029,karsten-albrecht,Karsten Albrecht,O,cdu,cdu\n',
+        '2026-03-25,2026-03-25-029,oparl/persons/abraham,Getu Abraham,J,fraktionslos,parteilos\n' +
+        '2026-03-25,2026-03-25-029,oparl/persons/albrecht,Karsten Albrecht,O,oparl/organizations/cdu,cdu\n',
     );
   });
 });
@@ -86,8 +98,8 @@ describe('votesToCsv', () => {
 describe('sessionsToCsv', () => {
   it('writes one row per session with its sources and how many votes are published', () => {
     expect(sessionsToCsv(registry, scans)).toBe(
-      'sessionId,date,title,approved,publishedVotings,videoUrl,meetingMinutesUrl,speechesSourceUrl\n' +
-        '2026-03-25,2026-03-25,Ratsversammlung,true,1,https://www.leipzig.de/mediathek/video/aufzeichnung,https://ratsinformation.leipzig.de/minutes,\n',
+      'sessionId,oparlMeetingId,date,title,approved,publishedVotings,videoUrl,meetingMinutesUrl,speechesSourceUrl\n' +
+        '2026-03-25,oparl/meetings/1,2026-03-25,Ratsversammlung,true,1,https://www.leipzig.de/mediathek/video/aufzeichnung,https://ratsinformation.leipzig.de/minutes,\n',
     );
   });
 });

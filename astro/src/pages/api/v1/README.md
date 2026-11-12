@@ -165,14 +165,17 @@ Gibt alle Abstimmungen einer spezifischen Stadtratssitzung zurück.
       "votes": [
         {
           "personId": "person-123",
+          "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000067",
           "vote": "yes"
         },
         {
           "personId": "person-456",
+          "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/73",
           "vote": "no"
         },
         {
           "personId": "person-789",
+          "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001498",
           "vote": "yes"
         }
       ],
@@ -190,7 +193,8 @@ Gibt alle Abstimmungen einer spezifischen Stadtratssitzung zurück.
 - `id`: Eindeutige ID der Abstimmung. (Eindeutigkeit innerhalb der Sitzung)
 - `videoTimestamp`: Zeitstempel im Video in Sekunden
 - `votingSubject`: Beschreibung des Abstimmungsthemas
-- `votes`: Array mit den einzelnen Stimmen
+- `votes`: Array mit den einzelnen Stimmen. `personId` ist der lesbare Schlüssel der Seite (ändert sich mit dem Namen), `personOparlId` der stabile Schlüssel aus OParl (`null`, wenn die Person keine OParl-ID hat)
+- `votingSubject.oparlAgendaItemId`, `votingSubject.oparlPaperId`: Tagesordnungspunkt und Drucksache in OParl, soweit die Stadt sie führt
 - `majorityRequirement`: Mehrheitserfordernis der Abstimmung, immer gesetzt. Standard ist `"simple"`, wenn kein anderes Erfordernis erfasst ist. Mögliche Werte:
   - `simple`: Einfache Mehrheit
   - `majority-of-present`: Mehrheit der anwesenden Mitglieder
