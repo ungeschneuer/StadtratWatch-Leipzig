@@ -9,7 +9,7 @@ Stand: 12.11.2026
 | Frage | Entscheidung |
 |---|---|
 | Repository | Fork, kein Kontakt zum Upstream. Änderungen sollen konfigurierbar bleiben, damit spätere Merges von upstream möglich sind. |
-| Umfang | Nur Abstimmungen. Keine Reden, keine Transkripte, keine Volltextsuche. |
+| Umfang | Abstimmungen, dazu seit 12.11.2026 Reden aus dem Verlaufsprotokoll (siehe M5). Keine Volltextsuche. |
 | Zeitraum | Alle Sitzungen, zu denen es ein Video gibt. |
 | Betrieb | Nur kostenlose Dienste: GitHub Actions, GitHub Pages bzw. Netlify Free, Git als Datenspeicher. Kein S3, kein VPS, kein Typesense. |
 | Stadt Leipzig | Wird nicht kontaktiert. Es wird nur mit öffentlich zugänglichen Daten gearbeitet. |
@@ -156,7 +156,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Video-Abstraktion:** `RegistrySession.video` (`url`, `label`) neben `youtubeUrl` (abwärtskompatibel, Magdeburg unverändert); `sessionVideoLink()` in `astro/src/models/session-video.ts` wählt den Link für Sitzungs- und Abstimmungsseite. Leipzig verlinkt die Mediathek-Seite, solange sie online ist.
   - [ ] Zeitgenaue Links auf die Mediathek (hängt an `videostartoffset`, siehe M2) oder eingebetteter Player.
   - [ ] `Speech.astro` nutzt noch `youtubeUrl` (betrifft nur Reden, siehe nächster Punkt).
-- [ ] **Reden-Funktionen deaktivieren:** Speech-Seiten, Redezeit-Statistiken, `speech-to-text`, `speaker-diarization`, `detect-ai-text` werden nicht genutzt, per Konfiguration ausblenden.
+- [ ] **Reden-Funktionen:** Speech-Seiten und Redezeit-Statistiken werden mit M5 gefüllt statt ausgeblendet. `speech-to-text`, `speaker-diarization` und `detect-ai-text` aus upstream werden nicht genutzt. `Speech.astro` braucht dafür `sessionVideoLink()` statt `youtubeUrl`.
 - [x] **Registry `data/leipzig-8/registry.json`** aus `members.json` und den Sitzungen mit Abstimmungen, Skript `src/scripts/leipzig-site-data`. `approved`, sobald keine Abstimmung mehr auf Prüfung oder amtliches Ergebnis wartet (Stand 12.11.2026: 5 von 16).
 - [ ] **OParl-Pipeline schlank halten:** nur Sitzungen, TOPs und die **in Abstimmungen vorkommenden** Vorlagen (Titel, Nummer, Link zum Ratsinfo). Kein Download aller PDFs, kein Tika, kein Typesense.
 - [x] **Adapter M3 → `session-scan-*.json`** (`src/scripts/leipzig-site-data`): veröffentlicht `verified`, `corrected`, `reviewed`, `provisional` (510 von 547), Namen wie in der Registry, Titel aus OParl, Typ aus der Drucksachennummer. Läuft in den Workflows `leipzig-votings` und `leipzig-review-recheck`. Site-Build mit Leipzig geprüft (12.11.2026, 4878 Seiten, keine Fehler).
@@ -184,6 +184,26 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 
 ---
 
+## M5: Reden aus dem Verlaufsprotokoll
+
+**Ansatz:** Das Verlaufsprotokoll ist ein redigiertes Wortprotokoll mit Sprecher und Fraktion je Beitrag (28.01.2026: rund 55.000 Wörter, 366 Beiträge). Es liefert Sprecher und Text, die Untertitel bzw. ein lokales Whisper-Modell liefern die Zeiten. Kein LLM, keine kostenpflichtige API. Ziel ist das upstream-Format `session-speeches-<datum>.json` (`SessionSpeech`: `speaker`, `start`, `duration`, `isChairPerson`, `onBehalfOf`, `transcription`), damit Reden-Tab und Redezeiten je Person, Fraktion und Partei funktionieren.
+
+### Aufgaben
+- [ ] **Beiträge parsen:** Sprecherzeilen wie „Stadtrat Stange (DIE LINKE):“, „Oberbürgermeister Jung:“, „Bürgermeisterin …:“ (das Muster `SPEAKER` in `verlaufsprotokoll.ts` gibt es schon). Silbentrennung und Seitenköpfe entfernen, TOP-Überschriften und Abstimmungszeilen als Grenzen.
+- [ ] **Sprecher zuordnen:** Nachname plus Fraktion → Person aus `members.json` am Sitzungstag. Der Oberbürgermeister als Sitzungsleitung → `isChairPerson`. Bürgermeister:innen und Gäste (Einwohneranfragen, Verwaltung) sind keine Ratsmitglieder und zählen nicht in die Redezeiten der Ratsmitglieder. Nicht zuordenbare Namen gehen in die Prüfung.
+- [ ] **Zeiten über die Untertitel:** Anfang (und Ende) jedes Beitrags in den Untertiteln wiederfinden (unscharfer Textabgleich, Reihenfolge erhalten wie bei `alignVerlauf`). `start` = Zeit des ersten passenden Untertitels, `duration` bis zum Beginn des nächsten Beitrags.
+- [ ] **Feste Anker:** Jede Abstimmungszeile des Protokolls ist schon einer Tafel mit Videozeit zugeordnet (10 bis 55 Anker je Sitzung). Sie begrenzen den Textabgleich und prüfen ihn: Ein Beitrag muss zwischen den Abstimmungen davor und danach liegen. Die Lücken zwischen Abstimmungen reichen bis 3,5 Stunden (Aktuelle Stunde, Anfragen), deshalb genügen die Anker allein nicht für die Zeiten. Uhrzeiten nennt das Protokoll nur in Ansagen („Pause bis 18.10 Uhr“), sie taugen nicht als Anker.
+- [ ] **Lokales Whisper für die Sitzungen ohne Untertitel** (2025-12-18, 2026-01-28, 2026-02-25, zusammen 16,7 Stunden):
+  - [ ] Nur die Tonspur laden (AAC im HLS-Stream), als 16 kHz mono für Whisper.
+  - [ ] `whisper.cpp` mit `large-v3-turbo` (dieselbe Modellfamilie wie die Untertitel des Hosters), auf dem Mac mit Metal. Erst an 10 Minuten Geschwindigkeit und Qualität messen. Schätzung: 2 bis 4 Stunden Rechenzeit für alle drei Tage, einmalig.
+  - [ ] Ergebnis als `subtitles-<datum>.vtt` mit Herkunft (`method: whisper-local`, Modell, Version) ablegen, damit die Abstimmungsprüfung (Ansagen) davon auch profitiert.
+  - [ ] Bleibt lokal: Auf GitHub Actions ohne GPU zu langsam, und für neue Sitzungen liefert der Hoster Untertitel.
+- [ ] **Prüfung:** Anteil der Beiträge mit gefundener Zeit, Summe der Redezeiten im Verhältnis zur Sitzungsdauer, Beiträge außerhalb ihrer Anker. Stichprobe von Hand an einer Sitzung (z. B. 28./29.10.2026, sobald das Protokoll da ist).
+- [ ] **Ausgabe:** `session-speeches-<datum>.json` je Sitzung mit Verlaufsprotokoll, erzeugt von `leipzig-site-data`; Quelle und Lizenzhinweis in den Daten.
+- [ ] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung (Stand 12.11.2026: für 13 von 16 Sitzungstagen). Bis dahin hat eine Sitzung keine Reden; der Workflow erzeugt sie, sobald das Protokoll da ist.
+
+---
+
 ## Offene Fragen
 
 Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026.
@@ -204,6 +224,10 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [ ] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): Für sie gibt es nur die Ergebnisse aus den Protokollen. Bleibt es bei „nur Sitzungen mit Video“?
 - [ ] **Vorlagen auf der Seite:** Sollen Leipziger Vorlagen eigene Seiten bekommen (Paper-Index aus OParl, ohne PDFs), damit Abstimmungen auf sie verlinken? Bisher ist `voting-paper-map.json` leer.
 - [ ] **Erforderliche Mehrheit:** Woher kommt `majorityRequirement` (Zweidrittelmehrheit u. a.)? Aus den Protokollen, aus der Vorlage oder von Hand?
+
+### Reden (M5)
+- [ ] **Rechte am Verlaufsprotokoll:** Es ist eine Anlage der Sitzung im Ratsinformationssystem, nicht Teil von OParl (CC BY 4.0). Darf der Text vollständig veröffentlicht werden (amtliches Werk nach § 5 UrhG?), oder nur Sprecher und Redezeiten mit Link aufs Original? Sprecher und Redezeiten allein wären unkritisch.
+- [ ] **Whisper lokal installieren:** `whisper.cpp` per Homebrew und das Modell `large-v3-turbo` (rund 1,6 GB) auf diesem Mac; 13 GB Speicher frei. Freigabe nötig.
 
 ### Video und Belege
 - [ ] **Nach Ablauf der Mediathek:** Die Stadt löscht Aufzeichnungen nach etwa einem Jahr, danach entfällt der Video-Link. Soll die Seite dann auf die Belegbilder im Release `evidence-<datum>` verlinken? Bisher gibt es Belegbilder nur für Prüffälle.
