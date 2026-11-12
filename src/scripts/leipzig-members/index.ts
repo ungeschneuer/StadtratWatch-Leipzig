@@ -12,6 +12,7 @@ import {
   type OparlPerson,
 } from './council-members.ts';
 import { CANDIDATES_CSV_URL, CANDIDATES_DATASET_URL, parseCandidatesCsv, parseCsv } from './election-candidates.ts';
+import { writeGeneratedFile } from './generated-file.ts';
 import { parseMemberOverrides } from './member-overrides.ts';
 import { buildMembersFile, factionMembershipsToCsv, personsToCsv } from './members-file.ts';
 
@@ -70,7 +71,7 @@ try {
     ],
   });
 
-  await writeIfChanged(join(args.dataDir, 'members.json'), file);
+  await writeGeneratedFile(join(args.dataDir, 'members.json'), file);
   await writeFile(join(args.dataDir, 'persons.csv'), personsToCsv(file));
   await writeFile(join(args.dataDir, 'faction-memberships.csv'), factionMembershipsToCsv(file));
   console.log(
@@ -109,17 +110,6 @@ async function fetchAll<T>(firstPageUrl: string): Promise<T[]> {
   const items: T[] = [];
   for await (const page of followOparlPages<T>(fetchJson, firstPageUrl)) items.push(...page.data);
   return items;
-}
-
-// The generation time alone is no change; without this, every run would produce a commit.
-async function writeIfChanged(path: string, file: { generatedAt: string }) {
-  const previous = await readFile(path, 'utf-8')
-    .then((json) => JSON.parse(json) as { generatedAt: string })
-    .catch(() => null);
-  const unchanged =
-    previous !== null &&
-    JSON.stringify({ ...previous, generatedAt: '' }) === JSON.stringify({ ...file, generatedAt: '' });
-  if (!unchanged) await writeFile(path, `${JSON.stringify(file, null, 2)}\n`);
 }
 
 function berlinDate(date: Date): string {
