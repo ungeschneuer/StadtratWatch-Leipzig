@@ -1,0 +1,63 @@
+---
+import type { VotingReviewStatus } from '@models/session-scan';
+import { sitePath } from '@utils/site-path';
+import { CONTACT_EMAIL, DATA_PULL_REQUEST_URL } from '@utils/site-config';
+
+type Props = {
+  reviewStatus: VotingReviewStatus;
+  sessionId: string;
+};
+
+const { reviewStatus, sessionId } = Astro.props as Props;
+const reviewUrl = sitePath(`review/leipzig/${sessionId}`);
+---
+
+{reviewStatus === 'provisional' ? (
+  <div class="alert alert-info alert-soft items-start" role="status">
+    <span class="iconify lucide--hourglass size-5" />
+    <div class="space-y-2">
+      <p class="font-semibold">Vorläufiges Ergebnis</p>
+      <p>
+        Die Stimmen sind aus der Abstimmungstafel im Video gelesen und haben
+        alle automatischen Prüfungen bestanden. Das amtliche Ergebnis aus dem
+        Protokoll der Stadt liegt noch nicht vor. Sobald es erscheint, wird die
+        Abstimmung damit abgeglichen.
+      </p>
+      <p>
+        Fehler gefunden? Korrekturen sammeln wir im
+        <a href={DATA_PULL_REQUEST_URL} class="link" target="_blank">
+          Pull Request mit den Leipziger Daten
+        </a>
+        ; kommentieren Sie dort oder schreiben Sie an
+        <a href={`mailto:${CONTACT_EMAIL}`} class="link">
+          {CONTACT_EMAIL}
+        </a>
+        . Die Korrektur erscheint hier, sobald der Pull Request übernommen ist.
+      </p>
+    </div>
+  </div>
+) : (
+  <div class="alert alert-warning alert-soft items-start" role="status">
+    <span class="iconify lucide--search-check size-5" />
+    <div class="space-y-2">
+      <p class="font-semibold">In Prüfung</p>
+      <p>
+        Bei dieser Abstimmung ist eine automatische Prüfung fehlgeschlagen, etwa
+        weil die Zahlen auf der Tafel vom angesagten oder amtlichen Ergebnis
+        abweichen. Einzelne Stimmen können falsch gelesen sein.
+      </p>
+      <p>
+        So wird es behoben: Prüfende vergleichen die Tafel in der
+        <a href={reviewUrl} class="link">
+          Prüfoberfläche
+        </a>
+        mit dem Video und entscheiden den Fall. Die Entscheidung kommt als
+        Commit in den
+        <a href={DATA_PULL_REQUEST_URL} class="link" target="_blank">
+          Pull Request mit den Leipziger Daten
+        </a>
+        und erscheint hier, sobald er übernommen ist.
+      </p>
+    </div>
+  </div>
+)}

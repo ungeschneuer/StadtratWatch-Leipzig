@@ -5,8 +5,9 @@ import {
   type ParliamentPeriodWithSessionAndVotingProps,
   getParliamentPeriodWithSessionAndVotingPaths,
 } from '../../../../_helpers';
-import { getPaperId, getVotingPaperMap } from '../../../../_helpers2';
 import MetaTags from '@components/MetaTags.astro';
+import VotingReviewNotice from '@components/VotingReviewNotice.astro';
+import { sitePath } from '@utils/site-path';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
 import { sessionVideoLink } from '@models/session-video';
 import { factionIdOn } from '@models/person-affiliation';
@@ -18,24 +19,22 @@ import {
 
 export const getStaticPaths = getParliamentPeriodWithSessionAndVotingPaths;
 
-const { parliamentPeriodId, sessionId, votingId } = Astro.params;
+const { parliamentPeriodId, sessionId } = Astro.params;
 const { parliamentPeriod, sessionInput, voting } =
   Astro.props as ParliamentPeriodWithSessionAndVotingProps;
-
-const votingPaperMap = await getVotingPaperMap(parliamentPeriod.id);
 
 const breadcrumbItems = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Sitzungen',
-    href: `/pp/${parliamentPeriodId}/sessions`,
+    href: sitePath(`/pp/${parliamentPeriodId}/sessions`),
   },
   {
     name: formatDate(sessionInput.session.date),
-    href: `/pp/${parliamentPeriodId}/session/${sessionId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}/session/${sessionId}`),
   },
   {
     name: `${voting.votingSubject.type || ''} ${voting.votingSubject.motionId}`,
@@ -80,8 +79,6 @@ const groupsSortedByVotes = Object.entries(votesGroupedByFaction).sort(
   (a, b) => b[1].length - a[1].length,
 );
 
-const paperId = getPaperId(votingPaperMap, sessionInput.session.date, voting);
-
 const videoLink = sessionVideoLink(
   sessionInput.session,
   getVideoTimestampAsSeconds(voting),
@@ -104,9 +101,6 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
     slot="srw-meta-tags"
     sessionDate={sessionInput.session.date}
     voting={voting}
-    parliamentPeriodId={parliamentPeriodId}
-    sessionId={sessionId}
-    votingId={+votingId}
   />
 
   {videoLink && (
@@ -119,6 +113,12 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
   )}
 
   <div class="space-y-4">
+    {voting.reviewStatus && (
+      <VotingReviewNotice
+        reviewStatus={voting.reviewStatus}
+        sessionId={sessionId}
+      />
+    )}
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <div class="card bg-base-100 border border-base-300 md:col-span-2 lg:col-span-3">
         <div class="card-body">
@@ -126,10 +126,16 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
             <span>TOP {voting.votingSubject.agendaItem}</span>
             <span>
               {voting.votingSubject.type}
-              {voting.votingSubject.motionId && paperId && (
-                <a href={`/paper?paperId=${paperId}`} class="link link-primary">
+              {voting.votingSubject.paperUrl ? (
+                <a
+                  href={voting.votingSubject.paperUrl}
+                  target="_blank"
+                  class="link link-primary"
+                >
                   {voting.votingSubject.motionId}
                 </a>
+              ) : (
+                voting.votingSubject.motionId
               )}
             </span>
           </div>
@@ -200,7 +206,9 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
             <div role="list" class="border-base-300">
               {votes.map((vote) => (
                 <a
-                  href={`/pp/${parliamentPeriod.id}/person/${vote.personId}`}
+                  href={sitePath(
+                    `/pp/${parliamentPeriod.id}/person/${vote.personId}`,
+                  )}
                   class="flex flex-row justify-between items-center py-2 space-x-1"
                 >
                   <div class="truncate text-sm">{vote.personName}</div>

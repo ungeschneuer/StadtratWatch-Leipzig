@@ -1,13 +1,19 @@
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
-import type { SessionScan, SessionScanItem } from '@srw-astro/models/session-scan';
+import type { SessionScan, SessionScanItem, VotingReviewStatus } from '@srw-astro/models/session-scan';
 
 import type { LeipzigPaper, PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
 
-// The board reading of these votes is confirmed or, while no official result is published, unchallenged. A vote that
-// waits for a human, was found to be no valid result, or is a procedural motion whose checks failed stays off the site
-// until a reviewer decides it.
-const PUBLISHED_STATUSES = new Set<ExtractedVoting['status']>(['verified', 'corrected', 'reviewed', 'provisional']);
+// The board reading of these votes is confirmed or, while no official result is published, unchallenged; or a check
+// failed and a reviewer has not decided yet. The last two are published with their review status, so the site can say
+// how they get fixed. A vote found to be no valid result, or a procedural motion whose checks failed, stays off the site.
+const PUBLISHED_STATUSES = new Set<ExtractedVoting['status']>([
+  'verified',
+  'corrected',
+  'reviewed',
+  'provisional',
+  'needs-review',
+]);
 const PENDING_STATUSES = new Set<ExtractedVoting['status']>(['needs-review', 'provisional']);
 
 export type SessionScanResult = { scan: SessionScan; pending: number; problems: string[] };
@@ -40,12 +46,19 @@ export function toSessionScan(
           title: titleOf(voting),
           type: subjectType(voting),
           authors: paper ? authorsOf(paper, members) : [],
+          ...(paper?.web ? { paperUrl: paper.web } : {}),
         },
         votes,
         presentMembers: voting.votes.filter((seat) => seat.attendance === 'present').length,
+        ...reviewStatusOf(voting),
       };
     });
   return { scan, pending: votings.filter((voting) => PENDING_STATUSES.has(voting.status)).length, problems };
+}
+
+function reviewStatusOf(voting: ExtractedVoting): { reviewStatus: VotingReviewStatus } | Record<string, never> {
+  if (voting.status === 'provisional' || voting.status === 'needs-review') return { reviewStatus: voting.status };
+  return {};
 }
 
 // The board names the paper voted on; OParl names the paper of the agenda item, which for an amendment is its parent.

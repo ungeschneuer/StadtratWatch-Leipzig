@@ -1,4 +1,6 @@
 ---
+import { DATA_PULL_REQUEST_URL } from '@utils/site-config';
+import { sitePath } from '@utils/site-path';
 import {
   type ParliamentPeriodWithSessionProps,
   getParliamentPeriodWithSessionPaths,
@@ -21,11 +23,11 @@ const { parliamentPeriod, sessionInput } =
 const breadcrumbItems: BreadcrumbItem[] = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Sitzungen',
-    href: `/pp/${parliamentPeriodId}/sessions`,
+    href: sitePath(`/pp/${parliamentPeriodId}/sessions`),
   },
   {
     name: formatDate(sessionInput.session.date),
@@ -72,8 +74,16 @@ const videoLink = sessionVideoLink(sessionInput.session);
   {!sessionInput.session.approved && (
     <div class="alert alert-warning alert-soft mb-4">
       <span class="iconify lucide--alert-triangle" />
-      Die Prüfung dieser Sitzung ist noch nicht abgeschlossen. Die Daten sind
-      unter Umständen noch unvollständig oder werden sich noch ändern.
+      <p>
+        Die Prüfung dieser Sitzung ist noch nicht abgeschlossen. Die Daten sind
+        unter Umständen noch unvollständig oder werden sich noch ändern.
+        Vorläufige Abstimmungen und Abstimmungen in Prüfung sind gekennzeichnet;
+        Korrekturen sammeln wir im
+        <a href={DATA_PULL_REQUEST_URL} class="link" target="_blank">
+          Pull Request mit den Leipziger Daten
+        </a>
+        .
+      </p>
     </div>
   )}
 
@@ -92,7 +102,7 @@ const videoLink = sessionVideoLink(sessionInput.session);
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'votings'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/session/${sessionId}?tab=votings`); currentTab = 'votings'"
+      @change="history.pushState(null, '', '?tab=votings'); currentTab = 'votings'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Votings
@@ -109,7 +119,7 @@ const videoLink = sessionVideoLink(sessionInput.session);
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'speeches'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/session/${sessionId}?tab=speeches`); currentTab = 'speeches'"
+      @change="history.pushState(null, '', '?tab=speeches'); currentTab = 'speeches'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Speeches
@@ -125,7 +135,7 @@ const videoLink = sessionVideoLink(sessionInput.session);
       type="radio"
       name="demo-tabs-radio"
       :checked="currentTab === 'speaking-times'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/session/${sessionId}?tab=speaking-times`); currentTab = 'speaking-times'"
+      @change="history.pushState(null, '', '?tab=speaking-times'); currentTab = 'speaking-times'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <SpeakingTimes

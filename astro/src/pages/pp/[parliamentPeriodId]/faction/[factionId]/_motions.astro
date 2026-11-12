@@ -4,8 +4,7 @@ import { type Registry, type RegistryFaction } from '@models/registry';
 import { getMotionResult, getVotingId } from './_helpers';
 import { votingAccepted } from '@models/voting-breakdown';
 import { formatDate } from '@utils/format-date';
-import type { VotingPaperMap } from '@models/oparl-derivatives.ts';
-import { getPaperId } from '../../_helpers2';
+import { sitePath } from '@utils/site-path';
 
 export type MotionListItem = {
   sessionId: string;
@@ -14,7 +13,8 @@ export type MotionListItem = {
   votingDateFormatted: string;
   type: string | null;
   motionId: string;
-  paperId: number | null;
+  paperUrl: string | null;
+  votingUrl: string;
   title: string;
   result: string;
 };
@@ -23,11 +23,9 @@ type Props = {
   parliamentPeriod: Registry;
   faction: RegistryFaction;
   sessionInputs: SessionInput[];
-  votingPaperMap: VotingPaperMap;
 };
 
-const { parliamentPeriod, faction, sessionInputs, votingPaperMap } =
-  Astro.props as Props;
+const { parliamentPeriod, faction, sessionInputs } = Astro.props as Props;
 
 const factionMotionVotings = sessionInputs
   .flatMap((sessionInput) =>
@@ -54,11 +52,7 @@ const motions = Array.from(motionsMap)
     const motionTitle = motionVoting.voting.votingSubject.title;
     const sessionId = motionVoting.sessionId;
     const sessionDate = motionVoting.sessionDate;
-    const paperId = getPaperId(
-      votingPaperMap,
-      motionVoting.sessionDate,
-      motionVoting.voting,
-    );
+    const paperUrl = motionVoting.voting.votingSubject.paperUrl ?? null;
     const votings = motionVotings.map((motionVoting) => ({
       votingId: +motionVoting.voting.votingFilename.substring(11, 14),
       accepted: votingAccepted(parliamentPeriod, motionVoting.voting),
@@ -69,25 +63,28 @@ const motions = Array.from(motionsMap)
       title: motionTitle,
       sessionId,
       sessionDate,
-      paperId,
+      paperUrl,
       votings,
     };
   })
   .toSorted((a, b) => b.sessionDate.localeCompare(a.sessionDate))
-  .map<MotionListItem>(
-    (motion) =>
-      ({
-        sessionId: motion.sessionId,
-        votingId: getVotingId(motion.votings),
-        votingDate: motion.sessionDate,
-        votingDateFormatted: formatDate(motion.sessionDate),
-        type: motion.type,
-        motionId: motion.motionId,
-        paperId: motion.paperId,
-        title: motion.title,
-        result: getMotionResult(motion.votings),
-      }) satisfies MotionListItem,
-  );
+  .map<MotionListItem>((motion) => {
+    const votingId = getVotingId(motion.votings);
+    return {
+      sessionId: motion.sessionId,
+      votingId,
+      votingDate: motion.sessionDate,
+      votingDateFormatted: formatDate(motion.sessionDate),
+      type: motion.type,
+      motionId: motion.motionId,
+      paperUrl: motion.paperUrl,
+      votingUrl: sitePath(
+        `pp/${parliamentPeriod.id}/session/${motion.sessionId}/voting/${votingId}`,
+      ),
+      title: motion.title,
+      result: getMotionResult(motion.votings),
+    } satisfies MotionListItem;
+  });
 ---
 
 <div
@@ -185,20 +182,21 @@ const motions = Array.from(motionsMap)
           <td x-text="motion.votingDateFormatted"></td>
           <td class="flex flex-col">
             <span x-text="motion.type"></span>
-            <template x-if="motion.paperId">
+            <template x-if="motion.paperUrl">
               <a
-                :href="`/paper?paperId=${motion.paperId}`"
+                :href="motion.paperUrl"
+                target="_blank"
                 class="link link-primary"
                 x-text="motion.motionId"
               ></a>
             </template>
-            <template x-if="!motion.paperId">
+            <template x-if="!motion.paperUrl">
               <span x-text="motion.motionId"></span>
             </template>
           </td>
           <td>
             <a
-              :href="`/pp/${parliamentPeriodId}/session/${motion.sessionId}/voting/${motion.votingId}`"
+              :href="motion.votingUrl"
               class="link link-primary"
               x-text="motion.title"
             ></a>

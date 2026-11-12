@@ -1,3 +1,4 @@
+import type { VotingReviewStatus } from '@models/session-scan';
 import type { VotesByFaction } from '@models/voting-breakdown.ts';
 
 export type VotingListItem = {
@@ -9,4 +10,5 @@ export type VotingListItem = {
   authors: string[];
   votesByFactions: VotesByFaction[];
   accepted: boolean;
+  reviewStatus?: VotingReviewStatus;
 };

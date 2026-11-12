@@ -2,6 +2,7 @@ import { describe, expect, it } from 'bun:test';
 
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 
+import type { PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
 import { authorsOf, formatTimestamp, subjectType, toSessionScan } from './session-scan.ts';
 
@@ -66,7 +67,7 @@ describe('toSessionScan', () => {
     ]);
   });
 
-  it('leaves out votes waiting for review, discarded and skipped, and counts what is pending', () => {
+  it('publishes votes with an unfinished check under their review status, and leaves out the invalid ones', () => {
     const statuses: ExtractedVoting['status'][] = [
       'corrected',
       'reviewed',
@@ -81,12 +82,36 @@ describe('toSessionScan', () => {
       members,
     );
 
-    expect(scan.map((item) => item.votingFilename)).toEqual([
-      '2026-10-29-001.png',
-      '2026-10-29-002.png',
-      '2026-10-29-003.png',
+    expect(scan.map((item) => [item.votingFilename, item.reviewStatus])).toEqual([
+      ['2026-10-29-001.png', undefined],
+      ['2026-10-29-002.png', undefined],
+      ['2026-10-29-003.png', 'provisional'],
+      ['2026-10-29-004.png', 'needs-review'],
     ]);
     expect(pending).toEqual(2);
+  });
+
+  it('links the paper in the council information system', () => {
+    const papers = {
+      papers: {
+        'paper/1': {
+          oparlId: 'paper/1',
+          reference: 'VIII-DS-02186-ÄA-02',
+          name: 'Masterplan Grün',
+          paperType: 'Änderungsantrag',
+          date: '2026-10-01',
+          web: 'https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1',
+          originators: [],
+        },
+      },
+      votings: { '2026-10-29': { '0': 'paper/1' } },
+    } as unknown as PapersFile;
+
+    const [item] = toSessionScan('2026-10-29', [voting(0, 'verified')], members, papers).scan;
+
+    expect(item.votingSubject.paperUrl).toEqual(
+      'https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1',
+    );
   });
 
   it('takes the title from the OParl agenda item, not from the parent of an amendment', () => {

@@ -3,7 +3,7 @@
 ## Purpose
 
 Turns the Leipzig data of a parliament period into the files the StadtratWatch site reads. The site, its analyses and
-the API v1 then work for Leipzig as they do for Magdeburg. The script reads only committed files and needs no network.
+the API v1 then work for Leipzig as they did for StadtratWatch Magdeburg, which the site is forked from. The script reads only committed files and needs no network.
 
 | Input                                                 | From                                                    |
 | ----------------------------------------------------- | ------------------------------------------------------- |
@@ -16,17 +16,20 @@ the API v1 then work for Leipzig as they do for Magdeburg. The script reads only
 
 ## How it works
 
-- **Which votes.** Votes with the status `verified`, `corrected`, `reviewed` or `provisional` are published. Votes that
-  wait for a human (`needs-review`), are no valid result (`discarded`) or are procedural motions with failed checks
-  (`skipped`) stay off the site until a reviewer decides them.
+- **Which votes.** Votes with the status `verified`, `corrected`, `reviewed`, `provisional` or `needs-review` are
+  published. The last two carry `reviewStatus`, and the site marks them and says how they get fixed: reviewers decide a
+  `needs-review` vote in the review UI, and the decision lands in the open pull request of the data branch. Votes that
+  are no valid result (`discarded`) or procedural motions with failed checks (`skipped`) stay off the site. Votes
+  without a board (show of hands, secret ballot) and sessions without a recording are never extracted.
 - **Session approved.** `approved` is true once no vote of the session waits for review or for its official result;
   until then the site shows its notice that the check of the session is not finished.
 - **Names.** Votes name people as `members.json` does, which is how the site matches them to the registry.
 - **Subject.** TOP from the board (or the official result), paper from the board (or OParl), title from the OParl
   agenda item (the board's heading is OCR and only stands in). The type follows the paper reference: `-ÄA-` is an
-  Änderungsantrag, `A` an Antrag, `DS` a Beschlussvorlage; procedural motions are Geschäftsordnung.
+  Änderungsantrag, `A` an Antrag, `DS` a Beschlussvorlage; procedural motions are Geschäftsordnung. `paperUrl` links
+  the paper in the council information system (`web` from OParl).
 - **Video.** Leipzig's recordings are in the city's Mediathek, not on YouTube: `youtubeUrl` is empty and `video` links
-  the Mediathek page while it is online. The Mediathek has no links to a time.
+  the Mediathek page while it is online, and `video.playerUrl` the hoster's player, which jumps to a time.
 - **IDs.** `votingFilename` is `<date>-<NNN>.png` with the position of the vote in the scan, so a vote keeps its address
   on the site when another vote of the session is decided later.
 

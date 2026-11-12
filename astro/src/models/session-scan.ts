@@ -10,7 +10,15 @@ export type SessionScanItem = {
   votes: SessionScanVote[];
   majorityRequirement?: MajorityRequirement;
   presentMembers?: number;
+  reviewStatus?: VotingReviewStatus;
 };
+
+// A vote without a review status is final. The others are published while their check is not finished: a provisional
+// vote passed every automatic check but its official result is not out yet; a vote in review failed a check and waits
+// for a reviewer's decision.
+export const votingReviewStatuses = ['provisional', 'needs-review'] as const;
+
+export type VotingReviewStatus = (typeof votingReviewStatuses)[number];
 
 export const majorityRequirements = [
   'simple',
@@ -89,6 +97,7 @@ export type SessionScanVotingSubject = {
   title: string;
   type: string | null; // TODO: remove null?
   authors: string[];
+  paperUrl?: string;
 };
 
 export type SessionScanVote = {

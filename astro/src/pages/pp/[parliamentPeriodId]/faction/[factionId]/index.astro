@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '@utils/site-path';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithFactionProps,
@@ -8,7 +9,6 @@ import Councilors from './_councilors.astro';
 import Motions from './_motions.astro';
 import Statistics from './_statistics.astro';
 import MetaTags from '@components/MetaTags.astro';
-import { getVotingPaperMap } from '../../_helpers2.ts';
 
 export const getStaticPaths = getParliamentPeriodWithFactionPaths;
 
@@ -16,16 +16,14 @@ const { parliamentPeriodId, factionId } = Astro.params;
 const { parliamentPeriod, faction, sessionInputs } =
   Astro.props as ParliamentPeriodWithFactionProps;
 
-const votingPaperMap = await getVotingPaperMap(parliamentPeriod.id);
-
 const breadcrumbItems = [
   {
     name: parliamentPeriod.name,
-    href: `/pp/${parliamentPeriodId}`,
+    href: sitePath(`/pp/${parliamentPeriodId}`),
   },
   {
     name: 'Fraktionen',
-    href: `/pp/${parliamentPeriodId}/factions`,
+    href: sitePath(`/pp/${parliamentPeriodId}/factions`),
   },
   {
     name: faction.name,
@@ -56,7 +54,7 @@ const breadcrumbItems = [
       type="radio"
       name="faction-tabs-radio"
       :checked="currentTab === 'councilors'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/faction/${factionId}?tab=councilors`); currentTab = 'councilors'"
+      @change="history.pushState(null, '', '?tab=councilors'); currentTab = 'councilors'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Councilors parliamentPeriod={parliamentPeriod} faction={faction} />
@@ -69,14 +67,13 @@ const breadcrumbItems = [
       type="radio"
       name="faction-tabs-radio"
       :checked="currentTab === 'motions'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/faction/${factionId}?tab=motions`); currentTab = 'motions'"
+      @change="history.pushState(null, '', '?tab=motions'); currentTab = 'motions'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Motions
         parliamentPeriod={parliamentPeriod}
         faction={faction}
         sessionInputs={sessionInputs}
-        votingPaperMap={votingPaperMap}
       />
     </div>
 
@@ -87,7 +84,7 @@ const breadcrumbItems = [
       type="radio"
       name="faction-tabs-radio"
       :checked="currentTab === 'statistics'"
-      @change="history.pushState(null, '', `/pp/${parliamentPeriodId}/faction/${factionId}?tab=statistics`); currentTab = 'statistics'"
+      @change="history.pushState(null, '', '?tab=statistics'); currentTab = 'statistics'"
     />
     <div class="tab-content border-base-200 bg-base-100 p-6">
       <Statistics

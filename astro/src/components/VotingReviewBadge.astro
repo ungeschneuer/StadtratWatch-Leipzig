@@ -1,0 +1,16 @@
+---
+import type { VotingReviewStatus } from '@models/session-scan';
+
+type Props = {
+  reviewStatus: VotingReviewStatus | undefined;
+};
+
+const { reviewStatus } = Astro.props as Props;
+---
+
+{reviewStatus === 'provisional' && (
+  <span class="badge badge-info badge-soft badge-sm">vorläufig</span>
+)}
+{reviewStatus === 'needs-review' && (
+  <span class="badge badge-warning badge-soft badge-sm">in Prüfung</span>
+)}

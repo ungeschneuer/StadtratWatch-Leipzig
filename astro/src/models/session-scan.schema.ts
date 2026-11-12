@@ -5,6 +5,7 @@ import {
   majorityRequirements,
   type MajorityRequirement,
   type SessionScan,
+  votingReviewStatuses,
 } from './session-scan.ts';
 
 // Runtime schema for the session-scan files, consumed by the Astro content
@@ -27,6 +28,7 @@ export const sessionScanSchema = z.array(
         title: z.string(),
         type: z.string().nullable(),
         authors: z.array(z.string()),
+        paperUrl: z.url().optional(),
       }),
       votes: z.array(
         z.object({
@@ -36,6 +38,7 @@ export const sessionScanSchema = z.array(
       ),
       majorityRequirement: majorityRequirementSchema.optional(),
       presentMembers: z.number().int().optional(),
+      reviewStatus: z.enum(votingReviewStatuses).optional(),
     })
     .superRefine((voting, context) => {
       const violation = findPresentMembersViolation(voting);
