@@ -6,6 +6,7 @@ import type { ReviewCasesFile, ReviewIndex } from '@srw-astro/models/leipzig-rev
 import { quotationImageNameOf, votingFilenameOf } from '@srw-astro/models/voting-evidence';
 import { createWorker, PSM } from 'tesseract.js';
 
+import { writeGeneratedFile } from '../leipzig-members/generated-file.ts';
 import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
 import type { Recording, RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import { listVariantUrlsByBandwidth } from '../leipzig-recordings/stream-hosting.ts';
@@ -251,7 +252,7 @@ async function writeReviewCases(recording: Recording, votings: ExtractedVoting[]
     officialLinks: await officialLinksOf(recording.sessionId),
     now: new Date(),
   });
-  await writeFile(reviewPath(recording.sessionId), `${JSON.stringify(review, null, 2)}\n`);
+  await writeGeneratedFile(reviewPath(recording.sessionId), review);
 }
 
 // A recheck in CI has no evidence folder; the images already published stay linked.

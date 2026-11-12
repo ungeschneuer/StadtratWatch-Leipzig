@@ -12,7 +12,7 @@ Stand: 12.11.2026 (abends)
 | Branches | Code per PR nach `main`, Daten über `data/leipzig-votings` und dessen PR (12.11.2026). |
 | Umfang | Abstimmungen, dazu seit 12.11.2026 Reden aus dem Verlaufsprotokoll (siehe M5). Keine Volltextsuche. |
 | Zeitraum | Alle Sitzungen, zu denen es ein Video gibt. |
-| Betrieb | Nur kostenlose Dienste: GitHub Actions, GitHub Pages, Git als Datenspeicher. Kein S3, kein VPS, kein Typesense. Vorerst keine eigene Domain. |
+| Betrieb | Nur kostenlose Dienste: GitHub Actions, GitHub Pages, Git als Datenspeicher. Kein S3, kein Typesense. Vorerst keine eigene Domain. Ausnahme: ALLRIS nimmt von GitHub Actions keine Verbindung an, deshalb holt der vorhandene Server des Betreibers die Niederschriften (`minutes-runner/`, 12.11.2026). |
 | Betreiber | Marcel Schneuer, Impressum wie schneuer.online (12.11.2026). |
 | Veröffentlichung | Sitzungen ohne Video und Abstimmungen ohne Tafel werden nicht erfasst. `provisional` und `needs-review` erscheinen mit Hinweis, wie der Fall behoben wird, und Link zum Daten-PR (12.11.2026). |
 | Stadt Leipzig | Wird nicht kontaktiert. Es wird nur mit öffentlich zugänglichen Daten gearbeitet. |
@@ -76,7 +76,7 @@ Stand: 12.11.2026 (abends)
 - [x] `JensWinter/StadtratWatch-web` geforkt, seit 12.11.2026 als eigenständiges Repository (kein GitHub-Fork) https://github.com/ungeschneuer/StadtratWatch-Leipzig, Upstream als Remote `upstream`. Hinweis auf den Ursprung steht in der README.
 - [x] ADR-0008 (Fork nur für Leipzig, GitHub Pages) und ADR-0009 (Tafel, Prüfung, Freigabe per PR); arc42 für Leipzig neu geschrieben (12.11.2026).
 - [x] Magdeburg entfernt: Daten, Pipeline-Skripte, Docker, Typesense, Netlify, Vorlagen-, Such- und KI-Seiten, Magdeburger Ansichten der Prüfoberfläche. Wahlperiode `leipzig-8` angelegt.
-- [ ] CI des Forks auf GitHub zum Laufen bringen (`ci.yml`: Deno-Lint, Bun- und Astro-Checks; lokal grün am 12.11.2026).
+- [x] CI auf GitHub grün (`ci.yml`: Deno-Lint, Bun- und Astro-Checks; PR #3 und #4, 12.11.2026).
 - [x] Leipzig-Skripte als eigene Bun-Ordner `src/scripts/leipzig-*` (in `tsconfig.json` registriert; Deno lintet nur noch).
 
 ## M1: Mitgliederliste mit Partei
@@ -205,7 +205,8 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Rechte umgesetzt (§ 48 UrhG):** Volltexte nur auf der Sitzungsseite mit Quellenhinweis; die Personenseite listet Datum und Dauer mit Link; die API nennt die Quelle und nimmt die Texte von CC0 aus. Videolink der Reden über `sessionVideoLink` (Mediathek, ohne Zeitsprung).
 - [ ] **Stichprobe von Hand** an einer Sitzung auf der Seite (Sprecher, Text, Zeit), z. B. 28./29.10.2026, sobald das Protokoll da ist.
 - [ ] **Suche:** gibt es nicht (Typesense ist kein kostenloser Dienst, die Suchseite ist mit Magdeburg entfallen). Eine statische Suche (z. B. Pagefind) wäre kostenlos möglich; das Indexieren ganzer Protokolltexte ist rechtlich wie die Sitzungsseite zu sehen, aber nicht geprüft.
-- [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der tägliche Recheck (`--corrections-only`) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
+- [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der ALLRIS-Runner (`minutes-runner/`, täglich auf dem Server) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
+  - [ ] ALLRIS-Runner auf dem Server einrichten (`minutes-runner/README.md`), Deploy-Key mit Schreibzugriff eintragen, Probelauf.
 
 ---
 
