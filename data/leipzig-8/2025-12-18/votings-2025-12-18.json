@@ -4223,7 +4223,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -4922,7 +4922,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {

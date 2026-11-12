@@ -5681,7 +5681,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 42/9/8 with a spoken correction: \"Noch einmal grün dazu, heisst im Ergebnis 42 zu 9 zu 8 so positiv votiert und wir bekommen zum Beschluss Punkt zwei.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 42/9/8 with a spoken correction: \"Noch einmal grün dazu, heisst im Ergebnis 42 zu 9 zu 8 so positiv votiert und wir bekommen zum Beschluss Punkt zwei.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -15834,7 +15834,7 @@
         {
           "check": "paper-matches-oparl",
           "passed": true,
-          "detail": "heading VIII-A-02037-NF-03, OParl VIII-A-02037-NF-04; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading VIII-A-02037-NF-03, OParl VIII-A-02037-NF-04; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -17289,7 +17289,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 30/26/6 with a spoken correction: \"Noch einmal rot dazu, heisst im Ergebnis 30 zu 26,6 so beschlossen, und damit entfällt die Abstimmung über den Urantrag.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 30/26/6 with a spoken correction: \"Noch einmal rot dazu, heisst im Ergebnis 30 zu 26,6 so beschlossen, und damit entfällt die Abstimmung über den Urantrag.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -18724,7 +18724,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -19445,7 +19445,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {

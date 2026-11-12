@@ -2111,7 +2111,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 21/36/0 with a spoken correction: \"Und das Ergebnis, Herr Stange wird hinzugezählt, 21 zu 36 zu 0, damit abgelehnt. Wir kommen dann zur Vorlage selbst, Ihr Votum bitte zum Masterplan.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 21/36/0 with a spoken correction: \"Und das Ergebnis, Herr Stange wird hinzugezählt, 21 zu 36 zu 0, damit abgelehnt. Wir kommen dann zur Vorlage selbst, Ihr Votum bitte zum Masterplan.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -2835,7 +2835,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 45/11/2 with a spoken correction: \"Auch hier, Herr Stange hat zugezählt, macht 45 zu 11 zu 2, so beschlossen. Und ich nutze die Gelegenheit, Herr Dittmar, ich möchte Ihnen mal ganz\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 45/11/2 with a spoken correction: \"Auch hier, Herr Stange hat zugezählt, macht 45 zu 11 zu 2, so beschlossen. Und ich nutze die Gelegenheit, Herr Dittmar, ich möchte Ihnen mal ganz\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -11355,7 +11355,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 18/42/0 with a spoken correction: \"Und das Ergebnis? Einmal rot dazu, dann macht das 18 zu 42 zu 0, weil Dr. Reinhold nicht elektronisch abstimmen konnte, wird er als Nein dazugezählt.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 18/42/0 with a spoken correction: \"Und das Ergebnis? Einmal rot dazu, dann macht das 18 zu 42 zu 0, weil Dr. Reinhold nicht elektronisch abstimmen konnte, wird er als Nein dazugezählt.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -12077,7 +12077,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 42/16/1 with a spoken correction: \"Und das Ergebnis, 42 zu 16 zu 1, ich gucke mal zu Frau Dr. Steyer-Krieg, noch ein Ja dazu, 43 zu 16 zu 1, Frau Dr. Steyer-Krieg konnte nicht elektronisch\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 42/16/1 with a spoken correction: \"Und das Ergebnis, 42 zu 16 zu 1, ich gucke mal zu Frau Dr. Steyer-Krieg, noch ein Ja dazu, 43 zu 16 zu 1, Frau Dr. Steyer-Krieg konnte nicht elektronisch\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -21995,7 +21995,7 @@
         {
           "check": "paper-matches-oparl",
           "passed": true,
-          "detail": "heading VIII-DS-03145-ÄA-03, OParl VIII-DS-03145-ÄA-03-ÄA-01; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading VIII-DS-03145-ÄA-03, OParl VIII-DS-03145-ÄA-03-ÄA-01; settled by the official result",
           "settledByOfficialResult": true
         },
         {

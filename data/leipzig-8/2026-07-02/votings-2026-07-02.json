@@ -4986,7 +4986,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 35/19/4 with a spoken correction: \"Danke, das Ergebnis heisst dann 35 zu 19 zu 4 so beschlossen. Ich rufe auf die 18.4 zum Thema Erneuerbare Energien, Ertragsbeteiligungsgesetz\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 35/19/4 with a spoken correction: \"Danke, das Ergebnis heisst dann 35 zu 19 zu 4 so beschlossen. Ich rufe auf die 18.4 zum Thema Erneuerbare Energien, Ertragsbeteiligungsgesetz\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -7204,7 +7204,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 10/49/1 with a spoken correction: \"Ein Grün dazu, von Herrn Stange macht dem Ergebnis 10 zu 49 zu 1 abgelehnt. Jetzt komme ich zum Beschlusspunkt zwei des AR01, dort heisst es aber jetzt neu,\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 10/49/1 with a spoken correction: \"Ein Grün dazu, von Herrn Stange macht dem Ergebnis 10 zu 49 zu 1 abgelehnt. Jetzt komme ich zum Beschlusspunkt zwei des AR01, dort heisst es aber jetzt neu,\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -10770,7 +10770,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -12193,7 +12193,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -12888,7 +12888,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -14310,7 +14310,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -15037,7 +15037,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 22/27/–: \"22 zu 27, so beschlossen. Jetzt kommen wir zur Wahlwerbesatzung inklusive dieser Änderung.\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 22/27/–: \"22 zu 27, so beschlossen. Jetzt kommen wir zur Wahlwerbesatzung inklusive dieser Änderung.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {

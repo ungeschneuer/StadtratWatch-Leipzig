@@ -5684,7 +5684,7 @@
         {
           "check": "not-repeated",
           "passed": true,
-          "detail": "the chair had the vote repeated: \"Ja, ich wiederhole die Abstimmung, bitte, löschen noch mal kurz.\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "the chair had the vote repeated: \"Ja, ich wiederhole die Abstimmung, bitte, löschen noch mal kurz.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -9242,7 +9242,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 11/48/0 with a spoken correction: \"mehr, also 11 zu 48 zu 0 abgelehnt. Jetzt kommen wir zum Verwaltungsstandpunkt als Antrag der CDU-Fraktion.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 11/48/0 with a spoken correction: \"mehr, also 11 zu 48 zu 0 abgelehnt. Jetzt kommen wir zum Verwaltungsstandpunkt als Antrag der CDU-Fraktion.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {

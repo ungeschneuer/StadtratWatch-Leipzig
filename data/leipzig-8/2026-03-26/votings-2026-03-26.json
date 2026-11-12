@@ -2849,7 +2849,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -3560,7 +3560,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -4271,7 +4271,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -4982,7 +4982,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -12957,7 +12957,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -16531,7 +16531,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -16547,7 +16547,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 25/28/– with a spoken correction: \"25 dafür, 28 dagegen somit abgelehnt. Gibt es noch Wortwünsche zum Änderungsantrag zuerst?\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 25/28/– with a spoken correction: \"25 dafür, 28 dagegen somit abgelehnt. Gibt es noch Wortwünsche zum Änderungsantrag zuerst?\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -17244,7 +17244,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -17975,7 +17975,7 @@
         {
           "check": "outcome-matches-oparl",
           "passed": true,
-          "detail": "board accepted (simple majority), OParl \"abgelehnt\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "board accepted (simple majority), OParl \"abgelehnt\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {

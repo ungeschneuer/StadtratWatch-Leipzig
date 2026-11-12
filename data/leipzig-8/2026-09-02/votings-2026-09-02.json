@@ -7771,7 +7771,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 12/49/3: \"12 zu 49 zu 3. Wir kommen jetzt zur Neufassung, mit der Protokollnotiz, das ebenfalls zu prüfen\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 12/49/3: \"12 zu 49 zu 3. Wir kommen jetzt zur Neufassung, mit der Protokollnotiz, das ebenfalls zu prüfen\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {

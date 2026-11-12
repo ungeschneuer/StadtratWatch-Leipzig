@@ -1351,7 +1351,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 40/10/12: \"Und im Ergebnis heisst das Frau Subert gegen Rot, dann ist das Ergebnis 40 zu 10 zu 12, damit ist der Antrag angenommen.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 40/10/12: \"Und im Ergebnis heisst das Frau Subert gegen Rot, dann ist das Ergebnis 40 zu 10 zu 12, damit ist der Antrag angenommen.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -3499,7 +3499,7 @@
         {
           "check": "result-shown-long-enough",
           "passed": true,
-          "detail": "result bars visible for 0.5s; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "result bars visible for 0.5s; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -6421,7 +6421,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 43/15/4: \"enthält sich der Stimme und das heisst im Ergebnis 43 zu 15 zu 4 so beschlossen. Und dann bringe ich Doktor Münch noch mal zu sagen etwas zur Protokollnotiz.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 43/15/4: \"enthält sich der Stimme und das heisst im Ergebnis 43 zu 15 zu 4 so beschlossen. Und dann bringe ich Doktor Münch noch mal zu sagen etwas zur Protokollnotiz.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -7881,7 +7881,7 @@
         {
           "check": "outcome-matches-oparl",
           "passed": true,
-          "detail": "board rejected (simple majority), OParl \"geändert beschlossen\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "board rejected (simple majority), OParl \"geändert beschlossen\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -14355,7 +14355,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP unreadable; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP unreadable; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -16515,7 +16515,7 @@
         {
           "check": "paper-matches-oparl",
           "passed": true,
-          "detail": "heading VIII-DS-00941-ÄA-04-NF-01, OParl VIII-DS-00941-ÄA-04-NF-02; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading VIII-DS-00941-ÄA-04-NF-01, OParl VIII-DS-00941-ÄA-04-NF-02; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -25921,7 +25921,7 @@
         {
           "check": "not-repeated",
           "passed": true,
-          "detail": "the chair had the vote repeated: \"Jetzt noch einmal bitte konzentriert Ihr Votum zur Vorlage.\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "the chair had the vote repeated: \"Jetzt noch einmal bitte konzentriert Ihr Votum zur Vorlage.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -26632,7 +26632,7 @@
         {
           "check": "agenda-item-in-oparl",
           "passed": true,
-          "detail": "heading TOP 18.5; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "heading TOP 18.5; settled by the official result",
           "settledByOfficialResult": true
         },
         {

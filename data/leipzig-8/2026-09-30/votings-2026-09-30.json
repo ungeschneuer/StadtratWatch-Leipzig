@@ -21629,7 +21629,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 20/32/4 with a spoken correction: \"Ja, und das Ergebnis heisst dann 20 zu 32 zu 4, damit abgelehnt, damit steht die Petition selbst zur Abstimmung.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 20/32/4 with a spoken correction: \"Ja, und das Ergebnis heisst dann 20 zu 32 zu 4, damit abgelehnt, damit steht die Petition selbst zur Abstimmung.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -22336,7 +22336,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 0/51/6: \"Zwei Mal Rot dazu, das Ergebnis lautet dann 0 zu 51 zu 6, damit ist die Petition abgelehnt.\"; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 0/51/6: \"Zwei Mal Rot dazu, das Ergebnis lautet dann 0 zu 51 zu 6, damit ist die Petition abgelehnt.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
@@ -30815,7 +30815,7 @@
         {
           "check": "announcement-matches",
           "passed": true,
-          "detail": "announced 12/50/0: \"22, 24, 26, heisst im Ergebnis 12 zu 50 zu 0, damit abgelehnt. Wir kommen jetzt zur Vorlage selbst, ich bitte Sie um Ihr Votum.\"; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; minutes confirm the board; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result; settled by the official result",
+          "detail": "announced 12/50/0: \"22, 24, 26, heisst im Ergebnis 12 zu 50 zu 0, damit abgelehnt. Wir kommen jetzt zur Vorlage selbst, ich bitte Sie um Ihr Votum.\"; settled by the official result",
           "settledByOfficialResult": true
         },
         {
