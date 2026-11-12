@@ -177,11 +177,11 @@ Every vote the site shows also gets its quotation image `<date>-<NNN>-zitat.png`
 frame the votes were read from, halved to 960 px with 16 levels per colour channel, otherwise unchanged. It is published as a quotation (§ 51 UrhG) and
 shown only on the page of that vote, crediting Marcel Schneuer first and the city's recording as the source; the
 release text (`.github/evidence-release-notes.md`) says the same and excludes the images from CC0. The deploy fetches
-the images into the site. For sessions read before, `--quotation-images-only` grabs the stored frame of each vote again
-(workflow input `quotation_images_only`):
+the images into the site. For sessions read before, `--evidence-images-only` grabs the stored frame of each vote again
+and writes both the quotation images and the boards of the review cases (workflow input `evidence_images_only`):
 
 ```bash
-bun src/scripts/leipzig-votings/index.ts --quotation-images-only -s 2026-10-29
+bun src/scripts/leipzig-votings/index.ts --evidence-images-only -s 2026-10-29
 ```
 
 - `voting.videoSeconds` is the `videoSeconds.start` of the vote (±15 s); `agendaItemNumber` is optional and narrows
