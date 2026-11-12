@@ -1,5 +1,5 @@
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
-import type { Registry, RegistrySession, RegistrySessionVideo } from '@srw-astro/models/registry';
+import type { Registry, RegistryParty, RegistrySession, RegistrySessionVideo } from '@srw-astro/models/registry';
 
 import type { Recording } from '../leipzig-recordings/recordings-manifest.ts';
 
@@ -12,13 +12,26 @@ export type RegistrySessionInput = {
   speechesSourceUrl: string | null;
 };
 
+// An editorial entry of data/<period>/party-classifications.json: a party a Verfassungsschutz authority classifies as
+// extremist, in its words and with its source. The site shows it on the party page and on the pages of its members.
+export type PartyClassification = {
+  partyId: string;
+  classification: string;
+  reason: string;
+  source: string;
+  sourceUrl: string;
+};
+
 // The StadtratWatch registry of a Leipzig parliament period: the members from leipzig-members, the sessions with
 // a votings file. A session is approved once no vote waits for review or for its official result.
 export function buildRegistry(
   parliamentPeriod: { id: string; name: string },
   members: LeipzigMembersFile,
   sessions: RegistrySessionInput[],
+  classifications: PartyClassification[] = [],
 ): Registry {
+  const unknownParty = classifications.find(({ partyId }) => !members.parties.some((party) => party.id === partyId));
+  if (unknownParty) throw new Error(`party-classifications.json: no party "${unknownParty.partyId}"`);
   const sortedSessions = [...sessions].sort((a, b) => a.recording.date.localeCompare(b.recording.date));
   const latestSession = sortedSessions.at(-1)?.recording.date ?? '';
   const membersDay = members.generatedAt.slice(0, 10);
@@ -28,7 +41,12 @@ export function buildRegistry(
     lastUpdate: `${latestSession > membersDay ? latestSession : membersDay}T00:00:00Z`,
     sessions: sortedSessions.map(toRegistrySession),
     factions: members.factions.map(({ id, name, seats }) => ({ id, name, seats })),
-    parties: members.parties.map(({ id, name, seats }) => ({ id, name, seats })),
+    parties: members.parties.map(({ id, name, seats }) =>
+      withClassification(
+        { id, name, seats },
+        classifications.find((entry) => entry.partyId === id),
+      ),
+    ),
     // The history lets the site count each vote for the faction and party of its session day.
     persons: members.persons.map(
       ({ id, name, factionId, partyId, start, end, factionMemberships, partyMemberships }) => ({
@@ -46,6 +64,19 @@ export function buildRegistry(
         })),
       }),
     ),
+  };
+}
+
+function withClassification(party: RegistryParty, classification: PartyClassification | undefined): RegistryParty {
+  if (!classification) return party;
+  return {
+    ...party,
+    additionalInformation: [
+      { key: 'EXTREMIST_CLASSIFICATION', value: classification.classification },
+      { key: 'EXTREMIST_CLASSIFICATION_REASON', value: classification.reason },
+      { key: 'EXTREMIST_CLASSIFICATION_SOURCE', value: classification.source },
+      { key: 'EXTREMIST_CLASSIFICATION_SOURCE_URL', value: classification.sourceUrl },
+    ],
   };
 }
 
