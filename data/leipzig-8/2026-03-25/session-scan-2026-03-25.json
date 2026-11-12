@@ -8717,7 +8717,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 62
+    "presentMembers": 62,
+    "majorityRequirement": "majority-of-members"
   },
   {
     "votingFilename": "2026-03-25-030.png",
