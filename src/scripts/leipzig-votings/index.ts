@@ -3,6 +3,7 @@ import { join } from 'node:path';
 
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 import type { ReviewCasesFile, ReviewIndex } from '@srw-astro/models/leipzig-review';
+import { quotationImageNameOf, votingFilenameOf } from '@srw-astro/models/voting-evidence';
 import { createWorker, PSM } from 'tesseract.js';
 
 import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
@@ -12,7 +13,7 @@ import { createAllrisClient } from './allris.ts';
 import type { TextWorkers } from './board-text.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
 import { applyCorrections, parseCorrections } from './corrections.ts';
-import { cropEvidence } from './evidence-images.ts';
+import { cropEvidence, toQuotationImage } from './evidence-images.ts';
 import { type ExtractedVoting, extractSessionVotings } from './extract-session.ts';
 import { createFfmpegVideoReader } from './ffmpeg.ts';
 import type { MinutesFile } from './minutes.ts';
@@ -118,7 +119,8 @@ function isNeighbouringDay(date: string, other: string): boolean {
 }
 
 // Recordings disappear from the Mediathek after a while. The board frame of every vote that needs a human look is kept,
-// so the review can still be done from the image once the video is gone.
+// so the review can still be done from the image once the video is gone. Every vote the site shows also gets its
+// quotation image, the evidence for the votes read from it.
 async function saveEvidenceFrames(sessionId: string, votings: ExtractedVoting[], boardImages: Map<number, Uint8Array>) {
   const directory = evidenceDirectory(sessionId);
   await rm(directory, { recursive: true, force: true });
@@ -127,6 +129,46 @@ async function saveEvidenceFrames(sessionId: string, votings: ExtractedVoting[],
     const png = boardImages.get(voting.index);
     if (png) await writeFile(join(directory, evidenceImageNames(sessionId, voting.index).board), png);
   }
+  await saveQuotationImages(sessionId, votings, (voting) => boardImages.get(voting.index));
+}
+
+// Discarded and skipped boards are no votes on the site, so they have nothing to back.
+const QUOTED_STATUSES = new Set<ExtractedVoting['status']>([
+  'verified',
+  'corrected',
+  'reviewed',
+  'provisional',
+  'needs-review',
+]);
+
+async function saveQuotationImages(
+  sessionId: string,
+  votings: ExtractedVoting[],
+  boardOf: (voting: ExtractedVoting) => Uint8Array | undefined | Promise<Uint8Array | undefined>,
+) {
+  const directory = evidenceDirectory(sessionId);
+  await mkdir(directory, { recursive: true });
+  let saved = 0;
+  for (const voting of votings.filter((candidate) => QUOTED_STATUSES.has(candidate.status))) {
+    const png = await boardOf(voting);
+    if (!png) continue;
+    const name = quotationImageNameOf(votingFilenameOf(sessionId, voting.index));
+    await writeFile(join(directory, name), toQuotationImage(png));
+    saved++;
+  }
+  console.log(`${sessionId}: ${saved} quotation images`);
+}
+
+// Sessions read before the quotation images existed get them from the frame each vote was read from.
+async function backfillQuotationImages(recording: Recording) {
+  const variants = listVariantUrlsByBandwidth(await getTextOrThrow(http, recording.hlsUrl), recording.hlsUrl);
+  const hdVideoUrl = variants[variants.length - 1];
+  if (!hdVideoUrl) throw new Error(`No HLS variants in ${recording.hlsUrl}`);
+  const file = JSON.parse(await readFile(votingsPath(recording), 'utf-8')) as SessionVotingsFile;
+  await saveQuotationImages(recording.sessionId, file.votings, async (voting) => {
+    const seconds = voting.videoSeconds.frames[0];
+    return seconds === undefined ? undefined : await video.grabFramePng(hdVideoUrl, seconds);
+  });
 }
 
 function evidenceDirectory(sessionId: string): string {
@@ -314,7 +356,14 @@ function fileExists(path: string): Promise<boolean> {
 await main();
 
 async function main() {
-  if (args.correctionsOnly) {
+  if (args.quotationImagesOnly) {
+    const recordings = (await selectRecordingsWithVotings(manifest.recordings)).filter(
+      (recording) => recording.goneSince === null,
+    );
+    for (const recording of recordings) {
+      await runForSession(recording, () => backfillQuotationImages(recording));
+    }
+  } else if (args.correctionsOnly) {
     for (const recording of await selectRecordingsWithVotings(manifest.recordings)) {
       await runForSession(recording, async () => {
         const file = JSON.parse(await readFile(votingsPath(recording), 'utf-8')) as SessionVotingsFile;

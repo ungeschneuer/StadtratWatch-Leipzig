@@ -7,6 +7,8 @@ import {
 } from '../../../../_helpers';
 import MetaTags from '@components/MetaTags.astro';
 import VotingReviewNotice from '@components/VotingReviewNotice.astro';
+import VotingQuotationImage from '@components/VotingQuotationImage.astro';
+import { quotationImageUrl } from '@utils/quotation-image';
 import { sitePath } from '@utils/site-path';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
 import { sessionVideoLink } from '@models/session-video';
@@ -82,6 +84,11 @@ const groupsSortedByVotes = Object.entries(votesGroupedByFaction).sort(
 const videoLink = sessionVideoLink(
   sessionInput.session,
   getVideoTimestampAsSeconds(voting),
+);
+
+const quotationImage = quotationImageUrl(
+  sessionInput.session.id,
+  voting.votingFilename,
 );
 
 const { J: votedFor, N: votedAgainst, E: abstentions } = getVoteCounts(voting);
@@ -240,5 +247,13 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
         </div>
       ))}
     </div>
+
+    {quotationImage && (
+      <VotingQuotationImage
+        imageUrl={quotationImage}
+        sessionDate={sessionInput.session.date}
+        videoTimestamp={voting.videoTimestamp}
+      />
+    )}
   </div>
 </PageLayout>

@@ -20,6 +20,10 @@ on:
         description: Auch Sitzungen mit vorhandener Abstimmungsdatei neu lesen
         type: boolean
         default: false
+      quotation_images_only:
+        description: Nur die Belegbilder (Zitat) der veröffentlichten Abstimmungen erzeugen und veröffentlichen
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -79,10 +83,11 @@ jobs:
         env:
           SESSIONS: ${{ inputs.sessions }}
           FORCE: ${{ inputs.force && '--force' || '' }}
+          QUOTATION_IMAGES_ONLY: ${{ inputs.quotation_images_only && '--quotation-images-only' || '' }}
         run: |
           session_args=()
           for session in $SESSIONS; do session_args+=(-s "$session"); done
-          bun src/scripts/leipzig-votings/index.ts $FORCE "${session_args[@]}" \
+          bun src/scripts/leipzig-votings/index.ts $FORCE $QUOTATION_IMAGES_ONLY "${session_args[@]}" \
             --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}" \
             2>&1 | tee extract.log
           exit "${PIPESTATUS[0]}"
@@ -115,9 +120,13 @@ jobs:
             images=("$directory"*.png)
             [ "${#images[@]}" -eq 0 ] && continue
             tag="evidence-$session"
-            gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --prerelease --target "$LEIPZIG_DATA_BRANCH" \
-              --title "Belegbilder Ratsversammlung $session" \
-              --notes 'Tafelbilder der Abstimmungen, die geprüft werden müssen. Sie bleiben erhalten, wenn die Aufzeichnung aus der Mediathek verschwindet.'
+            notes="$(sed "s/{session}/$session/g" .github/evidence-release-notes.md)"
+            if gh release view "$tag" >/dev/null 2>&1; then
+              gh release edit "$tag" --notes "$notes"
+            else
+              gh release create "$tag" --prerelease --target "$LEIPZIG_DATA_BRANCH" \
+                --title "Belegbilder Ratsversammlung $session" --notes "$notes"
+            fi
             gh release upload "$tag" "${images[@]}" --clobber
           done
 

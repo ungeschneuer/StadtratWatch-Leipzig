@@ -16,7 +16,7 @@
 | `https://<owner>.github.io/<repository>/`: die Astro-Seite; `/review/` die Prüfoberfläche; `404.html` leitet Deep-Links der Prüfoberfläche weiter.
 
 | GitHub Releases
-| `evidence-<datum>`: Belegbilder der Prüffälle.
+| `evidence-<datum>`: Zitatbilder aller veröffentlichten Abstimmungen, Tafelbilder der Prüffälle. `deploy.yml` lädt die Zitatbilder nach `public/evidence/`, die Seite liefert sie selbst aus.
 
 | Rechner des Betreibers
 | Nur für Ausnahmen: lokales Whisper für Sitzungen ohne Untertitel (`docs/guides/leipzig-whisper.md`).

@@ -4,6 +4,8 @@ import { getCollection } from 'astro:content';
 import { type Registry } from '@models/registry';
 import { formatDate } from '@utils/format-date';
 import {
+  CONTACT_EMAIL,
+  OPERATOR_NAME,
   SITE_NAME,
   SOURCE_REPOSITORY_URL,
   UPSTREAM_PROJECT,
@@ -123,17 +125,25 @@ switch (true) {
   </div>
 
   <div class="alert alert-soft alert-info m-3 dark:opacity-60" role="alert">
-    <span>
-      Diese Seite ist <em>keine</em> offizielle Seite der Stadt Leipzig. Sie ist
-      ein ehrenamtliches Privatprojekt und baut auf
-      <a class="link" href={UPSTREAM_PROJECT.siteUrl} target="_blank">
-        {UPSTREAM_PROJECT.name}
-      </a>
-      von
-      <a class="link" href={UPSTREAM_PROJECT.maintainersUrl} target="_blank">
-        {UPSTREAM_PROJECT.maintainers}
-      </a>
-      auf.
+    <span class="space-y-1">
+      <span class="block">
+        Ein ehrenamtliches Projekt von {OPERATOR_NAME},
+        <a class="link" href={`mailto:${CONTACT_EMAIL}`}>
+          {CONTACT_EMAIL}
+        </a>
+        .<em>Keine</em> offizielle Seite der Stadt Leipzig.
+      </span>
+      <span class="block text-xs">
+        Grundlage:
+        <a class="link" href={UPSTREAM_PROJECT.siteUrl} target="_blank">
+          {UPSTREAM_PROJECT.name}
+        </a>
+        von
+        <a class="link" href={UPSTREAM_PROJECT.maintainersUrl} target="_blank">
+          {UPSTREAM_PROJECT.maintainers}
+        </a>
+        .
+      </span>
     </span>
   </div>
 

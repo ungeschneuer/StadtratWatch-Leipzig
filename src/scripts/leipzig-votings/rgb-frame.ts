@@ -27,6 +27,10 @@ export function decodePngFrame(png: Uint8Array): RgbFrame {
   return { width: decoded.width, height: decoded.height, data: rgb };
 }
 
+export function encodePngFrame(frame: RgbFrame): Uint8Array {
+  return encode({ width: frame.width, height: frame.height, data: frame.data, channels: 3, depth: 8 });
+}
+
 export function pixelAt(frame: RgbFrame, x: number, y: number): Rgb {
   const offset = (y * frame.width + x) * 3;
   return [frame.data[offset], frame.data[offset + 1], frame.data[offset + 2]];

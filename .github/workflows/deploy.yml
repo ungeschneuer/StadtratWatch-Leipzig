@@ -64,6 +64,19 @@ jobs:
         working-directory: astro
         run: npm ci
 
+      # Every vote's quotation image lives in the release evidence-<date>; served from the site itself, the vote page
+      # shows it without loading anything from another address.
+      - name: Fetch quotation images
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release list --repo "$GITHUB_REPOSITORY" --limit 1000 --json tagName \
+            --jq '.[].tagName | select(startswith("evidence-"))' |
+            while read -r tag; do
+              gh release download "$tag" --repo "$GITHUB_REPOSITORY" --pattern '*-zitat.png' \
+                --dir "astro/public/evidence/${tag#evidence-}" --clobber || echo "no quotation images in $tag"
+            done
+
       - name: Build site
         working-directory: astro
         run: npm run build

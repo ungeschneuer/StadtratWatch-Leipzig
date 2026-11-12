@@ -1,0 +1,42 @@
+---
+import { formatDate } from '@utils/format-date';
+import { CONTACT_EMAIL, OPERATOR_NAME, SITE_NAME } from '@utils/site-config';
+
+type Props = {
+  imageUrl: string;
+  sessionDate: string;
+  videoTimestamp: string;
+};
+
+const { imageUrl, sessionDate, videoTimestamp } = Astro.props as Props;
+const recordingDate = formatDate(sessionDate);
+---
+
+<figure class="card bg-base-100 border border-base-300">
+  <div class="card-body">
+    <h2 class="card-title">Beleg: Abstimmungstafel</h2>
+    <img
+      src={imageUrl}
+      width="960"
+      height="540"
+      loading="lazy"
+      alt={`Abstimmungstafel dieser Abstimmung aus der Aufzeichnung der Ratsversammlung vom ${recordingDate}`}
+      class="w-full max-w-3xl border border-base-300"
+    />
+    <figcaption class="text-xs text-base-content/70 space-y-1">
+      <p>
+        Zitiert von {OPERATOR_NAME} ({SITE_NAME},
+        <a href={`mailto:${CONTACT_EMAIL}`} class="link">
+          {CONTACT_EMAIL}
+        </a>
+        ) als Beleg für die Stimmen, die aus dieser Tafel gelesen wurden (§ 51
+        UrhG).
+      </p>
+      <p>
+        Quelle: Stadt Leipzig, Aufzeichnung der Ratsversammlung vom{' '}
+        {recordingDate}, {videoTimestamp}. Das Bild steht nicht unter der Lizenz
+        dieser Seite; auf Verlangen wird es entfernt.
+      </p>
+    </figcaption>
+  </div>
+</figure>

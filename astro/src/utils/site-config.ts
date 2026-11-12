@@ -4,6 +4,7 @@ import {
 } from 'astro:env/server';
 
 export const SITE_NAME = 'StadtratWatch Leipzig';
+export const OPERATOR_NAME = 'Marcel Schneuer';
 export const COUNCIL_NAME = 'Leipziger Stadtrat';
 export const CONTACT_EMAIL = 'hallo@schneuer.online';
 export const SOURCE_REPOSITORY_URL = `https://github.com/${DATA_REPOSITORY}`;

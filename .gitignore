@@ -48,3 +48,6 @@ Thumbs.db
 .env.*
 !.env.sample
 deu.traineddata
+
+# Quotation images, fetched from the evidence releases by the deploy workflow
+/astro/public/evidence/

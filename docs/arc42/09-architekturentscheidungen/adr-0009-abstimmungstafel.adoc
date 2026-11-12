@@ -20,4 +20,4 @@ Die Stadt Leipzig veröffentlicht keine Stimmen je Person. Die Aufzeichnungen de
 
 * Die Daten sind nachvollziehbar: jede Änderung ist ein Commit mit Begründung.
 * Vorläufige Stimmen und Stimmen in Prüfung können falsch sein; die Seite sagt das bei jeder solchen Abstimmung.
-* Nach dem Löschen einer Aufzeichnung lässt sich eine Stimme nicht mehr am Video prüfen; als Beleg bleiben die gesicherten Untertitel und, wo vorhanden, Belegbilder (rechtliche Einschätzung: `docs/research/2026-11-12-rechte-belegbilder.md`).
+* Nach dem Löschen einer Aufzeichnung lässt sich eine Stimme nicht mehr am Video prüfen; als Beleg bleiben die gesicherten Untertitel und das Zitatbild jeder Abstimmung (§ 51 UrhG, rechtliche Einschätzung: `docs/research/2026-11-12-rechte-belegbilder.md`).

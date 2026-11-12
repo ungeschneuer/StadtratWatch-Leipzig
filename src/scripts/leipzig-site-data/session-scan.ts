@@ -1,5 +1,6 @@
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 import type { SessionScan, SessionScanItem, VotingReviewStatus } from '@srw-astro/models/session-scan';
+import { votingFilenameOf } from '@srw-astro/models/voting-evidence';
 
 import type { LeipzigPaper, PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
@@ -38,7 +39,7 @@ export function toSessionScan(
         return [];
       });
       return {
-        votingFilename: `${sessionId}-${String(voting.index + 1).padStart(3, '0')}.png`,
+        votingFilename: votingFilenameOf(sessionId, voting.index),
         videoTimestamp: formatTimestamp(voting.videoSeconds.start),
         votingSubject: {
           agendaItem: voting.heading.agendaItemNumber ?? voting.official?.agendaItemNumber ?? '',

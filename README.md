@@ -6,10 +6,12 @@ veröffentlicht sie als Website, als API und als offene Daten. Dazu kommen die R
 
 **Website:** <https://ungeschneuer.github.io/StadtratWatch-web/>
 
-StadtratWatch Leipzig ist ein unabhängiges, ehrenamtliches Projekt und keine Seite der Stadt Leipzig. Es ist ein Fork
-von [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) für den Magdeburger Stadtrat
-([stadtratwatch.de](https://www.stadtratwatch.de), [Code for Magdeburg](https://codefor.de/magdeburg/)) und übernimmt
-dessen Web-Anwendung und Auswertungen.
+Ein ehrenamtliches Projekt von **Marcel Schneuer** ([hallo@schneuer.online](mailto:hallo@schneuer.online)), keine
+Seite der Stadt Leipzig.
+
+Grundlage ist [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) für den Magdeburger Stadtrat
+([stadtratwatch.de](https://www.stadtratwatch.de), [Code for Magdeburg](https://codefor.de/magdeburg/)), dessen
+Web-Anwendung und Auswertungen dieser Fork übernimmt.
 
 ## Was die Seite zeigt
 
@@ -53,6 +55,9 @@ Mehr in [AGENTS.md](./AGENTS.md).
   bzw. [Datenlizenz Deutschland – Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0).
 - **Selbst erhobene Stimmen:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 - **Redetexte:** aus dem Verlaufsprotokoll der Stadt Leipzig (§ 48 UrhG), nicht unter CC0.
+- **Belegbilder:** je Abstimmung ein verkleinertes Standbild der Tafel aus der Aufzeichnung der Stadt Leipzig, als Zitat
+  (§ 51 UrhG) an der Abstimmung, die es belegt; ohne eigene Lizenz, Entfernung auf Verlangen. Abgelegt in den Releases
+  `evidence-<datum>`.
 
 ## Kontakt
 

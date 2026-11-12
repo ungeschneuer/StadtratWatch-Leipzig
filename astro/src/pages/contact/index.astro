@@ -1,7 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import { sitePath } from '@utils/site-path';
 import {
   CONTACT_EMAIL,
+  OPERATOR_NAME,
+  SITE_NAME,
   DATA_PULL_REQUEST_URL,
   SOURCE_REPOSITORY_URL,
   UPSTREAM_PROJECT,
@@ -10,6 +13,18 @@ import {
 
 <Layout>
   <h1 class="mb-3 text-3xl">Kontakt</h1>
+
+  <p class="mb-4">
+    {SITE_NAME} wird von {OPERATOR_NAME} betrieben. Erreichbar per E-Mail an
+    <a href={`mailto:${CONTACT_EMAIL}`} class="link link-primary">
+      {CONTACT_EMAIL}
+    </a>
+    ; die Anschrift steht im
+    <a href={sitePath('/impressum')} class="link link-primary">
+      Impressum
+    </a>
+    .
+  </p>
 
   <div class="alert alert-soft alert-info">
     <span class="iconify lucide--info size-5"></span>

@@ -239,10 +239,12 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Whisper lokal:** `whisper-cpp` per Homebrew, Modell `ggml-large-v3-turbo.bin` (1,6 GB, SHA-256 `1fc70f77…e2bc69`) in `output/whisper/`. Test 12.11.2026 an 10 Minuten von 2026-09-03: 78,5 s Rechenzeit (7,6-fach schneller als Echtzeit); 96 % Wortübereinstimmung mit den Untertiteln des Hosters, 74 % mit dem redigierten Verlaufsprotokoll (Hoster: 73 %).
 
 ### Video und Belege
-- [ ] **Nach Ablauf der Mediathek:** Verschwindet eine Aufzeichnung, entfällt der Video-Link (laut GO § 11 Abs. 8 erst mit Ende der Wahlperiode, beobachtet wird `last_seen`). Soll die Seite dann auf die Belegbilder im Release `evidence-<datum>` verlinken? Bisher gibt es Belegbilder nur für Prüffälle.
+- [x] **Nach Ablauf der Mediathek:** Verschwindet eine Aufzeichnung, entfällt der Video-Link (laut GO § 11 Abs. 8 erst mit Ende der Wahlperiode, beobachtet wird `last_seen`); die Abstimmungsseite zeigt weiter das Zitatbild.
 - [x] **Rechte an den Belegbildern** (recherchiert 12.11.2026, keine Rechtsberatung): `docs/research/2026-11-12-rechte-belegbilder.md`. Die Tafel selbst ist eine Bildschirmgrafik ohne Werk- oder Lichtbildschutz; Hindernis ist das Recht des Laufbildherstellers (§§ 94, 95 UrhG), das schon kleinste Teile schützt. Tragfähig ist nur das Zitat (§ 51): je Abstimmung ein verkleinerter Ausschnitt nur der Tafel, ohne Personen, an der Abstimmung, die er belegt, mit Quelle „Stadt Leipzig, Aufzeichnung vom …“, ohne eigene Lizenz, Löschung auf Verlangen. Kein Bildarchiv.
-  - [ ] Entscheiden: Belegbilder so veröffentlichen, oder nur für Prüfende in einem privaten Repository und öffentlich nur Prüfsummen.
-  - [ ] Release-Texte und `datapackage.json`: Bilder ausdrücklich von CC0 ausnehmen, Quelle nennen.
+  - [x] Entschieden: als Zitat veröffentlichen (12.11.2026). Je veröffentlichter Abstimmung `<abstimmung>-zitat.png` (960 px breit, unverändert), auf der Abstimmungsseite mit „Zitiert von Marcel Schneuer (Kontakt)“ und Quelle Stadt Leipzig; Release-Text `.github/evidence-release-notes.md` nennt zuerst den Betreiber, nimmt die Bilder von CC0 aus und bietet Entfernung an.
+  - [ ] Zitatbilder für die 16 vorhandenen Sitzungen erzeugen: Workflow „Leipzig votings“ mit `quotation_images_only` (nach dem Merge des Code-PRs).
+  - [ ] `datapackage.json`: Bilder ausdrücklich von CC0 ausnehmen.
+  - [ ] Die Tafelbilder der Prüffälle (`*-board.png` u. a.) sind in voller Auflösung öffentlich; für das Zitat reichte das verkleinerte Bild. Entscheiden, ob die Prüfung damit auskommt.
 
 ### Lizenz, Betrieb, Recht
 - [ ] **Lizenz der eigenen Daten:** CC0 für die aus dem Video gelesenen Stimmen, wie in den Grundsätzen vorgeschlagen? Die Namensnennungen für OParl (CC BY 4.0) und die Bewerberliste (dl-de/by-2-0) bleiben ohnehin.

@@ -5,7 +5,7 @@
 == Neue Sitzung
 
 . `leipzig-recordings` (täglich) findet die Aufzeichnung, trägt sie ins Manifest ein und öffnet einen Pull Request von `data/leipzig-recordings`.
-. `leipzig-votings` (sobald ein neues Manifest auf `main` liegt, sonst wöchentlich) liest die Tafeln, prüft jede Abstimmung, schreibt die Dateien auf `data/leipzig-votings`, legt Belegbilder der Prüffälle in den Release `evidence-<datum>`, öffnet je Sitzung mit Prüffällen ein Issue und hält einen Pull Request nach `main` offen.
+. `leipzig-votings` (sobald ein neues Manifest auf `main` liegt, sonst wöchentlich) liest die Tafeln, prüft jede Abstimmung, schreibt die Dateien auf `data/leipzig-votings`, legt die Zitatbilder aller veröffentlichten Abstimmungen und die Tafelbilder der Prüffälle in den Release `evidence-<datum>`, öffnet je Sitzung mit Prüffällen ein Issue und hält einen Pull Request nach `main` offen.
 . `leipzig-site-data` erzeugt im selben Lauf die Dateien für die Seite.
 . Nach dem Merge baut `deploy.yml` die Seite neu.
 

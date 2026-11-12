@@ -173,6 +173,17 @@ For every vote whose checks end in `needs-review`, the extraction saves the full
 them as assets of the release `evidence-<date>`, so a review stays possible after the recording is gone from the
 Mediathek.
 
+Every vote the site shows also gets its quotation image `<date>-<NNN>-zitat.png`, named after its `votingFilename`: the
+frame the votes were read from, halved to 960 px and otherwise unchanged. It is published as a quotation (§ 51 UrhG) and
+shown only on the page of that vote, crediting Marcel Schneuer first and the city's recording as the source; the
+release text (`.github/evidence-release-notes.md`) says the same and excludes the images from CC0. The deploy fetches
+the images into the site. For sessions read before, `--quotation-images-only` grabs the stored frame of each vote again
+(workflow input `quotation_images_only`):
+
+```bash
+bun src/scripts/leipzig-votings/index.ts --quotation-images-only -s 2026-10-29
+```
+
 - `voting.videoSeconds` is the `videoSeconds.start` of the vote (±15 s); `agendaItemNumber` is optional and narrows
   the match.
 - `seats` change single votes; `approve` accepts a vote as read; `discard` marks it as no valid vote; `agendaItemNumber` assigns the TOP to a vote whose
