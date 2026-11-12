@@ -96,6 +96,38 @@ function createVoting(votes: SessionScanVote[]): SessionScanItem {
 }
 
 describe('getVotesByFactions', () => {
+  test('counts a vote for the faction of the session day and orders by its members that day', () => {
+    const registry = createRegistry();
+    registry.persons = registry.persons.map((person) =>
+      person.name === 'Supporter'
+        ? {
+            ...person,
+            factionMemberships: [
+              { factionId: 'small', start: '2024-07-08', end: '2024-12-31' },
+              { factionId: 'large', start: '2025-01-01', end: null },
+            ],
+          }
+        : person,
+    );
+    const votes = [
+      { name: 'Supporter', vote: 'J' as const },
+      { name: 'Opposer', vote: 'N' as const },
+    ];
+
+    const before = getVotesByFactions(registry, votes, '2024-10-01');
+    const after = getVotesByFactions(registry, votes, '2025-02-01');
+
+    expect(
+      before.map((faction) => [faction.factionId, faction.votes.length]),
+    ).toEqual([
+      ['large', 1],
+      ['small', 1],
+    ]);
+    expect(
+      after.map((faction) => [faction.factionId, faction.votes.length]),
+    ).toEqual([['large', 2]]);
+  });
+
   test('orders factions by seats descending', () => {
     const votesByFactions = getVotesByFactions(createRegistry(), []);
 

@@ -171,8 +171,8 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] **Datenverarbeitung:** Die Registry trägt den Verlauf, deshalb braucht `session-scan-*.json` keine Fraktion je Stimme. `votes-<datum>.csv` hat Fraktion und Partei am Sitzungstag.
   - [x] **Auswertungen:** Teilnahme, Enthaltungen, Abstimmungserfolg, Geschlossenheit und Redezeit je Fraktion und Partei (über `getPersonsOfSessionAndFaction`/`…Party`), die Fraktionsaufteilung jeder Abstimmung und die Abstimmungsseite rechnen mit der Zugehörigkeit am Sitzungstag. Die Ähnlichkeitsgrafik und die Personenliste zeigen bewusst die aktuelle Fraktion.
   - [x] **Anzeige:** Personenseite mit Verlauf („Fraktionen in der Wahlperiode: …“), Fraktions- und Parteiseiten mit allen, die je dazugehörten, mit Zeitraum bei Wechsel; Parteiseite zeigt die Fraktion statt nochmals die Partei.
-  - [ ] Sitzzahlen je Zeitpunkt: `seats` ist der Stand am Tag der Erzeugung.
-  - [ ] Parteiwechsel mit Quelle erfassen, sobald bekannt (siehe Offene Fragen: Abraham, Butz).
+  - [x] Sitzzahlen je Zeitpunkt: `seats` bleibt der Stand heute; die Fraktionsaufteilung jeder Abstimmung ordnet nach den Mitgliedern am Sitzungstag und lässt Fraktionen ohne Mitglieder an dem Tag weg; Fraktions- und Parteiseiten zeigen den Sitzverlauf (`astro/src/data-analysis/Seats.ts`).
+  - [x] Parteiwechsel mit Quelle: Getu Abraham seit 09.11.2024 parteilos (Leipziger Zeitung, 8.11.2024). Weitere, sobald eine Quelle vorliegt (siehe Offene Fragen: Butz).
 - [ ] **Partei-Metadaten** redaktionell prüfen, einschließlich `EXTREMIST_CLASSIFICATION`. Die Seite zeigt die Wahlliste 2024 als „Partei“; bei Fraktionswechseln (z. B. Abraham: Liste SPD, heute fraktionslos) prüfen, ob ein Override mit Quelle nötig ist. Bezug ist das LfV **Sachsen** (nicht Sachsen-Anhalt), mit Quellenangabe.
 - [ ] **Offene Daten ausliefern:**
   - [ ] API v1 unverändert (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`)
@@ -189,8 +189,8 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026.
 
 ### Mitglieder und Parteien
-- [ ] **Partei von Getu Abraham:** Gewählt auf der SPD-Liste, SPD-Fraktion bis 08.11.2024, CDU-Fraktion 13.03.2025–22.09.2026, seitdem fraktionslos. Ist er noch SPD-Mitglied? Ohne Quelle zeigt die Seite „Partei SPD“. Falls nicht: Override mit Quelle.
-- [ ] **Weitere Parteiwechsel:** Gibt es außer Abraham Mitglieder, deren Partei sich seit der Wahl geändert hat (z. B. Butz, Liste FREIE SACHSEN, jetzt AfD-Fraktion)? Welche Quelle ist zulässig, wenn leipzig.de ignoriert wird (Fraktionsseiten, Presse, Parteiseiten)?
+- [x] **Partei von Getu Abraham:** Austritt aus SPD-Fraktion und SPD am 8. November 2024 ([Leipziger Zeitung](https://www.l-iz.de/politik/leipzig/2024/11/leipziger-stadtrat-prof-getu-abrahamn-fraktion-spd-608264)), seitdem parteilos; als Override mit `since: 2024-11-09` erfasst. Ob er inzwischen CDU-Mitglied war, ist offen („Wir werden sehen“, kreuzer 05/2025); 2027 tritt er als unabhängiger OB-Kandidat an.
+- [ ] **Weitere Parteiwechsel, besonders Jürgen Günter Butz:** Gewählt auf der Liste FREIE SACHSEN, seit Mitte September 2025 in der AfD-Fraktion. Die AfD-Fraktion nennt ihn „parteilos“ ([„12 plus 1“, 8.11.2025](https://afdfraktion-leipzig.de/2025/)), der Telegram-Kanal der Freien Sachsen „unseren“ Stadtrat. Unklar ist, ob er je Mitglied der Freien Sachsen war und seit wann er parteilos ist. Entscheidung nötig: als parteilos ab 18.09.2025 erfassen (frühester belegter Zeitpunkt), ab Beginn, oder bei der Liste lassen? Welche Quellen sind zulässig, wenn leipzig.de ignoriert wird (Fraktionsseiten, Presse, Parteiseiten)?
 - [ ] **Franziska Kießling:** ausgeschlossen, weil OParl sie nur am 18.09.2024 als Mitglied führt und sie auf keiner Tafel steht. Gibt es eine Quelle, dass sie das Mandat nicht angetreten hat (z. B. Niederschrift der konstituierenden Sitzung)?
 - [ ] **Bezeichnung „Partei“:** Die Seite nennt die Wahlliste 2024 „Partei“. Reicht das mit Erklärung in `DATA.md`, oder soll die Seite „Wahlliste 2024“ zeigen, solange keine andere Quelle vorliegt?
 - [ ] **Fraktionswebseiten (M1, Stufe 2):** Werden sie überhaupt gebraucht, wenn Overrides mit Quelle die Ausnahmen abdecken?

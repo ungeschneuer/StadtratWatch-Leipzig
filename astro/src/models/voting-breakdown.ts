@@ -65,23 +65,34 @@ export function getVotesByFactions(
     };
   });
 
-  return parliamentPeriod.factions
-    .toSorted((a, b) => b.seats - a.seats)
-    .map((faction, orderIndex) => ({
-      factionId: faction.id,
-      factionName: faction.name,
-      orderIndex,
-      votes: votesWithFactionId
-        .filter((vote) => vote.factionId === faction.id)
-        .toSorted(
-          (a, b) =>
-            votePresentationOrder[a.vote] - votePresentationOrder[b.vote],
-        )
-        .map((vote) => ({
-          personName: vote.personName,
-          vote: vote.vote,
-        })),
-    }));
+  // On a session day the vote lists every member of the day, so a faction's seats then are its members in the list. A
+  // faction without members that day (dissolved, or not yet founded) has no row.
+  const membersInVote = (factionId: string) =>
+    votesWithFactionId.filter((vote) => vote.factionId === factionId).length;
+  const factions =
+    sessionDate === undefined
+      ? parliamentPeriod.factions.toSorted((a, b) => b.seats - a.seats)
+      : parliamentPeriod.factions
+          .filter((faction) => membersInVote(faction.id) > 0)
+          .toSorted(
+            (a, b) =>
+              membersInVote(b.id) - membersInVote(a.id) || b.seats - a.seats,
+          );
+
+  return factions.map((faction, orderIndex) => ({
+    factionId: faction.id,
+    factionName: faction.name,
+    orderIndex,
+    votes: votesWithFactionId
+      .filter((vote) => vote.factionId === faction.id)
+      .toSorted(
+        (a, b) => votePresentationOrder[a.vote] - votePresentationOrder[b.vote],
+      )
+      .map((vote) => ({
+        personName: vote.personName,
+        vote: vote.vote,
+      })),
+  }));
 }
 
 export function votingAccepted(

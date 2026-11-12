@@ -18,6 +18,8 @@ import {
   calcAbstentionRateOfParty,
 } from '@data-analysis/AbstentionRate';
 import { formatPercentage, formatScore } from '@utils/format-number';
+import { calcSeatsHistoryOfParty } from '@data-analysis/Seats';
+import { formatDate } from '@utils/format-date';
 import { type Registry } from '@models/registry';
 
 type Props = {
@@ -68,9 +70,33 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfParty(
   party,
   sessionInputs,
 );
+const seatsHistory = calcSeatsHistoryOfParty(
+  parliamentPeriod,
+  party,
+  sessionInputs,
+);
 ---
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+  <div class="card card-border bg-base-100">
+    <div class="card-body space-y-3">
+      <div class="card-title flex justify-between">
+        <div>Sitze</div>
+        <span class="text-3xl">{party.seats}</span>
+      </div>
+      <p class="text-base-content/60 text-sm">
+        Sitze heute. Ändern sie sich durch Nachrückende, Austritte oder Wechsel,
+        steht hier der Stand an den Sitzungen mit einer Änderung.
+      </p>
+      {seatsHistory.length > 1 && (
+        <p class="text-sm">
+          {seatsHistory
+            .map((point) => `${formatDate(point.date)}: ${point.value}`)
+            .join(' · ')}
+        </p>
+      )}
+    </div>
+  </div>
   <div
     id="voting-success-rate"
     class="card card-border bg-base-100"
