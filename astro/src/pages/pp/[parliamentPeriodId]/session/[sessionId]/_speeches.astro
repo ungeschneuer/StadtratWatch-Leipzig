@@ -1,6 +1,7 @@
 ---
 import Speech from '@components/Speech.astro';
 import AiTextAssessmentDisclaimer from '@components/AiTextAssessmentDisclaimer.astro';
+import SpeechesSourceNotice from '@components/SpeechesSourceNotice.astro';
 import { type SessionInput } from '@models/SessionInput';
 import { type Registry } from '@models/registry';
 
@@ -11,6 +12,7 @@ type Props = {
 
 const { parliamentPeriod, sessionInput } = Astro.props as Props;
 
+const { speechesSource } = sessionInput.session;
 const speeches = sessionInput.speeches.filter(
   (speech) => !speech.isChairPerson && !!speech.transcription,
 );
@@ -26,13 +28,17 @@ const speeches = sessionInput.speeches.filter(
     <div class="alert alert-soft alert-info" role="alert">
       <span class="iconify lucide--info size-5" />
       <div class="flex flex-col gap-2">
-        <p>
-          Die folgenden Redebeiträge wurden automatisiert erstellt und können
-          Fehler enthalten. Die Texte dienen nur zur Orientierung und sind nicht
-          als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
-          Redebeiträge anzuhören, nutzen Sie bitte die Links zum jeweiligen
-          YouTube-Video.
-        </p>
+        {speechesSource ? (
+          <SpeechesSourceNotice source={speechesSource} />
+        ) : (
+          <p>
+            Die folgenden Redebeiträge wurden automatisiert erstellt und können
+            Fehler enthalten. Die Texte dienen nur zur Orientierung und sind
+            nicht als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
+            Redebeiträge anzuhören, nutzen Sie bitte die Links zum jeweiligen
+            YouTube-Video.
+          </p>
+        )}
         <p>
           Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
           Klicken Sie dazu auf das Flaggen-Symbol unter dem jeweiligen

@@ -8,9 +8,12 @@ import type { PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import type { MinutesFile } from '../leipzig-votings/minutes.ts';
 import type { SessionVotingsFile } from '../leipzig-votings/session-votings-file.ts';
+import { parseVtt } from '../leipzig-votings/subtitle-announcements.ts';
+import type { VerlaufFile } from '../leipzig-votings/verlaufsprotokoll.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
 import { buildRegistry, type RegistrySessionInput } from './registry.ts';
 import { toSessionScan } from './session-scan.ts';
+import { toSessionSpeeches } from './session-speeches.ts';
 
 const args = parseCliArgs(Bun.argv.slice(2));
 
@@ -29,8 +32,10 @@ try {
   const papers = await readJson<PapersFile>(join(args.dataDir, 'papers.json'));
 
   const problems: string[] = [];
+  const warnings: string[] = [];
   const sessions: RegistrySessionInput[] = [];
   let published = 0;
+  let speechSessions = 0;
   for (const recording of manifest.recordings) {
     const sessionDir = join(args.dataDir, recording.sessionId);
     const votings = await readJson<SessionVotingsFile>(join(sessionDir, `votings-${recording.sessionId}.json`));
@@ -43,10 +48,13 @@ try {
       `${JSON.stringify(result.scan, null, 2)}\n`,
     );
     const minutes = await readJson<MinutesFile>(join(sessionDir, `minutes-${recording.sessionId}.json`));
+    const speechesSourceUrl = await writeSessionSpeeches(recording, sessionDir, members, warnings);
+    if (speechesSourceUrl) speechSessions++;
     sessions.push({
       recording,
       pendingVotings: result.pending,
       meetingMinutesUrl: minutes?.kind === 'beschlussprotokoll' ? minutes.source : null,
+      speechesSourceUrl,
     });
   }
 
@@ -56,7 +64,10 @@ try {
   // papers are not there yet; an empty map says so, where a missing one makes the build warn on every page.
   await writeFile(join(args.dataDir, 'voting-paper-map.json'), '{}\n');
   const approved = registry.sessions.filter((session) => session.approved).length;
-  console.log(`${registry.sessions.length} sessions (${approved} approved), ${published} votings published`);
+  console.log(
+    `${registry.sessions.length} sessions (${approved} approved), ${published} votings published, speeches of ${speechSessions} sessions`,
+  );
+  warnings.forEach((warning) => console.warn(`warning: ${warning}`));
 
   if (problems.length > 0) {
     console.error(`leipzig-site-data found ${problems.length} problem(s):`);
@@ -66,6 +77,29 @@ try {
 } catch (error) {
   console.error(`leipzig-site-data failed: ${error instanceof Error ? error.message : String(error)}`);
   process.exit(1);
+}
+
+// The speeches of a session need its Verlaufsprotokoll (about two months after the session) and subtitles.
+async function writeSessionSpeeches(
+  recording: RecordingsManifest['recordings'][number],
+  sessionDir: string,
+  members: LeipzigMembersFile,
+  warnings: string[],
+): Promise<string | null> {
+  const verlauf = await readJson<VerlaufFile>(join(sessionDir, `verlaufsprotokoll-${recording.sessionId}.json`));
+  if (!verlauf?.contributions || !recording.subtitleFile) return null;
+  const cues = parseVtt(await readFile(join(args.dataDir, recording.subtitleFile), 'utf-8'));
+  const result = toSessionSpeeches(recording.date, verlauf.contributions, cues, members);
+  warnings.push(...result.warnings);
+  const { contributions, tied } = result.stats;
+  console.log(
+    `${recording.sessionId}: ${result.speeches.length} speeches, ${tied} of ${contributions} contributions tied`,
+  );
+  await writeFile(
+    join(sessionDir, `session-speeches-${recording.sessionId}.json`),
+    `${JSON.stringify(result.speeches, null, 2)}\n`,
+  );
+  return verlauf.source;
 }
 
 function readJson<T>(path: string): Promise<T | null> {

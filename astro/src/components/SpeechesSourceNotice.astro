@@ -1,0 +1,20 @@
+---
+import { type RegistrySpeechesSource } from '@models/registry';
+
+type Props = {
+  source: RegistrySpeechesSource;
+};
+
+const { source } = Astro.props as Props;
+---
+
+<p>
+  Die Texte der Redebeiträge stammen unverändert aus dem
+  <a href={source.url} class="link" target="_blank" rel="noopener">
+    {source.label}
+  </a>
+  , einem redigierten Wortprotokoll; nur Silbentrennung und Seitenumbrüche sind
+  entfernt. Die Zuordnung zu den Ratsmitgliedern und die Zeitpunkte im Video
+  wurden automatisch ermittelt und können abweichen. Maßgeblich ist das
+  Protokoll.
+</p>

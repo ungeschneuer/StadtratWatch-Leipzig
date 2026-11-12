@@ -8,6 +8,8 @@ export type RegistrySessionInput = {
   // Votes still waiting for a human or for the official result.
   pendingVotings: number;
   meetingMinutesUrl: string | null;
+  // The ALLRIS page of the Verlaufsprotokoll the speeches are taken from.
+  speechesSourceUrl: string | null;
 };
 
 // The StadtratWatch registry of a Leipzig parliament period: the members from leipzig-members, the sessions with
@@ -47,7 +49,12 @@ export function buildRegistry(
   };
 }
 
-function toRegistrySession({ recording, pendingVotings, meetingMinutesUrl }: RegistrySessionInput): RegistrySession {
+function toRegistrySession({
+  recording,
+  pendingVotings,
+  meetingMinutesUrl,
+  speechesSourceUrl,
+}: RegistrySessionInput): RegistrySession {
   return {
     id: recording.sessionId,
     date: recording.date,
@@ -57,5 +64,8 @@ function toRegistrySession({ recording, pendingVotings, meetingMinutesUrl }: Reg
     ...(recording.goneSince === null ? { video: { url: recording.mediathekUrl, label: 'Mediathek' } } : {}),
     meetingMinutesUrl,
     approved: pendingVotings === 0,
+    ...(speechesSourceUrl
+      ? { speechesSource: { label: 'Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig', url: speechesSourceUrl } }
+      : {}),
   };
 }

@@ -21,6 +21,7 @@ import {
 import type { OfficialSources } from './official-result.ts';
 import {
   extractPdfLines,
+  parseContributions,
   parseVerlaufsprotokoll,
   VERLAUF_PARSER_VERSION,
   type VerlaufFile,
@@ -187,6 +188,8 @@ async function loadVerlauf(context: SourceContext, meetingPage: string | null): 
   const path = sessionFile(context, 'verlaufsprotokoll');
   const stored = await readJson<VerlaufFile>(path);
   if (stored?.parserVersion === VERLAUF_PARSER_VERSION) return stored.results;
+  // The agenda numbers come from the meeting page; without them a new parse would lose the results' agenda items.
+  if (stored && !meetingPage) return stored.results;
 
   const pdfPath = cachedPdf(context, 'verlaufsprotokoll');
   try {
@@ -200,7 +203,9 @@ async function loadVerlauf(context: SourceContext, meetingPage: string | null): 
       source = `${ALLRIS_BASE_URL}/${meetingPagePath(numericId(context.oparlMeetingId) ?? '')}`;
       await cachePdf(pdfPath, pdf);
     }
-    const results = parseVerlaufsprotokoll(await extractPdfLines(pdf), agendaNumbersOf(meetingPage));
+    const lines = await extractPdfLines(pdf);
+    const agendaNumbers = agendaNumbersOf(meetingPage);
+    const results = parseVerlaufsprotokoll(lines, agendaNumbers);
     if (!isPlausibleParse(context, 'Verlaufsprotokoll', results.length)) return stored?.results ?? null;
     const file: VerlaufFile = {
       sessionId: context.sessionId,
@@ -208,6 +213,7 @@ async function loadVerlauf(context: SourceContext, meetingPage: string | null): 
       fetchedAt: stored?.fetchedAt ?? context.now.toISOString(),
       parserVersion: VERLAUF_PARSER_VERSION,
       results,
+      contributions: parseContributions(lines, agendaNumbers),
     };
     await writeJson(path, file);
     return file.results;

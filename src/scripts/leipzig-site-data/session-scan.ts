@@ -71,7 +71,7 @@ export function authorsOf(
   });
 }
 
-function factionKey(name: string): string {
+export function factionKey(name: string): string {
   return name
     .toLowerCase()
     .replaceAll(/\bfreien\b/g, 'freie')

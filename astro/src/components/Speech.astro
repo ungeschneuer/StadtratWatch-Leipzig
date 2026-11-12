@@ -2,6 +2,7 @@
 import { type SessionSpeech } from '@models/session-speech';
 import { getFactionOfPerson, getPersonByName } from '@utils/session-utils';
 import { type Registry, type RegistrySession } from '@models/registry';
+import { sessionVideoLink } from '@models/session-video';
 import {
   AI_TEXT_ASSESSMENT_BADGE_DESCRIPTION,
   isAiTextAssessmentVisible,
@@ -23,15 +24,11 @@ const faction = person
   ? getFactionOfPerson(parliamentPeriod, session, person)
   : null;
 
-const youtubeUrl = getYoutubeUrl(session.youtubeUrl, speech.start);
+const videoLink = sessionVideoLink(session, speech.start);
 const linkTitle = getLinkTitle(speech.speaker, session.date);
 const hintMailHref = getHintMailHref(speech, session.date);
 const hintMailTitle = getHintMailTitle(speech);
 const showAiTextAssessmentBadge = isAiTextAssessmentVisible(speech);
-
-function getYoutubeUrl(baseUrl: string, start: number): string {
-  return `${baseUrl}?t=${start}`;
-}
 
 function getLinkTitle(speaker: string, date: string): string {
   const formattedDate = new Date(date).toLocaleString('de-DE', {
@@ -140,14 +137,16 @@ function getHintMailTitle(speech: SessionSpeech): string {
       <p>{line}</p>
     ))}
   </div>
-  <div class="flex justify-between items-center mt-5">
-    <a
-      href={youtubeUrl}
-      target="_blank"
-      class="btn btn-soft btn-primary btn-sm flex flex-row items-center gap-1"
-    >
-      <span class="iconify lucide--youtube"></span>
-      In YouTube öffnen
-    </a>
-  </div>
+  {videoLink && (
+    <div class="flex justify-between items-center mt-5">
+      <a
+        href={videoLink.url}
+        target="_blank"
+        class="btn btn-soft btn-primary btn-sm flex flex-row items-center gap-1"
+      >
+        <span class={`iconify ${videoLink.icon}`}></span>
+        In {videoLink.label} öffnen
+      </a>
+    </div>
+  )}
 </div>

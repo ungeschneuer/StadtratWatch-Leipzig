@@ -46,15 +46,16 @@ function recording(date: string, goneSince: string | null = null): Recording {
 
 describe('buildRegistry', () => {
   const registry = buildRegistry({ id: 'leipzig-8', name: 'Leipzig – Wahlperiode VIII' }, members, [
-    { recording: recording('2026-10-29'), pendingVotings: 1, meetingMinutesUrl: null },
+    { recording: recording('2026-10-29'), pendingVotings: 1, meetingMinutesUrl: null, speechesSourceUrl: null },
     {
       recording: recording('2025-12-17', '2026-12-20'),
       pendingVotings: 0,
       meetingMinutesUrl: 'https://ratsinfo/x.pdf',
+      speechesSourceUrl: 'https://ratsinfo/to010?SILFDNR=1',
     },
   ]);
 
-  it('lists the sessions in date order, approved once nothing is pending', () => {
+  it('lists the sessions in date order, approved once nothing is pending, with the source of their speeches', () => {
     expect(registry.sessions).toEqual([
       {
         id: '2025-12-17',
@@ -63,6 +64,10 @@ describe('buildRegistry', () => {
         youtubeUrl: '',
         meetingMinutesUrl: 'https://ratsinfo/x.pdf',
         approved: true,
+        speechesSource: {
+          label: 'Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig',
+          url: 'https://ratsinfo/to010?SILFDNR=1',
+        },
       },
       {
         id: '2026-10-29',

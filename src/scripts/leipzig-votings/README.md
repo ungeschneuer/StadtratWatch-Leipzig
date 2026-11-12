@@ -111,7 +111,15 @@ full-screen in its recording. Each vote is cross-checked against independent sou
 
    Parsed sources are stored as `minutes-<date>.json` and `verlaufsprotokoll-<date>.json`; the PDFs are cached, so a
    better parser reads them again without downloading. Until a source is there, every run looks again (`--offline`
-   skips that).
+   skips that). A new parser version reads a stored Verlaufsprotokoll again only online, as the agenda numbers come
+   from the meeting page.
+
+   `verlaufsprotokoll-<date>.json` also keeps every contribution for the speeches of the site
+   ([`leipzig-site-data`](../leipzig-site-data/README.md)): speaker heading (title, name, faction or role in brackets),
+   agenda items, the result before it and the text without hyphenation, page headers, agenda headings and submitters.
+   What follows an agenda heading or a result without a heading of its own is the chair's; the chair changes with the
+   note „(Übergabe der Sitzungsleitung an …)“. „Herr“ and „Frau“ start a contribution only with a role in brackets
+   („Herr K. (Einwohner):“), as speeches quote people the same way („Herr Weickert sagt immer:“).
 
    Spoken corrections („Herr X wird hinzugezählt“) make the announcement check fail on purpose: the board then differs
    from the official result and needs a human. `checkStatus` keeps the status from the checks alone.

@@ -137,3 +137,33 @@ describe('speeches endpoint aiTextAssessmentLabel', () => {
     expect(speech).not.toHaveProperty('aiTextAssessmentLabel');
   });
 });
+
+describe('speeches endpoint source of the texts', () => {
+  async function getMeta(forSession: RegistrySession) {
+    vi.mocked(getEntry).mockResolvedValue({ data: [createSpeech()] } as never);
+    const response = await GET({
+      params: {
+        parliamentPeriodId: parliamentPeriod.id,
+        sessionId: forSession.id,
+      },
+      props: { parliamentPeriod, session: forSession },
+    });
+    return (await response.json()).meta;
+  }
+
+  test('names the record the texts are taken from', async () => {
+    const meta = await getMeta({
+      ...session,
+      speechesSource: { label: 'Verlaufsprotokoll', url: 'https://ratsinfo/1' },
+    });
+
+    expect(meta.speeches_source).toMatchObject({
+      label: 'Verlaufsprotokoll',
+      url: 'https://ratsinfo/1',
+    });
+  });
+
+  test('has no source for transcribed speeches', async () => {
+    expect(await getMeta(session)).not.toHaveProperty('speeches_source');
+  });
+});

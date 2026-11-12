@@ -45,7 +45,7 @@ export async function GET({
     });
   }
 
-  const { parliamentPeriod } = props;
+  const { parliamentPeriod, session } = props;
   const personsMap = new Map(
     parliamentPeriod.persons.map((person) => [person.name, person]),
   );
@@ -66,7 +66,7 @@ export async function GET({
     });
 
   const response = {
-    meta: generateMeta(),
+    meta: { ...generateMeta(), ...speechesSourceMeta(session) },
     data,
   };
 
@@ -86,4 +86,15 @@ function getExposedAiTextAssessment(
   }
 
   return { aiTextAssessmentLabel: speech.aiTextAssessment.label };
+}
+
+// Texts taken from an official record are not StadtratWatch's to put under CC0; the record is named instead.
+function speechesSourceMeta(session: RegistrySession) {
+  if (!session.speechesSource) return {};
+  return {
+    speeches_source: {
+      ...session.speechesSource,
+      note: 'Die Texte stammen aus dem Protokoll und stehen nicht unter CC0; die CC0-Lizenz gilt für Zuordnung und Zeitangaben.',
+    },
+  };
 }

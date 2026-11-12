@@ -17,6 +17,15 @@ export type RegistrySession = {
   video?: RegistrySessionVideo;
   meetingMinutesUrl: string | null;
   approved: boolean;
+  // Set when the texts of the speeches are taken from an official record (Leipzig's Verlaufsprotokoll) rather than
+  // transcribed. The site then names the record and shows the full texts only on the session page: a collection of the
+  // speeches of one person is not covered by § 48 UrhG.
+  speechesSource?: RegistrySpeechesSource;
+};
+
+export type RegistrySpeechesSource = {
+  label: string;
+  url: string;
 };
 
 // A recording outside YouTube, such as a city's own media library. Links to it cannot jump to a time.
