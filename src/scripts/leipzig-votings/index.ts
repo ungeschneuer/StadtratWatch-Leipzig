@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
+import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 import type { ReviewCasesFile, ReviewIndex } from '@srw-astro/models/leipzig-review';
 import { createWorker, PSM } from 'tesseract.js';
 
@@ -47,6 +48,10 @@ const video = createFfmpegVideoReader(process.env.FFMPEG_PATH || 'ffmpeg');
 const allris = createAllrisClient(process.env.SCRAPER_USER_AGENT || DEFAULT_USER_AGENT);
 const log = { info: (message: string) => console.log(message), warn: (message: string) => console.warn(message) };
 
+// Written by leipzig-members; without it the votes table has no faction and party.
+const members = await readFile(join(args.dataDir, 'members.json'), 'utf-8')
+  .then((json) => JSON.parse(json) as LeipzigMembersFile)
+  .catch(() => null);
 const manifest = JSON.parse(await readFile(join(args.dataDir, 'recordings.json'), 'utf-8')) as RecordingsManifest;
 const failures: string[] = [];
 
@@ -178,7 +183,7 @@ async function writeSessionVotings(recording: Recording, votings: ExtractedVotin
   await writeFile(votingsPath(recording), serializeSessionVotings(recording, corrected));
   await writeFile(
     join(args.dataDir, recording.sessionId, `votes-${recording.sessionId}.csv`),
-    sessionVotesToCsv(recording.sessionId, corrected),
+    sessionVotesToCsv(recording.sessionId, corrected, members),
   );
   await writeReviewCases(recording, corrected);
   const summary = Object.entries(summarizeStatuses(corrected))

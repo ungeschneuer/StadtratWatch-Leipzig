@@ -2,7 +2,7 @@
 
 Ziel: einen Fork von [StadtratWatch](https://github.com/JensWinter/StadtratWatch-web) (Magdeburg) für die Leipziger Ratsversammlung bauen. Der Umfang sind **nur die Abstimmungen** pro Person, für **alle Sitzungen mit verfügbarem Video**. Der Betrieb läuft ausschließlich über **kostenlose Dienste**. Alle erzeugten Daten sind maschinenlesbar und werden automatisch aktuell gehalten.
 
-Stand: 10.11.2026
+Stand: 12.11.2026
 
 ## Entscheidungen
 
@@ -44,7 +44,7 @@ Stand: 10.11.2026
 - [ ] **JSON Schema** je Datei und ein **Frictionless `datapackage.json`** (Beschreibung, Lizenz, Quellen). Die Pakete werden in CI automatisch validiert (`frictionless validate`).
 - [ ] **Provenienz pro Datensatz:** `source_url`, `retrieved_at`, `method` (`oparl` | `opendata-csv` | `faction-website` | `video-board` | `subtitle` | `manual`), `confidence`, `reviewed`.
 - [ ] **Git als Änderungsprotokoll** („Git Scraping“): jede Aktualisierung ein Commit.
-- [ ] **Lizenzen:** Daten aus OParl und dem Open-Data-Portal stehen unter CC BY 4.0, die Namensnennung „Stadt Leipzig“ gehört in `datapackage.json` und in die API-Metadaten. Die selbst aus dem Video erhobenen Stimmen können unter CC0 stehen. Code MIT wie upstream.
+- [ ] **Lizenzen:** OParl steht unter CC BY 4.0 (`oparl/system`), der Open-Data-Datensatz der Bewerber:innen unter Datenlizenz Deutschland – Namensnennung 2.0. Die Namensnennung „Stadt Leipzig“ gehört in `datapackage.json` und in die API-Metadaten (in `members.json` bereits unter `sources`). Die selbst aus dem Video erhobenen Stimmen können unter CC0 stehen. Code MIT wie upstream.
 - [ ] **Codebook** (`DATA.md`): Bedeutung aller Felder, Stimmcodes J/N/E/O, Methodik und bekannte Grenzen.
 
 ### Ressourcenschonung und Aktualität (nur kostenlose Dienste)
@@ -78,22 +78,25 @@ Stand: 10.11.2026
 
 ## M1: Mitgliederliste mit Partei
 
+Umgesetzt in `src/scripts/leipzig-members` (siehe README dort), Workflow `.github/workflows/leipzig-members.yml` täglich 04:43 UTC.
+
 ### Aufgaben
-- [ ] **OParl-Client** für `persons`, `memberships`, `organizations` mit Paginierung (`size=100`, `links.next`) und `modified_since`. Vorher prüfen, ob `src/scripts/scrape-oparl` aus StadtratWatch mit der Leipziger Basis-URL funktioniert.
-- [ ] **Aktuelle und ehemalige Ratsmitglieder** aus den Mitgliedschaften in `organizations/gr/2387` ableiten, mit Beginn und Ende. Damit sind Ausgeschiedene und Nachrücker:innen der Wahlperiode VIII enthalten.
-- [ ] **Fraktion** über Mitgliedschaften mit `classification == "Fraktion"` ableiten, mit Zeitraum, damit Fraktionswechsel sichtbar werden. Ohne Fraktionsmitgliedschaft gilt die Person als „fraktionslos“.
-- [ ] **Partei, Stufe 1: Open-Data-CSV**
-  - [ ] CSV laden, Namen normalisieren (Unicode-NFKD, Kleinschreibung, Titel wie `Dr.`, `Prof.`, `med.` entfernen).
-  - [ ] Zuordnen über Nachname + erster Vorname. Fallback für Doppelnamen: Teil eines Doppelnamens stimmt überein und der Vorname stimmt (Fall „Schreyer“ → „Schreyer-Krieg“). Solche Treffer bekommen eine niedrigere `confidence`.
-  - [ ] Mehrdeutige oder fehlende Treffer gehen ins Issue.
-  - [ ] Das Feld heißt ehrlich `electionListParty` (Liste bei der Wahl 2024), nicht „Parteimitglied“.
+- [x] **OParl-Abruf** von `persons`, `memberships`, `organizations` mit Paginierung (`size=100`, `links.next`). Ein Vollabruf dauert gut eine Minute, deshalb ohne `modified_since`.
+- [x] **Aktuelle und ehemalige Ratsmitglieder** aus den Mitgliedschaften in `organizations/gr/2387`, mit Beginn und Ende (77 Personen in der Wahlperiode VIII, 71 aktiv).
+- [x] **Fraktion** über Mitgliedschaften mit `classification == "Fraktion"`, mit Zeiträumen (`factionMemberships`). Rollenwechsel (Vorsitz) werden zusammengeführt, Lücken sind „fraktionslos“, der OB ist die Pseudo-Fraktion `oberbuergermeister` wie upstream. Beispiele: Getu Abraham SPD → fraktionslos → CDU → fraktionslos; Jürgen Günter Butz (Liste FREIE SACHSEN) seit 18.09.2025 in der AfD-Fraktion.
+- [x] **Partei, Stufe 1: Open-Data-CSV**
+  - [x] CSV laden, Namen normalisieren (Unicode-NFKD, Kleinschreibung, Titel weg).
+  - [x] Zuordnen über Nachname + erster Vorname, Fallback über einen Teil des Doppelnamens (`match: former-name`, Fall „Schreyer“ → „Schreyer-Krieg“).
+  - [x] Mehrdeutige oder fehlende Treffer werden gemeldet (Exit 1, Issue im Workflow).
+  - [x] Die Herkunft steht in `partySource` (`election-list` mit Listenname oder `override` mit Quelle), nicht als „Parteimitglied“.
 - [ ] **Partei, Stufe 2: Fraktionswebseiten** (nur ergänzend, wenn die Seite eine Partei nennt, z. B. bei der Freien Fraktion oder Parteilosen):
   - [ ] Je Seite ein kleiner Parser (Kodierung erkennen, Latin-1 bei der CDU; AfD möglichst über `wp-json` statt HTML).
-  - [ ] Ein Treffer setzt `currentParty` nur, wenn die Seite die Partei ausdrücklich nennt. Widersprüche zur CSV gehen ins Issue.
+  - [ ] Ein Treffer setzt die Partei nur, wenn die Seite sie ausdrücklich nennt. Widersprüche zur CSV werden gemeldet.
   - [ ] Bricht ein Parser (Struktur geändert), schlägt der Job **nicht** fehl. Es entsteht ein Hinweis, die bisherigen Daten bleiben.
-- [ ] **Override-Datei** `data/leipzig-8/overrides.yaml` für Parteiwechsel, Schreibweisen (z. B. „CHristoph“), fehlende Fraktionsmitgliedschaften. Jeder Eintrag mit Begründung und Quelle, angewendet nach dem Import.
-- [ ] **Plausibilitätsprüfungen:** genau 70 Stadträt:innen + OB aktiv; jede aktive Person hat genau eine Fraktion oder ist fraktionslos; jede aktive Person hat eine Partei oder einen dokumentierten Override; Namens-Abgleich mit der Abstimmungstafel (siehe M3).
-- [ ] **Ausgabe:** `persons.json|csv`, `factions.json|csv`, `memberships.json|csv` sowie daraus generiert `registry.json` (Personen, Fraktionen, Parteien mit Sitzzahlen).
+- [x] **Override-Datei** `data/leipzig-8/member-overrides.json` (JSON wie die Korrekturen der Abstimmungen): Ausschluss, Schreibweise, Partei. Jeder Eintrag mit Begründung und Quelle, bei jedem Lauf angewendet. Bisher: Partei des OB (OB-Wahl 2020), „CHristoph“ Neumann, Franziska Kießling (Mitgliedschaft nur am 18.09.2024, auf keiner Tafel).
+- [x] **Plausibilitätsprüfungen:** genau 70 Stadträt:innen + OB aktiv; jede aktive Person hat eine Fraktion oder ist fraktionslos; jede Person hat eine Partei; Overrides treffen Mitglieder; IDs eindeutig; Abgleich mit der Abstimmungstafel (wer auf der Tafel steht, ist an dem Tag Mitglied; Vereidigung bis 7 Tage vor dem OParl-Beginn verschiebt den Beginn).
+- [x] **Ausgabe:** `members.json` (Fraktionen, Parteien, Personen im Format der StadtratWatch-Registry, erweitert um `oparlId`, `factionMemberships`, `partySource`; Typ `LeipzigMembersFile`), `persons.csv`, `faction-memberships.csv`. `votes-<datum>.csv` hat die Spalten `factionId` (am Sitzungstag) und `partyId`.
+- [ ] **`registry.json`** erst mit M4 schreiben: Astro lädt jede `registry.json` unter `data/` sofort, und die Sitzungen brauchen dafür die Video-Abstraktion und `session-scan-*.json`.
 
 ## M2: Aufzeichnungen beziehen
 
@@ -121,26 +124,26 @@ Stand: 10.11.2026
 **Ansatz:** Die Stimmen werden über die Farbe im Nummernfeld erkannt, OCR nur für Kopfzeile und Zahlen. Keine GPU, kein LLM, keine kostenpflichtige API.
 
 ### Pipeline
-- [ ] **1. Zeitfenster aus der VTT:** Phrasen wie „Votum“, „bitte ich um Ihr …“, „Ergebnis“, `\d+ zu \d+ zu \d+`, „abgelehnt“, „beschlossen“, „angenommen“. Es werden nur diese Abschnitte dekodiert.
-  - Fallback ohne VTT: die ganze Sitzung in 360p mit 0,5 fps scannen und die Tafel an einer festen Pixel-Signatur erkennen.
-- [ ] **2. Endstand finden:** den letzten Frame **mit Ergebnisbalken** vor dem Wechsel der Kopfzeile wählen. Nur diesen Frame in 1080p laden (`ffmpeg -ss <t> -i <chunklist_1080p> -frames:v 1`).
-- [ ] **3. Tafel auslesen:**
-  - [ ] Layout-Konfiguration pro Wahlperiode: Zellkoordinaten von 4 Spalten × 22 Zeilen bei 1920×1080.
-  - [ ] Farbe je Nummernfeld klassifizieren (Median-RGB, dann der nächste Wert unter grün/rot/gelb/weiß). Abgebildet auf J/N/E/O.
-  - [ ] Tesseract (`deu`) für die **Kopfzeile** (TOP-Nummer, Drucksache `VIII-DS-\d{5}(-ÄA-\d+|-NF-\d+)?`, Titel) und für **Anwesende** / **Abgegebene Stimmen**.
-  - [ ] Namens-OCR einmal pro Sitzung, um die Zuordnung **Sitznummer → OParl-Person** zu prüfen. Die Sitznummern ändern sich bei Nachrücker:innen.
-- [ ] **4. Plausibilitätsprüfungen:**
-  - [ ] Zahl der farbigen Felder gleich „Abgegebene Stimmen“
-  - [ ] Zählung J/N/E gleich dem Ergebnisbalken
-  - [ ] Tafel gleich dem **mündlich verkündeten Ergebnis** aus der VTT. Die KI-Untertitel können Zahlen falsch schreiben („13.33.13“, „44.0“), deshalb tolerant parsen.
-  - [ ] Korrekturen wie „wird hinzugezählt“ erkennen. Dann **beides speichern:** `boardVotes` und `announcedResult` mit `corrections[]` (Person, Stimme, Zeitstempel, Zitat).
-- [ ] **5. Zuordnung zu TOP und Vorlage:** Kopfzeile → OParl-`agendaItem.number` der jeweiligen Sitzung. Drucksache → OParl-`paper.reference`. Änderungsanträge (`-ÄA-`) und Neufassungen (`-NF-`) ihrer Hauptvorlage zuordnen. Antragsteller:innen aus `paper.originatorOrganization`. Fortsetzungstage sind eigene OParl-Sitzungen.
-- [ ] **6. Sonderfälle** als `votingMethod` erfassen: keine Tafel (Handzeichen, Anlage ausgefallen), geheime Wahl, en-bloc, punktweise Abstimmung, Befangenheit (§ 20 SächsGemO), Stimme des OB (Sitz 71), `majorityRequirement`.
+Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026: 547 Abstimmungen aus 16 Sitzungstagen, davon 476 verified, 23 corrected, 11 provisional, 15 discarded, 5 skipped, 17 needs-review.
+- [x] **1. Ergebnisphasen finden:** anders als geplant nicht über die VTT, sondern die ganze Aufzeichnung in 360p mit 2 fps (160×90 px), Tafel = überwiegend weiß, Ergebnis = farbige Balken. Robuster, und drei Sitzungen haben keine VTT. 360p und 1080p sind zeitgleich (geprüft am 12.11.2026).
+- [x] **2. Endstand lesen:** zwei 1080p-Frames je Ergebnisphase, bei Abweichung entscheidet ein dritter.
+- [x] **3. Tafel auslesen:**
+  - [x] Raster je Frame vermessen statt fester Koordinaten (bis Anfang 2026 5 × 19, seitdem 4 × 22).
+  - [x] Farbe je Nummernfeld (Median-RGB) → J/N/E, weißes Feld mit Nummer = anwesend ohne Stimme, ohne Nummer = abwesend.
+  - [x] Tesseract (`deu`) für Kopfzeile, „Anwesende“, „Abgegebene Stimmen“ und die Zahlen an den Ergebnisbalken.
+  - [x] Namens-OCR, wenn sich die Namensspalten ändern, Zuordnung zur OParl-Person; zwei Sitze auf derselben Person gehen in die Prüfung.
+- [x] **4. Plausibilitätsprüfungen:** Tafelzahlen, zweiter Frame, Ansage aus der VTT, amtliches Ergebnis aus Beschlussprotokoll, ALLRIS-TOP-Seiten und Verlaufsprotokoll. Von Hand hinzugezählte Mitglieder werden aus dem Verlaufsprotokoll übernommen (`corrected`, Tafelstand in `boardVote`).
+- [x] **5. Zuordnung zu TOP und Vorlage:** Kopfzeile → OParl-`agendaItem.number`, Drucksache → `paper.reference`, Änderungsanträge und Neufassungen zur Hauptvorlage, Fortsetzungstage durchsucht.
+  - [ ] Antragsteller:innen aus `paper.originatorOrganization`.
+- [ ] **6. Sonderfälle** als `votingMethod` erfassen: keine Tafel (Handzeichen, Anlage ausgefallen), geheime Wahl, en-bloc, punktweise Abstimmung, Befangenheit (§ 20 SächsGemO), Stimme des OB (Sitz 71), `majorityRequirement`. Bisher erkannt: Geschäftsordnungsanträge (`procedural`), ungültige Tafeln (`discarded`).
+- [ ] **Statuspunkt im 1080p-Frame:** Der runde grüne Punkt während der Abstimmung wird manchmal als Ja-Balken gelesen. Betrifft nur Ergebnisse unter einer Sekunde (alle verworfen); Abhilfe: Seitenverhältnis prüfen.
 - [x] **7. Prüfung durch Menschen:** Route `/leipzig` in `session-review` (GitHub Pages), Prüffälle in `review-<datum>.json`, Benachrichtigung per Issue je Sitzung, Speichern als Commit in `corrections-<datum>.json`, Nachprüfung per Workflow. Freigabe per PR-Merge.
   - [ ] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Schreibrechte der Prüfenden, Variable `LEIPZIG_REVIEWERS`.
   - [ ] Workflows einmal auf GitHub durchlaufen lassen (bisher nur lokal getestet).
+  - [ ] Die 17 offenen Fälle entscheiden.
 - [ ] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
-- [ ] **Ausgabe:** `session-scan-YYYY-MM-DD.json` (StadtratWatch-kompatibel, erweitert um `personId`, `agendaItemId`, `paperId`, `announcedResult`, `corrections`, `evidenceImage`, `confidence`) sowie `votings.csv` und `votes.csv`.
+- [x] **Ausgabe:** `votings-<datum>.json` und `votes-<datum>.csv` (mit `personId`, Fraktion und Partei).
+  - [ ] StadtratWatch-kompatible `session-scan-YYYY-MM-DD.json` (Adapter, siehe M4) und `votings.csv`.
 
 ### Ressourcen (Schätzung pro Sitzung)
 - 60–120 Abstimmungen. Dekodiert werden nur die Zeitfenster in 360p, dazu ein 1080p-Frame pro Abstimmung.
@@ -151,7 +154,7 @@ Stand: 10.11.2026
 - [ ] **Stadt-Konfiguration** (Name, OParl-URL, Wahlperiode, Texte) statt fest verdrahtetem Magdeburg. Dadurch bleiben Merges von upstream möglich.
 - [ ] **Video-Abstraktion:** `youtubeUrl` ersetzen durch `video: { provider: "youtube" | "leipzig-mediathek", pageUrl, hlsUrl? }`. Betroffen sind ca. 15 Dateien (Modelle, Session- und Voting-Seiten, session-review). Wiedergabe als Link auf die Mediathek mit Zeitstempel oder als eingebetteter Player. Ist das Video offline, bleibt das Belegbild.
 - [ ] **Reden-Funktionen deaktivieren:** Speech-Seiten, Redezeit-Statistiken, `speech-to-text`, `speaker-diarization`, `detect-ai-text` werden nicht genutzt, per Konfiguration ausblenden.
-- [ ] **Registry `data/leipzig-8/registry.json`** aus M1 generieren.
+- [ ] **Registry `data/leipzig-8/registry.json`** aus `members.json` (Fraktionen, Parteien, Personen) und den Sitzungen generieren.
 - [ ] **OParl-Pipeline schlank halten:** nur Sitzungen, TOPs und die **in Abstimmungen vorkommenden** Vorlagen (Titel, Nummer, Link zum Ratsinfo). Kein Download aller PDFs, kein Tika, kein Typesense.
 - [ ] **Adapter M3 → `session-scan-*.json`** mit optionalem `personId` (abwärtskompatibel zu upstream).
 - [ ] **S3/CloudFront ersetzen:**

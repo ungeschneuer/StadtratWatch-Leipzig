@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'bun:test';
 
+import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
+
 import type { ExtractedVoting } from './extract-session.ts';
 import { sessionVotesToCsv, summarizeStatuses } from './session-votings-file.ts';
 
@@ -27,6 +29,26 @@ describe('session votings file', () => {
 
     expect(rows).toHaveLength(2);
     expect(rows[1].startsWith('2026-10-29,0,')).toBe(true);
+  });
+
+  it('adds the faction of the session day and the party of each person', () => {
+    const members = {
+      persons: [
+        {
+          oparlId: 'stange',
+          partyId: 'die-linke',
+          factionMemberships: [
+            { factionId: 'fraktionslos', start: '2024-09-18', end: '2025-03-12' },
+            { factionId: 'die-linke', start: '2025-03-13', end: null },
+          ],
+        },
+      ],
+    } as unknown as LeipzigMembersFile;
+
+    const [header, row] = sessionVotesToCsv('2026-10-29', votings, members).trim().split('\n');
+
+    expect(header.endsWith(',procedural,factionId,partyId')).toBe(true);
+    expect(row.endsWith(',false,die-linke,die-linke')).toBe(true);
   });
 
   it('counts discarded votings in the summary', () => {

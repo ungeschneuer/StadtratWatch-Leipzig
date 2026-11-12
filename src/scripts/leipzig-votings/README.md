@@ -238,6 +238,8 @@ variable `LEIPZIG_REVIEWERS`.
 
 Vote codes follow StadtratWatch: `J`, `N`, `E`, `O` (did not vote). `attendance` tells present non-voters from absent
 members. In the CSV, `boardVote` is the vote as read from the board and `vote` the vote after corrections.
+`factionId` is the person's faction on the session day and `partyId` their party, both from `members.json`
+([`leipzig-members`](../leipzig-members/README.md)); they are empty if that file is missing.
 
 ## Tests
 

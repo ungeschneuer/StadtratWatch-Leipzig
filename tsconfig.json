@@ -20,6 +20,7 @@
     "src/scripts/generate-paper-assets",
     "src/scripts/generate-paper-votings",
     "src/scripts/index-search",
+    "src/scripts/leipzig-members",
     "src/scripts/leipzig-recordings",
     "src/scripts/leipzig-votings",
     "src/scripts/parse-speakers",
