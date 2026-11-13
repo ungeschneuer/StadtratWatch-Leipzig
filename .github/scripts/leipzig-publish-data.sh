@@ -1,23 +1,18 @@
 #!/usr/bin/env bash
-# Publishes the reviewers' decisions of the day: merges the data pull request and deploys the site, but only when the
-# decisions are applied and checked. A new session waits for the operator, who decides on its first publication.
+# Publishes the data branch: merges the data pull request and deploys the site once every review decision is applied
+# and CI is green. New sessions go online with the check status of each vote; the reviewers are told what was
+# published, so that they can look at it.
 set -euo pipefail
 
 branch="${LEIPZIG_DATA_BRANCH:-data/leipzig-votings}"
-ci_timeout_seconds=1200
+owner="${GITHUB_REPOSITORY%%/*}"
+site_url="https://${owner}.github.io/${GITHUB_REPOSITORY#*/}"
 
 git fetch --quiet origin main "$branch"
 head_sha="$(git rev-parse "origin/$branch")"
 
 if git diff --quiet origin/main "origin/$branch" -- data/leipzig-8; then
   echo "Keine neuen Daten auf $branch."
-  exit 0
-fi
-
-new_sessions="$(git diff --name-only --diff-filter=A origin/main..."origin/$branch" -- 'data/leipzig-8/*/votings-*.json')"
-if [ -n "$new_sessions" ]; then
-  echo "::notice::$branch enthält neue Sitzungen; die erste Veröffentlichung bleibt dem Betreiber überlassen:"
-  echo "$new_sessions"
   exit 0
 fi
 
@@ -33,42 +28,57 @@ decision_applied() {
   return 1
 }
 if [ -n "$last_decision" ] && ! git merge-base --is-ancestor "$last_decision" origin/main && ! decision_applied; then
-  echo "::notice::Die letzte Prüfentscheidung ($last_decision) ist noch nicht angewendet; nächster Versuch morgen."
+  echo "::notice::Die letzte Prüfentscheidung ($last_decision) ist noch nicht angewendet; nächster Versuch beim nächsten Lauf."
   exit 0
 fi
 
-ci_conclusion() {
-  gh run list --workflow ci.yml --commit "$head_sha" --limit 1 --json status,conclusion \
-    --jq '.[0] | if . == null then "none" elif .status != "completed" then "pending" else .conclusion end'
-}
+.github/scripts/wait-for-ci.sh "$branch" "$head_sha"
 
-if [ "$(ci_conclusion)" = none ]; then
-  gh workflow run ci.yml --ref "$branch"
-fi
-waited=0
-while [ "$(ci_conclusion)" = none ] || [ "$(ci_conclusion)" = pending ]; do
-  if [ "$waited" -ge "$ci_timeout_seconds" ]; then
-    echo "::error::CI für $head_sha ist nicht rechtzeitig fertig geworden."
-    exit 1
+session_ids_of() {
+  git diff --name-only --diff-filter="$1" origin/main..."origin/$branch" -- "data/leipzig-8/*/$2-*.json" |
+    sed -E 's#^data/leipzig-8/([0-9-]+)/.*#\1#' | sort -u
+}
+new_sessions="$(session_ids_of A votings)"
+decided_sessions="$(session_ids_of AM corrections | grep -vxF -f <(printf '%s\n' "$new_sessions") || true)"
+
+open_cases_of() {
+  git show "origin/$branch:data/leipzig-8/review-index.json" |
+    jq --arg session "$1" '[.sessions[] | select(.sessionId == $session) | .open] | add // 0'
+}
+summary="$(
+  echo "Veröffentlicht: Daten-PR mit ${head_sha:0:7}."
+  if [ -n "$new_sessions" ]; then
+    echo
+    echo '**Neue Sitzungen** – ungeprüfte Abstimmungen erscheinen „in Prüfung“, bitte ansehen:'
+    for session in $new_sessions; do
+      votings="$(git show "origin/$branch:data/leipzig-8/$session/votings-$session.json" | jq '.votings | length')"
+      echo "- [$session]($site_url/wahlperiode-8/sitzung/$session/): $votings Abstimmungen, $(open_cases_of "$session") offene Prüffälle ([Prüfseite]($site_url/review/leipzig/$session))"
+    done
   fi
-  sleep 30
-  waited=$((waited + 30))
-done
-if [ "$(ci_conclusion)" != success ]; then
-  echo "::error::CI für $head_sha ist nicht grün; die Daten werden nicht veröffentlicht."
-  exit 1
-fi
+  if [ -n "$decided_sessions" ]; then
+    echo
+    echo '**Prüfentscheidungen** zu:'
+    for session in $decided_sessions; do
+      echo "- [$session]($site_url/wahlperiode-8/sitzung/$session/)"
+    done
+  fi
+  if [ -n "${LEIPZIG_REVIEWERS:-}" ]; then
+    echo
+    echo "$LEIPZIG_REVIEWERS" | tr ',' '\n' | sed -E 's/^ *(.+)$/@\1/' | paste -sd ' ' -
+  fi
+)"
 
 pull_request="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')"
 if [ -z "$pull_request" ]; then
   pull_request="$(gh pr create --base main --head "$branch" \
-    --title "data(leipzig): Prüfentscheidungen vom $(date +%d.%m.%Y)" \
-    --body 'Automatisch erzeugt vom Workflow „Leipzig data publish“: Prüfentscheidungen und Niederschriften des Tages, ohne neue Sitzungen.' |
-    grep -o '[0-9]*$')"
+    --title "data(leipzig): Daten vom $(date +%d.%m.%Y)" \
+    --body 'Automatisch erzeugt vom Workflow „Leipzig data publish“.' | grep -oE '[0-9]+$')"
 fi
 
 # --match-head-commit refuses the merge if a reviewer saved after the checks above.
 gh pr merge "$pull_request" --merge --match-head-commit "$head_sha"
 # A merge with the workflow token starts no other workflow, so the deployment is started here.
 gh workflow run deploy.yml --ref main
-echo "Daten-PR #$pull_request gemergt, Deployment gestartet."
+# A mention in a comment notifies the reviewers by GitHub notification and e-mail.
+gh pr comment "$pull_request" --body "$summary"
+echo "$summary"
