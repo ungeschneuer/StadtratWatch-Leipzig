@@ -1,0 +1,13 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 3657.4,
+      "agendaItemNumber": "13.1"
+    },
+    "unresolved": true,
+    "reason": "Keine mündliche Nennung der weiteren Stimme.",
+    "source": "Video 1:00:57",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:40:05.168Z"
+  }
+]
