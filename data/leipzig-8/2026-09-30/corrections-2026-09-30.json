@@ -1,0 +1,18 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 6274.7,
+      "agendaItemNumber": "12.6.2"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
+        "vote": "J"
+      }
+    ],
+    "reason": "Laut Video verdrückt.",
+    "source": "Video 1:44:34",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T18:45:34.789Z"
+  }
+]
