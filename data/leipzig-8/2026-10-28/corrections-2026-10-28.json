@@ -9,5 +9,16 @@
     "source": "Video 4:53:58",
     "reviewer": "ungeschneuer",
     "reviewedAt": "2026-11-13T19:02:39.430Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 22267.6,
+      "agendaItemNumber": "19.9.2"
+    },
+    "unresolved": true,
+    "reason": "Unklar, ob Enthaltungen nachgereicht.",
+    "source": "Video 6:11:07",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T19:03:40.288Z"
   }
 ]
