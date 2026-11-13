@@ -5,6 +5,7 @@ import { votingFilenameOf } from '@srw-astro/models/voting-evidence';
 import type { LeipzigPaper, PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
 import { majorityRequirementOf } from './majority-requirement.ts';
+import { itemNumberOf, type Recusal, recusalsOf } from './special-cases.ts';
 
 // The board reading of these votes is confirmed or, while no official result is published, unchallenged; or a check
 // failed and a reviewer has not decided yet. The last two are published with their review status, so the site can say
@@ -25,6 +26,7 @@ export function toSessionScan(
   votings: ExtractedVoting[],
   members: LeipzigMembersFile,
   papers: PapersFile | null = null,
+  recusals: Recusal[] = [],
 ): SessionScanResult {
   const namesByOparlId = new Map(members.persons.map((person) => [person.oparlId, person.name]));
   const problems: string[] = [];
@@ -57,14 +59,44 @@ export function toSessionScan(
           authors: paper ? authorsOf(paper, members) : [],
           ...(paper?.web ? { paperUrl: paper.web } : {}),
           ...oparlIdsOf(voting, paper),
+          ...withItemNumber(itemNumberOf(voting)),
         },
         votes,
         presentMembers: voting.votes.filter((seat) => seat.attendance === 'present').length,
         ...(majorityRequirement ? { majorityRequirement } : {}),
+        ...recusedPersonsOf(sessionId, voting, recusals, namesByOparlId, problems),
         ...reviewStatusOf(voting),
       };
     });
   return { scan, pending: votings.filter((voting) => PENDING_STATUSES.has(voting.status)).length, problems };
+}
+
+function withItemNumber(itemNumber: string | undefined): { itemNumber?: string } {
+  return itemNumber ? { itemNumber } : {};
+}
+
+// A member who declared a conflict of interest has no vote on the board; one who has points to a wrong entry.
+function recusedPersonsOf(
+  sessionId: string,
+  voting: ExtractedVoting,
+  recusals: Recusal[],
+  namesByOparlId: Map<string, string>,
+  problems: string[],
+): { recusedPersons?: string[] } {
+  const agendaItemNumber = voting.heading.agendaItemNumber ?? voting.official?.agendaItemNumber ?? '';
+  const names = recusalsOf(recusals, sessionId, agendaItemNumber).flatMap((recusal) => {
+    const name = namesByOparlId.get(recusal.personOparlId);
+    const seat = voting.votes.find((vote) => vote.personId === recusal.personOparlId);
+    if (!name) {
+      problems.push(`recusals.json: ${recusal.personOparlId} is no member`);
+      return [];
+    }
+    if (seat && seat.vote !== 'O') {
+      problems.push(`${sessionId} #${voting.index}: ${name} is recused at ${agendaItemNumber} but voted ${seat.vote}`);
+    }
+    return [name];
+  });
+  return names.length > 0 ? { recusedPersons: names } : {};
 }
 
 // The board's sub-items (amendments such as 18.16.1) are not in OParl; their parent is no key of the vote.

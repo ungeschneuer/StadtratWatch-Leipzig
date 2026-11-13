@@ -15,6 +15,7 @@ import { dataPackage, type SessionScans, sessionsToCsv, votesToCsv, votingsToCsv
 import { buildRegistry, type PartyClassification, type RegistrySessionInput } from './registry.ts';
 import { toSessionScan } from './session-scan.ts';
 import { toSessionSpeeches } from './session-speeches.ts';
+import type { Recusal } from './special-cases.ts';
 
 const args = parseCliArgs(Bun.argv.slice(2));
 
@@ -32,6 +33,8 @@ try {
   // Written by leipzig-papers; without it the votes have no authors.
   const papers = await readJson<PapersFile>(join(args.dataDir, 'papers.json'));
 
+  // Editorial, kept by hand: members who declared a conflict of interest, with the words of the Verlaufsprotokoll.
+  const recusals = (await readJson<Recusal[]>(join(args.dataDir, 'recusals.json'))) ?? [];
   const problems: string[] = [];
   const warnings: string[] = [];
   const sessions: RegistrySessionInput[] = [];
@@ -42,7 +45,7 @@ try {
     const sessionDir = join(args.dataDir, recording.sessionId);
     const votings = await readJson<SessionVotingsFile>(join(sessionDir, `votings-${recording.sessionId}.json`));
     if (!votings) continue;
-    const result = toSessionScan(recording.sessionId, votings.votings, members, papers);
+    const result = toSessionScan(recording.sessionId, votings.votings, members, papers, recusals);
     problems.push(...result.problems);
     published += result.scan.length;
     scans.set(recording.sessionId, result.scan);

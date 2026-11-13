@@ -32,7 +32,9 @@ const votings = sessionScan
           sessionId,
           slugs.get(voting.votingFilename) as string,
         ),
-        agendaItem: voting.votingSubject.agendaItem,
+        agendaItem: voting.votingSubject.itemNumber
+          ? `${voting.votingSubject.agendaItem}, Punkt ${voting.votingSubject.itemNumber}`
+          : voting.votingSubject.agendaItem,
         motionId: voting.votingSubject.motionId,
         title: voting.votingSubject.title,
         type: voting.votingSubject.type || '',

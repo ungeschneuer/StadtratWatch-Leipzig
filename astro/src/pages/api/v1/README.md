@@ -182,7 +182,9 @@ Gibt alle Abstimmungen einer spezifischen Stadtratssitzung zurück.
       "majorityRequirement": "simple",
       "presentMembers": null,
       "result": "accepted",
-      "reviewStatus": null
+      "reviewStatus": null,
+      "decidedByMayor": false,
+      "recusedPersonIds": []
     }
   ]
 }
@@ -194,6 +196,9 @@ Gibt alle Abstimmungen einer spezifischen Stadtratssitzung zurück.
 - `videoTimestamp`: Zeitstempel im Video in Sekunden
 - `votingSubject`: Beschreibung des Abstimmungsthemas
 - `votes`: Array mit den einzelnen Stimmen. `personId` ist der lesbare Schlüssel der Seite (ändert sich mit dem Namen), `personOparlId` der stabile Schlüssel aus OParl (`null`, wenn die Person keine OParl-ID hat)
+- `votingSubject.itemNumber`: Punkt der Vorlage bei punktweiser Abstimmung (`"4"`, `"1 und 2"`), sonst nicht gesetzt
+- `decidedByMayor`: `true`, wenn das Ergebnis ohne das Ja oder Nein des Oberbürgermeisters umgekehrt wäre
+- `recusedPersonIds`: Personen, die wegen Befangenheit (§ 20 SächsGemO) nicht beteiligt waren
 - `votingSubject.oparlAgendaItemId`, `votingSubject.oparlPaperId`: Tagesordnungspunkt und Drucksache in OParl, soweit die Stadt sie führt
 - `majorityRequirement`: Mehrheitserfordernis der Abstimmung, immer gesetzt. Standard ist `"simple"`, wenn kein anderes Erfordernis erfasst ist. Mögliche Werte:
   - `simple`: Einfache Mehrheit

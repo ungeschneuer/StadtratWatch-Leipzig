@@ -173,6 +173,24 @@ describe('toSessionScan', () => {
     expect(parent.votingSubject.title).toEqual('Masterplan Grün (OCR)');
   });
 
+  it('names members who declared a conflict of interest, and reports one who voted all the same', () => {
+    const recusal = {
+      sessionId: '2026-10-29',
+      agendaItemNumbers: ['19.10'],
+      personOparlId: 'p/nagel',
+      quote: 'Frau Nagel hat sich für befangen erklärt.',
+      sourceUrl: 'https://ratsinformation.leipzig.de/',
+    };
+    const fine = toSessionScan('2026-10-29', [voting(4, 'verified')], members, null, [recusal]);
+    expect(fine.scan[0].recusedPersons).toEqual(['Juliane Nagel']);
+    expect(fine.problems).toEqual([]);
+
+    const wrong = toSessionScan('2026-10-29', [voting(4, 'verified')], members, null, [
+      { ...recusal, personOparlId: 'p/stange' },
+    ]);
+    expect(wrong.problems).toEqual(['2026-10-29 #4: Enrico Stange is recused at 19.10.2 but voted J']);
+  });
+
   it('reports a seat without member instead of inventing a name', () => {
     const unknownSeat = {
       column: 1,
