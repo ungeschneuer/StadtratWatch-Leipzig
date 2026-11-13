@@ -4,6 +4,8 @@ import { sitePath } from '@utils/site-path';
 import {
   CONTACT_EMAIL,
   OPERATOR_NAME,
+  OPERATOR_PROFILES,
+  OPERATOR_WEBSITE,
   SITE_NAME,
   DATA_PULL_REQUEST_URL,
   SOURCE_REPOSITORY_URL,
@@ -32,9 +34,31 @@ import {
       <span class="iconify lucide--info size-5"></span>
       <p>
         Diese Seite ist <em>keine</em> offizielle Seite der Stadt Leipzig. Sie
-        ist ein unabhängiges Privatprojekt und wird ehrenamtlich entwickelt.
+        ist ein unabhängiges Privatprojekt.
       </p>
     </div>
+
+    <h2 class="mt-8 mb-2 text-lg font-semibold">{OPERATOR_NAME} im Netz</h2>
+
+    <ul class="flex flex-wrap gap-x-4 gap-y-1">
+      <li>
+        <a href={OPERATOR_WEBSITE} class="link link-primary" target="_blank">
+          Webseite
+        </a>
+      </li>
+      {OPERATOR_PROFILES.map((profile) => (
+        <li>
+          <a
+            href={profile.url}
+            class="link link-primary"
+            target="_blank"
+            rel={'rel' in profile ? `${profile.rel} noopener` : 'noopener'}
+          >
+            {profile.label}
+          </a>
+        </li>
+      ))}
+    </ul>
 
     <h2 class="mt-8 mb-2 text-lg font-semibold">Lob, Kritik oder Ideen?</h2>
 
