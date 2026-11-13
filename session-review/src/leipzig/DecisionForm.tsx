@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import type { ReviewCase, VotingCorrection } from '@srw-astro/models/leipzig-review';
 import type { VoteCode } from '@srw-astro/models/session';
-import styles from './leipzig.module.css';
 
 const VOTE_LABELS: Record<VoteCode, string> = { J: 'Ja', N: 'Nein', E: 'Enthaltung', O: 'keine Stimme' };
 
@@ -63,37 +62,54 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
 
   return (
     <form
-      className={styles.form}
+      className="flex flex-col gap-3"
       onSubmit={(event) => {
         event.preventDefault();
         if (valid) onSave(build());
       }}
     >
-      <fieldset>
-        <legend>Entscheidung</legend>
-        <label className={styles.check}>
-          <input type="checkbox" checked={approve} onChange={(event) => setApprove(event.target.checked)} />
-          Tafel-Lesung ist richtig (bestätigen)
-        </label>
-        <label className={styles.check}>
-          <input type="checkbox" checked={discard} onChange={(event) => setDiscard(event.target.checked)} />
-          Keine gültige Abstimmung (Zwischenstand, alte Tafel oder wiederholt) – verwerfen
-        </label>
-        <label className={styles.check}>
-          <input type="checkbox" checked={unresolved} onChange={(event) => setUnresolved(event.target.checked)} />
-          Nicht klärbar: gültige Abstimmung, aber nicht belegbar, wer anders gezählt wurde – Stimmen laut Tafel, Ergebnis
-          laut amtlicher Zählung
-        </label>
-        <label className={styles.check}>
+      <fieldset className="fieldset border-base-300 bg-base-200 rounded-box gap-3 border p-4">
+        <legend className="fieldset-legend">Entscheidung</legend>
+        <label className="flex cursor-pointer items-start gap-2 text-sm">
           <input
             type="checkbox"
+            className="checkbox checkbox-sm mt-0.5"
+            checked={approve}
+            onChange={(event) => setApprove(event.target.checked)}
+          />
+          Tafel-Lesung ist richtig (bestätigen)
+        </label>
+        <label className="flex cursor-pointer items-start gap-2 text-sm">
+          <input
+            type="checkbox"
+            className="checkbox checkbox-sm mt-0.5"
+            checked={discard}
+            onChange={(event) => setDiscard(event.target.checked)}
+          />
+          Keine gültige Abstimmung (Zwischenstand, alte Tafel oder wiederholt) – verwerfen
+        </label>
+        <label className="flex cursor-pointer items-start gap-2 text-sm">
+          <input
+            type="checkbox"
+            className="checkbox checkbox-sm mt-0.5"
+            checked={unresolved}
+            onChange={(event) => setUnresolved(event.target.checked)}
+          />
+          Nicht klärbar: gültige Abstimmung, aber nicht belegbar, wer anders gezählt wurde – Stimmen laut Tafel,
+          Ergebnis laut amtlicher Zählung
+        </label>
+        <label className="flex cursor-pointer items-start gap-2 text-sm">
+          <input
+            type="checkbox"
+            className="checkbox checkbox-sm mt-0.5"
             checked={assignAgendaItem}
             onChange={(event) => setAssignAgendaItem(event.target.checked)}
           />
           TOP zuordnen
           {assignAgendaItem && (
             <input
-              className={styles.short}
+              aria-label="TOP-Nummer"
+              className="input input-sm -mt-1 w-32"
               value={agendaItemNumber}
               placeholder="z. B. 18.20"
               onChange={(event) => setAgendaItemNumber(event.target.value)}
@@ -101,14 +117,20 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
           )}
         </label>
 
-        <div className={styles.seats}>
+        <div className="flex flex-col items-start gap-2 text-sm">
           <span>Stimmen ändern</span>
           {seats.map((seat, position) => (
-            <div key={position} className={styles.seatRow}>
+            <div key={position} className="flex flex-wrap items-center gap-2">
               <select
+                aria-label="Person"
+                className="select select-sm w-72 max-w-full"
                 value={seat.personId}
                 onChange={(event) =>
-                  setSeats(seats.map((other, index) => (index === position ? { ...other, personId: event.target.value } : other)))
+                  setSeats(
+                    seats.map((other, index) =>
+                      index === position ? { ...other, personId: event.target.value } : other,
+                    ),
+                  )
                 }
               >
                 <option value="">Person wählen …</option>
@@ -119,6 +141,8 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
                 ))}
               </select>
               <select
+                aria-label="Stimme"
+                className="select select-sm w-40"
                 value={seat.vote}
                 onChange={(event) =>
                   setSeats(
@@ -134,38 +158,58 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
                   </option>
                 ))}
               </select>
-              {seat.personId && <span className={styles.muted}>bisher {VOTE_LABELS[boardVoteOf(seat.personId)]}</span>}
-              <button type="button" onClick={() => setSeats(seats.filter((_, index) => index !== position))}>
+              {seat.personId && (
+                <span className="text-base-content/70">bisher {VOTE_LABELS[boardVoteOf(seat.personId)]}</span>
+              )}
+              <button
+                type="button"
+                className="btn btn-sm btn-ghost"
+                onClick={() => setSeats(seats.filter((_, index) => index !== position))}
+              >
                 Entfernen
               </button>
             </div>
           ))}
-          <button type="button" onClick={() => setSeats([...seats, { personId: '', vote: 'J' }])}>
+          <button
+            type="button"
+            className="btn btn-sm btn-outline"
+            onClick={() => setSeats([...seats, { personId: '', vote: 'J' }])}
+          >
             + Stimme
           </button>
         </div>
 
-        <label className={styles.field}>
+        <label className="flex flex-col gap-1 text-sm">
           Begründung (Pflicht)
-          <textarea value={reason} rows={2} onChange={(event) => setReason(event.target.value)} />
+          <textarea
+            className="textarea w-full"
+            value={reason}
+            rows={2}
+            onChange={(event) => setReason(event.target.value)}
+          />
         </label>
-        <label className={styles.field}>
+        <label className="flex flex-col gap-1 text-sm">
           Beleg
-          <input value={source} onChange={(event) => setSource(event.target.value)} />
+          <input className="input w-full" value={source} onChange={(event) => setSource(event.target.value)} />
         </label>
       </fieldset>
 
-      <div className={styles.actions}>
+      <div className="flex flex-wrap items-center gap-3">
         {canSave ? (
-          <button type="submit" className={styles.primary} disabled={!valid || saving}>
+          <button type="submit" className="btn btn-primary" disabled={!valid || saving}>
             {saving ? 'Speichert …' : 'Entscheidung speichern'}
           </button>
         ) : (
-          <button type="button" className={styles.primary} disabled={!valid} onClick={() => onPropose(build())}>
+          <button type="button" className="btn btn-primary" disabled={!valid} onClick={() => onPropose(build())}>
             Als Vorschlag einreichen (GitHub-Issue)
           </button>
         )}
-        {!valid && <span className={styles.muted}>Mindestens eine Entscheidung und eine Begründung angeben; Verwerfen nicht zusammen mit Bestätigen oder Stimmen.</span>}
+        {!valid && (
+          <span className="text-base-content/70 text-sm">
+            Mindestens eine Entscheidung und eine Begründung angeben; Verwerfen nicht zusammen mit Bestätigen oder
+            Stimmen.
+          </span>
+        )}
       </div>
     </form>
   );

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { type LeipzigSettings, saveSettings, saveToken } from './config';
 import { fetchLogin } from './github';
-import styles from './leipzig.module.css';
 
 interface Props {
   settings: LeipzigSettings;
@@ -30,63 +29,83 @@ export function AccountPanel({ settings, login, onSettings, onSignedIn }: Props)
   }
 
   return (
-    <details className={styles.account}>
-      <summary>{login ? `Angemeldet als ${login}` : 'Nicht angemeldet – Entscheidungen werden als Vorschlag eingereicht'}</summary>
-      {login ? (
-        <button
-          type="button"
-          onClick={() => {
-            saveToken(null);
-            onSignedIn(null, null);
-          }}
-        >
-          Abmelden
-        </button>
-      ) : (
-        <div className={styles.field}>
-          <p>
-            Zum direkten Speichern brauchst du Schreibrechte im Repository{' '}
-            <code>{settings.repository}</code> und einen{' '}
-            <a href={tokenHelp} target="_blank" rel="noreferrer">
-              persönlichen Token
-            </a>{' '}
-            (nur dieses Repository, Berechtigung „Contents: Read and write“). Der Token bleibt in diesem Browser.
-          </p>
-          <input
-            type="password"
-            value={tokenInput}
-            placeholder="github_pat_…"
-            onChange={(event) => setTokenInput(event.target.value)}
-          />
-          <button type="button" onClick={signIn} disabled={!tokenInput.trim()}>
-            Anmelden
+    <details className="collapse-arrow border-base-300 bg-base-100 rounded-box collapse mb-4 border">
+      <summary className="collapse-title text-sm font-semibold">
+        {login ? `Angemeldet als ${login}` : 'Nicht angemeldet – Entscheidungen werden als Vorschlag eingereicht'}
+      </summary>
+      <div className="collapse-content flex flex-col gap-4 text-sm">
+        {login ? (
+          <button
+            type="button"
+            className="btn btn-sm self-start"
+            onClick={() => {
+              saveToken(null);
+              onSignedIn(null, null);
+            }}
+          >
+            Abmelden
           </button>
-          {error && <p className={styles.error}>{error}</p>}
+        ) : (
+          <div className="flex flex-col gap-2">
+            <p className="max-w-prose">
+              Zum direkten Speichern brauchst du Schreibrechte im Repository <code>{settings.repository}</code> und
+              einen{' '}
+              <a href={tokenHelp} target="_blank" rel="noreferrer" className="link link-primary">
+                persönlichen Token
+              </a>{' '}
+              (nur dieses Repository, Berechtigung „Contents: Read and write“). Der Token bleibt in diesem Browser.
+            </p>
+            <div className="join">
+              <input
+                type="password"
+                aria-label="Persönlicher Token"
+                className="input input-sm join-item w-72 max-w-full"
+                value={tokenInput}
+                placeholder="github_pat_…"
+                onChange={(event) => setTokenInput(event.target.value)}
+              />
+              <button
+                type="button"
+                className="btn btn-sm btn-primary join-item"
+                onClick={signIn}
+                disabled={!tokenInput.trim()}
+              >
+                Anmelden
+              </button>
+            </div>
+            {error && (
+              <p role="alert" className="text-error">
+                {error}
+              </p>
+            )}
+          </div>
+        )}
+        <div className="flex flex-wrap gap-4">
+          <label className="flex flex-col gap-1">
+            <span className="text-base-content/70">Repository</span>
+            <input
+              className="input input-sm"
+              value={settings.repository}
+              onChange={(event) => {
+                const next = { ...settings, repository: event.target.value };
+                saveSettings(next);
+                onSettings(next);
+              }}
+            />
+          </label>
+          <label className="flex flex-col gap-1">
+            <span className="text-base-content/70">Branch mit den Daten</span>
+            <input
+              className="input input-sm"
+              value={settings.branch}
+              onChange={(event) => {
+                const next = { ...settings, branch: event.target.value };
+                saveSettings(next);
+                onSettings(next);
+              }}
+            />
+          </label>
         </div>
-      )}
-      <div className={styles.settings}>
-        <label>
-          Repository
-          <input
-            value={settings.repository}
-            onChange={(event) => {
-              const next = { ...settings, repository: event.target.value };
-              saveSettings(next);
-              onSettings(next);
-            }}
-          />
-        </label>
-        <label>
-          Branch mit den Daten
-          <input
-            value={settings.branch}
-            onChange={(event) => {
-              const next = { ...settings, branch: event.target.value };
-              saveSettings(next);
-              onSettings(next);
-            }}
-          />
-        </label>
       </div>
     </details>
   );

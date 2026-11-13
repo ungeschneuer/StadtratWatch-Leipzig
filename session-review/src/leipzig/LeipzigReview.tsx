@@ -7,7 +7,7 @@ import { dataUrl, loadSettings, loadToken, type LeipzigSettings } from './config
 import { correctionsForCase, replaceCorrectionsForCase } from './corrections';
 import { commitCorrection, fetchLogin, readCorrections } from './github';
 import { type SeekRequest, VideoPlayer } from './VideoPlayer';
-import styles from './leipzig.module.css';
+import { Notice, Page, PageTitle } from './Page';
 
 const PRIORITY_ORDER = { hoch: 0, mittel: 1, niedrig: 2 } as const;
 
@@ -58,37 +58,45 @@ export function LeipzigSessions() {
   const { data, error } = useJson<ReviewIndex>(dataUrl(account.settings, 'review-index.json'));
 
   return (
-    <main className={styles.page}>
-      <h1>Prüfung der Leipziger Abstimmungen</h1>
+    <Page>
+      <PageTitle>Prüfung der Leipziger Abstimmungen</PageTitle>
       <AccountPanel {...account} onSettings={account.setSettings} onSignedIn={account.signIn} />
-      {error && <p className={styles.error}>Konnte die Übersicht nicht laden: {error}</p>}
+      {error && <Notice tone="error">Konnte die Übersicht nicht laden: {error}</Notice>}
       {data && (
-        <table className={styles.sessions}>
-          <thead>
-            <tr>
-              <th>Sitzung</th>
-              <th>offen</th>
-              <th>entschieden</th>
-              <th>Video</th>
-            </tr>
-          </thead>
-          <tbody>
-            {[...data.sessions].reverse().map((session) => (
-              <tr key={session.sessionId}>
-                <td>
-                  <Link to={`/leipzig/${session.sessionId}`}>
-                    {new Date(session.sessionId).toLocaleDateString('de-DE', { dateStyle: 'long' })}
-                  </Link>
-                </td>
-                <td className={session.open > 0 ? styles.differs : ''}>{session.open}</td>
-                <td>{session.reviewed}</td>
-                <td>{session.videoAvailable ? 'online' : 'nicht mehr online'}</td>
+        <div className="border-base-300 bg-base-100 rounded-box overflow-x-auto border">
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">Sitzung</th>
+                <th scope="col" className="text-right">
+                  offen
+                </th>
+                <th scope="col" className="text-right">
+                  entschieden
+                </th>
+                <th scope="col">Video</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {[...data.sessions].reverse().map((session) => (
+                <tr key={session.sessionId}>
+                  <th scope="row" className="font-normal">
+                    <Link to={`/leipzig/${session.sessionId}`} className="link link-primary whitespace-nowrap">
+                      {new Date(session.sessionId).toLocaleDateString('de-DE', { dateStyle: 'long' })}
+                    </Link>
+                  </th>
+                  <td className="text-right tabular-nums">
+                    {session.open > 0 ? <span className="badge badge-soft badge-warning">{session.open}</span> : 0}
+                  </td>
+                  <td className="text-right tabular-nums">{session.reviewed}</td>
+                  <td className="text-base-content/70">{session.videoAvailable ? 'online' : 'nicht mehr online'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
-    </main>
+    </Page>
   );
 }
 
@@ -102,7 +110,7 @@ export function LeipzigSessionReview() {
   const [showAll, setShowAll] = useState(false);
   const [seek, setSeek] = useState<SeekRequest | null>(null);
   const [saving, setSaving] = useState<number | null>(null);
-  const [message, setMessage] = useState<string | null>(null);
+  const [message, setMessage] = useState<{ text: string; tone: 'info' | 'error' } | null>(null);
 
   useEffect(() => {
     if (!account.token) {
@@ -114,7 +122,9 @@ export function LeipzigSessionReview() {
     }
     readCorrections(account.token, account.settings, sessionDate)
       .then((file) => setCorrections(file.corrections))
-      .catch((readError: Error) => setMessage(`Korrekturen nicht lesbar: ${readError.message}`));
+      .catch((readError: Error) =>
+        setMessage({ text: `Korrekturen nicht lesbar: ${readError.message}`, tone: 'error' }),
+      );
   }, [account.token, account.settings, sessionDate]);
 
   // A link from the notification issue names one case; it is shown even when decided and scrolled into view.
@@ -152,9 +162,12 @@ export function LeipzigSessionReview() {
         `Prüfung ${sessionDate} #${votingIndex}: ${correction.reason}`,
       );
       setCorrections(next);
-      setMessage(`#${votingIndex} gespeichert. Die Daten werden nach der automatischen Prüfung aktualisiert.`);
+      setMessage({
+        text: `#${votingIndex} gespeichert. Die Daten werden nach der automatischen Prüfung aktualisiert.`,
+        tone: 'info',
+      });
     } catch (saveError) {
-      setMessage(`Speichern fehlgeschlagen: ${(saveError as Error).message}`);
+      setMessage({ text: `Speichern fehlgeschlagen: ${(saveError as Error).message}`, tone: 'error' });
     } finally {
       setSaving(null);
     }
@@ -180,31 +193,38 @@ export function LeipzigSessionReview() {
   ).length;
 
   return (
-    <main className={styles.page}>
-      <p>
-        <Link to="/leipzig">← Alle Sitzungen</Link>
+    <Page>
+      <p className="mb-2 text-sm">
+        <Link to="/leipzig" className="link link-primary">
+          ← Alle Sitzungen
+        </Link>
       </p>
-      <h1>
+      <PageTitle>
         Ratsversammlung vom {new Date(sessionDate).toLocaleDateString('de-DE', { dateStyle: 'long' })}
-      </h1>
+      </PageTitle>
       <AccountPanel {...account} onSettings={account.setSettings} onSignedIn={account.signIn} />
-      {error && <p className={styles.error}>Konnte die Prüffälle nicht laden: {error}</p>}
-      {message && <p className={styles.notice}>{message}</p>}
+      {error && <Notice tone="error">Konnte die Prüffälle nicht laden: {error}</Notice>}
+      {message && <Notice tone={message.tone}>{message.text}</Notice>}
       {data && (
         <>
-          <div className={styles.player}>
+          <div className="bg-base-200 sticky top-0 z-10 py-2">
             <VideoPlayer hlsUrl={data.video.hlsUrl} available={data.video.available} seek={seek} />
           </div>
-          <div className={styles.toolbar}>
-            <span>
+          <div className="my-3 flex flex-wrap items-center justify-between gap-4 text-sm">
+            <span className="font-semibold">
               {openCount} offen von {data.summary.cases} Prüffällen
             </span>
-            <label className={styles.check}>
-              <input type="checkbox" checked={showAll} onChange={(event) => setShowAll(event.target.checked)} />
+            <label className="flex cursor-pointer items-center gap-2">
+              <input
+                type="checkbox"
+                className="checkbox checkbox-sm"
+                checked={showAll}
+                onChange={(event) => setShowAll(event.target.checked)}
+              />
               auch entschiedene zeigen
             </label>
           </div>
-          {cases.length === 0 && <p className={styles.notice}>Keine offenen Prüffälle.</p>}
+          {cases.length === 0 && <Notice>Keine offenen Prüffälle.</Notice>}
           {cases.map((reviewCase) => (
             <CaseCard
               key={reviewCase.votingIndex}
@@ -220,6 +240,6 @@ export function LeipzigSessionReview() {
           ))}
         </>
       )}
-    </main>
+    </Page>
   );
 }

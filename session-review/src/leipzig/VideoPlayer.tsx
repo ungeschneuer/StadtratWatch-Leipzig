@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Hls from 'hls.js';
-import styles from './leipzig.module.css';
+import { Notice } from './Page';
 
 export interface SeekRequest {
   seconds: number;
@@ -40,7 +40,7 @@ export function VideoPlayer({ hlsUrl, available, seek }: Props) {
   }, [seek]);
 
   if (!available) {
-    return <p className={styles.notice}>Die Aufzeichnung ist nicht mehr in der Mediathek. Bitte die Belegbilder nutzen.</p>;
+    return <Notice>Die Aufzeichnung ist nicht mehr in der Mediathek. Bitte die Belegbilder nutzen.</Notice>;
   }
-  return <video ref={video} className={styles.video} controls preload="none" />;
+  return <video ref={video} className="rounded-box max-h-[40vh] w-full bg-black" controls preload="none" />;
 }

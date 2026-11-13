@@ -1,24 +1,15 @@
-* {
-  box-sizing: border-box;
-}
+/*
+ * The review app wears the site's themes and font, so both read as one product. The site's styles are imported from
+ * astro/, which is why the deployment installs the site's packages before it builds this app.
+ */
+@import 'tailwindcss';
+@import '../../astro/src/styles/fonts.css';
+@import '../../astro/src/styles/theme.css';
 
-html,
-body,
-#root {
-  height: 100%;
-  margin: 0;
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 14px;
-  color: #111;
-}
-
-button {
-  cursor: pointer;
-}
-
-a {
-  color: #1a5fb4;
+  @apply bg-base-200 text-base-content font-sans antialiased;
 }

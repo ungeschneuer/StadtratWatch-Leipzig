@@ -216,7 +216,7 @@ Befund vom 13.11.2026: Die Oberfläche stammte aus einer Admin-Vorlage ohne Lize
 - [x] **3. Tabellen** (13.11.2026): Spalten nach Wichtigkeit über Container-Abfragen (`@container`, `@2xl:table-cell` …), weil die Seitenleiste die Breite bestimmt, nicht das Fenster; Name als feste erste Spalte (`table-pin-cols`, `<th scope="row">`); kompakte Zeilen unter `md`; Sortierknöpfe dürfen umbrechen, lange Überschriften mit weichem Trennstrich, Titel mit Silbentrennung, Zahlen in einer Zeile; Hinweis „Weitere Kennzahlen …“ auf schmalen Bildschirmen. Von 360 bis 1920 px läuft keine Tabelle mehr über.
 - [x] **4. Bausteine** (13.11.2026): Stimmen als beschriftete `badge` (`VoteBadge`: Ja, Nein, Enth., –; Screenreader hören das ganze Wort) statt Farbpunkt mit `aria-label="status"`; Sitzungsliste nennt je Fraktion die Zahl der Ja, Nein und Enthaltungen statt Punkten mit Namen nur beim Überfahren; Erläuterungen der Kennzahlen (11 auf Fraktionen- und Parteienseite) sichtbar statt Tooltip; Legende des Personengraphen sichtbar unter der Grafik; Seitentitel als `h1` (vorher `h3`), Rechtsseiten mit derselben Skala; Kopf der Personenseite „Fraktion: … · Partei (Wahlliste 2024): …“ (vorher „Fraktionfraktionslos“). Links in Tabellen und Kopfzeilen ohne Dauerunterstreichung, im Fließtext weiter unterstrichen.
 - [x] **5. Diagramme:** Farben und Schrift aus dem Theme, keine geglätteten Kurven über 100 %, waagerechte Achsenbeschriftung, Balkenbeschriftung außerhalb der Balken, Dunkelmodus.
-- [ ] **6. Prüfoberfläche `/review/`:** Tailwind und DaisyUI mit denselben Themes statt eigenem CSS (347 Zeilen).
+- [x] **6. Prüfoberfläche `/review/`:** Tailwind und DaisyUI mit denselben Themes statt eigenem CSS (347 Zeilen).
 
 
 

@@ -31,3 +31,6 @@ npm run lint      # Run ESLint
 
 The build needs the dependencies of `astro/` installed, because the shared models (`@srw-astro/models`, resolved to
 `../src/deps/astro/` in `vite.config.ts` and `tsconfig.app.json`) compile with its `tsconfig.json`.
+
+The styles come from the site as well: `src/index.css` imports the themes and the font from `astro/src/styles/`, and
+the components use Tailwind and daisyUI classes like the site, so a change to the theme reaches both.
