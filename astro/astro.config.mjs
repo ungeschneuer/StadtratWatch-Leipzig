@@ -38,7 +38,14 @@ export default defineConfig({
     },
   },
 
-  integrations: [alpinejs(), sitemap()],
+  // /pp/, /privacy/ and /contact/ only forward the addresses of the time before the German ones.
+  integrations: [
+    alpinejs(),
+    sitemap({
+      filter: (page) =>
+        !/\/(pp|privacy|contact)\//.test(new URL(page).pathname),
+    }),
+  ],
 
   vite: {
     plugins: [tailwindcss()],

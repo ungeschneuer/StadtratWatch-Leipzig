@@ -1,0 +1,221 @@
+---
+import { siteRoutes, votingSlugs } from '@utils/routes';
+import { type SessionScan } from '@models/session-scan';
+import VotingReviewBadge from '@components/VotingReviewBadge.astro';
+import { type VotingListItem } from './_model';
+import { type Registry } from '@models/registry';
+import {
+  getVotesByFactions,
+  getVotingId,
+  votingAccepted,
+} from '@models/voting-breakdown.ts';
+
+type Props = {
+  parliamentPeriod: Registry;
+  sessionId: string;
+  sessionScan: SessionScan;
+};
+
+const { parliamentPeriod, sessionId, sessionScan } = Astro.props as Props;
+const sessionDate = parliamentPeriod.sessions.find(
+  (session) => session.id === sessionId,
+)?.date;
+
+const slugs = votingSlugs(sessionScan);
+const routes = siteRoutes(parliamentPeriod.id);
+const votings = sessionScan
+  .map(
+    (voting) =>
+      ({
+        id: getVotingId(voting),
+        url: routes.voting(
+          sessionId,
+          slugs.get(voting.votingFilename) as string,
+        ),
+        agendaItem: voting.votingSubject.agendaItem,
+        motionId: voting.votingSubject.motionId,
+        title: voting.votingSubject.title,
+        type: voting.votingSubject.type || '',
+        authors: voting.votingSubject.authors,
+        votesByFactions: getVotesByFactions(
+          parliamentPeriod,
+          voting.votes,
+          sessionDate,
+        ),
+        accepted: votingAccepted(parliamentPeriod, voting),
+        reviewStatus: voting.reviewStatus,
+      }) satisfies VotingListItem,
+  )
+  .toSorted((a, b) => a.id - b.id);
+---
+
+{votings.length === 0 ? (
+  <div class="alert alert-info alert-soft">
+    <span class="iconify lucide--info size-5" />
+    Es liegen noch keine Abstimmungsdaten vor.
+  </div>
+) : (
+  <div x-data="votings">
+    <div class="flex items-center gap-2">
+      <input
+        class="toggle toggle-sm"
+        id="onlyPrimaryVotingsFilterCheckbox"
+        x-ref="onlyPrimaryVotingsFilterCheckbox"
+        type="checkbox"
+        checked
+        @change="filterList($event.target.checked)"
+      />
+      <label class="label text-sm" for="onlyPrimaryVotingsFilterCheckbox">
+        Nur Sachbeschlüsse anzeigen
+      </label>
+      <div class="tooltip">
+        <div class="tooltip-content space-y-2">
+          <p>
+            Bei aktiviertem Filter werden nur Beschlussvorlagen, Anträge und
+            Änderungsanträge aufgelistet.
+          </p>
+          <p>
+            Verfahrensabstimmungen, wie z.B. Geschäftsordnungsanträge oder
+            Abstimmungen zur Tagesordnung, werden ausgeblendet.
+          </p>
+        </div>
+        <span class="iconify lucide--info text-base-content/80 align-middle" />
+      </div>
+    </div>
+    <ul class="timeline timeline-vertical timeline-compact">
+      {votings.map((voting) => (
+        <li class="voting-item" data-voting-type={voting.type}>
+          <hr class="voting-item-leading-line" />
+          <div class="timeline-middle">
+            <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1">
+              {voting.accepted ? (
+                <span
+                  aria-label="angenommen"
+                  class="iconify lucide--check text-success"
+                />
+              ) : (
+                <span
+                  aria-label="abgelehnt"
+                  class="iconify lucide--x text-error"
+                />
+              )}
+            </div>
+          </div>
+          <a
+            href={voting.url}
+            class="timeline-end timeline-box mt-5 ms-3 w-full hover:bg-base-200 hover:cursor-pointer space-y-2"
+          >
+            <div class="text-base-content/70 space-x-1">
+              <span>{voting.agendaItem}</span>
+              <span>{voting.type}</span>
+              <span>{voting.motionId}</span>
+              <VotingReviewBadge reviewStatus={voting.reviewStatus} />
+            </div>
+            <div class="text-base">{voting.title}</div>
+            {voting.authors.length > 0 && (
+              <div class="flex flex-wrap gap-1">
+                {voting.authors.map((author) => (
+                  <span class="badge badge-neutral badge-sm">{author}</span>
+                ))}
+              </div>
+            )}
+
+            <div class="grid sm:grid-cols-[auto_1fr] sm:gap-x-2">
+              {voting.votesByFactions.map((votesByFaction) => (
+                <>
+                  <div class="text-base-content/70">
+                    {votesByFaction.factionName}:
+                  </div>
+                  <div class="space-x-1 mb-1">
+                    {votesByFaction.votes.map((vote) => (
+                      <div class="tooltip" data-tip={vote.personName}>
+                        <div
+                          class="status status-lg"
+                          class:list={[
+                            { 'status-success': vote.vote === 'J' },
+                            { 'status-error': vote.vote === 'N' },
+                            { 'status-warning': vote.vote === 'E' },
+                          ]}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </>
+              ))}
+            </div>
+          </a>
+          <hr class="voting-item-trailing-line" />
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
+
+<script>
+  import Alpine from 'alpinejs';
+
+  document.addEventListener('alpine:init', () => {
+    const votingItemsElements = document.querySelectorAll(
+      '.voting-item',
+    ) as NodeListOf<HTMLElement>;
+
+    Alpine.data('votings', () => ({
+      init: function () {
+        setTimeout(
+          () =>
+            this.filterList(
+              (this.$refs.onlyPrimaryVotingsFilterCheckbox as HTMLInputElement)
+                .checked,
+            ),
+          100,
+        );
+      },
+      filterList: function (onlyPrimaryVotings: boolean) {
+        votingItemsElements.forEach((item) => {
+          const votingType = item.getAttribute('data-voting-type') || '';
+          const isPrimaryVoting = [
+            'Beschlussvorlage',
+            'Antrag',
+            'Änderungsantrag',
+          ].includes(votingType);
+          item.style.display =
+            onlyPrimaryVotings && !isPrimaryVoting ? 'none' : 'grid';
+        });
+
+        // Unhide all vertical lines
+        const hrElements = document.querySelectorAll(
+          '.voting-item-leading-line, .voting-item-trailing-line',
+        ) as NodeListOf<HTMLElement>;
+        hrElements.forEach((hr) => {
+          hr.style.display = 'block';
+        });
+
+        // Hide the first vertical line of the first visible item
+        const firstVisibleItem = Array.from(votingItemsElements).find(
+          (item) => item.style.display !== 'none',
+        );
+        if (firstVisibleItem) {
+          const leadingHr = firstVisibleItem.querySelector(
+            '.voting-item-leading-line',
+          ) as HTMLElement;
+          if (leadingHr) {
+            leadingHr.style.display = 'none';
+          }
+        }
+
+        // Hide the last vertical line of the last visible item
+        const lastVisibleItem = Array.from(votingItemsElements)
+          .reverse()
+          .find((item) => item.style.display !== 'none');
+        if (lastVisibleItem) {
+          const trailingHr = lastVisibleItem.querySelector(
+            '.voting-item-trailing-line',
+          ) as HTMLElement;
+          if (trailingHr) {
+            trailingHr.style.display = 'none';
+          }
+        }
+      },
+    }));
+  });
+</script>

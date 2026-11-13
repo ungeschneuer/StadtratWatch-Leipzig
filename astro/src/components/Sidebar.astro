@@ -1,4 +1,5 @@
 ---
+import { siteRoutes } from '@utils/routes';
 import { sitePath } from '@utils/site-path';
 import { getCollection } from 'astro:content';
 import { type Registry } from '@models/registry';
@@ -22,25 +23,22 @@ type Props = {
 
 const { parliamentPeriod } = Astro.props as Props;
 
-const pathname = Astro.url.pathname
-  .toLowerCase()
-  .slice(sitePath('/').length - 1);
+const routes = siteRoutes(parliamentPeriod.id);
+const pathname = Astro.url.pathname.replace(/\/$/, '');
+const isSectionOf = (listPath: string, itemPathPrefix: string) =>
+  pathname === listPath || pathname.startsWith(itemPathPrefix);
 let activePage = '';
 switch (true) {
-  case pathname.startsWith(`/pp/${parliamentPeriod.id}/session/`) ||
-    pathname === `/pp/${parliamentPeriod.id}/sessions`:
+  case isSectionOf(routes.sessions(), routes.session('')):
     activePage = 'sessions';
     break;
-  case pathname.startsWith(`/pp/${parliamentPeriod.id}/faction/`) ||
-    pathname === `/pp/${parliamentPeriod.id}/factions`:
+  case isSectionOf(routes.factions(), routes.faction('')):
     activePage = 'factions';
     break;
-  case pathname.startsWith(`/pp/${parliamentPeriod.id}/party/`) ||
-    pathname === `/pp/${parliamentPeriod.id}/parties`:
+  case isSectionOf(routes.parties(), routes.party('')):
     activePage = 'parties';
     break;
-  case pathname.startsWith(`/pp/${parliamentPeriod.id}/person/`) ||
-    pathname === `/pp/${parliamentPeriod.id}/persons`:
+  case isSectionOf(routes.persons(), routes.person('')):
     activePage = 'persons';
     break;
 }
@@ -83,7 +81,7 @@ switch (true) {
         >
           {parliamentPeriods.map((parliamentPeriod) => (
             <li>
-              <a href={sitePath(`/pp/${parliamentPeriod.id}`)}>
+              <a href={siteRoutes(parliamentPeriod.id).parliamentPeriod()}>
                 <span>{parliamentPeriod.name}</span>
               </a>
             </li>
@@ -95,28 +93,28 @@ switch (true) {
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'sessions' }]}
-          href={sitePath(`/pp/${parliamentPeriod.id}/sessions`)}
+          href={siteRoutes(parliamentPeriod.id).sessions()}
         >
           Sitzungen
         </a>
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'factions' }]}
-          href={sitePath(`/pp/${parliamentPeriod.id}/factions`)}
+          href={siteRoutes(parliamentPeriod.id).factions()}
         >
           Fraktionen
         </a>
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'parties' }]}
-          href={sitePath(`/pp/${parliamentPeriod.id}/parties`)}
+          href={siteRoutes(parliamentPeriod.id).parties()}
         >
           Parteien
         </a>
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'persons' }]}
-          href={sitePath(`/pp/${parliamentPeriod.id}/persons`)}
+          href={siteRoutes(parliamentPeriod.id).persons()}
         >
           Personen
         </a>
@@ -163,7 +161,7 @@ switch (true) {
         </a>
       </li>
       <li>
-        <a href={sitePath('/privacy')} class="flex items-center gap-2">
+        <a href={sitePath('/datenschutz')} class="flex items-center gap-2">
           <span class="iconify lucide--cookie size-4"></span>
           Datenschutz
         </a>
@@ -175,7 +173,7 @@ switch (true) {
         </a>
       </li>
       <li>
-        <a href={sitePath('/contact')} class="flex items-center gap-2">
+        <a href={sitePath('/kontakt')} class="flex items-center gap-2">
           <span class="iconify lucide--mail size-4"></span>
           Kontakt
         </a>

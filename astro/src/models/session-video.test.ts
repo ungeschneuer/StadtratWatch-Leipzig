@@ -9,6 +9,7 @@ describe('sessionVideoLink', () => {
       url: 'https://youtu.be/abc?t=702s',
       label: 'YouTube',
       icon: 'lucide--youtube',
+      text: 'Video ab 0:11:42',
     });
   });
 
@@ -28,6 +29,7 @@ describe('sessionVideoLink', () => {
       url: 'https://www.leipzig.de/mediathek/x',
       label: 'Mediathek',
       icon: 'lucide--video',
+      text: 'Aufzeichnung (Mediathek)',
     });
   });
 
@@ -63,5 +65,20 @@ describe('sessionVideoLink', () => {
 
   it('gives no link without a recording', () => {
     expect(sessionVideoLink({ youtubeUrl: '' })).toBeNull();
+  });
+
+  it('says from when the video plays where the player jumps to the time', () => {
+    const link = sessionVideoLink(
+      {
+        youtubeUrl: '',
+        video: {
+          url: 'https://www.leipzig.de/mediathek/x',
+          label: 'Mediathek',
+          playerUrl: 'https://player.example/p.html?videostartoffset=1',
+        },
+      },
+      3725,
+    );
+    expect(link?.text).toBe('Video ab 1:02:05');
   });
 });

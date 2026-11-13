@@ -1,0 +1,21 @@
+---
+// A page that has moved: GitHub Pages cannot redirect, so the old address forwards and names the new one canonical.
+type Props = { target: string };
+const { target } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={target} />
+    <title>Weitergeleitet</title>
+  </head>
+  <body>
+    <p>
+      Diese Seite ist umgezogen: <a href={target}>{target}</a>
+    </p>
+  </body>
+</html>
