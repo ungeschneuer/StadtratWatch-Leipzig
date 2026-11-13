@@ -19,6 +19,15 @@ body {
   @apply font-semibold;
 }
 
+/* daisyUI mutes table heads, labels and stat captions to 60 %, which falls below 4.5:1 on the light surfaces; the site
+   mutes text to 70 % everywhere (at least 5.3:1 light, 7:1 dark). */
+.table thead,
+.label,
+.stat-title,
+.stat-desc {
+  color: color-mix(in oklab, var(--color-base-content) 70%, transparent);
+}
+
 /* Links in running text stand out; links that are the content of a list or table row do not need an underline. */
 .link-quiet {
   @apply link link-hover;
@@ -26,4 +35,23 @@ body {
 
 [x-cloak] {
   display: none !important;
+}
+
+/* Pagefind brings fixed light colours; its variables take the theme so the search reads in light and dark alike. */
+#search {
+  --pagefind-ui-scale: 0.85;
+  --pagefind-ui-primary: var(--color-primary);
+  --pagefind-ui-text: var(--color-base-content);
+  --pagefind-ui-background: var(--color-base-100);
+  --pagefind-ui-border: var(--color-base-300);
+  --pagefind-ui-tag: var(--color-base-200);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: var(--radius-field);
+  --pagefind-ui-font: var(--font-sans);
+}
+
+#search mark {
+  background-color: color-mix(in oklab, var(--color-warning) 25%, transparent);
+  color: inherit;
+  border-radius: 2px;
 }

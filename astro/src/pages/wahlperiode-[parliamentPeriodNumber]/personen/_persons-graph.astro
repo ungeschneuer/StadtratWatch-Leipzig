@@ -2,7 +2,11 @@
 import { type Registry } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
 import { calcPersonsForces } from '@data-analysis/PersonsForces';
-import { fillColorsMap } from './_constants';
+import {
+  factionColorProperty,
+  factionColorStyles,
+  factionColorsByParliamentPeriod,
+} from './_constants';
 
 type Props = {
   parliamentPeriod: Registry;
@@ -12,21 +16,18 @@ type Props = {
 const { parliamentPeriod, sessionInputs } = Astro.props as Props;
 
 const personsForces = calcPersonsForces(parliamentPeriod, sessionInputs);
-const fillColors = Array.from(
-  fillColorsMap.get(parliamentPeriod.id) || new Map<string, string>().entries(),
-).map(([faction, color]) => ({ faction, color }));
+const factionColors =
+  factionColorsByParliamentPeriod.get(parliamentPeriod.id) ?? new Map();
+const legend = [...factionColors.keys()].map((faction, index) => ({
+  faction,
+  colorProperty: factionColorProperty(index),
+}));
+const colorPropertyByFaction = Object.fromEntries(
+  legend.map(({ faction, colorProperty }) => [faction, colorProperty]),
+);
 ---
 
-<style is:inline>
-  .person-tooltip {
-    position: absolute;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    pointer-events: none; /* keep the mouseover when over the tooltip */
-  }
-</style>
+<style is:inline set:html={factionColorStyles(factionColors)}></style>
 
 <div class="space-y-5">
   <div class="alert alert-soft alert-info" role="alert">
@@ -55,28 +56,36 @@ const fillColors = Array.from(
     </div>
   </div>
 
-  <div class="rounded-box rounded-md border border-base-300 relative">
+  <div class="border-base-300 rounded-box relative overflow-hidden border">
     <div
       id="graph-container"
-      style="min-height: 500px;"
+      class="h-[500px] w-full"
       x-data="graph"
-      data-parliament-period-id={parliamentPeriod.id}
       data-persons-forces={JSON.stringify(personsForces)}
+      data-color-properties={JSON.stringify(colorPropertyByFaction)}
       x-init="showGraph(); $watch('currentTab', value => value === 'graph' && showGraph());"
       @resize.window="showGraph()"
     ></div>
+    <div
+      id="graph-tooltip"
+      aria-hidden="true"
+      class="bg-base-100 text-base-content border-base-300 rounded-field pointer-events-none absolute top-0 left-0 hidden border px-2 py-1 text-sm shadow-sm"
+    >
+      <span class="block font-semibold" data-tooltip-name></span>
+      <span class="text-base-content/70 block" data-tooltip-faction></span>
+    </div>
   </div>
   <ul
     class="text-base-content/70 mt-3 flex list-none flex-wrap gap-x-4 gap-y-1 p-0 text-sm"
     aria-label="Farben der Fraktionen"
   >
-    {fillColors.map((fillColor) => (
+    {legend.map(({ faction, colorProperty }) => (
       <li class="flex items-center gap-2">
         <span
-          class="inline-block h-3 w-3 rounded-full"
-          style={`background-color: ${fillColor.color};`}
+          class="inline-block size-3 rounded-full"
+          style={`background-color: var(${colorProperty});`}
         />
-        <span>{fillColor.faction}</span>
+        <span>{faction}</span>
       </li>
     ))}
   </ul>
@@ -85,153 +94,156 @@ const fillColors = Array.from(
 <script>
   import * as d3 from 'd3';
   import Alpine from 'alpinejs';
-  import { type PersonsForces } from '@data-analysis/PersonsForces';
+  import {
+    type PersonsForces,
+    type PersonsForcesNode,
+  } from '@data-analysis/PersonsForces';
   import { type SimulationLinkDatum, type SimulationNodeDatum } from 'd3';
-  import { fillColorsMap } from './_constants';
 
-  interface PersonForcesNodeDatum extends SimulationNodeDatum {
-    id: string;
-    name: string;
-    faction: string;
-  }
+  type MemberNode = PersonsForcesNode & SimulationNodeDatum;
+  type SimilarityLink = SimulationLinkDatum<MemberNode> & { value: number };
 
-  interface PersonForcesLinkDatum extends SimulationLinkDatum<PersonForcesNodeDatum> {
-    value: number;
-  }
-
-  const FORCE_THRESHOLD = 0.65;
-  const FORCE_DISTANCE = 200;
+  const SIMILARITY_THRESHOLD = 0.65;
+  const LINK_DISTANCE = 200;
+  const LAYOUT_TICKS = 400;
+  const NODE_RADIUS = 6;
+  const PADDING = 24;
 
   const graphContainer = document.getElementById('graph-container');
-  if (graphContainer) {
-    const parliamentPeriodId = graphContainer.dataset.parliamentPeriodId;
-    const personsForces = JSON.parse(
-      graphContainer.dataset.personsForces || '{nodes: [], links: []}',
-    ) as PersonsForces;
+  const tooltip = document.getElementById('graph-tooltip');
 
-    const nodes = personsForces.nodes.map(
-      (d) => ({ ...d }) as PersonForcesNodeDatum,
+  // The layout is computed once and then fitted into the box, so groups without links to the others (factions that
+  // vote alike among themselves) stay in view instead of drifting off.
+  function computeLayout(forces: PersonsForces): MemberNode[] {
+    const nodes = forces.nodes.map((node) => ({ ...node }) as MemberNode);
+    const links = forces.links
+      .filter((link) => link.value > SIMILARITY_THRESHOLD)
+      .map((link) => ({ ...link }) as SimilarityLink);
+    d3.forceSimulation(nodes)
+      .force('charge', d3.forceManyBody())
+      .force(
+        'link',
+        d3
+          .forceLink<MemberNode, SimilarityLink>(links)
+          .id((node) => node.id)
+          .distance((link) => LINK_DISTANCE * (1 - link.value)),
+      )
+      .force('x', d3.forceX(0).strength(0.06))
+      .force('y', d3.forceY(0).strength(0.06))
+      .force('collision', d3.forceCollide(NODE_RADIUS + 1))
+      .stop()
+      .tick(LAYOUT_TICKS);
+    return nodes;
+  }
+
+  function fitToBox(nodes: MemberNode[], width: number, height: number) {
+    const xs = nodes.map((node) => node.x ?? 0);
+    const ys = nodes.map((node) => node.y ?? 0);
+    const [minX, maxX] = [Math.min(...xs), Math.max(...xs)];
+    const [minY, maxY] = [Math.min(...ys), Math.max(...ys)];
+    const scale = Math.min(
+      (width - 2 * PADDING) / Math.max(maxX - minX, 1),
+      (height - 2 * PADDING) / Math.max(maxY - minY, 1),
     );
-    const links = personsForces.links
-      .filter((d) => d.value > FORCE_THRESHOLD)
-      .map((d) => ({ ...d }) as PersonForcesLinkDatum);
+    const offsetX = (width - (maxX - minX) * scale) / 2;
+    const offsetY = (height - (maxY - minY) * scale) / 2;
+    return {
+      x: (node: MemberNode) => offsetX + ((node.x ?? 0) - minX) * scale,
+      y: (node: MemberNode) => offsetY + ((node.y ?? 0) - minY) * scale,
+    };
+  }
 
-    const fillColors =
-      fillColorsMap.get(parliamentPeriodId || '') || new Map<string, string>();
+  if (graphContainer && tooltip) {
+    const forces = JSON.parse(
+      graphContainer.dataset.personsForces || '{"nodes":[],"links":[]}',
+    ) as PersonsForces;
+    const colorProperties = JSON.parse(
+      graphContainer.dataset.colorProperties || '{}',
+    ) as Record<string, string>;
+    const nodes = computeLayout(forces);
 
-    const svg = d3.select(graphContainer).append('svg');
-
-    const tooltip = d3
+    const svg = d3
       .select(graphContainer)
-      .append('div')
-      .classed('person-tooltip bg-gray-300', true)
-      .style('opacity', 0);
+      .append('svg')
+      .attr('role', 'img')
+      .attr(
+        'aria-label',
+        `Netzwerk der ${nodes.length} Ratsmitglieder: Je ähnlicher zwei Mitglieder abstimmen, desto näher liegen ihre Kreise. Der Tab „Liste“ nennt alle Mitglieder mit ihren Werten.`,
+      )
+      .classed('block size-full', true);
+    const layer = svg.append('g');
+
+    // Wheel and one-finger gestures keep scrolling the page; zooming needs Ctrl or two fingers.
+    svg.call(
+      d3
+        .zoom<SVGSVGElement, unknown>()
+        .scaleExtent([0.5, 8])
+        .filter((event: Event) =>
+          event.type === 'wheel'
+            ? (event as WheelEvent).ctrlKey
+            : 'touches' in event
+              ? (event as TouchEvent).touches.length > 1
+              : !(event as MouseEvent).button,
+        )
+        .on('zoom', (event) => layer.attr('transform', event.transform)),
+    );
+
+    function showTooltip(event: Event, node: MemberNode) {
+      const circle = event.currentTarget as SVGCircleElement;
+      const box = circle.getBoundingClientRect();
+      const frame = graphContainer!.getBoundingClientRect();
+      tooltip!.querySelector('[data-tooltip-name]')!.textContent = node.name;
+      tooltip!.querySelector('[data-tooltip-faction]')!.textContent =
+        node.faction;
+      tooltip!.classList.remove('hidden');
+      const left = Math.min(
+        Math.max(
+          box.left - frame.left + box.width / 2 - tooltip!.offsetWidth / 2,
+          4,
+        ),
+        frame.width - tooltip!.offsetWidth - 4,
+      );
+      const above = box.top - frame.top - tooltip!.offsetHeight - 6;
+      const top = above >= 4 ? above : box.bottom - frame.top + 6;
+      tooltip!.style.transform = `translate(${left}px, ${top}px)`;
+    }
+
+    function hideTooltip() {
+      tooltip!.classList.add('hidden');
+    }
 
     Alpine.data('graph', () => ({
       showGraph() {
-        setTimeout(
-          () =>
-            this.drawGraph(
-              graphContainer.clientWidth,
-              graphContainer.clientHeight,
-            ),
-          100,
+        requestAnimationFrame(() =>
+          this.drawGraph(
+            graphContainer.clientWidth,
+            graphContainer.clientHeight,
+          ),
         );
       },
       drawGraph(width: number, height: number) {
-        svg
-          .attr('width', width)
-          .attr('height', height)
-          .attr('viewBox', [0, 0, width, height])
-          .classed('w-full h-auto', true)
-          .call(
-            // @ts-ignore
-            d3
-              .zoom()
-              .on('zoom', (event: any) =>
-                d3.select('svg g').attr('transform', event.transform),
-              ),
-          );
-
-        svg.selectAll('g').remove();
-        const node = svg
-          .append('g')
-          .attr('stroke', '#aaa')
-          .attr('stroke-width', 1)
-          .selectAll('circle')
-          .data(nodes)
+        if (!width || !height) return;
+        const position = fitToBox(nodes, width, height);
+        svg.attr('viewBox', [0, 0, width, height]);
+        hideTooltip();
+        layer
+          .selectAll<SVGCircleElement, MemberNode>('circle')
+          .data(nodes, (node) => node.id)
           .join('circle')
-          .attr('r', 5)
-          .attr('fill', (d) => fillColors.get(d.faction) || '#000')
-          .on('mouseover', mouseOver)
-          .on('mouseleave', mouseLeave)
-          .call(
-            // @ts-ignore
-            d3
-              .drag()
-              .on('start', dragstarted)
-              .on('drag', dragged)
-              .on('end', dragended),
-          );
-
-        function ticked() {
-          node.attr('cx', (d) => d.x || null).attr('cy', (d) => d.y || null);
-        }
-
-        const simulation = d3
-          .forceSimulation(nodes)
-          .force('charge', d3.forceManyBody())
-          .force(
-            'link',
-            d3
-              .forceLink<PersonForcesNodeDatum, PersonForcesLinkDatum>(links)
-              .id((d) => d.id)
-              .distance((l) => FORCE_DISTANCE * (1 - l.value)),
+          .attr('r', NODE_RADIUS)
+          .attr('cx', position.x)
+          .attr('cy', position.y)
+          .style('fill', (node) =>
+            colorProperties[node.faction]
+              ? `var(${colorProperties[node.faction]})`
+              : 'var(--color-neutral)',
           )
-          .force('center', d3.forceCenter(width / 3, height / 3))
-          .force('collision', d3.forceCollide(5))
-          .on('tick', ticked);
-
-        function dragstarted(event: any) {
-          if (!event.active) simulation.alphaTarget(0.3).restart();
-          event.subject.fx = event.subject.x;
-          event.subject.fy = event.subject.y;
-        }
-
-        function dragged(event: any) {
-          event.subject.fx = event.x;
-          event.subject.fy = event.y;
-        }
-
-        function dragended(event: any) {
-          if (!event.active) simulation.alphaTarget(0);
-          event.subject.fx = null;
-          event.subject.fy = null;
-        }
-
-        function mouseOver(event: any, node: PersonForcesNodeDatum) {
-          tooltip
-            .transition()
-            .duration(300)
-            .style('opacity', 1)
-            .style(
-              'left',
-              `${event.layerX - tooltip.node()!.offsetWidth - 5}px`,
-            )
-            .style('top', `${event.layerY - tooltip.node()!.offsetHeight}px`);
-          tooltip.html(`
-<span class="font-bold text-gray-900">
-    ${node.name}
-</span>
-<br>
-<span class="text-gray-600">
-    ${node.faction}
-</span>`);
-        }
-
-        function mouseLeave() {
-          tooltip.transition().duration(200).style('opacity', 0);
-        }
+          .style('stroke', 'var(--color-base-100)')
+          .style('stroke-width', 1.5)
+          .style('cursor', 'pointer')
+          .on('pointerenter', showTooltip)
+          .on('pointerdown', showTooltip)
+          .on('pointerleave', hideTooltip);
       },
     }));
   }
