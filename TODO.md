@@ -203,7 +203,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [ ] **Stichprobe von Hand** an einer Sitzung auf der Seite (Sprecher, Text, Zeit), z. B. 28./29.10.2026, sobald das Protokoll da ist.
 - [x] **Suche:** statisch mit Pagefind, im Build erzeugt (`npm run build`), auf GitHub Pages ausgeliefert, im Browser durchsucht; Seite `/suche`. Indexiert sind die Inhaltsseiten (642), nicht die Namenslisten jeder Abstimmung und nicht die Weiterleitungen (13.11.2026). Die Reden stehen im Index wie auf der Sitzungsseite.
 - [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der ALLRIS-Runner (`minutes-runner/`, täglich auf dem Server) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
-  - [ ] ALLRIS-Runner auf dem Server einrichten (`minutes-runner/README.md`), Deploy-Key mit Schreibzugriff eintragen, Probelauf.
+  - [x] ALLRIS-Runner auf einem Server des Betreibers eingerichtet (cron, `minutes-runner/install-cron.sh`), Deploy-Key mit Schreibzugriff eingetragen, Probelauf (13.11.2026).
 
 ---
 

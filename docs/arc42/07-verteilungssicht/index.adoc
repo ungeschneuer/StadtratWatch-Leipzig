@@ -19,7 +19,7 @@
 | `evidence-<datum>`: Zitatbilder aller veröffentlichten Abstimmungen, Tafelbilder der Prüffälle. `deploy.yml` lädt die Zitatbilder nach `public/evidence/`, die Seite liefert sie selbst aus.
 
 | Server des Betreibers
-| ALLRIS-Runner `minutes-runner/` als systemd-Timer (täglich): holt amtliche Ergebnisse und Verlaufsprotokolle aus ALLRIS und pusht sie mit einem Deploy-Key auf `data/leipzig-votings`. ALLRIS nimmt von GitHub Actions keine Verbindung an (geprüft 12.11.2026: Verbindungsaufbau läuft in den Timeout, alle anderen Quellen antworten); in Actions gibt der ALLRIS-Client deshalb nach dem ersten Timeout für den Rest des Laufs auf.
+| ALLRIS-Runner `minutes-runner/` als täglicher Cronjob auf einem Server des Betreibers (alternativ systemd-Timer): holt amtliche Ergebnisse und Verlaufsprotokolle aus ALLRIS und pusht sie mit einem Deploy-Key auf `data/leipzig-votings`. ALLRIS nimmt von GitHub Actions keine Verbindung an (geprüft 12.11.2026: Verbindungsaufbau läuft in den Timeout, alle anderen Quellen antworten); in Actions gibt der ALLRIS-Client deshalb nach dem ersten Timeout für den Rest des Laufs auf.
 
 | Rechner des Betreibers
 | Nur für Ausnahmen: lokales Whisper für Sitzungen ohne Untertitel (`docs/guides/leipzig-whisper.md`).
