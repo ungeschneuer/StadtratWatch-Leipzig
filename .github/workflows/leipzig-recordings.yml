@@ -53,12 +53,26 @@ jobs:
           body: Automatisch erzeugt vom Workflow „Leipzig recordings“. Neue oder geänderte Aufzeichnungen und Untertitel.
           delete-branch: true
 
-      # See ci.yml: a branch pushed with GITHUB_TOKEN starts no CI by itself.
-      - name: Run CI on the data branch
-        if: steps.proposal.outputs.pull-request-operation == 'created' || steps.proposal.outputs.pull-request-operation == 'updated'
+      # Recordings and subtitles carry no votes, so the pull request is merged as soon as CI passes; the votings workflow
+      # then reads the new sessions. Anything else on the branch waits for a human.
+      - name: Merge the recordings
+        if: steps.proposal.outputs.pull-request-number && steps.proposal.outputs.pull-request-operation != 'closed'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run ci.yml --ref data/leipzig-recordings
+          PULL_REQUEST: ${{ steps.proposal.outputs.pull-request-number }}
+        run: |
+          unexpected="$(gh pr view "$PULL_REQUEST" --json files --jq '.files[].path' |
+            grep -vE '^data/leipzig-8/(recordings\.json|[0-9]{4}-[0-9]{2}-[0-9]{2}/subtitles-[0-9-]+\.vtt)$' || true)"
+          if [ -n "$unexpected" ]; then
+            echo "::warning::Der Recordings-PR ändert weitere Dateien und wartet auf einen Menschen:"
+            echo "$unexpected"
+            exit 0
+          fi
+          head="$(gh pr view "$PULL_REQUEST" --json headRefOid --jq .headRefOid)"
+          .github/scripts/wait-for-ci.sh data/leipzig-recordings "$head"
+          gh pr merge "$PULL_REQUEST" --merge --match-head-commit "$head" --delete-branch
+          # A merge with the workflow token starts no other workflow.
+          gh workflow run leipzig-votings.yml --ref main
 
       - name: Report failure
         if: steps.sync.outcome == 'failure'

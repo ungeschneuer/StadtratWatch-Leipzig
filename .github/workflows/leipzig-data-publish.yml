@@ -1,11 +1,11 @@
 name: Leipzig data publish
 
-# Brings the reviewers' decisions of the day to the site in the evening: merges the data pull request once its
-# decisions are applied and CI is green, and deploys. Data with a new session waits for the operator.
+# Publishes the data branch in the evening: merges the data pull request once its review decisions are applied and CI is
+# green, deploys, and tells the reviewers in a comment what went online, new sessions included.
 
 on:
   schedule:
-    # Daily at 20:07 UTC (21:07 in winter, 22:07 in summer), after the day's reviews.
+    # Daily at 20:07 UTC (21:07 in winter, 22:07 in summer), after the day's reviews and the new sessions.
     - cron: '7 20 * * *'
   workflow_dispatch:
 
@@ -19,7 +19,7 @@ env:
 
 jobs:
   publish:
-    name: Publish the review decisions
+    name: Publish the data branch
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -32,4 +32,5 @@ jobs:
       - name: Merge the data pull request and deploy
         env:
           GH_TOKEN: ${{ github.token }}
+          LEIPZIG_REVIEWERS: ${{ vars.LEIPZIG_REVIEWERS }}
         run: .github/scripts/leipzig-publish-data.sh
