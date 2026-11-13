@@ -27,7 +27,7 @@ import {
 export const getStaticPaths = getParliamentPeriodWithSessionAndVotingPaths;
 
 const { sessionId } = Astro.params;
-const { parliamentPeriod, sessionInput, voting } =
+const { parliamentPeriod, sessionInput, voting, shownPersonIds } =
   Astro.props as ParliamentPeriodWithSessionAndVotingProps;
 const parliamentPeriodId = parliamentPeriod.id;
 const mayorDecided = decidedByMayor(
@@ -87,7 +87,11 @@ const votesWithFaction = voting.votes.map((vote) => {
     vote: vote.vote,
   };
 });
-const votesGroupedByFaction = votesWithFaction.reduce(
+// Members who never cast a vote in the recorded sessions have no page; the board lists them without a vote.
+const shownVotes = votesWithFaction.filter((vote) =>
+  shownPersonIds.includes(vote.personId),
+);
+const votesGroupedByFaction = shownVotes.reduce(
   (acc, vote) => {
     if (!acc[vote.factionName]) {
       acc[vote.factionName] = [];

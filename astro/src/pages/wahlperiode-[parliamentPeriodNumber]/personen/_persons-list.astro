@@ -1,6 +1,7 @@
 ---
 import { siteRoutes } from '@utils/routes';
 import { compareNamesForSorting } from '@models/person-name';
+import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
 import { type PersonListItem } from './_models';
 import { type Registry } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
@@ -23,7 +24,7 @@ type Props = {
 
 const { parliamentPeriod, sessionInputs } = Astro.props as Props;
 
-const persons = parliamentPeriod.persons
+const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
   .map((person) => {
     const faction = parliamentPeriod.factions.find(
       (faction) => faction.id === person.factionId,

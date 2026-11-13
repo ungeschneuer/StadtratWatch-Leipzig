@@ -3,6 +3,7 @@ import { getParliamentPeriodWithSessionsPaths } from '../wahlperiode-[parliament
 import Forwarding from '@components/Forwarding.astro';
 import { siteRoutes, votingSlugs } from '@utils/routes';
 import { getVotingId } from '@models/voting-breakdown';
+import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
 
 // Until 13.11.2026 the site's addresses were English and named votes by their number („/pp/leipzig-8/session/
 // 2026-03-25/voting/29“). Links to them stay valid: GitHub Pages cannot redirect, so every old address gets a page
@@ -22,8 +23,8 @@ export async function getStaticPaths() {
       forward('/persons', routes.persons()),
       forward('/factions', routes.factions()),
       forward('/parties', routes.parties()),
-      ...parliamentPeriod.persons.map((person) =>
-        forward(`/person/${person.id}`, routes.person(person.id)),
+      ...personsWithRecordedVotes(parliamentPeriod, sessionInputs).map(
+        (person) => forward(`/person/${person.id}`, routes.person(person.id)),
       ),
       ...parliamentPeriod.factions.map((faction) =>
         forward(`/faction/${faction.id}`, routes.faction(faction.id)),

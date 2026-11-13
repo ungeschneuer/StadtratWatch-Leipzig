@@ -2,6 +2,7 @@ import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
 import type { SessionInput } from '@models/SessionInput';
 import { parliamentPeriodNumberOf, votingSlugs } from '@utils/routes';
+import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
 
 const getParliamentPeriodStaticPaths = (async () => {
   const parliamentPeriods = await getCollection('parliamentPeriods');
@@ -85,6 +86,10 @@ export const getParliamentPeriodWithSessionPaths = async () => {
     await getParliamentPeriodWithSessionsPaths();
   return parliamentPeriodWithSessionsStaticPaths.flatMap((path) => {
     const { parliamentPeriod, sessionInputs } = path.props;
+    const shownPersonIds = personsWithRecordedVotes(
+      parliamentPeriod,
+      sessionInputs,
+    ).map((person) => person.id);
     return sessionInputs.map((sessionInput) => ({
       params: {
         parliamentPeriodNumber: parliamentPeriodNumberOf(parliamentPeriod.id),
@@ -93,6 +98,7 @@ export const getParliamentPeriodWithSessionPaths = async () => {
       props: {
         parliamentPeriod,
         sessionInput,
+        shownPersonIds,
       },
     }));
   });
@@ -149,7 +155,7 @@ export const getParliamentPeriodWithSessionAndVotingPaths = async () => {
   const paths = await getParliamentPeriodWithSessionPaths();
 
   return paths.flatMap((path) => {
-    const { parliamentPeriod, sessionInput } = path.props;
+    const { parliamentPeriod, sessionInput, shownPersonIds } = path.props;
 
     const slugs = votingSlugs(sessionInput.votings);
     return sessionInput.votings.map((voting) => {
@@ -163,6 +169,7 @@ export const getParliamentPeriodWithSessionAndVotingPaths = async () => {
           parliamentPeriod,
           sessionInput,
           voting,
+          shownPersonIds,
         },
       };
     });
@@ -178,12 +185,14 @@ export const getParliamentPeriodWithPersonPaths = async () => {
     await getParliamentPeriodWithSessionsPaths();
   return parliamentPeriodWithSessionsStaticPaths.flatMap((path) => {
     const { parliamentPeriod, sessionInputs } = path.props;
-    return parliamentPeriod.persons.map((person) => ({
-      params: {
-        parliamentPeriodNumber: parliamentPeriodNumberOf(parliamentPeriod.id),
-        personId: person.id,
-      },
-      props: { parliamentPeriod, sessionInputs, person },
-    }));
+    return personsWithRecordedVotes(parliamentPeriod, sessionInputs).map(
+      (person) => ({
+        params: {
+          parliamentPeriodNumber: parliamentPeriodNumberOf(parliamentPeriod.id),
+          personId: person.id,
+        },
+        props: { parliamentPeriod, sessionInputs, person },
+      }),
+    );
   });
 };
