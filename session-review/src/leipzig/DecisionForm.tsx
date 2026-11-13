@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { ReviewCase, VotingCorrection } from '@srw-astro/models/leipzig-review';
+import { type ReviewCase, unassignedAfterChanges, type VotingCorrection } from '@srw-astro/models/leipzig-review';
 import type { VoteCode } from '@srw-astro/models/session';
 import { compareNamesForSorting } from '@srw-astro/models/person-name';
 
@@ -36,14 +36,19 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
 
   const hasEffect =
     discard || unresolved || approve || (assignAgendaItem && agendaItemNumber.trim() !== '') || seats.length > 0;
-  const excludesOthers = (chosen: boolean) => !(chosen && (approve || seats.length > 0));
+  // Named votes can be assigned while another hand-counted vote stays unassigned; a discarded vote changes nothing.
   const valid =
     hasEffect &&
     reason.trim() !== '' &&
     seats.every((seat) => seat.personId) &&
-    excludesOthers(discard) &&
-    excludesOthers(unresolved) &&
-    !(discard && unresolved);
+    !(discard && (approve || seats.length > 0)) &&
+    !(unresolved && (approve || discard));
+  const unassigned = unresolved
+    ? unassignedAfterChanges(
+        reviewCase,
+        seats.filter((seat) => seat.personId),
+      )
+    : null;
 
   function build(): VotingCorrection {
     return {
@@ -96,9 +101,15 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
             checked={unresolved}
             onChange={(event) => setUnresolved(event.target.checked)}
           />
-          Nicht klärbar: gültige Abstimmung, aber nicht belegbar, wer anders gezählt wurde – Stimmen laut Tafel,
-          Ergebnis laut amtlicher Zählung
+          Nicht vollständig zuzuordnen: gültige Abstimmung, aber nicht für jede nachgezählte Stimme belegbar, von wem
+          sie kam. Belegte Stimmen unter „Stimmen ändern“ eintragen; der Rest bleibt ohne Namen, das Ergebnis folgt der
+          amtlichen Zählung.
         </label>
+        {unassigned && (
+          <p className="text-base-content/70 ms-6 text-sm" role="status">
+            Bleibt ohne Namen: {describeRemainder(unassigned)}
+          </p>
+        )}
         <label className="flex cursor-pointer items-start gap-2 text-sm">
           <input
             type="checkbox"
@@ -208,10 +219,22 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
         {!valid && (
           <span className="text-base-content/70 text-sm">
             Mindestens eine Entscheidung und eine Begründung angeben; Verwerfen nicht zusammen mit Bestätigen oder
-            Stimmen.
+            Stimmen, „nicht vollständig zuzuordnen“ nicht zusammen mit Bestätigen oder Verwerfen.
           </span>
         )}
       </div>
     </form>
   );
+}
+
+function describeRemainder(unassigned: { J: number; N: number; E: number }): string {
+  const parts = [
+    ['Ja', unassigned.J],
+    ['Nein', unassigned.N],
+    ['Enthaltung', unassigned.E],
+  ] as const;
+  const named = parts
+    .filter(([, count]) => count !== 0)
+    .map(([label, count]) => `${count > 0 ? '+' : ''}${count} ${label}`);
+  return named.length > 0 ? named.join(', ') : 'nichts, alle Stimmen sind zugeordnet';
 }

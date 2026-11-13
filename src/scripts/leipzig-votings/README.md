@@ -187,8 +187,11 @@ bun src/scripts/leipzig-votings/index.ts --evidence-images-only -s 2026-10-29
 - `voting.videoSeconds` is the `videoSeconds.start` of the vote (±15 s); `agendaItemNumber` is optional and narrows
   the match.
 - `seats` change single votes; `approve` accepts a vote as read; `discard` marks it as no valid vote; `unresolved` marks a
-  valid vote that cannot be settled (the official result differs and nobody can show who was counted differently): the
-  board's votes stand for each person, the outcome follows the official result, and the site says so; `agendaItemNumber` assigns the TOP to a vote whose
+  valid vote whose hand-counted votes cannot all be assigned (the official result differs and nobody can show who was
+  counted differently). It combines with `seats` for the votes that are named („Herr Lehmann einen Rot dazu und ein Grün
+  dazu“: Lehmann → N, the yes stays unassigned). The outcome follows the official result; the site data names the rest
+  as `unassignedCounts` and the members present without a vote as `possibleVoters`, who are shown as „unklar“ and left
+  out of the participation for that vote; `agendaItemNumber` assigns the TOP to a vote whose
   board names none (the older board shows only „ABSTIMMUNG“ for votes on procedural motions). Every entry needs a
   `reason`.
 - Corrected seats keep the board reading in `boardVote`; the vote's status becomes `reviewed`.

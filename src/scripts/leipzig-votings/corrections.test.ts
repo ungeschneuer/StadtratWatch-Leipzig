@@ -98,13 +98,38 @@ describe('applyCorrections', () => {
     expect(unresolved.review?.[0].reason).toEqual('Nachgezählte Person nicht belegt');
   });
 
-  it('refuses an unresolved vote that is also approved or changed', () => {
+  it('refuses an unresolved vote that is also approved or discarded', () => {
     expect(() =>
       parseCorrections(
         [{ voting: { videoSeconds: 2700 }, unresolved: true, approve: true, reason: 'x' }],
         'corrections.json',
       ),
     ).toThrow(CorrectionsError);
+    expect(() =>
+      parseCorrections(
+        [{ voting: { videoSeconds: 2700 }, unresolved: true, discard: true, reason: 'x' }],
+        'corrections.json',
+      ),
+    ).toThrow(CorrectionsError);
+  });
+
+  // „Herr Lehmann einen Rot dazu und ein Grün dazu“: the named vote is assigned, the unnamed one stays unassigned.
+  it('assigns the named votes of a vote whose other hand-counted votes cannot be assigned', () => {
+    const corrections = parseCorrections(
+      [
+        {
+          voting: { videoSeconds: 2700 },
+          seats: [{ personId: 'stange', vote: 'N' }],
+          unresolved: true,
+          reason: 'Ein Nein benannt, ein Ja ohne Namen',
+        },
+      ],
+      'corrections.json',
+    );
+    const [partly] = applyCorrections(votings, corrections);
+
+    expect(partly.status).toEqual('unresolved');
+    expect(partly.votes.map((vote) => vote.vote)).toEqual(['N', 'J', 'N', 'O']);
   });
 
   it('discards a voting that was no valid vote and restores it when the correction goes', () => {

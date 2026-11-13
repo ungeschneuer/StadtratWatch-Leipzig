@@ -8,6 +8,12 @@ import {
   votingReviewStatuses,
 } from './session-scan.ts';
 
+const voteCountsSchema = z.object({
+  J: z.number().int(),
+  N: z.number().int(),
+  E: z.number().int(),
+});
+
 // Runtime schema for the session-scan files, consumed by the Astro content
 // collection. Scans can be corrected by hand, so an unknown vote code must fail
 // the build instead of silently skewing counts.
@@ -46,13 +52,9 @@ export const sessionScanSchema = z.array(
       unresolved: z
         .object({
           reason: z.string(),
-          officialCounts: z
-            .object({
-              J: z.number().int(),
-              N: z.number().int(),
-              E: z.number().int(),
-            })
-            .optional(),
+          officialCounts: voteCountsSchema.optional(),
+          unassignedCounts: voteCountsSchema.optional(),
+          possibleVoters: z.array(z.string()).optional(),
         })
         .optional(),
     })

@@ -72,24 +72,46 @@ export function toSessionScan(
         presentMembers: voting.votes.filter((seat) => seat.attendance === 'present').length,
         ...(majorityRequirement ? { majorityRequirement } : {}),
         ...recusedPersonsOf(sessionId, voting, recusals, namesByOparlId, problems),
-        ...unresolvedOf(voting),
+        ...unresolvedOf(voting, namesByOparlId),
         ...reviewStatusOf(voting),
       };
     });
   return { scan, pending: votings.filter((voting) => PENDING_STATUSES.has(voting.status)).length, problems };
 }
 
-function unresolvedOf(voting: ExtractedVoting): { unresolved?: UnresolvedVoting } {
+// A vote a reviewer could not settle completely: the votes they could assign are in the seats, the rest of the
+// difference to the official result is published as unassigned. Added votes can only come from members who were
+// present without a vote on the board, so they are named as possible voters.
+function unresolvedOf(voting: ExtractedVoting, namesByOparlId: Map<string, string>): { unresolved?: UnresolvedVoting } {
   if (voting.status !== 'unresolved') return {};
   const reason = voting.review?.at(-1)?.reason ?? '';
+  if (!voting.official) return { unresolved: { reason } };
+  const officialCounts = { J: voting.official.J, N: voting.official.N, E: voting.official.E };
+  const assigned = countVotes(voting);
+  const unassignedCounts = {
+    J: officialCounts.J - assigned.J,
+    N: officialCounts.N - assigned.N,
+    E: officialCounts.E - assigned.E,
+  };
+  const votesAdded = Object.values(unassignedCounts).some((count) => count > 0);
+  const possibleVoters = votesAdded
+    ? voting.votes
+        .filter((seat) => seat.vote === 'O' && seat.attendance === 'present' && seat.personId)
+        .flatMap((seat) => namesByOparlId.get(seat.personId as string) ?? [])
+    : [];
   return {
     unresolved: {
       reason,
-      ...(voting.official
-        ? { officialCounts: { J: voting.official.J, N: voting.official.N, E: voting.official.E } }
-        : {}),
+      officialCounts,
+      unassignedCounts,
+      ...(possibleVoters.length > 0 ? { possibleVoters } : {}),
     },
   };
+}
+
+function countVotes(voting: ExtractedVoting): { J: number; N: number; E: number } {
+  const count = (code: 'J' | 'N' | 'E') => voting.votes.filter((seat) => seat.vote === code).length;
+  return { J: count('J'), N: count('N'), E: count('E') };
 }
 
 function withItemNumber(itemNumber: string | undefined): { itemNumber?: string } {

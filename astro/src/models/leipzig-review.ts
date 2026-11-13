@@ -129,3 +129,31 @@ export type ReviewIndex = {
     reviewed: number;
   }[];
 };
+
+export type VoteCounts = { J: number; N: number; E: number };
+
+// What remains of the official result once the reviewer's seat changes are applied to the board: positive where votes
+// were counted by hand without a name, negative where the board counts more. Null without an official result.
+export function unassignedAfterChanges(
+  reviewCase: Pick<ReviewCase, 'board' | 'official' | 'seats'>,
+  changes: { personId: string; vote: VoteCode }[],
+): VoteCounts | null {
+  if (!reviewCase.official) return null;
+  const counts: VoteCounts = {
+    J: reviewCase.board.J,
+    N: reviewCase.board.N,
+    E: reviewCase.board.E,
+  };
+  for (const change of changes) {
+    const boardVote =
+      reviewCase.seats.find((seat) => seat.personId === change.personId)
+        ?.vote ?? 'O';
+    if (boardVote !== 'O') counts[boardVote] -= 1;
+    if (change.vote !== 'O') counts[change.vote] += 1;
+  }
+  return {
+    J: reviewCase.official.J - counts.J,
+    N: reviewCase.official.N - counts.N,
+    E: reviewCase.official.E - counts.E,
+  };
+}
