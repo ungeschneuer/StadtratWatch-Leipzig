@@ -14,6 +14,7 @@
 . Prüfende öffnen `/review/leipzig/<datum>`, sehen Tafelbild, Video an der Stelle und die fehlgeschlagene Prüfung.
 . Jede Entscheidung wird ein Commit in `corrections-<datum>.json` auf `data/leipzig-votings`.
 . `leipzig-review-recheck` wendet die Korrekturen an und erzeugt die Seitendaten neu (bei jeder Entscheidung und täglich). Neu erschienene amtliche Ergebnisse und Verlaufsprotokolle holt der ALLRIS-Runner auf dem Server des Betreibers (`minutes-runner/`), weil ALLRIS GitHub Actions nicht antwortet; danach arbeitet der Recheck mit den gespeicherten Dateien.
+. `leipzig-data-publish` merged abends (20:07 UTC) den Daten-PR und deployt, sobald jede Entscheidung von einem erfolgreichen Recheck angewendet und die CI grün ist. Enthält der Branch eine neue Sitzung, wartet er auf den Betreiber, der über deren erste Veröffentlichung entscheidet.
 . Bis zum Merge zeigt die Seite die Abstimmung als „in Prüfung“ mit Link zur Prüfoberfläche und zum Pull Request.
 
 == Mitglieder
