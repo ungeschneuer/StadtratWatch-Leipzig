@@ -2,7 +2,7 @@
   "sessionId": "2026-10-29",
   "kind": "agenda-item-pages",
   "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004612",
-  "fetchedAt": "2026-11-11T22:38:32.684Z",
+  "fetchedAt": "2026-11-13T17:20:08.977Z",
   "parserVersion": 4,
   "votes": [
     {
@@ -227,6 +227,16 @@
     },
     {
       "order": 22,
+      "agendaItemNumber": "19.23",
+      "paperReference": "VIII-DS-02859",
+      "label": "Die Vergabe erfolgt gemäß Rahmenrichtlinie zur Vergabe für Zuwendungen der Stadt Leipzig an außerhalb der Stadtverwaltung stehende Stellen (Zuwendungsrichtlinie) als Festbetragsfinanzierung. Abstimmungsergebnis: &#xa0;",
+      "procedural": false,
+      "J": 41,
+      "N": 16,
+      "E": 1
+    },
+    {
+      "order": 23,
       "agendaItemNumber": "19.23.1",
       "paperReference": "VIII-DS-02859-ÄA-01",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -236,7 +246,7 @@
       "E": 4
     },
     {
-      "order": 23,
+      "order": 24,
       "agendaItemNumber": "19.23.2",
       "paperReference": "VIII-DS-02859-ÄA-02",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -246,7 +256,7 @@
       "E": 2
     },
     {
-      "order": 24,
+      "order": 25,
       "agendaItemNumber": "19.24",
       "paperReference": "VIII-DS-02913",
       "label": "Der vollständige Erhalt der vorhandenen Waldfläche wird als Zielsetzung der Bauleitplanung ergänzt. Die weiteren Planungen sind entsprechend anzupassen. Abstimmungsergebnis: &#xa0;",
@@ -256,7 +266,7 @@
       "E": 2
     },
     {
-      "order": 25,
+      "order": 26,
       "agendaItemNumber": "19.24.1",
       "paperReference": "VIII-DS-02913-ÄA-01",
       "label": "Zuständigkeit/Ergebnis: ungeändert beschlossen Abstimmungsergebnis: &#xa0;",
@@ -266,7 +276,7 @@
       "E": 1
     },
     {
-      "order": 26,
+      "order": 27,
       "agendaItemNumber": "19.24.2",
       "paperReference": "VIII-DS-02913-ÄA-02",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -276,7 +286,7 @@
       "E": 1
     },
     {
-      "order": 27,
+      "order": 28,
       "agendaItemNumber": "19.26",
       "paperReference": "VIII-DS-03145",
       "label": "Abstimmungsergebnis: zu Punkt 1:",
@@ -286,7 +296,7 @@
       "E": 5
     },
     {
-      "order": 28,
+      "order": 29,
       "agendaItemNumber": "19.26",
       "paperReference": "VIII-DS-03145",
       "label": "Abstimmungsergebnis: zu Punkt 2 und 3:",
@@ -296,7 +306,7 @@
       "E": 0
     },
     {
-      "order": 29,
+      "order": 30,
       "agendaItemNumber": "19.26.1",
       "paperReference": "VIII-DS-03145-ÄA-01",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -306,7 +316,7 @@
       "E": 0
     },
     {
-      "order": 30,
+      "order": 31,
       "agendaItemNumber": "19.26.2",
       "paperReference": "VIII-DS-03145-ÄA-02",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -316,7 +326,7 @@
       "E": 0
     },
     {
-      "order": 31,
+      "order": 32,
       "agendaItemNumber": "19.26.3",
       "paperReference": "VIII-DS-03145-ÄA-03-ÄA-01",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -326,7 +336,7 @@
       "E": 0
     },
     {
-      "order": 32,
+      "order": 33,
       "agendaItemNumber": "19.27",
       "paperReference": "VIII-DS-03190",
       "label": "2027: 5.180.880,00 &#x20AC; &#xa0; Abstimmungsergebnis: &#xa0;",
@@ -336,7 +346,7 @@
       "E": 0
     },
     {
-      "order": 33,
+      "order": 34,
       "agendaItemNumber": "19.27.1",
       "paperReference": "VIII-DS-03190-ÄA-01",
       "label": "Zuständigkeit/Ergebnis: abgelehnt Abstimmungsergebnis: &#xa0;",
@@ -346,7 +356,7 @@
       "E": 0
     },
     {
-      "order": 34,
+      "order": 35,
       "agendaItemNumber": "20.3",
       "paperReference": "VIII-Ifo-03193",
       "label": "Abstimmungsergebnis zu ÄA-01:",
@@ -356,7 +366,7 @@
       "E": 9
     },
     {
-      "order": 35,
+      "order": 36,
       "agendaItemNumber": "20.3.1",
       "paperReference": "VIII-Ifo-03193-ÄA-01",
       "label": "Abstimmungsergebnis:",

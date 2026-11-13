@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-10-28",
-  "generatedAt": "2026-11-13T00:00:46.141Z",
+  "generatedAt": "2026-11-13T17:20:08.893Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_28_Oktober_2026_-_02-06-08.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026",
@@ -22,6 +22,11 @@
       "paperReference": "VIII-DS-03309-ÄA-01",
       "title": "Planungsbeschluss - Komplexmodernisierung der Brüder-Grimm-Schule in der Goldsternstraße 23",
       "problems": [
+        {
+          "check": "official-sources-agree",
+          "message": "Niederschrift und Verlaufsprotokoll nennen unterschiedliche Ergebnisse.",
+          "detail": "agenda-item-pages 21/22/19, verlaufsprotokoll 21/21/19"
+        },
         {
           "check": "matches-official",
           "message": "Das amtliche Ergebnis ist 21/22/19, die Tafel zeigt 21/21/19; jemand wurde von Hand gezählt, aber das Verlaufsprotokoll nennt nicht eindeutig, wer.",
@@ -52,6 +57,33 @@
             "label": "Abstimmungsergebnis:",
             "J": 21,
             "N": 22,
+            "E": 19
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "19",
+              "19.5",
+              "19.6",
+              "19.7",
+              "19.8",
+              "19.12",
+              "19.15",
+              "19.19",
+              "19.25",
+              "19.28",
+              "19.29",
+              "19.30",
+              "20",
+              "20.1",
+              "20.4",
+              "20.5",
+              "19.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 21 - 21 - 19. Die Ablehnung ist",
+            "J": 21,
+            "N": 21,
             "E": 19
           }
         ],
@@ -779,6 +811,11 @@
       "title": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals‘, Gottschedstraße 16, Leipzig (Bestätigung gem. 879 (1) SächsGemO)",
       "problems": [
         {
+          "check": "official-sources-agree",
+          "message": "Niederschrift und Verlaufsprotokoll nennen unterschiedliche Ergebnisse.",
+          "detail": "agenda-item-pages 22/39/4, verlaufsprotokoll 22/39/2"
+        },
+        {
           "check": "matches-official",
           "message": "Das amtliche Ergebnis ist 22/39/4, die Tafel zeigt 22/39/2; jemand wurde von Hand gezählt, aber das Verlaufsprotokoll nennt nicht eindeutig, wer.",
           "detail": "official 22/39/4 for TOP 19.9.2 (VIII-DS-00989-ÄA-02) differs from the board"
@@ -809,6 +846,17 @@
             "J": 22,
             "N": 39,
             "E": 4
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 22 - 39 - 2. Abgelehnt.",
+            "J": 22,
+            "N": 39,
+            "E": 2
           }
         ],
         "correction": null

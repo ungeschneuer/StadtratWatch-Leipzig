@@ -142,7 +142,7 @@
           {
             "name": "reviewStatus",
             "type": "string",
-            "description": "final, provisional (amtliches Ergebnis fehlt) oder needs-review"
+            "description": "final, provisional (amtliches Ergebnis fehlt), needs-review oder unresolved (nicht klärbar; Stimmen laut Tafel, Ergebnis laut amtlicher Zählung)"
           },
           {
             "name": "decidedByMayor",

@@ -5156,7 +5156,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 60
+    "presentMembers": 60,
+    "reviewStatus": "needs-review"
   },
   {
     "votingFilename": "2026-10-29-018.png",
@@ -7580,8 +7581,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 58,
-    "reviewStatus": "provisional"
+    "presentMembers": 58
   },
   {
     "votingFilename": "2026-10-29-026.png",

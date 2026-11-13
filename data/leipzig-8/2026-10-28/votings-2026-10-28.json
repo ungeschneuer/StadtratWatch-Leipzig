@@ -10,12 +10,13 @@
   },
   "summary": {
     "votings": 21,
-    "verified": 12,
+    "verified": 18,
     "corrected": 0,
-    "provisional": 3,
+    "provisional": 0,
     "reviewed": 0,
+    "unresolved": 0,
     "needs-review": 2,
-    "skipped": 3,
+    "skipped": 0,
     "discarded": 1
   },
   "votings": [
@@ -1362,13 +1363,42 @@
           "detail": "announced 46/8/4: \"Das Ergebnis ist sehr eindeutig, 46 zu 8 zu 4. Dann rufen wir diese Anfrage nach Top 16-6 auf.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 46/8/4 for TOP 2/3/3.1"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 46,
+        "N": 8,
+        "E": 4,
+        "agendaItemNumber": null,
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3",
+              "3.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 46 - 8 - 4.",
+            "J": 46,
+            "N": 8,
+            "E": 4
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 2,
@@ -2046,13 +2076,40 @@
           "detail": "announced 49/12/2: \"Und das heisst im Ergebnis 49 zu 12 zu 2, damit angenommen, auch hier ordnen wir dann nach 16.6 nach der ersten dringlichen diese ein.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 49/12/2 for TOP 3.2"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 49,
+        "N": 12,
+        "E": 2,
+        "agendaItemNumber": "3.2",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "3.2"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 49 - 12 - 2. Damit angenommen.",
+            "J": 49,
+            "N": 12,
+            "E": 2
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 3,
@@ -2730,13 +2787,40 @@
           "detail": "announced 22/42/0: \"Und im Ergebnis heisst das 22 zu 42 zu 0, damit ist abgelehnt. Es gibt dann seitens der DTU-Fraktion einen Absetzungsantrag zur Vorlage Haus\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 22/42/0 for TOP 3.3"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 22,
+        "N": 42,
+        "E": 0,
+        "agendaItemNumber": "3.3",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "3.3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 22 - 42 - 0. Damit abgelehnt.",
+            "J": 22,
+            "N": 42,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 4,
@@ -3376,8 +3460,9 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
-          "detail": "heading TOP unreadable"
+          "passed": true,
+          "detail": "heading TOP unreadable; settled by the official result",
+          "settledByOfficialResult": true
         },
         {
           "check": "result-shown-long-enough",
@@ -3390,13 +3475,40 @@
           "detail": "64 votes from 67 present"
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 12/50/2 for TOP 3.3"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "skipped",
-      "status": "skipped",
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 12,
+        "N": 50,
+        "E": 2,
+        "agendaItemNumber": "3.3",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "3.3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 12 - 50 - 2. Damit ist der Antrag",
+            "J": 12,
+            "N": 50,
+            "E": 2
+          }
+        ],
+        "correction": null
+      },
       "procedural": true
     },
     {
@@ -4044,8 +4156,9 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
-          "detail": "heading TOP unreadable"
+          "passed": true,
+          "detail": "heading TOP unreadable; settled by the official result",
+          "settledByOfficialResult": true
         },
         {
           "check": "result-shown-long-enough",
@@ -4063,13 +4176,40 @@
           "detail": "announced 44/18/2: \"Und im Ergebnis heisst das 44 zu 18 zu 2 so beschlossen. Dann entfällt der nächste Antrag, Herr Decker, und wir kommen zu Beschlussvorlagen\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 44/18/2 for TOP 3.3"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "skipped",
-      "status": "skipped",
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 44,
+        "N": 18,
+        "E": 2,
+        "agendaItemNumber": "3.3",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "3.3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 44 - 18 - 2. So beschlossen.",
+            "J": 44,
+            "N": 18,
+            "E": 2
+          }
+        ],
+        "correction": null
+      },
       "procedural": true
     },
     {
@@ -4753,6 +4893,11 @@
           "detail": "announced 21/44/0: \"Und das Ergebnis lautet 21 zu 44 zu 0 abgelehnt, 13.05 war vertagt, 13.06 ebenso. Entschuldigung, das habe ich überblättert, 13.04, ein Antrag der AfD-Fraktion.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 21/44/0, verlaufsprotokoll 21/44/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 21/44/0 for TOP 13.3 (VIII-A-02476-NF-02)"
@@ -4780,6 +4925,19 @@
             ],
             "paperReference": "VIII-A-02476-NF-02",
             "label": "Abstimmungsergebnis:",
+            "J": 21,
+            "N": 44,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "13",
+              "13.1",
+              "13.3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 21 - 44 - 0. Abgelehnt.",
             "J": 21,
             "N": 44,
             "E": 0
@@ -5469,6 +5627,11 @@
           "detail": "announced 23/38/2: \"Und im Ergebnis 23 zu 38 zu 2, damit ist der Antrag abgelehnt. Wir kommen jetzt zu 13.7, Fraktion Die Linke zum Thema 50 Jahre Grünau. Frau Riekewald,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 23/38/2, verlaufsprotokoll 23/38/2"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 23/38/2 for TOP 13.4 (VIII-A-02831-NF-02)"
@@ -5496,6 +5659,17 @@
             ],
             "paperReference": "VIII-A-02831-NF-02",
             "label": "Abstimmungsergebnis:",
+            "J": 23,
+            "N": 38,
+            "E": 2
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "13.4"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 23 - 38 - 2. Damit ist der Antrag",
             "J": 23,
             "N": 38,
             "E": 2
@@ -6185,6 +6359,11 @@
           "detail": "announced 34/28/0: \"Und das Ergebnis heisst 34 zu 28 zu 0, damit ist so beschlossen, damit entfallen die Abstimmungen über die anderen Ursprungs- und Veränderungsanträge.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 34/28/0, verlaufsprotokoll 34/28/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 34/28/0 for TOP 13.7 (VIII-A-02839-NF-03)"
@@ -6212,6 +6391,17 @@
             ],
             "paperReference": "VIII-A-02839-NF-03",
             "label": "Abstimmungsergebnis zum VSP:",
+            "J": 34,
+            "N": 28,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "13.7"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 34 - 28 - 0. Damit ist so beschlos-",
             "J": 34,
             "N": 28,
             "E": 0
@@ -6902,6 +7092,11 @@
           "detail": "announced 44/19/1: \"Und das Ergebnis lautet 44 zu 19 zu 1, so beschlossen. Damit entfällt meines Erachtens der Änderungsantrag und der Ursprungsantrag.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 44/19/1, verlaufsprotokoll 44/19/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 44/19/1 for TOP 13.8 (VIII-A-02985-NF-01)"
@@ -6929,6 +7124,17 @@
             ],
             "paperReference": "VIII-A-02985-NF-01",
             "label": "Abstimmungsergebnis zum VSP:",
+            "J": 44,
+            "N": 19,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "13.7"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 44 - 19 - 1. So beschlossen.",
             "J": 44,
             "N": 19,
             "E": 1
@@ -7596,6 +7802,11 @@
           "detail": "61 votes from 64 present"
         },
         {
+          "check": "official-sources-agree",
+          "passed": false,
+          "detail": "agenda-item-pages 21/22/19, verlaufsprotokoll 21/21/19"
+        },
+        {
           "check": "matches-official",
           "passed": false,
           "detail": "official 21/22/19 for TOP 19.1.1 (VIII-DS-03309-ÄA-01) differs from the board"
@@ -7625,6 +7836,33 @@
             "label": "Abstimmungsergebnis:",
             "J": 21,
             "N": 22,
+            "E": 19
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "19",
+              "19.5",
+              "19.6",
+              "19.7",
+              "19.8",
+              "19.12",
+              "19.15",
+              "19.19",
+              "19.25",
+              "19.28",
+              "19.29",
+              "19.30",
+              "20",
+              "20.1",
+              "20.4",
+              "20.5",
+              "19.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 21 - 21 - 19. Die Ablehnung ist",
+            "J": 21,
+            "N": 21,
             "E": 19
           }
         ],
@@ -8300,6 +8538,11 @@
           "detail": "board rejected (simple majority), OParl \"abgelehnt\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 21/23/19, verlaufsprotokoll 21/23/19"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 21/23/19 for TOP 19.2.1 (VIII-DS-03431-ÄA-01)"
@@ -8327,6 +8570,17 @@
             ],
             "paperReference": "VIII-DS-03431-ÄA-01",
             "label": "Abstimmungsergebnis:",
+            "J": 21,
+            "N": 23,
+            "E": 19
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "19.2"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 21 - 23 - 19. Ebenfalls abgelehnt.",
             "J": 21,
             "N": 23,
             "E": 19
@@ -9016,6 +9270,11 @@
           "detail": "announced 10/54/0: \"Das Ergebnis lautet 10 zu 54 zu 0, damit ist der Änderungsantrag abgelehnt. Da rufe ich auf den Änderungsantrag meines Wissens, Frau München, BSW, ne,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 10/54/0, verlaufsprotokoll 10/54/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 10/54/0 for TOP 19.4.3 (VIII-DS-03137-ÄA-03)"
@@ -9043,6 +9302,18 @@
             ],
             "paperReference": "VIII-DS-03137-ÄA-03",
             "label": "Abstimmungsergebnis:",
+            "J": 10,
+            "N": 54,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20",
+              "15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 10 - 54 - 0. Damit ist der Ände-",
             "J": 10,
             "N": 54,
             "E": 0
@@ -9720,6 +9991,11 @@
           "detail": "board rejected (simple majority), OParl \"abgelehnt\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 18/45/1, verlaufsprotokoll 18/45/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 18/45/1 for TOP 19.4.4 (VIII-DS-03137-ÄA-04-NF-01)"
@@ -9747,6 +10023,18 @@
             ],
             "paperReference": "VIII-DS-03137-ÄA-04-NF-01",
             "label": "Abstimmungsergebnis:",
+            "J": 18,
+            "N": 45,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20",
+              "15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 18 - 45 - 1. Das heißt im Ergebnis",
             "J": 18,
             "N": 45,
             "E": 1
@@ -10424,6 +10712,11 @@
           "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 34/29/1, verlaufsprotokoll 34/29/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 34/29/1 for TOP 19.4.1 (VIII-DS-03137-ÄA-01)"
@@ -10451,6 +10744,18 @@
             ],
             "paperReference": "VIII-DS-03137-ÄA-01",
             "label": "Abstimmungsergebnis:",
+            "J": 34,
+            "N": 29,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20",
+              "15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 34 - 29 - 1. Das wäre Zustimmung.",
             "J": 34,
             "N": 29,
             "E": 1
@@ -11140,6 +11445,11 @@
           "detail": "announced 27/34/–: \"Konnten alle? Dann ist das Ergebnis hier 27 zu 34 abgelehnt und wir kommen nun zur Vorlage selbst,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 27/34/3, verlaufsprotokoll 27/34/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 27/34/3 for TOP 19.4.2 (VIII-DS-03137-ÄA-02)"
@@ -11167,6 +11477,18 @@
             ],
             "paperReference": "VIII-DS-03137-ÄA-02",
             "label": "Abstimmungsergebnis:",
+            "J": 27,
+            "N": 34,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20",
+              "15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 27 - 34 - 3. Abgelehnt.",
             "J": 27,
             "N": 34,
             "E": 3
@@ -11844,6 +12166,11 @@
           "detail": "board accepted (simple majority), OParl \"geändert beschlossen\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 63/0/1, verlaufsprotokoll 63/0/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 63/0/1 for TOP 19.4 (VIII-DS-03137)"
@@ -11871,6 +12198,18 @@
             ],
             "paperReference": "VIII-DS-03137",
             "label": "Abstimmungsergebnis:",
+            "J": 63,
+            "N": 0,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20",
+              "15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 63 - 0 - 1. So beschlossen.",
             "J": 63,
             "N": 0,
             "E": 1
@@ -12517,8 +12856,9 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
-          "detail": "heading TOP unreadable"
+          "passed": true,
+          "detail": "heading TOP unreadable; settled by the official result",
+          "settledByOfficialResult": true
         },
         {
           "check": "result-shown-long-enough",
@@ -12531,13 +12871,40 @@
           "detail": "59 votes from 64 present"
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 43/11/5 for TOP 20"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "skipped",
-      "status": "skipped",
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 43,
+        "N": 11,
+        "E": 5,
+        "agendaItemNumber": "20",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 43 - 11 - 5. Sehr eindeutig.",
+            "J": 43,
+            "N": 11,
+            "E": 5
+          }
+        ],
+        "correction": null
+      },
       "procedural": true
     },
     {
@@ -13221,6 +13588,11 @@
           "detail": "announced 22/39/2: \"Ja? Haben alle abstimmen können? Dann ist das Ergebnis 22 zu 39 zu 2 abgelehnt. Dann kommen wir auf Wunsch der Fraktion CDU noch einmal zum Sondervotum jetzt\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": false,
+          "detail": "agenda-item-pages 22/39/4, verlaufsprotokoll 22/39/2"
+        },
+        {
           "check": "matches-official",
           "passed": false,
           "detail": "official 22/39/4 for TOP 19.9.2 (VIII-DS-00989-ÄA-02) differs from the board"
@@ -13251,6 +13623,17 @@
             "J": 22,
             "N": 39,
             "E": 4
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 22 - 39 - 2. Abgelehnt.",
+            "J": 22,
+            "N": 39,
+            "E": 2
           }
         ],
         "correction": null
@@ -13937,6 +14320,11 @@
           "detail": "announced 33/26/4: \"Konnten alle und das Ergebnis lautet 33 zu 26 zu 4 und bekommen zur Vorlage selbst und ich bitte auch hier um ihr Votum.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 33/26/4, verlaufsprotokoll 33/26/4"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 33/26/4 for TOP 19.9.1 (VIII-DS-00989-ÄA-01-NF-01)"
@@ -13964,6 +14352,17 @@
             ],
             "paperReference": "VIII-DS-00989-ÄA-01-NF-01",
             "label": "Abstimmungsergebnis:",
+            "J": 33,
+            "N": 26,
+            "E": 4
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 33 - 26 - 4.",
             "J": 33,
             "N": 26,
             "E": 4
@@ -14653,6 +15052,11 @@
           "detail": "announced 34/24/5: \"Und das Ergebnis lautet 34 zu 24 zu 5 so beschlossen. Herzlichen Dank.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "agenda-item-pages 34/24/5, verlaufsprotokoll 34/24/5"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 34/24/5 for TOP 19.9 (VIII-DS-00989)"
@@ -14680,6 +15084,17 @@
             ],
             "paperReference": "VIII-DS-00989",
             "label": "Abstimmungsergebnis:",
+            "J": 34,
+            "N": 24,
+            "E": 5
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "20"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 34 - 24 - 5. So beschlossen.",
             "J": 34,
             "N": 24,
             "E": 5
