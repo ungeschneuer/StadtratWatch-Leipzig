@@ -276,7 +276,7 @@
         "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_29_Oktober_2026_-_04-05-14.smil&videostartoffset=1&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/Videos/Videopreview_Ratsversammlung_Stadtrat_OBM_2026-10-29.jpg&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": null,
-      "approved": false,
+      "approved": true,
       "oparlMeetingId": "https://www.leipzig.sitzung-online.de/oparl/meetings/2004612"
     }
   ],
