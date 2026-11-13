@@ -86,10 +86,11 @@ describe('buildRegistry', () => {
     ]);
   });
 
-  it('keeps the registry fields of members with their history, without the sources', () => {
+  it('keeps the registry fields of members with their history and OParl keys, without the sources', () => {
     expect(registry.persons).toEqual([
       {
         id: 'christopher-zenker',
+        oparlId: 'p/zenker',
         name: 'Christopher Zenker',
         factionId: 'spd',
         partyId: 'spd',
@@ -99,7 +100,7 @@ describe('buildRegistry', () => {
         partyMemberships: [{ partyId: 'spd', start: '2024-09-18', end: '2025-01-31' }],
       },
     ]);
-    expect(registry.factions).toEqual([{ id: 'spd', name: 'SPD', seats: 7 }]);
+    expect(registry.factions).toEqual([{ id: 'spd', name: 'SPD', seats: 7, oparlId: 'org/spd' }]);
     expect(registry.lastUpdate).toEqual('2026-11-12T00:00:00Z');
   });
 });

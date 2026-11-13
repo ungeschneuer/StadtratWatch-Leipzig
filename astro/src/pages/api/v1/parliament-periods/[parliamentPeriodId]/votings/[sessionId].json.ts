@@ -61,8 +61,10 @@ export async function GET({
     id: getVotingId(scan),
     videoTimestamp: getVideoTimestampAsSeconds(scan),
     votingSubject: scan.votingSubject,
+    // personId is the readable key of the site's addresses; personOparlId stays when a name is corrected.
     votes: scan.votes.map((vote) => ({
       personId: personsMap.get(vote.name)?.id,
+      personOparlId: personsMap.get(vote.name)?.oparlId ?? null,
       vote: apiVoteByVoteCode[vote.vote],
     })),
     majorityRequirement: getMajorityRequirement(scan),

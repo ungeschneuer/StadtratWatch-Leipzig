@@ -17,6 +17,7 @@ export type RegistrySession = {
   video?: RegistrySessionVideo;
   meetingMinutesUrl: string | null;
   approved: boolean;
+  oparlMeetingId?: string;
   // Set when the texts of the speeches are taken from an official record (Leipzig's Verlaufsprotokoll) rather than
   // transcribed. The site then names the record and shows the full texts only on the session page: a collection of the
   // speeches of one person is not covered by § 48 UrhG.
@@ -36,10 +37,13 @@ export type RegistrySessionVideo = {
   playerUrl?: string;
 };
 
+// id is the readable key the site's addresses use; oparlId is the stable key of the council's OParl, where it has one
+// (not for the pseudo-factions of members without faction and of the mayor).
 export type RegistryFaction = {
   id: string;
   name: string;
   seats: number;
+  oparlId?: string | null;
 };
 
 export type RegistryParty = {
@@ -54,6 +58,7 @@ export type RegistryParty = {
 export type RegistryPerson = {
   id: string;
   name: string;
+  oparlId?: string;
   factionId: string;
   partyId: string;
   start: string | null;

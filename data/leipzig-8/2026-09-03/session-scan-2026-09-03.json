@@ -3617,7 +3617,10 @@
       "motionId": "VIII-DS-02229-NF-01",
       "title": "Bau- und Finanzierungsbeschluss Umbau Torgauer Platz einschließlich Torgauer Straße und Eisenbahnstraße - Bestätigung gem. § 79 (1) SächsGemO sowie § 20 SächsKomHVO",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Mobilitäts- und Tiefbauamt"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031376"
     },
     "votes": [
       {

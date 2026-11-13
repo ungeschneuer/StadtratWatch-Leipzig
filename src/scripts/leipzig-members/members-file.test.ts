@@ -7,6 +7,7 @@ import {
   COUNCIL_SEATS,
   factionMembershipsToCsv,
   type MembersInputs,
+  personsToCsv,
   shortFactionName,
   slug,
 } from './members-file.ts';
@@ -191,12 +192,19 @@ describe('buildMembersFile', () => {
     );
   });
 
-  it('writes one row per faction membership', () => {
+  it('writes one row per faction membership, keyed by OParl IDs', () => {
     const { file } = buildMembersFile(inputs({ members: [member('p/zenker', 'Christopher', 'Zenker')] }));
 
-    expect(factionMembershipsToCsv(file)).toEqual(
-      'personId,oparlId,factionId,start,end\nchristopher-zenker,p/zenker,spd,2024-09-18,\n',
-    );
+    expect(factionMembershipsToCsv(file)).toEqual(`personId,factionId,start,end\np/zenker,${SPD},2024-09-18,\n`);
+  });
+
+  it('writes one row per person, keyed by OParl ID, with the slug of the page', () => {
+    const { file } = buildMembersFile(inputs({ members: [member('p/zenker', 'Christopher', 'Zenker')] }));
+
+    expect(personsToCsv(file).split('\n').slice(0, 2)).toEqual([
+      'personId,slug,name,familyName,givenName,start,end,factionId,partyId,partySource',
+      `p/zenker,christopher-zenker,Christopher Zenker,Zenker,Christopher,,,${SPD},spd,election-list:name`,
+    ]);
   });
 });
 
