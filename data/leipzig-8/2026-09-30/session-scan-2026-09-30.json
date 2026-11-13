@@ -4874,7 +4874,7 @@
       },
       {
         "name": "Lucas Schopphoven",
-        "vote": "N"
+        "vote": "J"
       },
       {
         "name": "Julian Schröder",
@@ -5125,8 +5125,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-09-30-019.png",
@@ -5430,7 +5429,14 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "unresolved": {
+      "reason": "Ja und Nein Stimme unklar aus Protokoll",
+      "officialCounts": {
+        "J": 52,
+        "N": 10,
+        "E": 0
+      }
+    }
   },
   {
     "votingFilename": "2026-09-30-020.png",
@@ -8577,7 +8583,7 @@
       },
       {
         "name": "Franziska Riekewald",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Susanne Scheidereiter",
@@ -8617,7 +8623,7 @@
       },
       {
         "name": "Tobias Keller",
-        "vote": "O"
+        "vote": "N"
       },
       {
         "name": "Christian Kriegel",
@@ -8772,8 +8778,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-09-30-032.png",
@@ -8881,7 +8886,7 @@
       },
       {
         "name": "Franziska Riekewald",
-        "vote": "O"
+        "vote": "N"
       },
       {
         "name": "Susanne Scheidereiter",
@@ -8921,7 +8926,7 @@
       },
       {
         "name": "Tobias Keller",
-        "vote": "O"
+        "vote": "N"
       },
       {
         "name": "Christian Kriegel",
@@ -9076,8 +9081,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-09-30-033.png",

@@ -13,9 +13,9 @@
     "verified": 48,
     "corrected": 0,
     "provisional": 0,
-    "reviewed": 0,
-    "unresolved": 0,
-    "needs-review": 4,
+    "reviewed": 3,
+    "unresolved": 1,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 2
   },
@@ -12512,8 +12512,10 @@
           "row": 9,
           "boardName": "Schopphoven, Lucas",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
-          "vote": "N",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "N",
+          "boardAttendance": "present"
         },
         {
           "column": 0,
@@ -13075,7 +13077,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 62,
         "N": 0,
@@ -13097,7 +13099,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Laut Video verdrückt.",
+          "source": "Video 1:44:34",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:45:34.789Z"
+        }
+      ]
     },
     {
       "index": 18,
@@ -13787,7 +13797,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "unresolved",
       "official": {
         "J": 52,
         "N": 10,
@@ -13809,7 +13819,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Ja und Nein Stimme unklar aus Protokoll",
+          "source": "Video 1:45:17",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:48:11.557Z"
+        }
+      ]
     },
     {
       "index": 19,
@@ -21905,8 +21923,10 @@
           "row": 3,
           "boardName": "Riekewald, Franziska",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -21985,8 +22005,10 @@
           "row": 15,
           "boardName": "Keller, Tobias",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "N",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -22367,7 +22389,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 20,
         "N": 32,
@@ -22415,7 +22437,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Aus dem Untertitel",
+          "source": "Video 3:10:33",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:50:02.959Z"
+        }
+      ]
     },
     {
       "index": 31,
@@ -22648,8 +22678,10 @@
           "row": 3,
           "boardName": "Riekewald, Franziska",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "N",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -22728,8 +22760,10 @@
           "row": 15,
           "boardName": "Keller, Tobias",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "N",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -23110,7 +23144,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 0,
         "N": 51,
@@ -23158,7 +23192,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Aus dem Kontext der vorigen abstimmung.",
+          "source": "Video 3:11:25",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:51:36.939Z"
+        }
+      ]
     },
     {
       "index": 32,

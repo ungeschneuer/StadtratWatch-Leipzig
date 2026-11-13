@@ -13,9 +13,9 @@
     "verified": 32,
     "corrected": 3,
     "provisional": 0,
-    "reviewed": 0,
+    "reviewed": 1,
     "unresolved": 0,
-    "needs-review": 1,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 0
   },
@@ -12167,8 +12167,10 @@
           "row": 9,
           "boardName": "Dr. Schreyer-Krieg, Nicole",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 2,
@@ -12442,7 +12444,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 42,
         "N": 16,
@@ -12475,7 +12477,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Mündlich benannt.",
+          "source": "Video 1:33:06",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T19:00:58.522Z"
+        }
+      ]
     },
     {
       "index": 17,

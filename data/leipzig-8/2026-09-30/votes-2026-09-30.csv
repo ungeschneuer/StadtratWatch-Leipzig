@@ -1135,148 +1135,148 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-09-30,16,6240.2,12.6.1,VIII-A-02452-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,verified,false,fraktionslos,fdp
 2026-09-30,16,6240.2,12.6.1,VIII-A-02452-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-09-30,16,6240.2,12.6.1,VIII-A-02452-ÄA-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,needs-review,false,cdu,cdu
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",O,present,O,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,needs-review,false,afd,afd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",J,present,J,needs-review,false,afd,freie-sachsen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,needs-review,false,spd,spd
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",O,present,O,needs-review,false,die-freie-fraktion,piraten
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,needs-review,false,die-freie-fraktion,fdp
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,needs-review,false,fraktionslos,parteilos
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,needs-review,false,fraktionslos,fdp
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,needs-review,false,fraktionslos,freie-waehler
-2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,needs-review,false,oberbuergermeister,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,needs-review,false,afd,afd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",J,present,J,needs-review,false,afd,freie-sachsen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,needs-review,false,spd,spd
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",O,present,O,needs-review,false,die-freie-fraktion,piraten
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,needs-review,false,die-freie-fraktion,fdp
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,needs-review,false,fraktionslos,parteilos
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,needs-review,false,fraktionslos,fdp
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,needs-review,false,fraktionslos,freie-waehler
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,needs-review,false,oberbuergermeister,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",J,present,N,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",J,present,J,reviewed,false,cdu,cdu
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",O,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",O,present,O,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,reviewed,false,afd,afd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",J,present,J,reviewed,false,afd,freie-sachsen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,reviewed,false,spd,spd
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",O,present,O,reviewed,false,die-freie-fraktion,piraten
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,reviewed,false,die-freie-fraktion,die-partei
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,reviewed,false,die-freie-fraktion,fdp
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,reviewed,false,die-freie-fraktion,die-partei
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,reviewed,false,fraktionslos,parteilos
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",J,present,J,reviewed,false,fraktionslos,fdp
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,reviewed,false,fraktionslos,freie-waehler
+2026-09-30,17,6274.7,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,reviewed,false,oberbuergermeister,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",O,present,O,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",O,present,O,unresolved,false,die-linke,die-linke
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",J,present,J,unresolved,false,afd,afd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",J,present,J,unresolved,false,afd,freie-sachsen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",J,present,J,unresolved,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",J,present,J,unresolved,false,spd,spd
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,unresolved,false,bsw,bsw
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",O,present,O,unresolved,false,die-freie-fraktion,piraten
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",J,present,J,unresolved,false,die-freie-fraktion,die-partei
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",J,present,J,unresolved,false,die-freie-fraktion,fdp
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",J,present,J,unresolved,false,die-freie-fraktion,die-partei
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",J,present,J,unresolved,false,fraktionslos,parteilos
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",O,present,O,unresolved,false,fraktionslos,fdp
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,unresolved,false,fraktionslos,freie-waehler
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",J,present,J,unresolved,false,oberbuergermeister,spd
 2026-09-30,19,7430.3,12.8,VIII-A-02583-NF-03,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",J,present,J,verified,false,cdu,cdu
 2026-09-30,19,7430.3,12.8,VIII-A-02583-NF-03,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",J,present,J,verified,false,cdu,cdu
 2026-09-30,19,7430.3,12.8,VIII-A-02583-NF-03,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",J,present,J,verified,false,cdu,cdu
@@ -1987,148 +1987,148 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-09-30,28,8527.1,12.11,VIII-A-02635,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,verified,false,fraktionslos,fdp
 2026-09-30,28,8527.1,12.11,VIII-A-02635,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",J,present,J,verified,false,fraktionslos,freie-waehler
 2026-09-30,28,8527.1,12.11,VIII-A-02635,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,verified,false,oberbuergermeister,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,needs-review,false,die-linke,die-linke
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",O,present,O,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,needs-review,false,afd,afd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,needs-review,false,afd,freie-sachsen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",O,present,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",E,present,E,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",E,present,E,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",N,present,N,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,present,O,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,needs-review,false,spd,spd
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,present,O,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,needs-review,false,bsw,bsw
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",O,present,O,needs-review,false,die-freie-fraktion,piraten
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",E,present,E,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,present,O,needs-review,false,die-freie-fraktion,fdp
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",E,present,E,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,needs-review,false,fraktionslos,parteilos
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,needs-review,false,fraktionslos,fdp
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,needs-review,false,fraktionslos,freie-waehler
-2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,needs-review,false,oberbuergermeister,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",O,present,O,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,needs-review,false,cdu,cdu
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",E,present,E,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",N,present,N,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",N,present,N,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",O,present,O,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",N,present,N,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",N,present,N,needs-review,false,die-linke,die-linke
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",O,present,O,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,needs-review,false,afd,afd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,needs-review,false,afd,freie-sachsen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",O,present,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",N,present,N,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",O,present,O,needs-review,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",N,present,N,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,present,O,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,needs-review,false,spd,spd
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",E,present,E,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",E,present,E,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",E,present,E,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",E,present,E,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",N,present,N,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,present,O,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",E,present,E,needs-review,false,bsw,bsw
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,needs-review,false,die-freie-fraktion,piraten
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,needs-review,false,die-freie-fraktion,fdp
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,needs-review,false,die-freie-fraktion,die-partei
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,needs-review,false,fraktionslos,parteilos
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,needs-review,false,fraktionslos,fdp
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,needs-review,false,fraktionslos,freie-waehler
-2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,needs-review,false,oberbuergermeister,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",O,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",J,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",J,present,J,reviewed,false,die-linke,die-linke
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,O,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,reviewed,false,afd,afd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,reviewed,false,afd,freie-sachsen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",O,present,O,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",E,present,E,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",J,present,J,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",E,present,E,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",N,present,N,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,present,O,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,reviewed,false,spd,spd
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,present,O,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",J,present,J,reviewed,false,bsw,bsw
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",O,present,O,reviewed,false,die-freie-fraktion,piraten
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",E,present,E,reviewed,false,die-freie-fraktion,die-partei
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",O,present,O,reviewed,false,die-freie-fraktion,fdp
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",E,present,E,reviewed,false,die-freie-fraktion,die-partei
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,reviewed,false,fraktionslos,parteilos
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,reviewed,false,fraktionslos,fdp
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,reviewed,false,fraktionslos,freie-waehler
+2026-09-30,30,11433.2,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,reviewed,false,oberbuergermeister,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000744,"Schopphoven, Lucas",O,present,O,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014062,"Schröder, Julian",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000726,"Schultz, Andreas",O,absent,O,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000014,"Mündlein, Marcus",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/83,"Weickert, Michael",N,present,N,reviewed,false,cdu,cdu
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000342,"Ehms, Beate",N,present,N,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001506,"Falken, Cornelia",N,present,N,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/446,"Gehrt, Mandy",O,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,"Dr. Gerbsch, Elisa",O,absent,O,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/422,"Götze, Marco",E,present,E,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,"Dr. Külow, Volker",N,present,N,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/67,"Nagel, Juliane",N,present,N,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,"Dr. Naumov, Olga",O,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/651,"Pellmann, Sören",O,absent,O,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/589,"Riekewald, Franziska",N,present,O,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000809,"Scheidereiter, Susanne",N,present,N,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,"Stange, Enrico",N,present,N,reviewed,false,die-linke,die-linke
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,"Beyer, Marius",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,"Bütow, Udo",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,"Deubel, Sylvia",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,"Reinhardt, Nora",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,"Farkas, Rocco",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,"Fiedler, Karsten",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,"Hachmeister, Alexandra",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,"Keller, Tobias",N,present,O,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,"Kriegel, Christian",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/565,"Kühne, Jörg",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000483,"Neumann, CHristoph",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000902,"Ulbrich, Roland",N,present,N,reviewed,false,afd,afd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001511,"Butz, Jürgen Günter",N,present,N,reviewed,false,afd,freie-sachsen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000960,"Frommhold, Marvin",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000356,"Herbst-Weckel, Sylvia",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/546,"Krefft, Katharina",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/333,"Dr. Märtens, Gesine",O,present,O,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000898,"Dr. Peter, Tobias",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001626,"Möbius, Anna-Lisa",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2000485,"Richarz, Marsha",O,absent,O,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001036,"Schneiß, Chantal",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001508,"Dr. Schreyer-Krieg, Nicole",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014098,"Vollerthun, Anne",N,present,N,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/364,"Weyh, Kristina",O,present,O,reviewed,false,buendnis-90-die-gruenen,buendnis-90-die-gruenen
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000047,"Feichtinger, Anja",N,present,N,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1001119,"Franke, Frank",N,present,N,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/126,"Geisler, Andreas",N,present,N,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001510,"Heine, Pia",N,present,N,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/223,"Köhler-Siegel, Ute",N,present,N,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000896,"März, Christina",O,present,O,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1014052,"Wittwer, Marius",N,present,N,reviewed,false,spd,spd
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001638,"Bahr, Bernd",E,present,E,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,"Jecht, Sascha",E,present,E,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,"Kachel, Thomas",E,present,E,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,"Streller, Danilo",E,present,E,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,"Pannowitsch, Ralf",N,present,N,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,"Recke, Eric",O,present,O,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,"Zscherny, Marco",E,present,E,reviewed,false,bsw,bsw
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,"Helbig, Jan-Paul",N,present,N,reviewed,false,die-freie-fraktion,piraten
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000905,"Kumbernuß, Thomas",N,present,N,reviewed,false,die-freie-fraktion,die-partei
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/293,"Morlok, Sven",N,present,N,reviewed,false,die-freie-fraktion,fdp
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001513,"Subat, Katharina",N,present,N,reviewed,false,die-freie-fraktion,die-partei
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000895,"Prof. Dr. Abraham, Getu",N,present,N,reviewed,false,fraktionslos,parteilos
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1000903,"Dr. Reinhold, Klaus-Peter",N,present,N,reviewed,false,fraktionslos,fdp
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/2001509,"Rieger, Stefan",N,present,N,reviewed,false,fraktionslos,freie-waehler
+2026-09-30,31,11485.3,14.15,VIII-P-03287-DS-02,https://www.leipzig.sitzung-online.de/oparl/persons/1011224,"Jung, Burkhard",N,present,N,reviewed,false,oberbuergermeister,spd
 2026-09-30,32,11819.7,12.12.1,VIII-A-02760-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/73,"Albrecht, Karsten",N,present,N,verified,false,cdu,cdu
 2026-09-30,32,11819.7,12.12.1,VIII-A-02760-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,verified,false,cdu,cdu
 2026-09-30,32,11819.7,12.12.1,VIII-A-02760-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,verified,false,cdu,cdu

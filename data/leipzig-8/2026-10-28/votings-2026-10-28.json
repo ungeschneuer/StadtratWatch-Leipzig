@@ -14,8 +14,8 @@
     "corrected": 0,
     "provisional": 0,
     "reviewed": 0,
-    "unresolved": 0,
-    "needs-review": 2,
+    "unresolved": 2,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 1
   },
@@ -7818,7 +7818,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "unresolved",
       "official": {
         "J": 21,
         "N": 22,
@@ -7867,7 +7867,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Nicht klar, wer die Stimme gegeben hat.",
+          "source": "Video 4:53:58",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T19:02:39.430Z"
+        }
+      ]
     },
     {
       "index": 11,
@@ -13604,7 +13612,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "unresolved",
       "official": {
         "J": 22,
         "N": 39,
@@ -13637,7 +13645,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Unklar, ob Enthaltungen nachgereicht.",
+          "source": "Video 6:11:07",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T19:03:40.288Z"
+        }
+      ]
     },
     {
       "index": 19,

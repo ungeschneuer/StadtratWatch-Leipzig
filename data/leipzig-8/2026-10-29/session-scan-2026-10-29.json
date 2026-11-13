@@ -5057,7 +5057,7 @@
       },
       {
         "name": "Dr. med. Nicole Schreyer-Krieg",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Anne Vollerthun",
@@ -5156,8 +5156,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 60,
-    "reviewStatus": "needs-review"
+    "presentMembers": 60
   },
   {
     "votingFilename": "2026-10-29-018.png",

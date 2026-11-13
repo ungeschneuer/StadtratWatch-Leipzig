@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-09-30",
-  "generatedAt": "2026-11-13T17:18:51.481Z",
+  "generatedAt": "2026-11-13T18:55:49.290Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_30_September_2026_-_02-06-35.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-30092026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 4,
-    "open": 4,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 4
   },
   "cases": [
     {
       "votingIndex": 17,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 6274.7,
       "timecode": "1:44:34",
@@ -241,7 +241,7 @@
           "row": 9,
           "boardName": "Schopphoven, Lucas",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
-          "vote": "N",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -774,11 +774,18 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Laut Video verdrückt.",
+          "source": "Video 1:44:34",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:45:34.789Z"
+        }
+      ]
     },
     {
       "votingIndex": 18,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 6317.8,
       "timecode": "1:45:17",
@@ -1604,11 +1611,18 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Ja und Nein Stimme unklar aus Protokoll",
+          "source": "Video 1:45:17",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:48:11.557Z"
+        }
+      ]
     },
     {
       "votingIndex": 30,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 11433.2,
       "timecode": "3:10:33",
@@ -1986,7 +2000,7 @@
           "row": 3,
           "boardName": "Riekewald, Franziska",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "vote": "O",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -2066,7 +2080,7 @@
           "row": 15,
           "boardName": "Keller, Tobias",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -2436,34 +2450,19 @@
           "reason": "anwesend, ohne Stimme"
         }
       ],
-      "suggestions": [
+      "suggestions": [],
+      "reviews": [
         {
-          "label": "Stimmen auf das amtliche Ergebnis ändern: Riekewald, Franziska → Ja, Keller, Tobias → Nein",
-          "correction": {
-            "voting": {
-              "videoSeconds": 11429.5,
-              "agendaItemNumber": "14.15"
-            },
-            "seats": [
-              {
-                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-                "vote": "J"
-              },
-              {
-                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-                "vote": "N"
-              }
-            ],
-            "reason": "Amtliches Ergebnis 20/32/4",
-            "source": "beschlussprotokoll: Abstimmungsergebnis: zum Beschlussvorschlag des Petitionsausschusses:; verlaufsprotokoll: Abstimmung: 20 - 32 - 4. Damit abgelehnt."
-          }
+          "reason": "Aus dem Untertitel",
+          "source": "Video 3:10:33",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:50:02.959Z"
         }
-      ],
-      "reviews": []
+      ]
     },
     {
       "votingIndex": 31,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 11485.3,
       "timecode": "3:11:25",
@@ -2853,7 +2852,7 @@
           "row": 3,
           "boardName": "Riekewald, Franziska",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -2933,7 +2932,7 @@
           "row": 15,
           "boardName": "Keller, Tobias",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -3268,16 +3267,6 @@
           "reason": "anwesend, ohne Stimme"
         },
         {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "boardName": "Riekewald, Franziska",
-          "reason": "anwesend, ohne Stimme"
-        },
-        {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "boardName": "Keller, Tobias",
-          "reason": "anwesend, ohne Stimme"
-        },
-        {
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/333",
           "boardName": "Dr. Märtens, Gesine",
           "reason": "anwesend, ohne Stimme"
@@ -3299,7 +3288,14 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Aus dem Kontext der vorigen abstimmung.",
+          "source": "Video 3:11:25",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:51:36.939Z"
+        }
+      ]
     }
   ]
 }

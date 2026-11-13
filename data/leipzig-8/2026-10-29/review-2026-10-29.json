@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-10-29",
-  "generatedAt": "2026-11-13T17:20:36.819Z",
+  "generatedAt": "2026-11-13T19:03:15.884Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_29_Oktober_2026_-_04-05-14.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-29-oktober-2026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 1,
-    "open": 1,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 1
   },
   "cases": [
     {
       "votingIndex": 16,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 5586.9,
       "timecode": "1:33:06",
@@ -598,7 +598,7 @@
           "row": 9,
           "boardName": "Dr. Schreyer-Krieg, Nicole",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
-          "vote": "O",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -804,15 +804,17 @@
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000903",
           "boardName": "Dr. Reinhold, Klaus-Peter",
           "reason": "in der Ansage genannt"
-        },
-        {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
-          "boardName": "Dr. Schreyer-Krieg, Nicole",
-          "reason": "anwesend, ohne Stimme"
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Mündlich benannt.",
+          "source": "Video 1:33:06",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T19:00:58.522Z"
+        }
+      ]
     }
   ]
 }
