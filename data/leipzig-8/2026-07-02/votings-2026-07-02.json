@@ -13,9 +13,9 @@
     "verified": 24,
     "corrected": 2,
     "provisional": 0,
-    "reviewed": 0,
-    "unresolved": 0,
-    "needs-review": 2,
+    "reviewed": 1,
+    "unresolved": 1,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 2
   },
@@ -5037,7 +5037,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "unresolved",
       "official": {
         "J": 35,
         "N": 19,
@@ -5097,7 +5097,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Person nicht benannt.",
+          "source": "Video 2:06:32",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:50:40.246Z"
+        }
+      ]
     },
     {
       "index": 7,
@@ -20160,8 +20168,10 @@
           "row": 12,
           "boardName": "Kumbernuß, Thomas",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 3,
@@ -20282,7 +20292,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 56,
         "N": 0,
@@ -20315,7 +20325,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Mündlich hinzugefügt.",
+          "source": "Video 3:26:55",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:51:29.918Z"
+        }
+      ]
     },
     {
       "index": 28,

@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-07-02",
-  "generatedAt": "2026-11-12T23:48:59.077Z",
+  "generatedAt": "2026-11-13T17:58:19.250Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_02_Juli_2026_-_04-07-32.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-02072026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 2,
-    "open": 2,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 2
   },
   "cases": [
     {
       "votingIndex": 6,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 7592.1,
       "timecode": "2:06:32",
@@ -836,11 +836,18 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Person nicht benannt.",
+          "source": "Video 2:06:32",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:50:40.246Z"
+        }
+      ]
     },
     {
       "votingIndex": 27,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 12415.6,
       "timecode": "3:26:55",
@@ -1569,7 +1576,7 @@
           "row": 12,
           "boardName": "Kumbernuß, Thomas",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
-          "vote": "O",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -1623,15 +1630,17 @@
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001504",
           "boardName": "Recke, Eric",
           "reason": "anwesend, ohne Stimme"
-        },
-        {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
-          "boardName": "Kumbernuß, Thomas",
-          "reason": "anwesend, ohne Stimme"
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Mündlich hinzugefügt.",
+          "source": "Video 3:26:55",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:51:29.918Z"
+        }
+      ]
     }
   ]
 }

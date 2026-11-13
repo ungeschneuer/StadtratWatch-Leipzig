@@ -1,7 +1,7 @@
 {
   "id": "leipzig-8",
   "name": "Wahlperiode VIII",
-  "lastUpdate": "2026-11-12T00:00:00Z",
+  "lastUpdate": "2026-11-13T00:00:00Z",
   "sessions": [
     {
       "id": "2025-12-17",
@@ -194,7 +194,7 @@
         "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_02_Juli_2026_-_04-07-32.smil&bgimage=https://www.leipzig.de/fileadmin/user_upload/Videostream_Ratsversammlung_02.07.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4775237&OTYP=41",
-      "approved": false,
+      "approved": true,
       "oparlMeetingId": "https://www.leipzig.sitzung-online.de/oparl/meetings/2004609",
       "speechesSource": {
         "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",
@@ -230,7 +230,7 @@
         "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_03_September_2026_-_04-07-39.smil&bgimage=https://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/01.1_Geschaeftsbereich_OBM/12_Ref_Kommunikation/Videostream_Ratsversammlung_03.09.2026.png&untertitelAutoaktiv=1&autostart=0"
       },
       "meetingMinutesUrl": null,
-      "approved": false,
+      "approved": true,
       "oparlMeetingId": "https://www.leipzig.sitzung-online.de/oparl/meetings/2004610",
       "speechesSource": {
         "label": "Verlaufsprotokoll der Ratsversammlung, Stadt Leipzig",

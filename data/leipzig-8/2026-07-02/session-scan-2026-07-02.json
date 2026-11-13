@@ -1818,7 +1818,14 @@
       }
     ],
     "presentMembers": 61,
-    "reviewStatus": "needs-review"
+    "unresolved": {
+      "reason": "Person nicht benannt.",
+      "officialCounts": {
+        "J": 35,
+        "N": 19,
+        "E": 4
+      }
+    }
   },
   {
     "votingFilename": "2026-07-02-008.png",
@@ -7837,7 +7844,7 @@
       },
       {
         "name": "Thomas Kumbernuß",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Sven Morlok",
@@ -7860,8 +7867,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 58,
-    "reviewStatus": "needs-review"
+    "presentMembers": 58
   },
   {
     "votingFilename": "2026-07-02-029.png",

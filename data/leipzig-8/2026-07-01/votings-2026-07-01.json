@@ -13,9 +13,9 @@
     "verified": 34,
     "corrected": 1,
     "provisional": 1,
-    "reviewed": 0,
+    "reviewed": 2,
     "unresolved": 0,
-    "needs-review": 2,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 3
   },
@@ -3537,7 +3537,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 28,
         "N": 23,
@@ -3583,7 +3583,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Fehler im Verlausprotokoll",
+          "source": "Video 0:17:47",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:49:10.343Z"
+        }
+      ]
     },
     {
       "index": 5,
@@ -28855,7 +28863,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 28,
         "N": 28,
@@ -28888,7 +28896,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Fehler in der Niederschrift.",
+          "source": "Video 6:35:15",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:49:45.496Z"
+        }
+      ]
     },
     {
       "index": 40,
