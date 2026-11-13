@@ -185,7 +185,7 @@ const {
       :checked="currentTab === 'statistics'"
       @change="history.pushState(null, '', '?tab=statistics'); currentTab = 'statistics'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Statistics
         parliamentPeriod={parliamentPeriod}
         person={person}
@@ -202,7 +202,7 @@ const {
       :checked="currentTab === 'speeches'"
       @change="history.pushState(null, '', '?tab=speeches'); currentTab = 'speeches'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Speeches
         parliamentPeriod={parliamentPeriod}
         person={person}
@@ -219,7 +219,7 @@ const {
       :checked="currentTab === 'voting-matrix'"
       @change="history.pushState(null, '', '?tab=voting-matrix'); currentTab = 'voting-matrix'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <VotingMatrix
         parliamentPeriod={parliamentPeriod}
         person={person}

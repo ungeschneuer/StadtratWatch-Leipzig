@@ -149,84 +149,84 @@ const barHeight = factions.length * 40;
 >
   <div class="space-y-3">
     <div class="bg-base-100 border border-base-200 rounded-box">
-      <div class="overflow-x-auto">
+      <div class="@container overflow-x-auto">
         <table
-          class="table"
+          class="table table-sm md:table-md table-pin-cols"
           x-data="factions"
           data-parliament-period-id={parliamentPeriod.id}
           data-factions={JSON.stringify(factions)}
         >
           <thead>
             <tr>
-              <th class="px-0">
+              <th>
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
                   @click="sortTextColumn('name', (faction) => faction.name)"
                 >
-                  <span class="text-left">Name</span>
+                  <span>Name</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @[22rem]:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('seats', (faction) => faction.seats)"
                 >
-                  <span class="grow">Sitze</span>
+                  <span>Sitze</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('votingSuccessRate', (faction) => faction.votingSuccessRate)"
                 >
-                  <span class="grow">Abstimmungserfolg</span>
+                  <span>Abstimmungs&shy;erfolg</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @2xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('uniformityScore', (faction) => faction.uniformityScore)"
                 >
-                  <span class="grow">Geschlossenheit</span>
+                  <span>Geschlossen&shy;heit</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @2xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('participationRate', (faction) => faction.participationRate)"
                 >
-                  <span class="grow">Abstimmungsteilnahme</span>
+                  <span>Abstimmungs&shy;teilnahme</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @4xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('abstentionRate', faction => faction.abstentionRate)"
                 >
-                  <span class="grow">Stimmenthaltungen</span>
+                  <span>Stimm&shy;enthaltungen</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @6xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('motionsSuccessRate', faction => faction.motionsSuccessRate)"
                 >
-                  <span class="grow">Erfolgreiche Anträge</span>
+                  <span>Erfolgreiche Anträge</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @6xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('speakingTime', faction => faction.speakingTime)"
                 >
-                  <span class="grow">Redezeit</span>
+                  <span>Redezeit</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
@@ -235,42 +235,48 @@ const barHeight = factions.length * 40;
           <tbody>
             <template x-for="faction in factions">
               <tr>
-                <td>
+                <th scope="row" class="bg-base-100 font-normal">
                   <a
                     :href="siteRoutes(parliamentPeriodId).faction(faction.id)"
-                    class="link link-primary"
+                    class="link link-hover link-primary"
                     x-text="faction.name"
                   ></a>
-                </td>
-                <td class="text-right" x-text="faction.seats"></td>
+                </th>
                 <td
-                  class="text-right"
+                  class="hidden @[22rem]:table-cell text-right whitespace-nowrap tabular-nums"
+                  x-text="faction.seats"
+                ></td>
+                <td
+                  class="text-right whitespace-nowrap tabular-nums"
                   x-text="faction.votingSuccessRateDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @2xl:table-cell tabular-nums"
                   x-text="faction.uniformityScoreDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @2xl:table-cell tabular-nums"
                   x-text="faction.participationRateDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @4xl:table-cell tabular-nums"
                   x-text="faction.abstentionRateDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @6xl:table-cell tabular-nums"
                   x-text="faction.motionsSuccessRateDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @6xl:table-cell tabular-nums"
                   x-text="faction.speakingTimeDisplay"
                 ></td>
               </tr>
             </template>
           </tbody>
         </table>
+        <p class="text-base-content/70 px-4 py-3 text-xs @6xl:hidden">
+          Weitere Kennzahlen zeigt die Tabelle auf größeren Bildschirmen.
+        </p>
       </div>
     </div>
 

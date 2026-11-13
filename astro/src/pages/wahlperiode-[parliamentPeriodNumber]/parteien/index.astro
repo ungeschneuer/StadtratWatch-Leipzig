@@ -145,75 +145,75 @@ const barHeight = parties.length * 40;
       ).
     </p>
     <div class="bg-base-100 border border-base-200 rounded-box">
-      <div class="overflow-x-auto">
+      <div class="@container overflow-x-auto">
         <table
-          class="table"
+          class="table table-sm md:table-md table-pin-cols"
           x-data="parties"
           data-parties={JSON.stringify(parties)}
           data-parliament-period-id={parliamentPeriod.id}
         >
           <thead>
             <tr>
-              <th class="px-0">
+              <th>
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
                   @click="sortTextColumn('name', (party) => party.name)"
                 >
-                  <span class="text-left">Name</span>
+                  <span>Name</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @[22rem]:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('seats', (party) => party.seats)"
                 >
-                  <span class="grow">Sitze</span>
+                  <span>Sitze</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('votingSuccessRate', (party) => party.votingSuccessRate)"
                 >
-                  <span class="grow">Abstimmungserfolg</span>
+                  <span>Abstimmungs&shy;erfolg</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @2xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('uniformityScore', (party) => party.uniformityScore)"
                 >
-                  <span class="grow">Geschlossenheit</span>
+                  <span>Geschlossen&shy;heit</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @2xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('participationRate', (party) => party.participationRate)"
                 >
-                  <span class="grow">Abstimmungsteilnahme</span>
+                  <span>Abstimmungs&shy;teilnahme</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @4xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('abstentionRate', (party) => party.abstentionRate)"
                 >
-                  <span class="grow">Stimmenthaltungen</span>
+                  <span>Stimm&shy;enthaltungen</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="px-0">
+              <th class="hidden @5xl:table-cell text-right">
                 <button
-                  class="btn btn-ghost btn-block flex justify-between"
+                  class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
                   @click="sortNumberColumn('speakingTime', (party) => party.speakingTime)"
                 >
-                  <span class="grow">Redezeit</span>
+                  <span>Redezeit</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
@@ -222,35 +222,44 @@ const barHeight = parties.length * 40;
           <tbody>
             <template x-for="party in parties">
               <tr>
-                <td>
+                <th scope="row" class="bg-base-100 font-normal">
                   <a
                     :href="siteRoutes(parliamentPeriodId).party(party.id)"
-                    class="link link-primary"
+                    class="link link-hover link-primary"
                     x-text="party.name"
                   ></a>
-                </td>
-                <td class="text-right" x-text="party.seats"></td>
+                </th>
                 <td
-                  class="text-right"
+                  class="hidden @[22rem]:table-cell text-right whitespace-nowrap tabular-nums"
+                  x-text="party.seats"
+                ></td>
+                <td
+                  class="text-right whitespace-nowrap tabular-nums"
                   x-text="party.votingSuccessRateDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @2xl:table-cell tabular-nums"
                   x-text="party.uniformityScoreDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @2xl:table-cell tabular-nums"
                   x-text="party.participationRateDisplay"
                 ></td>
                 <td
-                  class="text-right"
+                  class="text-right hidden @4xl:table-cell tabular-nums"
                   x-text="party.abstentionRateDisplay"
                 ></td>
-                <td class="text-right" x-text="party.speakingTimeDisplay"></td>
+                <td
+                  class="text-right hidden @5xl:table-cell tabular-nums"
+                  x-text="party.speakingTimeDisplay"
+                ></td>
               </tr>
             </template>
           </tbody>
         </table>
+        <p class="text-base-content/70 px-4 py-3 text-xs @5xl:hidden">
+          Weitere Kennzahlen zeigt die Tabelle auf größeren Bildschirmen.
+        </p>
       </div>
     </div>
 

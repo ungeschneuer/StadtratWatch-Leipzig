@@ -37,7 +37,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
 ---
 
 <PageLayout
-  pageTitle="Persons"
+  pageTitle="Personen"
   parliamentPeriod={parliamentPeriod}
   breadcrumbItems={breadcrumbItems}
 >
@@ -57,7 +57,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
       :checked="currentTab === 'list'"
       @change="history.pushState(null, '', '?tab=list'); currentTab = 'list'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <PersonsList
         parliamentPeriod={parliamentPeriod}
         sessionInputs={sessionInputs}
@@ -81,7 +81,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
       :checked="currentTab === 'graph'"
       @change="history.pushState(null, '', '?tab=graph'); currentTab = 'graph'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <PersonsGraph
         parliamentPeriod={parliamentPeriod}
         sessionInputs={sessionInputs}
