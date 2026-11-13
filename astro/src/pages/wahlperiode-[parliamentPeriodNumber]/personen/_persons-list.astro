@@ -1,5 +1,6 @@
 ---
 import { siteRoutes } from '@utils/routes';
+import { compareNamesForSorting } from '@models/person-name';
 import { type PersonListItem } from './_models';
 import { type Registry } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
@@ -64,7 +65,7 @@ const persons = parliamentPeriod.persons
       speakingTimeDisplay: formatSpeakingTime(speakingTime),
     } satisfies PersonListItem;
   })
-  .toSorted((a, b) => a.name.localeCompare(b.name));
+  .toSorted((a, b) => compareNamesForSorting(a.name, b.name));
 ---
 
 <div
@@ -80,7 +81,7 @@ const persons = parliamentPeriod.persons
         <th>
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('name', (person) => person.name)"
+            @click="sortTextColumn('name', (person) => nameForSorting(person.name))"
           >
             <span>Name</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -193,6 +194,7 @@ const persons = parliamentPeriod.persons
 
 <script>
   import { siteRoutes } from '@utils/routes';
+  import { nameForSorting } from '@models/person-name';
   import Alpine from 'alpinejs';
   import { type PersonListItem } from './_models';
 
@@ -211,6 +213,7 @@ const persons = parliamentPeriod.persons
         parliamentPeriodId,
         siteRoutes,
         persons,
+        nameForSorting,
         sortTextColumn: function (
           column: string,
           getText: (person: PersonListItem) => string,
@@ -218,8 +221,8 @@ const persons = parliamentPeriod.persons
           this._updateSortColumn(column);
           this.persons.sort((a, b) =>
             this._sortedDesc
-              ? getText(b).localeCompare(getText(a))
-              : getText(a).localeCompare(getText(b)),
+              ? getText(b).localeCompare(getText(a), 'de')
+              : getText(a).localeCompare(getText(b), 'de'),
           );
         },
         sortNumberColumn: function (

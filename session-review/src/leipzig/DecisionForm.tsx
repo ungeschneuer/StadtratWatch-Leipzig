@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ReviewCase, VotingCorrection } from '@srw-astro/models/leipzig-review';
 import type { VoteCode } from '@srw-astro/models/session';
+import { compareNamesForSorting } from '@srw-astro/models/person-name';
 
 const VOTE_LABELS: Record<VoteCode, string> = { J: 'Ja', N: 'Nein', E: 'Enthaltung', O: 'keine Stimme' };
 
@@ -30,7 +31,7 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
 
   const seatOptions = reviewCase.seats
     .filter((seat) => seat.personId)
-    .sort((a, b) => a.boardName.localeCompare(b.boardName, 'de'));
+    .sort((a, b) => compareNamesForSorting(a.boardName, b.boardName));
   const boardVoteOf = (personId: string) => reviewCase.seats.find((seat) => seat.personId === personId)?.vote ?? 'O';
 
   const hasEffect =
