@@ -1,3 +1,4 @@
+import { MAYOR_FACTION_ID } from './leipzig-members.ts';
 import { factionIdOn } from './person-affiliation.ts';
 import type { Registry } from './registry.ts';
 import type { SessionScanItem, SessionScanVote } from './session-scan.ts';
@@ -117,6 +118,35 @@ export function votingAccepted(
     case undefined:
       return yes > no;
   }
+}
+
+// The mayor votes as a member (§ 39 Abs. 5 SächsGemO). His yes or no decided the vote when the result would have been
+// the other one without it.
+export function decidedByMayor(
+  parliamentPeriod: Registry,
+  voting: SessionScanItem,
+  sessionDate: string,
+): boolean {
+  const mayorNames = new Set(
+    parliamentPeriod.persons
+      .filter((person) => factionIdOn(person, sessionDate) === MAYOR_FACTION_ID)
+      .map((person) => person.name),
+  );
+  const mayorVoted = voting.votes.some(
+    (vote) =>
+      mayorNames.has(vote.name) && (vote.vote === 'J' || vote.vote === 'N'),
+  );
+  if (!mayorVoted) return false;
+  const withoutMayor: SessionScanItem = {
+    ...voting,
+    votes: voting.votes.map((vote) =>
+      mayorNames.has(vote.name) ? { ...vote, vote: 'O' } : vote,
+    ),
+  };
+  return (
+    votingAccepted(parliamentPeriod, voting) !==
+    votingAccepted(parliamentPeriod, withoutMayor)
+  );
 }
 
 function getStatutoryMemberCount(parliamentPeriod: Registry): number {
