@@ -65,9 +65,19 @@
             "description": "Nummer des Tagesordnungspunkts"
           },
           {
+            "name": "oparlAgendaItemId",
+            "type": "string",
+            "description": "Tagesordnungspunkt in OParl; leer bei Unterpunkten wie Änderungsanträgen, die OParl nicht führt"
+          },
+          {
             "name": "paperReference",
             "type": "string",
             "description": "Drucksachennummer (VIII-DS-…, VIII-A-…, …-ÄA-…)"
+          },
+          {
+            "name": "oparlPaperId",
+            "type": "string",
+            "description": "Drucksache in OParl"
           },
           {
             "name": "title",
@@ -157,7 +167,7 @@
           {
             "name": "personId",
             "type": "string",
-            "description": "Person, verweist auf persons.csv"
+            "description": "Person: OParl-ID, verweist auf persons.csv"
           },
           {
             "name": "name",
@@ -172,7 +182,7 @@
           {
             "name": "factionId",
             "type": "string",
-            "description": "Fraktion am Sitzungstag"
+            "description": "Fraktion am Sitzungstag: OParl-ID, oder fraktionslos bzw. oberbuergermeister"
           },
           {
             "name": "partyId",
@@ -183,6 +193,22 @@
         "primaryKey": [
           "votingId",
           "personId"
+        ],
+        "foreignKeys": [
+          {
+            "fields": "votingId",
+            "reference": {
+              "resource": "votings",
+              "fields": "votingId"
+            }
+          },
+          {
+            "fields": "personId",
+            "reference": {
+              "resource": "persons",
+              "fields": "personId"
+            }
+          }
         ]
       }
     },
@@ -199,6 +225,11 @@
             "name": "sessionId",
             "type": "date",
             "description": "Sitzungstag (YYYY-MM-DD)"
+          },
+          {
+            "name": "oparlMeetingId",
+            "type": "string",
+            "description": "Sitzung in OParl"
           },
           {
             "name": "date",
@@ -253,12 +284,12 @@
           {
             "name": "personId",
             "type": "string",
-            "description": "Person"
+            "description": "Person: OParl-ID"
           },
           {
-            "name": "oparlId",
+            "name": "slug",
             "type": "string",
-            "description": "OParl-ID der Person"
+            "description": "Lesbarer Schlüssel der Seite (Adresse der Personenseite), ändert sich mit dem Namen"
           },
           {
             "name": "name",
@@ -288,7 +319,7 @@
           {
             "name": "factionId",
             "type": "string",
-            "description": "Fraktion heute"
+            "description": "Fraktion heute: OParl-ID, oder fraktionslos bzw. oberbuergermeister"
           },
           {
             "name": "partyId",
@@ -318,17 +349,12 @@
           {
             "name": "personId",
             "type": "string",
-            "description": "Person, verweist auf persons.csv"
-          },
-          {
-            "name": "oparlId",
-            "type": "string",
-            "description": "OParl-ID der Person"
+            "description": "Person: OParl-ID, verweist auf persons.csv"
           },
           {
             "name": "factionId",
             "type": "string",
-            "description": "Fraktion"
+            "description": "Fraktion: OParl-ID, oder fraktionslos bzw. oberbuergermeister"
           },
           {
             "name": "start",
@@ -345,6 +371,15 @@
           "personId",
           "factionId",
           "start"
+        ],
+        "foreignKeys": [
+          {
+            "fields": "personId",
+            "reference": {
+              "resource": "persons",
+              "fields": "personId"
+            }
+          }
         ]
       }
     }

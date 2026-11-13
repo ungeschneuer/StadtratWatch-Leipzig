@@ -7,7 +7,8 @@
       "motionId": "",
       "title": "Feststellung der Tagesordnung",
       "type": null,
-      "authors": []
+      "authors": [],
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205400"
     },
     "votes": [
       {
@@ -305,7 +306,8 @@
       "motionId": "",
       "title": "Feststellung der Tagesordnung",
       "type": null,
-      "authors": []
+      "authors": [],
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205400"
     },
     "votes": [
       {
@@ -603,7 +605,8 @@
       "motionId": "",
       "title": "Feststellung der Tagesordnung",
       "type": null,
-      "authors": []
+      "authors": [],
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205400"
     },
     "votes": [
       {
@@ -901,7 +904,8 @@
       "motionId": "",
       "title": "Feststellung der Tagesordnung",
       "type": null,
-      "authors": []
+      "authors": [],
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205400"
     },
     "votes": [
       {
@@ -1202,7 +1206,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031224"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031224",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205447",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031224"
     },
     "votes": [
       {
@@ -1503,7 +1509,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205450",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031311"
     },
     "votes": [
       {
@@ -1804,7 +1812,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205450",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031311"
     },
     "votes": [
       {
@@ -2105,7 +2115,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026984"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026984",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205840",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026984"
     },
     "votes": [
       {
@@ -2406,7 +2418,9 @@
       "authors": [
         "Amt für Stadtgrün und Gewässer"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2008797"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2008797",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205743",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2008797"
     },
     "votes": [
       {
@@ -2707,7 +2721,9 @@
       "authors": [
         "CDU"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031662"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031662",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207102",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031662"
     },
     "votes": [
       {
@@ -3008,7 +3024,9 @@
       "authors": [
         "Bündnis 90/Die Grünen"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030986"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030986",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205748",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030986"
     },
     "votes": [
       {
@@ -3309,7 +3327,9 @@
       "authors": [
         "Amt für Wohnungsbau und Stadterneuerung"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029536"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029536",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205771",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029536"
     },
     "votes": [
       {
@@ -3610,7 +3630,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031668"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031668",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207042",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031668"
     },
     "votes": [
       {
@@ -3911,7 +3933,9 @@
       "authors": [
         "CDU"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030639"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030639",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205782",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030639"
     },
     "votes": [
       {
@@ -4212,7 +4236,9 @@
       "authors": [
         "Demokratiereferat Leipzig"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030245"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030245",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205787",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030245"
     },
     "votes": [
       {
@@ -4513,7 +4539,9 @@
       "authors": [
         "Amt für Wohnungsbau und Stadterneuerung"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030347"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030347",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205790",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030347"
     },
     "votes": [
       {
@@ -4814,7 +4842,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207349",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031707"
     },
     "votes": [
       {
@@ -5115,7 +5145,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207349",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031707"
     },
     "votes": [
       {
@@ -5416,7 +5448,9 @@
       "authors": [
         "DIE LINKE"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954"
     },
     "votes": [
       {
@@ -5717,7 +5751,9 @@
       "authors": [
         "DIE LINKE"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954"
     },
     "votes": [
       {
@@ -6018,7 +6054,9 @@
       "authors": [
         "DIE LINKE"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954"
     },
     "votes": [
       {
@@ -6319,7 +6357,9 @@
       "authors": [
         "DIE LINKE"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954"
     },
     "votes": [
       {
@@ -6620,7 +6660,9 @@
       "authors": [
         "Mobilitäts- und Tiefbauamt"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028739"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028739",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205424",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028739"
     },
     "votes": [
       {
@@ -6921,7 +6963,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038"
     },
     "votes": [
       {
@@ -7222,7 +7266,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038"
     },
     "votes": [
       {
@@ -7523,7 +7569,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038"
     },
     "votes": [
       {
@@ -7824,7 +7872,9 @@
       "authors": [
         "AfD"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038"
     },
     "votes": [
       {
@@ -8125,7 +8175,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205723",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569"
     },
     "votes": [
       {
@@ -8426,7 +8478,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205723",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569"
     },
     "votes": [
       {
@@ -8727,7 +8781,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205723",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569"
     },
     "votes": [
       {
@@ -9028,7 +9084,9 @@
       "authors": [
         "Sozialamt"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030260"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030260",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205730",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030260"
     },
     "votes": [
       {
@@ -9329,7 +9387,9 @@
       "authors": [
         "Büro für Ratsangelegenheiten"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030698"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030698",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205729",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030698"
     },
     "votes": [
       {
@@ -9630,7 +9690,9 @@
       "authors": [
         "Referat Nachhaltige Entwicklung und Klimaschutz"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028343"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028343",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205578",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028343"
     },
     "votes": [
       {
@@ -9931,7 +9993,9 @@
       "authors": [
         "Referat Nachhaltige Entwicklung und Klimaschutz"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027849"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027849",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205579",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027849"
     },
     "votes": [
       {
@@ -10232,7 +10296,9 @@
       "authors": [
         "Dezernat Finanzen"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025028"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025028",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205596",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025028"
     },
     "votes": [
       {
@@ -10533,7 +10599,9 @@
       "authors": [
         "Referat Internationale Zusammenarbeit"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029342"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029342",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205610",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029342"
     },
     "votes": [
       {
@@ -10834,7 +10902,9 @@
       "authors": [
         "Ordnungsamt"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029540"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029540",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205611",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029540"
     },
     "votes": [
       {
@@ -11135,7 +11205,9 @@
       "authors": [
         "Mobilitäts- und Tiefbauamt"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029955"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029955",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205612",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029955"
     },
     "votes": [
       {
@@ -11436,7 +11508,9 @@
       "authors": [
         "Sozialamt"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030894"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030894",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205624",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030894"
     },
     "votes": [
       {
@@ -11737,7 +11811,9 @@
       "authors": [
         "Stadtplanungsamt"
       ],
-      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031722"
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031722",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207416",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031722"
     },
     "votes": [
       {
