@@ -7,6 +7,7 @@ import { formatDate } from '@utils/format-date';
 import {
   CONTACT_EMAIL,
   OPERATOR_NAME,
+  OPERATOR_WEBSITE,
   SITE_NAME,
   SOURCE_REPOSITORY_URL,
   UPSTREAM_PROJECT,
@@ -150,7 +151,11 @@ const aboutLinks = [
   <div class="alert alert-soft alert-info mx-3 my-3 text-sm" role="note">
     <div class="space-y-1">
       <p>
-        Ein ehrenamtliches Projekt von {OPERATOR_NAME},{' '}
+        Ein Projekt von{' '}
+        <a class="link" href={OPERATOR_WEBSITE} target="_blank">
+          {OPERATOR_NAME}
+        </a>
+        ,{' '}
         <a class="link" href={`mailto:${CONTACT_EMAIL}`}>
           {CONTACT_EMAIL}
         </a>

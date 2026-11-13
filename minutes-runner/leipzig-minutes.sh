@@ -23,7 +23,7 @@ report_failure() {
     LEIPZIG_FAILURE_MESSAGE="$1" bash -c "$LEIPZIG_FAILURE_COMMAND" || true
   fi
 }
-trap 'report_failure "Zeile $LINENO, siehe journalctl --user -u stadtratwatch-leipzig-minutes"' ERR
+trap 'report_failure "Zeile $LINENO, siehe Log des ALLRIS-Runners"' ERR
 
 # A clone of its own: the runner resets it to the data branch on every run.
 prepare_working_copy() {

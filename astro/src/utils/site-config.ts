@@ -7,6 +7,23 @@ export const SITE_NAME = 'StadtratWatch Leipzig';
 export const OPERATOR_NAME = 'Marcel Schneuer';
 export const COUNCIL_NAME = 'Leipziger Stadtrat';
 export const CONTACT_EMAIL = 'hallo@schneuer.online';
+export const OPERATOR_WEBSITE = 'https://schneuer.online';
+// The profiles the operator lists on their own website. Mastodon shows the site as verified when it links back with
+// rel="me".
+export const OPERATOR_PROFILES = [
+  {
+    label: 'Mastodon',
+    url: 'https://social.tchncs.de/@schneuerwerk',
+    rel: 'me',
+  },
+  {
+    label: 'Bluesky',
+    url: 'https://bsky.app/profile/schneuerwerk.bsky.social',
+  },
+  { label: 'GitHub', url: 'https://github.com/ungeschneuer' },
+  { label: 'Instagram', url: 'https://www.instagram.com/schneuerwerk/' },
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/marcel-schneuer/' },
+] as const;
 export const SOURCE_REPOSITORY_URL = `https://github.com/${DATA_REPOSITORY}`;
 
 // StadtratWatch Leipzig is a fork of StadtratWatch Magdeburg; its MIT license requires keeping the credit.

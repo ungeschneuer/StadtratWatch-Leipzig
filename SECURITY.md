@@ -23,7 +23,7 @@ _Please report vulnerabilities privately via the link above, not as a public iss
 
 ## Was du erwarten kannst
 
-StadtratWatch Leipzig ist ein ehrenamtliches Projekt. Wir antworten so schnell wie möglich, können aber keine festen Fristen
+StadtratWatch Leipzig ist ein privates Projekt. Wir antworten so schnell wie möglich, können aber keine festen Fristen
 zusagen. Eine Prämie (Bug Bounty) gibt es nicht.
 
 Bitte greife nicht auf fremde Daten zu, verändere oder lösche keine Daten und belaste die Dienste nicht durch
