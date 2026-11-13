@@ -45,5 +45,25 @@
     "source": "Video 3:10:33",
     "reviewer": "ungeschneuer",
     "reviewedAt": "2026-11-13T18:50:02.959Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 11485.3,
+      "agendaItemNumber": "14.15"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
+        "vote": "N"
+      },
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
+        "vote": "N"
+      }
+    ],
+    "reason": "Aus dem Kontext der vorigen abstimmung.",
+    "source": "Video 3:11:25",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T18:51:36.939Z"
   }
 ]
