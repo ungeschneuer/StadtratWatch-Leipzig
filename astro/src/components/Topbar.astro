@@ -1,20 +1,17 @@
 ---
+import { sitePath } from '@utils/site-path';
+import { SITE_NAME } from '@utils/site-config';
 ---
 
-<div
-  id="layout-topbar"
-  role="navigation"
-  aria-label="Navbar"
-  class="flex items-center justify-between px-3"
-  x-data
->
-  <div class="inline-flex items-center gap-3 justify-between w-full">
-    <label
-      class="btn btn-square btn-ghost btn-sm"
-      aria-label="Leftmenu toggle"
-      for="layout-sidebar-toggle-trigger"
-    >
-      <span class="iconify lucide--menu size-5"></span>
-    </label>
-  </div>
-</div>
+<header class="navbar bg-base-100 border-base-300 sticky top-0 z-30 border-b px-2 lg:hidden">
+  <label
+    for="site-navigation"
+    class="btn btn-square btn-ghost"
+    aria-label="Navigation öffnen"
+  >
+    <span class="iconify lucide--menu size-5"></span>
+  </label>
+  <a href={sitePath('/')} class="text-primary ml-1 text-lg font-bold">
+    {SITE_NAME}
+  </a>
+</header>

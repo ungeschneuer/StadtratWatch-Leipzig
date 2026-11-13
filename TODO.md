@@ -207,7 +207,18 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 
 ---
 
-## Offene Fragen
+## Gestaltung (DaisyUI richtig einsetzen)
+
+Befund vom 13.11.2026: Die Oberfläche stammte aus einer Admin-Vorlage ohne Lizenzangabe (eigenes Seitenleisten-Layout statt `drawer`, fünf Themes, Styles für ApexCharts, FilePond und eine Landing-Page). Tabellen liefen über, der Inhalt scrollte in einem inneren Kasten, Stimmen waren nur an der Farbe erkennbar. DaisyUI bleibt; die Vorlage wird ersetzt, damit keine Zeile ungeklärter Herkunft im öffentlichen Repository bleibt.
+
+- [x] **1. Aufräumen:** Vorlagendateien entfernt (`custom/*`, `daisyui.css`, `typography.css`); zwei eigene Themes (hell, dunkel bei Systemeinstellung) mit Kontrast ≥ 4,5:1, DM Sans über `@fontsource` (OFL), wenige eigene Regeln (13.11.2026).
+- [x] **2. Layout:** `drawer` mit `lg:drawer-open`, `navbar` mit Seitenname unter 1024 px, `menu` mit `menu-active` und `aria-current`, Seite scrollt wieder selbst, Inhaltsbreite begrenzt, „Zum Inhalt springen“ (13.11.2026).
+- [ ] **3. Tabellen:** auf dem Handy nur die wichtigsten Spalten, weitere ab `md`/`lg`, erste Spalte fest (`table-pin-cols`), sichtbarer Hinweis auf weitere Spalten. Heute zu breit: Fraktionen (1305 px, auch auf dem Desktop), Parteien, Personen (994 px).
+- [ ] **4. Bausteine:** eine Schriftskala; Links in Listen und Tabellen ohne Unterstreichung (`link-quiet`); Stimmen als beschriftete `badge` statt farbiger Punkte; Hover-Tooltips durch sichtbare Hilfetexte ersetzen (auf dem Handy nicht erreichbar); `alert` und `stats` einheitlich; „Fraktionfraktionslos“ auf der Personenseite.
+- [ ] **5. Diagramme:** Farben und Schrift aus dem Theme, keine geglätteten Kurven über 100 %, waagerechte Achsenbeschriftung, Balkenbeschriftung außerhalb der Balken, Dunkelmodus.
+- [ ] **6. Prüfoberfläche `/review/`:** Tailwind und DaisyUI mit denselben Themes statt eigenem CSS (347 Zeilen).
+
+
 
 Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026.
 
