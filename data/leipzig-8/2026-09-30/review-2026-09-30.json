@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-09-30",
-  "generatedAt": "2026-11-13T18:53:03.137Z",
+  "generatedAt": "2026-11-13T18:55:49.290Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_30_September_2026_-_02-06-35.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-30092026",
@@ -8,8 +8,8 @@
   },
   "summary": {
     "cases": 4,
-    "open": 1,
-    "reviewed": 3
+    "open": 0,
+    "reviewed": 4
   },
   "cases": [
     {
@@ -2462,7 +2462,7 @@
     },
     {
       "votingIndex": 31,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 11485.3,
       "timecode": "3:11:25",
@@ -2852,7 +2852,7 @@
           "row": 3,
           "boardName": "Riekewald, Franziska",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -2932,7 +2932,7 @@
           "row": 15,
           "boardName": "Keller, Tobias",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -3267,16 +3267,6 @@
           "reason": "anwesend, ohne Stimme"
         },
         {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "boardName": "Riekewald, Franziska",
-          "reason": "anwesend, ohne Stimme"
-        },
-        {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "boardName": "Keller, Tobias",
-          "reason": "anwesend, ohne Stimme"
-        },
-        {
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/333",
           "boardName": "Dr. Märtens, Gesine",
           "reason": "anwesend, ohne Stimme"
@@ -3298,7 +3288,14 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Aus dem Kontext der vorigen abstimmung.",
+          "source": "Video 3:11:25",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:51:36.939Z"
+        }
+      ]
     }
   ]
 }

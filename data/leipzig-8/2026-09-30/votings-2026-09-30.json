@@ -13,9 +13,9 @@
     "verified": 48,
     "corrected": 0,
     "provisional": 0,
-    "reviewed": 2,
+    "reviewed": 3,
     "unresolved": 1,
-    "needs-review": 1,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 2
   },
@@ -22678,8 +22678,10 @@
           "row": 3,
           "boardName": "Riekewald, Franziska",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/589",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "N",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -22758,8 +22760,10 @@
           "row": 15,
           "boardName": "Keller, Tobias",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000323",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "N",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -23140,7 +23144,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 0,
         "N": 51,
@@ -23188,7 +23192,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Aus dem Kontext der vorigen abstimmung.",
+          "source": "Video 3:11:25",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:51:36.939Z"
+        }
+      ]
     },
     {
       "index": 32,
