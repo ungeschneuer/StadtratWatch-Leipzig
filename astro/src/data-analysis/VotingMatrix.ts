@@ -1,6 +1,7 @@
 import type { Registry, RegistryPerson } from '@models/registry.ts';
 import type { SessionScanItem } from '@models/session-scan.ts';
 import type { SessionInput } from '@models/SessionInput.ts';
+import { personsWithRecordedVotes } from './RecordedVotes.ts';
 
 export type VotingMatrixItem = {
   personId: string;
@@ -17,9 +18,10 @@ export function calcVotingMatrix(
   person: RegistryPerson,
   sessions: SessionInput[],
 ): VotingMatrixItem[] {
-  const otherPersons = parliamentPeriod.persons.filter(
-    (otherPerson) => otherPerson.name !== person.name,
-  );
+  const otherPersons = personsWithRecordedVotes(
+    parliamentPeriod,
+    sessions,
+  ).filter((otherPerson) => otherPerson.name !== person.name);
   const votings = sessions.flatMap((session) => session.votings);
 
   return otherPersons.map((otherPerson) => ({
