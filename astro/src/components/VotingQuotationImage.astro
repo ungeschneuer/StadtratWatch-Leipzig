@@ -1,6 +1,6 @@
 ---
 import { formatDate } from '@utils/format-date';
-import { CONTACT_EMAIL, OPERATOR_NAME, SITE_NAME } from '@utils/site-config';
+import { CONTACT_EMAIL, SITE_NAME } from '@utils/site-config';
 
 type Props = {
   imageUrl: string;
@@ -25,7 +25,7 @@ const recordingDate = formatDate(sessionDate);
     />
     <figcaption class="text-xs text-base-content/70 space-y-1">
       <p>
-        Zitiert von {OPERATOR_NAME} ({SITE_NAME},{' '}
+        Zitiert von {SITE_NAME} (
         <a href={`mailto:${CONTACT_EMAIL}`} class="link">
           {CONTACT_EMAIL}
         </a>
