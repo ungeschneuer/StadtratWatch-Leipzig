@@ -8,8 +8,8 @@
   {
     "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000998",
     "exclude": true,
-    "reason": "OParl führt eine Ratsmitgliedschaft nur für den 18.09.2024 (Rolle „Mitglied“), ohne Fraktion; auf keiner Abstimmungstafel der Wahlperiode. Das Mandat wurde offenbar nicht angetreten.",
-    "source": "OParl-Mitgliedschaften der Ratsversammlung (organizations/gr/2387); data/leipzig-8/*/votes-*.csv"
+    "reason": "Gewählt (DIE LINKE, Wahlkreis 8), Mandat aber nicht angenommen: Die Ratsversammlung stellte am 18.09.2024 einstimmig einen wichtigen Grund nach § 18 Abs. 1 SächsGemO fest. Für sie rückte Enrico Stange nach, der in derselben Sitzung verpflichtet wurde. OParl führt sie deshalb nur für den 18.09.2024.",
+    "source": "Vorlage VIII-DS-00026, Ratsversammlung 18.09.2024 TOP 4.4 („… wichtigen Grund … gemäß § 18 Absatz 1 SächsGemO von Frau Franziska Kießling (DIE LINKE) fest“) https://ratsinformation.leipzig.de/allris_leipzig_public/vo020?VOLFDNR=2019470; Verlaufsprotokoll 18.09.2024 TOP 4.4/4.5; Amtsblatt 18/2024 vom 05.10.2024"
   },
   {
     "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000483",
@@ -22,13 +22,13 @@
     "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000895",
     "party": "parteilos",
     "since": "2024-11-09",
-    "reason": "Austritt aus SPD-Fraktion und SPD, bekanntgegeben am 8. November 2024; seitdem parteilos (2027 als unabhängiger OB-Kandidat angekündigt).",
-    "source": "Leipziger Zeitung, 8.11.2024: „Professor Getu Abraham gab am Freitag, dem 8. November, offiziell seinen Austritt aus der SPD-Fraktion und der SPD bekannt.“ https://www.l-iz.de/politik/leipzig/2024/11/leipziger-stadtrat-prof-getu-abrahamn-fraktion-spd-608264"
+    "reason": "Austritt aus SPD-Fraktion und SPD, bekanntgegeben am 8. November 2024; seitdem parteilos. Ab 13.03.2025 Mitglied der CDU-Fraktion, nicht der CDU; Fraktion am 21.09.2026 mit Ankündigung der parteilosen OB-Kandidatur 2027 verlassen.",
+    "source": "Leipziger Zeitung, 8.11.2024: „Professor Getu Abraham gab am Freitag, dem 8. November, offiziell seinen Austritt aus der SPD-Fraktion und der SPD bekannt.“ https://www.l-iz.de/politik/leipzig/2024/11/leipziger-stadtrat-prof-getu-abrahamn-fraktion-spd-608264; Leipziger Zeitung 25.09.2026 („als parteiloser Stadtrat, Mitglied der CDU-Fraktion“) https://www.l-iz.de/politik/leipzig/2026/09/obm-wahl-2027-in-leipzig-getu-abraham-will-als-parteiloser-kandidat-antreten-video-671566"
   },
   {
     "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001511",
     "party": "FREIE SACHSEN",
-    "reason": "Bestätigt die Liste der Wahl 2024: Presse führt ihn durchgehend als „Freien Sachsen“, auch nach dem Wechsel in die AfD-Fraktion (18.09.2025); ein Austritt wird nirgends genannt. Eine Parteimitgliedschaft belegt keine Quelle; nur die AfD-Fraktion nennt ihn „parteilos“. Bei einer belastbaren Quelle für Mitgliedschaft oder Austritt neu entscheiden.",
-    "source": "Kreuzer 24.09.2024 („Der Freie Sachse erweitert den Kreis der extrem Rechten im Stadtrat“) https://kreuzer-leipzig.de/2024/09/24/stadtrat-leipzig-september-neu-sitzung; Leipziger Zeitung 18.09.2025 („sitzt Jürgen Günter Butz für die Neonazipartei ‚Freie Sachsen‘ im Leipziger Stadtrat“) https://www.l-iz.de/politik/leipzig/2025/09/afd-stadtrat-freie-sachsen-634073; Kreuzer 26.09.2025 („Der bisher allein sitzende Freie Sachse Jürgen Günther Butz hat sich der AfD-Fraktion angeschlossen“) https://kreuzer-leipzig.de/2025/09/26/stadtrat-leipzig-sitzung-september-schulen-kitas-duft-und-tastgarten; Kreuzer 16.01.2026 https://kreuzer-leipzig.de/2026/01/16/leipzig-bsw-stadtrat-handala-verfassungsschutz; AfD-Fraktion Leipzig „12 plus 1“, 8.11.2025 („der parteilose und bisher fraktionslose Stadtrat Jürgen Butz“) https://afdfraktion-leipzig.de/2025/"
+    "reason": "Bestätigt die Liste der Wahl 2024: Die FREIEN SACHSEN führen ihn beim Wechsel in die AfD-Fraktion (18.09.2025) als ihren Stadtrat, die Presse ebenso; ein Austritt wird nirgends genannt. Nur die AfD-Fraktion nennt ihn „parteilos“. Bei einer belastbaren Quelle für Austritt oder AfD-Mitgliedschaft neu entscheiden.",
+    "source": "FREIE SACHSEN, Telegram 18.09.2025: „Unser Leipziger FREIE SACHSEN - Stadtrat Jürgen Butz arbeitet ab sofort als Teil der AfD-Stadtratsfraktion mit.“ https://t.me/freiesachsenLE/1085; Kreuzer 24.09.2024 („Der Freie Sachse erweitert den Kreis der extrem Rechten im Stadtrat“) https://kreuzer-leipzig.de/2024/09/24/stadtrat-leipzig-september-neu-sitzung; Leipziger Zeitung 18.09.2025 („sitzt Jürgen Günter Butz für die Neonazipartei ‚Freie Sachsen‘ im Leipziger Stadtrat“) https://www.l-iz.de/politik/leipzig/2025/09/afd-stadtrat-freie-sachsen-634073; Kreuzer 26.09.2025 („Der bisher allein sitzende Freie Sachse Jürgen Günther Butz hat sich der AfD-Fraktion angeschlossen“) https://kreuzer-leipzig.de/2025/09/26/stadtrat-leipzig-sitzung-september-schulen-kitas-duft-und-tastgarten; Kreuzer 16.01.2026 https://kreuzer-leipzig.de/2026/01/16/leipzig-bsw-stadtrat-handala-verfassungsschutz; AfD-Fraktion Leipzig „12 plus 1“, 8.11.2025 („der parteilose und bisher fraktionslose Stadtrat Jürgen Butz“) https://afdfraktion-leipzig.de/2025/"
   }
 ]
