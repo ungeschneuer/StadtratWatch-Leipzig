@@ -9,5 +9,21 @@
     "source": "Video 1:00:57",
     "reviewer": "ungeschneuer",
     "reviewedAt": "2026-11-13T17:40:05.168Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 4134.5,
+      "agendaItemNumber": "13.3"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
+        "vote": "J"
+      }
+    ],
+    "reason": "Mündliche Bennenung.",
+    "source": "Video 1:08:54",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:41:01.819Z"
   }
 ]
