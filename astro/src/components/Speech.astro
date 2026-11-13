@@ -3,7 +3,8 @@ import { type SessionSpeech } from '@models/session-speech';
 import { getFactionOfPerson, getPersonByName } from '@utils/session-utils';
 import { type Registry, type RegistrySession } from '@models/registry';
 import { sessionVideoLink } from '@models/session-video';
-import { CONTACT_EMAIL, SITE_NAME } from '@utils/site-config';
+import ContactEmailLink from '@components/ContactEmailLink.astro';
+import { SITE_NAME } from '@utils/site-config';
 
 type Props = {
   parliamentPeriod: Registry;
@@ -23,7 +24,7 @@ const faction = person
 
 const videoLink = sessionVideoLink(session, speech.start);
 const linkTitle = getLinkTitle(speech.speaker, session.date);
-const hintMailHref = getHintMailHref(speech, session.date);
+const hintMail = getHintMail(speech, session.date);
 const hintMailTitle = getHintMailTitle(speech);
 
 function getLinkTitle(speaker: string, date: string): string {
@@ -35,17 +36,17 @@ function getLinkTitle(speaker: string, date: string): string {
   return `Redebeitrag von ${speaker} am ${formattedDate}`;
 }
 
-function getHintMailHref(speech: SessionSpeech, date: string): string {
+function getHintMail(
+  speech: SessionSpeech,
+  date: string,
+): { subject: string; body: string } {
   const formattedDate = new Date(date).toLocaleString('de-DE', {
     day: '2-digit',
     month: '2-digit',
     year: 'numeric',
   });
-  const subject = encodeURIComponent(
-    `Hinweis zum Redebeitrag von ${speech.speaker} am ${formattedDate}`,
-  );
-  const hintMailBodyText = encodeURIComponent(
-    `Hallo ${SITE_NAME}-Team!
+  const subject = `Hinweis zum Redebeitrag von ${speech.speaker} am ${formattedDate}`;
+  const body = `Hallo ${SITE_NAME}-Team!
 
 Ich habe einen Hinweis zum Redebeitrag von ${speech.speaker} aus der Sitzung vom ${formattedDate} (Zeitmarke: ${speech.start}):
 
@@ -54,9 +55,8 @@ Ich habe einen Hinweis zum Redebeitrag von ${speech.speaker} aus der Sitzung vom
 
 Mit freundlichen Grüßen,
 
-`,
-  );
-  return `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${hintMailBodyText}`;
+`;
+  return { subject, body };
 }
 
 function getHintMailTitle(speech: SessionSpeech): string {
@@ -93,10 +93,14 @@ function getHintMailTitle(speech: SessionSpeech): string {
         </a>
       </li>
       <li>
-        <a href={hintMailHref} title={hintMailTitle} aria-label={hintMailTitle}>
+        <ContactEmailLink
+          title={hintMailTitle}
+          subject={hintMail.subject}
+          body={hintMail.body}
+        >
           <span class="iconify lucide--flag"></span>
           Beitrag melden
-        </a>
+        </ContactEmailLink>
       </li>
     </ul>
   </div>

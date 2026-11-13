@@ -1,7 +1,8 @@
 ---
+import ContactEmailLink from '@components/ContactEmailLink.astro';
 import type { VotingReviewStatus } from '@models/session-scan';
 import { sitePath } from '@utils/site-path';
-import { CONTACT_EMAIL, DATA_PULL_REQUEST_URL } from '@utils/site-config';
+import { DATA_PULL_REQUEST_URL } from '@utils/site-config';
 
 type Props = {
   reviewStatus: VotingReviewStatus;
@@ -29,10 +30,8 @@ const reviewUrl = sitePath(`review/leipzig/${sessionId}`);
           Pull Request mit den Leipziger Daten
         </a>
         ; kommentieren Sie dort oder schreiben Sie an{' '}
-        <a href={`mailto:${CONTACT_EMAIL}`} class="link">
-          {CONTACT_EMAIL}
-        </a>
-        . Die Korrektur erscheint hier, sobald der Pull Request übernommen ist.
+        <ContactEmailLink class="link" />. Die Korrektur erscheint hier, sobald
+        der Pull Request übernommen ist.
       </p>
     </div>
   </div>
