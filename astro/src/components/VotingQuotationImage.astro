@@ -1,6 +1,7 @@
 ---
+import ContactEmailLink from '@components/ContactEmailLink.astro';
 import { formatDate } from '@utils/format-date';
-import { CONTACT_EMAIL, SITE_NAME } from '@utils/site-config';
+import { SITE_NAME } from '@utils/site-config';
 
 type Props = {
   imageUrl: string;
@@ -26,11 +27,8 @@ const recordingDate = formatDate(sessionDate);
     <figcaption class="text-xs text-base-content/70 space-y-1">
       <p>
         Zitiert von {SITE_NAME} (
-        <a href={`mailto:${CONTACT_EMAIL}`} class="link">
-          {CONTACT_EMAIL}
-        </a>
-        ) als Beleg für die Stimmen, die aus dieser Tafel gelesen wurden (§ 51
-        UrhG).
+        <ContactEmailLink class="link" />) als Beleg für die Stimmen, die aus
+        dieser Tafel gelesen wurden (§ 51 UrhG).
       </p>
       <p>
         Quelle: Stadt Leipzig, Aufzeichnung der Ratsversammlung vom{' '}

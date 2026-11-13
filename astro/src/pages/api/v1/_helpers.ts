@@ -1,6 +1,6 @@
 import {
-  CONTACT_EMAIL,
   OPERATOR_NAME,
+  OPERATOR_WEBSITE,
   SITE_NAME,
   UPSTREAM_PROJECT,
 } from '@utils/site-config';
@@ -33,7 +33,7 @@ export function generateMeta() {
       ],
       publisher: {
         name: OPERATOR_NAME,
-        email: CONTACT_EMAIL,
+        url: OPERATOR_WEBSITE,
         project: SITE_NAME,
       },
       based_on: {

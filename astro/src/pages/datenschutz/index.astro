@@ -1,6 +1,6 @@
 ---
+import ContactEmailLink from '@components/ContactEmailLink.astro';
 import Layout from '@layouts/Layout.astro';
-import { CONTACT_EMAIL } from '@utils/site-config';
 ---
 
 <Layout>
@@ -21,10 +21,7 @@ import { CONTACT_EMAIL } from '@utils/site-config';
       <br />
       99096 Erfurt
       <br />
-      E-Mail:{' '}
-      <a href={`mailto:${CONTACT_EMAIL}`} class="link link-primary">
-        {CONTACT_EMAIL}
-      </a>
+      E-Mail: <ContactEmailLink class="link link-primary" />
     </p>
 
     <h2 class="mt-8 mb-2 text-lg font-semibold">Hosting über GitHub Pages</h2>

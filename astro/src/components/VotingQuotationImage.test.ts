@@ -14,6 +14,6 @@ test('credits the quotation to the project', async () => {
   });
   const text = html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ');
   expect(text).toContain(
-    'Zitiert von StadtratWatch Leipzig (hallo@schneuer.online) als Beleg',
+    'Zitiert von StadtratWatch Leipzig (hallo [at] schneuer [punkt] online) als Beleg',
   );
 });
