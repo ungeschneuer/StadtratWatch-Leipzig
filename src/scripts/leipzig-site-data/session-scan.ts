@@ -56,6 +56,7 @@ export function toSessionScan(
           type: subjectType(voting),
           authors: paper ? authorsOf(paper, members) : [],
           ...(paper?.web ? { paperUrl: paper.web } : {}),
+          ...oparlIdsOf(voting, paper),
         },
         votes,
         presentMembers: voting.votes.filter((seat) => seat.attendance === 'present').length,
@@ -64,6 +65,17 @@ export function toSessionScan(
       };
     });
   return { scan, pending: votings.filter((voting) => PENDING_STATUSES.has(voting.status)).length, problems };
+}
+
+// The board's sub-items (amendments such as 18.16.1) are not in OParl; their parent is no key of the vote.
+function oparlIdsOf(
+  voting: ExtractedVoting,
+  paper: LeipzigPaper | undefined,
+): { oparlAgendaItemId?: string; oparlPaperId?: string } {
+  return {
+    ...(voting.oparl && !voting.oparl.isParentAgendaItem ? { oparlAgendaItemId: voting.oparl.agendaItemId } : {}),
+    ...(paper ? { oparlPaperId: paper.oparlId } : {}),
+  };
 }
 
 function reviewStatusOf(voting: ExtractedVoting): { reviewStatus: VotingReviewStatus } | Record<string, never> {

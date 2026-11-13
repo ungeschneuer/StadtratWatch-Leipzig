@@ -129,6 +129,27 @@ describe('toSessionScan', () => {
     );
   });
 
+  it('names agenda item and paper by their OParl keys, but not the parent item of an amendment', () => {
+    const papers = {
+      papers: { 'paper/1': { oparlId: 'paper/1', reference: 'VIII-DS-1', name: '', web: '', originators: [] } },
+      votings: { '2026-10-29': { '0': 'paper/1', '1': 'paper/1' } },
+    } as unknown as PapersFile;
+    const oparl = { agendaItemId: 'item/7', number: '19.10', name: 'Masterplan', result: null, paperReference: null };
+    const [own, amendment] = toSessionScan(
+      '2026-10-29',
+      [
+        voting(0, 'verified', { oparl: { ...oparl, isParentAgendaItem: false } }),
+        voting(1, 'verified', { oparl: { ...oparl, isParentAgendaItem: true } }),
+      ],
+      members,
+      papers,
+    ).scan;
+
+    expect(own.votingSubject).toMatchObject({ oparlAgendaItemId: 'item/7', oparlPaperId: 'paper/1' });
+    expect(amendment.votingSubject).not.toHaveProperty('oparlAgendaItemId');
+    expect(amendment.votingSubject.oparlPaperId).toEqual('paper/1');
+  });
+
   it('takes the title from the OParl agenda item, not from the parent of an amendment', () => {
     const oparl = {
       agendaItemId: 'a/1',

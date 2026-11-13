@@ -3,6 +3,8 @@ import type { Registry, RegistryPerson } from '@srw-astro/models/registry';
 import type { SessionScanItem } from '@srw-astro/models/session-scan';
 import { getVoteCounts, votingAccepted } from '@srw-astro/models/voting-breakdown';
 
+import { factionKeyOf } from '../leipzig-members/members-file.ts';
+
 // The bulk downloads hold exactly what the site and the API publish: the session scans and the registry. A vote that
 // is not on the site (discarded, procedural with failed checks) is not in them either.
 export type SessionScans = Map<string, SessionScanItem[]>;
@@ -14,7 +16,13 @@ const VOTING_FIELDS: Field[] = [
   { name: 'sessionId', type: 'date', description: 'Sitzungstag (YYYY-MM-DD)' },
   { name: 'votingId', type: 'string', description: 'Abstimmung, eindeutig: Sitzungstag und laufende Nummer' },
   { name: 'agendaItem', type: 'string', description: 'Nummer des Tagesordnungspunkts' },
+  {
+    name: 'oparlAgendaItemId',
+    type: 'string',
+    description: 'Tagesordnungspunkt in OParl; leer bei Unterpunkten wie Änderungsanträgen, die OParl nicht führt',
+  },
   { name: 'paperReference', type: 'string', description: 'Drucksachennummer (VIII-DS-…, VIII-A-…, …-ÄA-…)' },
+  { name: 'oparlPaperId', type: 'string', description: 'Drucksache in OParl' },
   { name: 'title', type: 'string', description: 'Titel des Tagesordnungspunkts laut OParl' },
   { name: 'type', type: 'string', description: 'Art: Beschlussvorlage, Antrag, Änderungsantrag, Geschäftsordnung' },
   { name: 'paperUrl', type: 'string', description: 'Drucksache im Ratsinformationssystem' },
@@ -40,15 +48,20 @@ const VOTING_FIELDS: Field[] = [
 const VOTE_FIELDS: Field[] = [
   { name: 'sessionId', type: 'date', description: 'Sitzungstag (YYYY-MM-DD)' },
   { name: 'votingId', type: 'string', description: 'Abstimmung, verweist auf votings.csv' },
-  { name: 'personId', type: 'string', description: 'Person, verweist auf persons.csv' },
+  { name: 'personId', type: 'string', description: 'Person: OParl-ID, verweist auf persons.csv' },
   { name: 'name', type: 'string', description: 'Name' },
   { name: 'vote', type: 'string', description: 'J (Ja), N (Nein), E (Enthaltung), O (keine Stimme)' },
-  { name: 'factionId', type: 'string', description: 'Fraktion am Sitzungstag' },
+  {
+    name: 'factionId',
+    type: 'string',
+    description: 'Fraktion am Sitzungstag: OParl-ID, oder fraktionslos bzw. oberbuergermeister',
+  },
   { name: 'partyId', type: 'string', description: 'Partei bzw. Wahlliste 2024 am Sitzungstag' },
 ];
 
 const SESSION_FIELDS: Field[] = [
   { name: 'sessionId', type: 'date', description: 'Sitzungstag (YYYY-MM-DD)' },
+  { name: 'oparlMeetingId', type: 'string', description: 'Sitzung in OParl' },
   { name: 'date', type: 'date', description: 'Datum' },
   { name: 'title', type: 'string', description: 'Gremium' },
   {
@@ -64,22 +77,33 @@ const SESSION_FIELDS: Field[] = [
 
 // Written by leipzig-members (personsToCsv, factionMembershipsToCsv).
 const PERSON_FIELDS: Field[] = [
-  { name: 'personId', type: 'string', description: 'Person' },
-  { name: 'oparlId', type: 'string', description: 'OParl-ID der Person' },
+  { name: 'personId', type: 'string', description: 'Person: OParl-ID' },
+  {
+    name: 'slug',
+    type: 'string',
+    description: 'Lesbarer Schlüssel der Seite (Adresse der Personenseite), ändert sich mit dem Namen',
+  },
   { name: 'name', type: 'string', description: 'Name' },
   { name: 'familyName', type: 'string', description: 'Nachname' },
   { name: 'givenName', type: 'string', description: 'Vorname' },
   { name: 'start', type: 'date', description: 'Beginn der Mitgliedschaft in der Ratsversammlung' },
   { name: 'end', type: 'date', description: 'Ende der Mitgliedschaft' },
-  { name: 'factionId', type: 'string', description: 'Fraktion heute' },
+  {
+    name: 'factionId',
+    type: 'string',
+    description: 'Fraktion heute: OParl-ID, oder fraktionslos bzw. oberbuergermeister',
+  },
   { name: 'partyId', type: 'string', description: 'Partei bzw. Wahlliste 2024 heute' },
   { name: 'partySource', type: 'string', description: 'Herkunft der Partei: election-list:<Abgleich> oder override' },
 ];
 
 const FACTION_MEMBERSHIP_FIELDS: Field[] = [
-  { name: 'personId', type: 'string', description: 'Person, verweist auf persons.csv' },
-  { name: 'oparlId', type: 'string', description: 'OParl-ID der Person' },
-  { name: 'factionId', type: 'string', description: 'Fraktion' },
+  { name: 'personId', type: 'string', description: 'Person: OParl-ID, verweist auf persons.csv' },
+  {
+    name: 'factionId',
+    type: 'string',
+    description: 'Fraktion: OParl-ID, oder fraktionslos bzw. oberbuergermeister',
+  },
   { name: 'start', type: 'date', description: 'Beginn' },
   { name: 'end', type: 'date', description: 'Ende, leer = andauernd' },
 ];
@@ -92,7 +116,9 @@ export function votingsToCsv(registry: Registry, scans: SessionScans): string {
         sessionId,
         votingIdOf(voting),
         voting.votingSubject.agendaItem,
+        voting.votingSubject.oparlAgendaItemId ?? '',
         voting.votingSubject.motionId,
+        voting.votingSubject.oparlPaperId ?? '',
         voting.votingSubject.title,
         voting.votingSubject.type ?? '',
         voting.votingSubject.paperUrl ?? '',
@@ -120,10 +146,10 @@ export function votesToCsv(registry: Registry, scans: SessionScans): string {
         return [
           sessionId,
           votingIdOf(voting),
-          person?.id ?? '',
+          person?.oparlId ?? '',
           vote.name,
           vote.vote,
-          ...affiliationOn(person, sessionId),
+          ...affiliationOn(person, sessionId, factionKeyOf(registry.factions)),
         ];
       }),
     ),
@@ -134,6 +160,7 @@ export function votesToCsv(registry: Registry, scans: SessionScans): string {
 export function sessionsToCsv(registry: Registry, scans: SessionScans): string {
   const rows = registry.sessions.map((session) => [
     session.id,
+    session.oparlMeetingId ?? '',
     session.date,
     session.title,
     String(session.approved),
@@ -194,7 +221,17 @@ export function dataPackage(registry: Registry, created: string) {
     ],
     resources: [
       csvResource('votings', 'votings.csv', 'Eine Zeile je veröffentlichter Abstimmung', VOTING_FIELDS, ['votingId']),
-      csvResource('votes', 'votes.csv', 'Eine Zeile je Person und Abstimmung', VOTE_FIELDS, ['votingId', 'personId']),
+      csvResource(
+        'votes',
+        'votes.csv',
+        'Eine Zeile je Person und Abstimmung',
+        VOTE_FIELDS,
+        ['votingId', 'personId'],
+        [
+          { fields: 'votingId', reference: { resource: 'votings', fields: 'votingId' } },
+          { fields: 'personId', reference: { resource: 'persons', fields: 'personId' } },
+        ],
+      ),
       csvResource('sessions', 'sessions.csv', 'Eine Zeile je Sitzungstag mit Aufzeichnung', SESSION_FIELDS, [
         'sessionId',
       ]),
@@ -207,12 +244,22 @@ export function dataPackage(registry: Registry, created: string) {
         'Fraktionszugehörigkeit mit Zeiträumen',
         FACTION_MEMBERSHIP_FIELDS,
         ['personId', 'factionId', 'start'],
+        [{ fields: 'personId', reference: { resource: 'persons', fields: 'personId' } }],
       ),
     ],
   };
 }
 
-function csvResource(name: string, path: string, description: string, fields: Field[], primaryKey: string[]) {
+type ForeignKey = { fields: string; reference: { resource: string; fields: string } };
+
+function csvResource(
+  name: string,
+  path: string,
+  description: string,
+  fields: Field[],
+  primaryKey: string[],
+  foreignKeys: ForeignKey[] = [],
+) {
   return {
     name,
     path,
@@ -220,7 +267,7 @@ function csvResource(name: string, path: string, description: string, fields: Fi
     format: 'csv',
     mediatype: 'text/csv',
     encoding: 'utf-8',
-    schema: { fields, primaryKey },
+    schema: { fields, primaryKey, ...(foreignKeys.length > 0 ? { foreignKeys } : {}) },
   };
 }
 
@@ -228,8 +275,12 @@ function votingIdOf(voting: SessionScanItem): string {
   return voting.votingFilename.replace(/\.png$/, '');
 }
 
-function affiliationOn(person: RegistryPerson | undefined, date: string): [string, string] {
-  return person ? [factionIdOn(person, date), partyIdOn(person, date)] : ['', ''];
+function affiliationOn(
+  person: RegistryPerson | undefined,
+  date: string,
+  factionKey: (factionId: string) => string,
+): [string, string] {
+  return person ? [factionKey(factionIdOn(person, date)), partyIdOn(person, date)] : ['', ''];
 }
 
 function toCsv(fields: Field[], rows: string[][]): string {

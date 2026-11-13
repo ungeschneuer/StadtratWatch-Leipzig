@@ -18,6 +18,13 @@ Quellen):
 | `persons.csv` | Mitglied in der Wahlperiode | `personId` |
 | `faction-memberships.csv` | Fraktionszugehörigkeit mit Zeitraum | `personId`, `factionId`, `start` |
 
+Personen, Fraktionen, Sitzungen, Tagesordnungspunkte und Drucksachen haben ihre **OParl-ID** der Stadt als Schlüssel
+(`https://www.leipzig.sitzung-online.de/oparl/…`). Sie bleibt, wenn ein Name korrigiert wird. Die lesbaren Schlüssel
+der Seite (`slug` in `persons.csv`, z. B. `getu-abraham`) stehen daneben und können sich mit dem Namen ändern. Zwei
+Pseudo-Fraktionen haben keine OParl-ID und behalten ihren Code: `fraktionslos` und `oberbuergermeister`. Parteien sind
+die Listen der Wahl 2024 (`partyId`, z. B. `cdu`); dafür gibt es keine OParl-ID. Abstimmungen haben die Kennung
+`<sitzungstag>-<NNN>` (`votingId`).
+
 Die Tabellen enthalten genau, was Seite und API zeigen. Die Arbeitsdateien der Auswertung (`votings-<datum>.json` mit
 allen Prüfungen, `votes-<datum>.csv` mit Tafelnamen und Sitzstatus, Korrekturen, Protokollauszüge) liegen im
 Repository unter [`data/leipzig-8/`](data/leipzig-8/). Die API ist in

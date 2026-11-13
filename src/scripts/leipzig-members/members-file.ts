@@ -278,19 +278,22 @@ function bySeatsThenName(a: { seats: number; name: string }, b: { seats: number;
   return b.seats - a.seats || a.name.localeCompare(b.name, 'de');
 }
 
-// Long format, one row per person, and one per faction membership, for spreadsheets and data analysis.
+// Long format, one row per person, and one per faction membership, for spreadsheets and data analysis. Persons and
+// factions are keyed by their OParl ID, which stays when a name is corrected; the slug is the address of the person's
+// page on the site.
 export function personsToCsv(file: LeipzigMembersFile): string {
+  const factionKey = factionKeyOf(file.factions);
   return toCsv(
-    ['personId', 'oparlId', 'name', 'familyName', 'givenName', 'start', 'end', 'factionId', 'partyId', 'partySource'],
+    ['personId', 'slug', 'name', 'familyName', 'givenName', 'start', 'end', 'factionId', 'partyId', 'partySource'],
     file.persons.map((person) => [
-      person.id,
       person.oparlId,
+      person.id,
       person.name,
       person.familyName,
       person.givenName,
       person.start ?? '',
       person.end ?? '',
-      person.factionId,
+      factionKey(person.factionId),
       person.partyId,
       person.partySource.method === 'election-list' ? `election-list:${person.partySource.match}` : 'override',
     ]),
@@ -298,18 +301,24 @@ export function personsToCsv(file: LeipzigMembersFile): string {
 }
 
 export function factionMembershipsToCsv(file: LeipzigMembersFile): string {
+  const factionKey = factionKeyOf(file.factions);
   return toCsv(
-    ['personId', 'oparlId', 'factionId', 'start', 'end'],
+    ['personId', 'factionId', 'start', 'end'],
     file.persons.flatMap((person) =>
       person.factionMemberships.map((membership) => [
-        person.id,
         person.oparlId,
-        membership.factionId,
+        factionKey(membership.factionId),
         membership.start,
         membership.end ?? '',
       ]),
     ),
   );
+}
+
+// The pseudo-factions of members without faction and of the mayor have no OParl ID; their code is stable as it is.
+export function factionKeyOf(factions: { id: string; oparlId?: string | null }[]): (factionId: string) => string {
+  const oparlIds = new Map(factions.map((faction) => [faction.id, faction.oparlId]));
+  return (factionId) => oparlIds.get(factionId) || factionId;
 }
 
 function toCsv(header: string[], rows: string[][]): string {
