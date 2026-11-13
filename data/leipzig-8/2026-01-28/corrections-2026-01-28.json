@@ -14,5 +14,21 @@
     "source": "beschlussprotokoll: Abstimmungsergebnis zum ÄÄ:; verlaufsprotokoll: Abstimmung: 41 - 23 - 1. So beschlossen.",
     "reviewer": "ungeschneuer",
     "reviewedAt": "2026-11-13T17:37:03.899Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 21420,
+      "agendaItemNumber": "18.2"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+        "vote": "E"
+      }
+    ],
+    "reason": "Amtliches Ergebnis 47/6/9",
+    "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 47 - 6 - 9. So beschlossen.",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:37:40.526Z"
   }
 ]
