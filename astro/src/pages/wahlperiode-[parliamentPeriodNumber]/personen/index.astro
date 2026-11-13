@@ -8,11 +8,20 @@ import {
 import { type BreadcrumbItem } from '@components/BreadcrumbMenu.astro';
 import PersonsList from './_persons-list.astro';
 import PersonsGraph from './_persons-graph.astro';
+import { missingActivityOf } from '@data-analysis/MissingActivity';
+import { formatDate } from '@utils/format-date';
 
 export const getStaticPaths = getParliamentPeriodWithSessionsPaths;
 
 const { parliamentPeriod, sessionInputs } =
   Astro.props as ParliamentPeriodWithSessionsProps;
+const leftBeforeRecordings = parliamentPeriod.persons
+  .map((person) => missingActivityOf(person, sessionInputs))
+  .filter((activity) => activity?.reason === 'left-before-recordings');
+const firstRecordedSession =
+  leftBeforeRecordings[0]?.reason === 'left-before-recordings'
+    ? leftBeforeRecordings[0].firstRecordedSession
+    : null;
 const parliamentPeriodId = parliamentPeriod.id;
 
 const breadcrumbItems: BreadcrumbItem[] = [
@@ -53,6 +62,14 @@ const breadcrumbItems: BreadcrumbItem[] = [
         parliamentPeriod={parliamentPeriod}
         sessionInputs={sessionInputs}
       />
+      {firstRecordedSession && (
+        <p class="text-sm text-base-content/70 mt-4">
+          {leftBeforeRecordings.length} Mitglieder sind vor dem{' '}
+          {formatDate(firstRecordedSession)} ausgeschieden und haben deshalb
+          keine Werte: Die Stadt zeichnet die Sitzungen erst seit diesem Tag
+          auf.
+        </p>
+      )}
     </div>
 
     <input
