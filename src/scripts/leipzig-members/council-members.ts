@@ -1,3 +1,5 @@
+import { compareNamesForSorting } from '@srw-astro/models/person-name';
+
 export type OparlMembership = {
   id: string;
   person: string;
@@ -86,7 +88,7 @@ export function deriveCouncilMembers(
     }
     members.push({ person, isMayor, ...council, factionPeriods: withGapsFilled(factionSpans, council) });
   }
-  return { members: members.sort((a, b) => a.person.name.localeCompare(b.person.name, 'de')), problems };
+  return { members: members.sort((a, b) => compareNamesForSorting(a.person.name, b.person.name)), problems };
 }
 
 type Span = { start: string; end: string | null };

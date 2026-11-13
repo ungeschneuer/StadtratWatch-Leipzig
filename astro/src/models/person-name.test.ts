@@ -3,31 +3,42 @@ import { compareNamesForSorting, nameForSorting } from './person-name';
 
 describe('nameForSorting', () => {
   test.each([
-    ['Dr. Sabine Heymann', 'Sabine Heymann'],
-    ['Dr. med. Nicole Schreyer-Krieg', 'Nicole Schreyer-Krieg'],
-    ['Prof. Dr. Getu Abraham', 'Getu Abraham'],
-    ['Dr. Heymann, Sabine', 'Heymann, Sabine'],
-    ['Prof. Dr. Abraham, Getu', 'Abraham, Getu'],
-    ['Andreas Nowak', 'Andreas Nowak'],
-    ['Drago Neumann', 'Drago Neumann'],
+    ['Dr. Sabine Heymann', 'Heymann Sabine'],
+    ['Dr. med. Nicole Schreyer-Krieg', 'Schreyer-Krieg Nicole'],
+    ['Prof. Dr. Getu Abraham', 'Abraham Getu'],
+    ['Jürgen Günter Butz', 'Butz Jürgen Günter'],
+    ['Dr. Heymann, Sabine', 'Heymann Sabine'],
+    ['Prof. Dr. Abraham, Getu', 'Abraham Getu'],
+    ['Andreas Nowak', 'Nowak Andreas'],
+    ['Drago Neumann', 'Neumann Drago'],
   ])('%s → %s', (name, expected) => {
     expect(nameForSorting(name)).toBe(expected);
   });
 });
 
-test('sorts names as if they had no academic title', () => {
+test('sorts by surname and ignores academic titles', () => {
   const names = [
     'Dr. Sabine Heymann',
     'Falk Dossin',
     'Prof. Dr. Getu Abraham',
     'Andreas Nowak',
     'Dr. med. Nicole Schreyer-Krieg',
+    'Jürgen Günter Butz',
   ];
   expect(names.toSorted(compareNamesForSorting)).toEqual([
-    'Andreas Nowak',
-    'Falk Dossin',
     'Prof. Dr. Getu Abraham',
-    'Dr. med. Nicole Schreyer-Krieg',
+    'Jürgen Günter Butz',
+    'Falk Dossin',
     'Dr. Sabine Heymann',
+    'Andreas Nowak',
+    'Dr. med. Nicole Schreyer-Krieg',
   ]);
+});
+
+test('reads board names in surname-first order', () => {
+  expect(
+    ['Dr. Heymann, Sabine', 'Albrecht, Karsten'].toSorted(
+      compareNamesForSorting,
+    ),
+  ).toEqual(['Albrecht, Karsten', 'Dr. Heymann, Sabine']);
 });
