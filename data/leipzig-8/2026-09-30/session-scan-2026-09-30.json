@@ -8583,7 +8583,7 @@
       },
       {
         "name": "Franziska Riekewald",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Susanne Scheidereiter",
@@ -8623,7 +8623,7 @@
       },
       {
         "name": "Tobias Keller",
-        "vote": "O"
+        "vote": "N"
       },
       {
         "name": "Christian Kriegel",
@@ -8778,8 +8778,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-09-30-032.png",
