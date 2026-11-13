@@ -281,7 +281,7 @@ meist eine einzelne nachgezählte Stimme keinen Namen hat; widersprüchliche Pro
 - [x] **3. Prüfoberfläche:** Feld „Rest nicht zuzuordnen“ zusammen mit Stimmänderungen, Vorschau der verbleibenden Stimmen.
 - [x] **4. Abstimmungsseite, API, Doku:** Hinweis nennt die nicht zugeordneten Stimmen und die möglichen Betroffenen;
   API-Felder und README beschreiben sie.
-- [ ] **5. Feste Regel für widersprüchliche Protokolle:** Stimmen Verlaufsprotokoll und (falls vorhanden) Ansage mit der
+- [x] **5. Feste Regel für widersprüchliche Protokolle:** Stimmen Verlaufsprotokoll und (falls vorhanden) Ansage mit der
   Tafel überein und weicht nur Niederschrift oder ALLRIS ab, gilt die Tafel als bestätigt.
 - [ ] **6. Prüfentscheidungen neu fassen (eigener Daten-PR):** 30.09.2026 #18 Lehmann → Nein, Rest 1 Ja nicht zuzuordnen;
   28.10.2026 #10 und #18 Tafel bestätigen wie 03.09.2026 #4.

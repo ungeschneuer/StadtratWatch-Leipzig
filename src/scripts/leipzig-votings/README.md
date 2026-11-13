@@ -24,23 +24,23 @@ full-screen in its recording. Each vote is cross-checked against independent sou
    next to the heading, since then 4 × 22.
 4. **Check.** Each vote is compared with:
 
-   | Check                                | Source                                                |
-   | ------------------------------------ | ----------------------------------------------------- |
-   | `seats-complete`                     | one seat per OParl member of the day, none unreadable |
-   | `second-frame-agrees`                | second frame of the result phase                      |
-   | `colours-match-result-bars`          | numbers printed next to the result bars               |
-   | `colours-match-cast-votes`           | „Abgegebene Stimmen“                                  |
-   | `seat-numbers-match-present-members` | „Anwesende“                                           |
-   | `names-match-roster`                 | OParl members of the council on the session day       |
-   | `agenda-item-in-oparl`               | OParl agenda of the meeting and the neighbouring day  |
-   | `paper-matches-oparl`                | paper of the OParl agenda item, period numeral aside  |
-   | `outcome-matches-oparl`              | OParl result, if the agenda item has exactly one vote |
-   | `announcement-matches`               | result the chair announces, read from the subtitles   |
-   | `result-shown-long-enough`           | result bars visible for at least 1.5 s                |
-   | `most-present-members-voted`         | at least half of „Anwesende“ cast a vote              |
-   | `not-repeated`                       | the chair did not have the vote repeated              |
-   | `matches-official`                   | official result, or members added by hand named       |
-   | `official-sources-agree`             | minutes and Verlaufsprotokoll give the same result    |
+   | Check                                | Source                                                                                                            |
+   | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+   | `seats-complete`                     | one seat per OParl member of the day, none unreadable                                                             |
+   | `second-frame-agrees`                | second frame of the result phase                                                                                  |
+   | `colours-match-result-bars`          | numbers printed next to the result bars                                                                           |
+   | `colours-match-cast-votes`           | „Abgegebene Stimmen“                                                                                              |
+   | `seat-numbers-match-present-members` | „Anwesende“                                                                                                       |
+   | `names-match-roster`                 | OParl members of the council on the session day                                                                   |
+   | `agenda-item-in-oparl`               | OParl agenda of the meeting and the neighbouring day                                                              |
+   | `paper-matches-oparl`                | paper of the OParl agenda item, period numeral aside                                                              |
+   | `outcome-matches-oparl`              | OParl result, if the agenda item has exactly one vote                                                             |
+   | `announcement-matches`               | result the chair announces, read from the subtitles                                                               |
+   | `result-shown-long-enough`           | result bars visible for at least 1.5 s                                                                            |
+   | `most-present-members-voted`         | at least half of „Anwesende“ cast a vote                                                                          |
+   | `not-repeated`                       | the chair did not have the vote repeated                                                                          |
+   | `matches-official`                   | official result, or members added by hand named                                                                   |
+   | `official-sources-agree`             | minutes and Verlaufsprotokoll give the same result, or the Verlaufsprotokoll (and announcement) confirm the board |
 
    | Status         | Meaning                                                                                                                                                          |
    | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +96,10 @@ full-screen in its recording. Each vote is cross-checked against independent sou
    1. The board's own checks decide whether its seats can be used.
    2. The official result comes from the minutes, until they appear from the agenda item pages; boards are matched to
       it by agenda item and paper first, counts second, and a board without heading is placed by the Verlaufsprotokoll,
-      which follows the session and is aligned with the boards in order. If both are there, they must agree.
+      which follows the session and is aligned with the boards in order. If both are there, they must agree, with one
+      exception: when the Verlaufsprotokoll gives the board's result and the announcement, if the subtitles caught one,
+      does too, the board stands and only the minutes or the agenda item pages deviate (01.07.2026 #39, 03.09.2026 #4).
+      A Verlaufsprotokoll that counts more than the board is never overruled; it names someone added by hand.
    3. If the official result differs from the board, someone was added by hand. Members the Verlaufsprotokoll (or,
       until it appears, the announcement) names who explain the whole difference become a correction (`corrected`);
       the board reading is kept in `boardVote`. If nobody is named but exactly as many members are present without a
