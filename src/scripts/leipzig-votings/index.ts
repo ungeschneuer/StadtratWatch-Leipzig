@@ -151,6 +151,7 @@ const QUOTED_STATUSES = new Set<ExtractedVoting['status']>([
   'verified',
   'corrected',
   'reviewed',
+  'unresolved',
   'provisional',
   'needs-review',
 ]);

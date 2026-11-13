@@ -92,6 +92,7 @@ Bestellungen und Entsendungen beschließt die Stadt mit einfacher Mehrheit, sie 
 | `final` | Alle Prüfungen bestanden und mit dem amtlichen Ergebnis abgeglichen, oder von einem Menschen geprüft |
 | `provisional` | Alle Prüfungen bestanden, das amtliche Ergebnis ist noch nicht veröffentlicht |
 | `needs-review` | Mindestens eine Prüfung ist fehlgeschlagen; ein Mensch muss entscheiden |
+| `unresolved` | Geprüft, aber nicht klärbar: Das amtliche Ergebnis weicht von der Tafel ab, und niemand kann belegen, wer anders gezählt wurde. Die Stimmen je Person zeigen die Tafel, `result` folgt dem amtlichen Ergebnis |
 
 `provisional` und `needs-review` sind veröffentlicht, aber **nicht abschließend geprüft**. Die Seite kennzeichnet sie.
 Wer nur geprüfte Stimmen auswerten will, filtert auf `final`. `sessions.csv` nennt in `approved`, ob ein Sitzungstag

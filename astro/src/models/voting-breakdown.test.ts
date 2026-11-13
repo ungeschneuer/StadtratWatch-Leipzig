@@ -513,3 +513,31 @@ describe('decidedByMayor', () => {
     expect(decidedByMayor(council, voting, '2026-01-01')).toBe(false);
   });
 });
+
+describe('votingAccepted for a vote that cannot be settled', () => {
+  test('follows the official result, not the board', () => {
+    const voting: SessionScanItem = {
+      ...createVoting([
+        { name: 'A', vote: 'J' },
+        { name: 'B', vote: 'J' },
+        { name: 'C', vote: 'N' },
+      ]),
+      unresolved: {
+        reason: 'nicht belegt',
+        officialCounts: { J: 2, N: 3, E: 0 },
+      },
+    };
+    expect(votingAccepted(councilOfEightFactions, voting)).toBe(false);
+  });
+
+  test('uses the board when no official result is known', () => {
+    const voting: SessionScanItem = {
+      ...createVoting([
+        { name: 'A', vote: 'J' },
+        { name: 'B', vote: 'J' },
+      ]),
+      unresolved: { reason: 'nicht belegt' },
+    };
+    expect(votingAccepted(councilOfEightFactions, voting)).toBe(true);
+  });
+});

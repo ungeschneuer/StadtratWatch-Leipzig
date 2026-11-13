@@ -32,6 +32,7 @@ export function summarizeStatuses(votings: ExtractedVoting[]): Record<string, nu
     corrected: 0,
     provisional: 0,
     reviewed: 0,
+    unresolved: 0,
     'needs-review': 0,
     skipped: 0,
     discarded: 0,

@@ -24,11 +24,22 @@ export function parseCorrections(json: unknown, source: string): Correction[] {
     if (typeof entry?.voting?.videoSeconds !== 'number') problems.push(`${at}: voting.videoSeconds must be a number`);
     if (typeof entry?.reason !== 'string' || entry.reason.trim() === '') problems.push(`${at}: reason is required`);
     const changesSeats = Array.isArray(entry?.seats) && entry.seats.length > 0;
-    if (!entry?.approve && !entry?.discard && !changesSeats && typeof entry?.agendaItemNumber !== 'string') {
-      problems.push(`${at}: needs seats to change, an agendaItemNumber, "approve": true or "discard": true`);
+    if (
+      !entry?.approve &&
+      !entry?.discard &&
+      !entry?.unresolved &&
+      !changesSeats &&
+      typeof entry?.agendaItemNumber !== 'string'
+    ) {
+      problems.push(
+        `${at}: needs seats to change, an agendaItemNumber, "approve": true, "discard": true or "unresolved": true`,
+      );
     }
     if (entry?.discard && (entry?.approve || changesSeats)) {
       problems.push(`${at}: a discarded voting cannot also be approved or changed`);
+    }
+    if (entry?.unresolved && (entry?.approve || entry?.discard || changesSeats)) {
+      problems.push(`${at}: an unresolved voting cannot also be approved, discarded or changed`);
     }
     for (const seat of Array.isArray(entry?.seats) ? entry.seats : []) {
       if (typeof seat?.personId !== 'string' || !isVoteCode(String(seat?.vote))) {
@@ -71,7 +82,7 @@ export function applyCorrections(votings: ExtractedVoting[], corrections: Correc
       voting.boardAgendaItemNumber ??= voting.heading.agendaItemNumber;
       voting.heading = { ...voting.heading, agendaItemNumber: correction.agendaItemNumber };
     }
-    voting.status = correction.discard ? 'discarded' : 'reviewed';
+    voting.status = correction.discard ? 'discarded' : correction.unresolved ? 'unresolved' : 'reviewed';
     voting.review = [
       ...(voting.review ?? []),
       {

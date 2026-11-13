@@ -36,7 +36,7 @@ function voting(
       { column: 0, row: 1, boardName: 'Nagel, Juliane', personId: 'p/nagel', vote: 'O', attendance: 'present' },
     ],
     checks: [],
-    checkStatus: status === 'reviewed' ? 'needs-review' : status,
+    checkStatus: status === 'reviewed' || status === 'unresolved' ? 'needs-review' : status,
     status,
     ...changes,
   };
@@ -189,6 +189,32 @@ describe('toSessionScan', () => {
       { ...recusal, personOparlId: 'p/stange' },
     ]);
     expect(wrong.problems).toEqual(['2026-10-29 #4: Enrico Stange is recused at 19.10.2 but voted J']);
+  });
+
+  it('publishes a vote that cannot be settled with the official result and the reason', () => {
+    const unresolved = voting(4, 'unresolved', {
+      official: {
+        J: 1,
+        N: 1,
+        E: 0,
+        agendaItemNumber: '19.10.2',
+        paperReference: null,
+        procedural: false,
+        sources: [],
+        correction: null,
+      },
+      review: [{ reason: 'Nachgezählte Person nicht belegt', source: null, reviewer: 'm', reviewedAt: null }],
+    });
+    const [item] = toSessionScan('2026-10-29', [unresolved], members).scan;
+
+    expect(item.unresolved).toEqual({
+      reason: 'Nachgezählte Person nicht belegt',
+      officialCounts: { J: 1, N: 1, E: 0 },
+    });
+    expect(item.votes).toEqual([
+      { name: 'Enrico Stange', vote: 'J' },
+      { name: 'Juliane Nagel', vote: 'O' },
+    ]);
   });
 
   it('reports a seat without member instead of inventing a name', () => {

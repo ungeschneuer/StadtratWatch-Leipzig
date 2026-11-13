@@ -35,6 +35,11 @@ const mayorDecided = decidedByMayor(
   sessionInput.session.date,
 );
 const recusedPersons = voting.recusedPersons ?? [];
+const boardCounts = getVoteCounts(voting);
+const officialCounts = voting.unresolved?.officialCounts;
+const unresolvedCountsText = officialCounts
+  ? `Das amtliche Ergebnis (${officialCounts.J}:${officialCounts.N}:${officialCounts.E}) weicht von der Tafel (${boardCounts.J}:${boardCounts.N}:${boardCounts.E}) ab. `
+  : 'Diese Abstimmung ließ sich nicht abschließend prüfen. ';
 
 const breadcrumbItems = [
   {
@@ -137,6 +142,16 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
         reviewStatus={voting.reviewStatus}
         sessionId={sessionId}
       />
+    )}
+    {voting.unresolved && (
+      <div role="note" class="alert alert-soft text-sm">
+        <div>
+          {unresolvedCountsText}
+          Die Prüfung konnte das nicht klären ({voting.unresolved.reason}). Die
+          Stimmen je Person zeigen die Tafel; ob angenommen oder abgelehnt,
+          richtet sich nach dem amtlichen Ergebnis.
+        </div>
+      </div>
     )}
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <div class="card bg-base-100 border border-base-300 md:col-span-2 lg:col-span-3">

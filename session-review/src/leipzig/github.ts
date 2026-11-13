@@ -17,6 +17,26 @@ export class GitHubError extends Error {
   }
 }
 
+// GitHub answers a token without the right permission with an English one-liner; reviewers need to know what to change.
+function readableMessage(status: number, message: string): string {
+  if (status === 403 && /not accessible by (personal access|fine-grained) token/i.test(message)) {
+    return (
+      'Der Token darf in diesem Repository nicht schreiben. Unter GitHub → Settings → Developer settings → ' +
+      'Fine-grained tokens den Token öffnen: „Repository access“ muss das Repository der Prüfung enthalten ' +
+      '(oben unter „Repository“ eingetragen) und „Contents“ auf „Read and write“ stehen. ' +
+      `(GitHub: ${message})`
+    );
+  }
+  if (status === 401) return `Der Token ist ungültig oder abgelaufen; bitte neu anmelden. (GitHub: ${message})`;
+  if (status === 404) {
+    return (
+      'Repository oder Branch nicht gefunden, oder der Token sieht das Repository nicht. ' +
+      `Oben eingetragenes Repository und den Zugriff des Tokens prüfen. (GitHub: ${message})`
+    );
+  }
+  return message;
+}
+
 async function request<T>(token: string, path: string, init: RequestInit = {}): Promise<T> {
   const response = await fetch(`${API}${path}`, {
     ...init,
@@ -29,7 +49,7 @@ async function request<T>(token: string, path: string, init: RequestInit = {}): 
   });
   if (!response.ok) {
     const body = (await response.json().catch(() => ({}))) as { message?: string };
-    throw new GitHubError(response.status, body.message ?? response.statusText);
+    throw new GitHubError(response.status, readableMessage(response.status, body.message ?? response.statusText));
   }
   return response.json() as Promise<T>;
 }

@@ -22,6 +22,7 @@ interface SeatChange {
 export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onPropose }: Props) {
   const [approve, setApprove] = useState(initial?.approve ?? false);
   const [discard, setDiscard] = useState(initial?.discard ?? false);
+  const [unresolved, setUnresolved] = useState(initial?.unresolved ?? false);
   const [assignAgendaItem, setAssignAgendaItem] = useState(Boolean(initial?.agendaItemNumber));
   const [agendaItemNumber, setAgendaItemNumber] = useState(initial?.agendaItemNumber ?? '');
   const [seats, setSeats] = useState<SeatChange[]>(initial?.seats ?? []);
@@ -33,9 +34,16 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
     .sort((a, b) => a.boardName.localeCompare(b.boardName, 'de'));
   const boardVoteOf = (personId: string) => reviewCase.seats.find((seat) => seat.personId === personId)?.vote ?? 'O';
 
-  const hasEffect = discard || approve || (assignAgendaItem && agendaItemNumber.trim() !== '') || seats.length > 0;
+  const hasEffect =
+    discard || unresolved || approve || (assignAgendaItem && agendaItemNumber.trim() !== '') || seats.length > 0;
+  const excludesOthers = (chosen: boolean) => !(chosen && (approve || seats.length > 0));
   const valid =
-    hasEffect && reason.trim() !== '' && seats.every((seat) => seat.personId) && !(discard && (approve || seats.length > 0));
+    hasEffect &&
+    reason.trim() !== '' &&
+    seats.every((seat) => seat.personId) &&
+    excludesOthers(discard) &&
+    excludesOthers(unresolved) &&
+    !(discard && unresolved);
 
   function build(): VotingCorrection {
     return {
@@ -46,6 +54,7 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
       ...(seats.length > 0 ? { seats } : {}),
       ...(approve ? { approve: true } : {}),
       ...(discard ? { discard: true } : {}),
+      ...(unresolved ? { unresolved: true } : {}),
       ...(assignAgendaItem && agendaItemNumber.trim() ? { agendaItemNumber: agendaItemNumber.trim() } : {}),
       reason: reason.trim(),
       ...(source.trim() ? { source: source.trim() } : {}),
@@ -69,6 +78,11 @@ export function DecisionForm({ reviewCase, initial, canSave, saving, onSave, onP
         <label className={styles.check}>
           <input type="checkbox" checked={discard} onChange={(event) => setDiscard(event.target.checked)} />
           Keine gültige Abstimmung (Zwischenstand, alte Tafel oder wiederholt) – verwerfen
+        </label>
+        <label className={styles.check}>
+          <input type="checkbox" checked={unresolved} onChange={(event) => setUnresolved(event.target.checked)} />
+          Nicht klärbar: gültige Abstimmung, aber nicht belegbar, wer anders gezählt wurde – Stimmen laut Tafel, Ergebnis
+          laut amtlicher Zählung
         </label>
         <label className={styles.check}>
           <input

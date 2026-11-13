@@ -9,6 +9,9 @@ export type VotingCorrection = {
   approve?: boolean;
   // Not a valid vote: a count in progress, a stale board, or a vote the chair had repeated.
   discard?: boolean;
+  // A valid vote that cannot be settled: the official result differs from the board, and neither minutes nor video say
+  // who was counted differently. The board's votes stand for each person, the official result decides the outcome.
+  unresolved?: boolean;
   agendaItemNumber?: string;
   reason: string;
   source?: string;

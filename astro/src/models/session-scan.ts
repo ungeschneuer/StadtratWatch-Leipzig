@@ -13,6 +13,13 @@ export type SessionScanItem = {
   reviewStatus?: VotingReviewStatus;
   // Members who declared a conflict of interest (§ 20 SächsGemO, Befangenheit) and took no part, named as in votes.
   recusedPersons?: string[];
+  // A reviewer found the vote cannot be settled: the votes are the board's, the outcome follows the official result.
+  unresolved?: UnresolvedVoting;
+};
+
+export type UnresolvedVoting = {
+  reason: string;
+  officialCounts?: { J: number; N: number; E: number };
 };
 
 // A vote without a review status is final. The others are published while their check is not finished: a provisional

@@ -74,7 +74,8 @@ export async function GET({
     majorityRequirement: getMajorityRequirement(scan),
     presentMembers: scan.presentMembers ?? null,
     result: votingAccepted(parliamentPeriod, scan) ? 'accepted' : 'rejected',
-    reviewStatus: scan.reviewStatus ?? null,
+    reviewStatus: scan.unresolved ? 'unresolved' : (scan.reviewStatus ?? null),
+    unresolved: scan.unresolved ?? null,
     decidedByMayor: decidedByMayor(parliamentPeriod, scan, props.session.date),
     recusedPersonIds: (scan.recusedPersons ?? []).map(
       (name) => personsMap.get(name)?.id ?? null,

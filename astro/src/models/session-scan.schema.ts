@@ -43,6 +43,18 @@ export const sessionScanSchema = z.array(
       presentMembers: z.number().int().optional(),
       reviewStatus: z.enum(votingReviewStatuses).optional(),
       recusedPersons: z.array(z.string()).optional(),
+      unresolved: z
+        .object({
+          reason: z.string(),
+          officialCounts: z
+            .object({
+              J: z.number().int(),
+              N: z.number().int(),
+              E: z.number().int(),
+            })
+            .optional(),
+        })
+        .optional(),
     })
     .superRefine((voting, context) => {
       const violation = findPresentMembersViolation(voting);

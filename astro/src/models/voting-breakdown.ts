@@ -100,7 +100,9 @@ export function votingAccepted(
   parliamentPeriod: Registry,
   voting: SessionScanItem,
 ): boolean {
-  const { J: yes, N: no } = getVoteCounts(voting);
+  // A vote a reviewer could not settle shows the board's votes, but the city's official count decides the outcome.
+  const { J: yes, N: no } =
+    voting.unresolved?.officialCounts ?? getVoteCounts(voting);
   const statutoryMemberCount = getStatutoryMemberCount(parliamentPeriod);
 
   switch (voting.majorityRequirement) {

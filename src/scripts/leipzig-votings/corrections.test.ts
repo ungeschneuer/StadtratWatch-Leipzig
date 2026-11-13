@@ -88,6 +88,25 @@ describe('applyCorrections', () => {
     expect(approved.votes.every((vote) => vote.boardVote === undefined)).toBe(true);
   });
 
+  it('marks a vote that cannot be settled as unresolved and keeps the board reading', () => {
+    const [unresolved] = applyCorrections(votings, [
+      { voting: { videoSeconds: 2700 }, unresolved: true, reason: 'Nachgezählte Person nicht belegt' },
+    ]);
+
+    expect(unresolved.status).toEqual('unresolved');
+    expect(unresolved.votes.map((vote) => vote.vote)).toEqual(['O', 'J', 'N', 'O']);
+    expect(unresolved.review?.[0].reason).toEqual('Nachgezählte Person nicht belegt');
+  });
+
+  it('refuses an unresolved vote that is also approved or changed', () => {
+    expect(() =>
+      parseCorrections(
+        [{ voting: { videoSeconds: 2700 }, unresolved: true, approve: true, reason: 'x' }],
+        'corrections.json',
+      ),
+    ).toThrow(CorrectionsError);
+  });
+
   it('discards a voting that was no valid vote and restores it when the correction goes', () => {
     const [discarded] = applyCorrections(votings, [
       { voting: { videoSeconds: 2700 }, discard: true, reason: 'Zwischenstand während der Abstimmung' },
