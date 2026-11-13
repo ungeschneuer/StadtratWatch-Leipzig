@@ -1,0 +1,111 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import {
+  type ParliamentPeriodWithSessionsProps,
+  getParliamentPeriodWithSessionsPaths,
+} from './_helpers';
+import { formatDate } from '@utils/format-date';
+import { formatNumber } from '@utils/format-number';
+import { formatSpeakingTime } from '@utils/format-time';
+import { calcSpeakingTimeOfSessions } from '@data-analysis/SpeakingTime';
+import { sitePath } from '@utils/site-path';
+
+export const getStaticPaths = getParliamentPeriodWithSessionsPaths;
+
+const { parliamentPeriod, sessionInputs } =
+  Astro.props as ParliamentPeriodWithSessionsProps;
+const firstSession = parliamentPeriod.sessions[0];
+const lastSession =
+  parliamentPeriod.sessions[parliamentPeriod.sessions.length - 1];
+const totalVotingCount = sessionInputs.flatMap(
+  (sessionInput) => sessionInput.votings,
+).length;
+const totalVoteCount = sessionInputs.reduce((acc, sessionInput) => {
+  const votesInSession = sessionInput.votings.reduce((sum, voting) => {
+    return sum + voting.votes.filter((vote) => vote.vote !== 'O').length;
+  }, 0);
+  return acc + votesInSession;
+}, 0);
+
+const totalSpeakingTime = calcSpeakingTimeOfSessions(sessionInputs);
+
+const formattedTotalSpeakingTime = formatSpeakingTime(
+  totalSpeakingTime,
+  true,
+  false,
+);
+---
+
+<PageLayout
+  pageTitle={parliamentPeriod.name}
+  parliamentPeriod={parliamentPeriod}
+>
+  <div class="space-y-8">
+    <div class="hero">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold text-primary mb-6">Stadtrat Leipzig</h1>
+          <p>
+            Daten und Analysen von Abstimmungen und Redebeiträgen in den
+            Sitzungen der Leipziger Ratsversammlung im Zeitraum{' '}
+            {formatDate(firstSession.date)} - {formatDate(lastSession.date)}.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="stats shadow bg-base-200 stats-vertical sm:stats-horizontal">
+        <div class="stat place-items-center">
+          <div class="stat-title">Abstimmungen</div>
+          <div class="stat-value">{formatNumber(totalVotingCount)}</div>
+          <div class="stat-desc">Seit dem {formatDate(firstSession.date)}</div>
+        </div>
+
+        <div class="stat place-items-center">
+          <div class="stat-title">Abgegebene Stimmen</div>
+          <div class="stat-value">{formatNumber(totalVoteCount)}</div>
+          <div class="stat-desc">Ja / Nein / Enthaltung</div>
+        </div>
+
+        <div class="stat place-items-center">
+          <div class="stat-title">Redebeiträge</div>
+          <div class="stat-value">{formattedTotalSpeakingTime}</div>
+          <div class="stat-desc">Gesamte Redezeit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-soft alert-info mt-20">
+    <div class="space-y-2">
+      <p>
+        Diese Seite zeigt, wie die einzelnen Mitglieder der Leipziger
+        Ratsversammlung abgestimmt haben. Die Stimmen werden aus der
+        Abstimmungstafel in den{' '}
+        <a href="https://www.leipzig.de/mediathek" class="link link-primary">
+          Video-Aufzeichnungen der Stadt
+        </a>{' '}
+        gelesen und mit den Protokollen im{' '}
+        <a
+          href="https://ratsinformation.leipzig.de/allris_leipzig_public/"
+          class="link link-primary"
+        >
+          Ratsinformationssystem
+        </a>{' '}
+        abgeglichen. Die Redebeiträge stammen aus dem Verlaufsprotokoll.
+      </p>
+      <p>
+        Erfasst sind nur Sitzungen mit Aufzeichnung (die Stadt hält sie etwa ein
+        Jahr vor) und nur Abstimmungen über die elektronische Tafel.
+        Abstimmungen per Handzeichen oder geheime Wahlen fehlen, weil es für sie
+        keine Stimmen je Person gibt. Vorläufige Ergebnisse und Abstimmungen in
+        Prüfung sind gekennzeichnet. Mehr dazu unter{' '}
+        <a href={sitePath('/kontakt')} class="link link-primary">
+          Kontakt
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+</PageLayout>

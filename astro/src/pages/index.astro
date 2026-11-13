@@ -1,5 +1,5 @@
 ---
 import { DEFAULT_PARLIAMENT_PERIOD } from 'astro:env/server';
-`${DEFAULT_PARLIAMENT_PERIOD}`; // Dummy usage to avoid unused variable warning
-return Astro.rewrite(`/pp/${DEFAULT_PARLIAMENT_PERIOD}`);
+import { parliamentPeriodSegment } from '@utils/routes';
+return Astro.rewrite(`/${parliamentPeriodSegment(DEFAULT_PARLIAMENT_PERIOD)}`);
 ---
