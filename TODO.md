@@ -201,7 +201,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **Ausgabe:** `session-speeches-<datum>.json` je Sitzung mit Verlaufsprotokoll und Untertiteln, erzeugt von `leipzig-site-data`; die Registry nennt das Protokoll als `speechesSource`.
 - [x] **Rechte umgesetzt (§ 48 UrhG):** Volltexte nur auf der Sitzungsseite mit Quellenhinweis; die Personenseite listet Datum und Dauer mit Link; die API nennt die Quelle und nimmt die Texte von CC0 aus. Videolink der Reden über `sessionVideoLink` (Mediathek, ohne Zeitsprung).
 - [ ] **Stichprobe von Hand** an einer Sitzung auf der Seite (Sprecher, Text, Zeit), z. B. 28./29.10.2026, sobald das Protokoll da ist.
-- [ ] **Suche:** statisch mit Pagefind, im Build erzeugt und auf GitHub Pages ausgeliefert, kein eigener Dienst (Entscheidung 12.11.2026).
+- [x] **Suche:** statisch mit Pagefind, im Build erzeugt (`npm run build`), auf GitHub Pages ausgeliefert, im Browser durchsucht; Seite `/suche`. Indexiert sind die Inhaltsseiten (642), nicht die Namenslisten jeder Abstimmung und nicht die Weiterleitungen (13.11.2026). Die Reden stehen im Index wie auf der Sitzungsseite.
 - [x] **Verfügbarkeit:** Das Verlaufsprotokoll erscheint etwa zwei Monate nach der Sitzung. Der ALLRIS-Runner (`minutes-runner/`, täglich auf dem Server) liest es, sobald es da ist, und `leipzig-site-data` erzeugt danach die Reden.
   - [ ] ALLRIS-Runner auf dem Server einrichten (`minutes-runner/README.md`), Deploy-Key mit Schreibzugriff eintragen, Probelauf.
 

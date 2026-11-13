@@ -38,15 +38,15 @@ astro/
 
 ## Commands
 
-| Command              | Action                                      |
-| :------------------- | :------------------------------------------ |
-| `npm install`        | Install dependencies                        |
-| `npm run dev`        | Start dev server at `localhost:4321`        |
-| `npm run build`      | Build production site to `./dist/`          |
-| `npm run preview`    | Preview production build locally            |
-| `npm test`           | Run Vitest tests                            |
-| `npm run format`     | Format code with Prettier                   |
-| `npm run format:check` | Check code formatting                     |
+| Command                | Action                                                                                     |
+| :--------------------- | :----------------------------------------------------------------------------------------- |
+| `npm install`          | Install dependencies                                                                       |
+| `npm run dev`          | Start dev server at `localhost:4321`                                                       |
+| `npm run build`        | Build production site to `./dist/`, then the Pagefind search index into `./dist/pagefind/` |
+| `npm run preview`      | Preview production build locally                                                           |
+| `npm test`             | Run Vitest tests                                                                           |
+| `npm run format`       | Format code with Prettier                                                                  |
+| `npm run format:check` | Check code formatting                                                                      |
 
 ## Configuration
 
@@ -69,6 +69,13 @@ The application reads from the `../data/` directory. Its layout is described in 
 - **Alpine.js** - Lightweight JavaScript framework
 - **Tailwind CSS 4 + DaisyUI** - Styling
 - **Chart.js + D3.js** - Data visualization
+
+### Search
+
+The search page `/suche` uses [Pagefind](https://pagefind.app): `npm run build` indexes the built pages, and the
+browser searches the index; there is no search service. Pages are indexed through `data-pagefind-body` in
+`PageLayout`; the name lists of each vote are left out (`data-pagefind-ignore`), so a name finds the person's page.
+`astro dev` has no index.
 
 ## API
 

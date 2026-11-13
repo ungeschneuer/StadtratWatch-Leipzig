@@ -103,6 +103,7 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
 <PageLayout
   parliamentPeriod={parliamentPeriod}
   pageTitle="Abstimmung"
+  searchTitle={`TOP ${voting.votingSubject.agendaItem}: ${voting.votingSubject.title}`}
   breadcrumbItems={breadcrumbItems}
 >
   <MetaTags
@@ -206,7 +207,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {/* Every vote names all 71 members; in the search index they would bury the person pages under 500 votes. */}
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      data-pagefind-ignore
+    >
       {groupsSortedByVotes.map(([faction, votes]) => (
         <div class="card bg-base-100 border border-base-300 self-start">
           <div class="card-body">

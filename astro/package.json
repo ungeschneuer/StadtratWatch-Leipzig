@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "NODE_OPTIONS='--max-old-space-size=8192' astro build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --config .prettierrc src/ --write",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "pagefind": "^1.6.0",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.1",
     "vitest": "^5.0.5"
