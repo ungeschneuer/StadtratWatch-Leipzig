@@ -1,0 +1,23 @@
+[
+  {
+    "sessionId": "2025-12-17",
+    "agendaItemNumbers": ["18.4", "18.5", "18.6"],
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000893",
+    "quote": "Frau Dr. Naumov hat sich als befangen gemeldet. Sie wird weder an der Beratung noch an der Beschlussfassung teilnehmen.",
+    "sourceUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2003371"
+  },
+  {
+    "sessionId": "2026-01-28",
+    "agendaItemNumbers": ["18.2"],
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/651",
+    "quote": "Wir haben darüber hinaus eine Befangenheitserklärung von Sören Pellmann als Aufsichtsrat der Leipziger Messe.",
+    "sourceUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004593"
+  },
+  {
+    "sessionId": "2026-01-28",
+    "agendaItemNumbers": ["18.14"],
+    "personOparlId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001576",
+    "quote": "Zum nächsten Tagesordnungspunkt meldet Stadtrat Kachel Befangenheit an. Er wird weder an der Diskussion noch an der Beschlussfassung teilnehmen.",
+    "sourceUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004593"
+  }
+]

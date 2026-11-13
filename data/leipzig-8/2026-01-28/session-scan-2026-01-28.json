@@ -605,7 +605,8 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028332",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186762",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028332"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028332",
+      "itemNumber": "1"
     },
     "votes": [
       {
@@ -904,7 +905,8 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028332",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186762",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028332"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028332",
+      "itemNumber": "2"
     },
     "votes": [
       {
@@ -4489,7 +4491,8 @@
       "title": "Eltern entlasten, pädagogisches Personal stärken – Springerpools für Hort-Personal und Kita-Personal einsetzen und dauerhaft etablieren",
       "type": "Antrag",
       "authors": [],
-      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2187626"
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2187626",
+      "itemNumber": "1"
     },
     "votes": [
       {
@@ -4784,7 +4787,8 @@
       "title": "Eltern entlasten, pädagogisches Personal stärken – Springerpools für Hort-Personal und Kita-Personal einsetzen und dauerhaft etablieren",
       "type": "Antrag",
       "authors": [],
-      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2187626"
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2187626",
+      "itemNumber": "2"
     },
     "votes": [
       {
@@ -7152,6 +7156,9 @@
       }
     ],
     "presentMembers": 63,
+    "recusedPersons": [
+      "Sören Pellmann"
+    ],
     "reviewStatus": "needs-review"
   },
   {
@@ -8044,7 +8051,10 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 61
+    "presentMembers": 61,
+    "recusedPersons": [
+      "Thomas Kachel"
+    ]
   },
   {
     "votingFilename": "2026-01-28-029.png",
@@ -8343,6 +8353,9 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 61
+    "presentMembers": 61,
+    "recusedPersons": [
+      "Thomas Kachel"
+    ]
   }
 ]
