@@ -4874,7 +4874,7 @@
       },
       {
         "name": "Lucas Schopphoven",
-        "vote": "N"
+        "vote": "J"
       },
       {
         "name": "Julian Schröder",
@@ -5125,8 +5125,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-09-30-019.png",

@@ -13,9 +13,9 @@
     "verified": 48,
     "corrected": 0,
     "provisional": 0,
-    "reviewed": 0,
+    "reviewed": 1,
     "unresolved": 0,
-    "needs-review": 4,
+    "needs-review": 3,
     "skipped": 0,
     "discarded": 2
   },
@@ -12512,8 +12512,10 @@
           "row": 9,
           "boardName": "Schopphoven, Lucas",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
-          "vote": "N",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "N",
+          "boardAttendance": "present"
         },
         {
           "column": 0,
@@ -13075,7 +13077,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 62,
         "N": 0,
@@ -13097,7 +13099,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Laut Video verdrückt.",
+          "source": "Video 1:44:34",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:45:34.789Z"
+        }
+      ]
     },
     {
       "index": 18,

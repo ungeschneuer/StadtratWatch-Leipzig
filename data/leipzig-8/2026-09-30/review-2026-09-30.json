@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-09-30",
-  "generatedAt": "2026-11-13T17:18:51.481Z",
+  "generatedAt": "2026-11-13T18:47:53.836Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_30_September_2026_-_02-06-35.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-30092026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 4,
-    "open": 4,
-    "reviewed": 0
+    "open": 3,
+    "reviewed": 1
   },
   "cases": [
     {
       "votingIndex": 17,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 6274.7,
       "timecode": "1:44:34",
@@ -241,7 +241,7 @@
           "row": 9,
           "boardName": "Schopphoven, Lucas",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000744",
-          "vote": "N",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -774,7 +774,14 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Laut Video verdrückt.",
+          "source": "Video 1:44:34",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:45:34.789Z"
+        }
+      ]
     },
     {
       "votingIndex": 18,
