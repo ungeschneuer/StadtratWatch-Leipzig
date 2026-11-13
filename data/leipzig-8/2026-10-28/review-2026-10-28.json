@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-10-28",
-  "generatedAt": "2026-11-13T17:20:08.893Z",
+  "generatedAt": "2026-11-13T19:05:55.005Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_28_Oktober_2026_-_02-06-08.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28102026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 2,
-    "open": 2,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 2
   },
   "cases": [
     {
       "votingIndex": 10,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 17638,
       "timecode": "4:53:58",
@@ -798,11 +798,18 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Nicht klar, wer die Stimme gegeben hat.",
+          "source": "Video 4:53:58",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T19:02:39.430Z"
+        }
+      ]
     },
     {
       "votingIndex": 18,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 22267.6,
       "timecode": "6:11:07",
@@ -1566,7 +1573,14 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Unklar, ob Enthaltungen nachgereicht.",
+          "source": "Video 6:11:07",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T19:03:40.288Z"
+        }
+      ]
     }
   ]
 }
