@@ -1,0 +1,18 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 5586.9,
+      "agendaItemNumber": "19.13"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001508",
+        "vote": "J"
+      }
+    ],
+    "reason": "Mündlich benannt.",
+    "source": "Video 1:33:06",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T19:00:58.522Z"
+  }
+]
