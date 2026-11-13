@@ -1,0 +1,28 @@
+---
+import type { VoteCode } from '@models/Session';
+
+// A vote is never shown by colour alone: the badge names it, and screen readers hear the full word.
+type Props = { vote: VoteCode };
+
+const VOTES: Record<
+  VoteCode,
+  { short: string; label: string; className: string }
+> = {
+  J: { short: 'Ja', label: 'Ja', className: 'badge-success' },
+  N: { short: 'Nein', label: 'Nein', className: 'badge-error' },
+  E: { short: 'Enth.', label: 'Enthaltung', className: 'badge-warning' },
+  O: {
+    short: '–',
+    label: 'keine Stimme',
+    className: 'badge-ghost text-base-content/60',
+  },
+};
+
+const { vote } = Astro.props;
+const { short, label, className } = VOTES[vote];
+---
+
+<span class:list={['badge badge-soft badge-sm min-w-12 shrink-0', className]}>
+  <span aria-hidden="true">{short}</span>
+  <span class="sr-only">{label}</span>
+</span>

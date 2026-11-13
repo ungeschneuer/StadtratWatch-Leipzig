@@ -119,24 +119,19 @@ const {
   <div slot="sub-page-header">
     <div class="flex flex-row flex-wrap text-base-content/60 text-sm gap-x-4">
       <div>
-        Fraktion
+        Fraktion:{' '}
         <a
           href={siteRoutes(parliamentPeriodId).faction(person.factionId)}
-          class="link link-primary"
+          class="link link-hover link-primary"
         >
           {faction.name}
         </a>
       </div>
       <div>
-        <span
-          class="tooltip tooltip-bottom underline decoration-dotted"
-          data-tip="Liste der Stadtratswahl 2024, spätere Wechsel nur mit Quelle"
-        >
-          Partei
-        </span>
+        Partei (Wahlliste 2024):{' '}
         <a
           href={siteRoutes(parliamentPeriodId).party(person.partyId)}
-          class="link link-primary"
+          class="link link-hover link-primary"
         >
           {party.name}
         </a>

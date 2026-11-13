@@ -8,6 +8,7 @@ import {
 } from '../../../../_helpers';
 import MetaTags from '@components/MetaTags.astro';
 import VotingReviewNotice from '@components/VotingReviewNotice.astro';
+import VoteBadge from '@components/VoteBadge.astro';
 import VotingQuotationImage from '@components/VotingQuotationImage.astro';
 import { quotationImageUrl } from '@utils/quotation-image';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
@@ -267,31 +268,12 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
             <div role="list" class="border-base-300">
               {votes.map((vote) => (
                 <a
+                  role="listitem"
                   href={siteRoutes(parliamentPeriod.id).person(vote.personId)}
-                  class="flex flex-row justify-between items-center py-2 space-x-1"
+                  class="hover:bg-base-200 -mx-2 flex flex-row items-center justify-between gap-2 rounded-field px-2 py-1.5"
                 >
-                  <div class="truncate text-sm">{vote.personName}</div>
-                  {vote.vote === 'J' && (
-                    <div
-                      aria-label="status"
-                      class="status status-lg status-success"
-                    />
-                  )}
-                  {vote.vote === 'N' && (
-                    <div
-                      aria-label="status"
-                      class="status status-lg status-error"
-                    />
-                  )}
-                  {vote.vote === 'E' && (
-                    <div
-                      aria-label="status"
-                      class="status status-lg status-warning"
-                    />
-                  )}
-                  {vote.vote === 'O' && (
-                    <div aria-label="status" class="status status-lg" />
-                  )}
+                  <span class="truncate text-sm">{vote.personName}</span>
+                  <VoteBadge vote={vote.vote} />
                 </a>
               ))}
             </div>
