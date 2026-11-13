@@ -1,0 +1,13 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 1067.7,
+      "agendaItemNumber": "9.1"
+    },
+    "approve": true,
+    "reason": "Fehler im Verlausprotokoll",
+    "source": "Video 0:17:47",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:49:10.343Z"
+  }
+]
