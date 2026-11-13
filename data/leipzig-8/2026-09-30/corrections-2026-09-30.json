@@ -14,5 +14,16 @@
     "source": "Video 1:44:34",
     "reviewer": "ungeschneuer",
     "reviewedAt": "2026-11-13T18:45:34.789Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 6317.8,
+      "agendaItemNumber": "12.6.2"
+    },
+    "unresolved": true,
+    "reason": "Ja und Nein Stimme unklar aus Protokoll",
+    "source": "Video 1:45:17",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T18:48:11.557Z"
   }
 ]
