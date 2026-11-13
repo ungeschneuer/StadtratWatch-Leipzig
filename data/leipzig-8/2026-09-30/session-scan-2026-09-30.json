@@ -5429,7 +5429,14 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "unresolved": {
+      "reason": "Ja und Nein Stimme unklar aus Protokoll",
+      "officialCounts": {
+        "J": 52,
+        "N": 10,
+        "E": 0
+      }
+    }
   },
   {
     "votingFilename": "2026-09-30-020.png",

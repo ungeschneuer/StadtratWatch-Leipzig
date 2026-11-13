@@ -14,8 +14,8 @@
     "corrected": 0,
     "provisional": 0,
     "reviewed": 1,
-    "unresolved": 0,
-    "needs-review": 3,
+    "unresolved": 1,
+    "needs-review": 2,
     "skipped": 0,
     "discarded": 2
   },
@@ -13797,7 +13797,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "unresolved",
       "official": {
         "J": 52,
         "N": 10,
@@ -13819,7 +13819,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Ja und Nein Stimme unklar aus Protokoll",
+          "source": "Video 1:45:17",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T18:48:11.557Z"
+        }
+      ]
     },
     {
       "index": 19,
