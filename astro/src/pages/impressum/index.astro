@@ -5,85 +5,90 @@ import { CONTACT_EMAIL, UPSTREAM_PROJECT } from '@utils/site-config';
 ---
 
 <Layout>
-  <h1 class="mb-4 text-2xl font-semibold">Impressum</h1>
+  {/* Running text reads best at about 65 characters per line, even on wide screens. */}
+  <div class="max-w-prose">
+    <h1 class="mb-4 text-2xl font-semibold">Impressum</h1>
 
-  <h2 class="mt-8 mb-2 text-lg font-semibold">Kontaktadresse</h2>
-  <p class="mt-3">
-    Marcel Schneuer
-    <br />
-    c/o Highslammer e.V.
-    <br />
-    Spielbergtor 21
-    <br />
-    99096 Erfurt
-  </p>
-  <p class="mt-3">
-    E-Mail:{' '}
-    <a href={`mailto:${CONTACT_EMAIL}`} class="link link-primary">
-      {CONTACT_EMAIL}
-    </a>
-  </p>
+    <h2 class="mt-8 mb-2 text-lg font-semibold">Kontaktadresse</h2>
+    <p class="mt-3">
+      Marcel Schneuer
+      <br />
+      c/o Highslammer e.V.
+      <br />
+      Spielbergtor 21
+      <br />
+      99096 Erfurt
+    </p>
+    <p class="mt-3">
+      E-Mail:{' '}
+      <a href={`mailto:${CONTACT_EMAIL}`} class="link link-primary">
+        {CONTACT_EMAIL}
+      </a>
+    </p>
 
-  <h2 class="mt-8 mb-2 text-lg font-semibold">Haftungsausschluss</h2>
-  <p class="mt-3">
-    Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen
-    Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit
-    der Informationen. Die Abstimmungsdaten werden automatisch aus den
-    Video-Aufzeichnungen der Ratsversammlung gelesen; verbindlich sind allein
-    die Protokolle der Stadt Leipzig.
-  </p>
-  <p class="mt-3">
-    Haftungsansprüche gegen den Autor wegen Schäden materieller oder
-    immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung
-    der veröffentlichten Informationen, durch Missbrauch der Verbindung oder
-    durch technische Störungen entstanden sind, werden ausgeschlossen.
-  </p>
-  <p class="mt-3">
-    Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor,
-    Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu
-    verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder
-    endgültig einzustellen.
-  </p>
+    <h2 class="mt-8 mb-2 text-lg font-semibold">Haftungsausschluss</h2>
+    <p class="mt-3">
+      Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen
+      Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit
+      der Informationen. Die Abstimmungsdaten werden automatisch aus den
+      Video-Aufzeichnungen der Ratsversammlung gelesen; verbindlich sind allein
+      die Protokolle der Stadt Leipzig.
+    </p>
+    <p class="mt-3">
+      Haftungsansprüche gegen den Autor wegen Schäden materieller oder
+      immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw.
+      Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der
+      Verbindung oder durch technische Störungen entstanden sind, werden
+      ausgeschlossen.
+    </p>
+    <p class="mt-3">
+      Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich
+      vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung
+      zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise
+      oder endgültig einzustellen.
+    </p>
 
-  <h2 class="mt-8 mb-2 text-lg font-semibold">Haftung für Links</h2>
-  <p class="mt-3">
-    Verweise und Links auf Webseiten Dritter liegen außerhalb unseres
-    Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten
-    abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene
-    Gefahr des Nutzers oder der Nutzerin.
-  </p>
+    <h2 class="mt-8 mb-2 text-lg font-semibold">Haftung für Links</h2>
+    <p class="mt-3">
+      Verweise und Links auf Webseiten Dritter liegen außerhalb unseres
+      Verantwortungsbereichs. Es wird jegliche Verantwortung für solche
+      Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten
+      erfolgen auf eigene Gefahr des Nutzers oder der Nutzerin.
+    </p>
 
-  <h2 class="mt-8 mb-2 text-lg font-semibold">Lizenzen und Quellen</h2>
-  <p class="mt-3">
-    Die Software steht unter der MIT-Lizenz. Sie ist ein Fork von{' '}
-    <a href={UPSTREAM_PROJECT.sourceRepositoryUrl} class="link link-primary">
-      {UPSTREAM_PROJECT.name}
-    </a>{' '}
-    ({UPSTREAM_PROJECT.maintainers}); dessen Urheberrechtsvermerk bleibt
-    erhalten.
-  </p>
-  <p class="mt-3">
-    Sitzungen, Mitglieder, Fraktionen und Vorlagen stammen aus der
-    OParl-Schnittstelle der Stadt Leipzig (© Stadt Leipzig,{' '}
-    <a
-      href="https://creativecommons.org/licenses/by/4.0/"
-      class="link link-primary"
-    >
-      CC BY 4.0
-    </a>
-    ), die Wahllisten aus dem Open-Data-Portal Leipzig (© Stadt Leipzig,{' '}
-    <a href="https://www.govdata.de/dl-de/by-2-0" class="link link-primary">
-      Datenlizenz Deutschland – Namensnennung 2.0
-    </a>
-    ). Die Texte der Redebeiträge sind dem Verlaufsprotokoll der Stadt Leipzig
-    entnommen (§ 48 UrhG); die Quelle steht an jeder Sitzung. Rechte an
-    sonstigen Inhalten Dritter liegen bei den jeweils genannten Rechteinhabern.
-  </p>
-  <p class="mt-3">
-    Weitere Informationen zum Datenschutz finden Sie in den{' '}
-    <a href={sitePath('/datenschutz')} class="link link-primary">
-      Datenschutzhinweisen
-    </a>
-    .
-  </p>
+    <h2 class="mt-8 mb-2 text-lg font-semibold">Lizenzen und Quellen</h2>
+    <p class="mt-3">
+      Die Software steht unter der MIT-Lizenz. Sie ist ein Fork von{' '}
+      <a href={UPSTREAM_PROJECT.sourceRepositoryUrl} class="link link-primary">
+        {UPSTREAM_PROJECT.name}
+      </a>{' '}
+      ({UPSTREAM_PROJECT.maintainers}); dessen Urheberrechtsvermerk bleibt
+      erhalten.
+    </p>
+    <p class="mt-3">
+      Sitzungen, Mitglieder, Fraktionen und Vorlagen stammen aus der
+      OParl-Schnittstelle der Stadt Leipzig (© Stadt Leipzig,{' '}
+      <a
+        href="https://creativecommons.org/licenses/by/4.0/"
+        class="link link-primary"
+      >
+        CC BY 4.0
+      </a>
+      ), die Wahllisten aus dem Open-Data-Portal Leipzig (© Stadt Leipzig,{' '}
+      <a href="https://www.govdata.de/dl-de/by-2-0" class="link link-primary">
+        Datenlizenz Deutschland – Namensnennung 2.0
+      </a>
+      ). Die Texte der Redebeiträge sind dem Verlaufsprotokoll der Stadt Leipzig
+      entnommen (§ 48 UrhG); die Quelle steht an jeder Sitzung. Rechte an
+      sonstigen Inhalten Dritter liegen bei den jeweils genannten
+      Rechteinhabern.
+    </p>
+    <p class="mt-3">
+      Weitere Informationen zum Datenschutz finden Sie in den{' '}
+      <a href={sitePath('/datenschutz')} class="link link-primary">
+        Datenschutzhinweisen
+      </a>
+      .
+    </p>
+  </div>
 </Layout>

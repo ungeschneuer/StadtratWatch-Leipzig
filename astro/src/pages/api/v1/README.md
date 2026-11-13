@@ -1,3 +1,7 @@
+---
+layout: ../../../layouts/BlogPostLayout.astro
+---
+
 # StadtratWatch Leipzig API v1 Dokumentation
 
 Die API v1 bietet Zugang zu strukturierten Daten über die Sitzungen der Leipziger Ratsversammlung, Abstimmungen und Redebeiträge. Alle Endpunkte geben statisches JSON zurück. Die selbst erhobenen Stimmen stehen unter CC0 1.0; Angaben aus OParl stammen von der Stadt Leipzig (CC BY 4.0), die Texte der Redebeiträge aus dem Verlaufsprotokoll (siehe `speeches_source`).

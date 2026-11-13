@@ -56,7 +56,10 @@ const breadcrumbItems = [
     href: siteRoutes(parliamentPeriodId).session(sessionId),
   },
   {
-    name: `${voting.votingSubject.type || ''} ${voting.votingSubject.motionId}`,
+    name:
+      [voting.votingSubject.type, voting.votingSubject.motionId]
+        .filter(Boolean)
+        .join(' ') || `TOP ${voting.votingSubject.agendaItem}`,
     href: null,
   },
 ];
@@ -130,7 +133,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
 
   {videoLink && (
     <div slot="sub-page-header">
-      <a href={videoLink.url} target="_blank" class="link link-primary text-xs">
+      <a
+        href={videoLink.url}
+        target="_blank"
+        class="link link-primary inline-flex items-center gap-1 text-xs"
+      >
         <span class:list={['iconify', videoLink.icon]} />
         {videoLink.text}
       </a>
@@ -154,17 +161,19 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
         </div>
       </div>
     )}
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <div class="card bg-base-100 border border-base-300 md:col-span-2 lg:col-span-3">
-        <div class="card-body">
-          <div class="text-base-content/60 text-sm space-x-1">
-            <span>
-              TOP {voting.votingSubject.agendaItem}
+    {/* Column counts follow the space next to the sidebar, not the window, so names and the result never get squeezed. */}
+    <div class="@container">
+      <div class="grid grid-cols-1 gap-4 @2xl:grid-cols-3 @6xl:grid-cols-4">
+        <div class="card bg-base-100 border border-base-300 @2xl:col-span-2 @6xl:col-span-3">
+          <div class="card-body">
+            <div class="text-base-content/60 text-sm">
+              {`TOP ${voting.votingSubject.agendaItem}`}
               {voting.votingSubject.itemNumber &&
                 `, Punkt ${voting.votingSubject.itemNumber}`}
-            </span>
-            <span>
-              {voting.votingSubject.type}{' '}
+              {(voting.votingSubject.type || voting.votingSubject.motionId) &&
+                ' · '}
+              {voting.votingSubject.type &&
+                `${voting.votingSubject.type}${voting.votingSubject.motionId ? ' ' : ''}`}
               {voting.votingSubject.paperUrl ? (
                 <a
                   href={voting.votingSubject.paperUrl}
@@ -172,114 +181,113 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
                   class="link link-primary"
                   title="Drucksache im Ratsinformationssystem der Stadt Leipzig"
                 >
-                  Drucksache {voting.votingSubject.motionId}
+                  {`Drucksache ${voting.votingSubject.motionId}`}
                 </a>
               ) : (
                 voting.votingSubject.motionId
               )}
-            </span>
-          </div>
-          <p class="mt-1 mb-3">{voting.votingSubject.title}</p>
-          <div class="flex flex-wrap gap-1">
-            {voting.votingSubject.authors.map((author) => (
-              <span class="badge badge-neutral badge-sm">{author}</span>
-            ))}
-          </div>
-          {voting.votingSubject.itemNumber && (
-            <p class="text-sm text-base-content/70 mt-2">
-              Über die Punkte der Vorlage wurde einzeln abgestimmt; diese
-              Abstimmung betrifft Punkt {voting.votingSubject.itemNumber}.
-            </p>
-          )}
-          {mayorDecided && (
-            <p class="text-sm text-base-content/70 mt-2">
-              Die Stimme des Oberbürgermeisters hat entschieden: Ohne sie wäre
-              das Ergebnis umgekehrt.
-            </p>
-          )}
-          {recusedPersons.length > 0 && (
-            <p class="text-sm text-base-content/70 mt-2">
-              Wegen Befangenheit (§ 20 SächsGemO) nicht beteiligt:{' '}
-              {recusedPersons.join(', ')}.
-            </p>
-          )}
-        </div>
-      </div>
-
-      <div class="card bg-base-100 border border-base-300">
-        <div class="card-body">
-          <div class="flex flex-col">
-            <div class="flex flex-row items-center gap-x-2">
-              <progress
-                class="progress progress-success"
-                value={votedFor}
-                max={totalVotes}
-              ></progress>
-              <span class="w-8 text-right text-sm">{votedFor}</span>
             </div>
-            <div class="flex flex-row items-center gap-x-2">
-              <progress
-                class="progress progress-error"
-                value={votedAgainst}
-                max={totalVotes}
-              ></progress>
-              <span class="w-8 text-right text-sm">{votedAgainst}</span>
+            <p class="mt-1 mb-3">{voting.votingSubject.title}</p>
+            <div class="flex flex-wrap gap-1">
+              {voting.votingSubject.authors.map((author) => (
+                <span class="badge badge-neutral badge-sm">{author}</span>
+              ))}
             </div>
-            <div class="flex flex-row items-center gap-x-2">
-              <progress
-                class="progress progress-warning"
-                value={abstentions}
-                max={totalVotes}
-              ></progress>
-              <span class="w-8 text-right text-sm">{abstentions}</span>
-            </div>
-            {accepted && (
-              <div class="badge badge-success badge-lg w-full mt-3">
-                <span class="iconify lucide--check" />
-                Angenommen
-              </div>
-            )}
-            {!accepted && (
-              <div class="badge badge-error badge-lg w-full mt-3">
-                <span class="iconify lucide--x" />
-                Abgelehnt
-              </div>
-            )}
-            {qualifiedMajorityRequirementName && (
-              <p class="text-xs text-base-content/60 text-center mt-2">
-                {qualifiedMajorityRequirementName}
+            {voting.votingSubject.itemNumber && (
+              <p class="text-sm text-base-content/70 mt-2">
+                Über die Punkte der Vorlage wurde einzeln abgestimmt; diese
+                Abstimmung betrifft Punkt {voting.votingSubject.itemNumber}.
               </p>
             )}
+            {mayorDecided && (
+              <p class="text-sm text-base-content/70 mt-2">
+                Die Stimme des Oberbürgermeisters hat entschieden: Ohne sie wäre
+                das Ergebnis umgekehrt.
+              </p>
+            )}
+            {recusedPersons.length > 0 && (
+              <p class="text-sm text-base-content/70 mt-2">
+                Wegen Befangenheit (§ 20 SächsGemO) nicht beteiligt:{' '}
+                {recusedPersons.join(', ')}.
+              </p>
+            )}
+          </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-300">
+          <div class="card-body">
+            <div class="flex flex-col">
+              <div class="flex flex-row items-center gap-x-2">
+                <progress
+                  class="progress progress-success"
+                  value={votedFor}
+                  max={totalVotes}
+                ></progress>
+                <span class="w-8 text-right text-sm">{votedFor}</span>
+              </div>
+              <div class="flex flex-row items-center gap-x-2">
+                <progress
+                  class="progress progress-error"
+                  value={votedAgainst}
+                  max={totalVotes}
+                ></progress>
+                <span class="w-8 text-right text-sm">{votedAgainst}</span>
+              </div>
+              <div class="flex flex-row items-center gap-x-2">
+                <progress
+                  class="progress progress-warning"
+                  value={abstentions}
+                  max={totalVotes}
+                ></progress>
+                <span class="w-8 text-right text-sm">{abstentions}</span>
+              </div>
+              {accepted && (
+                <div class="badge badge-success badge-lg w-full mt-3">
+                  <span class="iconify lucide--check" />
+                  Angenommen
+                </div>
+              )}
+              {!accepted && (
+                <div class="badge badge-error badge-lg w-full mt-3">
+                  <span class="iconify lucide--x" />
+                  Abgelehnt
+                </div>
+              )}
+              {qualifiedMajorityRequirementName && (
+                <p class="text-xs text-base-content/60 text-center mt-2">
+                  {qualifiedMajorityRequirementName}
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     {/* Every vote names all 71 members; in the search index they would bury the person pages under 500 votes. */}
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-      data-pagefind-ignore
-    >
-      {groupsSortedByVotes.map(([faction, votes]) => (
-        <div class="card bg-base-100 border border-base-300 self-start">
-          <div class="card-body">
-            <h2 class="card-title mb-3">{faction}</h2>
+    <div class="@container" data-pagefind-ignore>
+      <div class="grid grid-cols-1 gap-4 @lg:grid-cols-2 @3xl:grid-cols-3 @6xl:grid-cols-4">
+        {groupsSortedByVotes.map(([faction, votes]) => (
+          <div class="card bg-base-100 border border-base-300 self-start">
+            <div class="card-body">
+              <h2 class="card-title mb-3">{faction}</h2>
 
-            <div role="list" class="border-base-300">
-              {votes.map((vote) => (
-                <a
-                  role="listitem"
-                  href={siteRoutes(parliamentPeriod.id).person(vote.personId)}
-                  class="hover:bg-base-200 -mx-2 flex flex-row items-center justify-between gap-2 rounded-field px-2 py-1.5"
-                >
-                  <span class="truncate text-sm">{vote.personName}</span>
-                  <VoteBadge vote={vote.vote} />
-                </a>
-              ))}
+              <div role="list" class="border-base-300">
+                {votes.map((vote) => (
+                  <a
+                    role="listitem"
+                    href={siteRoutes(parliamentPeriod.id).person(vote.personId)}
+                    class="hover:bg-base-200 -mx-2 flex flex-row items-center justify-between gap-2 rounded-field px-2 py-1.5"
+                  >
+                    <span class="min-w-0 text-sm">{vote.personName}</span>
+                    <VoteBadge vote={vote.vote} />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
 
     {quotationImage && (

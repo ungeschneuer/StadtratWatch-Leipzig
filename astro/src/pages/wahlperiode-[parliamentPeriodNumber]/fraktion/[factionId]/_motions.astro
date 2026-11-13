@@ -197,19 +197,19 @@ const motions = Array.from(motionsMap)
             class="hidden @xl:table-cell"
             x-text="motion.votingDateFormatted"
           ></td>
-          <td class="flex flex-col hidden @2xl:table-cell">
-            <span x-text="motion.type"></span>
+          <td class="hidden @2xl:table-cell">
+            <span class="block" x-text="motion.type"></span>
             <template x-if="motion.paperUrl">
               <a
                 :href="motion.paperUrl"
                 target="_blank"
-                class="link link-hover link-primary wrap-anywhere"
+                class="link link-hover link-primary block wrap-anywhere"
                 title="Drucksache im Ratsinformationssystem der Stadt Leipzig"
                 x-text="`Drucksache ${motion.motionId}`"
               ></a>
             </template>
             <template x-if="!motion.paperUrl">
-              <span x-text="motion.motionId"></span>
+              <span class="block" x-text="motion.motionId"></span>
             </template>
           </td>
           <td class="hyphens-auto">
