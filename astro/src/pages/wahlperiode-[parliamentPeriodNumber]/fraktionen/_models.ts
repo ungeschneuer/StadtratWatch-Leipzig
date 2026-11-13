@@ -20,4 +20,5 @@ export type ChartDataPoint = {
   value: number;
   factionId: string;
   label: string;
+  valueLabel: string;
 };

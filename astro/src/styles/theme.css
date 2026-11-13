@@ -35,6 +35,9 @@
   --color-error: #c52b2b;
   --color-error-content: #ffffff;
 
+  /* Data marks of the charts: validated for the light chart surface (lightness band, 3:1 against base-100). */
+  --chart-series: #1f5fbf;
+
   --radius-selector: 0.375rem;
   --radius-field: 0.375rem;
   --radius-box: 0.625rem;
@@ -72,6 +75,9 @@
   --color-warning-content: #241500;
   --color-error: #ff8a80;
   --color-error-content: #2b0705;
+
+  /* The primary blue is tuned for text on dark; marks need a darker step to stay in the dark lightness band. */
+  --chart-series: #4d8fe8;
 
   --radius-selector: 0.375rem;
   --radius-field: 0.375rem;

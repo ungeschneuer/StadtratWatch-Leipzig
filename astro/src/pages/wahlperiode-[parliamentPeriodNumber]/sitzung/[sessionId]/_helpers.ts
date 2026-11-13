@@ -7,6 +7,7 @@ export type SpeakingTimesChartDataPoint = {
   value: number;
   speakerId: string;
   label: string;
+  valueLabel: string;
 };
 
 export function getSpeakingTimesChartData(
@@ -50,21 +51,10 @@ export function getSpeakingTimesChartData(
       return {
         value: speech.totalDurationSeconds,
         speakerId: speech.person.id,
-        label: generateSpeakingTimesBarLabel(
-          speech.person.name,
-          faction?.name || null,
-          speech.totalDurationSeconds,
-        ),
+        label: faction
+          ? `${speech.person.name} (${faction.name})`
+          : speech.person.name,
+        valueLabel: formatSpeakingTime(speech.totalDurationSeconds, false),
       };
     });
-}
-
-function generateSpeakingTimesBarLabel(
-  speaker: string,
-  faction: string | null,
-  totalDurationSeconds: number,
-): string {
-  return faction
-    ? `${speaker} (${faction}) ${formatSpeakingTime(totalDurationSeconds, false)}`
-    : `${speaker} ${formatSpeakingTime(totalDurationSeconds, false)}`;
 }

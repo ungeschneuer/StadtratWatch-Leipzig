@@ -95,7 +95,8 @@ const votingSuccessRateChartData: ChartDataPoint[] = factions
   .map((faction) => ({
     value: faction.votingSuccessRate || 0,
     factionId: faction.id,
-    label: `${faction.name} ${faction.votingSuccessRateDisplay}`,
+    label: faction.name,
+    valueLabel: faction.votingSuccessRateDisplay,
   }))
   .toSorted((a, b) => b.value - a.value);
 
@@ -103,7 +104,8 @@ const uniformityScoreChartData: ChartDataPoint[] = factions
   .map((faction) => ({
     value: faction.uniformityScore || 0,
     factionId: faction.id,
-    label: `${faction.name} ${faction.uniformityScoreDisplay}`,
+    label: faction.name,
+    valueLabel: faction.uniformityScoreDisplay,
   }))
   .toSorted((a, b) => b.value - a.value);
 
@@ -111,7 +113,8 @@ const participationRateChartData: ChartDataPoint[] = factions
   .map((faction) => ({
     value: faction.participationRate || 0,
     factionId: faction.id,
-    label: `${faction.name} ${faction.participationRateDisplay}`,
+    label: faction.name,
+    valueLabel: faction.participationRateDisplay,
   }))
   .toSorted((a, b) => b.value - a.value);
 
@@ -119,7 +122,8 @@ const abstentionRateChartData: ChartDataPoint[] = factions
   .map((faction) => ({
     value: faction.abstentionRate || 0,
     factionId: faction.id,
-    label: `${faction.name} ${faction.abstentionRateDisplay}`,
+    label: faction.name,
+    valueLabel: faction.abstentionRateDisplay,
   }))
   .toSorted((a, b) => b.value - a.value);
 
@@ -127,7 +131,8 @@ const motionsSuccessRateChartData: ChartDataPoint[] = factions
   .map((faction) => ({
     value: faction.motionsSuccessRate || 0,
     factionId: faction.id,
-    label: `${faction.name} ${faction.motionsSuccessRateDisplay}`,
+    label: faction.name,
+    valueLabel: faction.motionsSuccessRateDisplay,
   }))
   .toSorted((a, b) => b.value - a.value);
 
@@ -135,7 +140,8 @@ const speakingTimesChartData: ChartDataPoint[] = factions
   .map((faction) => ({
     value: faction.speakingTime,
     factionId: faction.id,
-    label: `${faction.name} ${faction.speakingTimeDisplay}`,
+    label: faction.name,
+    valueLabel: faction.speakingTimeDisplay,
   }))
   .toSorted((a, b) => b.value - a.value);
 
@@ -403,7 +409,7 @@ const barHeight = factions.length * 40;
   import { siteRoutes } from '@utils/routes';
   import Alpine from 'alpinejs';
   import { type FactionListItem } from './_models';
-  import Chart from 'chart.js/auto';
+  import { rankingBarChart } from '@utils/charts';
   import { type ChartDataPoint } from './_models';
 
   document.addEventListener('alpine:init', () => {
@@ -457,43 +463,24 @@ const barHeight = factions.length * 40;
   createChart(
     'voting-success-rate-chart-container',
     'voting-success-rate-chart',
-    'Abstimmungserfolg',
   );
 
-  createChart(
-    'uniformity-score-chart-container',
-    'uniformity-score-chart',
-    'Geschlossenheit',
-  );
+  createChart('uniformity-score-chart-container', 'uniformity-score-chart');
 
-  createChart(
-    'participation-rate-chart-container',
-    'participation-rate-chart',
-    'Abstimmungsteilnahme',
-  );
+  createChart('participation-rate-chart-container', 'participation-rate-chart');
 
-  createChart(
-    'abstention-rate-chart-container',
-    'abstention-rate-chart',
-    'Stimmenthaltungen',
-  );
+  createChart('abstention-rate-chart-container', 'abstention-rate-chart');
 
   createChart(
     'motions-success-rate-chart-container',
     'motions-success-rate-chart',
-    'Erfolgreiche Anträge',
   );
 
-  createChart(
-    'speaking-time-chart-container',
-    'speaking-times-chart',
-    'Redezeiten',
-  );
+  createChart('speaking-time-chart-container', 'speaking-times-chart');
 
   function createChart(
     chartContainerElementId: string,
     chartElementId: string,
-    label: string,
   ) {
     const chartContainerDiv = document.getElementById(
       chartContainerElementId,
@@ -501,94 +488,16 @@ const barHeight = factions.length * 40;
     const data = JSON.parse(
       chartContainerDiv.dataset.chartData || '[]',
     ) as ChartDataPoint[];
-    const parliamentPeriodId = chartContainerDiv.dataset.parliamentPeriodId;
-
-    const chart = new Chart(
+    const parliamentPeriodId = chartContainerDiv.dataset
+      .parliamentPeriodId as string;
+    rankingBarChart(
       document.getElementById(chartElementId) as HTMLCanvasElement,
-      {
-        type: 'bar',
-        data: {
-          datasets: [
-            {
-              label,
-              data,
-              parsing: {
-                xAxisKey: 'value',
-                yAxisKey: 'label',
-              },
-              borderWidth: 1,
-              backgroundColor: ['#167bff30'],
-              borderColor: ['#167bff'],
-              borderRadius: 5,
-              animation: false,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          indexAxis: 'y',
-          scales: {
-            x: {
-              display: false,
-              ticks: {
-                display: false,
-              },
-            },
-            y: {
-              beginAtZero: true,
-              grid: {
-                display: false,
-                drawTicks: false,
-              },
-              ticks: {
-                mirror: true,
-                z: 1,
-                color: '#167bff',
-              },
-            },
-          },
-          plugins: { legend: { display: false } },
-        },
+      data,
+      (point) => {
+        window.location.href = siteRoutes(parliamentPeriodId).faction(
+          point.factionId,
+        );
       },
     );
-
-    chart.ctx.canvas.onmousemove = (evt) => {
-      const points = chart.getElementsAtEventForMode(
-        evt,
-        'y',
-        { intersect: false },
-        true,
-      );
-      if (points.length) {
-        const firstPoint = points[0];
-        const factionId =
-          chart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]
-            .factionId;
-        chart.ctx.canvas.style.cursor = factionId ? 'pointer' : 'default';
-      } else {
-        chart.ctx.canvas.style.cursor = 'default';
-      }
-    };
-
-    chart.ctx.canvas.onclick = (evt) => {
-      const points = chart.getElementsAtEventForMode(
-        evt,
-        'y',
-        { intersect: false },
-        true,
-      );
-      if (points.length) {
-        const firstPoint = points[0];
-        const factionId =
-          chart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]
-            .factionId;
-        if (factionId) {
-          window.location.href = siteRoutes(
-            parliamentPeriodId as string,
-          ).faction(factionId);
-        }
-      }
-    };
   }
 </script>

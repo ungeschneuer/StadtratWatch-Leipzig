@@ -50,7 +50,7 @@ const chartHeight = chartData.length * 40;
 
 <script>
   import { siteRoutes } from '@utils/routes';
-  import Chart from 'chart.js/auto';
+  import { rankingBarChart } from '@utils/charts';
   import { type SpeakingTimesChartDataPoint } from './_helpers';
 
   const speakingTimesContainerDiv = document.querySelector(
@@ -63,90 +63,14 @@ const chartHeight = chartData.length * 40;
       speakingTimesContainerDiv.dataset.speakingTimes || '[]',
     ) as SpeakingTimesChartDataPoint[];
 
-    const ctx = document.getElementById(
-      'speaking-times-chart',
-    ) as HTMLCanvasElement;
-    const chart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        datasets: [
-          {
-            label: 'Redezeiten',
-            data: speakingTimes,
-            parsing: {
-              xAxisKey: 'value',
-              yAxisKey: 'label',
-            },
-            borderWidth: 1,
-            backgroundColor: ['#167bff30'],
-            borderColor: ['#167bff'],
-            borderRadius: 5,
-            animation: false,
-          },
-        ],
+    rankingBarChart(
+      document.getElementById('speaking-times-chart') as HTMLCanvasElement,
+      speakingTimes,
+      (point) => {
+        window.location.href = siteRoutes(parliamentPeriodId as string).person(
+          point.speakerId,
+        );
       },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        indexAxis: 'y',
-        scales: {
-          x: {
-            display: false,
-            ticks: {
-              display: false,
-            },
-          },
-          y: {
-            beginAtZero: true,
-            grid: {
-              display: false,
-              drawTicks: false,
-            },
-            ticks: {
-              mirror: true,
-              z: 1,
-              color: '#167bff',
-            },
-          },
-        },
-        plugins: { legend: { display: false } },
-      },
-    });
-    chart.ctx.canvas.onmousemove = (evt) => {
-      const points = chart.getElementsAtEventForMode(
-        evt,
-        'y',
-        { intersect: false },
-        true,
-      );
-      if (points.length) {
-        const firstPoint = points[0];
-        const speakerId =
-          chart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]
-            .speakerId;
-        chart.ctx.canvas.style.cursor = speakerId ? 'pointer' : 'default';
-      } else {
-        chart.ctx.canvas.style.cursor = 'default';
-      }
-    };
-    chart.ctx.canvas.onclick = (evt) => {
-      const points = chart.getElementsAtEventForMode(
-        evt,
-        'y',
-        { intersect: false },
-        true,
-      );
-      if (points.length) {
-        const firstPoint = points[0];
-        const speakerId =
-          chart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]
-            .speakerId;
-        if (speakerId) {
-          window.location.href = siteRoutes(
-            parliamentPeriodId as string,
-          ).person(speakerId);
-        }
-      }
-    };
+    );
   }
 </script>

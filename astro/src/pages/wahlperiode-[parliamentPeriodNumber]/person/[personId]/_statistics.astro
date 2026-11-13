@@ -99,19 +99,13 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
 </div>
 
 <script>
-  import Chart from 'chart.js/auto';
-  import 'chartjs-adapter-date-fns';
-  import {
-    type ChartConfiguration,
-    type ChartData,
-    type ChartOptions,
-  } from 'chart.js';
+  import { historyLineChart, type HistoryPoint } from '@utils/charts';
   import { type HistoryDataPoint as VotingSuccessRateHistoryDataPoint } from '@data-analysis/VotingSuccess';
   import { type HistoryDataPoint as ParticipationRateHistoryDataPoint } from '@data-analysis/ParticipationRate';
   import { type HistoryDataPoint as AbstentionRateHistoryDataPoint } from '@data-analysis/AbstentionRate';
   import { formatPercentage } from '@utils/format-number';
 
-  function makeChart<TData>(
+  function makeChart<TData extends HistoryPoint>(
     chartContainerId: string,
     chartCanvasId: string,
     numberFormatter: (value: number | null) => string,
@@ -123,41 +117,10 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
       containerDiv.dataset.history || '[]',
     ) as TData[];
 
-    const data: ChartData<'line', TData[]> = {
-      datasets: [
-        {
-          data: parsedHistoryData,
-          fill: 'origin',
-          backgroundColor: '#167bff30',
-          borderColor: '#167bff',
-        },
-      ],
-    };
-    const options: ChartOptions<'line'> = {
-      elements: { line: { tension: 0.5 } },
-      scales: {
-        x: { type: 'time' },
-        y: {
-          ticks: {
-            callback: (value: string | number) =>
-              typeof value === 'number' ? numberFormatter(value) : value,
-          },
-        },
-      },
-      parsing: {
-        xAxisKey: 'date',
-        yAxisKey: 'value',
-      },
-      plugins: { legend: { display: false } },
-    };
-    const config: ChartConfiguration<'line', TData[]> = {
-      type: 'line',
-      data,
-      options,
-    };
-    new Chart<'line', TData[]>(
+    historyLineChart(
       document.getElementById(chartCanvasId) as HTMLCanvasElement,
-      config,
+      parsedHistoryData,
+      numberFormatter,
     );
   }
 
