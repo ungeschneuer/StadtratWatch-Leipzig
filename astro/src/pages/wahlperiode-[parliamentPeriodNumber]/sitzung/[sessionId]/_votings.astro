@@ -58,31 +58,28 @@ const votings = sessionScan
   </div>
 ) : (
   <div x-data="votings">
-    <div class="flex items-center gap-2">
-      <input
-        class="toggle toggle-sm"
-        id="onlyPrimaryVotingsFilterCheckbox"
-        x-ref="onlyPrimaryVotingsFilterCheckbox"
-        type="checkbox"
-        checked
-        @change="filterList($event.target.checked)"
-      />
-      <label class="label text-sm" for="onlyPrimaryVotingsFilterCheckbox">
-        Nur Sachbeschlüsse anzeigen
-      </label>
-      <div class="tooltip">
-        <div class="tooltip-content space-y-2">
-          <p>
-            Bei aktiviertem Filter werden nur Beschlussvorlagen, Anträge und
-            Änderungsanträge aufgelistet.
-          </p>
-          <p>
-            Verfahrensabstimmungen, wie z.B. Geschäftsordnungsanträge oder
-            Abstimmungen zur Tagesordnung, werden ausgeblendet.
-          </p>
-        </div>
-        <span class="iconify lucide--info text-base-content/80 align-middle" />
+    <div class="mb-2">
+      <div class="flex items-center gap-2">
+        <input
+          class="toggle toggle-sm"
+          id="onlyPrimaryVotingsFilterCheckbox"
+          x-ref="onlyPrimaryVotingsFilterCheckbox"
+          type="checkbox"
+          checked
+          aria-describedby="onlyPrimaryVotingsFilterHelp"
+          @change="filterList($event.target.checked)"
+        />
+        <label class="label text-sm" for="onlyPrimaryVotingsFilterCheckbox">
+          Nur Sachbeschlüsse anzeigen
+        </label>
       </div>
+      <p
+        id="onlyPrimaryVotingsFilterHelp"
+        class="text-base-content/70 mt-1 text-xs"
+      >
+        Zeigt nur Beschlussvorlagen, Anträge und Änderungsanträge, nicht
+        Geschäftsordnungsanträge und Abstimmungen zur Tagesordnung.
+      </p>
     </div>
     <ul class="timeline timeline-vertical timeline-compact">
       {votings.map((voting) => (

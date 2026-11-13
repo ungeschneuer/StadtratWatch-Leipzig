@@ -44,20 +44,38 @@ if (!parliamentPeriod) {
   </head>
 
   <body>
-    <div class="size-full" id="layout-main">
-      {parliamentPeriod && (
-        <div class="flex">
-          <Sidebar parliamentPeriod={parliamentPeriod} />
-
-          <div class="flex h-screen min-w-0 grow flex-col overflow-auto">
-            <Topbar />
-
-            <div id="layout-content">
-              <slot />
-            </div>
-          </div>
+    {parliamentPeriod && (
+      <div class="drawer lg:drawer-open">
+        <input
+          id="site-navigation"
+          type="checkbox"
+          class="drawer-toggle"
+          aria-label="Navigation ein- und ausblenden"
+        />
+        <div class="drawer-content flex min-h-screen min-w-0 flex-col">
+          <a
+            href="#main"
+            class="btn btn-sm btn-primary sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50"
+          >
+            Zum Inhalt springen
+          </a>
+          <Topbar />
+          <main
+            id="main"
+            class="mx-auto w-full max-w-screen-2xl grow px-4 py-6 sm:px-6 lg:px-10 lg:py-8"
+          >
+            <slot />
+          </main>
         </div>
-      )}
-    </div>
+        <div class="drawer-side z-40">
+          <label
+            for="site-navigation"
+            aria-label="Navigation schließen"
+            class="drawer-overlay"
+          />
+          <Sidebar parliamentPeriod={parliamentPeriod} />
+        </div>
+      </div>
+    )}
   </body>
 </html>

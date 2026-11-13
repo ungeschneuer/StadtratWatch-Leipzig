@@ -45,103 +45,118 @@ switch (true) {
     activePage = 'persons';
     break;
 }
+
+const sections = [
+  {
+    page: 'search',
+    label: 'Suche',
+    href: sitePath('/suche'),
+    icon: 'lucide--search',
+  },
+  {
+    page: 'sessions',
+    label: 'Sitzungen',
+    href: routes.sessions(),
+    icon: 'lucide--calendar-days',
+  },
+  {
+    page: 'factions',
+    label: 'Fraktionen',
+    href: routes.factions(),
+    icon: 'lucide--users',
+  },
+  {
+    page: 'parties',
+    label: 'Parteien',
+    href: routes.parties(),
+    icon: 'lucide--flag',
+  },
+  {
+    page: 'persons',
+    label: 'Personen',
+    href: routes.persons(),
+    icon: 'lucide--user',
+  },
+];
+const aboutLinks = [
+  { label: 'Quellcode', href: SOURCE_REPOSITORY_URL, icon: 'lucide--github' },
+  { label: 'API und Daten', href: sitePath('/api'), icon: 'lucide--code-2' },
+  {
+    label: 'Datenschutz',
+    href: sitePath('/datenschutz'),
+    icon: 'lucide--shield',
+  },
+  { label: 'Impressum', href: sitePath('/impressum'), icon: 'lucide--scale' },
+  { label: 'Kontakt', href: sitePath('/kontakt'), icon: 'lucide--mail' },
+];
 ---
 
-<input
-  type="checkbox"
-  id="layout-sidebar-toggle-trigger"
-  class="hidden"
-  aria-label="Toggle layout sidebar"
-/>
-
-<div id="layout-sidebar">
+<aside
+  class="bg-base-100 border-base-300 flex min-h-full w-72 flex-col border-r"
+  aria-label="Navigation"
+>
   <a
-    class="flex min-h-16 items-center px-5 text-xl md:text-2xl font-bold text-primary"
     href={sitePath('/')}
+    class="text-primary flex min-h-16 items-center px-5 text-xl font-bold"
   >
     {SITE_NAME}
   </a>
-  <div class="relative min-h-0 grow">
-    <div class="size-full">
-      <div class="dropdown w-full">
-        <div
-          tabindex="0"
-          role="button"
-          class="bg-base-200 hover:bg-base-300 rounded-box mx-2 mt-0 flex cursor-pointer items-center gap-2.5 px-3 py-2 transition-all"
-        >
-          <div class="grow">
-            <p class="text-sm font-medium">{parliamentPeriod.name}</p>
-            <p class="text-base-content/60 text-xs">
-              Stand: {formatDate(parliamentPeriod.lastUpdate)}
-            </p>
-          </div>
-          <span class="iconify lucide--chevrons-up-down text-base-content/60 size-4"></span>
-        </div>
-        <ul
-          role="menu"
-          class="dropdown-content menu bg-base-100 rounded-box shadow-base-content/4 mb-1 w-48 p-1 shadow-[0px_-10px_40px_0px]"
-          tabindex="0"
-        >
-          {parliamentPeriods.map((parliamentPeriod) => (
-            <li>
-              <a href={siteRoutes(parliamentPeriod.id).parliamentPeriod()}>
-                <span>{parliamentPeriod.name}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
 
-      <div id="sidebar-menu" class="mt-3">
-        <a
-          class="sidebar-menu-item"
-          class:list={[{ active: activePage === 'search' }]}
-          href={sitePath('/suche')}
-        >
-          Suche
-        </a>
-        <a
-          class="sidebar-menu-item"
-          class:list={[{ active: activePage === 'sessions' }]}
-          href={siteRoutes(parliamentPeriod.id).sessions()}
-        >
-          Sitzungen
-        </a>
-        <a
-          class="sidebar-menu-item"
-          class:list={[{ active: activePage === 'factions' }]}
-          href={siteRoutes(parliamentPeriod.id).factions()}
-        >
-          Fraktionen
-        </a>
-        <a
-          class="sidebar-menu-item"
-          class:list={[{ active: activePage === 'parties' }]}
-          href={siteRoutes(parliamentPeriod.id).parties()}
-        >
-          Parteien
-        </a>
-        <a
-          class="sidebar-menu-item"
-          class:list={[{ active: activePage === 'persons' }]}
-          href={siteRoutes(parliamentPeriod.id).persons()}
-        >
-          Personen
-        </a>
+  <div class="dropdown mx-3 mb-2">
+    <div
+      tabindex="0"
+      role="button"
+      class="bg-base-200 hover:bg-base-300 rounded-field flex cursor-pointer items-center gap-2 px-3 py-2"
+    >
+      <div class="grow">
+        <p class="text-sm font-semibold">{parliamentPeriod.name}</p>
+        <p class="text-base-content/70 text-xs">
+          Stand: {formatDate(parliamentPeriod.lastUpdate)}
+        </p>
       </div>
+      <span class="iconify lucide--chevrons-up-down text-base-content/70 size-4"></span>
     </div>
+    <ul
+      tabindex="0"
+      class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-10 mt-1 w-full border p-1 shadow-sm"
+    >
+      {parliamentPeriods.map((period) => (
+        <li>
+          <a href={siteRoutes(period.id).parliamentPeriod()}>{period.name}</a>
+        </li>
+      ))}
+    </ul>
   </div>
 
-  <div class="alert alert-soft alert-info m-3 dark:opacity-60" role="alert">
-    <span class="space-y-1">
-      <span class="block">
+  <nav aria-label="Bereiche">
+    <ul class="menu w-full gap-0.5 px-3">
+      {sections.map((section) => (
+        <li>
+          <a
+            href={section.href}
+            class:list={[{ 'menu-active': activePage === section.page }]}
+            aria-current={activePage === section.page ? 'page' : undefined}
+          >
+            <span class:list={['iconify size-4', section.icon]} />
+            {section.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <div class="grow"></div>
+
+  <div class="alert alert-soft alert-info mx-3 my-3 text-sm" role="note">
+    <div class="space-y-1">
+      <p>
         Ein ehrenamtliches Projekt von {OPERATOR_NAME},{' '}
         <a class="link" href={`mailto:${CONTACT_EMAIL}`}>
           {CONTACT_EMAIL}
         </a>
         . <em>Keine</em> offizielle Seite der Stadt Leipzig.
-      </span>
-      <span class="block text-xs">
+      </p>
+      <p class="text-xs">
         Grundlage:{' '}
         <a class="link" href={UPSTREAM_PROJECT.siteUrl} target="_blank">
           {UPSTREAM_PROJECT.name}
@@ -151,45 +166,20 @@ switch (true) {
           {UPSTREAM_PROJECT.maintainers}
         </a>
         .
-      </span>
-    </span>
+      </p>
+    </div>
   </div>
 
-  <div class="mb-2">
-    <hr class="border-base-300" />
-    <ul class="menu w-full">
-      <li>
-        <a href={SOURCE_REPOSITORY_URL} class="flex items-center gap-2">
-          <span class="iconify lucide--github size-4"></span>
-          Quellcode
-        </a>
-      </li>
-      <li>
-        <a href={sitePath('/api')} class="flex items-center gap-2">
-          <span class="iconify lucide--code-2 size-4"></span>
-          API
-        </a>
-      </li>
-      <li>
-        <a href={sitePath('/datenschutz')} class="flex items-center gap-2">
-          <span class="iconify lucide--cookie size-4"></span>
-          Datenschutz
-        </a>
-      </li>
-      <li>
-        <a href={sitePath('/impressum')} class="flex items-center gap-2">
-          <span class="iconify lucide--section size-4"></span>
-          Impressum
-        </a>
-      </li>
-      <li>
-        <a href={sitePath('/kontakt')} class="flex items-center gap-2">
-          <span class="iconify lucide--mail size-4"></span>
-          Kontakt
-        </a>
-      </li>
+  <nav aria-label="Über die Seite" class="border-base-300 border-t pb-2">
+    <ul class="menu menu-sm w-full px-3">
+      {aboutLinks.map((link) => (
+        <li>
+          <a href={link.href}>
+            <span class:list={['iconify size-4', link.icon]} />
+            {link.label}
+          </a>
+        </li>
+      ))}
     </ul>
-  </div>
-</div>
-
-<label for="layout-sidebar-toggle-trigger" id="layout-sidebar-backdrop"></label>
+  </nav>
+</aside>

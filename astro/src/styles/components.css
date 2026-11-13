@@ -1,0 +1,29 @@
+/* The few places where the site's look differs from daisyUI's defaults. */
+
+body {
+  @apply bg-base-200 text-base-content font-sans antialiased;
+}
+
+/* daisyUI marks the current page with the neutral colour, which reads as a button; a tint of the primary colour reads
+   as "you are here". */
+.menu {
+  --menu-active-bg: color-mix(in oklab, var(--color-primary) 12%, transparent);
+  --menu-active-fg: var(--color-primary);
+}
+
+.card-title {
+  @apply text-base font-semibold;
+}
+
+.table th {
+  @apply font-semibold;
+}
+
+/* Links in running text stand out; links that are the content of a list or table row do not need an underline. */
+.link-quiet {
+  @apply link link-hover;
+}
+
+[x-cloak] {
+  display: none !important;
+}

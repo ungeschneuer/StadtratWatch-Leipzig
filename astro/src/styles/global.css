@@ -1,25 +1,10 @@
-@import './typography.css';
+@import './fonts.css';
 @import './tailwind.css';
-@import './daisyui.css';
+@import './theme.css';
+@import './components.css';
 
-/* Custom Styling */
-@import './custom/animation.css';
-@import './custom/components.css';
-@import './custom/layout.css';
-
-/* Plugin Overriding */
-@import './custom/plugins.css';
-
-/* Pages */
-@import './custom/landing.css';
-
-/* Plugin: Iconify (Lucide icons) */
-@plugin "@iconify/tailwind4" {
+@plugin '@iconify/tailwind4' {
   prefixes: lucide;
 }
 
 @plugin '@tailwindcss/typography';
-
-[x-cloak] {
-  display: none !important;
-}
