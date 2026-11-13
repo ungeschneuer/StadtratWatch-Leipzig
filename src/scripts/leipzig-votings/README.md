@@ -186,7 +186,9 @@ bun src/scripts/leipzig-votings/index.ts --evidence-images-only -s 2026-10-29
 
 - `voting.videoSeconds` is the `videoSeconds.start` of the vote (±15 s); `agendaItemNumber` is optional and narrows
   the match.
-- `seats` change single votes; `approve` accepts a vote as read; `discard` marks it as no valid vote; `agendaItemNumber` assigns the TOP to a vote whose
+- `seats` change single votes; `approve` accepts a vote as read; `discard` marks it as no valid vote; `unresolved` marks a
+  valid vote that cannot be settled (the official result differs and nobody can show who was counted differently): the
+  board's votes stand for each person, the outcome follows the official result, and the site says so; `agendaItemNumber` assigns the TOP to a vote whose
   board names none (the older board shows only „ABSTIMMUNG“ for votes on procedural motions). Every entry needs a
   `reason`.
 - Corrected seats keep the board reading in `boardVote`; the vote's status becomes `reviewed`.

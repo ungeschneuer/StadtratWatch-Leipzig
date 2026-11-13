@@ -1,5 +1,10 @@
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
-import type { SessionScan, SessionScanItem, VotingReviewStatus } from '@srw-astro/models/session-scan';
+import type {
+  SessionScan,
+  SessionScanItem,
+  UnresolvedVoting,
+  VotingReviewStatus,
+} from '@srw-astro/models/session-scan';
 import { votingFilenameOf } from '@srw-astro/models/voting-evidence';
 
 import type { LeipzigPaper, PapersFile } from '../leipzig-papers/voting-papers.ts';
@@ -9,11 +14,13 @@ import { itemNumberOf, type Recusal, recusalsOf } from './special-cases.ts';
 
 // The board reading of these votes is confirmed or, while no official result is published, unchallenged; or a check
 // failed and a reviewer has not decided yet. The last two are published with their review status, so the site can say
-// how they get fixed. A vote found to be no valid result, or a procedural motion whose checks failed, stays off the site.
+// how they get fixed. A vote a reviewer found cannot be settled is published with the board's votes and the official
+// result. A vote found to be no valid result, or a procedural motion whose checks failed, stays off the site.
 const PUBLISHED_STATUSES = new Set<ExtractedVoting['status']>([
   'verified',
   'corrected',
   'reviewed',
+  'unresolved',
   'provisional',
   'needs-review',
 ]);
@@ -65,10 +72,24 @@ export function toSessionScan(
         presentMembers: voting.votes.filter((seat) => seat.attendance === 'present').length,
         ...(majorityRequirement ? { majorityRequirement } : {}),
         ...recusedPersonsOf(sessionId, voting, recusals, namesByOparlId, problems),
+        ...unresolvedOf(voting),
         ...reviewStatusOf(voting),
       };
     });
   return { scan, pending: votings.filter((voting) => PENDING_STATUSES.has(voting.status)).length, problems };
+}
+
+function unresolvedOf(voting: ExtractedVoting): { unresolved?: UnresolvedVoting } {
+  if (voting.status !== 'unresolved') return {};
+  const reason = voting.review?.at(-1)?.reason ?? '';
+  return {
+    unresolved: {
+      reason,
+      ...(voting.official
+        ? { officialCounts: { J: voting.official.J, N: voting.official.N, E: voting.official.E } }
+        : {}),
+    },
+  };
 }
 
 function withItemNumber(itemNumber: string | undefined): { itemNumber?: string } {

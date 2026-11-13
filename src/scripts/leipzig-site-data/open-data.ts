@@ -46,7 +46,8 @@ const VOTING_FIELDS: Field[] = [
   {
     name: 'reviewStatus',
     type: 'string',
-    description: 'final, provisional (amtliches Ergebnis fehlt) oder needs-review',
+    description:
+      'final, provisional (amtliches Ergebnis fehlt), needs-review oder unresolved (nicht klärbar; Stimmen laut Tafel, Ergebnis laut amtlicher Zählung)',
   },
   {
     name: 'decidedByMayor',
@@ -147,7 +148,7 @@ export function votingsToCsv(registry: Registry, scans: SessionScans): string {
         voting.presentMembers === undefined ? '' : String(voting.presentMembers),
         voting.majorityRequirement ?? 'simple',
         votingAccepted(registry, voting) ? 'accepted' : 'rejected',
-        voting.reviewStatus ?? 'final',
+        voting.unresolved ? 'unresolved' : (voting.reviewStatus ?? 'final'),
         String(decidedByMayor(registry, voting, sessionId)),
         (voting.recusedPersons ?? []).map((name) => oparlIdByName.get(name) ?? '').join(' '),
       ];

@@ -64,8 +64,9 @@ export type ExtractedVoting = {
   votes: SeatVote[];
   checks: CheckResult[];
   checkStatus: VotingStatus;
-  // reviewed: a human corrected or approved it; discarded: a human found it is no valid vote.
-  status: VotingStatus | 'reviewed';
+  // reviewed: a human corrected or approved it; discarded: a human found it is no valid vote; unresolved: a human found
+  // that it cannot be settled.
+  status: VotingStatus | 'reviewed' | 'unresolved';
   review?: ReviewEntry[];
   // The official result from minutes, ALLRIS and Verlaufsprotokoll, once published.
   official?: OfficialResult;

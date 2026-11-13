@@ -22,6 +22,7 @@ export function describeCorrection(correction: VotingCorrection): string {
   const parts: string[] = [];
   if (correction.approve) parts.push('bestätigt');
   if (correction.discard) parts.push('verworfen');
+  if (correction.unresolved) parts.push('nicht klärbar');
   if (correction.agendaItemNumber) parts.push(`TOP ${correction.agendaItemNumber}`);
   if (correction.seats?.length) parts.push(`${correction.seats.length} Stimme(n) geändert`);
   return parts.join(', ');
