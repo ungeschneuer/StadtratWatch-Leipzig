@@ -7,14 +7,14 @@
 . `leipzig-recordings` (täglich) findet die Aufzeichnung, trägt sie ins Manifest ein und öffnet einen Pull Request von `data/leipzig-recordings`. Ändert er nur Manifest und Untertitel, merged der Workflow ihn bei grüner CI selbst und startet `leipzig-votings`; sonst wartet er auf einen Menschen.
 . `leipzig-votings` (sobald ein neues Manifest auf `main` liegt, sonst wöchentlich) liest die Tafeln, prüft jede Abstimmung, schreibt die Dateien auf `data/leipzig-votings`, legt die Zitatbilder aller veröffentlichten Abstimmungen und die Tafelbilder der Prüffälle in den Release `evidence-<datum>`, öffnet je Sitzung mit Prüffällen ein Issue und hält einen Pull Request nach `main` offen.
 . `leipzig-site-data` erzeugt im selben Lauf die Dateien für die Seite.
-. `leipzig-data-publish` veröffentlicht die neue Sitzung am selben Abend (siehe Prüfung); ungeprüfte Abstimmungen erscheinen mit ihrem Prüfstatus.
+. `leipzig-data-publish` veröffentlicht die neue Sitzung beim nächsten Lauf, spätestens nach 12 Stunden (siehe Prüfung); ungeprüfte Abstimmungen erscheinen mit ihrem Prüfstatus.
 
 == Prüfung
 
 . Prüfende öffnen `/review/leipzig/<datum>`, sehen Tafelbild, Video an der Stelle und die fehlgeschlagene Prüfung.
 . Jede Entscheidung wird ein Commit in `corrections-<datum>.json` auf `data/leipzig-votings`.
 . `leipzig-review-recheck` wendet die Korrekturen an und erzeugt die Seitendaten neu (bei jeder Entscheidung und täglich). Neu erschienene amtliche Ergebnisse und Verlaufsprotokolle holt der ALLRIS-Runner auf dem Server des Betreibers (`minutes-runner/`), weil ALLRIS GitHub Actions nicht antwortet; danach arbeitet der Recheck mit den gespeicherten Dateien.
-. `leipzig-data-publish` merged abends (20:07 UTC) den Daten-PR und deployt, sobald jede Entscheidung von einem erfolgreichen Recheck angewendet und die CI grün ist. Ein Kommentar im PR nennt neue Sitzungen (mit Zahl der Abstimmungen und offenen Prüffällen) und die Sitzungen mit neuen Entscheidungen. Er erwähnt die Prüfenden aus `LEIPZIG_REVIEWERS`, die so per Benachrichtigung und E-Mail erfahren, was online ging.
+. `leipzig-data-publish` merged alle 12 Stunden (08:07 und 20:07 UTC) den Daten-PR und deployt, sobald jede Entscheidung von einem erfolgreichen Recheck angewendet und die CI grün ist. Ein Kommentar im PR nennt neue Sitzungen (mit Zahl der Abstimmungen und offenen Prüffällen) und die Sitzungen mit neuen Entscheidungen. Er erwähnt die Prüfenden aus `LEIPZIG_REVIEWERS`, die so per Benachrichtigung und E-Mail erfahren, was online ging.
 . Gäste ohne Schreibrechte schlagen eine Entscheidung als Issue „Prüfvorschlag <datum> #<nr>“ vor. Setzt jemand mit Schreibrechten das Label `vorschlag-übernehmen`, trägt `leipzig-guest-proposal` sie in `corrections-<datum>.json` ein, startet den Recheck und schließt das Issue. Ein ungültiger Vorschlag bekommt einen Kommentar, und das Label wird entfernt.
 . Bis zum Merge zeigt die Seite die Abstimmung als „in Prüfung“ mit Link zur Prüfoberfläche und zum Pull Request.
 

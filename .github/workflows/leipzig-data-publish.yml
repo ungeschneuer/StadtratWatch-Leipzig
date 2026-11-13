@@ -1,12 +1,12 @@
 name: Leipzig data publish
 
-# Publishes the data branch in the evening: merges the data pull request once its review decisions are applied and CI is
+# Publishes the data branch twice a day: merges the data pull request once its review decisions are applied and CI is
 # green, deploys, and tells the reviewers in a comment what went online, new sessions included.
 
 on:
   schedule:
-    # Daily at 20:07 UTC (21:07 in winter, 22:07 in summer), after the day's reviews and the new sessions.
-    - cron: '7 20 * * *'
+    # Every 12 hours at 08:07 and 20:07 UTC (09:07 and 21:07 in winter, 10:07 and 22:07 in summer).
+    - cron: '7 8,20 * * *'
   workflow_dispatch:
 
 permissions:
