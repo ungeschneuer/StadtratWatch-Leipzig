@@ -102,7 +102,7 @@ const motions = Array.from(motionsMap)
 ---
 
 <div
-  class="overflow-x-auto space-y-4"
+  class="@container overflow-x-auto space-y-4"
   x-data="motions"
   data-motions={JSON.stringify(motions)}
   data-parliament-period-id={parliamentPeriod.id}
@@ -149,42 +149,42 @@ const motions = Array.from(motionsMap)
       </label>
     </div>
   </div>
-  <table class="table">
+  <table class="table table-sm md:table-md">
     <thead>
       <tr>
-        <th scope="col" class="px-0">
+        <th class="hidden @xl:table-cell" scope="col">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('votingDate', (motion) => motion.votingDate)"
           >
-            <span class="text-left">Abgestimmt am</span>
+            <span>Abgestimmt am</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th scope="col" class="px-0">
+        <th class="hidden @2xl:table-cell" scope="col">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('motionId', motion => motion.motionId)"
           >
-            <span class="text-left">Antrag</span>
+            <span>Antrag</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th scope="col" class="px-0">
+        <th scope="col">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('title', motion => motion.title)"
           >
-            <span class="text-left">Titel</span>
+            <span>Titel</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th scope="col" class="text-center">
+        <th scope="col">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('result', motion => motion.result)"
           >
-            <span class="text-left">Ergebnis</span>
+            <span>Ergebnis</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
@@ -193,14 +193,17 @@ const motions = Array.from(motionsMap)
     <tbody>
       <template x-for="motion in motions">
         <tr>
-          <td x-text="motion.votingDateFormatted"></td>
-          <td class="flex flex-col">
+          <td
+            class="hidden @xl:table-cell"
+            x-text="motion.votingDateFormatted"
+          ></td>
+          <td class="flex flex-col hidden @2xl:table-cell">
             <span x-text="motion.type"></span>
             <template x-if="motion.paperUrl">
               <a
                 :href="motion.paperUrl"
                 target="_blank"
-                class="link link-primary"
+                class="link link-hover link-primary wrap-anywhere"
                 title="Drucksache im Ratsinformationssystem der Stadt Leipzig"
                 x-text="`Drucksache ${motion.motionId}`"
               ></a>
@@ -209,10 +212,10 @@ const motions = Array.from(motionsMap)
               <span x-text="motion.motionId"></span>
             </template>
           </td>
-          <td>
+          <td class="hyphens-auto">
             <a
               :href="motion.votingUrl"
-              class="link link-primary"
+              class="link link-hover link-primary"
               x-text="motion.title"
             ></a>
           </td>
@@ -220,19 +223,19 @@ const motions = Array.from(motionsMap)
             <template x-if="motion.result === 'ACCEPTED'">
               <div class="badge badge-success badge-soft badge-sm">
                 <span class="iconify lucide--check-check"></span>
-                <span>Angenommen</span>
+                <span class="sr-only @md:not-sr-only">Angenommen</span>
               </div>
             </template>
             <template x-if="motion.result === 'PARTIALLY_ACCEPTED'">
               <div class="badge badge-warning badge-soft badge-sm">
                 <span class="iconify lucide--check"></span>
-                <span>Teilweise</span>
+                <span class="sr-only @md:not-sr-only">Teilweise</span>
               </div>
             </template>
             <template x-if="motion.result === 'REJECTED'">
               <div class="badge badge-error badge-soft badge-sm">
                 <span class="iconify lucide--x"></span>
-                <span>Abgelehnt</span>
+                <span class="sr-only @md:not-sr-only">Abgelehnt</span>
               </div>
             </template>
           </td>
@@ -240,6 +243,9 @@ const motions = Array.from(motionsMap)
       </template>
     </tbody>
   </table>
+  <p class="text-base-content/70 px-4 py-3 text-xs @2xl:hidden">
+    Weitere Kennzahlen zeigt die Tabelle auf größeren Bildschirmen.
+  </p>
 </div>
 
 <script>

@@ -69,74 +69,74 @@ const persons = parliamentPeriod.persons
 
 <div
   id="persons-list"
-  class="overflow-x-auto"
+  class="@container overflow-x-auto"
   x-data="persons"
   data-parliament-period-id={parliamentPeriod.id}
   data-persons={JSON.stringify(persons)}
 >
-  <table class="table">
+  <table class="table table-sm md:table-md table-pin-cols">
     <thead>
       <tr>
-        <th class="px-0">
+        <th>
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('name', (person) => person.name)"
           >
-            <span class="text-left">Name</span>
+            <span>Name</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="px-0">
+        <th>
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('faction', (person) => person.faction)"
           >
-            <span class="text-left">Fraktion</span>
+            <span>Fraktion</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="px-0">
+        <th class="hidden @4xl:table-cell">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
             @click="sortTextColumn('party', (person) => person.party)"
           >
-            <span class="text-left">Partei</span>
+            <span>Partei</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="px-0">
+        <th class="hidden @xl:table-cell text-right">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
             @click="sortNumberColumn('participationRate', (person) => person.participationRate)"
           >
-            <span class="text-left">abgestimmt</span>
+            <span>abgestimmt</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="px-0">
+        <th class="hidden @2xl:table-cell text-right">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
             @click="sortNumberColumn('votingSuccessRate', (person) => person.votingSuccessRate)"
           >
-            <span class="text-left">Abstimmungserfolg</span>
+            <span>Abstimmungs&shy;erfolg</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="px-0">
+        <th class="hidden @4xl:table-cell text-right">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
             @click="sortNumberColumn('abstentionRate', (person) => person.abstentionRate)"
           >
-            <span class="text-left">Stimmenthaltungen</span>
+            <span>Stimm&shy;enthaltungen</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="px-0">
+        <th class="hidden @5xl:table-cell text-right">
           <button
-            class="btn btn-ghost btn-block flex justify-between"
+            class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
             @click="sortNumberColumn('speakingTime', (person) => person.speakingTime)"
           >
-            <span class="text-left">Redezeit</span>
+            <span>Redezeit</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
@@ -145,35 +145,50 @@ const persons = parliamentPeriod.persons
     <tbody>
       <template x-for="person in persons">
         <tr>
-          <td>
+          <th scope="row" class="bg-base-100 font-normal">
             <a
               :href="siteRoutes(parliamentPeriodId).person(person.id)"
-              class="link link-primary"
+              class="link link-hover link-primary"
               x-text="person.name"
             ></a>
-          </td>
+          </th>
           <td>
             <a
               :href="siteRoutes(parliamentPeriodId).faction(person.factionId)"
-              class="link link-primary"
+              class="link link-hover link-primary"
               x-text="person.faction"
             ></a>
           </td>
-          <td>
+          <td class="hidden @4xl:table-cell">
             <a
               :href="siteRoutes(parliamentPeriodId).party(person.partyId)"
-              class="link link-primary"
+              class="link link-hover link-primary"
               x-text="person.party"
             ></a>
           </td>
-          <td class="text-right" x-text="person.participationRateDisplay"></td>
-          <td class="text-right" x-text="person.votingSuccessRateDisplay"></td>
-          <td class="text-right" x-text="person.abstentionRateDisplay"></td>
-          <td class="text-right" x-text="person.speakingTimeDisplay"></td>
+          <td
+            class="text-right hidden @xl:table-cell tabular-nums"
+            x-text="person.participationRateDisplay"
+          ></td>
+          <td
+            class="text-right hidden @2xl:table-cell tabular-nums"
+            x-text="person.votingSuccessRateDisplay"
+          ></td>
+          <td
+            class="text-right hidden @4xl:table-cell tabular-nums"
+            x-text="person.abstentionRateDisplay"
+          ></td>
+          <td
+            class="text-right hidden @5xl:table-cell tabular-nums"
+            x-text="person.speakingTimeDisplay"
+          ></td>
         </tr>
       </template>
     </tbody>
   </table>
+  <p class="text-base-content/70 px-4 py-3 text-xs @5xl:hidden">
+    Weitere Kennzahlen zeigt die Tabelle auf größeren Bildschirmen.
+  </p>
 </div>
 
 <script>

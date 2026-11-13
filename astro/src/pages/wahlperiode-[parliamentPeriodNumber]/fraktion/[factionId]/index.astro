@@ -57,7 +57,7 @@ const breadcrumbItems = [
       :checked="currentTab === 'councilors'"
       @change="history.pushState(null, '', '?tab=councilors'); currentTab = 'councilors'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Councilors parliamentPeriod={parliamentPeriod} faction={faction} />
     </div>
 
@@ -70,7 +70,7 @@ const breadcrumbItems = [
       :checked="currentTab === 'motions'"
       @change="history.pushState(null, '', '?tab=motions'); currentTab = 'motions'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Motions
         parliamentPeriod={parliamentPeriod}
         faction={faction}
@@ -87,7 +87,7 @@ const breadcrumbItems = [
       :checked="currentTab === 'statistics'"
       @change="history.pushState(null, '', '?tab=statistics'); currentTab = 'statistics'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Statistics
         parliamentPeriod={parliamentPeriod}
         faction={faction}

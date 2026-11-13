@@ -75,7 +75,7 @@ const {
       :checked="currentTab === 'councilors'"
       @change="history.pushState(null, '', '?tab=councilors'); currentTab = 'councilors'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Councilors parliamentPeriod={parliamentPeriod} party={party} />
     </div>
 
@@ -88,7 +88,7 @@ const {
       :checked="currentTab === 'statistics'"
       @change="history.pushState(null, '', '?tab=statistics'); currentTab = 'statistics'"
     />
-    <div class="tab-content border-base-200 bg-base-100 p-6">
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
       <Statistics
         parliamentPeriod={parliamentPeriod}
         party={party}
