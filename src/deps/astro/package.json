@@ -7,10 +7,11 @@
     "./leipzig-members": "./leipzig-members.ts",
     "./leipzig-review": "./leipzig-review.ts",
     "./person-affiliation": "./person-affiliation.ts",
+    "./person-name": "./person-name.ts",
     "./registry": "./registry.ts",
+    "./session": "./session.ts",
     "./session-scan": "./session-scan.ts",
     "./session-speech": "./session-speech.ts",
-    "./session": "./session.ts",
     "./voting-breakdown": "./voting-breakdown.ts",
     "./voting-evidence": "./voting-evidence.ts"
   }

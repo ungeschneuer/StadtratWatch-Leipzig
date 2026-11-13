@@ -33,7 +33,7 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
         <th scope="col">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('name', (person) => person.personName)"
+            @click="sortTextColumn('name', (person) => nameForSorting(person.personName))"
           >
             <span>Name</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -107,6 +107,7 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
 
 <script>
   import { siteRoutes } from '@utils/routes';
+  import { nameForSorting } from '@models/person-name';
   import Alpine from 'alpinejs';
   import { type VotingMatrixItem } from '@data-analysis/VotingMatrix';
 
@@ -124,6 +125,7 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
       parliamentPeriodId,
       siteRoutes,
       votingMatrix,
+      nameForSorting,
       sortTextColumn: function (
         column: string,
         getText: (item: VotingMatrixItem) => string,
@@ -131,8 +133,8 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
         this._updateSortColumn(column);
         this.votingMatrix.sort((a, b) =>
           this._sortedDesc
-            ? getText(b).localeCompare(getText(a))
-            : getText(a).localeCompare(getText(b)),
+            ? getText(b).localeCompare(getText(a), 'de')
+            : getText(a).localeCompare(getText(b), 'de'),
         );
       },
       sortNumberColumn: function (
