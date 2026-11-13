@@ -1,0 +1,13 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 17638,
+      "agendaItemNumber": "19.1.1"
+    },
+    "unresolved": true,
+    "reason": "Nicht klar, wer die Stimme gegeben hat.",
+    "source": "Video 4:53:58",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T19:02:39.430Z"
+  }
+]
