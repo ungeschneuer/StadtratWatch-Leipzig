@@ -1,0 +1,18 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 24380.5,
+      "agendaItemNumber": "18.13.2"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
+        "vote": "N"
+      }
+    ],
+    "reason": "Amtliches Ergebnis 20/26/11, Mündliche Benennung",
+    "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 20 - 26 - 11. Somit auch abgelehnt.",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:43:53.272Z"
+  }
+]
