@@ -1,5 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import {
+  decidedByMayor,
   getVoteCounts,
   getVotesByFactions,
   getVotingId,
@@ -452,4 +453,63 @@ describe('votingAccepted for real votings needing two thirds of present members'
       expect(votingAccepted(councilOfEightFactions, voting)).toBe(accepted);
     },
   );
+});
+
+describe('decidedByMayor', () => {
+  const council: Registry = {
+    ...createCouncilWithSeats([2]),
+    persons: [
+      {
+        id: 'a',
+        name: 'A',
+        factionId: 'f0',
+        partyId: 'p',
+        start: null,
+        end: null,
+      },
+      {
+        id: 'b',
+        name: 'B',
+        factionId: 'f0',
+        partyId: 'p',
+        start: null,
+        end: null,
+      },
+      {
+        id: 'mayor',
+        name: 'Mayor',
+        factionId: 'oberbuergermeister',
+        partyId: 'p',
+        start: null,
+        end: null,
+      },
+    ],
+  };
+
+  test('is true when the result turns without the mayor’s vote', () => {
+    const voting = createVoting([
+      { name: 'A', vote: 'J' },
+      { name: 'B', vote: 'N' },
+      { name: 'Mayor', vote: 'J' },
+    ]);
+    expect(decidedByMayor(council, voting, '2026-01-01')).toBe(true);
+  });
+
+  test('is false when the others decide it anyway', () => {
+    const voting = createVoting([
+      { name: 'A', vote: 'J' },
+      { name: 'B', vote: 'J' },
+      { name: 'Mayor', vote: 'N' },
+    ]);
+    expect(decidedByMayor(council, voting, '2026-01-01')).toBe(false);
+  });
+
+  test('is false when the mayor did not vote yes or no', () => {
+    const voting = createVoting([
+      { name: 'A', vote: 'J' },
+      { name: 'B', vote: 'J' },
+      { name: 'Mayor', vote: 'E' },
+    ]);
+    expect(decidedByMayor(council, voting, '2026-01-01')).toBe(false);
+  });
 });

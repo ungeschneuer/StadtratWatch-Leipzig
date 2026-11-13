@@ -13,7 +13,11 @@ import { quotationImageUrl } from '@utils/quotation-image';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
 import { sessionVideoLink } from '@models/session-video';
 import { factionIdOn } from '@models/person-affiliation';
-import { getVoteCounts, votingAccepted } from '@models/voting-breakdown';
+import {
+  decidedByMayor,
+  getVoteCounts,
+  votingAccepted,
+} from '@models/voting-breakdown';
 import {
   getMajorityRequirement,
   getQualifiedMajorityRequirementName,
@@ -25,6 +29,12 @@ const { sessionId } = Astro.params;
 const { parliamentPeriod, sessionInput, voting } =
   Astro.props as ParliamentPeriodWithSessionAndVotingProps;
 const parliamentPeriodId = parliamentPeriod.id;
+const mayorDecided = decidedByMayor(
+  parliamentPeriod,
+  voting,
+  sessionInput.session.date,
+);
+const recusedPersons = voting.recusedPersons ?? [];
 
 const breadcrumbItems = [
   {
@@ -103,6 +113,7 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
 <PageLayout
   parliamentPeriod={parliamentPeriod}
   pageTitle="Abstimmung"
+  searchTitle={`TOP ${voting.votingSubject.agendaItem}: ${voting.votingSubject.title}`}
   breadcrumbItems={breadcrumbItems}
 >
   <MetaTags
@@ -131,7 +142,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
       <div class="card bg-base-100 border border-base-300 md:col-span-2 lg:col-span-3">
         <div class="card-body">
           <div class="text-base-content/60 text-sm space-x-1">
-            <span>TOP {voting.votingSubject.agendaItem}</span>
+            <span>
+              TOP {voting.votingSubject.agendaItem}
+              {voting.votingSubject.itemNumber &&
+                `, Punkt ${voting.votingSubject.itemNumber}`}
+            </span>
             <span>
               {voting.votingSubject.type}{' '}
               {voting.votingSubject.paperUrl ? (
@@ -154,6 +169,24 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
               <span class="badge badge-neutral badge-sm">{author}</span>
             ))}
           </div>
+          {voting.votingSubject.itemNumber && (
+            <p class="text-sm text-base-content/70 mt-2">
+              Über die Punkte der Vorlage wurde einzeln abgestimmt; diese
+              Abstimmung betrifft Punkt {voting.votingSubject.itemNumber}.
+            </p>
+          )}
+          {mayorDecided && (
+            <p class="text-sm text-base-content/70 mt-2">
+              Die Stimme des Oberbürgermeisters hat entschieden: Ohne sie wäre
+              das Ergebnis umgekehrt.
+            </p>
+          )}
+          {recusedPersons.length > 0 && (
+            <p class="text-sm text-base-content/70 mt-2">
+              Wegen Befangenheit (§ 20 SächsGemO) nicht beteiligt:{' '}
+              {recusedPersons.join(', ')}.
+            </p>
+          )}
         </div>
       </div>
 
@@ -206,7 +239,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {/* Every vote names all 71 members; in the search index they would bury the person pages under 500 votes. */}
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      data-pagefind-ignore
+    >
       {groupsSortedByVotes.map(([faction, votes]) => (
         <div class="card bg-base-100 border border-base-300 self-start">
           <div class="card-body">

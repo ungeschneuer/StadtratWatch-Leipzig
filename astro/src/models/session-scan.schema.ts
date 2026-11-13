@@ -31,6 +31,7 @@ export const sessionScanSchema = z.array(
         paperUrl: z.url().optional(),
         oparlAgendaItemId: z.url().optional(),
         oparlPaperId: z.url().optional(),
+        itemNumber: z.string().optional(),
       }),
       votes: z.array(
         z.object({
@@ -41,6 +42,7 @@ export const sessionScanSchema = z.array(
       majorityRequirement: majorityRequirementSchema.optional(),
       presentMembers: z.number().int().optional(),
       reviewStatus: z.enum(votingReviewStatuses).optional(),
+      recusedPersons: z.array(z.string()).optional(),
     })
     .superRefine((voting, context) => {
       const violation = findPresentMembersViolation(voting);

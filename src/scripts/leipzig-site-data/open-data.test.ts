@@ -79,8 +79,8 @@ const scans = new Map([['2026-03-25', [hauptsatzung]]]);
 describe('votingsToCsv', () => {
   it('writes one row per published vote with counts, requirement, result and check status', () => {
     expect(votingsToCsv(registry, scans)).toBe(
-      'sessionId,votingId,agendaItem,oparlAgendaItemId,paperReference,oparlPaperId,title,type,paperUrl,videoTimestamp,yes,no,abstentions,notVoted,presentMembers,majorityRequirement,result,reviewStatus\n' +
-        '2026-03-25,2026-03-25-029,19.10,oparl/agendaItems/7,VIII-DS-02011-NF-01-DS-01,oparl/papers/9,"5. Satzung zur Änderung der Hauptsatzung, „Bauturbo“",Beschlussvorlage,https://ratsinformation.leipzig.de/vo020?VOLFDNR=1,05:12:40,1,0,0,1,2,majority-of-members,rejected,provisional\n',
+      'sessionId,votingId,agendaItem,oparlAgendaItemId,paperReference,oparlPaperId,itemNumber,title,type,paperUrl,videoTimestamp,yes,no,abstentions,notVoted,presentMembers,majorityRequirement,result,reviewStatus,decidedByMayor,recusedPersonIds\n' +
+        '2026-03-25,2026-03-25-029,19.10,oparl/agendaItems/7,VIII-DS-02011-NF-01-DS-01,oparl/papers/9,,"5. Satzung zur Änderung der Hauptsatzung, „Bauturbo“",Beschlussvorlage,https://ratsinformation.leipzig.de/vo020?VOLFDNR=1,05:12:40,1,0,0,1,2,majority-of-members,rejected,provisional,false,\n',
     );
   });
 });

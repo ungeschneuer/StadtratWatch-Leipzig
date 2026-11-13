@@ -1,0 +1,22 @@
+---
+import PageLayout from '@layouts/PageLayout.astro';
+import { sitePath } from '@utils/site-path';
+
+// Pagefind builds the index after the site (npm run build) into /pagefind/ and searches it in the browser; no
+// service runs anywhere. In `astro dev` the index does not exist, so the search only works on a built site.
+const bundlePath = sitePath('/pagefind/');
+---
+
+<PageLayout pageTitle="Suche" searchable={false}>
+  <link rel="stylesheet" href={`${bundlePath}pagefind-ui.css`} />
+  <p class="text-sm text-base-content/70 mb-4">
+    Durchsucht Sitzungen, Abstimmungen, Reden, Personen, Fraktionen und Parteien
+    dieser Seite. Die Suche läuft im Browser, ohne dass Suchbegriffe an einen
+    Server gehen.
+  </p>
+  <div id="search" data-bundle-path={bundlePath}></div>
+  <script>
+    import { loadSearch } from './_search';
+    loadSearch(document.getElementById('search') as HTMLElement);
+  </script>
+</PageLayout>

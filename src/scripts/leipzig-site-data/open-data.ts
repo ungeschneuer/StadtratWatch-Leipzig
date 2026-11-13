@@ -1,7 +1,7 @@
 import { factionIdOn, partyIdOn } from '@srw-astro/models/person-affiliation';
 import type { Registry, RegistryPerson } from '@srw-astro/models/registry';
 import type { SessionScanItem } from '@srw-astro/models/session-scan';
-import { getVoteCounts, votingAccepted } from '@srw-astro/models/voting-breakdown';
+import { decidedByMayor, getVoteCounts, votingAccepted } from '@srw-astro/models/voting-breakdown';
 
 import { factionKeyOf } from '../leipzig-members/members-file.ts';
 
@@ -23,6 +23,11 @@ const VOTING_FIELDS: Field[] = [
   },
   { name: 'paperReference', type: 'string', description: 'Drucksachennummer (VIII-DS-…, VIII-A-…, …-ÄA-…)' },
   { name: 'oparlPaperId', type: 'string', description: 'Drucksache in OParl' },
+  {
+    name: 'itemNumber',
+    type: 'string',
+    description: 'Punkt der Drucksache bei punktweiser Abstimmung („4“, „1 und 2“), sonst leer',
+  },
   { name: 'title', type: 'string', description: 'Titel des Tagesordnungspunkts laut OParl' },
   { name: 'type', type: 'string', description: 'Art: Beschlussvorlage, Antrag, Änderungsantrag, Geschäftsordnung' },
   { name: 'paperUrl', type: 'string', description: 'Drucksache im Ratsinformationssystem' },
@@ -42,6 +47,16 @@ const VOTING_FIELDS: Field[] = [
     name: 'reviewStatus',
     type: 'string',
     description: 'final, provisional (amtliches Ergebnis fehlt) oder needs-review',
+  },
+  {
+    name: 'decidedByMayor',
+    type: 'boolean',
+    description: 'Ohne das Ja oder Nein des Oberbürgermeisters wäre das Ergebnis umgekehrt',
+  },
+  {
+    name: 'recusedPersonIds',
+    type: 'string',
+    description: 'Wegen Befangenheit (§ 20 SächsGemO) nicht beteiligt: OParl-IDs, durch Leerzeichen getrennt',
   },
 ];
 
@@ -109,6 +124,7 @@ const FACTION_MEMBERSHIP_FIELDS: Field[] = [
 ];
 
 export function votingsToCsv(registry: Registry, scans: SessionScans): string {
+  const oparlIdByName = new Map(registry.persons.map((person) => [person.name, person.oparlId ?? '']));
   const rows = [...scans].flatMap(([sessionId, scan]) =>
     scan.map((voting) => {
       const { J, N, E } = getVoteCounts(voting);
@@ -119,6 +135,7 @@ export function votingsToCsv(registry: Registry, scans: SessionScans): string {
         voting.votingSubject.oparlAgendaItemId ?? '',
         voting.votingSubject.motionId,
         voting.votingSubject.oparlPaperId ?? '',
+        voting.votingSubject.itemNumber ?? '',
         voting.votingSubject.title,
         voting.votingSubject.type ?? '',
         voting.votingSubject.paperUrl ?? '',
@@ -131,6 +148,8 @@ export function votingsToCsv(registry: Registry, scans: SessionScans): string {
         voting.majorityRequirement ?? 'simple',
         votingAccepted(registry, voting) ? 'accepted' : 'rejected',
         voting.reviewStatus ?? 'final',
+        String(decidedByMayor(registry, voting, sessionId)),
+        (voting.recusedPersons ?? []).map((name) => oparlIdByName.get(name) ?? '').join(' '),
       ];
     }),
   );

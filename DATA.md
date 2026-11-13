@@ -74,6 +74,17 @@ Recherche [`docs/research/2026-11-12-mehrheitserfordernisse-leipzig.md`](docs/re
 Die Ratsversammlung hat 71 Mitglieder: 70 Stadträtinnen und Stadträte und den Oberbürgermeister (Sitz 71 der Tafel).
 Bestellungen und Entsendungen beschließt die Stadt mit einfacher Mehrheit, sie sind keine Wahlen.
 
+### Besondere Abstimmungen (`itemNumber`, `decidedByMayor`, `recusedPersonIds`)
+
+- **Punktweise Abstimmung:** Wird über die Punkte einer Vorlage einzeln abgestimmt, nennt `itemNumber` den Punkt
+  (`4`, `1 und 2`). Er stammt aus dem Beschlussprotokoll bzw. der Seite des Tagesordnungspunkts im
+  Ratsinformationssystem („Abstimmungsergebnis zu Punkt 4“).
+- **Stimme des Oberbürgermeisters:** Der Oberbürgermeister stimmt als Mitglied mit (Sitz 71). `decidedByMayor` ist
+  `true`, wenn das Ergebnis ohne sein Ja oder Nein umgekehrt wäre.
+- **Befangenheit (§ 20 SächsGemO):** Wer sich für befangen erklärt, nimmt an Beratung und Abstimmung nicht teil.
+  `recusedPersonIds` nennt diese Mitglieder; die Erklärungen stammen aus dem Verlaufsprotokoll und stehen mit Zitat in
+  [`recusals.json`](data/leipzig-8/recusals.json). Stimmt jemand trotz Eintrag ab, bricht die Auswertung ab.
+
 ### Prüfstatus (`reviewStatus`)
 
 | Wert | Bedeutung |
@@ -120,7 +131,8 @@ den GitHub-Releases `evidence-<datum>`, sie gehören **nicht** zum Datenpaket un
 - **Partei:** siehe oben, die Wahlliste 2024 ist nicht die Parteimitgliedschaft.
 - **Vorlagen mit mehreren Beschlusspunkten** werden punktweise abgestimmt; welcher Punkt welche Tafel ist, steht nicht
   in den Daten der Stadt.
-- **Befangenheit, en-bloc-Abstimmungen und die Stimme des Oberbürgermeisters** sind nicht eigens gekennzeichnet.
+- **Befangenheit** ist nur erfasst, wo das Verlaufsprotokoll sie ausdrücklich nennt. En-bloc-Abstimmungen über
+  mehrere Tagesordnungspunkte und geheime Wahlen kamen in den erfassten Sitzungen nicht vor.
 
 ## Lizenzen und Quellen
 

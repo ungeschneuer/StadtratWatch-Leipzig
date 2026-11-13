@@ -3,7 +3,11 @@ import { generateMeta } from '../../../_helpers.ts';
 import { getEntry } from 'astro:content';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils.ts';
 import type { Registry, RegistrySession } from '@models/registry.ts';
-import { getVotingId, votingAccepted } from '@models/voting-breakdown.ts';
+import {
+  decidedByMayor,
+  getVotingId,
+  votingAccepted,
+} from '@models/voting-breakdown.ts';
 import type { VoteCode } from '@models/Session.ts';
 import { getMajorityRequirement } from '@models/session-scan.ts';
 
@@ -71,6 +75,10 @@ export async function GET({
     presentMembers: scan.presentMembers ?? null,
     result: votingAccepted(parliamentPeriod, scan) ? 'accepted' : 'rejected',
     reviewStatus: scan.reviewStatus ?? null,
+    decidedByMayor: decidedByMayor(parliamentPeriod, scan, props.session.date),
+    recusedPersonIds: (scan.recusedPersons ?? []).map(
+      (name) => personsMap.get(name)?.id ?? null,
+    ),
   }));
 
   const response = {

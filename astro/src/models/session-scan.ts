@@ -11,6 +11,8 @@ export type SessionScanItem = {
   majorityRequirement?: MajorityRequirement;
   presentMembers?: number;
   reviewStatus?: VotingReviewStatus;
+  // Members who declared a conflict of interest (§ 20 SächsGemO, Befangenheit) and took no part, named as in votes.
+  recusedPersons?: string[];
 };
 
 // A vote without a review status is final. The others are published while their check is not finished: a provisional
@@ -101,6 +103,8 @@ export type SessionScanVotingSubject = {
   // Stable keys of the agenda item and the paper in the council's OParl, where the city publishes one.
   oparlAgendaItemId?: string;
   oparlPaperId?: string;
+  // Set when the council voted on the points of a paper one by one: the point this vote decided („4“, „1 und 2“).
+  itemNumber?: string;
 };
 
 export type SessionScanVote = {

@@ -8,9 +8,19 @@ type Props = {
   pageTitle: string;
   parliamentPeriod?: Registry;
   breadcrumbItems?: BreadcrumbItem[];
+  // The search page itself has nothing to find.
+  searchable?: boolean;
+  // How search results name the page where pageTitle alone says too little („Abstimmung“).
+  searchTitle?: string;
 };
 
-const { pageTitle, parliamentPeriod, breadcrumbItems } = Astro.props as Props;
+const {
+  pageTitle,
+  parliamentPeriod,
+  breadcrumbItems,
+  searchable = true,
+  searchTitle,
+} = Astro.props as Props;
 ---
 
 <Layout parliamentPeriod={parliamentPeriod}>
@@ -18,11 +28,17 @@ const { pageTitle, parliamentPeriod, breadcrumbItems } = Astro.props as Props;
     <slot name="srw-meta-tags" />
   </Fragment>
 
-  <PageHeader pageTitle={pageTitle} breadcrumbItems={breadcrumbItems} />
+  <div data-pagefind-body={searchable ? '' : undefined}>
+    <PageHeader
+      pageTitle={pageTitle}
+      searchTitle={searchTitle}
+      breadcrumbItems={breadcrumbItems}
+    />
 
-  <slot name="sub-page-header" />
+    <slot name="sub-page-header" />
 
-  <div class="pt-4">
-    <slot />
+    <div class="pt-4">
+      <slot />
+    </div>
   </div>
 </Layout>
