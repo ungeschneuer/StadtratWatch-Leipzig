@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-07-01",
-  "generatedAt": "2026-11-11T23:06:28.909Z",
+  "generatedAt": "2026-11-12T23:46:29.590Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_01_Juli_2026_-_02-07-21.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-01072026",
@@ -204,7 +204,20 @@
           "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004598"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "label": "Überschrift",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-01/2026-07-01-004-heading.png"
+        },
+        {
+          "label": "Ergebnis",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-01/2026-07-01-004-bars.png"
+        },
+        {
+          "label": "Ganze Tafel",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-01/2026-07-01-004-board.png"
+        }
+      ],
       "seats": [
         {
           "column": 0,
@@ -1018,7 +1031,20 @@
           "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004598"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "label": "Überschrift",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-01/2026-07-01-039-heading.png"
+        },
+        {
+          "label": "Ergebnis",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-01/2026-07-01-039-bars.png"
+        },
+        {
+          "label": "Ganze Tafel",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-07-01/2026-07-01-039-board.png"
+        }
+      ],
       "seats": [
         {
           "column": 0,

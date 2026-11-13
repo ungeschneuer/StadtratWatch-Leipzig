@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-09-03",
-  "generatedAt": "2026-11-11T23:06:28.946Z",
+  "generatedAt": "2026-11-12T23:54:06.471Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_03_September_2026_-_04-07-39.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-03092026",
@@ -202,7 +202,20 @@
           "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004610"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "label": "Überschrift",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-09-03/2026-09-03-004-heading.png"
+        },
+        {
+          "label": "Ergebnis",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-09-03/2026-09-03-004-bars.png"
+        },
+        {
+          "label": "Ganze Tafel",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-09-03/2026-09-03-004-board.png"
+        }
+      ],
       "seats": [
         {
           "column": 0,
