@@ -29,6 +29,9 @@ const isSectionOf = (listPath: string, itemPathPrefix: string) =>
   pathname === listPath || pathname.startsWith(itemPathPrefix);
 let activePage = '';
 switch (true) {
+  case pathname === sitePath('/suche'):
+    activePage = 'search';
+    break;
   case isSectionOf(routes.sessions(), routes.session('')):
     activePage = 'sessions';
     break;
@@ -90,6 +93,13 @@ switch (true) {
       </div>
 
       <div id="sidebar-menu" class="mt-3">
+        <a
+          class="sidebar-menu-item"
+          class:list={[{ active: activePage === 'search' }]}
+          href={sitePath('/suche')}
+        >
+          Suche
+        </a>
         <a
           class="sidebar-menu-item"
           class:list={[{ active: activePage === 'sessions' }]}
