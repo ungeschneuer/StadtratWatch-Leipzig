@@ -1166,7 +1166,7 @@
       },
       {
         "name": "Ralf Pannowitsch",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Eric Recke",
@@ -1205,8 +1205,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 67,
-    "reviewStatus": "needs-review"
+    "presentMembers": 67
   },
   {
     "votingFilename": "2026-02-25-006.png",

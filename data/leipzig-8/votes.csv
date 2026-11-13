@@ -3771,7 +3771,7 @@ sessionId,votingId,personId,name,vote,factionId,partyId
 2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,Dr. Elisa Gerbsch,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/422,Marco Götze,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,Dr. Volker Külow,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
-2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/67,Juliane Nagel,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
+2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/67,Juliane Nagel,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,Dr. Olga Naumov,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/651,Sören Pellmann,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-013,https://www.leipzig.sitzung-online.de/oparl/persons/589,Franziska Riekewald,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
@@ -4611,7 +4611,7 @@ sessionId,votingId,personId,name,vote,factionId,partyId
 2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/1000821,Dr. Elisa Gerbsch,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/422,Marco Götze,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/1000891,Dr. Volker Külow,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
-2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/67,Juliane Nagel,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
+2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/67,Juliane Nagel,E,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/1000893,Dr. Olga Naumov,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/651,Sören Pellmann,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-01-28,2026-01-28-025,https://www.leipzig.sitzung-online.de/oparl/persons/589,Franziska Riekewald,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
@@ -5215,7 +5215,7 @@ sessionId,votingId,personId,name,vote,factionId,partyId
 2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001499,Sascha Jecht,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
 2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001576,Thomas Kachel,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
 2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001600,Danilo Streller,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
-2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,Ralf Pannowitsch,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
+2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001502,Ralf Pannowitsch,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
 2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001504,Eric Recke,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
 2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/2001538,Marco Zscherny,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000041,bsw
 2026-02-25,2026-02-25-005,https://www.leipzig.sitzung-online.de/oparl/persons/1000716,Jan-Paul Helbig,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2000040,piraten
@@ -8448,7 +8448,7 @@ sessionId,votingId,personId,name,vote,factionId,partyId
 2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/1013978,Enrico Stange,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/2239,die-linke
 2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/1000899,Marius Beyer,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/1001123,Udo Bütow,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
-2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,Sylvia Deubel,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
+2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,Sylvia Deubel,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,Nora Reinhardt,J,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,Rocco Farkas,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-03-25,2026-03-25-011,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,Karsten Fiedler,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
@@ -16829,7 +16829,7 @@ sessionId,votingId,personId,name,vote,factionId,partyId
 2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/1000900,Sylvia Deubel,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/2001634,Nora Reinhardt,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/2001514,Rocco Farkas,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
-2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,Karsten Fiedler,O,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
+2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/2001496,Karsten Fiedler,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/2001498,Alexandra Hachmeister,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/1000323,Tobias Keller,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd
 2026-05-27,2026-05-27-032,https://www.leipzig.sitzung-online.de/oparl/persons/1000321,Christian Kriegel,N,https://www.leipzig.sitzung-online.de/oparl/organizations/gr/1000008,afd

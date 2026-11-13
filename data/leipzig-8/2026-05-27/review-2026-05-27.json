@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-05-27",
-  "generatedAt": "2026-11-12T16:59:33.075Z",
+  "generatedAt": "2026-11-13T17:46:23.058Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_27_Mai_2026.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-27052026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 1,
-    "open": 1,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 1
   },
   "cases": [
     {
       "votingIndex": 31,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 24383.3,
       "timecode": "6:46:23",
@@ -447,7 +447,7 @@
           "row": 14,
           "boardName": "Fiedler, Karsten",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -785,26 +785,15 @@
           "reason": "anwesend, ohne Stimme"
         }
       ],
-      "suggestions": [
+      "suggestions": [],
+      "reviews": [
         {
-          "label": "Stimmen auf das amtliche Ergebnis ändern: Fiedler, Karsten → Nein",
-          "correction": {
-            "voting": {
-              "videoSeconds": 24380.5,
-              "agendaItemNumber": "18.13.2"
-            },
-            "seats": [
-              {
-                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
-                "vote": "N"
-              }
-            ],
-            "reason": "Amtliches Ergebnis 20/26/11",
-            "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 20 - 26 - 11. Somit auch abgelehnt."
-          }
+          "reason": "Amtliches Ergebnis 20/26/11, Mündliche Benennung",
+          "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 20 - 26 - 11. Somit auch abgelehnt.",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:43:53.272Z"
         }
-      ],
-      "reviews": []
+      ]
     }
   ]
 }

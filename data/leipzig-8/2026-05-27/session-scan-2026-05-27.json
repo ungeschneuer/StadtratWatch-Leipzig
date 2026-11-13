@@ -9222,7 +9222,7 @@
       },
       {
         "name": "Karsten Fiedler",
-        "vote": "O"
+        "vote": "N"
       },
       {
         "name": "Alexandra Hachmeister",
@@ -9381,8 +9381,7 @@
         "vote": "O"
       }
     ],
-    "presentMembers": 60,
-    "reviewStatus": "needs-review"
+    "presentMembers": 60
   },
   {
     "votingFilename": "2026-05-27-033.png",

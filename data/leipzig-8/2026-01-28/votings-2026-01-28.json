@@ -13,9 +13,9 @@
     "verified": 20,
     "corrected": 6,
     "provisional": 0,
-    "reviewed": 0,
+    "reviewed": 2,
     "unresolved": 0,
-    "needs-review": 2,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 1
   },
@@ -8740,8 +8740,10 @@
           "row": 4,
           "boardName": "Nagel, Juliane",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -9209,7 +9211,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 41,
         "N": 23,
@@ -9242,7 +9244,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Amtliches Ergebnis 41/23/1",
+          "source": "beschlussprotokoll: Abstimmungsergebnis zum ÄÄ:; verlaufsprotokoll: Abstimmung: 41 - 23 - 1. So beschlossen.",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:37:03.899Z"
+        }
+      ]
     },
     {
       "index": 13,
@@ -17257,8 +17267,10 @@
           "row": 4,
           "boardName": "Nagel, Juliane",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "E",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -17726,7 +17738,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 47,
         "N": 6,
@@ -17760,7 +17772,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Amtliches Ergebnis 47/6/9",
+          "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 47 - 6 - 9. So beschlossen.",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:37:40.526Z"
+        }
+      ]
     },
     {
       "index": 25,

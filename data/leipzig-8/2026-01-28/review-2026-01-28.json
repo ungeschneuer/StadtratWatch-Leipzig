@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-01-28",
-  "generatedAt": "2026-11-12T23:20:20.483Z",
+  "generatedAt": "2026-11-13T17:46:22.898Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260128_RV_livestream.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28012026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 2,
-    "open": 2,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 2
   },
   "cases": [
     {
       "votingIndex": 12,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 7976.4,
       "timecode": "2:12:56",
@@ -359,7 +359,7 @@
           "row": 4,
           "boardName": "Nagel, Juliane",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
-          "vote": "O",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -774,7 +774,7 @@
       ],
       "suggestions": [
         {
-          "label": "Stimmen auf das amtliche Ergebnis ändern: Nagel, Juliane → Ja",
+          "label": "Einzige anwesende Mitglieder ohne Stimme zählen: Lehmann, Jens → Ja",
           "correction": {
             "voting": {
               "videoSeconds": 7972.5,
@@ -782,20 +782,27 @@
             },
             "seats": [
               {
-                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
                 "vote": "J"
               }
             ],
-            "reason": "Amtliches Ergebnis 41/23/1",
-            "source": "beschlussprotokoll: Abstimmungsergebnis zum ÄÄ:; verlaufsprotokoll: Abstimmung: 41 - 23 - 1. So beschlossen."
+            "reason": "Amtliches Ergebnis 41/23/1; nur Lehmann, Jens anwesend ohne Stimme",
+            "source": "Belegbild und amtliches Ergebnis"
           }
         }
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Amtliches Ergebnis 41/23/1",
+          "source": "beschlussprotokoll: Abstimmungsergebnis zum ÄÄ:; verlaufsprotokoll: Abstimmung: 41 - 23 - 1. So beschlossen.",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:37:03.899Z"
+        }
+      ]
     },
     {
       "votingIndex": 24,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 21423,
       "timecode": "5:57:03",
@@ -1195,7 +1202,7 @@
           "row": 4,
           "boardName": "Nagel, Juliane",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
-          "vote": "O",
+          "vote": "E",
           "attendance": "present"
         },
         {
@@ -1610,7 +1617,7 @@
       ],
       "suggestions": [
         {
-          "label": "Stimmen auf das amtliche Ergebnis ändern: Nagel, Juliane → Enthaltung",
+          "label": "Einzige anwesende Mitglieder ohne Stimme zählen: Pellmann, Sören → Enthaltung",
           "correction": {
             "voting": {
               "videoSeconds": 21420,
@@ -1618,16 +1625,23 @@
             },
             "seats": [
               {
-                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/67",
+                "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/651",
                 "vote": "E"
               }
             ],
-            "reason": "Amtliches Ergebnis 47/6/9",
-            "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 47 - 6 - 9. So beschlossen."
+            "reason": "Amtliches Ergebnis 47/6/9; nur Pellmann, Sören anwesend ohne Stimme",
+            "source": "Belegbild und amtliches Ergebnis"
           }
         }
       ],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Amtliches Ergebnis 47/6/9",
+          "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 47 - 6 - 9. So beschlossen.",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:37:40.526Z"
+        }
+      ]
     }
   ]
 }
