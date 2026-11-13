@@ -1,0 +1,16 @@
+[
+  {
+    "partyId": "afd",
+    "classification": "RIGHT_WING",
+    "reason": "Das Landesamt für Verfassungsschutz Sachsen stuft den Landesverband Sachsen der AfD seit dem 8. Dezember 2023 als gesichert rechtsextremistische Bestrebung ein.",
+    "source": "Landesamt für Verfassungsschutz Sachsen, Medieninformation vom 08.12.2023",
+    "sourceUrl": "https://www.medienservice.sachsen.de/medien/news/1071656"
+  },
+  {
+    "partyId": "freie-sachsen",
+    "classification": "RIGHT_WING",
+    "reason": "Das Landesamt für Verfassungsschutz Sachsen stuft die Partei Freie Sachsen seit dem 17. Juni 2021 als rechtsextremistische Bestrebung ein.",
+    "source": "Landesamt für Verfassungsschutz Sachsen, Medieninformation vom 17.06.2021",
+    "sourceUrl": "https://www.medienservice.sachsen.de/medien/news/253332"
+  }
+]

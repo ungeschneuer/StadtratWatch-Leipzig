@@ -4186,6 +4186,20 @@
         }
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031376": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031376",
+      "reference": "VIII-DS-02229-NF-01",
+      "name": "Bau- und Finanzierungsbeschluss Umbau Torgauer Platz einschließlich Torgauer Straße und Eisenbahnstraße - Bestätigung gem. § 79 (1) SächsGemO sowie § 20 SächsKomHVO",
+      "paperType": "Neufassung Beschlussvorlage",
+      "date": "2026-08-13",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031376",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2075",
+          "name": "66 Mobilitäts- und Tiefbauamt"
+        }
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031511": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031511",
       "reference": "VIII-DS-01570-ÄA-01",
@@ -5310,6 +5324,7 @@
       "9": "https://www.leipzig.sitzung-online.de/oparl/papers/2031511",
       "10": "https://www.leipzig.sitzung-online.de/oparl/papers/2026297",
       "12": "https://www.leipzig.sitzung-online.de/oparl/papers/2031648",
+      "13": "https://www.leipzig.sitzung-online.de/oparl/papers/2031376",
       "14": "https://www.leipzig.sitzung-online.de/oparl/papers/2030089",
       "17": "https://www.leipzig.sitzung-online.de/oparl/papers/2030265",
       "18": "https://www.leipzig.sitzung-online.de/oparl/papers/2031711"

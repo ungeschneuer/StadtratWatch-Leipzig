@@ -1,6 +1,6 @@
 {
   "id": "leipzig-8",
-  "name": "Leipzig – Wahlperiode VIII",
+  "name": "Wahlperiode VIII",
   "lastUpdate": "2026-11-12T00:00:00Z",
   "sessions": [
     {
@@ -320,7 +320,25 @@
     {
       "id": "afd",
       "name": "AfD",
-      "seats": 12
+      "seats": 12,
+      "additionalInformation": [
+        {
+          "key": "EXTREMIST_CLASSIFICATION",
+          "value": "RIGHT_WING"
+        },
+        {
+          "key": "EXTREMIST_CLASSIFICATION_REASON",
+          "value": "Das Landesamt für Verfassungsschutz Sachsen stuft den Landesverband Sachsen der AfD seit dem 8. Dezember 2023 als gesichert rechtsextremistische Bestrebung ein."
+        },
+        {
+          "key": "EXTREMIST_CLASSIFICATION_SOURCE",
+          "value": "Landesamt für Verfassungsschutz Sachsen, Medieninformation vom 08.12.2023"
+        },
+        {
+          "key": "EXTREMIST_CLASSIFICATION_SOURCE_URL",
+          "value": "https://www.medienservice.sachsen.de/medien/news/1071656"
+        }
+      ]
     },
     {
       "id": "die-linke",
@@ -355,7 +373,25 @@
     {
       "id": "freie-sachsen",
       "name": "FREIE SACHSEN",
-      "seats": 1
+      "seats": 1,
+      "additionalInformation": [
+        {
+          "key": "EXTREMIST_CLASSIFICATION",
+          "value": "RIGHT_WING"
+        },
+        {
+          "key": "EXTREMIST_CLASSIFICATION_REASON",
+          "value": "Das Landesamt für Verfassungsschutz Sachsen stuft die Partei Freie Sachsen seit dem 17. Juni 2021 als rechtsextremistische Bestrebung ein."
+        },
+        {
+          "key": "EXTREMIST_CLASSIFICATION_SOURCE",
+          "value": "Landesamt für Verfassungsschutz Sachsen, Medieninformation vom 17.06.2021"
+        },
+        {
+          "key": "EXTREMIST_CLASSIFICATION_SOURCE_URL",
+          "value": "https://www.medienservice.sachsen.de/medien/news/253332"
+        }
+      ]
     },
     {
       "id": "freie-waehler",

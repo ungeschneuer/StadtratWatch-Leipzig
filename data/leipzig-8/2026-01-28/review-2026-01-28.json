@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-01-28",
-  "generatedAt": "2026-11-12T14:30:27.470Z",
+  "generatedAt": "2026-11-12T23:20:20.483Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/20260128_RV_livestream.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-28012026",
@@ -179,7 +179,20 @@
           "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004593"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "label": "Überschrift",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-01-28/2026-01-28-012-heading.png"
+        },
+        {
+          "label": "Ergebnis",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-01-28/2026-01-28-012-bars.png"
+        },
+        {
+          "label": "Ganze Tafel",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-01-28/2026-01-28-012-board.png"
+        }
+      ],
       "seats": [
         {
           "column": 0,
@@ -1002,7 +1015,20 @@
           "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004593"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "label": "Überschrift",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-01-28/2026-01-28-024-heading.png"
+        },
+        {
+          "label": "Ergebnis",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-01-28/2026-01-28-024-bars.png"
+        },
+        {
+          "label": "Ganze Tafel",
+          "url": "https://github.com/ungeschneuer/StadtratWatch-Leipzig/releases/download/evidence-2026-01-28/2026-01-28-024-board.png"
+        }
+      ],
       "seats": [
         {
           "column": 0,
