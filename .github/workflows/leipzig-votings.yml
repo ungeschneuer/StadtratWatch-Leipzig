@@ -111,7 +111,7 @@ jobs:
           git add data/leipzig-8
           git diff --cached --quiet || git commit -m 'data(leipzig): Abstimmungen aus den Aufzeichnungen'
           before="$(git ls-remote origin "refs/heads/$LEIPZIG_DATA_BRANCH" | cut -f1)"
-          git push origin "HEAD:$LEIPZIG_DATA_BRANCH"
+          .github/scripts/leipzig-push-data-branch.sh
           [ "$before" != "$(git rev-parse HEAD)" ] && echo 'pushed=true' >> "$GITHUB_OUTPUT" || true
 
       - name: Run CI on the data branch

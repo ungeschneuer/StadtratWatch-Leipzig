@@ -1,0 +1,50 @@
+---
+import {
+  ENCODED_CONTACT_EMAIL,
+  SPELLED_OUT_CONTACT_EMAIL,
+} from '@utils/contact-email';
+import { sitePath } from '@utils/site-path';
+
+type Props = {
+  class?: string;
+  title?: string;
+  subject?: string;
+  body?: string;
+};
+
+const { class: className, title, subject, body } = Astro.props as Props;
+const mailQuery = new URLSearchParams({
+  ...(subject && { subject }),
+  ...(body && { body }),
+})
+  .toString()
+  .replaceAll('+', '%20');
+const showsAddress = !Astro.slots.has('default');
+---
+
+<a
+  href={sitePath('/kontakt/')}
+  class={className}
+  title={title}
+  aria-label={title}
+  data-contact-email={ENCODED_CONTACT_EMAIL}
+  data-contact-email-query={mailQuery}
+  data-contact-email-shows-address={showsAddress ? '' : undefined}
+>
+  {showsAddress ? SPELLED_OUT_CONTACT_EMAIL : <slot />}
+</a>
+
+<script>
+  import { decodeEmail } from '@utils/email-encoding';
+
+  for (const link of document.querySelectorAll<HTMLAnchorElement>(
+    'a[data-contact-email]',
+  )) {
+    const address = decodeEmail(link.dataset.contactEmail ?? '');
+    const query = link.dataset.contactEmailQuery;
+    link.href = `mailto:${address}${query ? `?${query}` : ''}`;
+    if (link.hasAttribute('data-contact-email-shows-address')) {
+      link.textContent = address;
+    }
+  }
+</script>

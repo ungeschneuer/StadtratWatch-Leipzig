@@ -1,11 +1,11 @@
 ---
+import ContactEmailLink from '@components/ContactEmailLink.astro';
 import { siteRoutes } from '@utils/routes';
 import { sitePath } from '@utils/site-path';
 import { getCollection } from 'astro:content';
 import { type Registry } from '@models/registry';
 import { formatDate } from '@utils/format-date';
 import {
-  CONTACT_EMAIL,
   OPERATOR_NAME,
   OPERATOR_WEBSITE,
   SITE_NAME,
@@ -155,11 +155,8 @@ const aboutLinks = [
         <a class="link" href={OPERATOR_WEBSITE} target="_blank">
           {OPERATOR_NAME}
         </a>
-        ,{' '}
-        <a class="link" href={`mailto:${CONTACT_EMAIL}`}>
-          {CONTACT_EMAIL}
-        </a>
-        . <em>Keine</em> offizielle Seite der Stadt Leipzig.
+        , <ContactEmailLink class="link" />. <em>Keine</em> offizielle Seite der
+        Stadt Leipzig.
       </p>
       <p class="text-xs">
         Grundlage:{' '}
