@@ -1,113 +1,359 @@
 ---
-import PageLayout from '@layouts/PageLayout.astro';
+import Layout from '@layouts/Layout.astro';
+import VotingReviewBadge from '@components/VotingReviewBadge.astro';
 import {
   type ParliamentPeriodWithSessionsProps,
   getParliamentPeriodWithSessionsPaths,
 } from './_helpers';
 import { formatDate } from '@utils/format-date';
 import { formatNumber } from '@utils/format-number';
-import { formatSpeakingTime } from '@utils/format-time';
 import { calcSpeakingTimeOfSessions } from '@data-analysis/SpeakingTime';
+import { getVoteCounts, votingAccepted } from '@models/voting-breakdown.ts';
+import { siteRoutes, votingSlugs } from '@utils/routes';
 import { sitePath } from '@utils/site-path';
+import {
+  factionColorProperty,
+  factionColorStyles,
+  factionColorsByParliamentPeriod,
+} from '@utils/faction-colors';
 
 export const getStaticPaths = getParliamentPeriodWithSessionsPaths;
 
 const { parliamentPeriod, sessionInputs } =
   Astro.props as ParliamentPeriodWithSessionsProps;
+const routes = siteRoutes(parliamentPeriod.id);
 const firstSession = parliamentPeriod.sessions[0];
-const lastSession =
-  parliamentPeriod.sessions[parliamentPeriod.sessions.length - 1];
-const totalVotingCount = sessionInputs.flatMap(
+
+const allVotings = sessionInputs.flatMap(
   (sessionInput) => sessionInput.votings,
-).length;
-const totalVoteCount = sessionInputs.reduce((acc, sessionInput) => {
-  const votesInSession = sessionInput.votings.reduce((sum, voting) => {
-    return sum + voting.votes.filter((vote) => vote.vote !== 'O').length;
-  }, 0);
-  return acc + votesInSession;
-}, 0);
-
-const totalSpeakingTime = calcSpeakingTimeOfSessions(sessionInputs);
-
-const formattedTotalSpeakingTime = formatSpeakingTime(
-  totalSpeakingTime,
-  true,
-  false,
 );
+const castVoteCount = allVotings.reduce(
+  (sum, voting) =>
+    sum + voting.votes.filter((vote) => vote.vote !== 'O').length,
+  0,
+);
+const speakingHours = Math.round(
+  calcSpeakingTimeOfSessions(sessionInputs) / 3600,
+);
+const keyFigures = [
+  { value: formatNumber(sessionInputs.length), label: 'Sitzungen' },
+  { value: formatNumber(allVotings.length), label: 'Abstimmungen' },
+  { value: formatNumber(castVoteCount), label: 'abgegebene Stimmen' },
+  { value: `${formatNumber(speakingHours)} h`, label: 'Redezeit' },
+];
+
+// Seats in the order of size; a semicircle would suggest a left-right order the council does not have.
+const factionColors =
+  factionColorsByParliamentPeriod.get(parliamentPeriod.id) ?? new Map();
+const colorPropertyByFaction = new Map(
+  [...factionColors.keys()].map((faction, index) => [
+    faction,
+    factionColorProperty(index),
+  ]),
+);
+const seatRows = parliamentPeriod.factions
+  .filter((faction) => faction.seats > 0)
+  .toSorted((a, b) => b.seats - a.seats)
+  .map((faction) => ({
+    ...faction,
+    color: colorPropertyByFaction.has(faction.name)
+      ? `var(${colorPropertyByFaction.get(faction.name)})`
+      : 'var(--color-neutral)',
+  }));
+const seatCount = seatRows.reduce((sum, faction) => sum + faction.seats, 0);
+
+// The latest session with votes on the substance of a matter, not on the agenda or procedure.
+const SUBSTANTIVE_TYPES = ['Beschlussvorlage', 'Antrag', 'Änderungsantrag'];
+const latestSessionInput = sessionInputs.findLast(
+  (sessionInput) => sessionInput.votings.length > 0,
+);
+const latestVotings = latestSessionInput
+  ? (() => {
+      const slugs = votingSlugs(latestSessionInput.votings);
+      return latestSessionInput.votings
+        .filter((voting) =>
+          SUBSTANTIVE_TYPES.includes(voting.votingSubject.type ?? ''),
+        )
+        .slice(-4)
+        .reverse()
+        .map((voting) => ({
+          title: voting.votingSubject.title,
+          agendaItem: voting.votingSubject.agendaItem,
+          type: voting.votingSubject.type,
+          counts: getVoteCounts(voting),
+          accepted: votingAccepted(parliamentPeriod, voting),
+          reviewStatus: voting.reviewStatus,
+          url: routes.voting(
+            latestSessionInput.session.id,
+            slugs.get(voting.votingFilename) as string,
+          ),
+        }));
+    })()
+  : [];
+
+const entryPoints = [
+  {
+    href: routes.sessions(),
+    icon: 'lucide--calendar-days',
+    title: 'Sitzungen',
+    text: 'Jede Abstimmung mit Tafel, Ergebnis und Stimmen je Person.',
+  },
+  {
+    href: routes.factions(),
+    icon: 'lucide--users',
+    title: 'Fraktionen',
+    text: 'Wie geschlossen sie abstimmen und wie oft sie sich durchsetzen.',
+  },
+  {
+    href: routes.persons(),
+    icon: 'lucide--user',
+    title: 'Personen',
+    text: 'Teilnahme, Enthaltungen und wer ähnlich abstimmt.',
+  },
+];
+
+const methodSteps = [
+  {
+    icon: 'lucide--video',
+    title: 'Aufzeichnung',
+    text: 'Die Stadt veröffentlicht jede Sitzung als Video in ihrer Mediathek.',
+  },
+  {
+    icon: 'lucide--scan-eye',
+    title: 'Tafel lesen',
+    text: 'Aus dem Bild der Abstimmungstafel wird jede Stimme nach Farbe gelesen.',
+  },
+  {
+    icon: 'lucide--list-checks',
+    title: 'Abgleich',
+    text: 'Die Ergebnisse werden mit den Protokollen der Stadt abgeglichen; was nicht passt, prüft ein Mensch.',
+  },
+];
 ---
 
-<PageLayout
-  pageTitle={parliamentPeriod.name}
-  parliamentPeriod={parliamentPeriod}
->
-  <div class="space-y-8">
-    <div class="hero">
-      <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h2 class="text-primary mb-6 text-4xl font-bold sm:text-5xl">
-            Stadtrat Leipzig
+<Layout parliamentPeriod={parliamentPeriod}>
+  <style is:inline set:html={factionColorStyles(factionColors)}></style>
+
+  <div class="space-y-10 lg:space-y-14">
+    <section class="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:gap-12">
+      <div>
+        <p class="text-primary mb-3 text-sm font-semibold">
+          Ratsversammlung Leipzig · {parliamentPeriod.name}
+        </p>
+        <h1 class="text-3xl leading-tight font-bold text-balance sm:text-4xl xl:text-5xl">
+          Wie hat der Stadtrat abgestimmt?
+        </h1>
+        <p class="text-base-content/70 mt-4 max-w-xl text-lg text-pretty">
+          Wie jedes Ratsmitglied seit dem {formatDate(firstSession.date)}{' '}
+          abgestimmt hat, gelesen aus den Aufzeichnungen der Stadt und mit ihren
+          Protokollen abgeglichen.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          {latestSessionInput && (
+            <a
+              href={routes.session(latestSessionInput.session.id)}
+              class="btn btn-primary"
+            >
+              Letzte Sitzung: {formatDate(latestSessionInput.session.date)}
+              <span class="iconify lucide--arrow-right size-4" />
+            </a>
+          )}
+          <a href={sitePath('/suche')} class="btn btn-outline">
+            <span class="iconify lucide--search size-4"></span>
+            Person oder Thema suchen
+          </a>
+        </div>
+      </div>
+
+      <figure
+        class="card border-base-300 bg-base-100 border"
+        aria-labelledby="seats-caption"
+      >
+        <div class="card-body gap-3 p-5">
+          <figcaption
+            id="seats-caption"
+            class="flex items-baseline justify-between"
+          >
+            <span class="font-semibold">Sitzverteilung</span>
+            <span class="text-base-content/70 text-sm">{seatCount} Sitze</span>
+          </figcaption>
+          <ul class="space-y-2">
+            {seatRows.map((faction) => (
+              <li>
+                <a
+                  href={routes.faction(faction.id)}
+                  class="hover:bg-base-200 -mx-2 grid grid-cols-[7.5rem_minmax(0,1fr)_auto] sm:grid-cols-[10rem_minmax(0,1fr)_auto] items-center gap-3 rounded-field px-2 py-1"
+                >
+                  <span class="text-sm leading-tight">{faction.name}</span>
+                  <span
+                    class="flex flex-wrap gap-[3px] sm:gap-1"
+                    aria-hidden="true"
+                  >
+                    {Array.from({ length: faction.seats }, () => (
+                      <span
+                        class="size-2 rounded-full sm:size-2.5"
+                        style={`background-color: ${faction.color};`}
+                      />
+                    ))}
+                  </span>
+                  <span class="text-sm tabular-nums">
+                    {faction.seats}
+                    <span class="sr-only"> Sitze</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </figure>
+    </section>
+
+    <section aria-label="Kennzahlen">
+      <dl class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {keyFigures.map((figure) => (
+          <div class="border-base-300 bg-base-100 rounded-box border p-4 sm:p-5">
+            <dt class="text-base-content/70 text-sm">{figure.label}</dt>
+            <dd class="mt-1 text-2xl font-semibold tabular-nums sm:text-3xl">
+              {figure.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    {latestSessionInput && latestVotings.length > 0 && (
+      <section aria-labelledby="latest-heading">
+        <div class="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="latest-heading" class="text-xl font-semibold">
+            Zuletzt abgestimmt
           </h2>
-          <p>
-            Daten und Analysen von Abstimmungen und Redebeiträgen in den
-            Sitzungen der Leipziger Ratsversammlung im Zeitraum{' '}
-            {formatDate(firstSession.date)} - {formatDate(lastSession.date)}.
-          </p>
+          <a
+            href={routes.session(latestSessionInput.session.id)}
+            class="link link-primary text-sm"
+          >
+            Alle Abstimmungen vom {formatDate(latestSessionInput.session.date)}
+          </a>
         </div>
-      </div>
-    </div>
+        <ul class="grid gap-3 md:grid-cols-2">
+          {latestVotings.map((voting) => (
+            <li>
+              <a
+                href={voting.url}
+                class="card border-base-300 bg-base-100 hover:border-primary h-full border transition-colors"
+              >
+                <div class="card-body gap-3 p-4 sm:p-5">
+                  <div class="text-base-content/70 flex flex-wrap items-center gap-2 text-sm">
+                    <span>
+                      {[`TOP ${voting.agendaItem}`, voting.type]
+                        .filter(Boolean)
+                        .join(' · ')}
+                    </span>
+                    <VotingReviewBadge reviewStatus={voting.reviewStatus} />
+                  </div>
+                  <p class="line-clamp-3 font-medium hyphens-auto" lang="de">
+                    {voting.title}
+                  </p>
+                  <div class="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                    <span
+                      class:list={[
+                        'badge badge-soft gap-1',
+                        voting.accepted ? 'badge-success' : 'badge-error',
+                      ]}
+                    >
+                      <span
+                        class:list={[
+                          'iconify size-3.5',
+                          voting.accepted ? 'lucide--check' : 'lucide--x',
+                        ]}
+                      />
+                      {voting.accepted ? 'Angenommen' : 'Abgelehnt'}
+                    </span>
+                    <span class="text-base-content/70 tabular-nums">
+                      {voting.counts.J} Ja · {voting.counts.N} Nein ·{' '}
+                      {voting.counts.E} Enthaltung
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
-    <div class="flex justify-center">
-      <div class="stats shadow bg-base-200 stats-vertical sm:stats-horizontal">
-        <div class="stat place-items-center">
-          <div class="stat-title">Abstimmungen</div>
-          <div class="stat-value">{formatNumber(totalVotingCount)}</div>
-          <div class="stat-desc">Seit dem {formatDate(firstSession.date)}</div>
-        </div>
+    <section aria-labelledby="explore-heading">
+      <h2 id="explore-heading" class="mb-4 text-xl font-semibold">
+        Entdecken
+      </h2>
+      <ul class="grid gap-3 md:grid-cols-3">
+        {entryPoints.map((entry) => (
+          <li>
+            <a
+              href={entry.href}
+              class="card border-base-300 bg-base-100 hover:border-primary h-full border transition-colors"
+            >
+              <div class="card-body flex-row items-start gap-4 p-4 sm:p-5">
+                <span class="bg-primary/10 text-primary grid size-10 shrink-0 place-items-center rounded-field">
+                  <span class:list={['iconify size-5', entry.icon]} />
+                </span>
+                <div>
+                  <h3 class="font-semibold">{entry.title}</h3>
+                  <p class="text-base-content/70 mt-1 text-sm">{entry.text}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
 
-        <div class="stat place-items-center">
-          <div class="stat-title">Abgegebene Stimmen</div>
-          <div class="stat-value">{formatNumber(totalVoteCount)}</div>
-          <div class="stat-desc">Ja / Nein / Enthaltung</div>
-        </div>
-
-        <div class="stat place-items-center">
-          <div class="stat-title">Redebeiträge</div>
-          <div class="stat-value">{formattedTotalSpeakingTime}</div>
-          <div class="stat-desc">Gesamte Redezeit</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="alert alert-soft alert-info mt-20">
-    <div class="space-y-2">
-      <p>
-        Diese Seite zeigt, wie die einzelnen Mitglieder der Leipziger
-        Ratsversammlung abgestimmt haben. Die Stimmen werden aus der
-        Abstimmungstafel in den{' '}
-        <a href="https://www.leipzig.de/mediathek" class="link link-primary">
-          Video-Aufzeichnungen der Stadt
-        </a>{' '}
-        gelesen und mit den Protokollen im{' '}
+    <section
+      aria-labelledby="method-heading"
+      class="border-base-300 bg-base-100 rounded-box border p-5 sm:p-8"
+    >
+      <h2 id="method-heading" class="text-xl font-semibold">
+        So entstehen die Daten
+      </h2>
+      <ol class="mt-5 grid gap-6 md:grid-cols-3">
+        {methodSteps.map((step, index) => (
+          <li class="flex gap-4">
+            <span class="bg-base-200 text-primary grid size-10 shrink-0 place-items-center rounded-full">
+              <span class:list={['iconify size-5', step.icon]} />
+            </span>
+            <div>
+              <h3 class="font-semibold">
+                <span class="text-base-content/70 tabular-nums">
+                  {index + 1}.
+                </span>{' '}
+                {step.title}
+              </h3>
+              <p class="text-base-content/70 mt-1 text-sm">{step.text}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p class="text-base-content/70 border-base-300 mt-6 max-w-prose border-t pt-4 text-sm">
+        Erfasst sind nur Sitzungen mit Aufzeichnung (die Stadt hält sie etwa ein
+        Jahr vor) und nur Abstimmungen über die elektronische Tafel;
+        Abstimmungen per Handzeichen und geheime Wahlen haben keine Stimmen je
+        Person. Vorläufige Ergebnisse und Abstimmungen in Prüfung sind
+        gekennzeichnet. Quellen:{' '}
+        <a href="https://www.leipzig.de/mediathek" class="link">
+          Mediathek
+        </a>
+        ,{' '}
         <a
           href="https://ratsinformation.leipzig.de/allris_leipzig_public/"
-          class="link link-primary"
+          class="link"
         >
           Ratsinformationssystem
-        </a>{' '}
-        abgeglichen. Die Redebeiträge stammen aus dem Verlaufsprotokoll.
-      </p>
-      <p>
-        Erfasst sind nur Sitzungen mit Aufzeichnung (die Stadt hält sie etwa ein
-        Jahr vor) und nur Abstimmungen über die elektronische Tafel.
-        Abstimmungen per Handzeichen oder geheime Wahlen fehlen, weil es für sie
-        keine Stimmen je Person gibt. Vorläufige Ergebnisse und Abstimmungen in
-        Prüfung sind gekennzeichnet. Mehr dazu unter{' '}
-        <a href={sitePath('/kontakt')} class="link link-primary">
+        </a>
+        ; mehr unter{' '}
+        <a href={sitePath('/kontakt')} class="link">
           Kontakt
         </a>
         .
       </p>
-    </div>
+    </section>
   </div>
-</PageLayout>
+</Layout>
