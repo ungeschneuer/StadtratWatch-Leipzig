@@ -7,7 +7,7 @@ veröffentlicht sie als Website, als API und als offene Daten. Dazu kommen die R
 **Website:** <https://ungeschneuer.github.io/StadtratWatch-Leipzig/>
 
 Ein Projekt von **Marcel Schneuer** ([schneuer.online](https://schneuer.online),
-[hallo@schneuer.online](mailto:hallo@schneuer.online)), keine Seite der Stadt Leipzig. Im Netz:
+[Kontakt](https://ungeschneuer.github.io/StadtratWatch-Leipzig/kontakt/)), keine Seite der Stadt Leipzig. Im Netz:
 [Mastodon](https://social.tchncs.de/@schneuerwerk), [Bluesky](https://bsky.app/profile/schneuerwerk.bsky.social),
 [GitHub](https://github.com/ungeschneuer), [Instagram](https://www.instagram.com/schneuerwerk/),
 [LinkedIn](https://www.linkedin.com/in/marcel-schneuer/).
@@ -64,5 +64,5 @@ Mehr in [AGENTS.md](./AGENTS.md).
 
 ## Kontakt
 
-Marcel Schneuer, [hallo@schneuer.online](mailto:hallo@schneuer.online) ·
+Marcel Schneuer, [Kontaktseite](https://ungeschneuer.github.io/StadtratWatch-Leipzig/kontakt/) ·
 [Issues](https://github.com/ungeschneuer/StadtratWatch-Leipzig/issues)
