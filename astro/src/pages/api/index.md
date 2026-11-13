@@ -8,6 +8,8 @@ StadtratWatch Leipzig hat eine öffentliche Schnittstelle, die es Entwickler:inn
 
 ## Verfügbare Endpunkte
 
+Felder, Beispiele und Fehlercodes beschreibt die [Dokumentation der API v1](v1/README/).
+
 **Legislaturperioden**
 
 - `GET /api/v1/parliament-periods.json` - Liste aller Legislaturperioden

@@ -90,3 +90,16 @@ jobs:
       - name: Build project
         run: npm run build
         working-directory: astro
+
+      # The review app imports the site's theme and font, so it is checked against the same commit.
+      - name: Install review app dependencies
+        run: npm ci
+        working-directory: session-review
+
+      - name: Lint review app
+        run: npm run lint
+        working-directory: session-review
+
+      - name: Build review app
+        run: npm run build
+        working-directory: session-review

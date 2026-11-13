@@ -119,10 +119,12 @@ function voteCounts(votes: { vote: string }[]) {
             href={voting.url}
             class="timeline-end timeline-box mt-5 ms-3 w-full hover:bg-base-200 hover:cursor-pointer space-y-2"
           >
-            <div class="text-base-content/70 space-x-1">
-              <span>{voting.agendaItem}</span>
-              <span>{voting.type}</span>
-              <span>{voting.motionId}</span>
+            <div class="text-base-content/70 flex flex-wrap items-center gap-x-2">
+              <span>
+                {[voting.agendaItem, voting.type, voting.motionId]
+                  .filter(Boolean)
+                  .join(' · ')}
+              </span>
               <VotingReviewBadge reviewStatus={voting.reviewStatus} />
             </div>
             <div class="text-base">{voting.title}</div>

@@ -3,6 +3,7 @@ import { extname, join, normalize } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
 const sharedModelsFolder = fileURLToPath(new URL('../src/deps/astro/', import.meta.url))
 const leipzigDataFolder = fileURLToPath(new URL('../data/leipzig-8/', import.meta.url))
@@ -39,7 +40,7 @@ function serveLeipzigFolders(): Plugin {
 // https://vite.dev/config/
 export default defineConfig({
   base: process.env.SESSION_REVIEW_BASE ?? '/',
-  plugins: [react(), serveLeipzigFolders()],
+  plugins: [react(), tailwindcss(), serveLeipzigFolders()],
   resolve: {
     alias: [{ find: /^@srw-astro\/models\/(.+)$/, replacement: `${sharedModelsFolder}$1.ts` }],
   },
