@@ -91,7 +91,7 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ACCEPTED_BY: ${{ github.event.sender.login }}
         run: |
-          gh issue close "$ISSUE_NUMBER" --reason completed --comment "Übernommen von @$ACCEPTED_BY. Die Entscheidung liegt auf \`$LEIPZIG_DATA_BRANCH\`, wird neu geprüft und abends veröffentlicht. Danke für den Vorschlag!"
+          gh issue close "$ISSUE_NUMBER" --reason completed --comment "Übernommen von @$ACCEPTED_BY. Die Entscheidung liegt auf \`$LEIPZIG_DATA_BRANCH\`, wird neu geprüft und mit der nächsten Veröffentlichung (alle 12 Stunden) online gestellt. Danke für den Vorschlag!"
 
       - name: Report a rejected proposal
         if: failure() && steps.apply.outcome == 'failure'
