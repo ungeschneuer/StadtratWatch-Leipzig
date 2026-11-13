@@ -18,4 +18,5 @@ export type ChartDataPoint = {
   value: number;
   partyId: string;
   label: string;
+  valueLabel: string;
 };
