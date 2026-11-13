@@ -18,22 +18,22 @@
       "sessionId": "2026-01-28",
       "videoAvailable": true,
       "cases": 2,
-      "open": 2,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 2
     },
     {
       "sessionId": "2026-02-25",
       "videoAvailable": true,
       "cases": 1,
-      "open": 1,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 1
     },
     {
       "sessionId": "2026-03-25",
       "videoAvailable": true,
       "cases": 2,
-      "open": 2,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 2
     },
     {
       "sessionId": "2026-03-26",
@@ -53,8 +53,8 @@
       "sessionId": "2026-05-27",
       "videoAvailable": true,
       "cases": 1,
-      "open": 1,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 1
     },
     {
       "sessionId": "2026-05-28",
@@ -67,15 +67,15 @@
       "sessionId": "2026-07-01",
       "videoAvailable": true,
       "cases": 2,
-      "open": 2,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 2
     },
     {
       "sessionId": "2026-07-02",
       "videoAvailable": true,
       "cases": 2,
-      "open": 2,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 2
     },
     {
       "sessionId": "2026-09-02",
@@ -88,8 +88,8 @@
       "sessionId": "2026-09-03",
       "videoAvailable": true,
       "cases": 1,
-      "open": 1,
-      "reviewed": 0
+      "open": 0,
+      "reviewed": 1
     },
     {
       "sessionId": "2026-09-30",
@@ -108,8 +108,8 @@
     {
       "sessionId": "2026-10-29",
       "videoAvailable": true,
-      "cases": 0,
-      "open": 0,
+      "cases": 1,
+      "open": 1,
       "reviewed": 0
     }
   ]

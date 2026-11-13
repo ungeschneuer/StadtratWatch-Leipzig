@@ -13,8 +13,9 @@
     "verified": 16,
     "corrected": 1,
     "provisional": 0,
-    "reviewed": 0,
-    "needs-review": 1,
+    "reviewed": 1,
+    "unresolved": 0,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 1
   },
@@ -3547,7 +3548,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 23,
         "N": 32,
@@ -3580,7 +3581,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "ALLRIS falsch nach Aufnahme.",
+          "source": "Video 1:12:54",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:52:42.063Z"
+        }
+      ]
     },
     {
       "index": 5,

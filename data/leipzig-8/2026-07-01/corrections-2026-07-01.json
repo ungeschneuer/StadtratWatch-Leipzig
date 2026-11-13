@@ -1,0 +1,24 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 1067.7,
+      "agendaItemNumber": "9.1"
+    },
+    "approve": true,
+    "reason": "Fehler im Verlausprotokoll",
+    "source": "Video 0:17:47",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:49:10.343Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 23715.8,
+      "agendaItemNumber": "18.21.2"
+    },
+    "approve": true,
+    "reason": "Fehler in der Niederschrift.",
+    "source": "Video 6:35:15",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:49:45.496Z"
+  }
+]

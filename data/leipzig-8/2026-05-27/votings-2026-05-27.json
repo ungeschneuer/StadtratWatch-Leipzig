@@ -13,8 +13,9 @@
     "verified": 31,
     "corrected": 0,
     "provisional": 0,
-    "reviewed": 0,
-    "needs-review": 1,
+    "reviewed": 1,
+    "unresolved": 0,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 1
   },
@@ -22821,8 +22822,10 @@
           "row": 14,
           "boardName": "Fiedler, Karsten",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001496",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "N",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -23216,7 +23219,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 20,
         "N": 26,
@@ -23249,7 +23252,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Amtliches Ergebnis 20/26/11, Mündliche Benennung",
+          "source": "beschlussprotokoll: Abstimmungsergebnis:; verlaufsprotokoll: Abstimmung: 20 - 26 - 11. Somit auch abgelehnt.",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:43:53.272Z"
+        }
+      ]
     },
     {
       "index": 32,

@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-09-03",
-  "generatedAt": "2026-11-12T23:54:06.471Z",
+  "generatedAt": "2026-11-13T17:58:20.013Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_03_September_2026_-_04-07-39.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-03092026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 1,
-    "open": 1,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 1
   },
   "cases": [
     {
       "votingIndex": 4,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 4374.6,
       "timecode": "1:12:54",
@@ -799,7 +799,14 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "ALLRIS falsch nach Aufnahme.",
+          "source": "Video 1:12:54",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:52:42.063Z"
+        }
+      ]
     }
   ]
 }

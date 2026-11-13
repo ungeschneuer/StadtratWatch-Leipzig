@@ -13,8 +13,9 @@
     "verified": 36,
     "corrected": 3,
     "provisional": 0,
-    "reviewed": 0,
-    "needs-review": 1,
+    "reviewed": 1,
+    "unresolved": 0,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 1
   },
@@ -3384,8 +3385,10 @@
           "row": 6,
           "boardName": "Pannowitsch, Ralf",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001502",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 3,
@@ -3528,7 +3531,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 39,
         "N": 26,
@@ -3561,7 +3564,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Mündliche Benennung",
+          "source": "Video 0:48:20",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:38:48.402Z"
+        }
+      ]
     },
     {
       "index": 5,

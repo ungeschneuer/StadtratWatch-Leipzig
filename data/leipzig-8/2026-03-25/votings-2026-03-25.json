@@ -13,8 +13,9 @@
     "verified": 28,
     "corrected": 3,
     "provisional": 0,
-    "reviewed": 0,
-    "needs-review": 2,
+    "reviewed": 1,
+    "unresolved": 1,
+    "needs-review": 0,
     "skipped": 0,
     "discarded": 1
   },
@@ -7205,7 +7206,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "unresolved",
       "official": {
         "J": 19,
         "N": 39,
@@ -7240,7 +7241,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Keine mündliche Nennung der weiteren Stimme.",
+          "source": "Video 1:00:57",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:40:05.168Z"
+        }
+      ]
     },
     {
       "index": 10,
@@ -7521,8 +7530,10 @@
           "row": 11,
           "boardName": "Deubel, Sylvia",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
-          "vote": "O",
-          "attendance": "present"
+          "vote": "J",
+          "attendance": "present",
+          "boardVote": "O",
+          "boardAttendance": "present"
         },
         {
           "column": 1,
@@ -7939,7 +7950,7 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review",
+      "status": "reviewed",
       "official": {
         "J": 54,
         "N": 2,
@@ -7972,7 +7983,15 @@
           }
         ],
         "correction": null
-      }
+      },
+      "review": [
+        {
+          "reason": "Mündliche Bennenung.",
+          "source": "Video 1:08:54",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:41:01.819Z"
+        }
+      ]
     },
     {
       "index": 11,

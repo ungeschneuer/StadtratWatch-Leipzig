@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-07-01",
-  "generatedAt": "2026-11-12T23:46:29.590Z",
+  "generatedAt": "2026-11-13T17:58:19.234Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_01_Juli_2026_-_02-07-21.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-01072026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 2,
-    "open": 2,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 2
   },
   "cases": [
     {
       "votingIndex": 4,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 1067.7,
       "timecode": "0:17:47",
@@ -821,11 +821,18 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Fehler im Verlausprotokoll",
+          "source": "Video 0:17:47",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:49:10.343Z"
+        }
+      ]
     },
     {
       "votingIndex": 39,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 23715.8,
       "timecode": "6:35:15",
@@ -1628,7 +1635,14 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Fehler in der Niederschrift.",
+          "source": "Video 6:35:15",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:49:45.496Z"
+        }
+      ]
     }
   ]
 }

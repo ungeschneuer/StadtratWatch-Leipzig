@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-03-25",
-  "generatedAt": "2026-11-12T23:27:12.482Z",
+  "generatedAt": "2026-11-13T17:46:22.973Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_25_Mrz_2026.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-25032026",
@@ -8,13 +8,13 @@
   },
   "summary": {
     "cases": 2,
-    "open": 2,
-    "reviewed": 0
+    "open": 0,
+    "reviewed": 2
   },
   "cases": [
     {
       "votingIndex": 9,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 3657.4,
       "timecode": "1:00:57",
@@ -818,11 +818,18 @@
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Keine mündliche Nennung der weiteren Stimme.",
+          "source": "Video 1:00:57",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:40:05.168Z"
+        }
+      ]
     },
     {
       "votingIndex": 10,
-      "open": true,
+      "open": false,
       "priority": "hoch",
       "videoSeconds": 4134.5,
       "timecode": "1:08:54",
@@ -1291,7 +1298,7 @@
           "row": 11,
           "boardName": "Deubel, Sylvia",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
-          "vote": "O",
+          "vote": "J",
           "attendance": "present"
         },
         {
@@ -1643,18 +1650,20 @@
           "reason": "anwesend, ohne Stimme"
         },
         {
-          "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000900",
-          "boardName": "Deubel, Sylvia",
-          "reason": "anwesend, ohne Stimme"
-        },
-        {
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/2001600",
           "boardName": "Streller, Danilo",
           "reason": "anwesend, ohne Stimme"
         }
       ],
       "suggestions": [],
-      "reviews": []
+      "reviews": [
+        {
+          "reason": "Mündliche Bennenung.",
+          "source": "Video 1:08:54",
+          "reviewer": "ungeschneuer",
+          "reviewedAt": "2026-11-13T17:41:01.819Z"
+        }
+      ]
     }
   ]
 }

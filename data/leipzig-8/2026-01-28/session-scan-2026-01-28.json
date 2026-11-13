@@ -3383,7 +3383,7 @@
       },
       {
         "name": "Juliane Nagel",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Dr. Olga Naumov",
@@ -3582,8 +3582,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "needs-review"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-01-28-014.png",
@@ -6956,7 +6955,7 @@
       },
       {
         "name": "Juliane Nagel",
-        "vote": "O"
+        "vote": "E"
       },
       {
         "name": "Dr. Olga Naumov",
@@ -7158,8 +7157,7 @@
     "presentMembers": 63,
     "recusedPersons": [
       "Sören Pellmann"
-    ],
-    "reviewStatus": "needs-review"
+    ]
   },
   {
     "votingFilename": "2026-01-28-026.png",

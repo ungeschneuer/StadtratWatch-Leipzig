@@ -2729,7 +2729,14 @@
       }
     ],
     "presentMembers": 63,
-    "reviewStatus": "needs-review"
+    "unresolved": {
+      "reason": "Keine mündliche Nennung der weiteren Stimme.",
+      "officialCounts": {
+        "J": 19,
+        "N": 39,
+        "E": 2
+      }
+    }
   },
   {
     "votingFilename": "2026-03-25-011.png",
@@ -2861,7 +2868,7 @@
       },
       {
         "name": "Sylvia Deubel",
-        "vote": "O"
+        "vote": "J"
       },
       {
         "name": "Nora Reinhardt",
@@ -3032,8 +3039,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 63,
-    "reviewStatus": "needs-review"
+    "presentMembers": 63
   },
   {
     "votingFilename": "2026-03-25-012.png",

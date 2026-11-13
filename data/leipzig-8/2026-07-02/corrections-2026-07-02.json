@@ -1,0 +1,29 @@
+[
+  {
+    "voting": {
+      "videoSeconds": 7592.1,
+      "agendaItemNumber": "18.3"
+    },
+    "unresolved": true,
+    "reason": "Person nicht benannt.",
+    "source": "Video 2:06:32",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:50:40.246Z"
+  },
+  {
+    "voting": {
+      "videoSeconds": 12415.6,
+      "agendaItemNumber": "18.22"
+    },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/1000905",
+        "vote": "J"
+      }
+    ],
+    "reason": "Mündlich hinzugefügt.",
+    "source": "Video 3:26:55",
+    "reviewer": "ungeschneuer",
+    "reviewedAt": "2026-11-13T17:51:29.918Z"
+  }
+]

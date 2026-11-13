@@ -10,12 +10,13 @@
   },
   "summary": {
     "votings": 54,
-    "verified": 45,
+    "verified": 48,
     "corrected": 0,
-    "provisional": 1,
+    "provisional": 0,
     "reviewed": 0,
+    "unresolved": 0,
     "needs-review": 4,
-    "skipped": 2,
+    "skipped": 0,
     "discarded": 2
   },
   "votings": [
@@ -1357,6 +1358,11 @@
           "detail": "announced 31/32/–: \"Und das Ergebnis 31 zu 32, damit ist der Absetzungsantrag abgelehnt. Es gibt einen weiteren Absetzungsantrag von Bündnis 90 den Grünen zum Thema Pachtzinserhöhung\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 31/32/0, verlaufsprotokoll 31/32/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 31/32/0 for TOP 3"
@@ -1384,6 +1390,18 @@
             ],
             "paperReference": null,
             "label": "gementstrategie vor. Über die Absetzung wird wie folgt abgestimmt:",
+            "J": 31,
+            "N": 32,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 31 - 32 - 0. Damit ist der Abset-",
             "J": 31,
             "N": 32,
             "E": 0
@@ -2064,6 +2082,11 @@
           "detail": "announced 30/33/0: \"Und das Ergebnis 30 zu 33 zu 0 ebenfalls abgelehnt. Und es gibt einen Absetzungsantrag der Fraktion Die Linke zum Thema Fachförderrichtlinie\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 30/33/0, verlaufsprotokoll 30/33/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 30/33/0 for TOP 3"
@@ -2091,6 +2114,18 @@
             ],
             "paperReference": null,
             "label": "zung wird wie folgt abgestimmt:",
+            "J": 30,
+            "N": 33,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 30 - 33 - 0. Ebenfalls abgelehnt.",
             "J": 30,
             "N": 33,
             "E": 0
@@ -2758,6 +2793,11 @@
           "detail": "63 votes from 66 present"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 37/25/1, verlaufsprotokoll 37/25/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 37/25/1 for TOP 3"
@@ -2785,6 +2825,18 @@
             ],
             "paperReference": null,
             "label": "gestimmt:",
+            "J": 37,
+            "N": 25,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 37 - 25 - 1. So beschlossen.",
             "J": 37,
             "N": 25,
             "E": 1
@@ -3464,6 +3516,11 @@
           "detail": "announced 30/33/0: \"Es fehlen noch einige Voten und das Ergebnis 30 zu 33 zu 0, damit ist abgelehnt. Und der Stange zum Abschlimmungsverhalten, möchten Sie sich äussern?\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 30/33/0, verlaufsprotokoll 30/33/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 30/33/0 for TOP 3"
@@ -3491,6 +3548,18 @@
             ],
             "paperReference": null,
             "label": "vor . Über die Durchführung wird wie folgt abgestimmt:",
+            "J": 30,
+            "N": 33,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 30 - 33 - 0. Abgelehnt.",
             "J": 30,
             "N": 33,
             "E": 0
@@ -4170,6 +4239,11 @@
           "detail": "announced 40/23/0: \"Und das Ergebnis lautet 40 zu 23 zu 0, damit ist dem stattgegeben und die dringliche Anfrage wird nach 15.7 aufgerufen.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 40/23/0, verlaufsprotokoll 40/23/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 40/23/0 for TOP 3"
@@ -4197,6 +4271,18 @@
             ],
             "paperReference": null,
             "label": "Sitzung der Ratsversammlung wird wie folgt abgestimmt:",
+            "J": 40,
+            "N": 23,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 40 - 23 - 0. So beschlossen.",
             "J": 40,
             "N": 23,
             "E": 0
@@ -4876,6 +4962,11 @@
           "detail": "announced 32/30/–: \"Und das – ach so, ich habe ja auch falsch – 32 zu 30, damit ist so beschlossen. Dann geht es um die Reihenfolge noch einmal, Top-10-1 wird als Top-9-3 aufgerufen,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 32/30/0, verlaufsprotokoll 32/30/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 32/30/0 for TOP 3"
@@ -4903,6 +4994,18 @@
             ],
             "paperReference": null,
             "label": "Abstimmungsergebnis:",
+            "J": 32,
+            "N": 30,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "2",
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 32 - 30 - 0. So beschlossen.",
             "J": 32,
             "N": 30,
             "E": 0
@@ -5592,6 +5695,11 @@
           "detail": "announced 36/28/–: \"Und das Ergebnis lautet 36 zu 28 zu Jürgen, so beschlossen. Acht vier, Berufung eines sachkundigen Einwohners in den Fachausschuss Sport,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 36/28/0, verlaufsprotokoll 36/28/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 36/28/0 for TOP 8.3 (VIII-DS-00058-DS-03)"
@@ -5619,6 +5727,25 @@
             ],
             "paperReference": "VIII-DS-00058-DS-03",
             "label": "Abstimmungsergebnis: zu Punkt 2:",
+            "J": 36,
+            "N": 28,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "5",
+              "5.1",
+              "5.2",
+              "5.3",
+              "5.3",
+              "8",
+              "8.1",
+              "8.2",
+              "8.3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 36 - 28 - 0. So beschlossen.",
             "J": 36,
             "N": 28,
             "E": 0
@@ -6296,6 +6423,11 @@
           "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 49/0/12, verlaufsprotokoll 49/0/12"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 49/0/12 for TOP 9.2 (VIII-DS-03316)"
@@ -6323,6 +6455,30 @@
             ],
             "paperReference": "VIII-DS-03316",
             "label": "Abstimmungsergebnis:",
+            "J": 49,
+            "N": 0,
+            "E": 12
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "5",
+              "5.1",
+              "5.2",
+              "5.3",
+              "5.3",
+              "8",
+              "8.1",
+              "8.2",
+              "8.3",
+              "8.4",
+              "8.5",
+              "9",
+              "9.1",
+              "9.2"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 49 - 0 - 12. So beschlossen.",
             "J": 49,
             "N": 0,
             "E": 12
@@ -7012,6 +7168,11 @@
           "detail": "announced 37/24/1: \"Und im Ergebnis stellen wir fest, 37 zu 24 zu 1 so beschlossen. Top 10 entfällt, Top 11 Anträge zur Aufnahme der Tagesordnung. Wie üblich,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 37/24/1, verlaufsprotokoll 37/24/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 37/24/1 for TOP 10.1 (VIII-DS-03022-DS-01)"
@@ -7039,6 +7200,32 @@
             ],
             "paperReference": "VIII-DS-03022-DS-01",
             "label": "Abstimmungsergebnis:",
+            "J": 37,
+            "N": 24,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "5",
+              "5.1",
+              "5.2",
+              "5.3",
+              "5.3",
+              "8",
+              "8.1",
+              "8.2",
+              "8.3",
+              "8.4",
+              "8.5",
+              "9",
+              "9.1",
+              "9.2",
+              "10",
+              "10.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 37 - 24 - 1. So beschlossen.",
             "J": 37,
             "N": 24,
             "E": 1
@@ -7728,6 +7915,11 @@
           "detail": "announced 31/32/1: \"So, es konnte jeder abstimmen, der anwesend ist. Dann, Herr Leissner, 31 dafür, 32 dagegen bei einer Enthaltung.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 31/32/1, verlaufsprotokoll 31/32/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 31/32/1 for TOP 12.1.1 (VIII-A-01631-NF-02-ÄA-01)"
@@ -7755,6 +7947,35 @@
             ],
             "paperReference": "VIII-A-01631-NF-02-ÄA-01",
             "label": "Abstimmungsergebnis:",
+            "J": 31,
+            "N": 32,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "5",
+              "5.1",
+              "5.2",
+              "5.3",
+              "5.3",
+              "8",
+              "8.1",
+              "8.2",
+              "8.3",
+              "8.4",
+              "8.5",
+              "9",
+              "9.1",
+              "9.2",
+              "10",
+              "10.1",
+              "11",
+              "12",
+              "12.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 31 - 32 - 1. Somit abgelehnt.",
             "J": 31,
             "N": 32,
             "E": 1
@@ -8444,6 +8665,11 @@
           "detail": "announced 30/32/2: \"30 dafür, 32 dagegen bei zwei Enthaltungen somit auch abgelehnt. Und wir kommen bitte zur Abstimmung über den Ursprungsantrag des Stadtbezirksbeirates.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 30/32/2, verlaufsprotokoll 30/32/2"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 30/32/2 for TOP 12.1.2 (VIII-A-01631-NF-02-ÄA-02)"
@@ -8471,6 +8697,35 @@
             ],
             "paperReference": "VIII-A-01631-NF-02-ÄA-02",
             "label": "Abstimmungsergebnis:",
+            "J": 30,
+            "N": 32,
+            "E": 2
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "5",
+              "5.1",
+              "5.2",
+              "5.3",
+              "5.3",
+              "8",
+              "8.1",
+              "8.2",
+              "8.3",
+              "8.4",
+              "8.5",
+              "9",
+              "9.1",
+              "9.2",
+              "10",
+              "10.1",
+              "11",
+              "12",
+              "12.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 30 - 32 - 2. Ebenfalls abgelehnt.",
             "J": 30,
             "N": 32,
             "E": 2
@@ -9160,6 +9415,11 @@
           "detail": "announced 35/26/3: \"35 dafür, 26 dagegen bei drei Enthaltungen, somit ist der Antrag so bestätigt. Und wir kommen zu 12.2, Evaluation des Klimanotstandes.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 35/26/3, verlaufsprotokoll 35/26/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 35/26/3 for TOP 12.1 (VIII-A-01631-NF-02)"
@@ -9187,6 +9447,35 @@
             ],
             "paperReference": "VIII-A-01631-NF-02",
             "label": "Abstimmungsergebnis:",
+            "J": 35,
+            "N": 26,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "5",
+              "5.1",
+              "5.2",
+              "5.3",
+              "5.3",
+              "8",
+              "8.1",
+              "8.2",
+              "8.3",
+              "8.4",
+              "8.5",
+              "9",
+              "9.1",
+              "9.2",
+              "10",
+              "10.1",
+              "11",
+              "12",
+              "12.1"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 35 - 26 - 3. So beschlossen.",
             "J": 35,
             "N": 26,
             "E": 3
@@ -9864,6 +10153,11 @@
           "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 33/31/0, verlaufsprotokoll 33/31/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 33/31/0 for TOP 12.2 (VIII-A-01921)"
@@ -9891,6 +10185,17 @@
             ],
             "paperReference": "VIII-A-01921",
             "label": "Abstimmungsergebnis zum VSP:",
+            "J": 33,
+            "N": 31,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "3"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 33 - 31 - 0. Somit beschlossen.",
             "J": 33,
             "N": 31,
             "E": 0
@@ -10580,6 +10885,11 @@
           "detail": "announced 30/31/0: \"So, haben alle abgestimmt? Dann ist das Ergebnis 30 zu 1 und 30 zu 0 damit abgelehnt und wir kommen zum Neufassungsantrag.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 30/31/0, verlaufsprotokoll 30/31/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 30/31/0 for TOP 12.4.1 (VIII-A-02064-VSP-01)"
@@ -10607,6 +10917,17 @@
             ],
             "paperReference": "VIII-A-02064-VSP-01",
             "label": "Abstimmungsergebnis:",
+            "J": 30,
+            "N": 31,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.4"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 30 - 31 - 0. Damit abgelehnt.",
             "J": 30,
             "N": 31,
             "E": 0
@@ -11296,6 +11617,11 @@
           "detail": "announced 39/22/0: \"Wir konnten abstimmen und das Ergebnis lautet hier 39 zu 22 zu 0 so beschlossen. 12.5 SPD-Fraktion und Nordraummittel.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 39/22/0, verlaufsprotokoll 39/22/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 39/22/0 for TOP 12.4 (VIII-A-02064-NF-02)"
@@ -11323,6 +11649,17 @@
             ],
             "paperReference": "VIII-A-02064-NF-02",
             "label": "Abstimmungsergebnis:",
+            "J": 39,
+            "N": 22,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.4"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 39 - 22 - 0. So beschlossen.",
             "J": 39,
             "N": 22,
             "E": 0
@@ -12012,6 +12349,11 @@
           "detail": "announced 30/30/3: \"Ja, das sieht so aus. Dann kommen wir zum Ergebnis 30 zu 30 zu 3, damit abgelehnt. Und ich rufe auf den Verwaltungsstandpunkt als Alternativvorschlag, so übernommen\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 30/30/3, verlaufsprotokoll 30/30/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 30/30/3 for TOP 12.6.1 (VIII-A-02452-ÄA-02)"
@@ -12039,6 +12381,17 @@
             ],
             "paperReference": "VIII-A-02452-ÄA-02",
             "label": "Abstimmungsergebnis:",
+            "J": 30,
+            "N": 30,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.6"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 30 - 30 - 3. Damit abgelehnt.",
             "J": 30,
             "N": 30,
             "E": 3
@@ -12711,13 +13064,40 @@
           "detail": "heading VIII-A-02452-VSP-01, OParl VIII-A-02452-VSP-01"
         },
         {
+          "check": "matches-official",
+          "passed": false,
+          "detail": "official 62/0/0 for TOP 12.6 differs from the board"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "needs-review",
+      "status": "needs-review",
+      "official": {
+        "J": 62,
+        "N": 0,
+        "E": 0,
+        "agendaItemNumber": "12.6",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.6"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 62 - 0 - 0. So beschlossen.",
+            "J": 62,
+            "N": 0,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 18,
@@ -13391,8 +13771,14 @@
         },
         {
           "check": "announcement-matches",
+          "passed": true,
+          "detail": "announced 52/10/0 with a spoken correction: \"Ja, Herr Lehmann einen Rot dazu und ein Grün dazu, macht 52 zu 10 zu 0 so beschlossen. 12,8, Bündnis 90, grün, sozialer Wohnungsbau, Herr Dr. Peter.\"; settled by the official result",
+          "settledByOfficialResult": true
+        },
+        {
+          "check": "matches-official",
           "passed": false,
-          "detail": "announced 52/10/0 with a spoken correction: \"Ja, Herr Lehmann einen Rot dazu und ein Grün dazu, macht 52 zu 10 zu 0 so beschlossen. 12,8, Bündnis 90, grün, sozialer Wohnungsbau, Herr Dr. Peter.\""
+          "detail": "official 52/10/0 for TOP 12.6 differs from the board"
         },
         {
           "check": "not-attendance-count",
@@ -13401,7 +13787,29 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review"
+      "status": "needs-review",
+      "official": {
+        "J": 52,
+        "N": 10,
+        "E": 0,
+        "agendaItemNumber": "12.6",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.6"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 52 - 10 - 0. So beschlossen.",
+            "J": 52,
+            "N": 10,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 19,
@@ -14067,6 +14475,11 @@
           "detail": "heading VIII-A-02583-NF-03, OParl VIII-A-02583-NF-03"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 40/22/1, verlaufsprotokoll 40/22/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 40/22/1 for TOP 12.8 (VIII-A-02583-NF-03)"
@@ -14094,6 +14507,17 @@
             ],
             "paperReference": "VIII-A-02583-NF-03",
             "label": "Abstimmungsergebnis: zu Punkt 1:",
+            "J": 40,
+            "N": 22,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.8"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 40 - 22 - 1. So beschlossen.",
             "J": 40,
             "N": 22,
             "E": 1
@@ -14778,6 +15202,11 @@
           "detail": "announced 39/22/1: \"39 zu 22 zu 1. Und Punkt drei. Und das Ergebnis 40 zu 1, 20 zu 1.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 39/22/1, verlaufsprotokoll 39/22/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 39/22/1 for TOP 12.8 (VIII-A-02583-NF-03)"
@@ -14805,6 +15234,17 @@
             ],
             "paperReference": "VIII-A-02583-NF-03",
             "label": "Abstimmungsergebnis: zu Punkt 2a:",
+            "J": 39,
+            "N": 22,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.8"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 39 - 22 - 1. So beschlossen.",
             "J": 39,
             "N": 22,
             "E": 1
@@ -15489,6 +15929,11 @@
           "detail": "announced 40/21/1: \"Und das Ergebnis 40 zu 1, 20 zu 1. Ich gebe zu Protokoll. Ohne landesrechtliche Grundlage macht der Beschlusspunkt\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 40/21/1, verlaufsprotokoll 40/21/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 40/21/1 for TOP 12.8 (VIII-A-02583-NF-03)"
@@ -15516,6 +15961,17 @@
             ],
             "paperReference": "VIII-A-02583-NF-03",
             "label": "Abstimmungsergebnis: Zu Punkt 2b:",
+            "J": 40,
+            "N": 21,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.8"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 40 - 21 - 1. So beschlossen.",
             "J": 40,
             "N": 21,
             "E": 1
@@ -16200,6 +16656,11 @@
           "detail": "announced 18/39/2: \"Und das Ergebnis heisst 18 zu 39,2 damit abgelehnt. BSW-Fraktion zum Thema Digitalisierung und Wohngeld.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 18/39/2, verlaufsprotokoll 18/39/2"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 18/39/2 for TOP 12.10 (VIII-A-02625)"
@@ -16227,6 +16688,17 @@
             ],
             "paperReference": "VIII-A-02625",
             "label": "Abstimmungsergebnis:",
+            "J": 18,
+            "N": 39,
+            "E": 2
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.10"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 18 - 39 - 2. Damit abgelehnt.",
             "J": 18,
             "N": 39,
             "E": 2
@@ -16899,6 +17371,11 @@
           "detail": "heading VIII-A-02635, OParl VIII-A-02635"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 17/30/12, verlaufsprotokoll 17/30/12"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 17/30/12 for TOP 12.11 (VIII-A-02635)"
@@ -16926,6 +17403,17 @@
             ],
             "paperReference": "VIII-A-02635",
             "label": "Abstimmungsergebnis: zu Punkt 1:",
+            "J": 17,
+            "N": 30,
+            "E": 12
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.11"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 17 - 30 - 12. Damit Abgelehnt.",
             "J": 17,
             "N": 30,
             "E": 12
@@ -17598,6 +18086,11 @@
           "detail": "heading VIII-A-02635, OParl VIII-A-02635"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 15/31/10, verlaufsprotokoll 15/31/10"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 15/31/10 for TOP 12.11 (VIII-A-02635)"
@@ -17625,6 +18118,17 @@
             ],
             "paperReference": "VIII-A-02635",
             "label": "Abstimmungsergebnis: zu Punkt 2:",
+            "J": 15,
+            "N": 31,
+            "E": 10
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.11"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 15 - 31 - 10. Abgelehnt.",
             "J": 15,
             "N": 31,
             "E": 10
@@ -18297,6 +18801,11 @@
           "detail": "heading VIII-A-02635, OParl VIII-A-02635"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 17/32/10, verlaufsprotokoll 17/32/10"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 17/32/10 for TOP 12.11 (VIII-A-02635)"
@@ -18324,6 +18833,17 @@
             ],
             "paperReference": "VIII-A-02635",
             "label": "Abstimmungsergebnis: zu Punkt 3:",
+            "J": 17,
+            "N": 32,
+            "E": 10
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.11"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 17 - 32 - 10. Abgelehnt.",
             "J": 17,
             "N": 32,
             "E": 10
@@ -18996,6 +19516,11 @@
           "detail": "heading VIII-A-02635, OParl VIII-A-02635"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 16/39/2, verlaufsprotokoll 16/39/2"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 16/39/2 for TOP 12.11 (VIII-A-02635)"
@@ -19023,6 +19548,17 @@
             ],
             "paperReference": "VIII-A-02635",
             "label": "Abstimmungsergebnis: zu Punkt 4:",
+            "J": 16,
+            "N": 39,
+            "E": 2
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.11"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 16 - 39 - 2. Abgelehnt.",
             "J": 16,
             "N": 39,
             "E": 2
@@ -19695,6 +20231,11 @@
           "detail": "heading VIII-A-02635, OParl VIII-A-02635"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 17/40/2, verlaufsprotokoll 17/40/2"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 17/40/2 for TOP 12.11 (VIII-A-02635)"
@@ -19722,6 +20263,17 @@
             ],
             "paperReference": "VIII-A-02635",
             "label": "Abstimmungsergebnis: zu Punkt 5:",
+            "J": 17,
+            "N": 40,
+            "E": 2
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.11"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 17 - 40 - 2. Abgelehnt.",
             "J": 17,
             "N": 40,
             "E": 2
@@ -20394,6 +20946,11 @@
           "detail": "heading VIII-A-02635, OParl VIII-A-02635"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 17/41/1, verlaufsprotokoll 17/41/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 17/41/1 for TOP 12.11 (VIII-A-02635)"
@@ -20421,6 +20978,17 @@
             ],
             "paperReference": "VIII-A-02635",
             "label": "Abstimmungsergebnis: zu Punkt 6:",
+            "J": 17,
+            "N": 41,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.11"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 17 - 41 - 1. Damit abgelehnt.",
             "J": 17,
             "N": 41,
             "E": 1
@@ -21783,6 +22351,11 @@
           "settledByOfficialResult": true
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 20/32/4, verlaufsprotokoll 20/32/4"
+        },
+        {
           "check": "matches-official",
           "passed": false,
           "detail": "official 20/32/4 for TOP 14.15 (VIII-P-03287-DS-02) differs from the board"
@@ -21810,6 +22383,32 @@
             ],
             "paperReference": "VIII-P-03287-DS-02",
             "label": "Abstimmungsergebnis: zum Beschlussvorschlag des Petitionsausschusses:",
+            "J": 20,
+            "N": 32,
+            "E": 4
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "14",
+              "14.1",
+              "14.2",
+              "14.3",
+              "14.4",
+              "14.5",
+              "14.6",
+              "14.7",
+              "14.8",
+              "14.9",
+              "14.10",
+              "14.11",
+              "14.12",
+              "14.13",
+              "14.14",
+              "14.15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 20 - 32 - 4. Damit abgelehnt.",
             "J": 20,
             "N": 32,
             "E": 4
@@ -22495,6 +23094,11 @@
           "settledByOfficialResult": true
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 0/51/6, verlaufsprotokoll 0/51/6"
+        },
+        {
           "check": "matches-official",
           "passed": false,
           "detail": "official 0/51/6 for TOP 14.15 (VIII-P-03287-DS-02) differs from the board"
@@ -22522,6 +23126,32 @@
             ],
             "paperReference": "VIII-P-03287-DS-02",
             "label": "Abstimmungsergebnis: Zur Petition:",
+            "J": 0,
+            "N": 51,
+            "E": 6
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "14",
+              "14.1",
+              "14.2",
+              "14.3",
+              "14.4",
+              "14.5",
+              "14.6",
+              "14.7",
+              "14.8",
+              "14.9",
+              "14.10",
+              "14.11",
+              "14.12",
+              "14.13",
+              "14.14",
+              "14.15"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 0 - 51 - 6. Damit ist die Petition ab-",
             "J": 0,
             "N": 51,
             "E": 6
@@ -23211,6 +23841,11 @@
           "detail": "announced 26/11/20: \"Konnten alle abstimmen? Dann ist das Ergebnis 26 zu 11 zu 20 so beschlossen. Wir kommen zu 1216, Gewerbe zu Wohnraum, BSW-Fraktion, Herr Jecht nehme ich an,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 26/11/20, verlaufsprotokoll 26/11/20"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 26/11/20 for TOP 12.12 (VIII-A-02760-NF-02)"
@@ -23238,6 +23873,33 @@
             ],
             "paperReference": "VIII-A-02760-NF-02",
             "label": "Abstimmungsergebnis zum VSP:",
+            "J": 26,
+            "N": 11,
+            "E": 20
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "14",
+              "14.1",
+              "14.2",
+              "14.3",
+              "14.4",
+              "14.5",
+              "14.6",
+              "14.7",
+              "14.8",
+              "14.9",
+              "14.10",
+              "14.11",
+              "14.12",
+              "14.13",
+              "14.14",
+              "14.15",
+              "12.12"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 26 - 11 - 20. So beschlossen",
             "J": 26,
             "N": 11,
             "E": 20
@@ -23922,6 +24584,11 @@
           "detail": "announced 28/33/1: \"Konnten alle abstimmen, dann lautet das Ergebnis 28 zu 33 zu 1, dann ist dieser Punkt abgelehnt.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 28/33/1, verlaufsprotokoll 28/33/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 28/33/1 for TOP 12.16 (VIII-A-02846)"
@@ -23949,6 +24616,17 @@
             ],
             "paperReference": "VIII-A-02846",
             "label": "Abstimmungsergebnis: Zu ÄA-03 Punkt 1 Satz 3:",
+            "J": 28,
+            "N": 33,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.16"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 28 - 33 - 1. Abgelehnt.",
             "J": 28,
             "N": 33,
             "E": 1
@@ -24633,6 +25311,11 @@
           "detail": "announced 62/0/0: \"Das ist ein sehr einmütiges Bild, 62 zu 0 zu 0 so beschlossen, und dann frage ich jetzt mal umgekehrt, der Verwarnungssturmpunkt als Änderungsantrag jetzt\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 62/0/0, verlaufsprotokoll 62/0/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 62/0/0 for TOP 12.16 (VIII-A-02846)"
@@ -24660,6 +25343,17 @@
             ],
             "paperReference": "VIII-A-02846",
             "label": "Abstimmungsergebnis: Zu ÄA-03 Punkt 3:",
+            "J": 62,
+            "N": 0,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.16"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 62 - 0 - 0. So beschlossen",
             "J": 62,
             "N": 0,
             "E": 0
@@ -25349,6 +26043,11 @@
           "detail": "announced 50/8/3: \"Haben alle abgestimmt? 50 zu 8 zu 3 so beschlossen. Und wir rufen auf 1225 ein Antrag der welcher Fraktion?\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 50/8/3, verlaufsprotokoll 50/8/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 50/8/3 for TOP 12.19 (VIII-A-02981-NF-02)"
@@ -25376,6 +26075,17 @@
             ],
             "paperReference": "VIII-A-02981-NF-02",
             "label": "Abstimmungsergebnis zum VSP:",
+            "J": 50,
+            "N": 8,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.19"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 50 - 8 - 3. So beschlossen.",
             "J": 50,
             "N": 8,
             "E": 3
@@ -26048,6 +26758,11 @@
           "detail": "heading VIII-A-03124-VSP-01, OParl VIII-A-03124-VSP-01"
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 29/32/1, verlaufsprotokoll 29/32/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 29/32/1 for TOP 12.26 (VIII-A-03124)"
@@ -26075,6 +26790,17 @@
             ],
             "paperReference": "VIII-A-03124",
             "label": "Abstimmungsergebnis:",
+            "J": 29,
+            "N": 32,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "12.26"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 29 - 32 - 1. Damit abgelehnt.",
             "J": 29,
             "N": 32,
             "E": 1
@@ -26764,6 +27490,11 @@
           "detail": "announced 60/0/1: \"Das ist einstimmig mit, nein, mit einer Enthaltung, 60 zu 0 zu 1, so beschlossen. Dann bin ich bei der Marke Musikstadt Leipzig, 1811, gibt es Gegenstimmen, Enthaltungen,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 60/0/1, verlaufsprotokoll 60/0/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 60/0/1 for TOP 18.10 (VIII-DS-02331)"
@@ -26791,6 +27522,21 @@
             ],
             "paperReference": "VIII-DS-02331",
             "label": "Abstimmungsergebnis:",
+            "J": 60,
+            "N": 0,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "17.2",
+              "18",
+              "18.1",
+              "18.2",
+              "18.10"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 60 - 0 - 1. So beschlossen.",
             "J": 60,
             "N": 0,
             "E": 1
@@ -27468,6 +28214,11 @@
           "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 32/25/3, verlaufsprotokoll 32/25/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 32/25/3 for TOP 18.4.1 (VIII-DS-01098-ÄA-01)"
@@ -27495,6 +28246,35 @@
             ],
             "paperReference": "VIII-DS-01098-ÄA-01",
             "label": "Abstimmungsergebnis:",
+            "J": 32,
+            "N": 25,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "17.2",
+              "18",
+              "18.1",
+              "18.2",
+              "18.10",
+              "18.11",
+              "18.13",
+              "18.15",
+              "18.18",
+              "18.21",
+              "18.22",
+              "18.23",
+              "18.24",
+              "18.25",
+              "19",
+              "19.1",
+              "20",
+              "20.1",
+              "18.4"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 32 - 25 - 3. Damit so beschlossen",
             "J": 32,
             "N": 25,
             "E": 3
@@ -28184,6 +28964,11 @@
           "detail": "announced 26/32/3: \"26 dafür, 32 dagegen bei drei Enthaltungen, somit so abgelehnt. Und wir kommen zur Abstimmung über die Ursprungsvorlage.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 26/32/3, verlaufsprotokoll 26/32/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 26/32/3 for TOP 18.4.2 (VIII-DS-01098-ÄA-02)"
@@ -28211,6 +28996,35 @@
             ],
             "paperReference": "VIII-DS-01098-ÄA-02",
             "label": "Abstimmungsergebnis:",
+            "J": 26,
+            "N": 32,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "17.2",
+              "18",
+              "18.1",
+              "18.2",
+              "18.10",
+              "18.11",
+              "18.13",
+              "18.15",
+              "18.18",
+              "18.21",
+              "18.22",
+              "18.23",
+              "18.24",
+              "18.25",
+              "19",
+              "19.1",
+              "20",
+              "20.1",
+              "18.4"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 26 - 32 - 3. Somit abgelehnt.",
             "J": 26,
             "N": 32,
             "E": 3
@@ -28900,6 +29714,11 @@
           "detail": "announced 59/0/0: \"Das hätte ich jetzt so nicht erwartet, 59 zu 0 zu 0, somit so bestätigt. Vielen Dank und wir kommen zu 18.5 Nachtragswirtschaftsplan 2026 für unseren\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 59/0/0, verlaufsprotokoll 59/0/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 59/0/0 for TOP 18.4 (VIII-DS-01098)"
@@ -28927,6 +29746,35 @@
             ],
             "paperReference": "VIII-DS-01098",
             "label": "Abstimmungsergebnis:",
+            "J": 59,
+            "N": 0,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "17.2",
+              "18",
+              "18.1",
+              "18.2",
+              "18.10",
+              "18.11",
+              "18.13",
+              "18.15",
+              "18.18",
+              "18.21",
+              "18.22",
+              "18.23",
+              "18.24",
+              "18.25",
+              "19",
+              "19.1",
+              "20",
+              "20.1",
+              "18.4"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 59 - 0 - 0. Somit so bestätigt.",
             "J": 59,
             "N": 0,
             "E": 0
@@ -30322,6 +31170,11 @@
           "detail": "announced 26/33/4: \"Konnten alle abstimmen? Ja, im Ergebnis heißt das 26 zu 33 zu 4, damit bleibt das Projekt Bestandteil der Vorlage.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 26/33/4, verlaufsprotokoll 26/33/4"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 26/33/4 for TOP 18.6.1 (VIII-DS-01506-ÄA-01)"
@@ -30349,6 +31202,17 @@
             ],
             "paperReference": "VIII-DS-01506-ÄA-01",
             "label": "Abstimmungsergebnis: Zu Nr. 12:",
+            "J": 26,
+            "N": 33,
+            "E": 4
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.6"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 26 - 33 - 4. Damit bleibt das Projekt",
             "J": 26,
             "N": 33,
             "E": 4
@@ -31034,6 +31898,11 @@
           "settledByOfficialResult": true
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 13/50/0, verlaufsprotokoll 13/50/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 13/50/0 for TOP 18.6.1 (VIII-DS-01506-ÄA-01)"
@@ -31061,6 +31930,17 @@
             ],
             "paperReference": "VIII-DS-01506-ÄA-01",
             "label": "Abstimmungsergebnis: Zu Nr. 22, 24 und 26:",
+            "J": 13,
+            "N": 50,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.6"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 13 - 50 - 0. Damit abgelehnt",
             "J": 13,
             "N": 50,
             "E": 0
@@ -31750,6 +32630,11 @@
           "detail": "announced 43/13/6: \"Und das Ergebnis 43 zu 13 zu 6, so beschlossen. 18.7 Zweitwohnungssteuer, Änderungsantrag der Grünen zurückgezogen,\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 43/13/6, verlaufsprotokoll 43/13/6"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 43/13/6 for TOP 18.6 (VIII-DS-01506)"
@@ -31777,6 +32662,17 @@
             ],
             "paperReference": "VIII-DS-01506",
             "label": "Abstimmungsergebnis:",
+            "J": 43,
+            "N": 13,
+            "E": 6
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.6"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 43 - 13 - 6. So beschlossen.",
             "J": 43,
             "N": 13,
             "E": 6
@@ -32452,8 +33348,9 @@
         },
         {
           "check": "paper-matches-oparl",
-          "passed": false,
-          "detail": "heading VIII-DS-01572-ÄA-01-NF-01, OParl VIII-DS-01572-ÄA-02-NF-01"
+          "passed": true,
+          "detail": "heading VIII-DS-01572-ÄA-01-NF-01, OParl VIII-DS-01572-ÄA-02-NF-01; settled by the official result",
+          "settledByOfficialResult": true
         },
         {
           "check": "outcome-matches-oparl",
@@ -32466,13 +33363,40 @@
           "detail": "announced 15/46/2: \"Alle konnten abstimmen mit dem Ergebnis 15 zu 46 zu 2, damit abgelehnt, und wir kommen zur Satzung selbst. Ich bitte Sie um Ihr Votum.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 15/46/2 for TOP 18.7"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 15,
+        "N": 46,
+        "E": 2,
+        "agendaItemNumber": "18.7",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.7"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 15 - 46 - 2. Damit abgelehnt.",
+            "J": 15,
+            "N": 46,
+            "E": 2
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 46,
@@ -33155,6 +34079,11 @@
           "detail": "announced 38/14/11: \"Es konnten alle abstimmen. Das Ergebnis lautet 38 zu 14 zu 11, so beschlossen. 18.9 Engagementstrategie der Stadt Leipzig. Ich bitte Herrn Kollegen Dienberg\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 38/14/11, verlaufsprotokoll 38/14/11"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 38/14/11 for TOP 18.7 (VIII-DS-01572)"
@@ -33182,6 +34111,17 @@
             ],
             "paperReference": "VIII-DS-01572",
             "label": "Abstimmungsergebnis:",
+            "J": 38,
+            "N": 14,
+            "E": 11
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.7"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 38 - 14 - 11. So beschlossen.",
             "J": 38,
             "N": 14,
             "E": 11
@@ -33871,6 +34811,11 @@
           "detail": "announced 28/33/1: \"Konnten alle abstimmen? Dann bitte ich das Ergebnis, 28 zu 33 zu 1, damit abgelehnt, und wir kommen zur Vorlage selbst, Ihr Votum bitte.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 28/33/1, verlaufsprotokoll 28/33/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 28/33/1 for TOP 18.9.1 (VIII-DS-02177-ÄA-02)"
@@ -33898,6 +34843,17 @@
             ],
             "paperReference": "VIII-DS-02177-ÄA-02",
             "label": "Abstimmungsergebnis:",
+            "J": 28,
+            "N": 33,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "22"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 28 - 33 - 1. Damit abgelehnt",
             "J": 28,
             "N": 33,
             "E": 1
@@ -34587,6 +35543,11 @@
           "detail": "announced 40/19/3: \"Alle konnten abstimmen mit dem Ergebnis, 40 zu 19 zu 3, so beschlossen. Vielen Dank.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 40/19/3, verlaufsprotokoll 40/19/3"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 40/19/3 for TOP 18.9 (VIII-DS-02177)"
@@ -34614,6 +35575,17 @@
             ],
             "paperReference": "VIII-DS-02177",
             "label": "Abstimmungsergebnis:",
+            "J": 40,
+            "N": 19,
+            "E": 3
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "22"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 40 - 19 - 3. So beschlossen.",
             "J": 40,
             "N": 19,
             "E": 3
@@ -35267,8 +36239,9 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
-          "detail": "heading TOP unreadable"
+          "passed": true,
+          "detail": "heading TOP unreadable; settled by the official result",
+          "settledByOfficialResult": true
         },
         {
           "check": "result-shown-long-enough",
@@ -35286,13 +36259,40 @@
           "detail": "announced 27/30/5: \"So, und das heisst im Ergebnis, 27 zu 30 zu 5 abgelehnt, aber trotzdem machen wir nur bis 21 Uhr.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 27/30/5 for TOP 7"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "skipped",
-      "status": "skipped",
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 27,
+        "N": 30,
+        "E": 5,
+        "agendaItemNumber": "7",
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "7"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 27 - 30 - 5. Abgelehnt.",
+            "J": 27,
+            "N": 30,
+            "E": 5
+          }
+        ],
+        "correction": null
+      },
       "procedural": true
     },
     {
@@ -35976,6 +36976,11 @@
           "detail": "announced 58/2/0: \"Im Ergebnis heisst das 58 zu 2 zu 0. Und wir kommen zur Vorlage selbst. Ihr Votum zum Bebauungsplan.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 58/2/0, verlaufsprotokoll 58/2/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 58/2/0 for TOP 18.12.1 (VIII-DS-02498-ÄA-01)"
@@ -36003,6 +37008,17 @@
             ],
             "paperReference": "VIII-DS-02498-ÄA-01",
             "label": "Abstimmungsergebnis:",
+            "J": 58,
+            "N": 2,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.12"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 58 - 2 - 0.",
             "J": 58,
             "N": 2,
             "E": 0
@@ -36692,6 +37708,11 @@
           "detail": "announced 63/0/0: \"Und im Ergebnis ist das einstimmig, 63 zu 0 zu 0. Wir kommen jetzt zu 1814, Pachtzinserhöhung für Kleingarten, Flächen und Änderungsanträge des Kleingartenbeirats und\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 63/0/0, verlaufsprotokoll 63/0/0"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 63/0/0 for TOP 18.12 (VIII-DS-02498)"
@@ -36719,6 +37740,17 @@
             ],
             "paperReference": "VIII-DS-02498",
             "label": "Abstimmungsergebnis:",
+            "J": 63,
+            "N": 0,
+            "E": 0
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "18.12"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 63 - 0 - 0. Einstimmig so beschlos-",
             "J": 63,
             "N": 0,
             "E": 0
@@ -37408,6 +38440,11 @@
           "detail": "announced 42/17/1: \"So, das Ergebnis ist klar, 42 dafür, 17 dagegen eine Enthaltung. Damit entfällt, da bin ich ganz, ganz sicher, alles weiter votieren, denn\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 42/17/1, verlaufsprotokoll 42/17/1"
+        },
+        {
           "check": "matches-official",
           "passed": true,
           "detail": "official 42/17/1 for TOP 18.14 (VIII-DS-02729)"
@@ -37435,6 +38472,19 @@
             ],
             "paperReference": "VIII-DS-02729",
             "label": "Abstimmungsergebnis zum Änderungsantrag ÄA-01:",
+            "J": 42,
+            "N": 17,
+            "E": 1
+          },
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "15",
+              "12",
+              "12"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 42 - 17 - 1.",
             "J": 42,
             "N": 17,
             "E": 1
@@ -38081,8 +39131,9 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
-          "detail": "heading TOP unreadable"
+          "passed": true,
+          "detail": "heading TOP unreadable; settled by the official result",
+          "settledByOfficialResult": true
         },
         {
           "check": "result-shown-long-enough",
@@ -38095,13 +39146,42 @@
           "detail": "59 votes from 63 present"
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 52/4/3 for TOP 15/12/12"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "skipped",
-      "status": "skipped",
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 52,
+        "N": 4,
+        "E": 3,
+        "agendaItemNumber": null,
+        "paperReference": null,
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "verlaufsprotokoll",
+            "agendaItemNumbers": [
+              "15",
+              "12",
+              "12"
+            ],
+            "paperReference": null,
+            "label": "Abstimmung: 52 - 4 - 3. Damit ist dem stattgege-",
+            "J": 52,
+            "N": 4,
+            "E": 3
+          }
+        ],
+        "correction": null
+      },
       "procedural": true
     }
   ]
