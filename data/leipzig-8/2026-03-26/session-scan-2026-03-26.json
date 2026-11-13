@@ -916,7 +916,8 @@
       "motionId": "VIII-DS-01619-NF-02-ÄA-06",
       "title": "ABSTIMMUNG",
       "type": null,
-      "authors": []
+      "authors": [],
+      "itemNumber": "1"
     },
     "votes": [
       {
@@ -1214,7 +1215,8 @@
       "motionId": "VIII-DS-01619-NF-02-ÄA-06",
       "title": "ABSTIMMUNG",
       "type": null,
-      "authors": []
+      "authors": [],
+      "itemNumber": "2"
     },
     "votes": [
       {
@@ -1512,7 +1514,8 @@
       "motionId": "VIII-DS-01619-NF-02-ÄA-06",
       "title": "ABSTIMMUNG",
       "type": null,
-      "authors": []
+      "authors": [],
+      "itemNumber": "3"
     },
     "votes": [
       {
@@ -1810,7 +1813,8 @@
       "motionId": "VIII-DS-01619-NF-02-ÄA-06",
       "title": "ABSTIMMUNG",
       "type": null,
-      "authors": []
+      "authors": [],
+      "itemNumber": "4"
     },
     "votes": [
       {
