@@ -21,5 +21,5 @@ Die Fachbegriffe stehen in `GLOSSARY.md` im Wurzelverzeichnis.
 | Abstimmung mit Status `needs-review`, die Prüfende entscheiden.
 
 | Daten-Branch
-| `data/leipzig-votings` (bzw. `data/leipzig-recordings`, `data/leipzig-members`): sammelt Datenänderungen bis zum Merge ihres Pull Requests.
+| `data/leipzig-votings`: sammelt Abstimmungsdaten und Prüfentscheidungen bis zum Merge seines Pull Requests; geschützt gegen Force-Push und Löschen. `update/leipzig-recordings` und `update/leipzig-members` sind Arbeitszweige der Workflows, die bei jedem Lauf neu entstehen und nach dem Merge gelöscht werden.
 |===

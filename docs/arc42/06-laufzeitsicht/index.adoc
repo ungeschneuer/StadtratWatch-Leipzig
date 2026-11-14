@@ -4,7 +4,7 @@
 
 == Neue Sitzung
 
-. `leipzig-recordings` (täglich) findet die Aufzeichnung, trägt sie ins Manifest ein und öffnet einen Pull Request von `data/leipzig-recordings`. Ändert er nur Manifest und Untertitel, merged der Workflow ihn bei grüner CI selbst und startet `leipzig-votings`; sonst wartet er auf einen Menschen.
+. `leipzig-recordings` (täglich) findet die Aufzeichnung, trägt sie ins Manifest ein und öffnet einen Pull Request von `update/leipzig-recordings`. Ändert er nur Manifest und Untertitel, merged der Workflow ihn bei grüner CI selbst und startet `leipzig-votings`; sonst wartet er auf einen Menschen.
 . `leipzig-votings` (sobald ein neues Manifest auf `main` liegt, sonst wöchentlich) liest die Tafeln, prüft jede Abstimmung, schreibt die Dateien auf `data/leipzig-votings`, legt die Zitatbilder aller veröffentlichten Abstimmungen und die Tafelbilder der Prüffälle in den Release `evidence-<datum>`, öffnet je Sitzung mit Prüffällen ein Issue und hält einen Pull Request nach `main` offen.
 . `leipzig-site-data` erzeugt im selben Lauf die Dateien für die Seite.
 . `leipzig-data-publish` veröffentlicht die neue Sitzung beim nächsten Lauf, spätestens nach 12 Stunden (siehe Prüfung); ungeprüfte Abstimmungen erscheinen mit ihrem Prüfstatus.
@@ -20,4 +20,4 @@
 
 == Mitglieder
 
-`leipzig-members` (täglich) gleicht OParl ab und öffnet bei Änderungen einen Pull Request von `data/leipzig-members`; Mehrdeutigkeiten werden Issues.
+`leipzig-members` (täglich) gleicht OParl ab und öffnet bei Änderungen einen Pull Request von `update/leipzig-members`; Mehrdeutigkeiten werden Issues.
