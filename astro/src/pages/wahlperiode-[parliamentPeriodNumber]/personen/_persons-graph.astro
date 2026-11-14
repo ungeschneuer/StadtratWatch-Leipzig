@@ -212,6 +212,10 @@ const colorPropertyByFaction = Object.fromEntries(
       tooltip!.classList.add('hidden');
     }
 
+    document.addEventListener('pointerdown', (event) => {
+      if (!(event.target instanceof SVGCircleElement)) hideTooltip();
+    });
+
     Alpine.data('graph', () => ({
       showGraph() {
         requestAnimationFrame(() =>
@@ -243,7 +247,10 @@ const colorPropertyByFaction = Object.fromEntries(
           .style('cursor', 'pointer')
           .on('pointerenter', showTooltip)
           .on('pointerdown', showTooltip)
-          .on('pointerleave', hideTooltip);
+          // A touch ends with pointerleave; the tooltip stays until the next tap elsewhere.
+          .on('pointerleave', (event: PointerEvent) => {
+            if (event.pointerType === 'mouse') hideTooltip();
+          });
       },
     }));
   }
