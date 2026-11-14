@@ -53,7 +53,7 @@ Stand: 12.11.2026 (abends)
 
 ### Ressourcenschonung und Aktualität (nur kostenlose Dienste)
 - [x] **GitHub Actions mit `schedule`**: Das öffentliche Repo bekommt unbegrenzt Minuten auf Standard-Runnern. Ein Job darf bis zu 6 h laufen.
-- [ ] **Inkrementell abrufen** über OParl `modified_since` und HTTP `ETag`/`If-Modified-Since`. Nur committen, wenn sich etwas geändert hat.
+- [x] **Inkrementell abrufen** über OParl `modified_since` und HTTP `ETag`/`If-Modified-Since`. Nur committen, wenn sich etwas geändert hat. `leipzig-members` holt Personen, Mitgliedschaften und Organisationen nur noch geändert und die Bewerberliste bedingt; Stand im Actions-Cache, wöchentlich ein vollständiger Abruf (14.11.2026). Vorlagen und Abstimmungen wurden schon vorher nur neu geholt.
 - [x] **Höflich abrufen:** User-Agent mit Projekt-URL, 0,3–1 s Pause zwischen Requests.
 - [x] **Keine Videos speichern.** Gespeichert werden nur Metadaten, die VTT (ca. 270 KB pro Sitzung) und kleine Belegbilder.
 - [x] **Belegbilder:** je veröffentlichter Abstimmung ein Zitatbild (960 px, 16 Farbstufen, ca. 135 KB statt der ursprünglich angepeilten 50 KB, zugunsten der Lesbarkeit) in GitHub Releases, nicht im Git (Entscheidung 12.11.2026).
@@ -142,7 +142,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Variable `LEIPZIG_REVIEWERS=ungeschneuer` (12.11.2026; vorerst prüft nur der Betreiber, weitere Prüfende brauchen Schreibrechte).
   - [x] Workflows auf GitHub gelaufen: members, recordings, votings, recheck, deploy (12.11.2026).
   - [x] Die 17 offenen Fälle entscheiden (13.11.2026; drei Entscheidungen am 14.11.2026 neu gefasst, #63).
-- [ ] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
+- [x] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
 - [x] **Ausgabe:** `votings-<datum>.json` und `votes-<datum>.csv` (mit `personId`, Fraktion und Partei).
   - [x] StadtratWatch-kompatible `session-scan-YYYY-MM-DD.json` (Adapter, siehe M4) und `votings.csv`.
 
@@ -237,7 +237,7 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Abstimmungen ohne Tafel** (Handzeichen, geheime Wahl): werden nicht aufgenommen (12.11.2026).
 - [x] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): werden nicht aufgenommen (12.11.2026).
 - [x] **Vorlagen auf der Seite:** keine eigenen Seiten; Abstimmungen verlinken die Drucksache im Ratsinformationssystem (12.11.2026).
-- [x] **Erforderliche Mehrheit:** aus dem Titel nach SächsGemO, Hauptsatzung, GO und Ehrenbürgersatzung; Regelfall Ja > Nein, Enthaltungen zählen nicht, Gleichstand abgelehnt; keine Zwei-Drittel-Regel für die Tagesordnung (Recherche 12.11.2026). Offen: Änderungsanträge zur Hauptsatzung, Vorlagen mit mehreren Beschlusspunkten.
+- [x] **Erforderliche Mehrheit:** aus dem Titel nach SächsGemO, Hauptsatzung, GO und Ehrenbürgersatzung; Regelfall Ja > Nein, Enthaltungen zählen nicht, Gleichstand abgelehnt; keine Zwei-Drittel-Regel für die Tagesordnung (Recherche 12.11.2026). Entschieden 14.11.2026: Änderungsanträge zur Hauptsatzung einfache Mehrheit; Beschlusspunkte einer Vorlage über `majority-overrides.json`.
 
 ### Reden (M5)
 - [x] **Rechte am Verlaufsprotokoll** (recherchiert 12.11.2026, keine Rechtsberatung):
@@ -305,6 +305,19 @@ Besetzungen oder nicht mit ihrer Vorlage verknüpft. Die Tafel-Zahl „Anwesende
     Vorlage wäre es für alle Abstimmungen möglich gewesen, aber jede Ableitung ist eine eigene Auswahlregel.
   - **Beteiligung im Verlauf des Abends:** Die Tafel-Zahl „Anwesende“ zählt angemeldete Geräte und bleibt meist den
     ganzen Abend gleich; abgegebene Stimmen trennen Abwesenheit nicht vom Nicht-Abstimmen.
+
+## Qualität und Betrieb (14.11.2026)
+
+- [x] **6. Meta-Tags nur einmal:** Personen-, Fraktions-, Partei-, Sitzungs- und Abstimmungsseiten haben je zwei
+  `<title>`, Beschreibungen und `og:title`; die Standardwerte nur noch als Ersatz. Standardbeschreibung ohne „ - “.
+- [x] **8. Vorschaubilder (`og:image`):** beim Build erzeugte Bilder mit Text, ohne Tafelbilder (Zitatrecht).
+- [x] **9. Ende-zu-Ende- und Barrierefreiheitstests:** Playwright mit axe-core über alle Seitentypen, hell und dunkel,
+  Telefon und Desktop, in der CI.
+- [x] **10. Commit-Adresse des ALLRIS-Runners:** nicht mehr Benutzer und Host des Servers; bei jedem Lauf gesetzt.
+- [x] **11. Überwachung des Runners:** Ausfall wird gemeldet, auch in der Sommerpause ohne Sitzungen.
+- [x] **12. Offene Mehrheitsregeln:** Beschlusspunkt einer Vorlage, der die Hauptsatzung ändert (25.02.2026 TOP 19.1,
+  Punkt 3), mit Mehrheit aller Mitglieder; Aufzählungen von Punkten („Punkte 1, 2 und 4“, „5 bis 7“) erkennen;
+  Änderungsanträge zur Hauptsatzung entscheiden und dokumentieren.
 
 ## Reihenfolge (Vorschlag)
 

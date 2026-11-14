@@ -44,9 +44,10 @@ jobs:
 
       - name: Propose data changes
         id: proposal
+        # Rebuilt on every run and deleted after the merge, so outside the protected data/* branches.
         uses: peter-evans/create-pull-request@v7
         with:
-          branch: data/leipzig-recordings
+          branch: update/leipzig-recordings
           add-paths: data/leipzig-8
           commit-message: 'data(leipzig): Aufzeichnungen der Ratsversammlung aktualisieren'
           title: 'data(leipzig): Aufzeichnungen der Ratsversammlung aktualisieren'
@@ -69,7 +70,7 @@ jobs:
             exit 0
           fi
           head="$(gh pr view "$PULL_REQUEST" --json headRefOid --jq .headRefOid)"
-          .github/scripts/wait-for-ci.sh data/leipzig-recordings "$head"
+          .github/scripts/wait-for-ci.sh update/leipzig-recordings "$head"
           gh pr merge "$PULL_REQUEST" --merge --match-head-commit "$head" --delete-branch
           # A merge with the workflow token starts no other workflow.
           gh workflow run leipzig-votings.yml --ref main

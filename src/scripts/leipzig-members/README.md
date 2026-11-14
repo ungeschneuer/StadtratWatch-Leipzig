@@ -40,6 +40,14 @@ OParl ID; this module says who they are, which faction they sat in on a given da
    or is `fraktionslos`; each member has a party; overrides refer to members of the period; IDs are unique. A failed
    check exits with code 1 after writing the files, so the change is visible.
 
+## Downloads
+
+The OParl lists of persons, memberships and organizations are kept in the cache directory. A later run asks OParl only
+for the objects changed since a day before the previous run (`modified_since`) and applies them, leaving out deleted
+ones. Without a cache, or once the last full download is seven days old, the lists are downloaded completely. The
+candidates file is asked for with `If-None-Match` and `If-Modified-Since`; on `304` the cached copy is used. The
+workflow keeps the cache between runs with `actions/cache`; a lost cache only costs a full download.
+
 ## Usage
 
 From the repository root:
@@ -53,6 +61,7 @@ bun src/scripts/leipzig-members/index.ts
 | `-d, --data-dir`      | Directory of the parliament period. Default: `data/leipzig-8/`. |
 | `--parliament-period` | ID of the parliament period. Default: `leipzig-8`.              |
 | `--period-start`      | Day of the constituent session. Default: `2024-09-18`.          |
+| `--cache-dir`         | Download cache. Default: `.cache/leipzig-sources/`.             |
 | `-h, --help`          | Show the help text and exit.                                    |
 
 | Environment variable | Description                                                            |

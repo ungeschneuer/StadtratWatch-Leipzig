@@ -11,6 +11,8 @@ const siteUrl = process.env.SITE_URL ?? 'https://ungeschneuer.github.io';
 const siteBase = process.env.SITE_BASE ?? '/StadtratWatch-Leipzig';
 
 export default defineConfig({
+  // The default theme (github-dark) renders comments below the WCAG AA contrast ratio.
+  markdown: { shikiConfig: { theme: 'github-dark-default' } },
   site: siteUrl,
   base: siteBase,
   trailingSlash: 'ignore',

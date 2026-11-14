@@ -34,13 +34,13 @@ const breadcrumbItems: BreadcrumbItem[] = [
 >
   <div
     id="tabs"
-    role="tablist"
+    role="group"
+    aria-label="Ansicht"
     class="tabs tabs-lift"
     x-data="tabs"
     data-parliament-period-id={parliamentPeriod.id}
   >
     <input
-      role="tab"
       class="tab"
       aria-label="Liste"
       type="radio"
@@ -56,7 +56,6 @@ const breadcrumbItems: BreadcrumbItem[] = [
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Grafik"
       type="radio"

@@ -39,8 +39,10 @@ function getPartyName(partyId: string) {
   {persons.map((person) => (
     <a
       href={siteRoutes(parliamentPeriod.id).person(person.id)}
-      class="card card-border border-base-300 bg-base-200 hover:bg-base-300"
-      class:list={[{ 'opacity-50': !person.isCurrent }]}
+      class:list={[
+        'card card-border border-base-300 hover:bg-base-300',
+        person.isCurrent ? 'bg-base-200' : 'bg-base-100 border-dashed',
+      ]}
     >
       <div class="card-body p-3">
         <div class="text-sm font-medium">{person.name}</div>

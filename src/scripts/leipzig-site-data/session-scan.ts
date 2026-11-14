@@ -11,7 +11,7 @@ import { votingFilenameOf } from '@srw-astro/models/voting-evidence';
 import type { LeipzigPaper, PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
 import { majorityRequirementOf } from './majority-requirement.ts';
-import { itemNumberOf, type Recusal, recusalsOf } from './special-cases.ts';
+import { itemNumberOf, type MajorityOverride, majorityOverrideOf, type Recusal, recusalsOf } from './special-cases.ts';
 
 // The board reading of these votes is confirmed or, while no official result is published, unchallenged; or a check
 // failed and a reviewer has not decided yet. The last two are published with their review status, so the site can say
@@ -36,6 +36,7 @@ export function toSessionScan(
   papers: PapersFile | null = null,
   recusals: Recusal[] = [],
   reviewCaseIndices: ReadonlySet<number> = new Set(),
+  majorityOverrides: MajorityOverride[] = [],
 ): SessionScanResult {
   const namesByOparlId = new Map(members.persons.map((person) => [person.oparlId, person.name]));
   const problems: string[] = [];
@@ -46,11 +47,14 @@ export function toSessionScan(
       const paper = paperId ? papers?.papers[paperId] : undefined;
       const title = titleOf(voting);
       const motionId = paper?.reference || paperReferenceOf(voting) || '';
-      const majorityRequirement = majorityRequirementOf({
-        title,
-        paperReference: motionId || null,
-        procedural: voting.procedural ?? false,
-      });
+      const agendaItemNumber = voting.heading.agendaItemNumber ?? voting.official?.agendaItemNumber ?? '';
+      const majorityRequirement =
+        majorityOverrideOf(majorityOverrides, sessionId, agendaItemNumber, itemNumberOf(voting)) ??
+        majorityRequirementOf({
+          title,
+          paperReference: motionId || null,
+          procedural: voting.procedural ?? false,
+        });
       const votes = voting.votes.flatMap((seat) => {
         const name = seat.personId ? namesByOparlId.get(seat.personId) : undefined;
         if (name) return [{ name, vote: seat.vote }];

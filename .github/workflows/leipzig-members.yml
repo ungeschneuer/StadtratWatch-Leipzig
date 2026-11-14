@@ -32,6 +32,16 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      # Holds the OParl lists and the candidates file of the last run, so this run only asks for what changed. Caches
+      # cannot be overwritten, hence one key per run and the newest earlier one as the start; without a cache the
+      # script downloads everything.
+      - name: Restore download cache
+        uses: actions/cache@v6
+        with:
+          path: .cache/leipzig-sources
+          key: leipzig-sources-${{ github.run_id }}
+          restore-keys: leipzig-sources-
+
       # A failed plausibility check still writes the files, so the pull request shows what changed.
       - name: Build members
         id: members
@@ -42,9 +52,11 @@ jobs:
       # voting workflow writes their faction and party columns from members.json on its next run.
       - name: Propose data changes
         id: proposal
+        # The branch is rebuilt on every run and deleted once merged or without changes, so it lies outside the data/*
+        # branches, which a ruleset protects against force pushes and deletion.
         uses: peter-evans/create-pull-request@v7
         with:
-          branch: data/leipzig-members
+          branch: update/leipzig-members
           add-paths: |
             data/leipzig-8/members.json
             data/leipzig-8/persons.csv
@@ -61,7 +73,7 @@ jobs:
         if: steps.proposal.outputs.pull-request-operation == 'created' || steps.proposal.outputs.pull-request-operation == 'updated'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run ci.yml --ref data/leipzig-members
+        run: gh workflow run ci.yml --ref update/leipzig-members
 
       - name: Report failure
         if: steps.members.outcome == 'failure'

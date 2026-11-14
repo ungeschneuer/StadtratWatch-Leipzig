@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import MetaTags from '@components/MetaTags.astro';
 import PageHeader from '@components/PageHeader.astro';
 import { type Registry } from '@models/registry';
 import { type BreadcrumbItem } from '@components/BreadcrumbMenu.astro';
@@ -23,9 +24,14 @@ const {
 } = Astro.props as Props;
 ---
 
-<Layout parliamentPeriod={parliamentPeriod}>
+<Layout parliamentPeriod={parliamentPeriod} pageTitle={pageTitle}>
+  {/* Layout takes this slot as given, so a page without meta tags of its own gets the defaults here. */}
   <Fragment slot="srw-meta-tags">
-    <slot name="srw-meta-tags" />
+    {Astro.slots.has('srw-meta-tags') ? (
+      <slot name="srw-meta-tags" />
+    ) : (
+      <MetaTags pageTitle={pageTitle} />
+    )}
   </Fragment>
 
   <div data-pagefind-body={searchable ? '' : undefined}>

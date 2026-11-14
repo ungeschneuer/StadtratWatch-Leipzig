@@ -31,9 +31,11 @@ prepare_working_copy() {
     log "Klone $repository_url"
     mkdir -p "$state_dir"
     git clone --quiet "$repository_url" "$working_copy"
-    git -C "$working_copy" config user.name "${LEIPZIG_COMMIT_NAME:-StadtratWatch Leipzig (ALLRIS-Runner)}"
-    git -C "$working_copy" config user.email "${LEIPZIG_COMMIT_EMAIL:-$(id -un)@$(hostname -f)}"
   fi
+  # Set on every run, so a changed identity reaches working copies cloned before. The operator's GitHub noreply address
+  # links the commits to the account without making a mail address or the server's user and host public.
+  git -C "$working_copy" config user.name "${LEIPZIG_COMMIT_NAME:-StadtratWatch Leipzig (ALLRIS-Runner)}"
+  git -C "$working_copy" config user.email "${LEIPZIG_COMMIT_EMAIL:-33438600+ungeschneuer@users.noreply.github.com}"
   cd "$working_copy"
   git fetch --quiet origin main "$data_branch"
   git checkout --quiet -B "$data_branch" "origin/$data_branch"
