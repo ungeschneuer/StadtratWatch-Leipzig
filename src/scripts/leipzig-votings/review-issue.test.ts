@@ -50,8 +50,8 @@ describe('renderReviewIssue', () => {
     expect(issue.body.startsWith(issueMarker('2026-10-29'))).toBe(true);
     const checklist = issue.body.split('\n').filter((line) => line.startsWith('- ['));
     expect(checklist).toEqual([
-      '- [ ] **#2** · TOP 19.10.2 · 0:45:12 · Priorität hoch – Die Sitzungsleitung korrigiert das Ergebnis mündlich. [prüfen](https://example.github.io/StadtratWatch-Leipzig/review/leipzig/2026-10-29#fall-2)',
-      '- [x] **#5** · ohne TOP · 0:45:12 · Priorität niedrig – Die Sitzungsleitung korrigiert das Ergebnis mündlich. [prüfen](https://example.github.io/StadtratWatch-Leipzig/review/leipzig/2026-10-29#fall-5)',
+      '- [ ] **#2**, TOP 19.10.2, 0:45:12, Priorität hoch: Die Sitzungsleitung korrigiert das Ergebnis mündlich. [prüfen](https://example.github.io/StadtratWatch-Leipzig/review/leipzig/2026-10-29#fall-2)',
+      '- [x] **#5**, ohne TOP, 0:45:12, Priorität niedrig: Die Sitzungsleitung korrigiert das Ergebnis mündlich. [prüfen](https://example.github.io/StadtratWatch-Leipzig/review/leipzig/2026-10-29#fall-5)',
     ]);
   });
 

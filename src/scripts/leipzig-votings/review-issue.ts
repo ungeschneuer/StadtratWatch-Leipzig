@@ -19,7 +19,7 @@ export function renderReviewIssue(file: ReviewCasesFile, reviewUiUrl: string): R
   const lines = cases.map((reviewCase) => {
     const top = reviewCase.agendaItemNumber ? `TOP ${reviewCase.agendaItemNumber}` : 'ohne TOP';
     const problem = reviewCase.problems[0]?.message ?? '';
-    return `- [${reviewCase.open ? ' ' : 'x'}] **#${reviewCase.votingIndex}** · ${top} · ${reviewCase.timecode} · Priorität ${reviewCase.priority} – ${problem} [prüfen](${sessionUrl}#fall-${reviewCase.votingIndex})`;
+    return `- [${reviewCase.open ? ' ' : 'x'}] **#${reviewCase.votingIndex}**, ${top}, ${reviewCase.timecode}, Priorität ${reviewCase.priority}: ${problem} [prüfen](${sessionUrl}#fall-${reviewCase.votingIndex})`;
   });
   const open = file.summary.open;
   const body = [

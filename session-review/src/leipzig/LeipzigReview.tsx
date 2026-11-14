@@ -196,7 +196,7 @@ export function LeipzigSessionReview() {
     <Page>
       <p className="mb-2 text-sm">
         <Link to="/leipzig" className="link link-primary">
-          ← Alle Sitzungen
+          Alle Sitzungen
         </Link>
       </p>
       <PageTitle>

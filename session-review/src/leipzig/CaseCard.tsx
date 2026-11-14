@@ -64,8 +64,7 @@ export function CaseCard({
       <div className="card-body gap-4 p-4 sm:p-6">
         <header className="flex flex-wrap items-center gap-2">
           <h2 className="card-title me-auto">
-            #{reviewCase.votingIndex} ·{' '}
-            {reviewCase.agendaItemNumber ? `TOP ${reviewCase.agendaItemNumber}` : 'ohne TOP'}
+            #{reviewCase.votingIndex}, {reviewCase.agendaItemNumber ? `TOP ${reviewCase.agendaItemNumber}` : 'ohne TOP'}
           </h2>
           <span className={`badge badge-soft ${PRIORITY_BADGES[reviewCase.priority]}`}>
             {PRIORITY_LABELS[reviewCase.priority]}
@@ -76,7 +75,7 @@ export function CaseCard({
             className="btn btn-sm btn-outline btn-primary"
             onClick={() => onSeek(Math.max(0, reviewCase.videoSeconds - VIDEO_LEAD_SECONDS))}
           >
-            ▶ Video ab {reviewCase.timecode}
+            Video ab {reviewCase.timecode}
           </button>
         </header>
         <p className="hyphens-auto" lang="de">
@@ -84,7 +83,7 @@ export function CaseCard({
           {reviewCase.paperReference && (
             <span className="text-base-content/70">
               {' '}
-              · <span className="whitespace-nowrap">{reviewCase.paperReference}</span>
+              (<span className="whitespace-nowrap">{reviewCase.paperReference}</span>)
             </span>
           )}
         </p>

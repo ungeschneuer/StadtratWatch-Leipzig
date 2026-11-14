@@ -86,6 +86,18 @@ truth for a parliament period (persons, factions, parties, sessions); persons ca
   - **Never** add comments explaining what code does. Exception: Comments explaining why (business rules, external constraints) are fine. Comments explaining *what* means the code needs refactoring.
   - **Never** use cryptic abbreviations or unclear variable names
 
+## Design and Text
+
+The site should read as an editorial public-interest site, not as a generated template.
+
+- **Never** use „·“ as a separator, in the site, the review app, generated texts or docs. Write sentences, or use a comma,
+  colon, semicolon or parentheses.
+- **Avoid** the patterns that mark generated web design: eyebrow lines above headings, rows of key-figure tiles, cards
+  with an icon in a tinted square, numbered „1, 2, 3“ steps with icons, arrows on buttons, a hero with two buttons,
+  gradients, glows, glass effects, emoji or glyphs as icons, and generic copy („Entdecken“, „Mehr erfahren“).
+- **Prefer** content over decoration: numbers in sentences, lists and tables over card grids, plain links over buttons
+  where nothing is submitted, one primary action per view.
+
 ## Boundaries
 
 - **Always** give commits and PR descriptions human attribution only: no AI co-author trailers, no "Generated with" footers
