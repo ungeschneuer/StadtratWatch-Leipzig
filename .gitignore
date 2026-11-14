@@ -51,3 +51,6 @@ deu.traineddata
 
 # Quotation images, fetched from the evidence releases by the deploy workflow
 /astro/public/evidence/
+
+# Download cache of the data scripts (restored by actions/cache in the workflows)
+/.cache

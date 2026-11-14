@@ -53,7 +53,7 @@ Stand: 12.11.2026 (abends)
 
 ### Ressourcenschonung und Aktualität (nur kostenlose Dienste)
 - [x] **GitHub Actions mit `schedule`**: Das öffentliche Repo bekommt unbegrenzt Minuten auf Standard-Runnern. Ein Job darf bis zu 6 h laufen.
-- [ ] **Inkrementell abrufen** über OParl `modified_since` und HTTP `ETag`/`If-Modified-Since`. Nur committen, wenn sich etwas geändert hat.
+- [x] **Inkrementell abrufen** über OParl `modified_since` und HTTP `ETag`/`If-Modified-Since`. Nur committen, wenn sich etwas geändert hat. `leipzig-members` holt Personen, Mitgliedschaften und Organisationen nur noch geändert und die Bewerberliste bedingt; Stand im Actions-Cache, wöchentlich ein vollständiger Abruf (14.11.2026). Vorlagen und Abstimmungen wurden schon vorher nur neu geholt.
 - [x] **Höflich abrufen:** User-Agent mit Projekt-URL, 0,3–1 s Pause zwischen Requests.
 - [x] **Keine Videos speichern.** Gespeichert werden nur Metadaten, die VTT (ca. 270 KB pro Sitzung) und kleine Belegbilder.
 - [x] **Belegbilder:** je veröffentlichter Abstimmung ein Zitatbild (960 px, 16 Farbstufen, ca. 135 KB statt der ursprünglich angepeilten 50 KB, zugunsten der Lesbarkeit) in GitHub Releases, nicht im Git (Entscheidung 12.11.2026).

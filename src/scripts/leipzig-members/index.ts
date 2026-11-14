@@ -2,8 +2,14 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import process from 'node:process';
 
-import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
-import { followOparlPages } from '../leipzig-recordings/oparl-pages.ts';
+import {
+  createPoliteHttpClient,
+  DEFAULT_USER_AGENT,
+  getTextOrThrow,
+  getTextRevalidated,
+} from '../leipzig-recordings/http-client.ts';
+import { fetchOparlListIncrementally, type OparlObject } from '../leipzig-recordings/incremental-oparl-list.ts';
+import { createJsonFileStore } from '../leipzig-recordings/json-file-store.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
 import {
   deriveCouncilMembers,
@@ -30,6 +36,7 @@ checkArgs(args);
 
 const http = createPoliteHttpClient(process.env.SCRAPER_USER_AGENT || DEFAULT_USER_AGENT, 300);
 const fetchJson = async (url: string) => JSON.parse(await getTextOrThrow(http, url));
+const cache = createJsonFileStore(args.cacheDir);
 
 try {
   const [memberships, persons, organizations] = [
@@ -37,7 +44,9 @@ try {
     await fetchAll<OparlPerson>(`${OPARL_BODY_URL}/persons?size=100`),
     await fetchAll<OparlOrganization>(`${OPARL_BODY_URL}/organizations?size=100`),
   ];
-  const candidates = parseCandidatesCsv(await getTextOrThrow(http, CANDIDATES_CSV_URL));
+  const candidatesCsv = await getTextRevalidated(http, CANDIDATES_CSV_URL, cache);
+  console.log(`candidates list: ${candidatesCsv.notModified ? 'unchanged since the last download' : 'downloaded'}`);
+  const candidates = parseCandidatesCsv(candidatesCsv.body);
   const overridesPath = join(args.dataDir, 'member-overrides.json');
   const overridesJson = await readFile(overridesPath, 'utf-8').catch(() => null);
   const overrides = overridesJson ? parseMemberOverrides(JSON.parse(overridesJson), overridesPath) : [];
@@ -106,9 +115,13 @@ async function readBoardSessionDays(dataDir: string): Promise<Map<string, string
   return days;
 }
 
-async function fetchAll<T>(firstPageUrl: string): Promise<T[]> {
-  const items: T[] = [];
-  for await (const page of followOparlPages<T>(fetchJson, firstPageUrl)) items.push(...page.data);
+async function fetchAll<T extends OparlObject>(listUrl: string): Promise<T[]> {
+  const { items, mode, changedItems } = await fetchOparlListIncrementally<T>(listUrl, {
+    fetchJson,
+    store: cache,
+    now: new Date(),
+  });
+  console.log(`${listUrl}: ${mode === 'full' ? 'full download' : `${changedItems} changed`}, ${items.length} in total`);
   return items;
 }
 

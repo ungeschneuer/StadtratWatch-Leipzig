@@ -32,6 +32,16 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      # Holds the OParl lists and the candidates file of the last run, so this run only asks for what changed. Caches
+      # cannot be overwritten, hence one key per run and the newest earlier one as the start; without a cache the
+      # script downloads everything.
+      - name: Restore download cache
+        uses: actions/cache@v6
+        with:
+          path: .cache/leipzig-sources
+          key: leipzig-sources-${{ github.run_id }}
+          restore-keys: leipzig-sources-
+
       # A failed plausibility check still writes the files, so the pull request shows what changed.
       - name: Build members
         id: members

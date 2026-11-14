@@ -10,6 +10,10 @@ Die Wahlperiode (`registry.json`) führt Sitzungen, Personen, Fraktionen und Par
 
 Siehe <<adr-0009,ADR-0009>>. Statusgrößen: `verified`, `corrected`, `reviewed` und ohne Kennzeichnung veröffentlicht; `provisional` und `needs-review` mit Kennzeichnung; `discarded` und `skipped` nicht veröffentlicht.
 
+== Abrufe bei den Quellen
+
+Die Skripte fragen jede Quelle mit einem User-Agent, der das Projekt nennt, und mit einer Pause zwischen zwei Anfragen. Was schon erfasst ist, wird nicht erneut geholt: Vorlagen kennt `papers.json`, Abstimmungen liest `leipzig-votings` nur aus neuen Aufzeichnungen. Die täglich nötigen OParl-Listen (Personen, Mitgliedschaften, Organisationen) holt `leipzig-members` über `modified_since` nur mit den seit dem letzten Lauf geänderten Objekten und führt sie mit dem Stand des letzten Laufs zusammen; die Bewerberliste fragt es mit `If-None-Match` und `If-Modified-Since` ab. Den Stand hält ein Cache von GitHub Actions (`.cache/leipzig-sources`), nicht das Repository. Fehlt der Cache oder ist der letzte vollständige Abruf eine Woche alt, wird alles neu geladen; so wirkt sich ein Objekt, dessen Änderungsdatum der Server nicht nachführt, höchstens eine Woche aus.
+
 == Offene Daten und Lizenz
 
 * Code: MIT (mit Vermerk von StadtratWatch Magdeburg).
