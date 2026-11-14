@@ -4,21 +4,21 @@
       "videoSeconds": 17638,
       "agendaItemNumber": "19.1.1"
     },
-    "unresolved": true,
-    "reason": "Nicht klar, wer die Stimme gegeben hat.",
-    "source": "Video 4:53:58",
+    "approve": true,
+    "reason": "Verlaufsprotokoll bestätigt die Tafel (21/21/19); nur ALLRIS zählt ein Nein mehr.",
+    "source": "Verlaufsprotokoll, ALLRIS TOP 19.1.1",
     "reviewer": "ungeschneuer",
-    "reviewedAt": "2026-11-13T19:02:39.430Z"
+    "reviewedAt": "2026-11-13T23:32:59.000Z"
   },
   {
     "voting": {
       "videoSeconds": 22267.6,
       "agendaItemNumber": "19.9.2"
     },
-    "unresolved": true,
-    "reason": "Unklar, ob Enthaltungen nachgereicht.",
-    "source": "Video 6:11:07",
+    "approve": true,
+    "reason": "Ansage und Verlaufsprotokoll bestätigen die Tafel (22/39/2); nur ALLRIS zählt zwei Enthaltungen mehr.",
+    "source": "Video 6:10:48 („Haben alle abstimmen können? Dann ist das Ergebnis 22 zu 39 zu 2“)",
     "reviewer": "ungeschneuer",
-    "reviewedAt": "2026-11-13T19:03:40.288Z"
+    "reviewedAt": "2026-11-13T23:32:59.000Z"
   }
 ]

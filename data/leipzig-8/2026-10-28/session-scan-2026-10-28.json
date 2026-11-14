@@ -1517,7 +1517,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031610",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2214123",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031610"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031610",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029028",
+          "reference": "VIII-A-02476",
+          "name": "Ertrinkenden-Erkennungssysteme in Bädern der Sportbäder Leipzig GmbH",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029028"
+        }
+      ]
     },
     "votes": [
       {
@@ -1820,7 +1829,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033823",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2215463",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033823"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033823",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029988",
+          "reference": "VIII-A-02831",
+          "name": "Temporäre Halteverbote für eine effizientere Straßenreinigung!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029988"
+        }
+      ]
     },
     "votes": [
       {
@@ -2123,7 +2141,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030126",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2212880",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030126"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030126",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030015",
+          "reference": "VIII-A-02839",
+          "name": "Die nächsten 50 Jahre Grünau: Wiederbebauungsplan für die Großwohnsiedlung",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030015"
+        }
+      ]
     },
     "votes": [
       {
@@ -2426,7 +2453,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033673",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2215729",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033673"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033673",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030475",
+          "reference": "VIII-A-02985",
+          "name": "24/7 Abfallentsorgung möglich machen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030475"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031652",
+          "reference": "VIII-A-02985-NF-01",
+          "name": "24/7 Abfallentsorgung möglich machen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031652"
+        }
+      ]
     },
     "votes": [
       {
@@ -2728,7 +2771,16 @@
         "SPD"
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033354",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033354"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033354",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031320",
+          "reference": "VIII-DS-03309",
+          "name": "Planungsbeschluss - Komplexmodernisierung der Brüder-Grimm-Schule in der Goldsternstraße 23",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031320"
+        }
+      ]
     },
     "votes": [
       {
@@ -3016,15 +3068,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 64,
-    "unresolved": {
-      "reason": "Nicht klar, wer die Stimme gegeben hat.",
-      "officialCounts": {
-        "J": 21,
-        "N": 22,
-        "E": 19
-      }
-    }
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-10-28-012.png",
@@ -3039,7 +3083,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033869",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2215775",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033869"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033869",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031746",
+          "reference": "VIII-DS-03431",
+          "name": "Planungsbeschluss – Komplexmodernisierung der Hans-Kroch-Schule - Grundschule der Stadt Leipzig, Schulgebäude und Sporthalle im Jörgen-Schmidtchen-Weg 8",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031746"
+        }
+      ]
     },
     "votes": [
       {
@@ -3342,7 +3395,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033924",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216236",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033924"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033924",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030848",
+          "reference": "VIII-DS-03137",
+          "name": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030848"
+        }
+      ]
     },
     "votes": [
       {
@@ -3645,7 +3707,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033969",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217025",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033969"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033969",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030848",
+          "reference": "VIII-DS-03137",
+          "name": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030848"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033944",
+          "reference": "VIII-DS-03137-ÄA-04",
+          "name": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033944"
+        }
+      ]
     },
     "votes": [
       {
@@ -3948,7 +4026,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033872",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2215774",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033872"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033872",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030848",
+          "reference": "VIII-DS-03137",
+          "name": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030848"
+        }
+      ]
     },
     "votes": [
       {
@@ -4251,7 +4338,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033914",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216035",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033914"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033914",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030848",
+          "reference": "VIII-DS-03137",
+          "name": "Maßnahme des HSK 2027 bis 2031 - Finanzierung der Leipzig-Pass-Mobilcard und Deutschland-Ticket für Leipzig-Pass-Inhaber/-innen 2027/2028",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030848"
+        }
+      ]
     },
     "votes": [
       {
@@ -5155,7 +5251,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033893",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216034",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033893"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033893",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024566",
+          "reference": "VIII-DS-00989",
+          "name": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals“, Gottschedstraße 16, Leipzig (Bestätigung gem. §79 (1) SächsGemO)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024566"
+        }
+      ]
     },
     "votes": [
       {
@@ -5443,15 +5548,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 64,
-    "unresolved": {
-      "reason": "Unklar, ob Enthaltungen nachgereicht.",
-      "officialCounts": {
-        "J": 22,
-        "N": 39,
-        "E": 4
-      }
-    }
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-10-28-020.png",
@@ -5466,7 +5563,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033949",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216552",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033949"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033949",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024566",
+          "reference": "VIII-DS-00989",
+          "name": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals“, Gottschedstraße 16, Leipzig (Bestätigung gem. §79 (1) SächsGemO)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024566"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032032",
+          "reference": "VIII-DS-00989-ÄA-01",
+          "name": "Bau- und Finanzierungsbeschluss Modernisierung „Haus der Festivals“, Gottschedstraße 16, Leipzig (Bestätigung gem. §79 (1) SächsGemO)",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032032"
+        }
+      ]
     },
     "votes": [
       {

@@ -1,8 +1,8 @@
 {
   "sessionId": "2026-09-03",
-  "kind": "agenda-item-pages",
-  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004610",
-  "fetchedAt": "2026-11-13T17:17:56.199Z",
+  "kind": "beschlussprotokoll",
+  "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/doc?DOCTYP=116&DOLFDNR=4828220&OTYP=41",
+  "fetchedAt": "2026-11-14T06:18:10.558Z",
   "parserVersion": 4,
   "votes": [
     {
@@ -87,6 +87,26 @@
     },
     {
       "order": 8,
+      "agendaItemNumber": "19.13.1",
+      "paperReference": "VIII-DS-01570-ÄA-01",
+      "label": "Abstimmungsergebnis: Beschlusspunkt 2:",
+      "procedural": false,
+      "J": 11,
+      "N": 44,
+      "E": 4
+    },
+    {
+      "order": 9,
+      "agendaItemNumber": "19.13.1",
+      "paperReference": "VIII-DS-01570-ÄA-01",
+      "label": "Abstimmungsergebnis: Beschlusspunkt 3:",
+      "procedural": false,
+      "J": 23,
+      "N": 31,
+      "E": 5
+    },
+    {
+      "order": 10,
       "agendaItemNumber": "19.16",
       "paperReference": "VIII-DS-02229-NF-01",
       "label": "Abstimmungsergebnis:",
@@ -96,7 +116,7 @@
       "E": 4
     },
     {
-      "order": 9,
+      "order": 11,
       "agendaItemNumber": "19.16.1",
       "paperReference": "VIII-DS-02229-NF-01-ÄA-01",
       "label": "Abstimmungsergebnis:",
@@ -106,7 +126,7 @@
       "E": 7
     },
     {
-      "order": 10,
+      "order": 12,
       "agendaItemNumber": "19.20",
       "paperReference": "VIII-DS-02865",
       "label": "Abstimmungsergebnis:",
@@ -116,7 +136,7 @@
       "E": 2
     },
     {
-      "order": 11,
+      "order": 13,
       "agendaItemNumber": "19.22",
       "paperReference": "VIII-DS-02925",
       "label": "Abstimmungsergebnis:",
@@ -126,7 +146,7 @@
       "E": 11
     },
     {
-      "order": 12,
+      "order": 14,
       "agendaItemNumber": "19.22.2",
       "paperReference": "VIII-DS-02925-ÄA-03",
       "label": "Abstimmungsergebnis:",
@@ -136,7 +156,7 @@
       "E": 7
     },
     {
-      "order": 13,
+      "order": 15,
       "agendaItemNumber": "19.22.3",
       "paperReference": "VIII-DS-02925-ÄA-04",
       "label": "Abstimmungsergebnis:",
@@ -146,7 +166,7 @@
       "E": 2
     },
     {
-      "order": 14,
+      "order": 16,
       "agendaItemNumber": "20.1.1",
       "paperReference": "VIII-Ifo-02076-ÄA-01",
       "label": "Abstimmungsergebnis:",

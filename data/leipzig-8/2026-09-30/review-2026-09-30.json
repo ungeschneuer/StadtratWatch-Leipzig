@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-09-30",
-  "generatedAt": "2026-11-13T18:55:49.290Z",
+  "generatedAt": "2026-11-14T00:20:31.398Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_30_September_2026_-_02-06-35.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-30092026",
@@ -1041,7 +1041,7 @@
           "row": 5,
           "boardName": "Lehmann, Jens",
           "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
-          "vote": "O",
+          "vote": "N",
           "attendance": "present"
         },
         {
@@ -1613,10 +1613,10 @@
       "suggestions": [],
       "reviews": [
         {
-          "reason": "Ja und Nein Stimme unklar aus Protokoll",
-          "source": "Video 1:45:17",
+          "reason": "Herr Lehmann mit Nein benannt; das zusätzliche Ja nennt niemanden.",
+          "source": "Video 1:45:13 („Herr Lehmann einen Rot dazu und ein Grün dazu, macht 52 zu 10 zu 0“)",
           "reviewer": "ungeschneuer",
-          "reviewedAt": "2026-11-13T18:48:11.557Z"
+          "reviewedAt": "2026-11-13T23:32:59.000Z"
         }
       ]
     },

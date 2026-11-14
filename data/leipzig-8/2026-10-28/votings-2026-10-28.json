@@ -13,8 +13,8 @@
     "verified": 18,
     "corrected": 0,
     "provisional": 0,
-    "reviewed": 0,
-    "unresolved": 2,
+    "reviewed": 2,
+    "unresolved": 0,
     "needs-review": 0,
     "skipped": 0,
     "discarded": 1
@@ -7803,13 +7803,13 @@
         },
         {
           "check": "official-sources-agree",
-          "passed": false,
-          "detail": "agenda-item-pages 21/22/19, verlaufsprotokoll 21/21/19"
+          "passed": true,
+          "detail": "agenda-item-pages 21/22/19, verlaufsprotokoll 21/21/19; the Verlaufsprotokoll confirms the board"
         },
         {
           "check": "matches-official",
-          "passed": false,
-          "detail": "official 21/22/19 for TOP 19.1.1 (VIII-DS-03309-ÄA-01) differs from the board"
+          "passed": true,
+          "detail": "official 21/21/19 for TOP 19.1.1 (VIII-DS-03309-ÄA-01)"
         },
         {
           "check": "not-attendance-count",
@@ -7817,11 +7817,11 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "unresolved",
+      "checkStatus": "verified",
+      "status": "reviewed",
       "official": {
         "J": 21,
-        "N": 22,
+        "N": 21,
         "E": 19,
         "agendaItemNumber": "19.1.1",
         "paperReference": "VIII-DS-03309-ÄA-01",
@@ -7870,10 +7870,10 @@
       },
       "review": [
         {
-          "reason": "Nicht klar, wer die Stimme gegeben hat.",
-          "source": "Video 4:53:58",
+          "reason": "Verlaufsprotokoll bestätigt die Tafel (21/21/19); nur ALLRIS zählt ein Nein mehr.",
+          "source": "Verlaufsprotokoll, ALLRIS TOP 19.1.1",
           "reviewer": "ungeschneuer",
-          "reviewedAt": "2026-11-13T19:02:39.430Z"
+          "reviewedAt": "2026-11-13T23:32:59.000Z"
         }
       ]
     },
@@ -13597,13 +13597,13 @@
         },
         {
           "check": "official-sources-agree",
-          "passed": false,
-          "detail": "agenda-item-pages 22/39/4, verlaufsprotokoll 22/39/2"
+          "passed": true,
+          "detail": "agenda-item-pages 22/39/4, verlaufsprotokoll 22/39/2; the Verlaufsprotokoll confirms the board, as does the announcement"
         },
         {
           "check": "matches-official",
-          "passed": false,
-          "detail": "official 22/39/4 for TOP 19.9.2 (VIII-DS-00989-ÄA-02) differs from the board"
+          "passed": true,
+          "detail": "official 22/39/2 for TOP 19.9.2 (VIII-DS-00989-ÄA-02)"
         },
         {
           "check": "not-attendance-count",
@@ -13611,12 +13611,12 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "unresolved",
+      "checkStatus": "verified",
+      "status": "reviewed",
       "official": {
         "J": 22,
         "N": 39,
-        "E": 4,
+        "E": 2,
         "agendaItemNumber": "19.9.2",
         "paperReference": "VIII-DS-00989-ÄA-02",
         "procedural": false,
@@ -13648,10 +13648,10 @@
       },
       "review": [
         {
-          "reason": "Unklar, ob Enthaltungen nachgereicht.",
-          "source": "Video 6:11:07",
+          "reason": "Ansage und Verlaufsprotokoll bestätigen die Tafel (22/39/2); nur ALLRIS zählt zwei Enthaltungen mehr.",
+          "source": "Video 6:10:48 („Haben alle abstimmen können? Dann ist das Ergebnis 22 zu 39 zu 2“)",
           "reviewer": "ungeschneuer",
-          "reviewedAt": "2026-11-13T19:03:40.288Z"
+          "reviewedAt": "2026-11-13T23:32:59.000Z"
         }
       ]
     },

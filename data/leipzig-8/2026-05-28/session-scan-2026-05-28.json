@@ -13,6 +13,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030442",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200429",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030442",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -317,6 +333,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030442",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200429",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030442",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -621,6 +653,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030442",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200429",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030442",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -925,6 +973,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030442",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200429",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030442",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -1229,6 +1293,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030443",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200430",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030443",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -1533,6 +1613,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030443",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200430",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030443",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -1837,6 +1933,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030443",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200430",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030443",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -2141,6 +2253,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030444",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200431",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030444",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -2445,6 +2573,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030444",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200431",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030444",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -2749,6 +2893,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030465",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200432",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030465",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -3053,6 +3213,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030465",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200432",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030465",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -3357,6 +3533,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030505",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200433",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030505",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -3661,6 +3853,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030505",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200433",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030505",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -3965,6 +4173,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030505",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200433",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030505",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -4269,6 +4493,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030505",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200433",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030505",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -4573,6 +4813,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030505",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200433",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030505",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -4877,6 +5133,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030505",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200433",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030505",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5181,6 +5453,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200428",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5484,7 +5765,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200428",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        }
+      ]
     },
     "votes": [
       {
@@ -5787,7 +6077,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029214",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200549",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025539",
+          "reference": "VIII-Ifo-01304",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025539"
+        }
+      ]
     },
     "votes": [
       {
@@ -6090,7 +6389,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029214",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200549",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025539",
+          "reference": "VIII-Ifo-01304",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025539"
+        }
+      ]
     },
     "votes": [
       {
@@ -6393,7 +6701,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030440",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200551",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030440"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030440",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025539",
+          "reference": "VIII-Ifo-01304",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025539"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214",
+          "reference": "VIII-Ifo-01304-NF-01",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029214"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029579",
+          "reference": "VIII-Ifo-01304-NF-01-ÄA-02",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029579"
+        }
+      ]
     },
     "votes": [
       {
@@ -6696,7 +7027,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030467",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200552",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030467"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030467",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025539",
+          "reference": "VIII-Ifo-01304",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025539"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214",
+          "reference": "VIII-Ifo-01304-NF-01",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029214"
+        }
+      ]
     },
     "votes": [
       {
@@ -6999,7 +7346,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030501",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200554",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030501"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030501",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025539",
+          "reference": "VIII-Ifo-01304",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025539"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214",
+          "reference": "VIII-Ifo-01304-NF-01",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029214"
+        }
+      ]
     },
     "votes": [
       {
@@ -7600,7 +7963,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029214",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200549",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029214",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025539",
+          "reference": "VIII-Ifo-01304",
+          "name": "Mehrwegoffensive mit der Wirtschaft statt Verpackungssteuer",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025539"
+        }
+      ]
     },
     "votes": [
       {
@@ -8206,7 +8578,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030433",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200538",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030433"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030433",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029062",
+          "reference": "VIII-DS-02490",
+          "name": "Neuregelung des ordentlichen Betriebs und der Finanzierung von Kindertageseinrichtungen in der Stadt Leipzig (Grundsatzvereinbarung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029062"
+        }
+      ]
     },
     "votes": [
       {
@@ -9116,7 +9497,51 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030425",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200540",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030425"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030425",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1010557",
+          "reference": "VI-DS-06274",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1010557"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1011996",
+          "reference": "VI-DS-06274-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1011996"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2011496",
+          "reference": "VI-DS-06274-NF-01-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2011496"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016431",
+          "reference": "VI-DS-06274-DS-02",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016431"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2018384",
+          "reference": "VI-DS-06274-DS-02-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2018384"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028491",
+          "reference": "VIII-DS-02286",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028491"
+        }
+      ]
     },
     "votes": [
       {
@@ -9419,7 +9844,51 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030430",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200541",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030430"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030430",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1010557",
+          "reference": "VI-DS-06274",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1010557"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1011996",
+          "reference": "VI-DS-06274-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1011996"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2011496",
+          "reference": "VI-DS-06274-NF-01-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2011496"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016431",
+          "reference": "VI-DS-06274-DS-02",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016431"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2018384",
+          "reference": "VI-DS-06274-DS-02-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2018384"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028491",
+          "reference": "VIII-DS-02286",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028491"
+        }
+      ]
     },
     "votes": [
       {
@@ -9722,7 +10191,51 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030430",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200541",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030430"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030430",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1010557",
+          "reference": "VI-DS-06274",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1010557"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1011996",
+          "reference": "VI-DS-06274-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1011996"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2011496",
+          "reference": "VI-DS-06274-NF-01-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2011496"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016431",
+          "reference": "VI-DS-06274-DS-02",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016431"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2018384",
+          "reference": "VI-DS-06274-DS-02-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2018384"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028491",
+          "reference": "VIII-DS-02286",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028491"
+        }
+      ]
     },
     "votes": [
       {
@@ -10025,7 +10538,51 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030432",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200542",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030432"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030432",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1010557",
+          "reference": "VI-DS-06274",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1010557"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1011996",
+          "reference": "VI-DS-06274-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1011996"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2011496",
+          "reference": "VI-DS-06274-NF-01-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2011496"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016431",
+          "reference": "VI-DS-06274-DS-02",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016431"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2018384",
+          "reference": "VI-DS-06274-DS-02-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2018384"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028491",
+          "reference": "VIII-DS-02286",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028491"
+        }
+      ]
     },
     "votes": [
       {
@@ -10328,7 +10885,51 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030474",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200543",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030474"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030474",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1010557",
+          "reference": "VI-DS-06274",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1010557"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1011996",
+          "reference": "VI-DS-06274-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1011996"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2011496",
+          "reference": "VI-DS-06274-NF-01-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2011496"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016431",
+          "reference": "VI-DS-06274-DS-02",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016431"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2018384",
+          "reference": "VI-DS-06274-DS-02-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2018384"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028491",
+          "reference": "VIII-DS-02286",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028491"
+        }
+      ]
     },
     "votes": [
       {
@@ -10631,7 +11232,51 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030498",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200544",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030498"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030498",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1010557",
+          "reference": "VI-DS-06274",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1010557"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/1011996",
+          "reference": "VI-DS-06274-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=1011996"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2011496",
+          "reference": "VI-DS-06274-NF-01-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2011496"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016431",
+          "reference": "VI-DS-06274-DS-02",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016431"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2018384",
+          "reference": "VI-DS-06274-DS-02-NF-01",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2018384"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028491",
+          "reference": "VIII-DS-02286",
+          "name": "Fachförderrichtlinie der Stadt Leipzig über die Förderung von Trägern der freien Jugendhilfe",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028491"
+        }
+      ]
     },
     "votes": [
       {
@@ -10935,6 +11580,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030081",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200546",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030081",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028475",
+          "reference": "VIII-DS-02284",
+          "name": "Schulnamensänderungen der Stadt Leipzig ab dem Schuljahr 2026/27",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028475"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -11239,6 +11893,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030081",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200546",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030081",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028475",
+          "reference": "VIII-DS-02284",
+          "name": "Schulnamensänderungen der Stadt Leipzig ab dem Schuljahr 2026/27",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028475"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -11543,6 +12206,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030081",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200546",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030081",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028475",
+          "reference": "VIII-DS-02284",
+          "name": "Schulnamensänderungen der Stadt Leipzig ab dem Schuljahr 2026/27",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028475"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -11847,6 +12519,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030081",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200546",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030081",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028475",
+          "reference": "VIII-DS-02284",
+          "name": "Schulnamensänderungen der Stadt Leipzig ab dem Schuljahr 2026/27",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028475"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -12151,6 +12832,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030081",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200546",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030081",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028475",
+          "reference": "VIII-DS-02284",
+          "name": "Schulnamensänderungen der Stadt Leipzig ab dem Schuljahr 2026/27",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028475"
+        }
+      ],
       "itemNumber": "5"
     },
     "votes": [
@@ -12454,7 +13144,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030235",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200529",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030235"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030235",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028068",
+          "reference": "VIII-DS-02148",
+          "name": "Vergabe von Zuwendungen an Dritte im Rahmen der Förderung des Tourismus im Kalenderjahr 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028068"
+        }
+      ]
     },
     "votes": [
       {
@@ -12757,7 +13456,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030534",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200531",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030534"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030534",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028068",
+          "reference": "VIII-DS-02148",
+          "name": "Vergabe von Zuwendungen an Dritte im Rahmen der Förderung des Tourismus im Kalenderjahr 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028068"
+        }
+      ]
     },
     "votes": [
       {
@@ -13964,7 +14672,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030489",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200548",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030489"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030489",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028730",
+          "reference": "VIII-DS-02360",
+          "name": "Neufestsetzung der Entgeltordnung für den Eigenbetrieb Musikschule Leipzig \"Johann Sebastian Bach\" ab dem 01.08.2026 (privatrechtliche Entgeltordnung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028730"
+        }
+      ]
     },
     "votes": [
       {
@@ -14869,6 +15586,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030452",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200399",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030452",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+          "reference": "VIII-A-02484-NF-01",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -15173,6 +15906,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030452",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200399",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030452",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+          "reference": "VIII-A-02484-NF-01",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -15477,6 +16226,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030452",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200399",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030452",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+          "reference": "VIII-A-02484-NF-01",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -15781,6 +16546,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030452",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200399",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030452",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+          "reference": "VIII-A-02484-NF-01",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -16085,6 +16866,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030452",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200399",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030452",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+          "reference": "VIII-A-02484-NF-01",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133"
+        }
+      ],
       "itemNumber": "5"
     },
     "votes": [
@@ -16389,6 +17186,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200396",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -16693,6 +17499,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030133",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200396",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030133",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029048",
+          "reference": "VIII-A-02484",
+          "name": "Schulstandorte in Mockau",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029048"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [

@@ -20,11 +20,17 @@
       "videoSeconds": 6317.8,
       "agendaItemNumber": "12.6.2"
     },
+    "seats": [
+      {
+        "personId": "https://www.leipzig.sitzung-online.de/oparl/persons/605",
+        "vote": "N"
+      }
+    ],
     "unresolved": true,
-    "reason": "Ja und Nein Stimme unklar aus Protokoll",
-    "source": "Video 1:45:17",
+    "reason": "Herr Lehmann mit Nein benannt; das zusätzliche Ja nennt niemanden.",
+    "source": "Video 1:45:13 („Herr Lehmann einen Rot dazu und ein Grün dazu, macht 52 zu 10 zu 0“)",
     "reviewer": "ungeschneuer",
-    "reviewedAt": "2026-11-13T18:48:11.557Z"
+    "reviewedAt": "2026-11-13T23:32:59.000Z"
   },
   {
     "voting": {
