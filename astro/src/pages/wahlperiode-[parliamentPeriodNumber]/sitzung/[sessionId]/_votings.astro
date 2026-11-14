@@ -52,17 +52,21 @@ const votings = sessionScan
 
 // The overview names how each faction voted; who voted how is on the page of the vote.
 const VOTE_COUNT_LABELS = [
-  { vote: 'J', label: 'Ja', className: 'badge-success' },
-  { vote: 'N', label: 'Nein', className: 'badge-error' },
-  { vote: 'E', label: 'Enthaltung', className: 'badge-warning' },
+  { vote: 'J', singular: 'Ja', plural: 'Ja', className: 'badge-success' },
+  { vote: 'N', singular: 'Nein', plural: 'Nein', className: 'badge-error' },
+  {
+    vote: 'E',
+    singular: 'Enthaltung',
+    plural: 'Enthaltungen',
+    className: 'badge-warning',
+  },
 ] as const;
 
 function voteCounts(votes: { vote: string }[]) {
-  return VOTE_COUNT_LABELS.map(({ vote, label, className }) => ({
-    label,
-    className,
-    count: votes.filter((candidate) => candidate.vote === vote).length,
-  })).filter(({ count }) => count > 0);
+  return VOTE_COUNT_LABELS.map(({ vote, singular, plural, className }) => {
+    const count = votes.filter((candidate) => candidate.vote === vote).length;
+    return { label: count === 1 ? singular : plural, className, count };
+  }).filter(({ count }) => count > 0);
 }
 ---
 
@@ -134,7 +138,9 @@ function voteCounts(votes: { vote: string }[]) {
             {voting.authors.length > 0 && (
               <div class="flex flex-wrap gap-1">
                 {voting.authors.map((author) => (
-                  <span class="badge badge-neutral badge-sm">{author}</span>
+                  <span class="badge badge-neutral badge-sm badge-wrap">
+                    {author}
+                  </span>
                 ))}
               </div>
             )}

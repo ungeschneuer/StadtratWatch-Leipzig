@@ -52,7 +52,7 @@ function periodOf(start: string, end: string | null): string {
         <h2 class="mb-2 font-semibold">{group.label}</h2>
         <ul class="divide-base-300 divide-y">
           {group.bodies.map((body) => (
-            <li class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 py-2">
+            <li class="flex flex-col gap-0.5 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
               <span>{body.name}</span>
               <span class="text-base-content/70 text-sm">
                 {[body.role, periodOf(body.start, body.end)]
