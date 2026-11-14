@@ -1,3 +1,4 @@
+import { DATA_DISCLAIMER } from '@models/data-disclaimer';
 import {
   OPERATOR_NAME,
   OPERATOR_WEBSITE,
@@ -15,6 +16,7 @@ export function generateMeta() {
       // agenda items and titles come from the city under licences that require naming it.
       license_note:
         'CC0 gilt für Stimmen, Ergebnisse und Zuordnungen von StadtratWatch Leipzig. Angaben aus OParl (Personen, Mitgliedschaften, Tagesordnung, Drucksachen) stehen unter CC BY 4.0, die Wahlliste 2024 unter dl-de/by-2-0; Quelle jeweils Stadt Leipzig.',
+      disclaimer: DATA_DISCLAIMER,
       attribution: [
         {
           source:

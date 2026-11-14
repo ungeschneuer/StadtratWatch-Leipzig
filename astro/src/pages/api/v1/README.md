@@ -28,6 +28,7 @@ Alle API-Antworten folgen diesem grundlegenden Format:
       "license": "CC0 1.0",
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "license_note": "CC0 gilt für Stimmen, Ergebnisse und Zuordnungen …",
+      "disclaimer": "Die Stimmen werden größtenteils automatisch … gelesen …",
       "attribution": [
         { "source": "Stadt Leipzig, OParl-Schnittstelle …", "url": "…", "license": "CC BY 4.0", "license_url": "…" },
         { "source": "Stadt Leipzig, Stadtratswahl 2024 …", "url": "…", "license": "Datenlizenz Deutschland – Namensnennung – Version 2.0", "license_url": "…" }
@@ -275,6 +276,10 @@ https://ungeschneuer.github.io/StadtratWatch-Leipzig/data/leipzig-8/faction-memb
 ```
 
 Sie enthalten genau, was Seite und API zeigen. Bedeutung der Felder, Stimmcodes, Methodik und Grenzen: [`DATA.md`](https://github.com/ungeschneuer/StadtratWatch-Leipzig/blob/main/DATA.md).
+
+## Hinweis zur Richtigkeit
+
+`meta.stadtratwatch_api.disclaimer` steht in jeder Antwort: Die Stimmen werden größtenteils automatisch aus den Videoaufzeichnungen gelesen und die Redebeiträge automatisch zugeordnet. Trotz Abgleich und Prüfung können einzelne Angaben fehlen oder falsch sein; es wird keine Gewähr übernommen. Verbindlich sind allein die Protokolle der Stadt Leipzig. `reviewStatus` zeigt, welche Abstimmungen noch nicht abschließend geprüft sind.
 
 ## Lizenz
 
