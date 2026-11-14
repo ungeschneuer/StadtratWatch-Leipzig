@@ -124,6 +124,16 @@ export type SessionScanVotingSubject = {
   oparlPaperId?: string;
   // Set when the council voted on the points of a paper one by one: the point this vote decided („4“, „1 und 2“).
   itemNumber?: string;
+  // The papers this one belongs to, main paper first: the original of a revision, the main paper of an amendment.
+  paperAncestors?: PaperAncestor[];
+};
+
+export type PaperAncestor = {
+  oparlPaperId: string;
+  reference: string;
+  name: string;
+  paperType: string | null;
+  paperUrl?: string;
 };
 
 export type SessionScanVote = {

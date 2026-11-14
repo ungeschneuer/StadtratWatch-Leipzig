@@ -6,7 +6,7 @@ import { parseArgs } from 'node:util';
 import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
 import type { RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import type { SessionVotingsFile } from '../leipzig-votings/session-votings-file.ts';
-import { addSessionPapers, createPaperLookup, type PapersFile } from './voting-papers.ts';
+import { addPaperAncestors, addSessionPapers, createPaperLookup, type PapersFile } from './voting-papers.ts';
 
 const { values } = parseArgs({
   args: Bun.argv.slice(2),
@@ -21,7 +21,8 @@ if (values.help) {
 Usage: bun index.ts [-d <data-dir>]
 
 Links every vote in <data-dir>/<date>/votings-<date>.json to the OParl paper it was about, with its submitters, and
-writes <data-dir>/papers.json. Votes linked before are not fetched again.
+writes <data-dir>/papers.json. Votes linked before are not fetched again. Adds the papers the voted ones belong to
+(the original of a revision, the main paper of an amendment), so the site can show them together.
 
 -h, --help       Show this help message and exit.
 -d, --data-dir   Directory of the parliament period. Default: data/leipzig-8/
@@ -51,7 +52,11 @@ try {
     // Written after each session, so an interrupted run keeps what it found.
     await writeFile(papersPath, `${JSON.stringify(sorted(file), null, 2)}\n`);
   }
-  console.log(`${Object.keys(file.papers).length} papers`);
+  const ancestors = await addPaperAncestors(file, lookup);
+  await writeFile(papersPath, `${JSON.stringify(sorted(file), null, 2)}\n`);
+  console.log(
+    `${Object.keys(file.papers).length} papers, ${ancestors} of them only as the paper a voted one belongs to`,
+  );
 } catch (error) {
   console.error(`leipzig-papers failed: ${error instanceof Error ? error.message : String(error)}`);
   process.exit(1);

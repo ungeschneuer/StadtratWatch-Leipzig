@@ -13,7 +13,10 @@ import {
 } from './members-file.ts';
 
 const SPD = 'org/spd';
-const organizations = [{ id: SPD, name: 'SPD-Fraktion', classification: 'Fraktion' }];
+const organizations = [
+  { id: SPD, name: 'SPD-Fraktion', classification: 'Fraktion' },
+  { id: 'org/sport', name: 'FA Sport', classification: 'Ausschuss' },
+];
 const candidates: Candidate[] = [
   { familyName: 'Zenker', givenName: 'Christopher', listShortName: 'SPD', listName: 'Sozialdemokratische Partei' },
   { familyName: 'Wittwer', givenName: 'Marius', listShortName: 'SPD', listName: 'Sozialdemokratische Partei' },
@@ -31,6 +34,7 @@ function member(
     start: '2024-09-18',
     end: null,
     factionPeriods: [{ organizationId: SPD, start: overrides.start ?? '2024-09-18', end: overrides.end ?? null }],
+    bodyMemberships: [],
     ...overrides,
   };
 }
@@ -52,6 +56,31 @@ function inputs(changes: Partial<MembersInputs>): MembersInputs {
 }
 
 describe('buildMembersFile', () => {
+  it('names the bodies a member sits in, with their kind and role', () => {
+    const { file } = buildMembersFile(
+      inputs({
+        members: [
+          member('p/wittwer', 'Marius', 'Wittwer', {
+            bodyMemberships: [
+              { organizationId: 'org/sport', role: 'Ausschussmitglied', start: '2024-09-18', end: null },
+            ],
+          }),
+        ],
+      }),
+    );
+
+    expect(file.persons[0].bodies).toEqual([
+      {
+        oparlId: 'org/sport',
+        name: 'FA Sport',
+        kind: 'Ausschuss',
+        role: 'Ausschussmitglied',
+        start: '2024-09-18',
+        end: null,
+      },
+    ]);
+  });
+
   it('links each person to faction and party in registry form', () => {
     const { file } = buildMembersFile(
       inputs({

@@ -41,7 +41,7 @@ Stand: 12.11.2026 (abends)
 ## Querschnitt: Grundsätze
 
 ### Maschinenlesbarkeit
-- [ ] **Kanonisch JSON** im StadtratWatch-Format, erweitert um stabile IDs.
+- [x] **Kanonisch JSON** im StadtratWatch-Format, erweitert um stabile IDs (OParl-IDs, 13.11.2026).
 - [x] **Stabile IDs:** OParl-IDs für Personen, Fraktionen, Sitzungen, TOPs und Vorlagen in Downloads und API (13.11.2026). Namen sind nie der Schlüssel; die Adressen der Seite bleiben lesbar (Entscheidung 12.11.2026).
 - [x] **Lesbare Links:** deutsche Adressen (`/wahlperiode-8/sitzung/<datum>/abstimmung/<top>`), Abstimmungen nach TOP statt laufender Nummer, sprechende Linktexte; alte Adressen leiten weiter (Entscheidung 12.11.2026, umgesetzt 13.11.2026; auch `/datenschutz`, `/kontakt`).
 - [x] **CSV im Long-Format:** `votings.csv`, `votes.csv`, `sessions.csv`, `persons.csv`, `faction-memberships.csv` unter `/data/leipzig-8/`, geschrieben von `leipzig-site-data` (12.11.2026).
@@ -141,7 +141,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
 - [x] **7. Prüfung durch Menschen:** Route `/leipzig` in `session-review` (GitHub Pages), Prüffälle in `review-<datum>.json`, Benachrichtigung per Issue je Sitzung, Speichern als Commit in `corrections-<datum>.json`, Nachprüfung per Workflow. Freigabe per PR-Merge.
   - [x] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Variable `LEIPZIG_REVIEWERS=ungeschneuer` (12.11.2026; vorerst prüft nur der Betreiber, weitere Prüfende brauchen Schreibrechte).
   - [x] Workflows auf GitHub gelaufen: members, recordings, votings, recheck, deploy (12.11.2026).
-  - [ ] Die 17 offenen Fälle entscheiden.
+  - [x] Die 17 offenen Fälle entscheiden (13.11.2026; drei Entscheidungen am 14.11.2026 neu gefasst, #63).
 - [ ] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
 - [x] **Ausgabe:** `votings-<datum>.json` und `votes-<datum>.csv` (mit `personId`, Fraktion und Partei).
   - [x] StadtratWatch-kompatible `session-scan-YYYY-MM-DD.json` (Adapter, siehe M4) und `votings.csv`.
@@ -170,8 +170,8 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] **Anzeige:** Personenseite mit Verlauf („Fraktionen in der Wahlperiode: …“), Fraktions- und Parteiseiten mit allen, die je dazugehörten, mit Zeitraum bei Wechsel; Parteiseite zeigt die Fraktion statt nochmals die Partei.
   - [x] Sitzzahlen je Zeitpunkt: `seats` bleibt der Stand heute; die Fraktionsaufteilung jeder Abstimmung ordnet nach den Mitgliedern am Sitzungstag und lässt Fraktionen ohne Mitglieder an dem Tag weg; Fraktions- und Parteiseiten zeigen den Sitzverlauf (`astro/src/data-analysis/Seats.ts`).
   - [x] Parteiwechsel mit Quelle: Getu Abraham seit 09.11.2024 parteilos (Leipziger Zeitung, 8.11.2024). Weitere, sobald eine Quelle vorliegt (siehe Offene Fragen: Butz).
-- [ ] **Partei-Metadaten:** `EXTREMIST_CLASSIFICATION` nach Einstufung durch das LfV **Sachsen** mit Quellenangabe (Recherche läuft, 12.11.2026). „Partei“ meint die Wahlliste 2024, erklärt auf Partei- und Personenseite und in `DATA.md` (Entscheidung 12.11.2026).
-- [ ] **Offene Daten ausliefern:**
+- [x] **Partei-Metadaten:** `EXTREMIST_CLASSIFICATION` nach Einstufung durch das LfV **Sachsen** mit Quellenangabe (`party-classifications.json`: AfD seit 08.12.2023, Freie Sachsen seit 17.06.2021). „Partei“ meint die Wahlliste 2024, erklärt auf Partei- und Personenseite und in `DATA.md` (Entscheidung 12.11.2026).
+- [x] **Offene Daten ausliefern:**
   - [x] API v1 (`/api/v1/parliament-periods/leipzig-8/votings/{session}.json`), mit `reviewStatus` und `paperUrl`
   - [x] Bulk-Downloads `/data/leipzig-8/*.csv` + `datapackage.json` (12.11.2026)
   - [x] Lizenz und Herkunft in jeder Antwort: `meta.license_note` und `meta.attribution` nennen CC BY 4.0 (OParl) und dl-de/by-2-0 (Wahlliste) (12.11.2026)
@@ -283,8 +283,28 @@ meist eine einzelne nachgezählte Stimme keinen Namen hat; widersprüchliche Pro
   API-Felder und README beschreiben sie.
 - [x] **5. Feste Regel für widersprüchliche Protokolle:** Stimmen Verlaufsprotokoll und (falls vorhanden) Ansage mit der
   Tafel überein und weicht nur Niederschrift oder ALLRIS ab, gilt die Tafel als bestätigt.
-- [ ] **6. Prüfentscheidungen neu fassen (eigener Daten-PR):** 30.09.2026 #18 Lehmann → Nein, Rest 1 Ja nicht zuzuordnen;
+- [x] **6. Prüfentscheidungen neu fassen (eigener Daten-PR, #63):** 30.09.2026 #18 Lehmann → Nein, Rest 1 Ja nicht zuzuordnen;
   28.10.2026 #10 und #18 Tafel bestätigen wie 03.09.2026 #4.
+
+## Auswertungen aus den Quellen (14.11.2026)
+
+Vorabprüfung: OParl liefert Gremien je Person (Ausschüsse, Aufsichtsräte, Zweckverbände mit Rolle und Zeitraum), je
+Vorlage die Beratungsfolge (Fachausschüsse) und die Verknüpfung über- und untergeordneter Vorlagen. 512 von 527
+Abstimmungen haben über die Ausschüsse ihrer Vorlage (oder der übergeordneten) ein Thema, die übrigen 15 sind Verfahren,
+Besetzungen oder nicht mit ihrer Vorlage verknüpft. Die Tafel-Zahl „Anwesende“ bleibt meist den ganzen Abend gleich
+(angemeldete Geräte), die abgegebenen Stimmen schwanken.
+
+- [x] **Abweichung von der Fraktion:** je Person ein Gesamtwert im Profil: Anteil der abgegebenen Stimmen, die nicht der
+  Mehrheit der eigenen Fraktion entsprechen (Gleichstand in der Fraktion zählt nicht; ohne fraktionslose Mitglieder und OB).
+- [x] **Gremien und Ausschüsse:** Mitgliedschaften aus OParl in der Wahlperiode auf der Personenseite.
+- [x] **Fraktionspaare:** Übereinstimmung der Fraktionsmehrheiten zwischen allen Fraktionen als Matrix.
+- [x] **Vorlagenfamilie:** Hauptvorlage, Neufassungen, Änderungsanträge und Verwaltungsstandpunkt als Baum mit
+  Ergebnis und Link auf der Abstimmungsseite.
+- Entschieden 14.11.2026, nicht umgesetzt:
+  - **Themen** (und damit Wortmeldungen nach Thema, Themenfelder): kein Thema definieren. Über die Fachausschüsse der
+    Vorlage wäre es für alle Abstimmungen möglich gewesen, aber jede Ableitung ist eine eigene Auswahlregel.
+  - **Beteiligung im Verlauf des Abends:** Die Tafel-Zahl „Anwesende“ zählt angemeldete Geräte und bleibt meist den
+    ganzen Abend gleich; abgegebene Stimmen trennen Abwesenheit nicht vom Nicht-Abstimmen.
 
 ## Reihenfolge (Vorschlag)
 

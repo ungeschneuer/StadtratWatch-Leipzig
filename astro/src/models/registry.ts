@@ -65,6 +65,17 @@ export type RegistryPerson = {
   end: string | null;
   factionMemberships?: RegistryFactionMembership[];
   partyMemberships?: RegistryPartyMembership[];
+  // Committees, supervisory boards and other bodies the member sat in during the period, as OParl lists them.
+  bodies?: RegistryBodyMembership[];
+};
+
+export type RegistryBodyMembership = {
+  name: string;
+  // OParl classification: Ausschuss, Aufsichtsrat, Zweckverband, Beirat …
+  kind: string;
+  role: string | null;
+  start: string;
+  end: string | null;
 };
 
 export type RegistryFactionMembership = {
