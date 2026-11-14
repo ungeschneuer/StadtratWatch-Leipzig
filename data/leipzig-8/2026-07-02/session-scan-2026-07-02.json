@@ -1895,7 +1895,8 @@
         "Michael Weickert",
         "Susanne Scheidereiter"
       ]
-    }
+    },
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-07-02-008.png",
@@ -8027,7 +8028,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 58
+    "presentMembers": 58,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-07-02-029.png",

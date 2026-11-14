@@ -2854,7 +2854,8 @@
         "Juliane Nagel",
         "Franziska Riekewald"
       ]
-    }
+    },
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-03-25-011.png",
@@ -3166,7 +3167,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 63
+    "presentMembers": 63,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-03-25-012.png",

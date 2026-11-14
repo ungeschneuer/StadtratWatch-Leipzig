@@ -3652,7 +3652,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66
+    "presentMembers": 66,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-01-28-014.png",
@@ -7281,7 +7282,8 @@
     "presentMembers": 63,
     "recusedPersons": [
       "Sören Pellmann"
-    ]
+    ],
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-01-28-026.png",

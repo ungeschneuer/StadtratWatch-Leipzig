@@ -1223,7 +1223,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 67
+    "presentMembers": 67,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-02-25-006.png",

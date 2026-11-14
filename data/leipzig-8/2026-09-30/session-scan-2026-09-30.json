@@ -5243,7 +5243,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66
+    "presentMembers": 66,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-09-30-019.png",
@@ -5575,7 +5576,8 @@
         "Jan-Paul Helbig",
         "Dr. med. Klaus-Peter Reinhold"
       ]
-    }
+    },
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-09-30-020.png",
@@ -8983,7 +8985,8 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 66
+    "presentMembers": 66,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-09-30-032.png",
@@ -9295,7 +9298,8 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 66
+    "presentMembers": 66,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-09-30-033.png",
