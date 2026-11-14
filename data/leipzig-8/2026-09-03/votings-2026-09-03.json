@@ -1365,7 +1365,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 37/18/1, verlaufsprotokoll 37/18/1"
+          "detail": "beschlussprotokoll 37/18/1, verlaufsprotokoll 37/18/1"
         },
         {
           "check": "matches-official",
@@ -1389,7 +1389,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "13.20"
             ],
@@ -2098,7 +2098,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 11/37/5, verlaufsprotokoll 11/37/5"
+          "detail": "beschlussprotokoll 11/37/5, verlaufsprotokoll 11/37/5"
         },
         {
           "check": "matches-official",
@@ -2122,7 +2122,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "13.22"
             ],
@@ -2849,7 +2849,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "13.24"
             ],
@@ -3534,7 +3534,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 23/32/6, verlaufsprotokoll 23/32/5; the Verlaufsprotokoll confirms the board"
+          "detail": "beschlussprotokoll 23/32/6, verlaufsprotokoll 23/32/5; the Verlaufsprotokoll confirms the board"
         },
         {
           "check": "matches-official",
@@ -3558,7 +3558,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "13.25"
             ],
@@ -4274,7 +4274,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 37/23/0, verlaufsprotokoll 37/23/0"
+          "detail": "beschlussprotokoll 37/23/0, verlaufsprotokoll 37/23/0"
         },
         {
           "check": "matches-official",
@@ -4298,7 +4298,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "11.4"
             ],
@@ -4994,7 +4994,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 25/32/2, verlaufsprotokoll 25/32/2"
+          "detail": "beschlussprotokoll 25/32/2, verlaufsprotokoll 25/32/2"
         },
         {
           "check": "matches-official",
@@ -5018,7 +5018,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.9.1"
             ],
@@ -5728,7 +5728,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 38/10/11, verlaufsprotokoll 38/10/11"
+          "detail": "beschlussprotokoll 38/10/11, verlaufsprotokoll 38/10/11"
         },
         {
           "check": "matches-official",
@@ -5752,7 +5752,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.9"
             ],
@@ -6463,9 +6463,14 @@
           "detail": "announced 11/44/4: \"Sechs! Das Ergebnis heisst 11 zu 44 zu 4, abgelehnt. Und wir sind beim § 4, Schichtwort Berufsausbildung und Studium, Ihr Votum bitte.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 11/44/4, verlaufsprotokoll 11/44/4"
+        },
+        {
           "check": "matches-official",
           "passed": true,
-          "detail": "official 11/44/4 for TOP 3/5"
+          "detail": "official 11/44/4 for TOP 19.13.1 (VIII-DS-01570-ÄA-01)"
         },
         {
           "check": "not-attendance-count",
@@ -6479,10 +6484,21 @@
         "J": 11,
         "N": 44,
         "E": 4,
-        "agendaItemNumber": null,
-        "paperReference": null,
+        "agendaItemNumber": "19.13.1",
+        "paperReference": "VIII-DS-01570-ÄA-01",
         "procedural": false,
         "sources": [
+          {
+            "kind": "beschlussprotokoll",
+            "agendaItemNumbers": [
+              "19.13.1"
+            ],
+            "paperReference": "VIII-DS-01570-ÄA-01",
+            "label": "Abstimmungsergebnis: Beschlusspunkt 2:",
+            "J": 11,
+            "N": 44,
+            "E": 4
+          },
           {
             "kind": "verlaufsprotokoll",
             "agendaItemNumbers": [
@@ -7175,9 +7191,14 @@
           "detail": "announced 23/31/5: \"Und im Ergebnis heisst hier 23 zu 31 zu 5 ebenfalls abgelehnt. Wir kommen jetzt zur Steuerbeschlussvorlage Satzung. Ihr Votum bitte zu der Beschlussvorlage.\""
         },
         {
+          "check": "official-sources-agree",
+          "passed": true,
+          "detail": "beschlussprotokoll 23/31/5, verlaufsprotokoll 23/31/5"
+        },
+        {
           "check": "matches-official",
           "passed": true,
-          "detail": "official 23/31/5 for TOP 3/5"
+          "detail": "official 23/31/5 for TOP 19.13.1 (VIII-DS-01570-ÄA-01)"
         },
         {
           "check": "not-attendance-count",
@@ -7191,10 +7212,21 @@
         "J": 23,
         "N": 31,
         "E": 5,
-        "agendaItemNumber": null,
-        "paperReference": null,
+        "agendaItemNumber": "19.13.1",
+        "paperReference": "VIII-DS-01570-ÄA-01",
         "procedural": false,
         "sources": [
+          {
+            "kind": "beschlussprotokoll",
+            "agendaItemNumbers": [
+              "19.13.1"
+            ],
+            "paperReference": "VIII-DS-01570-ÄA-01",
+            "label": "Abstimmungsergebnis: Beschlusspunkt 3:",
+            "J": 23,
+            "N": 31,
+            "E": 5
+          },
           {
             "kind": "verlaufsprotokoll",
             "agendaItemNumbers": [
@@ -7894,7 +7926,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 57/0/2, verlaufsprotokoll 57/0/2"
+          "detail": "beschlussprotokoll 57/0/2, verlaufsprotokoll 57/0/2"
         },
         {
           "check": "matches-official",
@@ -7918,7 +7950,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.13"
             ],
@@ -9316,7 +9348,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 27/23/7, verlaufsprotokoll 27/23/7"
+          "detail": "beschlussprotokoll 27/23/7, verlaufsprotokoll 27/23/7"
         },
         {
           "check": "matches-official",
@@ -9340,7 +9372,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.16.1"
             ],
@@ -10048,7 +10080,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 52/0/4, verlaufsprotokoll 52/0/4"
+          "detail": "beschlussprotokoll 52/0/4, verlaufsprotokoll 52/0/4"
         },
         {
           "check": "matches-official",
@@ -10072,7 +10104,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.16"
             ],
@@ -10780,7 +10812,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 43/8/2, verlaufsprotokoll 43/8/2"
+          "detail": "beschlussprotokoll 43/8/2, verlaufsprotokoll 43/8/2"
         },
         {
           "check": "matches-official",
@@ -10804,7 +10836,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.20"
             ],
@@ -11497,7 +11529,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 18/29/7, verlaufsprotokoll 18/29/7"
+          "detail": "beschlussprotokoll 18/29/7, verlaufsprotokoll 18/29/7"
         },
         {
           "check": "matches-official",
@@ -11521,7 +11553,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.22.2"
             ],
@@ -12201,7 +12233,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 13/39/2, verlaufsprotokoll 13/39/2"
+          "detail": "beschlussprotokoll 13/39/2, verlaufsprotokoll 13/39/2"
         },
         {
           "check": "matches-official",
@@ -12225,7 +12257,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.22.3"
             ],
@@ -12933,7 +12965,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 40/0/11, verlaufsprotokoll 40/0/11"
+          "detail": "beschlussprotokoll 40/0/11, verlaufsprotokoll 40/0/11"
         },
         {
           "check": "matches-official",
@@ -12957,7 +12989,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "19.22"
             ],
@@ -13653,7 +13685,7 @@
         {
           "check": "official-sources-agree",
           "passed": true,
-          "detail": "agenda-item-pages 23/26/0, verlaufsprotokoll 23/26/0"
+          "detail": "beschlussprotokoll 23/26/0, verlaufsprotokoll 23/26/0"
         },
         {
           "check": "matches-official",
@@ -13677,7 +13709,7 @@
         "procedural": false,
         "sources": [
           {
-            "kind": "agenda-item-pages",
+            "kind": "beschlussprotokoll",
             "agendaItemNumbers": [
               "20.1.1"
             ],
