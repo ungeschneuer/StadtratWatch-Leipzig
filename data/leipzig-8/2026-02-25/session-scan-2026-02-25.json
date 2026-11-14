@@ -311,7 +311,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028755",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189248",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028755"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028755",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020141",
+          "reference": "VIII-DS-00266",
+          "name": "Seniorinnen- und Seniorenbeirat",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020141"
+        }
+      ]
     },
     "votes": [
       {
@@ -917,7 +926,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028575",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2188726",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028575"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028575",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027025",
+          "reference": "VIII-DS-01822",
+          "name": "Satzung für die Leipziger Städtischen Bibliotheken",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
+        }
+      ]
     },
     "votes": [
       {
@@ -1220,7 +1238,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028575",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2188726",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028575"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028575",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027025",
+          "reference": "VIII-DS-01822",
+          "name": "Satzung für die Leipziger Städtischen Bibliotheken",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
+        }
+      ]
     },
     "votes": [
       {
@@ -1523,7 +1550,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028583",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2188727",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028583"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028583",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027025",
+          "reference": "VIII-DS-01822",
+          "name": "Satzung für die Leipziger Städtischen Bibliotheken",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
+        }
+      ]
     },
     "votes": [
       {
@@ -1827,6 +1863,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028596",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2188728",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028596",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027025",
+          "reference": "VIII-DS-01822",
+          "name": "Satzung für die Leipziger Städtischen Bibliotheken",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -3042,7 +3087,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029021",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190353",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029021"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029021",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025404",
+          "reference": "VIII-DS-01261",
+          "name": "Bibliotheksentwicklungskonzeption - fünfte Fortschreibung 2026 bis 2031",
+          "paperType": "Fachplanung",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025404"
+        }
+      ]
     },
     "votes": [
       {
@@ -4254,7 +4308,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026741",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189113",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026741"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026741",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026026",
+          "reference": "VIII-A-01476",
+          "name": "Schulstandorte und Sporthallenkapazitäten im Stadtbezirk West nachhaltig sichern",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026026"
+        }
+      ]
     },
     "votes": [
       {
@@ -4557,7 +4620,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027974",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2188783",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027974"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027974",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026899",
+          "reference": "VIII-A-01627-NF-01",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026899"
+        }
+      ]
     },
     "votes": [
       {
@@ -4861,6 +4940,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189744",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028864",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5165,6 +5253,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189744",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028864",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -5469,6 +5566,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189744",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028864",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -5773,6 +5879,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189744",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028864",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -6077,6 +6192,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189744",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028864",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        }
+      ],
       "itemNumber": "5"
     },
     "votes": [
@@ -6381,6 +6505,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028864",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2189744",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028864",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026441",
+          "reference": "VIII-A-01627",
+          "name": "Soziale Neubauten der LWB in Grünau: Platz und Mehrwert für alle schaffen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026441"
+        }
+      ],
       "itemNumber": "6"
     },
     "votes": [
@@ -6684,7 +6817,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028786",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190354",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028786"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028786",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -6988,6 +7130,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190355",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -7291,7 +7442,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190355",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -7594,7 +7754,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190355",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -7897,7 +8066,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028803",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190355",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028803",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -8201,6 +8379,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028936",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190356",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028936",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ],
       "itemNumber": "6"
     },
     "votes": [
@@ -8504,7 +8691,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029020",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190357",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029020"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029020",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -8807,7 +9003,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190751",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029102"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029102",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -9111,6 +9316,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190751",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029102",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -9414,7 +9628,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190751",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029102"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029102",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        }
+      ]
     },
     "votes": [
       {
@@ -10015,7 +10238,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029013",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190352",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029013"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029013",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027063",
+          "reference": "VIII-DS-01834",
+          "name": "Bebauungsplan Nr. 451.1 \"Semmelweisstraße/An den Tierkliniken, Teilbereich Nord\"; Stadtbezirk: Mitte, Ortsteil: Zentrum-Südost; Beschluss zur Veröffentlichung des Entwurfes",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027063"
+        }
+      ]
     },
     "votes": [
       {
@@ -10924,7 +11156,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029008",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190358",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029008"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029008",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027815",
+          "reference": "VIII-DS-02063",
+          "name": "Bebauungsplan Nr. 430 „Delitzscher Straße/Dübener Landstraße - Nutzungsarten“; Stadtbezirk: Nord, Ortsteil: Eutritzsch; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027815"
+        }
+      ]
     },
     "votes": [
       {
@@ -11525,7 +11766,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029055",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190405",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029055"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029055",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027813",
+          "reference": "VIII-A-02063",
+          "name": "Institutionelle Förderung des Literaturhauses Leipzig e. V. ab 2027 – Stärkung der Leipziger Literatur- und Verlagslandschaft",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027813"
+        }
+      ]
     },
     "votes": [
       {
@@ -11828,7 +12078,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029082",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190564",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029082"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029082",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027813",
+          "reference": "VIII-A-02063",
+          "name": "Institutionelle Förderung des Literaturhauses Leipzig e. V. ab 2027 – Stärkung der Leipziger Literatur- und Verlagslandschaft",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027813"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028208",
+          "reference": "VIII-A-02063-VSP-01",
+          "name": "Institutionelle Förderung des Literaturhauses Leipzig e. V. ab 2027 – Stärkung der Leipziger Literatur- und Verlagslandschaft",
+          "paperType": "Verwaltungsstandpunkt zum Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028208"
+        }
+      ]
     },
     "votes": [
       {

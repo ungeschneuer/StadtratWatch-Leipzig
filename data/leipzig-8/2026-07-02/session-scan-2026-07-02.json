@@ -12,7 +12,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030739",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203582",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030739"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030739",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030445",
+          "reference": "VIII-A-02979",
+          "name": "Resolution des Stadtrates zu Leipzig zur 100-Prozent-Finanzierung der durch Bund und Land übertragenen Aufgaben sowie umfassenden Steuerreform zur Rettung der Städte, Gemeinden und Landkreise",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030445"
+        }
+      ]
     },
     "votes": [
       {
@@ -315,7 +324,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031045",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203580",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031045"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031045",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030445",
+          "reference": "VIII-A-02979",
+          "name": "Resolution des Stadtrates zu Leipzig zur 100-Prozent-Finanzierung der durch Bund und Land übertragenen Aufgaben sowie umfassenden Steuerreform zur Rettung der Städte, Gemeinden und Landkreise",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030445"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030947",
+          "reference": "VIII-A-02979-NF-01",
+          "name": "Resolution des Stadtrates zu Leipzig zur 100-Prozent-Finanzierung der durch Bund und Land übertragenen Aufgaben sowie umfassenden Steuerreform zur Rettung der Städte, Gemeinden und Landkreise",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030947"
+        }
+      ]
     },
     "votes": [
       {
@@ -619,6 +644,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031086",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203583",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031086",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030048",
+          "reference": "VIII-A-02852",
+          "name": "Resolution zur Stärkung der kommunalen Finanzen durch die Wiedereinführung einer rechtssicheren Vermögensteuer und Senkung der Freibeträge bei Erbschaftssteuer",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030048"
+        }
+      ],
       "itemNumber": "1 und 2"
     },
     "votes": [
@@ -923,6 +957,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031086",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203583",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031086",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030048",
+          "reference": "VIII-A-02852",
+          "name": "Resolution zur Stärkung der kommunalen Finanzen durch die Wiedereinführung einer rechtssicheren Vermögensteuer und Senkung der Freibeträge bei Erbschaftssteuer",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030048"
+        }
+      ],
       "itemNumber": "3 und 4"
     },
     "votes": [
@@ -1529,7 +1572,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026488",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203656",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026488"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026488",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2002856",
+          "reference": "VII-A-06720",
+          "name": "Gedenken an die Opfer von Femiziden in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2002856"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2004790",
+          "reference": "VII-A-06720-NF-02",
+          "name": "Gedenken an die Opfer von Femiziden in Leipzig",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2004790"
+        }
+      ]
     },
     "votes": [
       {
@@ -1851,7 +1910,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028319",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203657",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028319"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028319",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016318",
+          "reference": "VII-DS-10081",
+          "name": "Verfahren zum Umgang mit Leistungen aus dem Erneuerbare-Energien-Ertragsbeteiligungsgesetz",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016318"
+        }
+      ]
     },
     "votes": [
       {
@@ -2458,6 +2526,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030981",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203666",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030981",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027589",
+          "reference": "VIII-DS-02007",
+          "name": "Förderung des Tourismus der Stadt Leipzig 2027ff: Evaluation und Optimierung des Prozesses",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027589"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -2762,6 +2839,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030981",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203666",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030981",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027589",
+          "reference": "VIII-DS-02007",
+          "name": "Förderung des Tourismus der Stadt Leipzig 2027ff: Evaluation und Optimierung des Prozesses",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027589"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -3065,7 +3151,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030982",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203667",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030982"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030982",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027589",
+          "reference": "VIII-DS-02007",
+          "name": "Förderung des Tourismus der Stadt Leipzig 2027ff: Evaluation und Optimierung des Prozesses",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027589"
+        }
+      ]
     },
     "votes": [
       {
@@ -3368,7 +3463,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031046",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203668",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031046"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031046",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027589",
+          "reference": "VIII-DS-02007",
+          "name": "Förderung des Tourismus der Stadt Leipzig 2027ff: Evaluation und Optimierung des Prozesses",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027589"
+        }
+      ]
     },
     "votes": [
       {
@@ -4868,7 +4972,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030469",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203675",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030469"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030469",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028812",
+          "reference": "VIII-DS-02398",
+          "name": "1. Satzung zur Änderung der Wahlwerbesatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028812"
+        }
+      ]
     },
     "votes": [
       {
@@ -5469,7 +5582,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030967",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203676",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030967"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030967",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028812",
+          "reference": "VIII-DS-02398",
+          "name": "1. Satzung zur Änderung der Wahlwerbesatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028812"
+        }
+      ]
     },
     "votes": [
       {
@@ -6075,7 +6197,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031009",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203679",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031009"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031009",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029344",
+          "reference": "VIII-DS-02605",
+          "name": "Änderung der Verordnung über Beförderungsentgelte und -bedingungen im Gelegenheitsverkehr mit Taxen im Pflichtfahrbereich Leipzig (Beförderungsentgeltverordnung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029344"
+        }
+      ]
     },
     "votes": [
       {
@@ -6681,7 +6812,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031068",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203684",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031068"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031068",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029499",
+          "reference": "VIII-DS-02644",
+          "name": "Fachförderrichtlinie der Stadt Leipzig zur Vergabe von Zuwendungen im Verantwortungsbereich des Sozialamtes",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029499"
+        }
+      ]
     },
     "votes": [
       {
@@ -7287,7 +7427,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030970",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203687",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030970"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030970",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029728",
+          "reference": "VIII-DS-02743",
+          "name": "Baubeschluss Modernisierung mit Neubauerweiterung der Schule Zweenfurther Straße (Förderschule und Turnhalle), Zweenfurther Str. 21",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029728"
+        }
+      ]
     },
     "votes": [
       {
@@ -7894,6 +8043,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030316",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203692",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030316",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024175",
+          "reference": "VIII-Ifo-00863",
+          "name": "Nutzungskonzept Kohlrabizirkus",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024175"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -8198,6 +8356,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030316",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203692",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030316",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024175",
+          "reference": "VIII-Ifo-00863",
+          "name": "Nutzungskonzept Kohlrabizirkus",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024175"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [

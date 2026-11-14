@@ -1807,6 +1807,29 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031789",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208426",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031789",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019548",
+          "reference": "VIII-DS-00058",
+          "name": "Stadtbezirksbeirat West - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019548"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030164",
+          "reference": "VIII-DS-00058-DS-01",
+          "name": "Stadtbezirksbeirat West - Bestellung der Mitglieder (1. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030164"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031219",
+          "reference": "VIII-DS-00058-DS-02",
+          "name": "Stadtbezirksbeirat West - Bestellung der Mitglieder (2. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031219"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -2413,7 +2436,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032023",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2209853",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032023"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032023",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030616",
+          "reference": "VIII-DS-03022",
+          "name": "Bestellung der Geschäftsführung der Leipziger Quartiersentwicklungsgesellschaft mbH (LQEG)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030616"
+        }
+      ]
     },
     "votes": [
       {
@@ -2716,7 +2748,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033274",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211470",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033274"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033274",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026453",
+          "reference": "VIII-A-01631",
+          "name": "Umgestalltung des Nathanaelkirchplatzes",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026453"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032873",
+          "reference": "VIII-A-01631-NF-02",
+          "name": "Umgestaltung des Nathanaelkirchplatzes",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032873"
+        }
+      ]
     },
     "votes": [
       {
@@ -3019,7 +3067,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033382",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211468",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033382"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033382",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026453",
+          "reference": "VIII-A-01631",
+          "name": "Umgestalltung des Nathanaelkirchplatzes",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026453"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032873",
+          "reference": "VIII-A-01631-NF-02",
+          "name": "Umgestaltung des Nathanaelkirchplatzes",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032873"
+        }
+      ]
     },
     "votes": [
       {
@@ -3322,7 +3386,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032873",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2210750",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032873"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032873",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026453",
+          "reference": "VIII-A-01631",
+          "name": "Umgestalltung des Nathanaelkirchplatzes",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026453"
+        }
+      ]
     },
     "votes": [
       {
@@ -3625,7 +3698,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027730",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208450",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027730"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027730",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027314",
+          "reference": "VIII-A-01921",
+          "name": "Evaluation des Klimanotstandes",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027314"
+        }
+      ]
     },
     "votes": [
       {
@@ -3928,7 +4010,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028007",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208458",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028007"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028007",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027816",
+          "reference": "VIII-A-02064",
+          "name": "Modellprojekt Abfräsen von Kopfsteinpflaster",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027816"
+        }
+      ]
     },
     "votes": [
       {
@@ -4231,7 +4322,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031654",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208457",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031654"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031654",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027816",
+          "reference": "VIII-A-02064",
+          "name": "Modellprojekt Abfräsen von Kopfsteinpflaster",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027816"
+        }
+      ]
     },
     "votes": [
       {
@@ -4534,7 +4634,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033451",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211497",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033451"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033451",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028949",
+          "reference": "VIII-A-02452",
+          "name": "Aktivierung von Bauland und Reaktivierung von Baubrachen in der Ortschaft Engelsdorf",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028949"
+        }
+      ]
     },
     "votes": [
       {
@@ -4837,7 +4946,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029339",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208731",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029339"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029339",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028949",
+          "reference": "VIII-A-02452",
+          "name": "Aktivierung von Bauland und Reaktivierung von Baubrachen in der Ortschaft Engelsdorf",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028949"
+        }
+      ]
     },
     "votes": [
       {
@@ -5140,7 +5258,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029339",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208731",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029339"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029339",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028949",
+          "reference": "VIII-A-02452",
+          "name": "Aktivierung von Bauland und Reaktivierung von Baubrachen in der Ortschaft Engelsdorf",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028949"
+        }
+      ]
     },
     "votes": [
       {
@@ -5464,6 +5591,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031904",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2209707",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031904",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029291",
+          "reference": "VIII-A-02583",
+          "name": "Sozialen Wohnungsbau gerechter und zielgenauer gestalten - einkommensunabhängige Fehlbelegungsabgabe einführen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029291"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031666",
+          "reference": "VIII-A-02583-NF-02",
+          "name": "Sozialen Wohnungsbau gerechter und zielgenauer gestalten - einkommensabhängige Fehlbelegungsabgabe einführen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031666"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5768,6 +5911,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031904",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2209707",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031904",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029291",
+          "reference": "VIII-A-02583",
+          "name": "Sozialen Wohnungsbau gerechter und zielgenauer gestalten - einkommensunabhängige Fehlbelegungsabgabe einführen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029291"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031666",
+          "reference": "VIII-A-02583-NF-02",
+          "name": "Sozialen Wohnungsbau gerechter und zielgenauer gestalten - einkommensabhängige Fehlbelegungsabgabe einführen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031666"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -6072,6 +6231,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031904",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2209707",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031904",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029291",
+          "reference": "VIII-A-02583",
+          "name": "Sozialen Wohnungsbau gerechter und zielgenauer gestalten - einkommensunabhängige Fehlbelegungsabgabe einführen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029291"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031666",
+          "reference": "VIII-A-02583-NF-02",
+          "name": "Sozialen Wohnungsbau gerechter und zielgenauer gestalten - einkommensabhängige Fehlbelegungsabgabe einführen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031666"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -6375,7 +6550,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030165",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208472",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030165"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030165",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029440",
+          "reference": "VIII-A-02625",
+          "name": "Hans Meyer in Leipzig würdigen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029440"
+        }
+      ]
     },
     "votes": [
       {
@@ -8502,7 +8686,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031553",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208638",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031553"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031553",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031281",
+          "reference": "VIII-P-03287",
+          "name": "Gedenken an Marschall Tito",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031281"
+        }
+      ]
     },
     "votes": [
       {
@@ -8805,7 +8998,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031553",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208638",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031553"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031553",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031281",
+          "reference": "VIII-P-03287",
+          "name": "Gedenken an Marschall Tito",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031281"
+        }
+      ]
     },
     "votes": [
       {
@@ -9108,7 +9310,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030255",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208478",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030255"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030255",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029775",
+          "reference": "VIII-A-02760",
+          "name": "Prüfung der Betreuungssituation unter Einbeziehung der Kindereinrichtungen in Seehausen und Hohenheida in Bezug auf die Auslastung und Entlastung der Grundschule",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029775"
+        }
+      ]
     },
     "votes": [
       {
@@ -10019,7 +10230,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030651",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208492",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030651"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030651",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030450",
+          "reference": "VIII-A-02981",
+          "name": "Prüfauftrag zu geschützten Fahrerkabinen in Bussen der LVB",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030450"
+        }
+      ]
     },
     "votes": [
       {
@@ -10322,7 +10542,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031364",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208507",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031364"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031364",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030817",
+          "reference": "VIII-A-03124",
+          "name": "Wilhelm Johannes Vierling in Leipzig würdigen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030817"
+        }
+      ]
     },
     "votes": [
       {
@@ -10928,7 +11157,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031647",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211428",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031647"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031647",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024897",
+          "reference": "VIII-DS-01098",
+          "name": "Bebauungsplan Nr. 461 „Östlich der Hermann-Liebmann-Brücke“; Stadtbezirk: Ost, Ortsteil: Volkmarsdorf; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024897"
+        }
+      ]
     },
     "votes": [
       {
@@ -11231,7 +11469,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032037",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2209858",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032037"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032037",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024897",
+          "reference": "VIII-DS-01098",
+          "name": "Bebauungsplan Nr. 461 „Östlich der Hermann-Liebmann-Brücke“; Stadtbezirk: Ost, Ortsteil: Volkmarsdorf; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024897"
+        }
+      ]
     },
     "votes": [
       {
@@ -11837,7 +12084,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033292",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211469",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033292"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033292",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026094",
+          "reference": "VIII-DS-01506",
+          "name": "Finanzierung von Maßnahmen zur Klimaanpassung 2026 - Konkretisierung des Budgets für Maßnahmen zur Klimaanpassung (VIII-HP-10223)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026094"
+        }
+      ]
     },
     "votes": [
       {
@@ -12140,7 +12396,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033292",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211469",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033292"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033292",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026094",
+          "reference": "VIII-DS-01506",
+          "name": "Finanzierung von Maßnahmen zur Klimaanpassung 2026 - Konkretisierung des Budgets für Maßnahmen zur Klimaanpassung (VIII-HP-10223)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026094"
+        }
+      ]
     },
     "votes": [
       {
@@ -12443,7 +12708,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033292",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211469",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033292"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033292",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026094",
+          "reference": "VIII-DS-01506",
+          "name": "Finanzierung von Maßnahmen zur Klimaanpassung 2026 - Konkretisierung des Budgets für Maßnahmen zur Klimaanpassung (VIII-HP-10223)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026094"
+        }
+      ]
     },
     "votes": [
       {
@@ -13651,7 +13925,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032038",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2209912",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032038"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032038",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025375",
+          "reference": "VIII-DS-02177",
+          "name": "Engagementstrategie der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025375"
+        }
+      ]
     },
     "votes": [
       {
@@ -14555,7 +14838,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033338",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2211405",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033338"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033338",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029116",
+          "reference": "VIII-DS-02498",
+          "name": "Bebauungsplan Nr. 456 „Alfred-Kunze-Sportpark“; Stadtbezirk: Alt-West, Ortsteil: Leutzsch und Böhlitz-Ehrenberg; Beschluss zur Veröffentlichung des Entwurfes",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029116"
+        }
+      ]
     },
     "votes": [
       {
@@ -15161,7 +15453,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031551",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208573",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031551"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031551",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029703",
+          "reference": "VIII-DS-02729",
+          "name": "Maßnahme des HSK 2027 bis 2031 – Pachtzinserhöhung für die kommunalen Kleingartenflächen ab 01.01.2027",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029703"
+        }
+      ]
     },
     "votes": [
       {

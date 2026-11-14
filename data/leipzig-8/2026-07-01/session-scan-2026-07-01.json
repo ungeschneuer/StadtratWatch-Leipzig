@@ -3019,7 +3019,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031033",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203348",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031033"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031033",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030468",
+          "reference": "VIII-A-02485-NF-02",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030468"
+        }
+      ]
     },
     "votes": [
       {
@@ -3322,7 +3338,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029163",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202442",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029163"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029163",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        }
+      ]
     },
     "votes": [
       {
@@ -3627,6 +3652,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029163",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202442",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029163",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -3931,6 +3965,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029163",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202442",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029163",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -4235,6 +4278,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030468",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202441",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030468",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -4539,6 +4591,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030468",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202441",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030468",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -4843,6 +4904,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030468",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202441",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030468",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029049",
+          "reference": "VIII-A-02485",
+          "name": "Grundsatzbeschluss zur Erweiterung der räumlichen Kapazitäten für die Gedenkstätte für Zwangsarbeit Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029049"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -5146,7 +5216,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029105",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202444",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029105"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029105",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029052",
+          "reference": "VIII-A-02487",
+          "name": "Mit Mietrechtsänderung Armut bekämpfen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029052"
+        }
+      ]
     },
     "votes": [
       {
@@ -5449,7 +5528,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031035",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203349",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031035"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031035",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026934",
+          "reference": "VIII-A-01797",
+          "name": "Kein Verkauf des Güterschuppens am S-Bahnhof Connewitz – Konzeptvergabe im Erbbaurecht realisieren",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026934"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030000",
+          "reference": "VIII-A-01797-NF-02",
+          "name": "Kein Verkauf des Güterschuppens am S-Bahnhof Connewitz – Konzeptvergabe im Erbbaurecht realisieren",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030000"
+        }
+      ]
     },
     "votes": [
       {
@@ -5752,7 +5847,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030000",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202421",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030000"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030000",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026934",
+          "reference": "VIII-A-01797",
+          "name": "Kein Verkauf des Güterschuppens am S-Bahnhof Connewitz – Konzeptvergabe im Erbbaurecht realisieren",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026934"
+        }
+      ]
     },
     "votes": [
       {
@@ -6055,7 +6159,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030646",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202431",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030646"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030646",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028533",
+          "reference": "VIII-A-02302",
+          "name": "Prüfauftrag zur Einführung eines digitalen Parkraummanagements in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028533"
+        }
+      ]
     },
     "votes": [
       {
@@ -6657,7 +6770,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029232",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202436",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029232"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029232",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028997",
+          "reference": "VIII-A-02468",
+          "name": "Durch Umweltschutz Kosten sparen - auf dem Weg zur Schwammstadt",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028997"
+        }
+      ]
     },
     "votes": [
       {
@@ -7263,7 +7385,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031066",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203745",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031066"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031066",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029415",
+          "reference": "VIII-A-02618",
+          "name": "SRL-Kieztage – temporäre mobile Sperrmüllentsorgung in Leipzig ermöglichen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029415"
+        }
+      ]
     },
     "votes": [
       {
@@ -7869,7 +8000,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029738",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202454",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029738"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029738",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029454",
+          "reference": "VIII-A-02627",
+          "name": "Machern bleibt Machern - Erhalt der Weiterbildungsstätte Machern im Portfolio der Stadt Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029454"
+        }
+      ]
     },
     "votes": [
       {
@@ -8779,6 +8919,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030243",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202466",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030243",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029837",
+          "reference": "VIII-A-02798",
+          "name": "Vielfältige Bestattungsformen auf kommunalen Friedhöfen ermöglichen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029837"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -9083,6 +9232,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030243",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2202466",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030243",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029837",
+          "reference": "VIII-A-02798",
+          "name": "Vielfältige Bestattungsformen auf kommunalen Friedhöfen ermöglichen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029837"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -9386,7 +9544,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030042",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203257",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030042"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030042",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030004",
+          "reference": "VIII-A-02835",
+          "name": "Kfz-Zulassung in die Bürgerämter!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030004"
+        }
+      ]
     },
     "votes": [
       {
@@ -9989,6 +10156,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030990",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203312",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030990",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029627",
+          "reference": "VIII-DS-02692",
+          "name": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029627"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -10293,6 +10469,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030990",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203312",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030990",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029627",
+          "reference": "VIII-DS-02692",
+          "name": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029627"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -10597,6 +10782,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030990",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203312",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030990",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029627",
+          "reference": "VIII-DS-02692",
+          "name": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029627"
+        }
+      ],
       "itemNumber": "5"
     },
     "votes": [
@@ -10900,7 +11094,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031054",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2203354",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031054"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031054",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029627",
+          "reference": "VIII-DS-02692",
+          "name": "Anpassung des Ratsbeschlusses VII-DS-07486 vom 09.11.2022 – Aktualisierung der zeitlichen Umsetzung und des Finanzierungskonzeptes zum Masterplan „Zoo der Zukunft“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029627"
+        }
+      ]
     },
     "votes": [
       {

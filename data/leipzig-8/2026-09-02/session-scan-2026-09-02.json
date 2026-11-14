@@ -1208,7 +1208,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031224",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205447",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031224"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031224",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019547",
+          "reference": "VIII-DS-00057",
+          "name": "Stadtbezirksbeirat Südwest - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019547"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028833",
+          "reference": "VIII-DS-00057-NF-01-DS-03",
+          "name": "Stadtbezirksbeirat Südwest - Bestellung der Mitglieder (3. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028833"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029737",
+          "reference": "VIII-DS-00057-NF-01-DS-04",
+          "name": "Stadtbezirksbeirat Südwest - Bestellung der Mitglieder (4. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029737"
+        }
+      ]
     },
     "votes": [
       {
@@ -1511,7 +1534,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205450",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031311"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031311",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020134",
+          "reference": "VIII-DS-00259",
+          "name": "Beirat für Gleichstellung",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020134"
+        }
+      ]
     },
     "votes": [
       {
@@ -1814,7 +1846,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031311",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205450",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031311"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031311",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020134",
+          "reference": "VIII-DS-00259",
+          "name": "Beirat für Gleichstellung",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020134"
+        }
+      ]
     },
     "votes": [
       {
@@ -2420,7 +2461,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2008797",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205743",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2008797"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2008797",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2008145",
+          "reference": "VII-A-08074",
+          "name": "Verlegung der Gedenkanlage für die Opfer der Gewaltherrschaft an einen prominenteren Standort innerhalb des Südfriedhofes",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2008145"
+        }
+      ]
     },
     "votes": [
       {
@@ -2723,7 +2773,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031662",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207102",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031662"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031662",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2008145",
+          "reference": "VII-A-08074",
+          "name": "Verlegung der Gedenkanlage für die Opfer der Gewaltherrschaft an einen prominenteren Standort innerhalb des Südfriedhofes",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2008145"
+        }
+      ]
     },
     "votes": [
       {
@@ -3026,7 +3085,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030986",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205748",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030986"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030986",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027237",
+          "reference": "VIII-A-01891",
+          "name": "Erhalt des stadtbildprägenden Silberahorns am Wilhelm-Leuschner-Platz durch Anpassung der Baukörper",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027237"
+        }
+      ]
     },
     "votes": [
       {
@@ -3329,7 +3397,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029536",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205771",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029536"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029536",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029391",
+          "reference": "VIII-A-02610",
+          "name": "Anpassung der Milieuschutzsatzung zur Nutzbarmachung von Wohnungen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029391"
+        }
+      ]
     },
     "votes": [
       {
@@ -3632,7 +3709,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031668",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207042",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031668"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031668",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029760",
+          "reference": "VIII-A-02754",
+          "name": "Erweiterung des Prüfkatalogs für Vorlagen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029760"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030639",
+          "reference": "VIII-A-02754-NF-01",
+          "name": "Erweiterung des Prüfkatalogs für Vorlagen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030639"
+        }
+      ]
     },
     "votes": [
       {
@@ -3935,7 +4028,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030639",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205782",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030639"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030639",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029760",
+          "reference": "VIII-A-02754",
+          "name": "Erweiterung des Prüfkatalogs für Vorlagen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029760"
+        }
+      ]
     },
     "votes": [
       {
@@ -4238,7 +4340,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030245",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205787",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030245"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030245",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030003",
+          "reference": "VIII-A-02834",
+          "name": "Antrag Demokratie fördern statt behindern – Bundesförderprogramm „Demokratie leben!“ muss gelebt werden",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030003"
+        }
+      ]
     },
     "votes": [
       {
@@ -4541,7 +4652,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030347",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205790",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030347"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030347",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        }
+      ]
     },
     "votes": [
       {
@@ -4845,6 +4965,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207349",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031707",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954",
+          "reference": "VIII-A-02838-NF-02",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5149,6 +5285,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031707",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207349",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031707",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954",
+          "reference": "VIII-A-02838-NF-02",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -5453,6 +5605,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5757,6 +5918,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -6061,6 +6231,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        }
+      ],
       "itemNumber": "2 und 3"
     },
     "votes": [
@@ -6365,6 +6544,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030954",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205788",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030954",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030014",
+          "reference": "VIII-A-02838",
+          "name": "It's a match: LWB-Wohnungstausch in die Tat umsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030014"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -6668,7 +6856,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028739",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205424",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028739"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028739",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2010682",
+          "reference": "VII-P-08574",
+          "name": "Wiederaufnahme der regulären Müll- und Abfallentsorgung im Walter-Günther-Weg",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2010682"
+        }
+      ]
     },
     "votes": [
       {
@@ -6972,6 +7169,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -7276,6 +7482,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -7580,6 +7795,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -7884,6 +8108,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031038",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205725",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031038",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -8188,6 +8421,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205723",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029568",
+          "reference": "VIII-P-02586-VSP-01",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Verwaltungsstandpunkt zur Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029568"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -8492,6 +8741,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205723",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029568",
+          "reference": "VIII-P-02586-VSP-01",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Verwaltungsstandpunkt zur Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029568"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -8796,6 +9061,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030569",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205723",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029299",
+          "reference": "VIII-P-02586",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029299"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029568",
+          "reference": "VIII-P-02586-VSP-01",
+          "name": "Schiffspatenschaft wiederbeleben! Appell an die Stadt Leipzig zur aktiven Unterstützung ziviler Seenotrettung",
+          "paperType": "Verwaltungsstandpunkt zur Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029568"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -9099,7 +9380,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030260",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205730",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030260"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030260",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029811",
+          "reference": "VIII-P-02779",
+          "name": "Unterstützung der Leipziger Tafel durch die Stadt Leipzig",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029811"
+        }
+      ]
     },
     "votes": [
       {
@@ -9402,7 +9692,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030698",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205729",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030698"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030698",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029811",
+          "reference": "VIII-P-02779",
+          "name": "Unterstützung der Leipziger Tafel durch die Stadt Leipzig",
+          "paperType": "Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029811"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030260",
+          "reference": "VIII-P-02779-VSP-01",
+          "name": "Unterstützung der Leipziger Tafel durch die Stadt Leipzig",
+          "paperType": "Verwaltungsstandpunkt zur Petition",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030260"
+        }
+      ]
     },
     "votes": [
       {
@@ -9705,7 +10011,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028343",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205578",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028343"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028343",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ]
     },
     "votes": [
       {
@@ -10008,7 +10330,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027849",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2205579",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027849"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027849",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        }
+      ]
     },
     "votes": [
       {
@@ -11826,7 +12164,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031722",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207416",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031722"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031722",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030132",
+          "reference": "VIII-DS-02876",
+          "name": "Bebauungsplan Nr. 451.1 \"Semmelweisstraße/An den Tierkliniken, Teilbereich Nord\"; Stadtbezirk: Mitte, Ortsteil: Zentrum-Südost; Satzungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030132"
+        }
+      ]
     },
     "votes": [
       {

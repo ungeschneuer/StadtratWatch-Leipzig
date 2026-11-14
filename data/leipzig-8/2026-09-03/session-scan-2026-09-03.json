@@ -12,7 +12,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030157",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207791",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030157"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030157",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030023",
+          "reference": "VIII-A-02842",
+          "name": "Leerstand bekämpfen - Zweckentfremdeten Wohnraum enteignen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030023"
+        }
+      ]
     },
     "votes": [
       {
@@ -1527,7 +1536,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031741",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207895",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031741"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031741",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015044",
+          "reference": "VII-DS-09678",
+          "name": "Bau- und Finanzierungsbeschluss Ausbau Georg-Schumann-Straße von Böhmestraße bis Delitzscher Straße (Chausseehaus), (Bestätigung gem. §20 SächsKomHVO)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015044"
+        }
+      ]
     },
     "votes": [
       {
@@ -2134,6 +2152,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031511",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207898",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031511",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026297",
+          "reference": "VIII-DS-01570",
+          "name": "1. Satzung zur Änderung der Satzung über die Erhebung einer Beherbergungssteuer in der Stadt Leipzig (Beherbergungssteuersatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026297"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -2438,6 +2465,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031511",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207898",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031511",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026297",
+          "reference": "VIII-DS-01570",
+          "name": "1. Satzung zur Änderung der Satzung über die Erhebung einer Beherbergungssteuer in der Stadt Leipzig (Beherbergungssteuersatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026297"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -3342,7 +3378,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031648",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207905",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031648"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031648",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028330",
+          "reference": "VIII-DS-02229",
+          "name": "Bau- und Finanzierungsbeschluss Umbau Torgauer Platz einschließlich Torgauer Straße und Eisenbahnstraße - Bestätigung gem. § 79 (1) SächsGemO sowie § 20 SächsKomHVO",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028330"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031376",
+          "reference": "VIII-DS-02229-NF-01",
+          "name": "Bau- und Finanzierungsbeschluss Umbau Torgauer Platz einschließlich Torgauer Straße und Eisenbahnstraße - Bestätigung gem. § 79 (1) SächsGemO sowie § 20 SächsKomHVO",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031376"
+        }
+      ]
     },
     "votes": [
       {
@@ -3645,7 +3697,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031376",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207904",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031376"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031376",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028330",
+          "reference": "VIII-DS-02229",
+          "name": "Bau- und Finanzierungsbeschluss Umbau Torgauer Platz einschließlich Torgauer Straße und Eisenbahnstraße - Bestätigung gem. § 79 (1) SächsGemO sowie § 20 SächsKomHVO",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028330"
+        }
+      ]
     },
     "votes": [
       {
@@ -5150,7 +5211,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031711",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2207911",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031711"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031711",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030609",
+          "reference": "VIII-Ifo-02076",
+          "name": "Feedbackmanagement der Ausländerbehörde",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030609"
+        }
+      ]
     },
     "votes": [
       {

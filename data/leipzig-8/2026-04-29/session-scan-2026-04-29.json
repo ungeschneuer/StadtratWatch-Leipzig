@@ -910,6 +910,36 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029733",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195876",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029733",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019545",
+          "reference": "VIII-DS-00055",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019545"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019865",
+          "reference": "VIII-DS-00055-NF-01",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019865"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025886",
+          "reference": "VIII-DS-00055-NF-01-DS-02",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder (2. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025886"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026330",
+          "reference": "VIII-DS-00055-NF-01-DS-03",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder (2. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026330"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -1214,6 +1244,36 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029733",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195876",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029733",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019545",
+          "reference": "VIII-DS-00055",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019545"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019865",
+          "reference": "VIII-DS-00055-NF-01",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019865"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025886",
+          "reference": "VIII-DS-00055-NF-01-DS-02",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder (2. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025886"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026330",
+          "reference": "VIII-DS-00055-NF-01-DS-03",
+          "name": "Stadtbezirksbeirat Südost - Bestellung der Mitglieder (2. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026330"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -1517,7 +1577,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029565",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195873",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029565"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029565",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020332",
+          "reference": "VIII-A-00341",
+          "name": "Sicherheitspaket Hauptbahnhof",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020332"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029017",
+          "reference": "VIII-A-00341-NF-02",
+          "name": "Sicherheitspaket Hauptbahnhof",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029017"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029205",
+          "reference": "VIII-A-00341-NF-02-VSP-01",
+          "name": "Sicherheitspaket Hauptbahnhof",
+          "paperType": "Verwaltungsstandpunkt zum Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029205"
+        }
+      ]
     },
     "votes": [
       {
@@ -1820,7 +1903,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028975",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195211",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028975"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028975",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024424",
+          "reference": "VIII-A-00951",
+          "name": "Pilotprojekt zur Integration von Ladeinfrastruktur in Bordsteinen und Straßenlaternen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024424"
+        }
+      ]
     },
     "votes": [
       {
@@ -2123,7 +2215,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029068",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195214",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029068"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029068",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026443",
+          "reference": "VIII-A-01628",
+          "name": "Evaluation und Aktualisierung des lokalen Kinderschutzkonzeptes - Berücksichtigung des Schutzes vor und Intervention gegen sexualisierte Gewalt",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026443"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028859",
+          "reference": "VIII-A-01628-NF-02",
+          "name": "Evaluation und Aktualisierung des lokalen Kinderschutzkonzeptes - Berücksichtigung des Schutzes vor und Intervention gegen sexualisierte Gewalt",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028859"
+        }
+      ]
     },
     "votes": [
       {
@@ -2426,7 +2534,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029960",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2196862",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029960"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029960",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027819",
+          "reference": "VIII-A-02067",
+          "name": "Gremienarbeit braucht fachliche Begleitung",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027819"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029630",
+          "reference": "VIII-A-02067-NF-02",
+          "name": "Gremienarbeit braucht fachliche Begleitung",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029630"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029781",
+          "reference": "VIII-A-02067-NF-03",
+          "name": "Gremienarbeit braucht fachliche Begleitung",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029781"
+        }
+      ]
     },
     "votes": [
       {
@@ -2730,6 +2861,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030107",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197408",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030107",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026933",
+          "reference": "VIII-A-01796",
+          "name": "Analoge Formate in zukünftigen Strategieplanungen gleichwertig sicherstellen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026933"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -3033,7 +3173,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030110",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197407",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030110"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030110",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027784",
+          "reference": "VIII-A-02053",
+          "name": "Antrag zur Prüfung der Linienführung an Sonn- und Feiertagen der Buslinie 62",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027784"
+        }
+      ]
     },
     "votes": [
       {
@@ -3640,7 +3789,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029957",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2196966",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029957"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029957",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028582",
+          "reference": "VIII-A-02314",
+          "name": "Teilfortschreibung Erneuerbare Energien – Vorranggebiete 4b und 4c",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028582"
+        }
+      ]
     },
     "votes": [
       {
@@ -3943,7 +4101,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028654",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2196458",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028654"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028654",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028582",
+          "reference": "VIII-A-02314",
+          "name": "Teilfortschreibung Erneuerbare Energien – Vorranggebiete 4b und 4c",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028582"
+        }
+      ]
     },
     "votes": [
       {
@@ -4853,6 +5020,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028466",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195229",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028466",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027358",
+          "reference": "VIII-A-01928",
+          "name": "Gynäkologische Ambulanz für Prostituierte einrichten",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027358"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -5157,6 +5333,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028466",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195229",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028466",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027358",
+          "reference": "VIII-A-01928",
+          "name": "Gynäkologische Ambulanz für Prostituierte einrichten",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027358"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -6061,7 +6246,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028637",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195094",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028637"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028637",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019873",
+          "reference": "VIII-DS-00156",
+          "name": "Kurt-Schumacher-Str. 41: Bau- und Ausführungsbeschluss zur Sanierung des Objektes und Schaffung von Plätzen als kostenfreie Notschlafstelle (Bestätigung gemäß § 79 (1) SächsGemO)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019873"
+        }
+      ]
     },
     "votes": [
       {
@@ -6663,7 +6857,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029755",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195979",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029755"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029755",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ]
     },
     "votes": [
       {
@@ -6966,7 +7176,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029382",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195096",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029382"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029382",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        }
+      ]
     },
     "votes": [
       {
@@ -7270,6 +7489,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030064",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197126",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030064",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -7574,6 +7809,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030064",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197126",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030064",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "5"
     },
     "votes": [
@@ -7878,6 +8129,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030064",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197126",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030064",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "6"
     },
     "votes": [
@@ -8182,6 +8449,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030099",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197404",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030099",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -8486,6 +8769,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030099",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197404",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030099",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -8790,6 +9089,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030099",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197404",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030099",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -9094,6 +9409,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030099",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197404",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030099",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -9397,7 +9728,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029802",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2197125",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029802"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029802",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+          "reference": "VIII-DS-00941-NF-01",
+          "name": "Neuausrichtung Konzeptverfahren ab 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250"
+        }
+      ]
     },
     "votes": [
       {
@@ -9700,7 +10047,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029250",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195097",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029250",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024389",
+          "reference": "VIII-DS-00941",
+          "name": "Neuausrichtung Konzeptverfahren 2025",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024389"
+        }
+      ]
     },
     "votes": [
       {
@@ -10003,7 +10359,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029553",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2195103",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029553"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029553",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024747",
+          "reference": "VIII-DS-01062",
+          "name": "Aufnahme des Literaturhauses Leipzig e. V. in die institutionelle Förderung ab 2027",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024747"
+        }
+      ]
     },
     "votes": [
       {

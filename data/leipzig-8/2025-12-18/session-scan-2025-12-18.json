@@ -13,6 +13,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028139",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184793",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028139",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026660",
+          "reference": "VIII-DS-01694-Ifo-01",
+          "name": "Kosten der Unterkunft und Heizung: Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026660"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027624",
+          "reference": "VIII-DS-01694-Ifo-01-NF-01",
+          "name": "Kosten der Unterkunft und Heizung: Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027624"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -317,6 +333,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028139",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184793",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028139",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026660",
+          "reference": "VIII-DS-01694-Ifo-01",
+          "name": "Kosten der Unterkunft und Heizung: Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026660"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027624",
+          "reference": "VIII-DS-01694-Ifo-01-NF-01",
+          "name": "Kosten der Unterkunft und Heizung: Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027624"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -621,6 +653,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028139",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184793",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028139",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026660",
+          "reference": "VIII-DS-01694-Ifo-01",
+          "name": "Kosten der Unterkunft und Heizung: Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026660"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027624",
+          "reference": "VIII-DS-01694-Ifo-01-NF-01",
+          "name": "Kosten der Unterkunft und Heizung: Anpassung der Richtwerte für Leistungsberechtigte nach dem SGB II und SGB XII",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027624"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -924,7 +972,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028017",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184784",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028017"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028017",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025732",
+          "reference": "VIII-DS-01387",
+          "name": "Wirtschaftsplan 2026 für den Eigenbetrieb Städtisches Klinikum „St. Georg“ Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025732"
+        }
+      ]
     },
     "votes": [
       {
@@ -2127,6 +2184,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028136",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184791",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028136",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027919",
+          "reference": "VIII-DS-01978-NF-01",
+          "name": "Haushaltssicherungsbeiträge der Beteiligungsunternehmen 2025 und 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027919"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -2431,6 +2497,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028136",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184791",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028136",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027919",
+          "reference": "VIII-DS-01978-NF-01",
+          "name": "Haushaltssicherungsbeiträge der Beteiligungsunternehmen 2025 und 2026",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027919"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [

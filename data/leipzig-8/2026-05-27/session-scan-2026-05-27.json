@@ -909,7 +909,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030231",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198593",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030231"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030231",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028492",
+          "reference": "VIII-DS-02285",
+          "name": "Gemeindewahlausschuss für die Oberbürgermeisterwahl 2027",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028492"
+        }
+      ]
     },
     "votes": [
       {
@@ -1212,7 +1221,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027199",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198249",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027199"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027199",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026906",
+          "reference": "VIII-A-01786",
+          "name": "Leipzig wird altersfreundliche Stadt",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026906"
+        }
+      ]
     },
     "votes": [
       {
@@ -1515,7 +1533,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029400",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198465",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029400"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029400",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027692",
+          "reference": "VIII-A-02038",
+          "name": "Pflege und Nutzung der bestehenden Leipziger Baumscheiben",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027692"
+        }
+      ]
     },
     "votes": [
       {
@@ -1818,7 +1845,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029956",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198461",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029956"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029956",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028504",
+          "reference": "VIII-A-02290",
+          "name": "Sinnvolle Erweiterung des Flexa-Gebietes „Südost“",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028504"
+        }
+      ]
     },
     "votes": [
       {
@@ -2121,7 +2157,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028729",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198472",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028729"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028729",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028586",
+          "reference": "VIII-A-02315",
+          "name": "Keine Motorboote auf dem Cossi",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028586"
+        }
+      ]
     },
     "votes": [
       {
@@ -2425,6 +2470,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029236",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198300",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029236",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029037",
+          "reference": "VIII-A-02480",
+          "name": "Fraktionsfinanzierung anpassen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029037"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -2729,6 +2783,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029236",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198300",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029236",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029037",
+          "reference": "VIII-A-02480",
+          "name": "Fraktionsfinanzierung anpassen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029037"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -3639,7 +3702,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029124",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2198291",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029124"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029124",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028817",
+          "reference": "VIII-A-02401",
+          "name": "Anlieger vor der Planung erstmaliger Straßenerschließung beteiligen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028817"
+        }
+      ]
     },
     "votes": [
       {
@@ -3943,6 +4015,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030533",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200165",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030533",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028817",
+          "reference": "VIII-A-02401",
+          "name": "Anlieger vor der Planung erstmaliger Straßenerschließung beteiligen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028817"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030478",
+          "reference": "VIII-A-02401-NF-02",
+          "name": "Anlieger vor der Planung erstmaliger Straßenerschließung beteiligen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030478"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -4247,6 +4335,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030533",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200165",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030533",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028817",
+          "reference": "VIII-A-02401",
+          "name": "Anlieger vor der Planung erstmaliger Straßenerschließung beteiligen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028817"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030478",
+          "reference": "VIII-A-02401-NF-02",
+          "name": "Anlieger vor der Planung erstmaliger Straßenerschließung beteiligen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030478"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -6061,6 +6165,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030491",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200093",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030491",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029408",
+          "reference": "VIII-DS-02617",
+          "name": "Stellungnahme der Stadt Leipzig zum 2. Entwurf der \"Teilfortschreibung Erneuerbare Energien\" des Regionalplans Leipzig-Westsachsen",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029408"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -6365,6 +6478,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030491",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200093",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030491",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029408",
+          "reference": "VIII-DS-02617",
+          "name": "Stellungnahme der Stadt Leipzig zum 2. Entwurf der \"Teilfortschreibung Erneuerbare Energien\" des Regionalplans Leipzig-Westsachsen",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029408"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -6669,6 +6791,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030491",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200093",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030491",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029408",
+          "reference": "VIII-DS-02617",
+          "name": "Stellungnahme der Stadt Leipzig zum 2. Entwurf der \"Teilfortschreibung Erneuerbare Energien\" des Regionalplans Leipzig-Westsachsen",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029408"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -7275,7 +7406,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030477",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2199840",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030477"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030477",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028195",
+          "reference": "VIII-DS-02174",
+          "name": "Leipzigs Beteiligung an einer deutschen Konzeption um Olympische und Paralympische Spiele",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028195"
+        }
+      ]
     },
     "votes": [
       {
@@ -7578,7 +7718,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030429",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2199753",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030429"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030429",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024465",
+          "reference": "VIII-DS-00961",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024465"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030281",
+          "reference": "VIII-DS-00961-NF-01",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030281"
+        }
+      ]
     },
     "votes": [
       {
@@ -7881,7 +8037,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030511",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200108",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030511"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030511",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024465",
+          "reference": "VIII-DS-00961",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024465"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030281",
+          "reference": "VIII-DS-00961-NF-01",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030281"
+        }
+      ]
     },
     "votes": [
       {
@@ -8184,7 +8356,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030531",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200164",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030531"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030531",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024465",
+          "reference": "VIII-DS-00961",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024465"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030281",
+          "reference": "VIII-DS-00961-NF-01",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030281"
+        }
+      ]
     },
     "votes": [
       {
@@ -8487,7 +8675,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030281",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2199055",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030281"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030281",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024465",
+          "reference": "VIII-DS-00961",
+          "name": "Fußverkehrsentwicklungsplan der Stadt Leipzig (FVEP)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024465"
+        }
+      ]
     },
     "votes": [
       {
@@ -8790,7 +8987,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030462",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2199874",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030462"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030462",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026917",
+          "reference": "VIII-DS-01791",
+          "name": "Bebauungsplan Nr. 490 „Wohngebiet östlich Karl-Mannsfeld-Straße“, Stadtbezirk: Nordwest, Ortsteil: Lindenthal; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026917"
+        }
+      ]
     },
     "votes": [
       {
@@ -9093,7 +9299,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030494",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200094",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030494"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030494",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026917",
+          "reference": "VIII-DS-01791",
+          "name": "Bebauungsplan Nr. 490 „Wohngebiet östlich Karl-Mannsfeld-Straße“, Stadtbezirk: Nordwest, Ortsteil: Lindenthal; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026917"
+        }
+      ]
     },
     "votes": [
       {

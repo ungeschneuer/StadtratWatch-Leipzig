@@ -1215,7 +1215,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028157",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2183995",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028157"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028157",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026002",
+          "reference": "VIII-A-01469",
+          "name": "Gedenken an William Zipperer",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026002"
+        }
+      ]
     },
     "votes": [
       {
@@ -2427,7 +2436,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028023",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2183526",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028023"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028023",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024854",
+          "reference": "VIII-DS-01088",
+          "name": "Neufassung der Betriebssatzung für den Kommunalen Eigenbetrieb Leipzig / Engelsdorf",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024854"
+        }
+      ]
     },
     "votes": [
       {
@@ -2730,7 +2748,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028209",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184414",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028209"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028209",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025691",
+          "reference": "VIII-DS-01373",
+          "name": "Gebührensatzung Stadtarchiv",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025691"
+        }
+      ]
     },
     "votes": [
       {
@@ -3932,7 +3959,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028126",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2183991",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028126"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028126",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027067",
+          "reference": "VII-DS-07720-DS-04",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 2026",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027067"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027097",
+          "reference": "VII-DS-07720-Ifo-02",
+          "name": "Kommunale Wärmeplanung für die Stadt Leipzig | 1. Fassung (Entwurf zum öffentlichen Beteiligungsverfahren)",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027097"
+        }
+      ]
     },
     "votes": [
       {
@@ -4238,7 +4288,37 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028001",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2183582",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028001"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028001",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2006574",
+          "reference": "VII-DS-07720",
+          "name": "Auftaktvorlage zur Erstellung eines kommunalen Wärmeplans für die Stadt Leipzig und Vergabe zur Generalkoordination",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2014219",
+          "reference": "VII-DS-07720-Ifo-01",
+          "name": "Rahmenpapier des kommunalen Wärmeplans für die Stadt Leipzig",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2014219"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2016234",
+          "reference": "VII-DS-07720-DS-02",
+          "name": "Grundsatz- und Planungsbeschluss zur Wärmewende im Pilotquartier Südvorstadt West",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2016234"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027923",
+          "reference": "VII-DS-07720-DS-02-NF-01",
+          "name": "Grundsatz- und Planungsbeschluss zur Wärmewende im Pilotquartier Südvorstadt West",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027923"
+        }
+      ]
     },
     "votes": [
       {
@@ -5145,6 +5225,29 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028142",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2183931",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028142",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025226",
+          "reference": "VIII-DS-01232",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025226"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027315",
+          "reference": "VIII-DS-01232-NF-02",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027315"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027717",
+          "reference": "VIII-DS-01232-NF-02-ÄA-01",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027717"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -5449,6 +5552,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027850",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2182512",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027850",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025226",
+          "reference": "VIII-DS-01232",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025226"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027315",
+          "reference": "VIII-DS-01232-NF-02",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027315"
+        }
+      ],
       "itemNumber": "3"
     },
     "votes": [
@@ -5753,6 +5872,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027850",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2182512",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027850",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025226",
+          "reference": "VIII-DS-01232",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025226"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027315",
+          "reference": "VIII-DS-01232-NF-02",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027315"
+        }
+      ],
       "itemNumber": "4"
     },
     "votes": [
@@ -6056,7 +6191,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028187",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184244",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028187"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028187",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025226",
+          "reference": "VIII-DS-01232",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025226"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027315",
+          "reference": "VIII-DS-01232-NF-02",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027315"
+        }
+      ]
     },
     "votes": [
       {
@@ -6359,7 +6510,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027315",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2182510",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027315"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027315",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025226",
+          "reference": "VIII-DS-01232",
+          "name": "Konzeptverfahren (Verkauf) Solitärgrundstück Matthäikirchhof und „Entwicklungskonzept zur Umsetzung des städtebaulichen Wettbewerbsergebnisses“",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025226"
+        }
+      ]
     },
     "votes": [
       {
@@ -6663,6 +6823,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027666",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2182765",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027666",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026378",
+          "reference": "VIII-DS-01609",
+          "name": "3. Satzung zur Änderung der Vergnügungsteuersatzung der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026378"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -6967,6 +7136,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027666",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2182765",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027666",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026378",
+          "reference": "VIII-DS-01609",
+          "name": "3. Satzung zur Änderung der Vergnügungsteuersatzung der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026378"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -7573,7 +7751,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028216",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184256",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028216"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028216",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026388",
+          "reference": "VIII-DS-01611",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026388"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027442",
+          "reference": "VIII-DS-01611-ÄA-01",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027442"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028049",
+          "reference": "VIII-DS-01611-ÄA-01-NF-01",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028049"
+        }
+      ]
     },
     "votes": [
       {
@@ -7876,7 +8077,30 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028216",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2184256",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028216"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028216",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026388",
+          "reference": "VIII-DS-01611",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026388"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027442",
+          "reference": "VIII-DS-01611-ÄA-01",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027442"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028049",
+          "reference": "VIII-DS-01611-ÄA-01-NF-01",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028049"
+        }
+      ]
     },
     "votes": [
       {
@@ -8179,7 +8403,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027443",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2182524",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027443"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027443",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026388",
+          "reference": "VIII-DS-01611",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026388"
+        }
+      ]
     },
     "votes": [
       {
@@ -8482,7 +8715,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028163",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2183990",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028163"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028163",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026388",
+          "reference": "VIII-DS-01611",
+          "name": "Hundesteuersatzung der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026388"
+        }
+      ]
     },
     "votes": [
       {

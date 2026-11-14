@@ -13,6 +13,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032084",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217145",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032084",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028248",
+          "reference": "VIII-DS-02186",
+          "name": "Masterplan Grün - Leipzig grün-blau 2030",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028248"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -317,6 +326,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032084",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217145",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032084",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028248",
+          "reference": "VIII-DS-02186",
+          "name": "Masterplan Grün - Leipzig grün-blau 2030",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028248"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -620,7 +638,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033755",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217146",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033755"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033755",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028248",
+          "reference": "VIII-DS-02186",
+          "name": "Masterplan Grün - Leipzig grün-blau 2030",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028248"
+        }
+      ]
     },
     "votes": [
       {
@@ -1226,7 +1253,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033930",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217150",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033930"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033930",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025298",
+          "reference": "VIII-DS-01237",
+          "name": "Biotopverbundkonzept für die Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025298"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031164",
+          "reference": "VIII-DS-01237-NF-01",
+          "name": "Biotopverbundkonzept für die Stadt Leipzig",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031164"
+        }
+      ]
     },
     "votes": [
       {
@@ -1529,7 +1572,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028742",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217148",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028742"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028742",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025298",
+          "reference": "VIII-DS-01237",
+          "name": "Biotopverbundkonzept für die Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025298"
+        }
+      ]
     },
     "votes": [
       {
@@ -1832,7 +1884,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031164",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217147",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031164"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031164",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025298",
+          "reference": "VIII-DS-01237",
+          "name": "Biotopverbundkonzept für die Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025298"
+        }
+      ]
     },
     "votes": [
       {
@@ -2135,7 +2196,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033884",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217157",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033884"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033884",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        }
+      ]
     },
     "votes": [
       {
@@ -2439,6 +2509,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033003",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217155",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033003",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031845",
+          "reference": "VIII-DS-02149-ÄA-01",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031845"
+        }
+      ],
       "itemNumber": "14"
     },
     "votes": [
@@ -2743,6 +2829,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033003",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217155",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033003",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031845",
+          "reference": "VIII-DS-02149-ÄA-01",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031845"
+        }
+      ],
       "itemNumber": "14"
     },
     "votes": [
@@ -3047,6 +3149,22 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033003",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217155",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033003",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031845",
+          "reference": "VIII-DS-02149-ÄA-01",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031845"
+        }
+      ],
       "itemNumber": "15"
     },
     "votes": [
@@ -3351,6 +3469,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031866",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217156",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031866",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -3655,6 +3782,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031866",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217156",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031866",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -3959,6 +4095,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031866",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217156",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031866",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028071",
+          "reference": "VIII-DS-02149",
+          "name": "Rahmenrichtlinie als Grundlage für die Erarbeitung von Fachförderrichtlinien zur Gewährung von Zuwendungen der Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028071"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -4565,7 +4710,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033644",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217153",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033644"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033644",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026095",
+          "reference": "VIII-DS-01507",
+          "name": "Stadtentwicklungsplan Flächenpotenziale für erneuerbare Energien (STEP FEE)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026095"
+        }
+      ]
     },
     "votes": [
       {
@@ -5474,7 +5628,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033873",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217164",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033873"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033873",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028253",
+          "reference": "VIII-DS-02188",
+          "name": "Planungs- und Baubeschluss – Erschließung Eigenheimgebiet in der Gemarkung Lindenthal (Bebauungsplan Nr. 327 – Lange Trift / Nordseite)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028253"
+        }
+      ]
     },
     "votes": [
       {
@@ -6686,7 +6849,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031543",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217170",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031543"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031543",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030070",
+          "reference": "VIII-DS-02859",
+          "name": "Weiterführung der Finanzierung der Koordinierungsstelle Nachtleben durch die Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030070"
+        }
+      ]
     },
     "votes": [
       {
@@ -6989,7 +7161,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033520",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217171",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033520"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033520",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030070",
+          "reference": "VIII-DS-02859",
+          "name": "Weiterführung der Finanzierung der Koordinierungsstelle Nachtleben durch die Stadt Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030070"
+        }
+      ]
     },
     "votes": [
       {
@@ -7595,7 +7776,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032753",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217175",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032753"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032753",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030222",
+          "reference": "VIII-DS-02913",
+          "name": "vorhabenbezogener Bebauungsplan Nr. 491 „Sondergebiet Einzelhandel Schomburgkstraße“; Stadtbezirk: Altwest, Ortsteil: Burghausen-Rückmarsdorf und Neulindenau; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030222"
+        }
+      ]
     },
     "votes": [
       {
@@ -7898,7 +8088,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2032041",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217174",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032041"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2032041",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030222",
+          "reference": "VIII-DS-02913",
+          "name": "vorhabenbezogener Bebauungsplan Nr. 491 „Sondergebiet Einzelhandel Schomburgkstraße“; Stadtbezirk: Altwest, Ortsteil: Burghausen-Rückmarsdorf und Neulindenau; Aufstellungsbeschluss",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030222"
+        }
+      ]
     },
     "votes": [
       {
@@ -8504,7 +8703,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033861",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217178",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033861"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033861",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030859",
+          "reference": "VIII-DS-03145",
+          "name": "Bestätigung der zukünftigen Stadtentwicklungsschwerpunkte und Integriertes Entwicklungskonzept Quartiersspange Wilhelm-Leuschner-Platz | Bayrischer Platz",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030859"
+        }
+      ]
     },
     "votes": [
       {
@@ -8807,7 +9015,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033883",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217179",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033883"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033883",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030859",
+          "reference": "VIII-DS-03145",
+          "name": "Bestätigung der zukünftigen Stadtentwicklungsschwerpunkte und Integriertes Entwicklungskonzept Quartiersspange Wilhelm-Leuschner-Platz | Bayrischer Platz",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030859"
+        }
+      ]
     },
     "votes": [
       {
@@ -10017,7 +10234,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033706",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217183",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033706"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033706",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031089",
+          "reference": "VIII-DS-03190",
+          "name": "Verkauf des Standortes Semmelweisstraße an die Leipziger Wohnungs- und Baugesellschaft mbH",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031089"
+        }
+      ]
     },
     "votes": [
       {
@@ -10623,7 +10849,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033862",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217191",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033862"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033862",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031098",
+          "reference": "VIII-Ifo-03193",
+          "name": "Schulbaustrategie – 2. Fortschreibung",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031098"
+        }
+      ]
     },
     "votes": [
       {

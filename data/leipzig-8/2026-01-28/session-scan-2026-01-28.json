@@ -606,6 +606,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028332",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186762",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028332",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020141",
+          "reference": "VIII-DS-00266",
+          "name": "Seniorinnen- und Seniorenbeirat",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020141"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -906,6 +915,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028332",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186762",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028332",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020141",
+          "reference": "VIII-DS-00266",
+          "name": "Seniorinnen- und Seniorenbeirat",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020141"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -2102,7 +2120,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027462",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2185929",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027462"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027462",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020964",
+          "reference": "VIII-A-00449",
+          "name": "Wer Olympia will, muss Breitensport Events besser unterstützen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020964"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026481",
+          "reference": "VIII-A-00449-NF-03",
+          "name": "Wer Olympia will, muss Breitensport Events besser unterstützen",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026481"
+        }
+      ]
     },
     "votes": [
       {
@@ -2401,7 +2435,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026481",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2185927",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026481"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026481",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020964",
+          "reference": "VIII-A-00449",
+          "name": "Wer Olympia will, muss Breitensport Events besser unterstützen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020964"
+        }
+      ]
     },
     "votes": [
       {
@@ -2700,7 +2743,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024870",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2185931",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024870"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024870",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024176",
+          "reference": "VIII-A-00864",
+          "name": "Kulturstätten und Veranstaltungsorte vor Missbrauch schützen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024176"
+        }
+      ]
     },
     "votes": [
       {
@@ -2999,7 +3051,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028242",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2185934",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028242"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028242",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025078",
+          "reference": "VIII-A-01178",
+          "name": "Villa Davignon zum Haus der Inklusion entwickeln",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025078"
+        }
+      ]
     },
     "votes": [
       {
@@ -3298,7 +3359,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028399",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186836",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028399"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028399",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025343",
+          "reference": "VIII-A-01246",
+          "name": "Naturberg Seehausen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025343"
+        }
+      ]
     },
     "votes": [
       {
@@ -3597,7 +3667,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028431",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186892",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028431"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028431",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025467",
+          "reference": "VIII-A-01278",
+          "name": "Das LVB-Servicemobil kommt in die Ortschaft Engelsdorf!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025467"
+        }
+      ]
     },
     "votes": [
       {
@@ -3896,7 +3975,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027464",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186033",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027464"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027464",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026873",
+          "reference": "VIII-A-01775",
+          "name": "Den Opfern ein Gesicht geben – Ausstellung zur Stasi-Inhaftierung im Neuen Rathauses zeigen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026873"
+        }
+      ]
     },
     "votes": [
       {
@@ -4195,7 +4283,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028130",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186036",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028130"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028130",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026911",
+          "reference": "VIII-A-01788",
+          "name": "Eltern entlasten, pädagogisches Personal stärken – Springerpools für Hort-Personal und Kita-Personal einsetzen und dauerhaft etablieren",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026911"
+        }
+      ]
     },
     "votes": [
       {
@@ -5380,7 +5477,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028585",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2187568",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028585"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028585",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027345",
+          "reference": "VIII-A-01925",
+          "name": "Blumenampeln an Straßenlaternen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027345"
+        }
+      ]
     },
     "votes": [
       {
@@ -6272,7 +6378,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028627",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2187868",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028627"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028627",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027681",
+          "reference": "VIII-A-02035",
+          "name": "Dem Frieden und der Völkerverständigung verpflichtet – Ausrichtung eines jährlichen Friedenstags am 21. September (UN-Weltfriedenstag) in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027681"
+        }
+      ]
     },
     "votes": [
       {
@@ -6571,7 +6686,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027797",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186047",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027797"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027797",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027681",
+          "reference": "VIII-A-02035",
+          "name": "Dem Frieden und der Völkerverständigung verpflichtet – Ausrichtung eines jährlichen Friedenstags am 21. September (UN-Weltfriedenstag) in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027681"
+        }
+      ]
     },
     "votes": [
       {
@@ -7172,7 +7296,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028165",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2186942",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028165"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028165",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024966",
+          "reference": "VIII-DS-01122",
+          "name": "1. Vertragsnachtrag zum städtebaulichen Vertrag inklusive seiner Bezugsurkunde zum B-Plan Nr. 416 \"Freiladebahnhof Eutritzscher Straße/Delitzscher Straße\"",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024966"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027754",
+          "reference": "VIII-DS-01122-NF-01",
+          "name": "1. Vertragsnachtrag zum städtebaulichen Vertrag inklusive seiner Bezugsurkunde zum B-Plan Nr. 416 \"Freiladebahnhof Eutritzscher Straße/Delitzscher Straße\"",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027754"
+        }
+      ]
     },
     "votes": [
       {

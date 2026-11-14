@@ -12,7 +12,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029436",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193819",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029436"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029436",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026425",
+          "reference": "VIII-DS-01619",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026425"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029246",
+          "reference": "VIII-DS-01619-NF-02",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029246"
+        }
+      ]
     },
     "votes": [
       {
@@ -315,7 +331,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029533",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193822",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029533"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029533",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026425",
+          "reference": "VIII-DS-01619",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026425"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029246",
+          "reference": "VIII-DS-01619-NF-02",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029246"
+        }
+      ]
     },
     "votes": [
       {
@@ -618,7 +650,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029517",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193821",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029517"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029517",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026425",
+          "reference": "VIII-DS-01619",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026425"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029246",
+          "reference": "VIII-DS-01619-NF-02",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029246"
+        }
+      ]
     },
     "votes": [
       {
@@ -2117,7 +2165,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029513",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193820",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029513"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029513",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026425",
+          "reference": "VIII-DS-01619",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026425"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029246",
+          "reference": "VIII-DS-01619-NF-02",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029246"
+        }
+      ]
     },
     "votes": [
       {
@@ -2420,7 +2484,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029246",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193817",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029246"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029246",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026425",
+          "reference": "VIII-DS-01619",
+          "name": "Eigenheime für Leipzig - Veräußerung städtischer Grundstücke mit Wahlmöglichkeit zwischen Erbbaurecht und Kauf - Fortschreibung Vergabekonzept",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026425"
+        }
+      ]
     },
     "votes": [
       {
@@ -3329,7 +3402,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029394",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193833",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029394"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029394",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027966",
+          "reference": "VIII-DS-02106",
+          "name": "Wirtschaftsplan 2026 für den Eigenbetrieb Musikschule \"Johann-Sebastian-Bach\" Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027966"
+        }
+      ]
     },
     "votes": [
       {
@@ -3935,7 +4017,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029492",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193835",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029492"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029492",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027967",
+          "reference": "VIII-DS-02107",
+          "name": "Wirtschaftsplan 2026 für den Eigenbetrieb Theater der Jungen Welt",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027967"
+        }
+      ]
     },
     "votes": [
       {
@@ -4541,7 +4632,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029491",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193837",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029491"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029491",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027971",
+          "reference": "VIII-DS-02110",
+          "name": "Wirtschaftsplan 2026 für den Eigenbetrieb Schauspiel Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027971"
+        }
+      ]
     },
     "votes": [
       {
@@ -5748,7 +5848,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029473",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193841",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029473"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029473",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027975",
+          "reference": "VIII-DS-02112",
+          "name": "Wirtschaftsplan 2026 für den Eigenbetrieb Oper Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027975"
+        }
+      ]
     },
     "votes": [
       {
@@ -7253,7 +7362,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029537",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193845",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029537"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029537",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028255",
+          "reference": "VIII-DS-02190",
+          "name": "Rückzahlung der anteiligen Ausgleichsbeträge an den Freistaat Sachsen nach Abschluss der Sanierungsmaßnahme \"Innerer Süden\" (Bestätigung gem. § 79 (1) SächsGemO)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028255"
+        }
+      ]
     },
     "votes": [
       {
@@ -7556,7 +7674,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029203",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193848",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029203"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029203",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028432",
+          "reference": "VIII-DS-02272",
+          "name": "Terminplan zur Aufstellung des Doppelhaushaltes 2027/2028",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028432"
+        }
+      ]
     },
     "votes": [
       {

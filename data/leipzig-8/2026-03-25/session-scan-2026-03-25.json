@@ -12,7 +12,37 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029098",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191574",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029098"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029098",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2019546",
+          "reference": "VIII-DS-00056",
+          "name": "Stadtbezirksbeirat Süd - Bestellung der Mitglieder",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2019546"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020087",
+          "reference": "VIII-DS-00056-DS-01",
+          "name": "Stadtbezirksbeirat Süd - Bestellung der Mitglieder (1. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020087"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025667",
+          "reference": "VIII-DS-00056-DS-02",
+          "name": "Stadtbezirksbeirat Süd - Bestellung der Mitglieder (2. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025667"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026679",
+          "reference": "VIII-DS-00056-DS-03",
+          "name": "Stadtbezirksbeirat Süd - Bestellung der Mitglieder (3. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026679"
+        }
+      ]
     },
     "votes": [
       {
@@ -315,7 +345,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029535",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193681",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029535"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029535",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020134",
+          "reference": "VIII-DS-00259",
+          "name": "Beirat für Gleichstellung",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020134"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029194",
+          "reference": "VIII-DS-00259-DS-08",
+          "name": "Beirat für Gleichstellung (8. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029194"
+        }
+      ]
     },
     "votes": [
       {
@@ -618,7 +664,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029535",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193681",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029535"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029535",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020134",
+          "reference": "VIII-DS-00259",
+          "name": "Beirat für Gleichstellung",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020134"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029194",
+          "reference": "VIII-DS-00259-DS-08",
+          "name": "Beirat für Gleichstellung (8. Änderung)",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029194"
+        }
+      ]
     },
     "votes": [
       {
@@ -922,6 +984,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028937",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191576",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028937",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020140",
+          "reference": "VIII-DS-00265",
+          "name": "Migrantinnen- und Migrantenbeirat",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020140"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -1226,6 +1297,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028937",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191576",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028937",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2020140",
+          "reference": "VIII-DS-00265",
+          "name": "Migrantinnen- und Migrantenbeirat",
+          "paperType": "Besetzungsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2020140"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -1529,7 +1609,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029445",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193374",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029445"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029445",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025713",
+          "reference": "VIII-Ifo-01381",
+          "name": "Auswertung zur Beteiligung der Leipziger Bürgerinnen und Bürger an der Aufstellung des Doppelhaushaltes 2025/2026",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025713"
+        }
+      ]
     },
     "votes": [
       {
@@ -1833,6 +1922,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029087",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2192554",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029087",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027898",
+          "reference": "VIII-Ifo-02085",
+          "name": "Aktuelle Entwicklungen im \"Liniennetz der Zukunft\"",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027898"
+        }
+      ],
       "itemNumber": "1"
     },
     "votes": [
@@ -2137,6 +2235,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029087",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2192554",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029087",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027898",
+          "reference": "VIII-Ifo-02085",
+          "name": "Aktuelle Entwicklungen im \"Liniennetz der Zukunft\"",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027898"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -2762,7 +2869,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029000",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191918",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029000"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029000",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2026907",
+          "reference": "VIII-A-01787",
+          "name": "Neue Sporthalle für Gohlis",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2026907"
+        }
+      ]
     },
     "votes": [
       {
@@ -3368,7 +3484,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028974",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191935",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028974"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028974",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027321",
+          "reference": "VIII-A-01923",
+          "name": "Anwendung des digitalen Vegetations- und Flächenmonitorings Urban Green Eye in der Verwaltung sicherstellen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027321"
+        }
+      ]
     },
     "votes": [
       {
@@ -3672,6 +3797,15 @@
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028744",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191944",
       "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028744",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027406",
+          "reference": "VIII-A-01938",
+          "name": "Reinigungspflichten an Altkleidercontainern wirksam durchsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027406"
+        }
+      ],
       "itemNumber": "2"
     },
     "votes": [
@@ -3975,7 +4109,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029023",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191943",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029023"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029023",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027406",
+          "reference": "VIII-A-01938",
+          "name": "Reinigungspflichten an Altkleidercontainern wirksam durchsetzen",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027406"
+        }
+      ]
     },
     "votes": [
       {
@@ -4278,7 +4421,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029110",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191980",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029110"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029110",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028180",
+          "reference": "VIII-A-02171",
+          "name": "Erweiterung des Housing-First-Ansatzes „Eigene Wohnung“ in Leipzig um 25 Plätze ab 2026",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028180"
+        }
+      ]
     },
     "votes": [
       {
@@ -4581,7 +4733,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029457",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193421",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029457"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029457",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027340",
+          "reference": "VIII-A-01924",
+          "name": "Schutz und Erhalt von „Spätis“ in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027340"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029227",
+          "reference": "VIII-A-01924-NF-04",
+          "name": "Schutz und Erhalt von „Spätis“ in Leipzig",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029227"
+        }
+      ]
     },
     "votes": [
       {
@@ -4884,7 +5052,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029527",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193682",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029527"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029527",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027340",
+          "reference": "VIII-A-01924",
+          "name": "Schutz und Erhalt von „Spätis“ in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027340"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029227",
+          "reference": "VIII-A-01924-NF-04",
+          "name": "Schutz und Erhalt von „Spätis“ in Leipzig",
+          "paperType": "Neufassung Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029227"
+        }
+      ]
     },
     "votes": [
       {
@@ -5187,7 +5371,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029227",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2192465",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029227"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029227",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027340",
+          "reference": "VIII-A-01924",
+          "name": "Schutz und Erhalt von „Spätis“ in Leipzig",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027340"
+        }
+      ]
     },
     "votes": [
       {
@@ -5793,7 +5986,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028280",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2192474",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028280"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028280",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027683",
+          "reference": "VIII-A-02037",
+          "name": "Wiederaufnahme der Verkehrs- und Stadtraumplanung für Bayerischen Platz",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027683"
+        }
+      ]
     },
     "votes": [
       {
@@ -6698,7 +6900,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028131",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2191973",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028131"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028131",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028006",
+          "reference": "VIII-A-02128",
+          "name": "Astoriatunnel als Notunterkunft für Wohnungslose einrichten",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028006"
+        }
+      ]
     },
     "votes": [
       {
@@ -7001,7 +7212,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029108",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193656",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029108"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029108",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029050",
+          "reference": "VIII-A-02486",
+          "name": "Leipzig darf nicht wieder deutsche Armutshauptstadt werden – neue Gesetze müssen Armut verhindern – Armutsvermeidungs-Check unverzüglich einführen!",
+          "paperType": "Antrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029050"
+        }
+      ]
     },
     "votes": [
       {
@@ -8203,7 +8423,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029175",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2192553",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029175"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029175",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027597",
+          "reference": "VIII-DS-02011",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029102",
+          "reference": "VIII-DS-02011-NF-01",
+          "name": "Grundsatzbeschluss zur Anwendung des „Gesetzes zur Beschleunigung des Wohnungsbaus und zur Wohnraumsicherung“ („Bauturbo“) und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029102"
+        }
+      ]
     },
     "votes": [
       {
@@ -8810,7 +9046,23 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029123",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193419",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029123"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029123",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2024890",
+          "reference": "VIII-DS-01096",
+          "name": "Betriebssatzung für den Städtischen Eigenbetrieb Schauspiel Leipzig",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2024890"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2028721",
+          "reference": "VIII-DS-01096-NF-01",
+          "name": "Betriebssatzung für den Städtischen Eigenbetrieb Schauspiel Leipzig",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2028721"
+        }
+      ]
     },
     "votes": [
       {
@@ -9113,7 +9365,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029434",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193376",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029434"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029434",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025781",
+          "reference": "VIII-DS-01405",
+          "name": "Bebauungsplan Nr. 425 „Wohnsiedlung Emil-Teich-Straße; Stadtbezirk: Südwest, Ortsteil: Knautkleeberg-Knauthain; Beschluss zur Veröffentlichung des Entwurfes",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025781"
+        }
+      ]
     },
     "votes": [
       {
@@ -9416,7 +9677,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029434",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193376",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029434"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029434",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025781",
+          "reference": "VIII-DS-01405",
+          "name": "Bebauungsplan Nr. 425 „Wohnsiedlung Emil-Teich-Straße; Stadtbezirk: Südwest, Ortsteil: Knautkleeberg-Knauthain; Beschluss zur Veröffentlichung des Entwurfes",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025781"
+        }
+      ]
     },
     "votes": [
       {
@@ -9719,7 +9989,16 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029479",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2193558",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029479"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029479",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2025781",
+          "reference": "VIII-DS-01405",
+          "name": "Bebauungsplan Nr. 425 „Wohnsiedlung Emil-Teich-Straße; Stadtbezirk: Südwest, Ortsteil: Knautkleeberg-Knauthain; Beschluss zur Veröffentlichung des Entwurfes",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2025781"
+        }
+      ]
     },
     "votes": [
       {
