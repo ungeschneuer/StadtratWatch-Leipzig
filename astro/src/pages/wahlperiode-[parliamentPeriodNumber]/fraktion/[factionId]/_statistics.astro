@@ -106,7 +106,7 @@ const seatsHistory = calcSeatsHistoryOfFaction(
         <p class="text-sm">
           {seatsHistory
             .map((point) => `${formatDate(point.date)}: ${point.value}`)
-            .join(' · ')}
+            .join('; ')}
         </p>
       )}
     </div>

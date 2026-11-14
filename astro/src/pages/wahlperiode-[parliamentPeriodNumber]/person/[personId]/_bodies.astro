@@ -57,7 +57,7 @@ function periodOf(start: string, end: string | null): string {
               <span class="text-base-content/70 text-sm">
                 {[body.role, periodOf(body.start, body.end)]
                   .filter(Boolean)
-                  .join(' · ')}
+                  .join(', ')}
               </span>
             </li>
           ))}

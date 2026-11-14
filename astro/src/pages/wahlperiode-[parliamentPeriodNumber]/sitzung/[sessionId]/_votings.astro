@@ -121,9 +121,12 @@ function voteCounts(votes: { vote: string }[]) {
           >
             <div class="text-base-content/70 flex flex-wrap items-center gap-x-2">
               <span>
-                {[voting.agendaItem, voting.type, voting.motionId]
+                {[
+                  voting.agendaItem,
+                  [voting.type, voting.motionId].filter(Boolean).join(' '),
+                ]
                   .filter(Boolean)
-                  .join(' · ')}
+                  .join(': ')}
               </span>
               <VotingReviewBadge reviewStatus={voting.reviewStatus} />
             </div>

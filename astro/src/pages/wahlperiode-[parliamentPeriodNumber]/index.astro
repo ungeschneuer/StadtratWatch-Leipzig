@@ -35,12 +35,6 @@ const castVoteCount = allVotings.reduce(
 const speakingHours = Math.round(
   calcSpeakingTimeOfSessions(sessionInputs) / 3600,
 );
-const keyFigures = [
-  { value: formatNumber(sessionInputs.length), label: 'Sitzungen' },
-  { value: formatNumber(allVotings.length), label: 'Abstimmungen' },
-  { value: formatNumber(castVoteCount), label: 'abgegebene Stimmen' },
-  { value: `${formatNumber(speakingHours)} h`, label: 'Redezeit' },
-];
 
 // Seats in the order of size; a semicircle would suggest a left-right order the council does not have.
 const factionColors =
@@ -91,78 +85,42 @@ const latestVotings = latestSessionInput
     })()
   : [];
 
-const entryPoints = [
-  {
-    href: routes.sessions(),
-    icon: 'lucide--calendar-days',
-    title: 'Sitzungen',
-    text: 'Jede Abstimmung mit Tafel, Ergebnis und Stimmen je Person.',
-  },
-  {
-    href: routes.factions(),
-    icon: 'lucide--users',
-    title: 'Fraktionen',
-    text: 'Wie geschlossen sie abstimmen und wie oft sie sich durchsetzen.',
-  },
-  {
-    href: routes.persons(),
-    icon: 'lucide--user',
-    title: 'Personen',
-    text: 'Teilnahme, Enthaltungen und wer ähnlich abstimmt.',
-  },
-];
-
-const methodSteps = [
-  {
-    icon: 'lucide--video',
-    title: 'Aufzeichnung',
-    text: 'Die Stadt veröffentlicht jede Sitzung als Video in ihrer Mediathek.',
-  },
-  {
-    icon: 'lucide--scan-eye',
-    title: 'Tafel lesen',
-    text: 'Aus dem Bild der Abstimmungstafel wird jede Stimme nach Farbe gelesen.',
-  },
-  {
-    icon: 'lucide--list-checks',
-    title: 'Abgleich',
-    text: 'Die Ergebnisse werden mit den Protokollen der Stadt abgeglichen; was nicht passt, prüft ein Mensch.',
-  },
-];
+function countOf(count: number, singular: string, plural: string): string {
+  return `${formatNumber(count)} ${count === 1 ? singular : plural}`;
+}
 ---
 
 <Layout parliamentPeriod={parliamentPeriod}>
   <style is:inline set:html={factionColorStyles(factionColors)}></style>
 
-  <div class="space-y-10 lg:space-y-14">
-    <section class="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:gap-12">
-      <div>
-        <p class="text-primary mb-3 text-sm font-semibold">
-          Ratsversammlung Leipzig · {parliamentPeriod.name}
-        </p>
-        <h1 class="text-3xl leading-tight font-bold text-balance sm:text-4xl xl:text-5xl">
-          Wie hat der Stadtrat abgestimmt?
+  <div class="space-y-10 lg:space-y-12">
+    <section class="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:gap-12">
+      <div class="max-w-xl">
+        <h1 class="text-3xl leading-tight font-bold text-balance sm:text-4xl">
+          Abstimmungen im Leipziger Stadtrat
         </h1>
-        <p class="text-base-content/70 mt-4 max-w-xl text-lg text-pretty">
-          Wie jedes Ratsmitglied seit dem {formatDate(firstSession.date)}{' '}
-          abgestimmt hat, gelesen aus den Aufzeichnungen der Stadt und mit ihren
-          Protokollen abgeglichen.
+        <p class="mt-4 text-lg text-pretty">
+          Seit dem {formatDate(firstSession.date)} hat die Ratsversammlung in{' '}
+          {countOf(sessionInputs.length, 'Sitzung', 'Sitzungen')}{' '}
+          {formatNumber(allVotings.length)}-mal über die elektronische Tafel
+          abgestimmt. Hier steht jede der {formatNumber(castVoteCount)} Stimmen
+          mit Namen, gelesen aus den Aufzeichnungen der Stadt und mit ihren
+          Protokollen abgeglichen, dazu {formatNumber(speakingHours)} Stunden
+          Redebeiträge.
         </p>
-        <div class="mt-6 flex flex-wrap gap-3">
+        <p class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
           {latestSessionInput && (
             <a
               href={routes.session(latestSessionInput.session.id)}
               class="btn btn-primary"
             >
-              Letzte Sitzung: {formatDate(latestSessionInput.session.date)}
-              <span class="iconify lucide--arrow-right size-4" />
+              Sitzung vom {formatDate(latestSessionInput.session.date)}
             </a>
           )}
-          <a href={sitePath('/suche')} class="btn btn-outline">
-            <span class="iconify lucide--search size-4"></span>
-            Person oder Thema suchen
+          <a href={sitePath('/suche')} class="link link-primary">
+            Nach Person oder Thema suchen
           </a>
-        </div>
+        </p>
       </div>
 
       <figure
@@ -208,147 +166,80 @@ const methodSteps = [
       </figure>
     </section>
 
-    <section aria-label="Kennzahlen">
-      <dl class="grid grid-cols-2 gap-3 lg:grid-cols-4">
-        {keyFigures.map((figure) => (
-          <div class="border-base-300 bg-base-100 rounded-box border p-4 sm:p-5">
-            <dt class="text-base-content/70 text-sm">{figure.label}</dt>
-            <dd class="mt-1 text-2xl font-semibold tabular-nums sm:text-3xl">
-              {figure.value}
-            </dd>
-          </div>
-        ))}
-      </dl>
-    </section>
-
     {latestSessionInput && latestVotings.length > 0 && (
-      <section aria-labelledby="latest-heading">
-        <div class="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-          <h2 id="latest-heading" class="text-xl font-semibold">
-            Zuletzt abgestimmt
-          </h2>
-          <a
-            href={routes.session(latestSessionInput.session.id)}
-            class="link link-primary text-sm"
-          >
-            Alle Abstimmungen vom {formatDate(latestSessionInput.session.date)}
+      <section aria-labelledby="latest-heading" class="max-w-4xl">
+        <h2 id="latest-heading" class="text-xl font-semibold">
+          Zuletzt abgestimmt
+        </h2>
+        <p class="text-base-content/70 mt-1 text-sm">
+          Die letzten Beschlussvorlagen und Anträge der Sitzung vom{' '}
+          <a href={routes.session(latestSessionInput.session.id)} class="link">
+            {formatDate(latestSessionInput.session.date)}
           </a>
-        </div>
-        <ul class="grid gap-3 md:grid-cols-2">
+          .
+        </p>
+        <ul class="divide-base-300 border-base-300 mt-4 divide-y border-y">
           {latestVotings.map((voting) => (
-            <li>
+            <li class="py-3">
               <a
                 href={voting.url}
-                class="card border-base-300 bg-base-100 hover:border-primary h-full border transition-colors"
+                class="link-quiet font-medium hyphens-auto"
+                lang="de"
               >
-                <div class="card-body gap-3 p-4 sm:p-5">
-                  <div class="text-base-content/70 flex flex-wrap items-center gap-2 text-sm">
-                    <span>
-                      {[`TOP ${voting.agendaItem}`, voting.type]
-                        .filter(Boolean)
-                        .join(' · ')}
-                    </span>
-                    <VotingReviewBadge reviewStatus={voting.reviewStatus} />
-                  </div>
-                  <p class="line-clamp-3 font-medium hyphens-auto" lang="de">
-                    {voting.title}
-                  </p>
-                  <div class="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-                    <span
-                      class:list={[
-                        'badge badge-soft gap-1',
-                        voting.accepted ? 'badge-success' : 'badge-error',
-                      ]}
-                    >
-                      <span
-                        class:list={[
-                          'iconify size-3.5',
-                          voting.accepted ? 'lucide--check' : 'lucide--x',
-                        ]}
-                      />
-                      {voting.accepted ? 'Angenommen' : 'Abgelehnt'}
-                    </span>
-                    <span class="text-base-content/70 tabular-nums">
-                      {voting.counts.J} Ja · {voting.counts.N} Nein ·{' '}
-                      {voting.counts.E} Enthaltung
-                    </span>
-                  </div>
-                </div>
+                {voting.title}
               </a>
+              <p class="text-base-content/70 mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+                <span>
+                  TOP {voting.agendaItem}
+                  {voting.type && `, ${voting.type}`}:
+                </span>
+                <span
+                  class:list={[
+                    'font-semibold',
+                    voting.accepted ? 'text-success' : 'text-error',
+                  ]}
+                >
+                  {voting.accepted ? 'angenommen' : 'abgelehnt'}
+                </span>
+                <span class="tabular-nums">
+                  mit {countOf(voting.counts.J, 'Ja-Stimme', 'Ja-Stimmen')},{' '}
+                  {countOf(voting.counts.N, 'Nein-Stimme', 'Nein-Stimmen')} und{' '}
+                  {countOf(voting.counts.E, 'Enthaltung', 'Enthaltungen')}
+                </span>
+                <VotingReviewBadge reviewStatus={voting.reviewStatus} />
+              </p>
             </li>
           ))}
         </ul>
       </section>
     )}
 
-    <section aria-labelledby="explore-heading">
-      <h2 id="explore-heading" class="mb-4 text-xl font-semibold">
-        Entdecken
-      </h2>
-      <ul class="grid gap-3 md:grid-cols-3">
-        {entryPoints.map((entry) => (
-          <li>
-            <a
-              href={entry.href}
-              class="card border-base-300 bg-base-100 hover:border-primary h-full border transition-colors"
-            >
-              <div class="card-body flex-row items-start gap-4 p-4 sm:p-5">
-                <span class="bg-primary/10 text-primary grid size-10 shrink-0 place-items-center rounded-field">
-                  <span class:list={['iconify size-5', entry.icon]} />
-                </span>
-                <div>
-                  <h3 class="font-semibold">{entry.title}</h3>
-                  <p class="text-base-content/70 mt-1 text-sm">{entry.text}</p>
-                </div>
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
-
-    <section
-      aria-labelledby="method-heading"
-      class="border-base-300 bg-base-100 rounded-box border p-5 sm:p-8"
-    >
+    <section aria-labelledby="method-heading" class="max-w-prose">
       <h2 id="method-heading" class="text-xl font-semibold">
-        So entstehen die Daten
+        Woher die Daten kommen
       </h2>
-      <ol class="mt-5 grid gap-6 md:grid-cols-3">
-        {methodSteps.map((step, index) => (
-          <li class="flex gap-4">
-            <span class="bg-base-200 text-primary grid size-10 shrink-0 place-items-center rounded-full">
-              <span class:list={['iconify size-5', step.icon]} />
-            </span>
-            <div>
-              <h3 class="font-semibold">
-                <span class="text-base-content/70 tabular-nums">
-                  {index + 1}.
-                </span>{' '}
-                {step.title}
-              </h3>
-              <p class="text-base-content/70 mt-1 text-sm">{step.text}</p>
-            </div>
-          </li>
-        ))}
-      </ol>
-      <p class="text-base-content/70 border-base-300 mt-6 max-w-prose border-t pt-4 text-sm">
-        Erfasst sind nur Sitzungen mit Aufzeichnung (die Stadt hält sie etwa ein
-        Jahr vor) und nur Abstimmungen über die elektronische Tafel;
-        Abstimmungen per Handzeichen und geheime Wahlen haben keine Stimmen je
-        Person. Vorläufige Ergebnisse und Abstimmungen in Prüfung sind
-        gekennzeichnet. Quellen:{' '}
+      <p class="mt-3">
+        Die Stadt stellt jede Ratsversammlung als Video in ihre{' '}
         <a href="https://www.leipzig.de/mediathek" class="link">
           Mediathek
         </a>
-        ,{' '}
+        . Aus dem Bild der Abstimmungstafel wird jede Stimme nach ihrer Farbe
+        gelesen und mit den Protokollen im{' '}
         <a
           href="https://ratsinformation.leipzig.de/allris_leipzig_public/"
           class="link"
         >
           Ratsinformationssystem
-        </a>
-        ; mehr unter{' '}
+        </a>{' '}
+        abgeglichen. Was nicht zusammenpasst, sieht sich ein Mensch an; solange
+        das nicht geschehen ist, steht an der Abstimmung „vorläufig“ oder „in
+        Prüfung“.
+      </p>
+      <p class="text-base-content/70 mt-3 text-sm">
+        Erfasst sind nur Sitzungen, deren Aufzeichnung noch online ist (die
+        Stadt hält sie etwa ein Jahr vor), und nur Abstimmungen über die
+        elektronische Tafel. Abstimmungen per Handzeichen und geheime Wahlen
+        haben keine Stimmen je Person. Mehr unter{' '}
         <a href={sitePath('/kontakt')} class="link">
           Kontakt
         </a>
