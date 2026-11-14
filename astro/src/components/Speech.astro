@@ -113,7 +113,10 @@ function getHintMailTitle(speech: SessionSpeech): string {
   </div>
 </div>
 <div class="timeline-end timeline-box w-full">
-  <div class="max-w-prose space-y-3 text-sm leading-relaxed">
+  <div
+    class="max-w-prose space-y-3 text-sm leading-relaxed hyphens-auto"
+    lang="de"
+  >
     {(speech.transcription || '').split('\n\n').map((line) => (
       <p>{line}</p>
     ))}

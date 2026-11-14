@@ -75,3 +75,15 @@ body {
 .badge-wrap {
   @apply h-auto min-h-5 py-0.5 text-start whitespace-normal;
 }
+
+/* daisyUI lets a badge's text wrap but keeps its height, so „10 Enthaltungen“ spilled out on phones. Short badges stay
+   on one line; badges with names wrap with .badge-wrap. */
+.badge:not(.badge-wrap) {
+  white-space: nowrap;
+}
+
+/* Titles of papers and speeches hold words like „Quartiersentwicklungsgesellschaft“ and long paths; on a phone they
+   break rather than run out of their box. */
+main {
+  overflow-wrap: break-word;
+}
