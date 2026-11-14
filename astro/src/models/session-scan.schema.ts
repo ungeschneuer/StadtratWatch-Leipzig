@@ -38,6 +38,17 @@ export const sessionScanSchema = z.array(
         oparlAgendaItemId: z.url().optional(),
         oparlPaperId: z.url().optional(),
         itemNumber: z.string().optional(),
+        paperAncestors: z
+          .array(
+            z.object({
+              oparlPaperId: z.url(),
+              reference: z.string(),
+              name: z.string(),
+              paperType: z.string().nullable(),
+              paperUrl: z.string().optional(),
+            }),
+          )
+          .optional(),
       }),
       votes: z.array(
         z.object({

@@ -1,0 +1,79 @@
+---
+import { type FamilyPaper } from '@data-analysis/PaperFamilies';
+import { formatDate } from '@utils/format-date';
+
+type Props = {
+  paper: FamilyPaper;
+  currentVotingFilename: string;
+  parentName?: string;
+};
+
+const { paper, currentVotingFilename, parentName } = Astro.props as Props;
+// Amendments usually repeat the main paper's title; it is shown only where it says something new.
+const showName = paper.name && paper.name !== parentName;
+---
+
+<li>
+  <div class="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+    {paper.paperUrl ? (
+      <a
+        href={paper.paperUrl}
+        target="_blank"
+        class="link link-primary font-medium whitespace-nowrap"
+        title="Drucksache im Ratsinformationssystem der Stadt Leipzig"
+      >
+        {paper.reference}
+      </a>
+    ) : (
+      <span class="font-medium whitespace-nowrap">{paper.reference}</span>
+    )}
+    {paper.paperType && (
+      <span class="text-base-content/70 text-sm">{paper.paperType}</span>
+    )}
+  </div>
+  {showName && (
+    <p class="text-base-content/70 text-sm hyphens-auto" lang="de">
+      {paper.name}
+    </p>
+  )}
+  {paper.votings.length > 0 && (
+    <ul class="mt-1 space-y-1">
+      {paper.votings.map((voting) => {
+        const current = voting.votingFilename === currentVotingFilename;
+        return (
+          <li class="grid grid-cols-[6.5rem_minmax(0,1fr)] items-baseline gap-2 text-sm">
+            <span
+              class:list={[
+                'badge badge-soft badge-sm',
+                voting.accepted ? 'badge-success' : 'badge-error',
+              ]}
+            >
+              {voting.accepted ? 'Angenommen' : 'Abgelehnt'}
+            </span>
+            {current ? (
+              <span class="font-semibold" aria-current="page">
+                diese Abstimmung
+              </span>
+            ) : (
+              <a href={voting.url} class="link link-hover">
+                {formatDate(voting.sessionDate)}, TOP {voting.agendaItem}
+                {voting.itemNumber && `, Punkt ${voting.itemNumber}`}
+              </a>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  )}
+  {paper.children.length > 0 && (
+    <ul class="border-base-300 mt-3 ms-1 space-y-3 border-s ps-4">
+      {paper.children.map((child) => (
+        <Astro.self
+          paper={child}
+          currentVotingFilename={currentVotingFilename}
+          parentName={paper.name}
+        />
+      ))}
+    </ul>
+  )}
+</li>

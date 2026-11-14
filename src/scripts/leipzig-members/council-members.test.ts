@@ -5,10 +5,14 @@ import { deriveCouncilMembers, mergeSpans, type OparlMembership } from './counci
 const COUNCIL = 'org/council';
 const SPD = 'org/spd';
 const CDU = 'org/cdu';
+const SPORT = 'org/sport';
+const BAEDER = 'org/baeder';
 const organizations = [
   { id: COUNCIL, name: 'Ratsversammlung', classification: 'Ebene 1' },
   { id: SPD, name: 'SPD-Fraktion', classification: 'Fraktion' },
   { id: CDU, name: 'CDU-Fraktion', classification: 'Fraktion' },
+  { id: SPORT, name: 'FA Sport', classification: 'Ausschuss' },
+  { id: BAEDER, name: 'Aufsichtsrat Sportbäder Leipzig GmbH', classification: 'Aufsichtsrat' },
 ];
 const persons = [
   { id: 'p/abraham', name: 'Prof. Dr. Getu Abraham', familyName: 'Abraham', givenName: 'Getu' },
@@ -82,5 +86,20 @@ describe('mergeSpans', () => {
         { start: '2024-10-03', end: null },
       ]),
     ).toHaveLength(2);
+  });
+
+  it('lists the committees and boards a member sits in during the period, without faction and council', () => {
+    const { members } = derive([
+      membership('p/abraham', COUNCIL, '2019-09-18'),
+      membership('p/abraham', SPD, '2019-09-18'),
+      membership('p/abraham', SPORT, '2014-12-18', undefined, 'Ausschussmitglied'),
+      membership('p/abraham', BAEDER, '2010-01-21', '2015-01-21', 'Aufsichtsrat'),
+      membership('p/abraham', BAEDER, '2025-02-01', undefined, 'Vorsitzender'),
+    ]);
+
+    expect(members[0].bodyMemberships).toEqual([
+      { organizationId: SPORT, role: 'Ausschussmitglied', start: '2024-09-18', end: null },
+      { organizationId: BAEDER, role: 'Vorsitzender', start: '2025-02-01', end: null },
+    ]);
   });
 });

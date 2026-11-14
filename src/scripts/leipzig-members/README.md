@@ -33,7 +33,10 @@ OParl ID; this module says who they are, which faction they sat in on a given da
 5. **Overrides** are applied on every run: `exclude` (a membership OParl lists although the seat was not taken),
    `name`/`givenName`/`familyName` (misspellings), `party` (instead of the list) and `party` with `since` (a change of
    party from that day; one entry per change). Every entry needs `reason` and `source`.
-6. **Checks.** Exactly 71 members (70 councillors and the mayor) sit on the day of the run; each of them has a faction
+6. **Bodies.** All other memberships that last into the council membership (committees, supervisory boards,
+   associations, advisory boards, local councils), cut to it, with OParl's classification as `kind` and the role.
+   OParl keeps some older memberships open; they are taken as OParl gives them.
+7. **Checks.** Exactly 71 members (70 councillors and the mayor) sit on the day of the run; each of them has a faction
    or is `fraktionslos`; each member has a party; overrides refer to members of the period; IDs are unique. A failed
    check exits with code 1 after writing the files, so the change is visible.
 
@@ -78,6 +81,7 @@ have the fields of the StadtratWatch registry (`factionId` and `partyId` are the
 | `partySource`        | Source of the latest party: `election-list` with list name and match, or `override`          |
 | `start`, `end`       | Council membership; `null` from the start of the period or while it lasts                    |
 | `seats`              | Members of the faction or party on the day of the run                                        |
+| `bodies`             | Committees, boards and other bodies in the period: `name`, `kind`, `role`, `start`, `end`    |
 
 ## Tests
 

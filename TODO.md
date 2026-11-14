@@ -286,6 +286,26 @@ meist eine einzelne nachgezählte Stimme keinen Namen hat; widersprüchliche Pro
 - [x] **6. Prüfentscheidungen neu fassen (eigener Daten-PR, #63):** 30.09.2026 #18 Lehmann → Nein, Rest 1 Ja nicht zuzuordnen;
   28.10.2026 #10 und #18 Tafel bestätigen wie 03.09.2026 #4.
 
+## Auswertungen aus den Quellen (14.11.2026)
+
+Vorabprüfung: OParl liefert Gremien je Person (Ausschüsse, Aufsichtsräte, Zweckverbände mit Rolle und Zeitraum), je
+Vorlage die Beratungsfolge (Fachausschüsse) und die Verknüpfung über- und untergeordneter Vorlagen. 512 von 527
+Abstimmungen haben über die Ausschüsse ihrer Vorlage (oder der übergeordneten) ein Thema, die übrigen 15 sind Verfahren,
+Besetzungen oder nicht mit ihrer Vorlage verknüpft. Die Tafel-Zahl „Anwesende“ bleibt meist den ganzen Abend gleich
+(angemeldete Geräte), die abgegebenen Stimmen schwanken.
+
+- [x] **Abweichung von der Fraktion:** je Person ein Gesamtwert im Profil: Anteil der abgegebenen Stimmen, die nicht der
+  Mehrheit der eigenen Fraktion entsprechen (Gleichstand in der Fraktion zählt nicht; ohne fraktionslose Mitglieder und OB).
+- [x] **Gremien und Ausschüsse:** Mitgliedschaften aus OParl in der Wahlperiode auf der Personenseite.
+- [x] **Fraktionspaare:** Übereinstimmung der Fraktionsmehrheiten zwischen allen Fraktionen als Matrix.
+- [x] **Vorlagenfamilie:** Hauptvorlage, Neufassungen, Änderungsanträge und Verwaltungsstandpunkt als Baum mit
+  Ergebnis und Link auf der Abstimmungsseite.
+- Entschieden 14.11.2026, nicht umgesetzt:
+  - **Themen** (und damit Wortmeldungen nach Thema, Themenfelder): kein Thema definieren. Über die Fachausschüsse der
+    Vorlage wäre es für alle Abstimmungen möglich gewesen, aber jede Ableitung ist eine eigene Auswahlregel.
+  - **Beteiligung im Verlauf des Abends:** Die Tafel-Zahl „Anwesende“ zählt angemeldete Geräte und bleibt meist den
+    ganzen Abend gleich; abgegebene Stimmen trennen Abwesenheit nicht vom Nicht-Abstimmen.
+
 ## Reihenfolge (Vorschlag)
 
 1. M0 (Fork, Grundgerüst)

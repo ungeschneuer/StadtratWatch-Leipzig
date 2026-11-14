@@ -7,6 +7,7 @@ import {
 import PageLayout from '@layouts/PageLayout.astro';
 import Statistics from './_statistics.astro';
 import VotingMatrix from './_voting-matrix.astro';
+import Bodies from './_bodies.astro';
 import Speeches from './_speeches.astro';
 import MetaTags from '@components/MetaTags.astro';
 import ExtremistClassificationAlert from '@components/ExtremistClassificationAlert.astro';
@@ -193,6 +194,19 @@ const {
         person={person}
         sessions={sessionInputs}
       />
+    </div>
+
+    <input
+      role="tab"
+      class="tab"
+      aria-label="Gremien"
+      type="radio"
+      name="demo-tabs-radio"
+      :checked="currentTab === 'bodies'"
+      @change="history.pushState(null, '', '?tab=bodies'); currentTab = 'bodies'"
+    />
+    <div class="tab-content border-base-200 bg-base-100 p-3 sm:p-6">
+      <Bodies parliamentPeriod={parliamentPeriod} person={person} />
     </div>
   </div>
 </PageLayout>

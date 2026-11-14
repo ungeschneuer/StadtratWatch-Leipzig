@@ -1,0 +1,106 @@
+---
+import { type Registry } from '@models/registry';
+import { type SessionInput } from '@models/SessionInput';
+import { calcFactionAgreement } from '@data-analysis/FactionAgreement';
+import { siteRoutes } from '@utils/routes';
+
+type Props = {
+  parliamentPeriod: Registry;
+  sessionInputs: SessionInput[];
+};
+
+const { parliamentPeriod, sessionInputs } = Astro.props as Props;
+const agreement = calcFactionAgreement(parliamentPeriod, sessionInputs);
+const factions = agreement.factions;
+const routes = siteRoutes(parliamentPeriod.id);
+
+// Column heads, and on phones the row heads, need short names to fit eight columns; screen readers hear the full name.
+const SHORT_NAMES: Record<string, string> = {
+  'Bündnis 90/Die Grünen': 'Grüne',
+  'Die Freie Fraktion': 'Freie',
+  'DIE LINKE': 'Linke',
+};
+
+const rows = factions.map((rowFaction) => ({
+  faction: rowFaction,
+  cells: factions.map((columnFaction) => {
+    if (columnFaction.id === rowFaction.id) return null;
+    const { agreeing, counted } = agreement.pair(
+      rowFaction.id,
+      columnFaction.id,
+    );
+    const share = counted > 0 ? agreeing / counted : null;
+    return { share, agreeing, counted, columnName: columnFaction.name };
+  }),
+}));
+
+// One hue, stronger with more agreement. The tint stays light enough that the number keeps its contrast in light and
+// dark mode; the number, not the colour, carries the value.
+function tintOf(share: number | null): string {
+  if (share === null) return 'transparent';
+  return `color-mix(in oklab, var(--chart-series) ${Math.round(share * 40)}%, var(--color-base-100))`;
+}
+---
+
+<div class="card card-border bg-base-100">
+  <div class="card-body">
+    <h2 class="card-title">Wer stimmt mit wem?</h2>
+    <p class="text-base-content/70 mb-3 text-sm">
+      Anteil der Abstimmungen, in denen die Mehrheiten zweier Fraktionen gleich
+      gestimmt haben (Ja, Nein oder Enthaltung). Eine Abstimmung zählt nur, wenn
+      beide Fraktionen eine Mehrheit hatten; fraktionslose Mitglieder und der
+      Oberbürgermeister sind keine Fraktion.
+    </p>
+    <div class="overflow-x-auto">
+      <table class="table-sm table-pin-cols table w-auto">
+        <thead>
+          <tr>
+            <td class="bg-base-100"></td>
+            {factions.map((faction) => (
+              <th scope="col" class="static! text-right font-semibold">
+                <span aria-hidden="true">
+                  {SHORT_NAMES[faction.name] ?? faction.name}
+                </span>
+                <span class="sr-only">{faction.name}</span>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr>
+              <th scope="row" class="bg-base-100 font-normal whitespace-nowrap">
+                <a href={routes.faction(row.faction.id)} class="link-quiet">
+                  <span class="sm:hidden" aria-hidden="true">
+                    {SHORT_NAMES[row.faction.name] ?? row.faction.name}
+                  </span>
+                  <span class="max-sm:sr-only">{row.faction.name}</span>
+                </a>
+              </th>
+              {row.cells.map((cell) =>
+                cell === null ? (
+                  <td
+                    class="text-base-content/70 text-right"
+                    aria-label="gleiche Fraktion"
+                  >
+                    –
+                  </td>
+                ) : (
+                  <td
+                    class="text-right whitespace-nowrap tabular-nums"
+                    style={`background-color: ${tintOf(cell.share)};`}
+                    title={`${row.faction.name} und ${cell.columnName}: ${cell.agreeing} von ${cell.counted} Abstimmungen gleich`}
+                  >
+                    {cell.share === null
+                      ? '–'
+                      : `${Math.round(cell.share * 100)} %`}
+                  </td>
+                ),
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

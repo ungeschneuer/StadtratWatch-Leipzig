@@ -15,6 +15,9 @@ export type LeipzigPaper = {
   web: string | null;
   // Who submitted it: a faction's office or a part of the administration (OParl `underDirectionOf`).
   originators: PaperOriginator[];
+  // The paper it belongs to: the original of a revision, the main paper of an amendment. Missing in files written
+  // before 14.11.2026; addPaperAncestors fills it in.
+  superordinatedPaperIds?: string[];
 };
 
 // votings: per session day, the vote's index in the scan → the OParl paper it was about.
@@ -32,6 +35,7 @@ type OparlPaper = {
   web?: string;
   underDirectionOf?: string[];
   subordinatedPaper?: string[];
+  superordinatedPaper?: string[];
   deleted?: boolean;
 };
 
@@ -91,7 +95,32 @@ export async function toLeipzigPaper(paper: OparlPaper, lookup: PaperLookup): Pr
     date: paper.date ?? null,
     web: paper.web ?? null,
     originators,
+    superordinatedPaperIds: paper.superordinatedPaper ?? [],
   };
+}
+
+// Revisions, amendments and the administration's statement belong to a main paper; the site shows them together.
+// Every paper gets its relations, and every paper above a voted one is added, voted or not.
+export async function addPaperAncestors(file: PapersFile, lookup: PaperLookup): Promise<number> {
+  let added = 0;
+  const pending = Object.keys(file.papers);
+  while (pending.length > 0) {
+    const paperId = pending.shift() as string;
+    const known = file.papers[paperId];
+    if (!known || !known.superordinatedPaperIds) {
+      const paper = await lookup.paper(paperId);
+      if (!known) added++;
+      file.papers[paperId] = {
+        ...(await toLeipzigPaper(paper, lookup)),
+        ...(known ?? {}),
+        superordinatedPaperIds: paper.superordinatedPaper ?? [],
+      };
+    }
+    for (const parentId of file.papers[paperId].superordinatedPaperIds ?? []) {
+      if (!file.papers[parentId]) pending.push(parentId);
+    }
+  }
+  return added;
 }
 
 // Votes of a session that do not have a paper yet; a vote once linked keeps its paper, so a run fetches only new ones.
