@@ -1,0 +1,62 @@
+---
+import { type SessionScanItem } from '@models/session-scan';
+import { formatDate } from '@utils/format-date';
+import { sitePath } from '@utils/site-path';
+import { CONTACT_EMAIL, SOURCE_REPOSITORY_URL } from '@utils/site-config';
+import { reviewCaseNumberOf, votingReportLinks } from '@utils/voting-report';
+
+type Props = {
+  voting: SessionScanItem;
+  sessionId: string;
+  sessionDate: string;
+};
+
+const { voting, sessionId, sessionDate } = Astro.props as Props;
+const { issueUrl, mailUrl } = votingReportLinks({
+  pageUrl: new URL(Astro.url.pathname, Astro.site).href,
+  sessionDate: formatDate(sessionDate),
+  agendaItem: voting.votingSubject.agendaItem,
+  ...(voting.votingSubject.itemNumber
+    ? { itemNumber: voting.votingSubject.itemNumber }
+    : {}),
+  paperReference: voting.votingSubject.motionId,
+  title: voting.votingSubject.title,
+  repositoryUrl: SOURCE_REPOSITORY_URL,
+  contactEmail: CONTACT_EMAIL,
+});
+const caseNumber = voting.reviewCase
+  ? reviewCaseNumberOf(voting.votingFilename)
+  : null;
+const reviewUrl =
+  caseNumber === null
+    ? null
+    : `${sitePath(`/review/leipzig/${sessionId}`)}#fall-${caseNumber}`;
+---
+
+<section aria-labelledby="voting-report-heading" class="max-w-prose text-sm">
+  <h2 id="voting-report-heading" class="font-semibold">
+    Stimmt hier etwas nicht?
+  </h2>
+  <p class="mt-1">
+    Schreiben Sie einen{' '}
+    <a href={issueUrl} target="_blank" rel="noopener" class="link">
+      Hinweis auf GitHub
+    </a>{' '}
+    oder eine{' '}
+    <a href={mailUrl} class="link whitespace-nowrap">
+      E-Mail
+    </a>
+    , am besten mit dem Zeitpunkt im Video oder der Fundstelle im Protokoll. Die
+    Angaben zu dieser Abstimmung sind schon eingetragen.
+  </p>
+  {reviewUrl && (
+    <p class="mt-2">
+      Diese Abstimmung war ein Prüffall: Ihre Belege und die Entscheidung stehen
+      in der{' '}
+      <a href={reviewUrl} class="link">
+        Prüfoberfläche
+      </a>
+      .
+    </p>
+  )}
+</section>

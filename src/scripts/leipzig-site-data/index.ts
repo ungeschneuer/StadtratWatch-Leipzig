@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import process from 'node:process';
 
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
+import type { ReviewCasesFile } from '@srw-astro/models/leipzig-review';
 
 import type { PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
@@ -45,7 +46,9 @@ try {
     const sessionDir = join(args.dataDir, recording.sessionId);
     const votings = await readJson<SessionVotingsFile>(join(sessionDir, `votings-${recording.sessionId}.json`));
     if (!votings) continue;
-    const result = toSessionScan(recording.sessionId, votings.votings, members, papers, recusals);
+    const reviewCases = await readJson<ReviewCasesFile>(join(sessionDir, `review-${recording.sessionId}.json`));
+    const reviewCaseIndices = new Set(reviewCases?.cases.map((reviewCase) => reviewCase.votingIndex) ?? []);
+    const result = toSessionScan(recording.sessionId, votings.votings, members, papers, recusals, reviewCaseIndices);
     problems.push(...result.problems);
     published += result.scan.length;
     scans.set(recording.sessionId, result.scan);

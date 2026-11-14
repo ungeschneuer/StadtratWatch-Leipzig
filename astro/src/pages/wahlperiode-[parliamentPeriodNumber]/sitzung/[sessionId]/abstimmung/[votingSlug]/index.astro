@@ -9,6 +9,7 @@ import {
 import MetaTags from '@components/MetaTags.astro';
 import VotingReviewNotice from '@components/VotingReviewNotice.astro';
 import VoteBadge from '@components/VoteBadge.astro';
+import VotingReport from '@components/VotingReport.astro';
 import PaperFamilyTree from '@components/PaperFamilyTree.astro';
 import {
   familyBranchOf,
@@ -381,5 +382,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
         videoTimestamp={voting.videoTimestamp}
       />
     )}
+
+    <VotingReport
+      voting={voting}
+      sessionId={sessionInput.session.id}
+      sessionDate={sessionInput.session.date}
+    />
   </div>
 </PageLayout>

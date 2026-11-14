@@ -15,6 +15,8 @@ export type SessionScanItem = {
   recusedPersons?: string[];
   // A reviewer found the vote cannot be settled: the votes are the board's, the outcome follows the official result.
   unresolved?: UnresolvedVoting;
+  // The vote is a case of the review UI (a check failed), open or decided; its page links there.
+  reviewCase?: boolean;
 };
 
 export type UnresolvedVoting = {
