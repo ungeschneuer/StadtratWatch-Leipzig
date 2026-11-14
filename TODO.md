@@ -237,7 +237,7 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 - [x] **Abstimmungen ohne Tafel** (Handzeichen, geheime Wahl): werden nicht aufgenommen (12.11.2026).
 - [x] **Sitzungen ohne Video** (18.09.2024 bis Anfang Dezember 2025): werden nicht aufgenommen (12.11.2026).
 - [x] **Vorlagen auf der Seite:** keine eigenen Seiten; Abstimmungen verlinken die Drucksache im Ratsinformationssystem (12.11.2026).
-- [x] **Erforderliche Mehrheit:** aus dem Titel nach SächsGemO, Hauptsatzung, GO und Ehrenbürgersatzung; Regelfall Ja > Nein, Enthaltungen zählen nicht, Gleichstand abgelehnt; keine Zwei-Drittel-Regel für die Tagesordnung (Recherche 12.11.2026). Offen: Änderungsanträge zur Hauptsatzung, Vorlagen mit mehreren Beschlusspunkten.
+- [x] **Erforderliche Mehrheit:** aus dem Titel nach SächsGemO, Hauptsatzung, GO und Ehrenbürgersatzung; Regelfall Ja > Nein, Enthaltungen zählen nicht, Gleichstand abgelehnt; keine Zwei-Drittel-Regel für die Tagesordnung (Recherche 12.11.2026). Entschieden 14.11.2026: Änderungsanträge zur Hauptsatzung einfache Mehrheit; Beschlusspunkte einer Vorlage über `majority-overrides.json`.
 
 ### Reden (M5)
 - [x] **Rechte am Verlaufsprotokoll** (recherchiert 12.11.2026, keine Rechtsberatung):
@@ -305,6 +305,19 @@ Besetzungen oder nicht mit ihrer Vorlage verknüpft. Die Tafel-Zahl „Anwesende
     Vorlage wäre es für alle Abstimmungen möglich gewesen, aber jede Ableitung ist eine eigene Auswahlregel.
   - **Beteiligung im Verlauf des Abends:** Die Tafel-Zahl „Anwesende“ zählt angemeldete Geräte und bleibt meist den
     ganzen Abend gleich; abgegebene Stimmen trennen Abwesenheit nicht vom Nicht-Abstimmen.
+
+## Qualität und Betrieb (14.11.2026)
+
+- [ ] **6. Meta-Tags nur einmal:** Personen-, Fraktions-, Partei-, Sitzungs- und Abstimmungsseiten haben je zwei
+  `<title>`, Beschreibungen und `og:title`; die Standardwerte nur noch als Ersatz. Standardbeschreibung ohne „ - “.
+- [ ] **8. Vorschaubilder (`og:image`):** beim Build erzeugte Bilder mit Text, ohne Tafelbilder (Zitatrecht).
+- [ ] **9. Ende-zu-Ende- und Barrierefreiheitstests:** Playwright mit axe-core über alle Seitentypen, hell und dunkel,
+  Telefon und Desktop, in der CI.
+- [x] **10. Commit-Adresse des ALLRIS-Runners:** nicht mehr Benutzer und Host des Servers; bei jedem Lauf gesetzt.
+- [x] **11. Überwachung des Runners:** Ausfall wird gemeldet, auch in der Sommerpause ohne Sitzungen.
+- [x] **12. Offene Mehrheitsregeln:** Beschlusspunkt einer Vorlage, der die Hauptsatzung ändert (25.02.2026 TOP 19.1,
+  Punkt 3), mit Mehrheit aller Mitglieder; Aufzählungen von Punkten („Punkte 1, 2 und 4“, „5 bis 7“) erkennen;
+  Änderungsanträge zur Hauptsatzung entscheiden und dokumentieren.
 
 ## Reihenfolge (Vorschlag)
 

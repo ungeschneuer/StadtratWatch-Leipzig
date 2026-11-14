@@ -3,10 +3,11 @@ import type { MajorityRequirement } from '@srw-astro/models/session-scan';
 // Leipzig decides by a majority of yes over no; the exceptions below are the ones a vote of the Ratsversammlung can
 // meet (docs/research/2026-11-12-mehrheitserfordernisse-leipzig.md). Appointments and delegations („Bestellung“,
 // „Entsendung“) are resolutions, not elections: the city declares them passed with fewer yes votes than half of those
-// present (02.09.2026 TOP 9.4, 31:29:0 with 66 present). Whether an amendment to the Hauptsatzung already needs the
-// majority of all members is open, so amendments keep the simple majority. A paper that changes the Hauptsatzung only in
-// one of its points („Grundsatzbeschluss … und Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung“, voted on
-// point by point) does not say which vote is that point; only a title that starts with the change counts. Petitions
+// present (02.09.2026 TOP 9.4, 31:29:0 with 66 present). An amendment to a change of the Hauptsatzung needs the simple
+// majority; the majority of all members is required for the resolution on the statute (assessment of 14.11.2026, see
+// the research note). A paper that changes the Hauptsatzung only in one of its points („Grundsatzbeschluss … und
+// Satzungsbeschluss zur verbundenen Änderung der Hauptsatzung“, voted on point by point) does not say which vote is that
+// point; only a title that starts with the change counts here, the point is entered in majority-overrides.json. Petitions
 // („VIII-P-…“) are ordinary resolutions even when they ask for an honorary citizenship.
 type QualifiedMajorityRule = { requirement: MajorityRequirement; title: RegExp };
 

@@ -21,3 +21,7 @@
 == Mitglieder
 
 `leipzig-members` (täglich) gleicht OParl ab und öffnet bei Änderungen einen Pull Request von `update/leipzig-members`; Mehrdeutigkeiten werden Issues.
+
+== Überwachung des ALLRIS-Runners
+
+Der ALLRIS-Runner läuft außerhalb von GitHub. `leipzig-minutes-watch` (wöchentlich, montags) prüft auf `data/leipzig-votings`, ob zu jeder Sitzung mit Abstimmungen die Unterlagen aus ALLRIS da sind: Ergebnisse nach 14 Tagen, Verlaufsprotokoll nach 45 Tagen, Beschlussprotokoll nach 75 Tagen. Fehlt etwas, hält der Workflow ein Issue mit dem Label `allris-runner` aktuell, sonst schließt er es. In der Sommerpause gibt es keine Sitzungen und damit nichts Überfälliges.

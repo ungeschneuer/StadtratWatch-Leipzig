@@ -78,7 +78,7 @@ Optional in `~/.config/stadtratwatch-leipzig.env` (systemd) bzw. `<ordner>/env` 
 | Variable | Bedeutung |
 |---|---|
 | `LEIPZIG_FAILURE_COMMAND` | Befehl bei einem Fehler, die Meldung steht in `$LEIPZIG_FAILURE_MESSAGE` (z. B. `curl -fsS -d "$LEIPZIG_FAILURE_MESSAGE" https://ntfy.sh/<thema>`) |
-| `LEIPZIG_COMMIT_NAME`, `LEIPZIG_COMMIT_EMAIL` | Git-Identität der Commits beim ersten Klonen |
+| `LEIPZIG_COMMIT_NAME`, `LEIPZIG_COMMIT_EMAIL` | Git-Identität der Commits, bei jedem Lauf gesetzt; Standard: die GitHub-noreply-Adresse des Betreibers |
 | `LEIPZIG_DATA_BRANCH` | Daten-Branch, Standard `data/leipzig-votings` |
 
 `LEIPZIG_MINUTES_TIME` (Standard `07:17`) beim Aufruf von `install.sh` oder `install-cron.sh` setzt die Uhrzeit.

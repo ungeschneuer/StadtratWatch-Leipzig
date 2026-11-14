@@ -1,0 +1,62 @@
+name: Leipzig minutes watch
+
+# The ALLRIS runner fetches the minutes on the operator's server, outside GitHub. Once a week this workflow lists the
+# sessions whose minutes are overdue and keeps one issue up to date: opened when something is late, closed when nothing
+# is. In the summer break there are no sessions, so nothing can be late.
+
+on:
+  schedule:
+    - cron: '37 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch:
+    name: Check overdue minutes
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Check out the data branch
+        uses: actions/checkout@v7
+        with:
+          ref: data/leipzig-votings
+          path: data-branch
+          sparse-checkout: data/leipzig-8
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: List overdue minutes
+        run: bun src/scripts/leipzig-minutes-watch/index.ts -d data-branch/data/leipzig-8/ > overdue.md
+
+      - name: Update the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          LEIPZIG_REVIEWERS: ${{ vars.LEIPZIG_REVIEWERS }}
+        run: |
+          label=allris-runner
+          title='Niederschriften aus ALLRIS überfällig'
+          gh label create "$label" --color d93f0b --description 'Überwachung des ALLRIS-Runners' --force
+          issue="$(gh issue list --label "$label" --state open --json number --jq '.[0].number // empty')"
+          if [ -s overdue.md ]; then
+            if [ -n "$issue" ]; then
+              gh issue edit "$issue" --body-file overdue.md
+            else
+              assignees=()
+              [ -n "${LEIPZIG_REVIEWERS:-}" ] && assignees=(--assignee "$LEIPZIG_REVIEWERS")
+              gh issue create --title "$title" --label "$label" --body-file overdue.md "${assignees[@]}"
+            fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment 'Alle Niederschriften sind innerhalb der Fristen da.'
+          fi

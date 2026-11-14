@@ -16,7 +16,7 @@ import { dataPackage, type SessionScans, sessionsToCsv, votesToCsv, votingsToCsv
 import { buildRegistry, type PartyClassification, type RegistrySessionInput } from './registry.ts';
 import { toSessionScan } from './session-scan.ts';
 import { toSessionSpeeches } from './session-speeches.ts';
-import type { Recusal } from './special-cases.ts';
+import type { MajorityOverride, Recusal } from './special-cases.ts';
 
 const args = parseCliArgs(Bun.argv.slice(2));
 
@@ -36,6 +36,7 @@ try {
 
   // Editorial, kept by hand: members who declared a conflict of interest, with the words of the Verlaufsprotokoll.
   const recusals = (await readJson<Recusal[]>(join(args.dataDir, 'recusals.json'))) ?? [];
+  const majorityOverrides = (await readJson<MajorityOverride[]>(join(args.dataDir, 'majority-overrides.json'))) ?? [];
   const problems: string[] = [];
   const warnings: string[] = [];
   const sessions: RegistrySessionInput[] = [];
@@ -48,7 +49,15 @@ try {
     if (!votings) continue;
     const reviewCases = await readJson<ReviewCasesFile>(join(sessionDir, `review-${recording.sessionId}.json`));
     const reviewCaseIndices = new Set(reviewCases?.cases.map((reviewCase) => reviewCase.votingIndex) ?? []);
-    const result = toSessionScan(recording.sessionId, votings.votings, members, papers, recusals, reviewCaseIndices);
+    const result = toSessionScan(
+      recording.sessionId,
+      votings.votings,
+      members,
+      papers,
+      recusals,
+      reviewCaseIndices,
+      majorityOverrides,
+    );
     problems.push(...result.problems);
     published += result.scan.length;
     scans.set(recording.sessionId, result.scan);
