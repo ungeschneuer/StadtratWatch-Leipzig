@@ -140,16 +140,18 @@ function countOf(count: number, singular: string, plural: string): string {
               <li>
                 <a
                   href={routes.faction(faction.id)}
-                  class="hover:bg-base-200 -mx-2 grid grid-cols-[7.5rem_minmax(0,1fr)_auto] sm:grid-cols-[10rem_minmax(0,1fr)_auto] items-center gap-3 rounded-field px-2 py-1"
+                  class="hover:bg-base-200 -mx-2 grid grid-cols-[7rem_minmax(0,1fr)_auto] sm:grid-cols-[10rem_minmax(0,1fr)_auto] items-center gap-3 rounded-field px-2 py-1"
                 >
-                  <span class="text-sm leading-tight">{faction.name}</span>
+                  <span class="text-sm leading-tight hyphens-auto" lang="de">
+                    {faction.name}
+                  </span>
                   <span
-                    class="flex flex-wrap gap-[3px] sm:gap-1"
+                    class="flex flex-wrap gap-[2px] min-[400px]:gap-[3px] sm:gap-1"
                     aria-hidden="true"
                   >
                     {Array.from({ length: faction.seats }, () => (
                       <span
-                        class="size-2 rounded-full sm:size-2.5"
+                        class="size-[7px] rounded-full min-[400px]:size-2 sm:size-2.5"
                         style={`background-color: ${faction.color};`}
                       />
                     ))}

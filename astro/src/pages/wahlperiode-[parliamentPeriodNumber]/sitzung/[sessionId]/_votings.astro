@@ -134,7 +134,9 @@ function voteCounts(votes: { vote: string }[]) {
               </span>
               <VotingReviewBadge reviewStatus={voting.reviewStatus} />
             </div>
-            <div class="text-base">{voting.title}</div>
+            <div class="text-base hyphens-auto" lang="de">
+              {voting.title}
+            </div>
             {voting.authors.length > 0 && (
               <div class="flex flex-wrap gap-1">
                 {voting.authors.map((author) => (
