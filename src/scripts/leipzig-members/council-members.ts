@@ -29,12 +29,16 @@ export type OparlOrganization = {
 // organizationId null: no faction (fraktionslos), or the mayor, who belongs to none.
 export type FactionPeriod = { organizationId: string | null; start: string; end: string | null };
 
+// A committee, supervisory board or other body of the council the member sat in during the period.
+export type BodyMembership = { organizationId: string; role: string | null; start: string; end: string | null };
+
 export type CouncilMember = {
   person: OparlPerson;
   isMayor: boolean;
   start: string;
   end: string | null;
   factionPeriods: FactionPeriod[];
+  bodyMemberships: BodyMembership[];
 };
 
 export type CouncilMembersResult = { members: CouncilMember[]; problems: string[] };
@@ -86,7 +90,27 @@ export function deriveCouncilMembers(
     for (const overlap of overlappingPairs(factionSpans)) {
       problems.push(`${person.name}: faction memberships overlap (${overlap})`);
     }
-    members.push({ person, isMayor, ...council, factionPeriods: withGapsFilled(factionSpans, council) });
+    const bodyMemberships = active
+      .filter(
+        (membership) =>
+          membership.person === personId &&
+          membership.organization !== councilOrganizationId &&
+          !factionIds.has(membership.organization),
+      )
+      .map((membership) => ({
+        organizationId: membership.organization,
+        role: membership.role ?? null,
+        ...clip(spanOf(membership), council.start, council.end),
+      }))
+      .filter((span) => span.end === null || span.start <= span.end)
+      .sort((a, b) => a.start.localeCompare(b.start) || a.organizationId.localeCompare(b.organizationId));
+    members.push({
+      person,
+      isMayor,
+      ...council,
+      factionPeriods: withGapsFilled(factionSpans, council),
+      bodyMemberships,
+    });
   }
   return { members: members.sort((a, b) => compareNamesForSorting(a.person.name, b.person.name)), problems };
 }

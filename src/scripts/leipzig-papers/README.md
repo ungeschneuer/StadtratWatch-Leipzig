@@ -15,6 +15,11 @@ takes the submitters as the authors of a motion and the exact reference from it.
 3. The submitters are the organizations in `underDirectionOf`: the office of a faction („Geschäftsstelle der Fraktion
    Bündnis 90/Die Grünen“) or of the administration („02.8 Dezernat Wirtschaft, Arbeit und Digitales“).
 
+4. **Family.** Each paper keeps the paper it belongs to (`superordinatedPaper`: the original of a revision, the main
+   paper of an amendment). Papers above a voted one are added too, voted or not, so the site can show a main paper with
+   its revisions, amendments and the administration's statement. Papers written before keep their data and only get
+   the relation.
+
 A vote once linked keeps its paper, so a run fetches only votes of new sessions or votes linked to no paper so far.
 Discarded votes are not linked.
 
@@ -41,10 +46,10 @@ The workflow `leipzig-votings.yml` runs it after the extraction.
 
 `data/leipzig-8/papers.json`:
 
-| Field     | Content                                                                                       |
-| --------- | --------------------------------------------------------------------------------------------- |
-| `papers`  | Per OParl paper ID: `reference`, `name`, `paperType`, `date`, `web`, `originators` (ID, name) |
-| `votings` | Per session day and vote index in the scan: the OParl paper ID                                |
+| Field     | Content                                                                                                                 |
+| --------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `papers`  | Per OParl paper ID: `reference`, `name`, `paperType`, `date`, `web`, `originators` (ID, name), `superordinatedPaperIds` |
+| `votings` | Per session day and vote index in the scan: the OParl paper ID                                                          |
 
 OParl data: CC BY 4.0, Stadt Leipzig.
 

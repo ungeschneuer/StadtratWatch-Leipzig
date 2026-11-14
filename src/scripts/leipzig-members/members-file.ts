@@ -1,6 +1,7 @@
 import {
   FACTIONLESS_ID,
   factionOn,
+  type LeipzigBodyMembership,
   type LeipzigFaction,
   type LeipzigMembersFile,
   type LeipzigMembersSource,
@@ -108,6 +109,9 @@ export function buildMembersFile(inputs: MembersInputs): { file: LeipzigMembersF
         source,
       })),
       partySource: latestParty.source,
+      ...(member.bodyMemberships.length > 0
+        ? { bodies: member.bodyMemberships.map((membership) => bodyOf(membership, organizationsById)) }
+        : {}),
     });
   }
 
@@ -134,6 +138,21 @@ export function buildMembersFile(inputs: MembersInputs): { file: LeipzigMembersF
       persons,
     },
     problems,
+  };
+}
+
+function bodyOf(
+  membership: CouncilMember['bodyMemberships'][number],
+  organizationsById: Map<string, OparlOrganization>,
+): LeipzigBodyMembership {
+  const organization = organizationsById.get(membership.organizationId);
+  return {
+    oparlId: membership.organizationId,
+    name: organization?.name ?? membership.organizationId,
+    kind: organization?.classification ?? '',
+    role: membership.role,
+    start: membership.start,
+    end: membership.end,
   };
 }
 

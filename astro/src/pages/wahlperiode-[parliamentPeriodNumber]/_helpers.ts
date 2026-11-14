@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import type { SessionInput } from '@models/SessionInput';
 import { parliamentPeriodNumberOf, votingSlugs } from '@utils/routes';
 import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
+import { buildPaperFamilies } from '@data-analysis/PaperFamilies';
 
 const getParliamentPeriodStaticPaths = (async () => {
   const parliamentPeriods = await getCollection('parliamentPeriods');
@@ -86,6 +87,7 @@ export const getParliamentPeriodWithSessionPaths = async () => {
     await getParliamentPeriodWithSessionsPaths();
   return parliamentPeriodWithSessionsStaticPaths.flatMap((path) => {
     const { parliamentPeriod, sessionInputs } = path.props;
+    const paperFamilies = buildPaperFamilies(parliamentPeriod, sessionInputs);
     const shownPersonIds = personsWithRecordedVotes(
       parliamentPeriod,
       sessionInputs,
@@ -99,6 +101,7 @@ export const getParliamentPeriodWithSessionPaths = async () => {
         parliamentPeriod,
         sessionInput,
         shownPersonIds,
+        paperFamilies,
       },
     }));
   });
@@ -155,7 +158,8 @@ export const getParliamentPeriodWithSessionAndVotingPaths = async () => {
   const paths = await getParliamentPeriodWithSessionPaths();
 
   return paths.flatMap((path) => {
-    const { parliamentPeriod, sessionInput, shownPersonIds } = path.props;
+    const { parliamentPeriod, sessionInput, shownPersonIds, paperFamilies } =
+      path.props;
 
     const slugs = votingSlugs(sessionInput.votings);
     return sessionInput.votings.map((voting) => {
@@ -170,6 +174,9 @@ export const getParliamentPeriodWithSessionAndVotingPaths = async () => {
           sessionInput,
           voting,
           shownPersonIds,
+          paperFamily: voting.votingSubject.oparlPaperId
+            ? (paperFamilies.get(voting.votingSubject.oparlPaperId) ?? null)
+            : null,
         },
       };
     });

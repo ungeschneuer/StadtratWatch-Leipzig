@@ -54,7 +54,7 @@ export function buildRegistry(
     ),
     // The history lets the site count each vote for the faction and party of its session day.
     persons: members.persons.map(
-      ({ id, oparlId, name, factionId, partyId, start, end, factionMemberships, partyMemberships }) => ({
+      ({ id, oparlId, name, factionId, partyId, start, end, factionMemberships, partyMemberships, bodies }) => ({
         id,
         oparlId,
         name,
@@ -68,6 +68,9 @@ export function buildRegistry(
           start: from,
           end: until,
         })),
+        ...(bodies?.length
+          ? { bodies: bodies.map(({ name, kind, role, start, end }) => ({ name, kind, role, start, end })) }
+          : {}),
       }),
     ),
   };

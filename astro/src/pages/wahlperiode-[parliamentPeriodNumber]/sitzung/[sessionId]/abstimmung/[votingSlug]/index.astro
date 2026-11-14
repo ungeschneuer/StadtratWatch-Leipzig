@@ -9,6 +9,11 @@ import {
 import MetaTags from '@components/MetaTags.astro';
 import VotingReviewNotice from '@components/VotingReviewNotice.astro';
 import VoteBadge from '@components/VoteBadge.astro';
+import PaperFamilyTree from '@components/PaperFamilyTree.astro';
+import {
+  familyBranchOf,
+  familyVotingCount,
+} from '@data-analysis/PaperFamilies';
 import { describeUnassignedVotes } from '@utils/unassigned-votes';
 import VotingQuotationImage from '@components/VotingQuotationImage.astro';
 import { quotationImageUrl } from '@utils/quotation-image';
@@ -28,7 +33,7 @@ import {
 export const getStaticPaths = getParliamentPeriodWithSessionAndVotingPaths;
 
 const { sessionId } = Astro.params;
-const { parliamentPeriod, sessionInput, voting, shownPersonIds } =
+const { parliamentPeriod, sessionInput, voting, shownPersonIds, paperFamily } =
   Astro.props as ParliamentPeriodWithSessionAndVotingProps;
 const parliamentPeriodId = parliamentPeriod.id;
 const mayorDecided = decidedByMayor(
@@ -47,6 +52,10 @@ const unassignedVotesText = voting.unresolved?.unassignedCounts
   ? describeUnassignedVotes(voting.unresolved.unassignedCounts)
   : '';
 const possibleVoters = voting.unresolved?.possibleVoters ?? [];
+const familyBranch =
+  paperFamily && voting.votingSubject.oparlPaperId
+    ? familyBranchOf(paperFamily, voting.votingSubject.oparlPaperId)
+    : null;
 
 const breadcrumbItems = [
   {
@@ -288,6 +297,48 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
         </div>
       </div>
     </div>
+
+    {familyBranch && familyVotingCount(familyBranch.branch) > 1 && (
+      <section
+        class="card bg-base-100 border-base-300 border"
+        aria-labelledby="paper-family-heading"
+      >
+        <div class="card-body">
+          <h2 id="paper-family-heading" class="card-title">
+            Vorlage und Änderungen
+          </h2>
+          <p class="text-base-content/70 text-sm">
+            Die Hauptvorlage mit Neufassungen, Änderungsanträgen und
+            Verwaltungsstandpunkt, wie das Ratsinformationssystem sie verknüpft,
+            und das Ergebnis jeder Abstimmung darüber.
+          </p>
+          {familyBranch.path.length > 0 && (
+            <p class="text-sm">
+              Gehört zu{' '}
+              {familyBranch.path.map((paper, index) => (
+                <>
+                  {index > 0 && ' › '}
+                  {paper.paperUrl ? (
+                    <a href={paper.paperUrl} target="_blank" class="link">
+                      {paper.reference}
+                    </a>
+                  ) : (
+                    paper.reference
+                  )}{' '}
+                  ({paper.name})
+                </>
+              ))}
+            </p>
+          )}
+          <ul class="mt-2">
+            <PaperFamilyTree
+              paper={familyBranch.branch}
+              currentVotingFilename={voting.votingFilename}
+            />
+          </ul>
+        </div>
+      </section>
+    )}
 
     {/* Every vote names all 71 members; in the search index they would bury the person pages under 500 votes. */}
     <div class="@container" data-pagefind-ignore>

@@ -12,6 +12,7 @@ import {
   calcAbstentionRateHistoryOfPerson,
   calcAbstentionRateOfPerson,
 } from '@data-analysis/AbstentionRate';
+import { calcFactionDeviationOfPerson } from '@data-analysis/FactionDeviation';
 
 type Props = {
   parliamentPeriod: Registry;
@@ -37,6 +38,15 @@ const participationRateHistory = calcParticipationRateHistoryOfPerson(
   sessionInputs,
 );
 const abstentionRate = calcAbstentionRateOfPerson(person, sessionInputs);
+const factionDeviation = calcFactionDeviationOfPerson(
+  parliamentPeriod,
+  person,
+  sessionInputs,
+);
+const factionDeviationRate =
+  factionDeviation && factionDeviation.counted > 0
+    ? factionDeviation.deviating / factionDeviation.counted
+    : null;
 const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
   person,
   sessionInputs,
@@ -96,6 +106,24 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
       <canvas id="abstention-chart"></canvas>
     </div>
   </div>
+
+  {factionDeviation && (
+    <div id="faction-deviation" class="card card-border bg-base-100">
+      <div class="card-body space-y-3">
+        <div class="card-title flex justify-between">
+          <div>Abweichung von der Fraktion</div>
+          <span class="text-3xl">{formatPercentage(factionDeviationRate)}</span>
+        </div>
+        <p class="text-base-content/70 text-sm">
+          Anteil der abgegebenen Stimmen, die nicht der Mehrheit der eigenen
+          Fraktion entsprachen ({factionDeviation.deviating} von{' '}
+          {factionDeviation.counted}). Auch eine Enthaltung zählt, wenn die
+          Fraktion mehrheitlich mit Ja oder Nein stimmte; ist die Fraktion
+          gespalten, zählt die Abstimmung nicht.
+        </p>
+      </div>
+    </div>
+  )}
 </div>
 
 <script>

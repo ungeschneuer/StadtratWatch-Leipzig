@@ -1,0 +1,73 @@
+---
+import { type Registry, type RegistryPerson } from '@models/registry';
+import { formatPeriod } from '@utils/format-period';
+
+type Props = {
+  parliamentPeriod: Registry;
+  person: RegistryPerson;
+};
+
+const { person } = Astro.props as Props;
+
+// OParl names each body's kind; the most common ones come first, the rest keep the order OParl gives.
+const KIND_ORDER = ['Ausschuss', 'Aufsichtsrat', 'Zweckverband'];
+const KIND_LABELS: Record<string, string> = {
+  Ausschuss: 'Ausschüsse',
+  Aufsichtsrat: 'Aufsichtsräte',
+  Zweckverband: 'Zweckverbände',
+};
+
+const groups = [
+  ...Map.groupBy(person.bodies ?? [], (body) => body.kind || 'Weitere Gremien'),
+]
+  .map(([kind, bodies]) => ({
+    kind,
+    label: KIND_LABELS[kind] ?? kind,
+    bodies: bodies.toSorted((a, b) => a.name.localeCompare(b.name, 'de')),
+  }))
+  .toSorted(
+    (a, b) =>
+      (KIND_ORDER.indexOf(a.kind) + 1 || 99) -
+        (KIND_ORDER.indexOf(b.kind) + 1 || 99) ||
+      a.label.localeCompare(b.label, 'de'),
+  );
+
+// A membership that lasted the whole period needs no dates; one that started or ended within it does.
+function periodOf(start: string, end: string | null): string {
+  return start === person.start || (person.start === null && !end)
+    ? ''
+    : formatPeriod(start, end);
+}
+---
+
+{groups.length === 0 ? (
+  <p class="text-base-content/70">
+    Für diese Person nennt das Ratsinformationssystem keine Gremien in dieser
+    Wahlperiode.
+  </p>
+) : (
+  <div class="space-y-6">
+    {groups.map((group) => (
+      <section>
+        <h2 class="mb-2 font-semibold">{group.label}</h2>
+        <ul class="divide-base-300 divide-y">
+          {group.bodies.map((body) => (
+            <li class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 py-2">
+              <span>{body.name}</span>
+              <span class="text-base-content/70 text-sm">
+                {[body.role, periodOf(body.start, body.end)]
+                  .filter(Boolean)
+                  .join(' · ')}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+    <p class="text-base-content/70 text-sm">
+      Quelle: Mitgliedschaften im Ratsinformationssystem der Stadt Leipzig
+      (OParl). Die Stadt pflegt sie selbst; manche ältere Mitgliedschaft ist
+      dort ohne Ende eingetragen.
+    </p>
+  </div>
+)}

@@ -1,5 +1,6 @@
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 import type {
+  PaperAncestor,
   SessionScan,
   SessionScanItem,
   UnresolvedVoting,
@@ -66,6 +67,7 @@ export function toSessionScan(
           authors: paper ? authorsOf(paper, members) : [],
           ...(paper?.web ? { paperUrl: paper.web } : {}),
           ...oparlIdsOf(voting, paper),
+          ...paperAncestorsOf(paper, papers),
           ...withItemNumber(itemNumberOf(voting)),
         },
         votes,
@@ -151,6 +153,30 @@ function oparlIdsOf(
     ...(voting.oparl && !voting.oparl.isParentAgendaItem ? { oparlAgendaItemId: voting.oparl.agendaItemId } : {}),
     ...(paper ? { oparlPaperId: paper.oparlId } : {}),
   };
+}
+
+// The chain of papers above the voted one, main paper first, so the site can show a paper's family: the original of a
+// revision, the main paper of an amendment.
+function paperAncestorsOf(
+  paper: LeipzigPaper | undefined,
+  papers: PapersFile | null,
+): { paperAncestors?: PaperAncestor[] } {
+  const ancestors: PaperAncestor[] = [];
+  const seen = new Set<string>();
+  let parentId = paper?.superordinatedPaperIds?.[0];
+  while (parentId && papers?.papers[parentId] && !seen.has(parentId)) {
+    seen.add(parentId);
+    const parent = papers.papers[parentId];
+    ancestors.unshift({
+      oparlPaperId: parent.oparlId,
+      reference: parent.reference,
+      name: parent.name,
+      paperType: parent.paperType,
+      ...(parent.web ? { paperUrl: parent.web } : {}),
+    });
+    parentId = parent.superordinatedPaperIds?.[0];
+  }
+  return ancestors.length > 0 ? { paperAncestors: ancestors } : {};
 }
 
 function reviewStatusOf(voting: ExtractedVoting): { reviewStatus: VotingReviewStatus } | Record<string, never> {

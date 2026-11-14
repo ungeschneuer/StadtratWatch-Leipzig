@@ -1,4 +1,5 @@
 import type {
+  RegistryBodyMembership,
   RegistryFaction,
   RegistryFactionMembership,
   RegistryParty,
@@ -44,6 +45,10 @@ export type LeipzigPartySource =
 
 export type LeipzigFactionMembership = RegistryFactionMembership;
 
+export type LeipzigBodyMembership = RegistryBodyMembership & {
+  oparlId: string;
+};
+
 // The party from the election list holds from the start of the membership; a documented change starts a new period.
 export type LeipzigPartyMembership = RegistryPartyMembership & {
   source: LeipzigPartySource;
@@ -58,6 +63,8 @@ export type LeipzigPerson = RegistryPerson & {
   partyMemberships: LeipzigPartyMembership[];
   // Where the latest party comes from.
   partySource: LeipzigPartySource;
+  // Missing in files written before 14.11.2026 and for members without any.
+  bodies?: LeipzigBodyMembership[];
 };
 
 export function factionOn(person: LeipzigPerson, date: string): string | null {

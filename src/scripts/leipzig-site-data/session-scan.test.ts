@@ -129,6 +129,46 @@ describe('toSessionScan', () => {
     );
   });
 
+  it('names the papers a voted paper belongs to, from the main paper down', () => {
+    const paper = (oparlId: string, reference: string, paperType: string, parent?: string) => ({
+      oparlId,
+      reference,
+      name: `Name ${reference}`,
+      paperType,
+      date: null,
+      web: `https://allris/${reference}`,
+      originators: [],
+      superordinatedPaperIds: parent ? [parent] : [],
+    });
+    const papers = {
+      papers: {
+        'paper/main': paper('paper/main', 'VII-DS-07720', 'Beschlussvorlage'),
+        'paper/ds04': paper('paper/ds04', 'VII-DS-07720-DS-04', 'Beschlussvorlage', 'paper/main'),
+        'paper/aa': paper('paper/aa', 'VII-DS-07720-DS-04-ÄA-04', 'Änderungsantrag', 'paper/ds04'),
+      },
+      votings: { '2026-10-29': { '0': 'paper/aa' } },
+    } as unknown as PapersFile;
+
+    const [item] = toSessionScan('2026-10-29', [voting(0, 'verified')], members, papers).scan;
+
+    expect(item.votingSubject.paperAncestors).toEqual([
+      {
+        oparlPaperId: 'paper/main',
+        reference: 'VII-DS-07720',
+        name: 'Name VII-DS-07720',
+        paperType: 'Beschlussvorlage',
+        paperUrl: 'https://allris/VII-DS-07720',
+      },
+      {
+        oparlPaperId: 'paper/ds04',
+        reference: 'VII-DS-07720-DS-04',
+        name: 'Name VII-DS-07720-DS-04',
+        paperType: 'Beschlussvorlage',
+        paperUrl: 'https://allris/VII-DS-07720-DS-04',
+      },
+    ]);
+  });
+
   it('names agenda item and paper by their OParl keys, but not the parent item of an amendment', () => {
     const papers = {
       papers: { 'paper/1': { oparlId: 'paper/1', reference: 'VIII-DS-1', name: '', web: '', originators: [] } },

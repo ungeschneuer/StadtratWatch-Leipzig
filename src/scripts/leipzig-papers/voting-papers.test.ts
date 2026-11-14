@@ -1,7 +1,13 @@
 import { describe, expect, it } from 'bun:test';
 
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
-import { addSessionPapers, createPaperLookup, findVotingPaper, type PapersFile } from './voting-papers.ts';
+import {
+  addPaperAncestors,
+  addSessionPapers,
+  createPaperLookup,
+  findVotingPaper,
+  type PapersFile,
+} from './voting-papers.ts';
 
 const OPARL: Record<string, unknown> = {
   'item/19.10': { consultation: 'consultation/1' },
@@ -22,7 +28,16 @@ const OPARL: Record<string, unknown> = {
     name: 'Änderungsantrag',
     paperType: 'Änderungsantrag',
     underDirectionOf: ['org/at/2241'],
+    superordinatedPaper: ['paper/main'],
   },
+  'paper/revision': {
+    id: 'paper/revision',
+    reference: 'VIII-A-01631-NF-01',
+    name: 'Neufassung',
+    paperType: 'Neufassung Antrag',
+    superordinatedPaper: ['paper/original'],
+  },
+  'paper/original': { id: 'paper/original', reference: 'VIII-A-01631', name: 'Antrag', paperType: 'Antrag' },
   'org/at/2076': { name: '02.6 Dezernat Stadtentwicklung und Bau' },
   'org/at/2241': { name: 'Geschäftsstelle der Fraktion Bündnis 90/Die Grünen' },
 };
@@ -87,6 +102,7 @@ describe('addSessionPapers', () => {
       date: null,
       web: null,
       originators: [{ oparlId: 'org/at/2241', name: 'Geschäftsstelle der Fraktion Bündnis 90/Die Grünen' }],
+      superordinatedPaperIds: ['paper/main'],
     });
   });
 
@@ -95,6 +111,54 @@ describe('addSessionPapers', () => {
     const { requested, lookup } = fakeOparl();
 
     await addSessionPapers(file, '2026-10-29', [voting(3, 'VIII-DS-02186')], lookup);
+
+    expect(requested).toEqual([]);
+  });
+});
+
+describe('addPaperAncestors', () => {
+  // A revision (Neufassung) points to the original paper, which the council may never have voted on.
+  it('adds the papers a voted paper belongs to, also those without a vote of their own', async () => {
+    const file: PapersFile = {
+      papers: {
+        'paper/revision': {
+          oparlId: 'paper/revision',
+          reference: 'VIII-A-01631-NF-01',
+          name: 'Neufassung',
+          paperType: 'Neufassung Antrag',
+          date: null,
+          web: null,
+          originators: [],
+        },
+      },
+      votings: { '2026-09-30': { '3': 'paper/revision' } },
+    };
+
+    await addPaperAncestors(file, fakeOparl().lookup);
+
+    expect(file.papers['paper/revision'].superordinatedPaperIds).toEqual(['paper/original']);
+    expect(file.papers['paper/original']).toMatchObject({ reference: 'VIII-A-01631', superordinatedPaperIds: [] });
+  });
+
+  it('fetches nothing for papers whose relations are known', async () => {
+    const { requested, lookup } = fakeOparl();
+    const file: PapersFile = {
+      papers: {
+        'paper/main': {
+          oparlId: 'paper/main',
+          reference: 'VIII-DS-02186',
+          name: 'Masterplan Grün',
+          paperType: 'Beschlussvorlage',
+          date: null,
+          web: null,
+          originators: [],
+          superordinatedPaperIds: [],
+        },
+      },
+      votings: {},
+    };
+
+    await addPaperAncestors(file, lookup);
 
     expect(requested).toEqual([]);
   });
