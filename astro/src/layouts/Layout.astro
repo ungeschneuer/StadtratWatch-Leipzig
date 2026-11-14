@@ -7,6 +7,7 @@ import { getEntry } from 'astro:content';
 import { type Registry } from '@models/registry';
 import MetaTags from '@components/MetaTags.astro';
 import { OPERATOR_NAME } from '@utils/site-config';
+import { DATA_DISCLAIMER } from '@models/data-disclaimer';
 import { DEFAULT_PARLIAMENT_PERIOD } from 'astro:env/server';
 
 type Props = {
@@ -66,6 +67,15 @@ if (!parliamentPeriod) {
           >
             <slot />
           </main>
+          <footer class="border-base-300 mx-auto w-full max-w-screen-2xl border-t px-4 py-5 sm:px-6 lg:px-10">
+            <p class="text-base-content/70 max-w-prose text-sm">
+              {DATA_DISCLAIMER} Fehler melden Sie bitte über die{' '}
+              <a href={sitePath('/kontakt')} class="link">
+                Kontaktseite
+              </a>
+              .
+            </p>
+          </footer>
         </div>
         <div class="drawer-side z-40">
           <label

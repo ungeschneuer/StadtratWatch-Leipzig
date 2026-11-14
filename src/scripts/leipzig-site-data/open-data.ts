@@ -1,3 +1,4 @@
+import { DATA_DISCLAIMER } from '@srw-astro/models/data-disclaimer';
 import { factionIdOn, partyIdOn } from '@srw-astro/models/person-affiliation';
 import type { Registry, RegistryPerson } from '@srw-astro/models/registry';
 import type { SessionScanItem } from '@srw-astro/models/session-scan';
@@ -201,7 +202,7 @@ export function dataPackage(registry: Registry, created: string) {
     title: `StadtratWatch Leipzig: Abstimmungen der Ratsversammlung, ${registry.name}`,
     description:
       'Stimmen je Person, aus der Abstimmungstafel der Aufzeichnungen gelesen und mit den Protokollen der Stadt ' +
-      'abgeglichen. Methodik, Codes und Grenzen: DATA.md im Repository.',
+      `abgeglichen. Methodik, Codes und Grenzen: DATA.md im Repository. ${DATA_DISCLAIMER}`,
     homepage: 'https://ungeschneuer.github.io/StadtratWatch-Leipzig/',
     created,
     licenses: [

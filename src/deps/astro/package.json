@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./data-disclaimer": "./data-disclaimer.ts",
     "./leipzig-members": "./leipzig-members.ts",
     "./leipzig-review": "./leipzig-review.ts",
     "./person-affiliation": "./person-affiliation.ts",

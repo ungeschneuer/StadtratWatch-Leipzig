@@ -119,6 +119,11 @@ den GitHub-Releases `evidence-<datum>`, sie gehören **nicht** zum Datenpaket un
 
 ## Bekannte Grenzen
 
+Die Daten werden größtenteils automatisch erstellt: Die Stimmen werden aus der Abstimmungstafel in den Aufzeichnungen
+gelesen, die Redebeiträge automatisch Personen und Zeitpunkten zugeordnet. Trotz Abgleich mit den Protokollen und
+Prüfung durch Menschen können einzelne Angaben fehlen oder falsch sein; für Richtigkeit und Vollständigkeit wird keine
+Gewähr übernommen. Verbindlich sind allein die Protokolle der Stadt Leipzig. Im Einzelnen:
+
 - **Mündliche Korrekturen:** Die Sitzungsleitung zählt manchmal Mitglieder von Hand hinzu, deren Stimme die Tafel nicht
   zeigt. Nennt das Protokoll sie, wird die Stimme korrigiert (die Tafel bleibt in `boardVote` in
   `votes-<datum>.csv`); sonst entscheidet ein Mensch.
