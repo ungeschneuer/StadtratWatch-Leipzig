@@ -3,8 +3,11 @@ import { Seo } from 'astro-seo-meta';
 import { formatDate } from '@utils/format-date';
 import { type SessionScanItem } from '@models/session-scan';
 import { SITE_NAME } from '@utils/site-config';
+import { sitePath } from '@utils/site-path';
+import { ogImagePathOf } from '@utils/og-image-path';
 
 interface MetaTagsProps {
+  pageTitle?: string;
   factionName?: string;
   partyName?: string;
   personName?: string;
@@ -12,12 +15,12 @@ interface MetaTagsProps {
   voting?: SessionScanItem;
 }
 
-const { factionName, partyName, personName, sessionDate, voting } =
+const { pageTitle, factionName, partyName, personName, sessionDate, voting } =
   Astro.props as MetaTagsProps;
 
-let title = SITE_NAME;
+let title = pageTitle ? `${SITE_NAME}: ${pageTitle}` : SITE_NAME;
 let description =
-  'Abstimmungen, Anträge, Redebeiträge - Daten und Analysen des Leipziger Stadtrats.';
+  'Wie jedes Mitglied des Leipziger Stadtrats abstimmt: Abstimmungen, Anträge und Redebeiträge der Ratsversammlung.';
 
 if (factionName) {
   title = `${SITE_NAME}: ${factionName}`;
@@ -87,6 +90,18 @@ function getTitleForVoting(
 
   return `${SITE_NAME}: Abstimmung am ${formatDate(sessionDate)}`;
 }
+// Pages that name one thing have a preview image of their own (pages/og/); all others share the start page's.
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const pagePath = Astro.url.pathname.slice(
+  import.meta.env.BASE_URL.replace(/\/$/, '').length,
+);
+const hasOwnImage = Boolean(
+  factionName || partyName || personName || sessionDate || voting,
+);
+const imageUrl = new URL(
+  sitePath(ogImagePathOf(hasOwnImage ? pagePath : '')),
+  Astro.site,
+).href;
 ---
 
 <Seo
@@ -94,8 +109,11 @@ function getTitleForVoting(
   description={description}
   facebook={{
     type: 'website',
+    image: imageUrl,
+    url: pageUrl,
   }}
   twitter={{
-    card: 'summary',
+    card: 'summary_large_image',
+    image: imageUrl,
   }}
 />

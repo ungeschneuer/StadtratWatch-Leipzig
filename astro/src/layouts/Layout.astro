@@ -12,9 +12,11 @@ import { DEFAULT_PARLIAMENT_PERIOD } from 'astro:env/server';
 
 type Props = {
   parliamentPeriod?: Registry;
+  // Names the page in the title when it brings no meta tags of its own („Fraktionen“).
+  pageTitle?: string;
 };
 
-let { parliamentPeriod } = Astro.props as Props;
+let { parliamentPeriod, pageTitle } = Astro.props as Props;
 if (!parliamentPeriod) {
   const parliamentPeriodEntry = await getEntry(
     'parliamentPeriods',
@@ -29,8 +31,12 @@ if (!parliamentPeriod) {
   <head>
     <meta charset="UTF-8" />
 
-    <slot name="srw-meta-tags" />
-    <MetaTags />
+    {/* A page with meta tags of its own replaces the defaults; both together put two titles into the head. */}
+    {Astro.slots.has('srw-meta-tags') ? (
+      <slot name="srw-meta-tags" />
+    ) : (
+      <MetaTags pageTitle={pageTitle} />
+    )}
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content={OPERATOR_NAME} />
@@ -80,7 +86,7 @@ if (!parliamentPeriod) {
         <div class="drawer-side z-40">
           <label
             for="site-navigation"
-            aria-label="Navigation schließen"
+            aria-hidden="true"
             class="drawer-overlay"
           />
           <Sidebar parliamentPeriod={parliamentPeriod} />

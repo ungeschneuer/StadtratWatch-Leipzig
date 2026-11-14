@@ -10,7 +10,8 @@
     "format": "prettier --config .prettierrc src/ --write",
     "format:check": "prettier --config .prettierrc src/ --check",
     "test": "vitest",
-    "check": "astro check"
+    "check": "astro check",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^1.0.0",
@@ -35,10 +36,14 @@
     "typesense": "^3.1.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.1",
     "@tailwindcss/typography": "^0.5.16",
     "pagefind": "^1.6.0",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.1",
+    "satori": "^0.63.2",
+    "sharp": "^0.35.5",
     "vitest": "^5.0.5"
   }
 }

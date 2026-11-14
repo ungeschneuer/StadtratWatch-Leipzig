@@ -1,8 +1,11 @@
 ---
 import Layout from './Layout.astro';
+
+// Markdown pages name themselves by their first heading, which the frontmatter repeats as title.
+const { frontmatter } = Astro.props as { frontmatter?: { title?: string } };
 ---
 
-<Layout>
+<Layout pageTitle={frontmatter?.title}>
   <div
     class="prose
       dark:prose-invert

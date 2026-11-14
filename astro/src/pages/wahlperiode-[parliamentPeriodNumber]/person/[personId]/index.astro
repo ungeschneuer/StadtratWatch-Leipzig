@@ -110,7 +110,7 @@ const {
         Fraktion:{' '}
         <a
           href={siteRoutes(parliamentPeriodId).faction(person.factionId)}
-          class="link link-hover link-primary"
+          class="link link-primary"
         >
           {faction.name}
         </a>
@@ -119,7 +119,7 @@ const {
         Partei (Wahlliste 2024):{' '}
         <a
           href={siteRoutes(parliamentPeriodId).party(person.partyId)}
-          class="link link-hover link-primary"
+          class="link link-primary"
         >
           {party.name}
         </a>
@@ -139,14 +139,14 @@ const {
 
   <div
     id="tabs"
-    role="tablist"
+    role="group"
+    aria-label="Ansicht"
     class="tabs tabs-lift"
     x-data="person"
     data-parliament-period-id={parliamentPeriodId}
     data-person-id={personId}
   >
     <input
-      role="tab"
       class="tab"
       aria-label="Statistiken"
       type="radio"
@@ -163,7 +163,6 @@ const {
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Redebeiträge"
       type="radio"
@@ -180,7 +179,6 @@ const {
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Vergleiche"
       type="radio"
@@ -197,7 +195,6 @@ const {
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Gremien"
       type="radio"

@@ -1,4 +1,5 @@
 ---
+title: API
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
