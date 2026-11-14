@@ -56,9 +56,9 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
     )}
     <p>
       Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
-      Klicken Sie dazu auf das Flaggen-Symbol unter dem jeweiligen Redebeitrag
-      und senden Sie uns eine Nachricht. Wir werden den Fehler umgehend prüfen
-      und korrigieren.
+      Öffnen Sie dazu den Beitrag in der Sitzung und wählen Sie im Menü „…“
+      neben dem Redebeitrag „Beitrag melden“. Wir werden den Fehler umgehend
+      prüfen und korrigieren.
     </p>
   </div>
 </div>
@@ -73,9 +73,13 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
           checked
           name="accordion-multiple"
         />
-        <div class="collapse-title">
-          {formatDate(speechesBySessionDate.session.date)}
-          {speechesBySessionDate.session.title}
+        <div class="collapse-title flex flex-wrap items-baseline gap-x-2">
+          <span class="font-semibold">
+            {formatDate(speechesBySessionDate.session.date)}
+          </span>
+          <span class="text-base-content/70">
+            {speechesBySessionDate.session.title}
+          </span>
         </div>
         <div class="collapse-content">
           {speechesBySessionDate.session.speechesSource ? (
@@ -146,9 +150,9 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
     )}
     <p>
       Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
-      Klicken Sie dazu auf das Flaggen-Symbol unter dem jeweiligen Redebeitrag
-      und senden Sie uns eine Nachricht. Wir werden den Fehler umgehend prüfen
-      und korrigieren.
+      Öffnen Sie dazu den Beitrag in der Sitzung und wählen Sie im Menü „…“
+      neben dem Redebeitrag „Beitrag melden“. Wir werden den Fehler umgehend
+      prüfen und korrigieren.
     </p>
   </div>
 </div>
