@@ -1,0 +1,3 @@
+#!/bin/bash
+# Rejects a commit message that names a private detail of the operator (see .github/scripts/privacy-check.sh).
+exec .github/scripts/privacy-check.sh message "$1"
