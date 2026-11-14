@@ -102,6 +102,10 @@ The site should read as an editorial public-interest site, not as a generated te
 
 - **Always** give commits and PR descriptions human attribution only: no AI co-author trailers, no "Generated with" footers
 - **Never** commit secrets or `.env` files
+- **Never** name the operator's servers, their logins or hosting providers, or a private e-mail address, in files, commit
+  messages, branch names, PRs or issues; write "Server des Betreibers". Commits use GitHub noreply addresses.
+  `.github/scripts/privacy-check.sh` enforces this in the hooks and the `Privacy` workflow; its patterns live outside
+  the repository (`~/.config/stadtratwatch/private-patterns`, secret `PRIVATE_PATTERNS`)
 - **Never** force push to main
 - Code goes to `main` by pull request; data under `data/leipzig-8/` goes through the data branch and its pull request
 - Corrections to approved session data go in their own PR whose title names the error; never mix them into a PR that adds new sessions

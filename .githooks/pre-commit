@@ -5,6 +5,8 @@
 
 STAGED_FILES=$(git diff --cached --name-only --no-renames)
 
+.github/scripts/privacy-check.sh staged || exit 1
+
 run_check() {
   local label="$1"
   shift

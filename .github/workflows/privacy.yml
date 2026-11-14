@@ -1,0 +1,41 @@
+name: Privacy
+
+# Every push to any branch, including the ALLRIS runner's: commit identities must be GitHub noreply addresses, and no
+# commit may name a private detail of the operator. The patterns live in the secret PRIVATE_PATTERNS, never in the
+# repository; the script masks them in the log.
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  privacy:
+    name: Privacy Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Check new commits
+        env:
+          PRIVATE_PATTERNS: ${{ secrets.PRIVATE_PATTERNS }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          # A new branch or a force push has no usable "before"; then everything the branch adds to main is checked.
+          if [ -n "$BEFORE" ] && ! [[ "$BEFORE" =~ ^0+$ ]] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null \
+            && git merge-base --is-ancestor "$BEFORE" "$AFTER"; then
+            range="$BEFORE..$AFTER"
+          elif [ "$GITHUB_REF" = 'refs/heads/main' ]; then
+            range="$AFTER~1..$AFTER"
+          else
+            range="origin/main..$AFTER"
+          fi
+          echo "Range: $range"
+          .github/scripts/privacy-check.sh ref "$GITHUB_REF_NAME"
+          .github/scripts/privacy-check.sh commits "$range"
