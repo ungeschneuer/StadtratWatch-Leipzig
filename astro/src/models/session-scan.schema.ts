@@ -60,6 +60,7 @@ export const sessionScanSchema = z.array(
       presentMembers: z.number().int().optional(),
       reviewStatus: z.enum(votingReviewStatuses).optional(),
       recusedPersons: z.array(z.string()).optional(),
+      reviewCase: z.boolean().optional(),
       unresolved: z
         .object({
           reason: z.string(),

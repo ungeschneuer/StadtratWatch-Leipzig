@@ -303,6 +303,19 @@ describe('toSessionScan', () => {
     expect(item.unresolved?.possibleVoters).toBeUndefined();
   });
 
+  it('marks the votes that are cases of the review UI, so their page can link there', () => {
+    const { scan } = toSessionScan(
+      '2026-10-29',
+      [voting(3, 'verified'), voting(4, 'reviewed')],
+      members,
+      null,
+      [],
+      new Set([4]),
+    );
+
+    expect(scan.map((item) => item.reviewCase)).toEqual([undefined, true]);
+  });
+
   it('reports a seat without member instead of inventing a name', () => {
     const unknownSeat = {
       column: 1,

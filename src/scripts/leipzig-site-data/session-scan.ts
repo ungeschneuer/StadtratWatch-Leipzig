@@ -35,6 +35,7 @@ export function toSessionScan(
   members: LeipzigMembersFile,
   papers: PapersFile | null = null,
   recusals: Recusal[] = [],
+  reviewCaseIndices: ReadonlySet<number> = new Set(),
 ): SessionScanResult {
   const namesByOparlId = new Map(members.persons.map((person) => [person.oparlId, person.name]));
   const problems: string[] = [];
@@ -76,6 +77,7 @@ export function toSessionScan(
         ...recusedPersonsOf(sessionId, voting, recusals, namesByOparlId, problems),
         ...unresolvedOf(voting, namesByOparlId),
         ...reviewStatusOf(voting),
+        ...(reviewCaseIndices.has(voting.index) ? { reviewCase: true } : {}),
       };
     });
   return { scan, pending: votings.filter((voting) => PENDING_STATUSES.has(voting.status)).length, problems };
