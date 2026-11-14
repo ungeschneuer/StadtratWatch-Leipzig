@@ -201,8 +201,25 @@ Umgesetzt in `src/scripts/leipzig-site-data/majority-requirement.ts`.
    ausdrücklich („gesetzliche Zahl“). Für § 4 Abs. 2 und § 24 Abs. 1 SächsGemO ist das offen.
 4. **„Zwei Drittel“ = mindestens ⅔.** Ich lese das als Ja ≥ ⌈⅔ · n⌉. Die Quellen rechnen das nicht vor; der Fall
    Oltmanns (48 von 71) widerspricht der Lesart nicht.
-5. **Änderungsanträge zu einer Hauptsatzungsänderung.** Ob schon der Änderungsantrag (`VIII-ÄA-…`) 36 Stimmen braucht
-   oder erst der Satzungsbeschluss, steht in keiner Quelle. In unseren Daten kam der Fall nicht vor.
+5. **Änderungsanträge zu einer Hauptsatzungsänderung.** Nachtrag 14.11.2026, als Einschätzung entschieden: Änderungsanträge
+   brauchen die einfache Mehrheit, die 36 Stimmen erst der Satzungsbeschluss. Gründe:
+   - § 4 Abs. 2 S. 2 SächsGemO knüpft die Mehrheit an den Beschluss: „Die Hauptsatzung und ihre Änderungen werden mit
+     der Mehrheit der Stimmen aller Mitglieder des Gemeinderats beschlossen.“
+     ([REVOSax, SächsGemO](https://www.revosax.sachsen.de/vorschrift/2754-Saechsische-Gemeindeordnung)). Ein
+     Änderungsantrag ändert nur den Entwurf; was er hineinbringt, muss im Satzungsbeschluss die 36 Stimmen erreichen.
+     Ausdrücklich sagt das keine Quelle, auch kein Kommentar, den ich fand.
+   - Die Sitzungsleitung kündigte am 25.02.2026 (TOP 19.1, „Bauturbo“) die 36 Stimmen nur für den Satzungspunkt an:
+     „Für eine Satzungsänderung der Hauptsatzung brauchen wir 36 Stimmen […] Jetzt komme ich zu Punkt 3, wo wir die
+     Satzung beschließen gemäß Anlage 1.“ (Verlaufsprotokoll,
+     [ALLRIS](https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004594)). Die Änderungsanträge
+     zu derselben Vorlage stimmte sie ohne diesen Hinweis ab.
+   - Parallele Bundestag: Bei Grundgesetzänderungen (Art. 79 Abs. 2 GG) wird die Zweidrittelmehrheit in der
+     Schlussabstimmung festgestellt, etwa 2025 bei der Schuldenbremse („in Schlussabstimmung mit Zweidrittelmehrheit
+     … angenommen“, [bundestag.de](https://www.bundestag.de/dokumente/textarchiv/2025/kw11-pa-haushalt-sonntag-1056790)).
+   - In Wahlperiode VIII wäre kein Ergebnis betroffen: Kein angenommener Änderungsantrag zu einer Hauptsatzungsänderung
+     blieb unter 36 Ja.
+   - Der Satzungspunkt einer Vorlage mit mehreren Beschlusspunkten steht nicht im Titel. Er wird redaktionell in
+     `data/leipzig-8/majority-overrides.json` mit Zitat und Quelle eingetragen (25.02.2026, TOP 19.1, Punkt 3).
 6. **Fassung der GO.** Die GO auf leipzig.de nennt für `VII-DS-09076` den 21.04.2024, die Hauptsatzung für dieselbe
    Drucksache den 24.01.2024. Eine GO-Änderung in Wahlperiode VIII habe ich in den Tagesordnungen nicht gefunden; zehn
    Sitzungstage konnte ich nicht laden (ALLRIS antwortete nicht): 23.10.2024, 12.03., 19.03., 26.06., 27.08.2025,

@@ -5,6 +5,7 @@ import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 import type { PapersFile } from '../leipzig-papers/voting-papers.ts';
 import type { ExtractedVoting } from '../leipzig-votings/extract-session.ts';
 import { authorsOf, formatTimestamp, subjectType, toSessionScan } from './session-scan.ts';
+import type { MajorityOverride } from './special-cases.ts';
 
 const members = {
   persons: [
@@ -314,6 +315,44 @@ describe('toSessionScan', () => {
     );
 
     expect(scan.map((item) => item.reviewCase)).toEqual([undefined, true]);
+  });
+
+  it('takes the majority of a point from the editorial overrides', () => {
+    const point3 = voting(4, 'verified', {
+      official: {
+        J: 1,
+        N: 0,
+        E: 0,
+        agendaItemNumber: '19.10.2',
+        paperReference: null,
+        procedural: false,
+        sources: [
+          {
+            kind: 'beschlussprotokoll',
+            agendaItemNumbers: ['19.10.2'],
+            paperReference: null,
+            label: 'Abstimmungsergebnis: Beschlusspunkt 3:',
+            J: 1,
+            N: 0,
+            E: 0,
+          },
+        ],
+        correction: null,
+      },
+    });
+    const override: MajorityOverride = {
+      sessionId: '2026-10-29',
+      agendaItemNumber: '19.10.2',
+      itemNumber: '3',
+      majorityRequirement: 'majority-of-members',
+      quote: 'Punkt 3 ist die Satzung.',
+      sourceUrl: 'https://example.org',
+    };
+
+    const [item] = toSessionScan('2026-10-29', [point3], members, null, [], new Set(), [override]).scan;
+
+    expect(item.majorityRequirement).toEqual('majority-of-members');
+    expect(item.votingSubject.itemNumber).toEqual('3');
   });
 
   it('reports a seat without member instead of inventing a name', () => {
