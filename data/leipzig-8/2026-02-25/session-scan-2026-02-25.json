@@ -1873,7 +1873,7 @@
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027025"
         }
       ],
-      "itemNumber": "3"
+      "itemNumber": "3a"
     },
     "votes": [
       {
@@ -8389,7 +8389,7 @@
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
         }
       ],
-      "itemNumber": "6"
+      "itemNumber": "6b"
     },
     "votes": [
       {
@@ -8701,7 +8701,8 @@
           "paperType": "Beschlussvorlage",
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
         }
-      ]
+      ],
+      "itemNumber": "2 und 4"
     },
     "votes": [
       {
@@ -9013,7 +9014,8 @@
           "paperType": "Beschlussvorlage",
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
         }
-      ]
+      ],
+      "itemNumber": "1, 2 und 4"
     },
     "votes": [
       {
@@ -9614,7 +9616,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 65
+    "presentMembers": 65,
+    "majorityRequirement": "majority-of-members"
   },
   {
     "votingFilename": "2026-02-25-033.png",
@@ -9638,7 +9641,8 @@
           "paperType": "Beschlussvorlage",
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027597"
         }
-      ]
+      ],
+      "itemNumber": "5 bis 7"
     },
     "votes": [
       {

@@ -5774,7 +5774,8 @@
           "paperType": "Beschlussvorlage",
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2006574"
         }
-      ]
+      ],
+      "itemNumber": "2 bis 6"
     },
     "votes": [
       {
@@ -8890,7 +8891,8 @@
       ],
       "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029062",
       "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2200536",
-      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029062"
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029062",
+      "itemNumber": "1 bis 3"
     },
     "votes": [
       {
