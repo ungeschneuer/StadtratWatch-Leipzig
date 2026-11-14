@@ -142,7 +142,7 @@ Umgesetzt in `src/scripts/leipzig-votings` (siehe README dort). Stand 12.11.2026
   - [x] Einmalig einrichten: GitHub Pages (Quelle „GitHub Actions“), Variable `LEIPZIG_REVIEWERS=ungeschneuer` (12.11.2026; vorerst prüft nur der Betreiber, weitere Prüfende brauchen Schreibrechte).
   - [x] Workflows auf GitHub gelaufen: members, recordings, votings, recheck, deploy (12.11.2026).
   - [x] Die 17 offenen Fälle entscheiden (13.11.2026; drei Entscheidungen am 14.11.2026 neu gefasst, #63).
-- [ ] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
+- [x] **8. Regressionstest:** 1–2 Sitzungen von Hand prüfen (z. B. 28./29.10.2026) und als „goldenen Datensatz“ ablegen.
 - [x] **Ausgabe:** `votings-<datum>.json` und `votes-<datum>.csv` (mit `personId`, Fraktion und Partei).
   - [x] StadtratWatch-kompatible `session-scan-YYYY-MM-DD.json` (Adapter, siehe M4) und `votings.csv`.
 
@@ -308,10 +308,10 @@ Besetzungen oder nicht mit ihrer Vorlage verknüpft. Die Tafel-Zahl „Anwesende
 
 ## Qualität und Betrieb (14.11.2026)
 
-- [ ] **6. Meta-Tags nur einmal:** Personen-, Fraktions-, Partei-, Sitzungs- und Abstimmungsseiten haben je zwei
+- [x] **6. Meta-Tags nur einmal:** Personen-, Fraktions-, Partei-, Sitzungs- und Abstimmungsseiten haben je zwei
   `<title>`, Beschreibungen und `og:title`; die Standardwerte nur noch als Ersatz. Standardbeschreibung ohne „ - “.
-- [ ] **8. Vorschaubilder (`og:image`):** beim Build erzeugte Bilder mit Text, ohne Tafelbilder (Zitatrecht).
-- [ ] **9. Ende-zu-Ende- und Barrierefreiheitstests:** Playwright mit axe-core über alle Seitentypen, hell und dunkel,
+- [x] **8. Vorschaubilder (`og:image`):** beim Build erzeugte Bilder mit Text, ohne Tafelbilder (Zitatrecht).
+- [x] **9. Ende-zu-Ende- und Barrierefreiheitstests:** Playwright mit axe-core über alle Seitentypen, hell und dunkel,
   Telefon und Desktop, in der CI.
 - [x] **10. Commit-Adresse des ALLRIS-Runners:** nicht mehr Benutzer und Host des Servers; bei jedem Lauf gesetzt.
 - [x] **11. Überwachung des Runners:** Ausfall wird gemeldet, auch in der Sommerpause ohne Sitzungen.
