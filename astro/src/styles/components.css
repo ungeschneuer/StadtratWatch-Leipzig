@@ -55,3 +55,23 @@ body {
   color: inherit;
   border-radius: 2px;
 }
+
+/* Four tabs with German labels („Redebeiträge“) do not fit a phone at daisyUI's size and wrap into a second row; on
+   small screens they are tighter. */
+@media (width < 40rem) {
+  .tabs-lift > .tab {
+    --tab-p: 0.5rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* daisyUI dims the tabs that are not selected to 50 %, below 4.5:1; the site mutes text to 70 %. */
+.tabs > .tab:not(:checked, .tab-active, :hover) {
+  color: color-mix(in oklab, var(--color-base-content) 70%, transparent);
+}
+
+/* A badge holds one line by default; names of submitters („Beauftragte für Senioren und Menschen mit Behinderungen“)
+   need to wrap inside it. */
+.badge-wrap {
+  @apply h-auto min-h-5 py-0.5 text-start whitespace-normal;
+}

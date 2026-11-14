@@ -71,7 +71,9 @@ function getHintMailTitle(speech: SessionSpeech): string {
   <span class="text-base-content/80">{speech.speaker}</span>
   {faction && <span class="badge badge-sm badge-neutral">{faction.name}</span>}
   {speech.onBehalfOf && (
-    <span class="badge badge-sm badge-neutral">{speech.onBehalfOf}</span>
+    <span class="badge badge-sm badge-neutral badge-wrap">
+      {speech.onBehalfOf}
+    </span>
   )}
   <div class="dropdown dropdown-end ml-auto">
     <button tabindex="0" class="btn btn-sm btn-ghost">
