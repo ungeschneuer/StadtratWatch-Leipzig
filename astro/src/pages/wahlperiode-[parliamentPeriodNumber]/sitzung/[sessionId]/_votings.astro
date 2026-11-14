@@ -108,11 +108,13 @@ function voteCounts(votes: { vote: string }[]) {
             <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1">
               {voting.accepted ? (
                 <span
+                  role="img"
                   aria-label="angenommen"
                   class="iconify lucide--check text-success"
                 />
               ) : (
                 <span
+                  role="img"
                   aria-label="abgelehnt"
                   class="iconify lucide--x text-error"
                 />

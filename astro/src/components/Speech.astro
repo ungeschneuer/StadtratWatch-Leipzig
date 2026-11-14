@@ -76,8 +76,12 @@ function getHintMailTitle(speech: SessionSpeech): string {
     </span>
   )}
   <div class="dropdown dropdown-end ml-auto">
-    <button tabindex="0" class="btn btn-sm btn-ghost">
-      <span class="iconify lucide--more-horizontal"></span>
+    <button
+      aria-label="Weitere Aktionen zum Redebeitrag"
+      tabindex="0"
+      class="btn btn-sm btn-ghost"
+    >
+      <span class="iconify lucide--more-horizontal" aria-hidden="true"></span>
     </button>
     <ul
       tabindex="0"

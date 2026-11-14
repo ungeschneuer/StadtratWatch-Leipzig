@@ -60,14 +60,14 @@ const {
 
   <div
     id="tabs"
-    role="tablist"
+    role="group"
+    aria-label="Ansicht"
     class="tabs tabs-lift"
     x-data="party"
     data-parliament-period-id={parliamentPeriodId}
     data-party-id={partyId}
   >
     <input
-      role="tab"
       class="tab"
       aria-label="Ratsmitglieder"
       type="radio"
@@ -84,7 +84,6 @@ const {
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Statistiken"
       type="radio"

@@ -90,14 +90,14 @@ const videoLink = sessionVideoLink(sessionInput.session);
 
   <div
     id="tabs"
-    role="tablist"
+    role="group"
+    aria-label="Ansicht"
     class="tabs tabs-lift"
     x-data="session"
     data-parliament-period-id={parliamentPeriodId}
     data-session-id={sessionId}
   >
     <input
-      role="tab"
       class="tab"
       aria-label="Abstimmungen"
       type="radio"
@@ -114,7 +114,6 @@ const videoLink = sessionVideoLink(sessionInput.session);
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Redebeiträge"
       type="radio"
@@ -130,7 +129,6 @@ const videoLink = sessionVideoLink(sessionInput.session);
     </div>
 
     <input
-      role="tab"
       class="tab"
       aria-label="Redezeiten"
       type="radio"
