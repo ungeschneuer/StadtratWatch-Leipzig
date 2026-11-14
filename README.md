@@ -64,5 +64,5 @@ Mehr in [AGENTS.md](./AGENTS.md).
 
 ## Kontakt
 
-Marcel Schneuer, [Kontaktseite](https://ungeschneuer.github.io/StadtratWatch-Leipzig/kontakt/) ·
-[Issues](https://github.com/ungeschneuer/StadtratWatch-Leipzig/issues)
+Marcel Schneuer über die [Kontaktseite](https://ungeschneuer.github.io/StadtratWatch-Leipzig/kontakt/) oder die
+[Issues](https://github.com/ungeschneuer/StadtratWatch-Leipzig/issues).

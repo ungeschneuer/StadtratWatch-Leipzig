@@ -205,7 +205,7 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
               {voting.votingSubject.itemNumber &&
                 `, Punkt ${voting.votingSubject.itemNumber}`}
               {(voting.votingSubject.type || voting.votingSubject.motionId) &&
-                ' · '}
+                ': '}
               {voting.votingSubject.type &&
                 `${voting.votingSubject.type}${voting.votingSubject.motionId ? ' ' : ''}`}
               {voting.votingSubject.paperUrl ? (
