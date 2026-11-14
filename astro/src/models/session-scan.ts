@@ -20,7 +20,19 @@ export type SessionScanItem = {
 export type UnresolvedVoting = {
   reason: string;
   officialCounts?: { J: number; N: number; E: number };
+  // Official result minus the votes on the board after the reviewer's changes: positive where votes were counted by
+  // hand without a name, negative where the board shows votes the official result does not count.
+  unassignedCounts?: { J: number; N: number; E: number };
+  // Members present without a vote on the board, named as in votes; one of them cast each unassigned vote.
+  possibleVoters?: string[];
 };
+
+export function isPossibleVoter(
+  voting: SessionScanItem,
+  personName: string,
+): boolean {
+  return voting.unresolved?.possibleVoters?.includes(personName) ?? false;
+}
 
 // A vote without a review status is final. The others are published while their check is not finished: a provisional
 // vote passed every automatic check but its official result is not out yet; a vote in review failed a check and waits
