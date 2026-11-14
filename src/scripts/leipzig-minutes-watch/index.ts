@@ -29,7 +29,7 @@ workflow turns the text into an issue, so a stopped ALLRIS runner is noticed.
 }
 
 const dataDir = values['data-dir'];
-const readJson = async <T>(path: string): Promise<T | null> =>
+const readJson = <T>(path: string): Promise<T | null> =>
   readFile(path, 'utf-8')
     .then((json) => JSON.parse(json) as T)
     .catch(() => null);
