@@ -5,7 +5,7 @@ import type {
   RegistryParty,
   RegistryPerson,
 } from '@models/registry.ts';
-import type { SessionScanItem } from '@models/session-scan.ts';
+import { isPossibleVoter, type SessionScanItem } from '@models/session-scan.ts';
 import {
   getPersonsOfSessionAndFaction,
   getPersonsOfSessionAndParty,
@@ -139,12 +139,15 @@ export function calcParticipationRateHistoryOfPerson(
     .toSorted((a, b) => a.date.localeCompare(b.date));
 }
 
+// A member who may have cast one of the votes counted by hand without a name is left out of that vote: the board
+// shows no vote for them, but that does not show they did not vote.
 function calcParticipationRate(
   persons: string[],
   voting: SessionScanItem,
 ): number | null {
+  const counted = persons.filter((name) => !isPossibleVoter(voting, name));
   const votes = voting.votes
-    .filter((vote) => persons.includes(vote.name))
+    .filter((vote) => counted.includes(vote.name))
     .filter((vote) => vote.vote !== 'O');
-  return persons.length === 0 ? null : votes.length / persons.length;
+  return counted.length === 0 ? null : votes.length / counted.length;
 }

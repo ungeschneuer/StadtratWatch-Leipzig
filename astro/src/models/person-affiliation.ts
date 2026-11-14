@@ -1,4 +1,5 @@
 import type { RegistryPerson } from './registry.ts';
+import { compareNamesForSorting } from './person-name.ts';
 
 type Period = { start: string; end: string | null };
 
@@ -83,6 +84,6 @@ export function affiliationMembers(
     .toSorted(
       (a, b) =>
         Number(b.isCurrent) - Number(a.isCurrent) ||
-        a.person.name.localeCompare(b.person.name, 'de'),
+        compareNamesForSorting(a.person.name, b.person.name),
     );
 }

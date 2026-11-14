@@ -9,6 +9,7 @@ import {
 import MetaTags from '@components/MetaTags.astro';
 import VotingReviewNotice from '@components/VotingReviewNotice.astro';
 import VoteBadge from '@components/VoteBadge.astro';
+import { describeUnassignedVotes } from '@utils/unassigned-votes';
 import VotingQuotationImage from '@components/VotingQuotationImage.astro';
 import { quotationImageUrl } from '@utils/quotation-image';
 import { getVideoTimestampAsSeconds } from '@utils/session-utils';
@@ -27,7 +28,7 @@ import {
 export const getStaticPaths = getParliamentPeriodWithSessionAndVotingPaths;
 
 const { sessionId } = Astro.params;
-const { parliamentPeriod, sessionInput, voting } =
+const { parliamentPeriod, sessionInput, voting, shownPersonIds } =
   Astro.props as ParliamentPeriodWithSessionAndVotingProps;
 const parliamentPeriodId = parliamentPeriod.id;
 const mayorDecided = decidedByMayor(
@@ -38,9 +39,14 @@ const mayorDecided = decidedByMayor(
 const recusedPersons = voting.recusedPersons ?? [];
 const boardCounts = getVoteCounts(voting);
 const officialCounts = voting.unresolved?.officialCounts;
+// The votes per person are the board's with the changes a reviewer could prove, so they are named as assigned votes.
 const unresolvedCountsText = officialCounts
-  ? `Das amtliche Ergebnis (${officialCounts.J}:${officialCounts.N}:${officialCounts.E}) weicht von der Tafel (${boardCounts.J}:${boardCounts.N}:${boardCounts.E}) ab. `
+  ? `Das amtliche Ergebnis lautet ${officialCounts.J}:${officialCounts.N}:${officialCounts.E}, Personen zugeordnet sind ${boardCounts.J}:${boardCounts.N}:${boardCounts.E}. `
   : 'Diese Abstimmung ließ sich nicht abschließend prüfen. ';
+const unassignedVotesText = voting.unresolved?.unassignedCounts
+  ? describeUnassignedVotes(voting.unresolved.unassignedCounts)
+  : '';
+const possibleVoters = voting.unresolved?.possibleVoters ?? [];
 
 const breadcrumbItems = [
   {
@@ -87,7 +93,11 @@ const votesWithFaction = voting.votes.map((vote) => {
     vote: vote.vote,
   };
 });
-const votesGroupedByFaction = votesWithFaction.reduce(
+// Members who never cast a vote in the recorded sessions have no page; the board lists them without a vote.
+const shownVotes = votesWithFaction.filter((vote) =>
+  shownPersonIds.includes(vote.personId),
+);
+const votesGroupedByFaction = shownVotes.reduce(
   (acc, vote) => {
     if (!acc[vote.factionName]) {
       acc[vote.factionName] = [];
@@ -154,10 +164,25 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
     {voting.unresolved && (
       <div role="note" class="alert alert-soft text-sm">
         <div>
-          {unresolvedCountsText}
-          Die Prüfung konnte das nicht klären ({voting.unresolved.reason}). Die
-          Stimmen je Person zeigen die Tafel; ob angenommen oder abgelehnt,
-          richtet sich nach dem amtlichen Ergebnis.
+          <p>
+            {unresolvedCountsText}
+            {unassignedVotesText ||
+              `Die Prüfung konnte das nicht klären (${voting.unresolved.reason}).`}{' '}
+            Ob angenommen oder abgelehnt, richtet sich nach dem amtlichen
+            Ergebnis.
+          </p>
+          {possibleVoters.length > 0 && (
+            <p class="mt-2">
+              Infrage kommen nur Mitglieder, die anwesend waren, aber auf der
+              Tafel keine Stimme haben: {possibleVoters.join(', ')}. Bei ihnen
+              steht „unklar“; die Abstimmung zählt nicht in ihre Teilnahmequote.
+            </p>
+          )}
+          {unassignedVotesText && (
+            <p class="mt-2 text-base-content/70">
+              Begründung der Prüfung: {voting.unresolved.reason}
+            </p>
+          )}
         </div>
       </div>
     )}
@@ -280,7 +305,13 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
                     class="hover:bg-base-200 -mx-2 flex flex-row items-center justify-between gap-2 rounded-field px-2 py-1.5"
                   >
                     <span class="min-w-0 text-sm">{vote.personName}</span>
-                    <VoteBadge vote={vote.vote} />
+                    <VoteBadge
+                      vote={vote.vote}
+                      uncertain={
+                        vote.vote === 'O' &&
+                        possibleVoters.includes(vote.personName)
+                      }
+                    />
                   </a>
                 ))}
               </div>

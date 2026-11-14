@@ -1,6 +1,7 @@
 import { calcVotingMatrix } from './VotingMatrix.ts';
 import type { Registry } from '@models/registry.ts';
 import type { SessionInput } from '@models/SessionInput.ts';
+import { compareNamesForSorting } from '@models/person-name.ts';
 
 export type PersonsForcesNode = {
   id: string;
@@ -32,7 +33,7 @@ export function calcPersonsForces(
       const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions);
       return { ...person, faction, votingMatrix };
     })
-    .toSorted((a, b) => a.name.localeCompare(b.name));
+    .toSorted((a, b) => compareNamesForSorting(a.name, b.name));
 
   const personsForces: PersonsForces = {
     nodes: [],

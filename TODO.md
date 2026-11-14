@@ -269,6 +269,23 @@ Fragen, die eine Entscheidung oder eine Quelle brauchen. Gesammelt am 12.11.2026
 
 ---
 
+## Prüfung: nicht zuordenbare Stimmen (14.11.2026)
+
+Anlass: Durchsicht der 18 Prüfentscheidungen vom 13.11.2026. „Nicht klärbar“ galt nur für ganze Abstimmungen, obwohl
+meist eine einzelne nachgezählte Stimme keinen Namen hat; widersprüchliche Protokolle wurden unterschiedlich entschieden.
+
+- [x] **1. Teilweise zuordnen:** „Nicht klärbar“ lässt sich mit „Stimmen ändern“ kombinieren. Die Pipeline errechnet die
+  nicht zugeordneten Stimmen (amtlich minus Tafel mit Änderungen) und veröffentlicht sie mit `unresolved`.
+- [x] **2. Mögliche Betroffene:** Wer bei einer solchen Abstimmung anwesend war, aber ohne Stimme auf der Tafel steht, wird
+  als „unklar“ statt „keine Stimme“ gezeigt; die Abstimmung zählt nicht gegen die Teilnahmequote dieser Personen.
+- [x] **3. Prüfoberfläche:** Feld „Rest nicht zuzuordnen“ zusammen mit Stimmänderungen, Vorschau der verbleibenden Stimmen.
+- [x] **4. Abstimmungsseite, API, Doku:** Hinweis nennt die nicht zugeordneten Stimmen und die möglichen Betroffenen;
+  API-Felder und README beschreiben sie.
+- [x] **5. Feste Regel für widersprüchliche Protokolle:** Stimmen Verlaufsprotokoll und (falls vorhanden) Ansage mit der
+  Tafel überein und weicht nur Niederschrift oder ALLRIS ab, gilt die Tafel als bestätigt.
+- [ ] **6. Prüfentscheidungen neu fassen (eigener Daten-PR):** 30.09.2026 #18 Lehmann → Nein, Rest 1 Ja nicht zuzuordnen;
+  28.10.2026 #10 und #18 Tafel bestätigen wie 03.09.2026 #4.
+
 ## Reihenfolge (Vorschlag)
 
 1. M0 (Fork, Grundgerüst)

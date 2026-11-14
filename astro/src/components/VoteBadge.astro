@@ -1,8 +1,9 @@
 ---
 import type { VoteCode } from '@models/Session';
 
-// A vote is never shown by colour alone: the badge names it, and screen readers hear the full word.
-type Props = { vote: VoteCode };
+// A vote is never shown by colour alone: the badge names it, and screen readers hear the full word. „Unklar“ marks a
+// member without a vote on the board who may have cast one of the votes counted by hand without a name.
+type Props = { vote: VoteCode; uncertain?: boolean };
 
 const VOTES: Record<
   VoteCode,
@@ -18,8 +19,14 @@ const VOTES: Record<
   },
 };
 
-const { vote } = Astro.props;
-const { short, label, className } = VOTES[vote];
+const UNCERTAIN = {
+  short: 'unklar',
+  label: 'unklar, möglicherweise von Hand nachgezählt',
+  className: 'badge-info',
+};
+
+const { vote, uncertain = false } = Astro.props;
+const { short, label, className } = uncertain ? UNCERTAIN : VOTES[vote];
 ---
 
 <span class:list={['badge badge-soft badge-sm min-w-12 shrink-0', className]}>

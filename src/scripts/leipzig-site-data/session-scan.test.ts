@@ -210,11 +210,57 @@ describe('toSessionScan', () => {
     expect(item.unresolved).toEqual({
       reason: 'Nachgezählte Person nicht belegt',
       officialCounts: { J: 1, N: 1, E: 0 },
+      unassignedCounts: { J: 0, N: 1, E: 0 },
+      possibleVoters: ['Juliane Nagel'],
     });
     expect(item.votes).toEqual([
       { name: 'Enrico Stange', vote: 'J' },
       { name: 'Juliane Nagel', vote: 'O' },
     ]);
+  });
+
+  it('names the hand-counted votes nobody was named for and who could have cast them', () => {
+    const unresolved = voting(4, 'unresolved', {
+      official: {
+        J: 2,
+        N: 0,
+        E: 0,
+        agendaItemNumber: '19.10.2',
+        paperReference: null,
+        procedural: false,
+        sources: [],
+        correction: null,
+      },
+      review: [{ reason: 'Ein Ja ohne Namen', source: null, reviewer: 'm', reviewedAt: null }],
+    });
+    const [item] = toSessionScan('2026-10-29', [unresolved], members).scan;
+
+    expect(item.unresolved).toEqual({
+      reason: 'Ein Ja ohne Namen',
+      officialCounts: { J: 2, N: 0, E: 0 },
+      unassignedCounts: { J: 1, N: 0, E: 0 },
+      possibleVoters: ['Juliane Nagel'],
+    });
+  });
+
+  it('names no possible voters when the board counted more than the official result', () => {
+    const unresolved = voting(4, 'unresolved', {
+      official: {
+        J: 0,
+        N: 0,
+        E: 0,
+        agendaItemNumber: '19.10.2',
+        paperReference: null,
+        procedural: false,
+        sources: [],
+        correction: null,
+      },
+      review: [{ reason: 'Ein Ja zu viel', source: null, reviewer: 'm', reviewedAt: null }],
+    });
+    const [item] = toSessionScan('2026-10-29', [unresolved], members).scan;
+
+    expect(item.unresolved?.unassignedCounts).toEqual({ J: -1, N: 0, E: 0 });
+    expect(item.unresolved?.possibleVoters).toBeUndefined();
   });
 
   it('reports a seat without member instead of inventing a name', () => {

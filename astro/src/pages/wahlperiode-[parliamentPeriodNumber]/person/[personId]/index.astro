@@ -17,26 +17,13 @@ import {
   partyHistory,
 } from '@models/person-affiliation';
 import { formatPeriod } from '@utils/format-period';
-import { formatDate } from '@utils/format-date';
-import { missingActivityOf } from '@data-analysis/MissingActivity';
 
 export const getStaticPaths = getParliamentPeriodWithPersonPaths;
 
 const { personId } = Astro.params;
 const { parliamentPeriod, sessionInputs, person } =
   Astro.props as ParliamentPeriodWithPersonProps;
-const missingActivity = missingActivityOf(person, sessionInputs);
 
-function noVoteText(name: string, recordedSessions: number): string {
-  if (recordedSessions === 0) {
-    return `Seit ${name} der Ratsversammlung angehört, gab es noch keine aufgezeichnete Sitzung.`;
-  }
-  const sessions =
-    recordedSessions === 1
-      ? 'der einen aufgezeichneten Sitzung'
-      : `den ${recordedSessions} aufgezeichneten Sitzungen`;
-  return `In ${sessions} während der Mitgliedschaft hat ${name} an keiner Abstimmung teilgenommen.`;
-}
 const parliamentPeriodId = parliamentPeriod.id;
 
 const faction = parliamentPeriod.factions.find(
@@ -148,20 +135,6 @@ const {
       </div>
     )}
   </div>
-
-  {missingActivity?.reason === 'left-before-recordings' && (
-    <div role="note" class="alert alert-soft mb-4 text-sm">
-      {person.name} gehörte der Ratsversammlung bis zum{' '}
-      {formatDate(missingActivity.end)} an. Die Stadt zeichnet die Sitzungen
-      erst seit dem {formatDate(missingActivity.firstRecordedSession)} auf;
-      Abstimmungen, Reden und Statistiken gibt es deshalb erst ab diesem Tag.
-    </div>
-  )}
-  {missingActivity?.reason === 'no-vote-while-member' && (
-    <div role="note" class="alert alert-soft mb-4 text-sm">
-      {noVoteText(person.name, missingActivity.recordedSessions)}
-    </div>
-  )}
 
   <div
     id="tabs"

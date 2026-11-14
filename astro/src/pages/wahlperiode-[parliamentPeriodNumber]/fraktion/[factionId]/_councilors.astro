@@ -1,5 +1,7 @@
 ---
 import { siteRoutes } from '@utils/routes';
+import { type SessionInput } from '@models/SessionInput';
+import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
 import { type Registry, type RegistryFaction } from '@models/registry';
 import { affiliationMembers, factionHistory } from '@models/person-affiliation';
 import { formatDate } from '@utils/format-date';
@@ -7,14 +9,15 @@ import { formatPeriod } from '@utils/format-period';
 
 type Props = {
   parliamentPeriod: Registry;
+  sessionInputs: SessionInput[];
   faction: RegistryFaction;
 };
 
-const { parliamentPeriod, faction } = Astro.props as Props;
+const { parliamentPeriod, faction, sessionInputs } = Astro.props as Props;
 
 // Everyone who belonged to the faction in the period; members who changed show when they belonged to it.
 const persons = affiliationMembers(
-  parliamentPeriod.persons,
+  personsWithRecordedVotes(parliamentPeriod, sessionInputs),
   factionHistory,
   faction.id,
 ).map(({ person, periods, isCurrent, changed }) => ({

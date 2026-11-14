@@ -10,7 +10,7 @@
 | Code (`main`), Daten (`data/leipzig-8` auf `main`, offene Änderungen auf den Daten-Branches), Issues, Pull Requests.
 
 | GitHub Actions
-| `ci.yml` (Prüfungen), `deploy.yml` (Seite und Prüfoberfläche), `leipzig-recordings`, `leipzig-members`, `leipzig-votings`, `leipzig-review-recheck`, `leipzig-review-reminder`.
+| `ci.yml` (Prüfungen), `deploy.yml` (Seite und Prüfoberfläche), `leipzig-recordings`, `leipzig-members`, `leipzig-votings`, `leipzig-review-recheck`, `leipzig-review-reminder`, `leipzig-data-publish`, `leipzig-guest-proposal`.
 
 | GitHub Pages
 | `https://<owner>.github.io/<repository>/`: die Astro-Seite; `/review/` die Prüfoberfläche; `404.html` leitet Deep-Links der Prüfoberfläche weiter.

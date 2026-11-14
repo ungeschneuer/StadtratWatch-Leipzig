@@ -38,8 +38,9 @@ export function parseCorrections(json: unknown, source: string): Correction[] {
     if (entry?.discard && (entry?.approve || changesSeats)) {
       problems.push(`${at}: a discarded voting cannot also be approved or changed`);
     }
-    if (entry?.unresolved && (entry?.approve || entry?.discard || changesSeats)) {
-      problems.push(`${at}: an unresolved voting cannot also be approved, discarded or changed`);
+    // Seats named in the protocol or the video can be assigned even when another hand-counted vote stays unassigned.
+    if (entry?.unresolved && (entry?.approve || entry?.discard)) {
+      problems.push(`${at}: an unresolved voting cannot also be approved or discarded`);
     }
     for (const seat of Array.isArray(entry?.seats) ? entry.seats : []) {
       if (typeof seat?.personId !== 'string' || !isVoteCode(String(seat?.vote))) {

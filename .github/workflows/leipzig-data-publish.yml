@@ -1,0 +1,36 @@
+name: Leipzig data publish
+
+# Publishes the data branch twice a day: merges the data pull request once its review decisions are applied and CI is
+# green, deploys, and tells the reviewers in a comment what went online, new sessions included.
+
+on:
+  schedule:
+    # Every 12 hours at 08:07 and 20:07 UTC (09:07 and 21:07 in winter, 10:07 and 22:07 in summer).
+    - cron: '7 8,20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+env:
+  LEIPZIG_DATA_BRANCH: data/leipzig-votings
+
+jobs:
+  publish:
+    name: Publish the data branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Merge the data pull request and deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LEIPZIG_REVIEWERS: ${{ vars.LEIPZIG_REVIEWERS }}
+        run: .github/scripts/leipzig-publish-data.sh

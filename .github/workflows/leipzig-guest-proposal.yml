@@ -1,0 +1,104 @@
+name: Leipzig guest proposal
+
+# A guest without write access proposes a review decision as an issue from the review UI. When someone with write
+# access labels it, this workflow adds it to the corrections file on the data branch and starts the recheck; it is
+# then published like any other decision.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: leipzig-guest-proposal
+  cancel-in-progress: false
+
+env:
+  LEIPZIG_DATA_BRANCH: data/leipzig-votings
+  ACCEPT_LABEL: vorschlag-übernehmen
+
+jobs:
+  accept:
+    name: Accept the guest proposal
+    if: github.event.label.name == 'vorschlag-übernehmen' && startsWith(github.event.issue.title, 'Prüfvorschlag ')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # Labels need only triage access; a decision on published data needs write access.
+      - name: Check the permission of the labeller
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          LABELLER: ${{ github.event.sender.login }}
+        run: |
+          permission="$(gh api "repos/$GH_REPO/collaborators/$LABELLER/permission" --jq .permission)"
+          case "$permission" in
+            admin | maintain | write) ;;
+            *)
+              echo "::error::$LABELLER hat keine Schreibrechte ($permission)."
+              exit 1
+              ;;
+          esac
+
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Check out the data branch
+        run: .github/scripts/leipzig-data-branch.sh
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Add the proposal to the corrections
+        id: apply
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ACCEPTED_BY: ${{ github.event.sender.login }}
+        run: bun src/scripts/leipzig-votings/apply-guest-proposal.ts 2> problem.txt
+
+      - name: Commit and start the recheck
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git add data/leipzig-8
+          if git diff --cached --quiet; then
+            echo 'Vorschlag ist bereits übernommen.'
+          else
+            git commit -m "Prüfung ${ISSUE_TITLE#Prüfvorschlag }: Gastvorschlag #$ISSUE_NUMBER übernommen"
+            .github/scripts/leipzig-push-data-branch.sh
+          fi
+          # A push with the workflow token starts no other workflow.
+          gh workflow run leipzig-review-recheck.yml --ref "$LEIPZIG_DATA_BRANCH"
+
+      - name: Close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ACCEPTED_BY: ${{ github.event.sender.login }}
+        run: |
+          gh issue close "$ISSUE_NUMBER" --reason completed --comment "Übernommen von @$ACCEPTED_BY. Die Entscheidung liegt auf \`$LEIPZIG_DATA_BRANCH\`, wird neu geprüft und mit der nächsten Veröffentlichung (alle 12 Stunden) online gestellt. Danke für den Vorschlag!"
+
+      - name: Report a rejected proposal
+        if: failure() && steps.apply.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "$(printf 'Der Vorschlag ließ sich nicht übernehmen:\n\n```\n%s\n```\n\nBitte das Issue korrigieren und das Label „%s“ neu setzen.' "$(cat problem.txt)" "$ACCEPT_LABEL")"
+          gh issue edit "$ISSUE_NUMBER" --remove-label "$ACCEPT_LABEL"
