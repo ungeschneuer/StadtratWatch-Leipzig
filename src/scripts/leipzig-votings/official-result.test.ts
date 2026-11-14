@@ -57,6 +57,10 @@ function verlauf(
   return { order, agendaItemNumbers, J, N, E, line: `Abstimmung: ${J} - ${N} - ${E}.`, context };
 }
 
+function announcement([J, N, E]: [number, number, number]): NonNullable<ExtractedVoting['announced']> {
+  return { J, N, E, atSeconds: 0, quote: `${J} zu ${N} zu ${E}`, mentionsCorrection: false };
+}
+
 describe('alignVerlauf', () => {
   it('pairs the results in order and skips a board the Verlaufsprotokoll does not have', () => {
     const votings = [voting(0, '14.1', [40, 14, 9]), voting(1, '14.2', [3, 2, 0]), voting(2, '14.2', [41, 21, 3])];
@@ -195,10 +199,36 @@ describe('applyOfficialResults', () => {
     expect(applied.status).toEqual('needs-review');
   });
 
-  it('needs review when minutes and Verlaufsprotokoll differ', () => {
+  // 01.07.2026 #39: the minutes say 28/28/2, the Verlaufsprotokoll and the board 29/29/2.
+  it('confirms the board when the Verlaufsprotokoll agrees with it and only the minutes differ', () => {
     const [applied] = applyOfficialResults([voting(0, '18.21.2', [29, 29, 2])], {
       minutes: { kind: 'beschlussprotokoll', votes: [minutesVote(0, '18.21.2', [28, 28, 2])] },
       verlauf: [verlauf(0, ['18.21'], [29, 29, 2])],
+    });
+    const sourcesCheck = applied.checks.find((check) => check.check === 'official-sources-agree');
+
+    expect(sourcesCheck?.passed).toBe(true);
+    expect(sourcesCheck?.detail).toContain('Verlaufsprotokoll confirms the board');
+    expect(applied.official).toMatchObject({ J: 29, N: 29, E: 2 });
+    expect(applied.status).not.toEqual('needs-review');
+  });
+
+  it('needs review when the announcement differs from the board as well', () => {
+    const announced = { ...voting(0, '18.21.2', [29, 29, 2]), announced: announcement([28, 28, 2]) };
+    const [applied] = applyOfficialResults([announced], {
+      minutes: { kind: 'beschlussprotokoll', votes: [minutesVote(0, '18.21.2', [28, 28, 2])] },
+      verlauf: [verlauf(0, ['18.21'], [29, 29, 2])],
+    });
+
+    expect(applied.checks.find((check) => check.check === 'official-sources-agree')?.passed).toBe(false);
+    expect(applied.status).toEqual('needs-review');
+  });
+
+  // 29.10.2026 #16: ALLRIS took the board, the Verlaufsprotokoll counts a member added by hand.
+  it('needs review when the Verlaufsprotokoll counts more than the board and the minutes', () => {
+    const [applied] = applyOfficialResults([voting(0, '19.13', [42, 16, 1])], {
+      minutes: { kind: 'agenda-item-pages', votes: [minutesVote(0, '19.13', [42, 16, 1])] },
+      verlauf: [verlauf(0, ['19.13'], [43, 16, 1])],
     });
 
     expect(applied.checks.find((check) => check.check === 'official-sources-agree')?.passed).toBe(false);

@@ -222,16 +222,21 @@ function withOfficialResult(
       E: verlauf.E,
     });
   }
-  const decisive = sources[0];
+  const confirmedByVerlauf = sources.length === 2 && !sourcesAgree(sources) && verlaufConfirmsBoard(voting, sources);
+  const decisive = confirmedByVerlauf
+    ? (sources.find((source) => source.kind === 'verlaufsprotokoll') as OfficialSource)
+    : sources[0];
   const official = { J: decisive.J, N: decisive.N, E: decisive.E };
   const checks = [...voting.checks];
 
   if (sources.length === 2) {
-    const agree = sources[0].J === sources[1].J && sources[0].N === sources[1].N && sources[0].E === sources[1].E;
+    const detail = sources.map((source) => `${source.kind} ${source.J}/${source.N}/${source.E}`).join(', ');
     checks.push({
       check: 'official-sources-agree',
-      passed: agree,
-      detail: sources.map((source) => `${source.kind} ${source.J}/${source.N}/${source.E}`).join(', '),
+      passed: sourcesAgree(sources) || confirmedByVerlauf,
+      detail: confirmedByVerlauf
+        ? `${detail}; the Verlaufsprotokoll confirms the board${voting.announced ? ', as does the announcement' : ''}`
+        : detail,
     });
   }
 
@@ -274,6 +279,31 @@ function withOfficialResult(
         : check,
     ),
   };
+}
+
+function sourcesAgree(sources: OfficialSource[]): boolean {
+  return sources.every((source) => source.J === sources[0].J && source.N === sources[0].N && source.E === sources[0].E);
+}
+
+// The minutes or ALLRIS sometimes count differently from what was said in the session (01.07.2026 #39, 03.09.2026
+// #4). When the Verlaufsprotokoll, which records the session word by word, gives the board's result, and the chair
+// announced it too (or said nothing the subtitles caught), the board stands; the deviating source is named in the
+// check. A Verlaufsprotokoll that counts more than the board names a member added by hand and is never overruled.
+function verlaufConfirmsBoard(voting: ExtractedVoting, sources: OfficialSource[]): boolean {
+  const verlauf = sources.find((source) => source.kind === 'verlaufsprotokoll');
+  if (!verlauf || !sameCounts(verlauf, voting.tally)) return false;
+  const announced = voting.announced;
+  if (!announced) return true;
+  return (
+    !announced.mentionsCorrection &&
+    announced.J === voting.tally.J &&
+    announced.N === voting.tally.N &&
+    (announced.E === null || announced.E === voting.tally.E)
+  );
+}
+
+function sameCounts(a: { J: number; N: number; E: number }, b: { J: number; N: number; E: number }): boolean {
+  return a.J === b.J && a.N === b.N && a.E === b.E;
 }
 
 // The announcement only stands in for the official result; once that is there, a differing announcement is settled.
