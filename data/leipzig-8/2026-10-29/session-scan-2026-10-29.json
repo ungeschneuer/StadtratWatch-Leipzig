@@ -5310,7 +5310,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 60
+    "presentMembers": 60,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-10-29-018.png",

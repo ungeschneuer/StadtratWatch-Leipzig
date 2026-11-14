@@ -9596,7 +9596,8 @@
         "vote": "O"
       }
     ],
-    "presentMembers": 60
+    "presentMembers": 60,
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-05-27-033.png",
