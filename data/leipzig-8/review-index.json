@@ -66,9 +66,9 @@
     {
       "sessionId": "2026-07-01",
       "videoAvailable": true,
-      "cases": 2,
+      "cases": 1,
       "open": 0,
-      "reviewed": 2
+      "reviewed": 1
     },
     {
       "sessionId": "2026-07-02",
@@ -87,9 +87,9 @@
     {
       "sessionId": "2026-09-03",
       "videoAvailable": true,
-      "cases": 1,
+      "cases": 0,
       "open": 0,
-      "reviewed": 1
+      "reviewed": 0
     },
     {
       "sessionId": "2026-09-30",
@@ -101,9 +101,9 @@
     {
       "sessionId": "2026-10-28",
       "videoAvailable": true,
-      "cases": 2,
+      "cases": 0,
       "open": 0,
-      "reviewed": 2
+      "reviewed": 0
     },
     {
       "sessionId": "2026-10-29",

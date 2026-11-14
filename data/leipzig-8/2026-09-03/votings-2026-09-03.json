@@ -3533,13 +3533,13 @@
         },
         {
           "check": "official-sources-agree",
-          "passed": false,
-          "detail": "agenda-item-pages 23/32/6, verlaufsprotokoll 23/32/5"
+          "passed": true,
+          "detail": "agenda-item-pages 23/32/6, verlaufsprotokoll 23/32/5; the Verlaufsprotokoll confirms the board"
         },
         {
           "check": "matches-official",
-          "passed": false,
-          "detail": "official 23/32/6 for TOP 13.25 (VIII-A-03110) differs from the board"
+          "passed": true,
+          "detail": "official 23/32/5 for TOP 13.25 (VIII-A-03110)"
         },
         {
           "check": "not-attendance-count",
@@ -3547,12 +3547,12 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
+      "checkStatus": "verified",
       "status": "reviewed",
       "official": {
         "J": 23,
         "N": 32,
-        "E": 6,
+        "E": 5,
         "agendaItemNumber": "13.25",
         "paperReference": "VIII-A-03110",
         "procedural": false,

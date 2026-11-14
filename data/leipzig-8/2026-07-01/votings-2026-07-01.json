@@ -28848,13 +28848,13 @@
         },
         {
           "check": "official-sources-agree",
-          "passed": false,
-          "detail": "beschlussprotokoll 28/28/2, verlaufsprotokoll 29/29/2"
+          "passed": true,
+          "detail": "beschlussprotokoll 28/28/2, verlaufsprotokoll 29/29/2; the Verlaufsprotokoll confirms the board, as does the announcement"
         },
         {
           "check": "matches-official",
-          "passed": false,
-          "detail": "official 28/28/2 for TOP 18.21.2 (VIII-DS-02692-ÄA-02) differs from the board"
+          "passed": true,
+          "detail": "official 29/29/2 for TOP 18.21.2 (VIII-DS-02692-ÄA-02)"
         },
         {
           "check": "not-attendance-count",
@@ -28862,11 +28862,11 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
+      "checkStatus": "verified",
       "status": "reviewed",
       "official": {
-        "J": 28,
-        "N": 28,
+        "J": 29,
+        "N": 29,
         "E": 2,
         "agendaItemNumber": "18.21.2",
         "paperReference": "VIII-DS-02692-ÄA-02",

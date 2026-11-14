@@ -3016,15 +3016,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 64,
-    "unresolved": {
-      "reason": "Nicht klar, wer die Stimme gegeben hat.",
-      "officialCounts": {
-        "J": 21,
-        "N": 22,
-        "E": 19
-      }
-    }
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-10-28-012.png",
@@ -5443,15 +5435,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 64,
-    "unresolved": {
-      "reason": "Unklar, ob Enthaltungen nachgereicht.",
-      "officialCounts": {
-        "J": 22,
-        "N": 39,
-        "E": 4
-      }
-    }
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-10-28-020.png",

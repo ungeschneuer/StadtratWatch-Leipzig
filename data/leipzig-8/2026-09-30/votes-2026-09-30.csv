@@ -1210,7 +1210,7 @@ sessionId,votingIndex,videoSeconds,agendaItemNumber,paperReference,personId,boar
 2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000067,"Artmann, Stefan",N,present,N,unresolved,false,cdu,cdu
 2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/385,"Dossin, Falk",N,present,N,unresolved,false,cdu,cdu
 2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/302,"Dr. Heymann, Sabine",N,present,N,unresolved,false,cdu,cdu
-2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",O,present,O,unresolved,false,cdu,cdu
+2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/605,"Lehmann, Jens",N,present,O,unresolved,false,cdu,cdu
 2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001177,"Möllmer, Andre",N,present,N,unresolved,false,cdu,cdu
 2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/2001505,"Nowak, Andreas",O,present,O,unresolved,false,cdu,cdu
 2026-09-30,18,6317.8,12.6.2,VIII-A-02452-VSP-01,https://www.leipzig.sitzung-online.de/oparl/persons/1000358,"Raque, Hans-Jürgen",O,absent,O,unresolved,false,cdu,cdu

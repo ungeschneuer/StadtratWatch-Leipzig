@@ -1824,7 +1824,18 @@
         "J": 35,
         "N": 19,
         "E": 4
-      }
+      },
+      "unassignedCounts": {
+        "J": 1,
+        "N": 0,
+        "E": 0
+      },
+      "possibleVoters": [
+        "Jens Lehmann",
+        "Andreas Nowak",
+        "Michael Weickert",
+        "Susanne Scheidereiter"
+      ]
     }
   },
   {

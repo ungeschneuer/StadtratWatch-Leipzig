@@ -2735,7 +2735,18 @@
         "J": 19,
         "N": 39,
         "E": 2
-      }
+      },
+      "unassignedCounts": {
+        "J": 1,
+        "N": 0,
+        "E": 0
+      },
+      "possibleVoters": [
+        "Stefan Artmann",
+        "André Möllmer",
+        "Juliane Nagel",
+        "Franziska Riekewald"
+      ]
     }
   },
   {
