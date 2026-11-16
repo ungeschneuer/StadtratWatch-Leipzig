@@ -104,9 +104,9 @@ const MOTION_RESULTS: Record<
   MotionResult,
   { label: string; className: string }
 > = {
-  ACCEPTED: { label: 'angenommen', className: 'text-success' },
-  PARTIALLY_ACCEPTED: { label: 'teilweise', className: 'text-warning' },
-  REJECTED: { label: 'abgelehnt', className: 'text-error' },
+  ACCEPTED: { label: 'angenommen', className: 'badge-success' },
+  PARTIALLY_ACCEPTED: { label: 'teilweise', className: 'badge-warning' },
+  REJECTED: { label: 'abgelehnt', className: 'badge-error' },
 };
 ---
 
@@ -239,13 +239,15 @@ const MOTION_RESULTS: Record<
                 {motion.title}
               </a>
             </td>
-            <td
-              class:list={[
-                'whitespace-nowrap',
-                MOTION_RESULTS[motion.result].className,
-              ]}
-            >
-              {MOTION_RESULTS[motion.result].label}
+            <td data-sort-value={MOTION_RESULTS[motion.result].label}>
+              <span
+                class:list={[
+                  'badge badge-soft badge-sm',
+                  MOTION_RESULTS[motion.result].className,
+                ]}
+              >
+                {MOTION_RESULTS[motion.result].label}
+              </span>
             </td>
           </tr>
         ))}
