@@ -1,5 +1,7 @@
 ---
 import { siteRoutes } from '@utils/routes';
+import { sortValue } from '@utils/sortable-table';
+import { nameForSorting } from '@models/person-name';
 import { type Registry, type RegistryPerson } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
 import { calcVotingMatrix } from '@data-analysis/VotingMatrix';
@@ -19,21 +21,18 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
     comparisonScoreDisplay: formatPercentage(row.comparisonScore),
   }))
   .toSorted((a, b) => b.comparisonScore - a.comparisonScore);
+const parliamentPeriodId = parliamentPeriod.id;
 ---
 
 <div class="@container overflow-x-auto">
-  <table
-    class="table table-sm md:table-md table-pin-cols"
-    x-data="votingMatrix"
-    data-voting-matrix={JSON.stringify(votingMatrix)}
-    data-parliament-period-id={parliamentPeriod.id}
-  >
+  <table data-sortable class="table table-sm md:table-md table-pin-cols">
     <thead>
       <tr>
         <th scope="col">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('name', (person) => nameForSorting(person.personName))"
+            type="button"
+            data-sort-type="text"
           >
             <span>Name</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -42,7 +41,8 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
         <th class="hidden @2xl:table-cell" scope="col">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('faction', (person) => person.factionName)"
+            type="button"
+            data-sort-type="text"
           >
             <span>Fraktion</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -51,16 +51,18 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
         <th class="hidden @4xl:table-cell" scope="col">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('party', (person) => person.partyName)"
+            type="button"
+            data-sort-type="text"
           >
             <span>Partei</span>
             <span class="iconify lucide--chevrons-up-down"></span>
           </button>
         </th>
-        <th class="text-right" scope="col">
+        <th class="text-right" scope="col" aria-sort="descending">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-            @click="sortNumberColumn('comparison-score', (person) => person.comparisonScore)"
+            type="button"
+            data-sort-type="number"
           >
             <span class="text-right">Übereinstimmung</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -69,35 +71,44 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
       </tr>
     </thead>
     <tbody>
-      <template x-for="item in votingMatrix">
+      {votingMatrix.map((item) => (
         <tr>
-          <th scope="row" class="bg-base-100 font-normal">
+          <th
+            scope="row"
+            class="bg-base-100 font-normal"
+            data-sort-value={nameForSorting(item.personName)}
+          >
             <a
-              :href="siteRoutes(parliamentPeriodId).person(item.personId)"
+              href={siteRoutes(parliamentPeriodId).person(item.personId)}
               class="link link-hover link-primary"
-              x-text="item.personName"
-            ></a>
+            >
+              {item.personName}
+            </a>
           </th>
           <td class="hidden @2xl:table-cell">
             <a
-              :href="siteRoutes(parliamentPeriodId).faction(item.factionId)"
+              href={siteRoutes(parliamentPeriodId).faction(item.factionId)}
               class="link link-hover link-primary"
-              x-text="item.factionName"
-            ></a>
+            >
+              {item.factionName}
+            </a>
           </td>
           <td class="hidden @4xl:table-cell">
             <a
-              :href="siteRoutes(parliamentPeriodId).party(item.partyId)"
+              href={siteRoutes(parliamentPeriodId).party(item.partyId)}
               class="link link-hover link-primary"
-              x-text="item.partyName"
-            ></a>
+            >
+              {item.partyName}
+            </a>
           </td>
           <td
             class="text-right whitespace-nowrap tabular-nums"
-            x-text="item.comparisonScoreDisplay"
-          ></td>
+            data-sort-value={sortValue(item.comparisonScore)}
+          >
+            {item.comparisonScoreDisplay}
+          </td>
         </tr>
-      </template>
+      ))}
     </tbody>
   </table>
   <p class="text-base-content/70 px-4 py-3 text-xs @4xl:hidden">
@@ -106,58 +117,7 @@ const votingMatrix = calcVotingMatrix(parliamentPeriod, person, sessions)
 </div>
 
 <script>
-  import { siteRoutes } from '@utils/routes';
-  import { nameForSorting } from '@models/person-name';
-  import Alpine from 'alpinejs';
-  import { type VotingMatrixItem } from '@data-analysis/VotingMatrix';
+  import { makeTablesSortable } from '@utils/sortable-table';
 
-  document.addEventListener('alpine:init', () => {
-    const votingMatrixTableElement = document.querySelector(
-      'table[data-voting-matrix]',
-    ) as HTMLTableElement;
-    const parliamentPeriodId =
-      votingMatrixTableElement.dataset.parliamentPeriodId;
-    const votingMatrix = JSON.parse(
-      votingMatrixTableElement.dataset.votingMatrix || '[]',
-    ) as VotingMatrixItem[];
-
-    Alpine.data('votingMatrix', () => ({
-      parliamentPeriodId,
-      siteRoutes,
-      votingMatrix,
-      nameForSorting,
-      sortTextColumn: function (
-        column: string,
-        getText: (item: VotingMatrixItem) => string,
-      ) {
-        this._updateSortColumn(column);
-        this.votingMatrix.sort((a, b) =>
-          this._sortedDesc
-            ? getText(b).localeCompare(getText(a), 'de')
-            : getText(a).localeCompare(getText(b), 'de'),
-        );
-      },
-      sortNumberColumn: function (
-        column: string,
-        getNumber: (item: VotingMatrixItem) => number | null,
-      ) {
-        this._updateSortColumn(column);
-        this.votingMatrix.sort((a, b) =>
-          this._sortedDesc
-            ? (getNumber(a) || 0) - (getNumber(b) || 0)
-            : (getNumber(b) || 0) - (getNumber(a) || 0),
-        );
-      },
-      _sortedColumn: 'comparison-score',
-      _sortedDesc: false,
-      _updateSortColumn: function (column: string) {
-        if (this._sortedColumn === column) {
-          this._sortedDesc = !this._sortedDesc;
-        } else {
-          this._sortedColumn = column;
-          this._sortedDesc = false;
-        }
-      },
-    }));
-  });
+  makeTablesSortable();
 </script>

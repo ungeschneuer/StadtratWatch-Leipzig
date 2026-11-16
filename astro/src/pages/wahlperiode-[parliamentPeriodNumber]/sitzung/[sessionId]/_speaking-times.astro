@@ -20,22 +20,14 @@ const chartHeight = chartData.length * 40;
 ---
 
 {chartData.length === 0 ? (
-  <div class="alert alert-info alert-soft">
-    <span class="iconify lucide--info size-5" />
-    Es liegen noch keine Daten vor.
-  </div>
+  <p class="text-base-content/70">Es liegen noch keine Redezeiten vor.</p>
 ) : (
   <>
-    <div class="alert alert-soft alert-info" role="alert">
-      <span class="iconify lucide--info size-5" />
-      <div class="flex flex-col gap-2">
-        <p>
-          Die Redezeiten wurden automatisch mit Hilfe einer Software ermittelt.
-          Sie sind nur eine Schätzung und können von den tatsächlichen
-          Redezeiten abweichen.
-        </p>
-      </div>
-    </div>
+    <p class="text-base-content/70 max-w-prose text-sm">
+      Die Redezeiten wurden automatisch mit Hilfe einer Software ermittelt. Sie
+      sind nur eine Schätzung und können von den tatsächlichen Redezeiten
+      abweichen.
+    </p>
 
     <div
       class="relative mt-5"

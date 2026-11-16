@@ -42,10 +42,12 @@ function tintOf(share: number | null): string {
 }
 ---
 
-<div class="card card-border bg-base-100">
-  <div class="card-body">
-    <h2 class="card-title">Wer stimmt mit wem?</h2>
-    <p class="text-base-content/70 mb-3 text-sm">
+<section aria-labelledby="agreement-heading">
+  <div>
+    <h2 id="agreement-heading" class="text-lg font-semibold">
+      Wer stimmt mit wem?
+    </h2>
+    <p class="text-base-content/70 mt-1 mb-3 max-w-prose text-sm">
       Anteil der Abstimmungen, in denen die Mehrheiten zweier Fraktionen gleich
       gestimmt haben (Ja, Nein oder Enthaltung). Eine Abstimmung zählt nur, wenn
       beide Fraktionen eine Mehrheit hatten; fraktionslose Mitglieder und der
@@ -103,4 +105,4 @@ function tintOf(share: number | null): string {
       </table>
     </div>
   </div>
-</div>
+</section>

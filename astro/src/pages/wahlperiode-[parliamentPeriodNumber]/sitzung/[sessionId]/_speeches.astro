@@ -19,39 +19,32 @@ const speeches = sessionInput.speeches.filter(
 ---
 
 {speeches.length === 0 ? (
-  <div class="alert alert-info alert-soft">
-    <span class="iconify lucide--info size-5" />
-    Es liegen noch keine Redebeiträge vor.
-  </div>
+  <p class="text-base-content/70">Es liegen noch keine Redebeiträge vor.</p>
 ) : (
   <>
-    <div class="alert alert-soft alert-info" role="alert">
-      <span class="iconify lucide--info size-5" />
-      <div class="flex flex-col gap-2">
-        {speechesSource ? (
-          <SpeechesSourceNotice source={speechesSource} />
-        ) : (
-          <p>
-            Die folgenden Redebeiträge wurden automatisiert erstellt und können
-            Fehler enthalten. Die Texte dienen nur zur Orientierung und sind
-            nicht als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
-            Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
-            Aufzeichnung.
-          </p>
-        )}
+    <div class="text-base-content/70 max-w-prose space-y-2 text-sm">
+      {speechesSource ? (
+        <SpeechesSourceNotice source={speechesSource} />
+      ) : (
         <p>
-          Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
-          Wählen Sie dazu im Menü „…“ neben dem jeweiligen Redebeitrag „Beitrag
-          melden“ und senden Sie uns eine Nachricht. Wir werden den Fehler
-          umgehend prüfen und korrigieren.
+          Die folgenden Redebeiträge wurden automatisiert erstellt und können
+          Fehler enthalten. Die Texte dienen nur zur Orientierung und sind nicht
+          als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
+          Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
+          Aufzeichnung.
         </p>
-      </div>
+      )}
+      <p>
+        Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
+        Wählen Sie dazu im Menü „…“ neben dem jeweiligen Redebeitrag „Beitrag
+        melden“ und senden Sie uns eine Nachricht. Wir werden den Fehler
+        umgehend prüfen und korrigieren.
+      </p>
     </div>
 
-    <ul class="timeline timeline-vertical timeline-compact mt-8">
-      {speeches.map((speech, index) => (
-        <li>
-          {index > 0 && <hr />}
+    <ol class="divide-base-300 border-base-300 mt-6 max-w-4xl divide-y border-y">
+      {speeches.map((speech) => (
+        <li class="py-5">
           <Speech
             parliamentPeriod={parliamentPeriod}
             session={sessionInput.session}
@@ -59,20 +52,17 @@ const speeches = sessionInput.speeches.filter(
             speechElementId={`speech-${speech.start}`}
             link={`${siteRoutes(parliamentPeriod.id).session(sessionInput.session.id)}?tab=speeches`}
           />
-          {index < speeches.length - 1 && <hr />}
         </li>
       ))}
-    </ul>
+    </ol>
 
-    <div
+    <p
       id="speech-link-copied"
-      class="alert alert-success fixed bottom-5 right-5 hidden"
+      role="status"
+      class="alert alert-success fixed right-5 bottom-5 hidden"
     >
-      <span class="iconify lucide--check" />
-      <div class="flex flex-col gap-2">
-        <p>Link zum Redebeitrag kopiert</p>
-      </div>
-    </div>
+      Link zum Redebeitrag kopiert
+    </p>
   </>
 )}
 

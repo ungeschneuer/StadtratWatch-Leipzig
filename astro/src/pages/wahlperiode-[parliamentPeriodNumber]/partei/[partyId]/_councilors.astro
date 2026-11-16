@@ -4,7 +4,7 @@ import { type SessionInput } from '@models/SessionInput';
 import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
 import { type Registry, type RegistryParty } from '@models/registry';
 import { affiliationMembers, partyHistory } from '@models/person-affiliation';
-import { formatDate } from '@utils/format-date';
+import CouncilorList, { type Councilor } from '@components/CouncilorList.astro';
 import { formatPeriod } from '@utils/format-period';
 
 type Props = {
@@ -16,13 +16,15 @@ type Props = {
 const { parliamentPeriod, party, sessionInputs } = Astro.props as Props;
 
 // Everyone who belonged to the party in the period; members who changed show when they belonged to it.
-const persons = affiliationMembers(
+const councilors: Councilor[] = affiliationMembers(
   personsWithRecordedVotes(parliamentPeriod, sessionInputs),
   partyHistory,
   party.id,
 ).map(({ person, periods, isCurrent, changed }) => ({
-  ...person,
-  faction: getFactionName(person.factionId),
+  url: siteRoutes(parliamentPeriod.id).person(person.id),
+  name: person.name,
+  end: person.end,
+  otherAffiliation: getFactionName(person.factionId),
   isCurrent,
   membershipPeriods: changed
     ? periods.map((period) => formatPeriod(period.start, period.end)).join(', ')
@@ -37,31 +39,4 @@ function getFactionName(factionId: string) {
 }
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-  {persons.map((person) => (
-    <a
-      href={siteRoutes(parliamentPeriod.id).person(person.id)}
-      class:list={[
-        'card card-border border-base-300 hover:bg-base-300',
-        person.isCurrent ? 'bg-base-200' : 'bg-base-100 border-dashed',
-      ]}
-    >
-      <div class="card-body p-3">
-        <div class="text-sm font-medium">{person.name}</div>
-        <div class="text-base-content/70 mt-2 flex items-center text-xs">
-          {person.faction}
-        </div>
-        {person.membershipPeriods && (
-          <div class="text-base-content/70 mt-2 flex items-center text-xs">
-            In der Partei {person.membershipPeriods}
-          </div>
-        )}
-        {person.end && (
-          <div class="text-base-content/70 mt-2 flex items-center text-xs">
-            Ratsmitglied bis {formatDate(person.end)}
-          </div>
-        )}
-      </div>
-    </a>
-  ))}
-</div>
+<CouncilorList councilors={councilors} membershipLabel="In der Partei" />

@@ -2,7 +2,7 @@
 import { siteRoutes, votingSlugs } from '@utils/routes';
 import { type SessionInput } from '@models/SessionInput';
 import { type Registry, type RegistryFaction } from '@models/registry';
-import { getMotionResult, getVotingId } from './_helpers';
+import { type MotionResult, getMotionResult, getVotingId } from './_helpers';
 import { votingAccepted } from '@models/voting-breakdown';
 import { formatDate } from '@utils/format-date';
 
@@ -16,7 +16,7 @@ export type MotionListItem = {
   paperUrl: string | null;
   votingUrl: string;
   title: string;
-  result: string;
+  result: MotionResult;
 };
 
 type Props = {
@@ -99,206 +99,187 @@ const motions = Array.from(motionsMap)
       result: getMotionResult(motion.votings),
     } satisfies MotionListItem;
   });
+
+const MOTION_RESULTS: Record<
+  MotionResult,
+  { label: string; className: string }
+> = {
+  ACCEPTED: { label: 'angenommen', className: 'badge-success' },
+  PARTIALLY_ACCEPTED: { label: 'teilweise', className: 'badge-warning' },
+  REJECTED: { label: 'abgelehnt', className: 'badge-error' },
+};
 ---
 
-<div
-  class="@container overflow-x-auto space-y-4"
-  x-data="motions"
-  data-motions={JSON.stringify(motions)}
-  data-parliament-period-id={parliamentPeriod.id}
->
+<div class="@container space-y-4">
   <div class="flex flex-row flex-wrap gap-4">
     <div class="flex items-center gap-2">
       <input
         class="toggle toggle-sm"
-        id="motionsFilterCheckbox"
-        x-ref="motionsFilterCheckbox"
+        id="motions-filter-0"
         type="checkbox"
         checked
-        @change="filterList($event.target.checked, $refs.changeRequestsFilterCheckbox.checked, $refs.pointsOfOrderFilterCheckbox.checked)"
+        data-motion-type-filter="Antrag"
       />
-      <label class="label text-sm" for="motionsFilterCheckbox">
-        {' '}
-        Anträge{' '}
+      <label class="label text-sm" for="motions-filter-0">
+        Anträge
       </label>
     </div>
     <div class="flex items-center gap-2">
       <input
         class="toggle toggle-sm"
-        id="changeRequestsFilterCheckbox"
-        x-ref="changeRequestsFilterCheckbox"
+        id="motions-filter-1"
         type="checkbox"
         checked
-        @change="filterList($refs.motionsFilterCheckbox.checked, $event.target.checked, $refs.pointsOfOrderFilterCheckbox.checked)"
+        data-motion-type-filter="Änderungsantrag"
       />
-      <label class="label text-sm" for="changeRequestsFilterCheckbox">
+      <label class="label text-sm" for="motions-filter-1">
         Änderungsanträge
       </label>
     </div>
     <div class="flex items-center gap-2">
       <input
         class="toggle toggle-sm"
-        id="pointsOfOrderFilterCheckbox"
-        x-ref="pointsOfOrderFilterCheckbox"
+        id="motions-filter-2"
         type="checkbox"
         checked
-        @change="filterList($refs.motionsFilterCheckbox.checked, $refs.changeRequestsFilterCheckbox.checked, $event.target.checked)"
+        data-motion-type-filter="Geschäftsordnung"
       />
-      <label class="label text-sm" for="pointsOfOrderFilterCheckbox">
+      <label class="label text-sm" for="motions-filter-2">
         Geschäftsordnungsanträge
       </label>
     </div>
   </div>
-  <table class="table table-sm md:table-md">
-    <thead>
-      <tr>
-        <th class="hidden @xl:table-cell" scope="col">
-          <button
-            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('votingDate', (motion) => motion.votingDate)"
-          >
-            <span>Abgestimmt am</span>
-            <span class="iconify lucide--chevrons-up-down"></span>
-          </button>
-        </th>
-        <th class="hidden @2xl:table-cell" scope="col">
-          <button
-            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('motionId', motion => motion.motionId)"
-          >
-            <span>Antrag</span>
-            <span class="iconify lucide--chevrons-up-down"></span>
-          </button>
-        </th>
-        <th scope="col">
-          <button
-            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('title', motion => motion.title)"
-          >
-            <span>Titel</span>
-            <span class="iconify lucide--chevrons-up-down"></span>
-          </button>
-        </th>
-        <th scope="col">
-          <button
-            class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('result', motion => motion.result)"
-          >
-            <span>Ergebnis</span>
-            <span class="iconify lucide--chevrons-up-down"></span>
-          </button>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <template x-for="motion in motions">
+  <div class="overflow-x-auto">
+    <table data-sortable class="table table-sm md:table-md">
+      <thead>
         <tr>
-          <td
-            class="hidden @xl:table-cell"
-            x-text="motion.votingDateFormatted"
-          ></td>
-          <td class="hidden @2xl:table-cell">
-            <span class="block" x-text="motion.type"></span>
-            <template x-if="motion.paperUrl">
-              <a
-                :href="motion.paperUrl"
-                target="_blank"
-                class="link link-hover link-primary block wrap-anywhere"
-                title="Drucksache im Ratsinformationssystem der Stadt Leipzig"
-                x-text="`Drucksache ${motion.motionId}`"
-              ></a>
-            </template>
-            <template x-if="!motion.paperUrl">
-              <span class="block" x-text="motion.motionId"></span>
-            </template>
-          </td>
-          <td class="hyphens-auto">
-            <a
-              :href="motion.votingUrl"
-              class="link link-hover link-primary"
-              x-text="motion.title"
-            ></a>
-          </td>
-          <td class="text-center">
-            <template x-if="motion.result === 'ACCEPTED'">
-              <div class="badge badge-success badge-soft badge-sm">
-                <span class="iconify lucide--check-check"></span>
-                <span class="sr-only @md:not-sr-only">Angenommen</span>
-              </div>
-            </template>
-            <template x-if="motion.result === 'PARTIALLY_ACCEPTED'">
-              <div class="badge badge-warning badge-soft badge-sm">
-                <span class="iconify lucide--check"></span>
-                <span class="sr-only @md:not-sr-only">Teilweise</span>
-              </div>
-            </template>
-            <template x-if="motion.result === 'REJECTED'">
-              <div class="badge badge-error badge-soft badge-sm">
-                <span class="iconify lucide--x"></span>
-                <span class="sr-only @md:not-sr-only">Abgelehnt</span>
-              </div>
-            </template>
-          </td>
+          <th class="hidden @xl:table-cell" scope="col" aria-sort="descending">
+            <button
+              type="button"
+              data-sort-type="text"
+              class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
+            >
+              <span>Abgestimmt am</span>
+              <span
+                class="iconify lucide--chevrons-up-down"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </th>
+          <th class="hidden @2xl:table-cell" scope="col">
+            <button
+              type="button"
+              data-sort-type="text"
+              class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
+            >
+              <span>Antrag</span>
+              <span
+                class="iconify lucide--chevrons-up-down"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </th>
+          <th scope="col">
+            <button
+              type="button"
+              data-sort-type="text"
+              class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
+            >
+              <span>Titel</span>
+              <span
+                class="iconify lucide--chevrons-up-down"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </th>
+          <th scope="col">
+            <button
+              type="button"
+              data-sort-type="text"
+              class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
+            >
+              <span>Ergebnis</span>
+              <span
+                class="iconify lucide--chevrons-up-down"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </th>
         </tr>
-      </template>
-    </tbody>
-  </table>
-  <p class="text-base-content/70 px-4 py-3 text-xs @2xl:hidden">
-    Weitere Kennzahlen zeigt die Tabelle auf größeren Bildschirmen.
-  </p>
+      </thead>
+      <tbody>
+        {motions.map((motion) => (
+          <tr data-motion-type={motion.type}>
+            <td
+              class="hidden @xl:table-cell whitespace-nowrap"
+              data-sort-value={motion.votingDate}
+            >
+              {motion.votingDateFormatted}
+            </td>
+            <td
+              class="hidden @2xl:table-cell"
+              data-sort-value={motion.motionId}
+            >
+              <span class="block">{motion.type}</span>
+              {motion.paperUrl ? (
+                <a
+                  href={motion.paperUrl}
+                  target="_blank"
+                  class="link link-hover link-primary block wrap-anywhere"
+                  title="Drucksache im Ratsinformationssystem der Stadt Leipzig"
+                >
+                  Drucksache {motion.motionId}
+                </a>
+              ) : (
+                <span class="block">{motion.motionId}</span>
+              )}
+            </td>
+            <td class="hyphens-auto">
+              <a href={motion.votingUrl} class="link link-hover link-primary">
+                {motion.title}
+              </a>
+            </td>
+            <td data-sort-value={MOTION_RESULTS[motion.result].label}>
+              <span
+                class:list={[
+                  'badge badge-soft badge-sm',
+                  MOTION_RESULTS[motion.result].className,
+                ]}
+              >
+                {MOTION_RESULTS[motion.result].label}
+              </span>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <script>
-  import Alpine from 'alpinejs';
-  import { type MotionListItem } from './_motions.astro';
+  import { makeTablesSortable } from '@utils/sortable-table';
 
-  document.addEventListener('alpine:init', () => {
-    const motionsTableElement = document.querySelector(
-      '[data-motions]',
-    ) as HTMLTableElement;
-    const motions = JSON.parse(
-      motionsTableElement.dataset.motions || '[]',
-    ) as MotionListItem[];
-    const parliamentPeriodId = motionsTableElement.dataset.parliamentPeriodId;
+  makeTablesSortable();
 
-    Alpine.data('motions', () => ({
-      parliamentPeriodId,
-      motions,
-      filterList: function (
-        withMotions: boolean,
-        withChangeRequests: boolean,
-        withPointsOfOrder: boolean,
-      ) {
-        this.motions = motions.filter((motion) => {
-          if (motion.type === 'Antrag' && !withMotions) return false;
-          if (motion.type === 'Änderungsantrag' && !withChangeRequests)
-            return false;
-          if (motion.type === 'Geschäftsordnung' && !withPointsOfOrder)
-            return false;
-          return true;
-        });
-      },
-      sortTextColumn: function (
-        column: string,
-        getText: (motion: MotionListItem) => string,
-      ) {
-        this._updateSortColumn(column);
-        this.motions.sort((a, b) =>
-          this._sortedDesc
-            ? getText(b).localeCompare(getText(a))
-            : getText(a).localeCompare(getText(b)),
-        );
-      },
-      _sortedColumn: 'votingDate',
-      _sortedDesc: true,
-      _updateSortColumn: function (column: string) {
-        if (this._sortedColumn === column) {
-          this._sortedDesc = !this._sortedDesc;
-        } else {
-          this._sortedColumn = column;
-          this._sortedDesc = false;
-        }
-      },
-    }));
-  });
+  const typeFilters = document.querySelectorAll<HTMLInputElement>(
+    'input[data-motion-type-filter]',
+  );
+  const motionRows = document.querySelectorAll<HTMLTableRowElement>(
+    'tr[data-motion-type]',
+  );
+
+  function showSelectedMotionTypes() {
+    const hiddenTypes = new Set(
+      [...typeFilters]
+        .filter((filter) => !filter.checked)
+        .map((filter) => filter.dataset.motionTypeFilter),
+    );
+    motionRows.forEach((row) => {
+      row.hidden = hiddenTypes.has(row.dataset.motionType);
+    });
+  }
+
+  typeFilters.forEach((filter) =>
+    filter.addEventListener('change', showSelectedMotionTypes),
+  );
 </script>

@@ -153,12 +153,7 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
 
   {videoLink && (
     <div slot="sub-page-header">
-      <a
-        href={videoLink.url}
-        target="_blank"
-        class="link link-primary inline-flex items-center gap-1 text-xs"
-      >
-        <span class:list={['iconify', videoLink.icon]} />
+      <a href={videoLink.url} target="_blank" class="link link-primary text-sm">
         {videoLink.text}
       </a>
     </div>
@@ -280,13 +275,11 @@ const qualifiedMajorityRequirementName = getQualifiedMajorityRequirementName(
               </div>
               {accepted && (
                 <div class="badge badge-success badge-lg w-full mt-3">
-                  <span class="iconify lucide--check" />
                   Angenommen
                 </div>
               )}
               {!accepted && (
                 <div class="badge badge-error badge-lg w-full mt-3">
-                  <span class="iconify lucide--x" />
                   Abgelehnt
                 </div>
               )}

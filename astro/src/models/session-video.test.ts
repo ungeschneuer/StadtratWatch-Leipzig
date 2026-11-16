@@ -8,7 +8,6 @@ describe('sessionVideoLink', () => {
     ).toEqual({
       url: 'https://youtu.be/abc?t=702s',
       label: 'YouTube',
-      icon: 'lucide--youtube',
       text: 'Video ab 0:11:42',
     });
   });
@@ -28,7 +27,6 @@ describe('sessionVideoLink', () => {
     ).toEqual({
       url: 'https://www.leipzig.de/mediathek/x',
       label: 'Mediathek',
-      icon: 'lucide--video',
       text: 'Aufzeichnung (Mediathek)',
     });
   });

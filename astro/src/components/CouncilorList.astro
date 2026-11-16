@@ -1,0 +1,50 @@
+---
+import { formatDate } from '@utils/format-date';
+
+export type Councilor = {
+  url: string;
+  name: string;
+  otherAffiliation: string;
+  isCurrent: boolean;
+  membershipPeriods: string | null;
+  end?: string | null;
+};
+
+type Props = {
+  councilors: Councilor[];
+  // „In der Fraktion“ or „In der Partei“, followed by the periods of a member who changed.
+  membershipLabel: string;
+};
+
+const { councilors, membershipLabel } = Astro.props as Props;
+
+function describeCouncilor(councilor: Councilor): string {
+  return [
+    councilor.otherAffiliation,
+    councilor.membershipPeriods &&
+      `${membershipLabel} ${councilor.membershipPeriods}`,
+    councilor.end && `Ratsmitglied bis ${formatDate(councilor.end)}`,
+  ]
+    .filter(Boolean)
+    .join(', ');
+}
+---
+
+<ul class="divide-base-300 border-base-300 max-w-3xl divide-y border-y">
+  {councilors.map((councilor) => (
+    <li class="flex flex-wrap items-baseline justify-between gap-x-4 py-2.5">
+      <a
+        href={councilor.url}
+        class:list={[
+          'link-quiet font-medium',
+          { 'text-base-content/70': !councilor.isCurrent },
+        ]}
+      >
+        {councilor.name}
+      </a>
+      <span class="text-base-content/70 text-sm">
+        {describeCouncilor(councilor)}
+      </span>
+    </li>
+  ))}
+</ul>
