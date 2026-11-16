@@ -53,7 +53,7 @@ const videoLink = sessionVideoLink(sessionInput.session);
         <a
           href={meetingMinutesUrl}
           target="_blank"
-          class="link link-primary text-xs"
+          class="link link-primary inline-flex items-center gap-1 text-xs"
         >
           <span class="iconify lucide--file-text" />
           Niederschrift
@@ -63,7 +63,7 @@ const videoLink = sessionVideoLink(sessionInput.session);
         <a
           href={videoLink.url}
           target="_blank"
-          class="link link-primary text-xs"
+          class="link link-primary inline-flex items-center gap-1 text-xs"
         >
           <span class:list={['iconify', videoLink.icon]} />
           {videoLink.text}
