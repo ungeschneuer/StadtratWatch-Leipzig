@@ -1,4 +1,7 @@
 ---
+import StatisticsTable, {
+  type StatisticsMeasure,
+} from '@components/StatisticsTable.astro';
 import { formatPercentage } from '@utils/format-number';
 import { type Registry, type RegistryPerson } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
@@ -51,122 +54,43 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
   person,
   sessionInputs,
 );
+
+const measures: StatisticsMeasure[] = [
+  {
+    id: 'participation-rate',
+    label: 'Abstimmungsteilnahme',
+    value: formatPercentage(participationRate),
+    explanation:
+      'Wie häufig das Ratsmitglied an Abstimmungen teilgenommen hat.',
+    history: participationRateHistory,
+  },
+  {
+    id: 'voting-success-rate',
+    label: 'Abstimmungserfolg',
+    value: formatPercentage(votingsSuccessRate),
+    explanation:
+      'Wie häufig das Abstimmungsergebnis mit dem Votum des Ratsmitglieds übereinstimmte.',
+    history: votingsSuccessRateHistory,
+  },
+  {
+    id: 'abstention-rate',
+    label: 'Stimmenthaltungen',
+    value: formatPercentage(abstentionRate),
+    explanation:
+      'Anteil der abgegebenen Stimmen, die weder dafür noch dagegen waren.',
+    history: abstentionRateHistory,
+  },
+  ...(factionDeviation
+    ? [
+        {
+          id: 'faction-deviation',
+          label: 'Abweichung von der Fraktion',
+          value: formatPercentage(factionDeviationRate),
+          explanation: `Anteil der abgegebenen Stimmen, die nicht der Mehrheit der eigenen Fraktion entsprachen (${factionDeviation.deviating} von ${factionDeviation.counted}). Auch eine Enthaltung zählt, wenn die Fraktion mehrheitlich mit Ja oder Nein stimmte; ist die Fraktion gespalten, zählt die Abstimmung nicht.`,
+        },
+      ]
+    : []),
+];
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-  <div
-    id="participation-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(participationRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Abstimmungsteilnahme</div>
-        <span class="text-3xl">{formatPercentage(participationRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Gibt an, wie häufig das Ratsmitglied an Abstimmungen teilgenommen hat.
-      </p>
-      <canvas id="participation-chart"></canvas>
-    </div>
-  </div>
-
-  <div
-    id="voting-success-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(votingsSuccessRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Abstimmungserfolg</div>
-        <span class="text-3xl">{formatPercentage(votingsSuccessRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Gibt an, wie häufig das Abstimmungsergebnis mit dem Votum des
-        Ratsmitglieds übereinstimmte.
-      </p>
-      <canvas id="voting-success-chart"></canvas>
-    </div>
-  </div>
-
-  <div
-    id="abstention-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(abstentionRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Stimmenthaltungen</div>
-        <span class="text-3xl">{formatPercentage(abstentionRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Gibt an, wie hoch der Anteil der abgegebenen Stimmen ist, die weder
-        dafür noch dagegen waren.
-      </p>
-      <canvas id="abstention-chart"></canvas>
-    </div>
-  </div>
-
-  {factionDeviation && (
-    <div id="faction-deviation" class="card card-border bg-base-100">
-      <div class="card-body space-y-3">
-        <div class="card-title flex justify-between">
-          <div>Abweichung von der Fraktion</div>
-          <span class="text-3xl">{formatPercentage(factionDeviationRate)}</span>
-        </div>
-        <p class="text-base-content/70 text-sm">
-          Anteil der abgegebenen Stimmen, die nicht der Mehrheit der eigenen
-          Fraktion entsprachen ({factionDeviation.deviating} von{' '}
-          {factionDeviation.counted}). Auch eine Enthaltung zählt, wenn die
-          Fraktion mehrheitlich mit Ja oder Nein stimmte; ist die Fraktion
-          gespalten, zählt die Abstimmung nicht.
-        </p>
-      </div>
-    </div>
-  )}
-</div>
-
-<script>
-  import { historyLineChart, type HistoryPoint } from '@utils/charts';
-  import { type HistoryDataPoint as VotingSuccessRateHistoryDataPoint } from '@data-analysis/VotingSuccess';
-  import { type HistoryDataPoint as ParticipationRateHistoryDataPoint } from '@data-analysis/ParticipationRate';
-  import { type HistoryDataPoint as AbstentionRateHistoryDataPoint } from '@data-analysis/AbstentionRate';
-  import { formatPercentage } from '@utils/format-number';
-
-  function makeChart<TData extends HistoryPoint>(
-    chartContainerId: string,
-    chartCanvasId: string,
-    numberFormatter: (value: number | null) => string,
-  ) {
-    const containerDiv = document.getElementById(
-      chartContainerId,
-    ) as HTMLDivElement;
-    const parsedHistoryData = JSON.parse(
-      containerDiv.dataset.history || '[]',
-    ) as TData[];
-
-    historyLineChart(
-      document.getElementById(chartCanvasId) as HTMLCanvasElement,
-      parsedHistoryData,
-      numberFormatter,
-    );
-  }
-
-  makeChart<ParticipationRateHistoryDataPoint>(
-    'participation-rate',
-    'participation-chart',
-    formatPercentage,
-  );
-
-  makeChart<VotingSuccessRateHistoryDataPoint>(
-    'voting-success-rate',
-    'voting-success-chart',
-    formatPercentage,
-  );
-
-  makeChart<AbstentionRateHistoryDataPoint>(
-    'abstention-rate',
-    'abstention-chart',
-    formatPercentage,
-  );
-</script>
+<StatisticsTable measures={measures} />

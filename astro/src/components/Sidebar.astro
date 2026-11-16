@@ -52,43 +52,37 @@ const sections = [
     page: 'search',
     label: 'Suche',
     href: sitePath('/suche'),
-    icon: 'lucide--search',
   },
   {
     page: 'sessions',
     label: 'Sitzungen',
     href: routes.sessions(),
-    icon: 'lucide--calendar-days',
   },
   {
     page: 'factions',
     label: 'Fraktionen',
     href: routes.factions(),
-    icon: 'lucide--users',
   },
   {
     page: 'parties',
     label: 'Parteien',
     href: routes.parties(),
-    icon: 'lucide--flag',
   },
   {
     page: 'persons',
     label: 'Personen',
     href: routes.persons(),
-    icon: 'lucide--user',
   },
 ];
 const aboutLinks = [
-  { label: 'Quellcode', href: SOURCE_REPOSITORY_URL, icon: 'lucide--github' },
-  { label: 'API und Daten', href: sitePath('/api'), icon: 'lucide--code-2' },
+  { label: 'Quellcode', href: SOURCE_REPOSITORY_URL },
+  { label: 'API und Daten', href: sitePath('/api') },
   {
     label: 'Datenschutz',
     href: sitePath('/datenschutz'),
-    icon: 'lucide--shield',
   },
-  { label: 'Impressum', href: sitePath('/impressum'), icon: 'lucide--scale' },
-  { label: 'Kontakt', href: sitePath('/kontakt'), icon: 'lucide--mail' },
+  { label: 'Impressum', href: sitePath('/impressum') },
+  { label: 'Kontakt', href: sitePath('/kontakt') },
 ];
 ---
 
@@ -138,7 +132,6 @@ const aboutLinks = [
             class:list={[{ 'menu-active': activePage === section.page }]}
             aria-current={activePage === section.page ? 'page' : undefined}
           >
-            <span class:list={['iconify size-4', section.icon]} />
             {section.label}
           </a>
         </li>
@@ -148,38 +141,33 @@ const aboutLinks = [
 
   <div class="grow"></div>
 
-  <div class="alert alert-soft alert-info mx-3 my-3 text-sm" role="note">
-    <div class="space-y-1">
-      <p>
-        Ein Projekt von{' '}
-        <a class="link" href={OPERATOR_WEBSITE} target="_blank">
-          {OPERATOR_NAME}
-        </a>
-        , <ContactEmailLink class="link" />. <em>Keine</em> offizielle Seite der
-        Stadt Leipzig.
-      </p>
-      <p class="text-xs">
-        Grundlage:{' '}
-        <a class="link" href={UPSTREAM_PROJECT.siteUrl} target="_blank">
-          {UPSTREAM_PROJECT.name}
-        </a>{' '}
-        von{' '}
-        <a class="link" href={UPSTREAM_PROJECT.maintainersUrl} target="_blank">
-          {UPSTREAM_PROJECT.maintainers}
-        </a>
-        .
-      </p>
-    </div>
+  <div class="text-base-content/70 space-y-1 px-5 py-4 text-sm">
+    <p>
+      Ein Projekt von{' '}
+      <a class="link" href={OPERATOR_WEBSITE} target="_blank">
+        {OPERATOR_NAME}
+      </a>
+      , <ContactEmailLink class="link" />. <em>Keine</em> offizielle Seite der
+      Stadt Leipzig.
+    </p>
+    <p class="text-xs">
+      Grundlage:{' '}
+      <a class="link" href={UPSTREAM_PROJECT.siteUrl} target="_blank">
+        {UPSTREAM_PROJECT.name}
+      </a>{' '}
+      von{' '}
+      <a class="link" href={UPSTREAM_PROJECT.maintainersUrl} target="_blank">
+        {UPSTREAM_PROJECT.maintainers}
+      </a>
+      .
+    </p>
   </div>
 
   <nav aria-label="Über die Seite" class="border-base-300 border-t pb-2">
     <ul class="menu menu-sm w-full px-3">
       {aboutLinks.map((link) => (
         <li>
-          <a href={link.href}>
-            <span class:list={['iconify size-4', link.icon]} />
-            {link.label}
-          </a>
+          <a href={link.href}>{link.label}</a>
         </li>
       ))}
     </ul>

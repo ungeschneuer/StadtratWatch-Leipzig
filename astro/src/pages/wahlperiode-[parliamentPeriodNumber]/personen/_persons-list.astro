@@ -1,5 +1,7 @@
 ---
 import { siteRoutes } from '@utils/routes';
+import { sortValue } from '@utils/sortable-table';
+import { nameForSorting } from '@models/person-name';
 import { compareNamesForSorting } from '@models/person-name';
 import { personsWithRecordedVotes } from '@data-analysis/RecordedVotes';
 import { type PersonListItem } from './_models';
@@ -67,22 +69,18 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
     } satisfies PersonListItem;
   })
   .toSorted((a, b) => compareNamesForSorting(a.name, b.name));
+const parliamentPeriodId = parliamentPeriod.id;
 ---
 
-<div
-  id="persons-list"
-  class="@container overflow-x-auto"
-  x-data="persons"
-  data-parliament-period-id={parliamentPeriod.id}
-  data-persons={JSON.stringify(persons)}
->
-  <table class="table table-sm md:table-md table-pin-cols">
+<div id="persons-list" class="@container overflow-x-auto">
+  <table data-sortable class="table table-sm md:table-md table-pin-cols">
     <thead>
       <tr>
-        <th>
+        <th aria-sort="ascending">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('name', (person) => nameForSorting(person.name))"
+            type="button"
+            data-sort-type="text"
           >
             <span>Name</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -91,7 +89,8 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
         <th>
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('faction', (person) => person.faction)"
+            type="button"
+            data-sort-type="text"
           >
             <span>Fraktion</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -100,7 +99,8 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
         <th class="hidden @4xl:table-cell">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-            @click="sortTextColumn('party', (person) => person.party)"
+            type="button"
+            data-sort-type="text"
           >
             <span>Partei</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -109,7 +109,8 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
         <th class="hidden @xl:table-cell text-right">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-            @click="sortNumberColumn('participationRate', (person) => person.participationRate)"
+            type="button"
+            data-sort-type="number"
           >
             <span>abgestimmt</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -118,7 +119,8 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
         <th class="hidden @2xl:table-cell text-right">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-            @click="sortNumberColumn('votingSuccessRate', (person) => person.votingSuccessRate)"
+            type="button"
+            data-sort-type="number"
           >
             <span>Abstimmungs&shy;erfolg</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -127,7 +129,8 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
         <th class="hidden @4xl:table-cell text-right">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-            @click="sortNumberColumn('abstentionRate', (person) => person.abstentionRate)"
+            type="button"
+            data-sort-type="number"
           >
             <span>Stimm&shy;enthaltungen</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -136,7 +139,8 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
         <th class="hidden @5xl:table-cell text-right">
           <button
             class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-            @click="sortNumberColumn('speakingTime', (person) => person.speakingTime)"
+            type="button"
+            data-sort-type="number"
           >
             <span>Redezeit</span>
             <span class="iconify lucide--chevrons-up-down"></span>
@@ -145,47 +149,62 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
       </tr>
     </thead>
     <tbody>
-      <template x-for="person in persons">
+      {persons.map((person) => (
         <tr>
-          <th scope="row" class="bg-base-100 font-normal">
+          <th
+            scope="row"
+            class="bg-base-100 font-normal"
+            data-sort-value={nameForSorting(person.name)}
+          >
             <a
-              :href="siteRoutes(parliamentPeriodId).person(person.id)"
+              href={siteRoutes(parliamentPeriodId).person(person.id)}
               class="link link-hover link-primary"
-              x-text="person.name"
-            ></a>
+            >
+              {person.name}
+            </a>
           </th>
           <td>
             <a
-              :href="siteRoutes(parliamentPeriodId).faction(person.factionId)"
+              href={siteRoutes(parliamentPeriodId).faction(person.factionId)}
               class="link link-hover link-primary"
-              x-text="person.faction"
-            ></a>
+            >
+              {person.faction}
+            </a>
           </td>
           <td class="hidden @4xl:table-cell">
             <a
-              :href="siteRoutes(parliamentPeriodId).party(person.partyId)"
+              href={siteRoutes(parliamentPeriodId).party(person.partyId)}
               class="link link-hover link-primary"
-              x-text="person.party"
-            ></a>
+            >
+              {person.party}
+            </a>
           </td>
           <td
             class="text-right hidden @xl:table-cell tabular-nums"
-            x-text="person.participationRateDisplay"
-          ></td>
+            data-sort-value={sortValue(person.participationRate)}
+          >
+            {person.participationRateDisplay}
+          </td>
           <td
             class="text-right hidden @2xl:table-cell tabular-nums"
-            x-text="person.votingSuccessRateDisplay"
-          ></td>
+            data-sort-value={sortValue(person.votingSuccessRate)}
+          >
+            {person.votingSuccessRateDisplay}
+          </td>
           <td
             class="text-right hidden @4xl:table-cell tabular-nums"
-            x-text="person.abstentionRateDisplay"
-          ></td>
+            data-sort-value={sortValue(person.abstentionRate)}
+          >
+            {person.abstentionRateDisplay}
+          </td>
           <td
             class="text-right hidden @5xl:table-cell tabular-nums"
-            x-text="person.speakingTimeDisplay"
-          ></td>
+            data-sort-value={sortValue(person.speakingTime)}
+          >
+            {person.speakingTimeDisplay}
+          </td>
         </tr>
-      </template>
+      ))}
     </tbody>
   </table>
   <p class="text-base-content/70 px-4 py-3 text-xs @5xl:hidden">
@@ -194,60 +213,7 @@ const persons = personsWithRecordedVotes(parliamentPeriod, sessionInputs)
 </div>
 
 <script>
-  import { siteRoutes } from '@utils/routes';
-  import { nameForSorting } from '@models/person-name';
-  import Alpine from 'alpinejs';
-  import { type PersonListItem } from './_models';
+  import { makeTablesSortable } from '@utils/sortable-table';
 
-  document.addEventListener('alpine:init', () => {
-    Alpine.data('persons', () => {
-      const personsListDivElement = document.getElementById(
-        'persons-list',
-      ) as HTMLTableElement;
-      const persons = JSON.parse(
-        personsListDivElement.dataset.persons || '[]',
-      ) as PersonListItem[];
-      const parliamentPeriodId =
-        personsListDivElement.dataset.parliamentPeriodId;
-
-      return {
-        parliamentPeriodId,
-        siteRoutes,
-        persons,
-        nameForSorting,
-        sortTextColumn: function (
-          column: string,
-          getText: (person: PersonListItem) => string,
-        ) {
-          this._updateSortColumn(column);
-          this.persons.sort((a, b) =>
-            this._sortedDesc
-              ? getText(b).localeCompare(getText(a), 'de')
-              : getText(a).localeCompare(getText(b), 'de'),
-          );
-        },
-        sortNumberColumn: function (
-          column: string,
-          getNumber: (person: PersonListItem) => number | null,
-        ) {
-          this._updateSortColumn(column);
-          this.persons.sort((a, b) =>
-            this._sortedDesc
-              ? (getNumber(a) || 0) - (getNumber(b) || 0)
-              : (getNumber(b) || 0) - (getNumber(a) || 0),
-          );
-        },
-        _sortedColumn: 'name',
-        _sortedDesc: false,
-        _updateSortColumn: function (column: string) {
-          if (this._sortedColumn === column) {
-            this._sortedDesc = !this._sortedDesc;
-          } else {
-            this._sortedColumn = column;
-            this._sortedDesc = false;
-          }
-        },
-      };
-    });
-  });
+  makeTablesSortable();
 </script>

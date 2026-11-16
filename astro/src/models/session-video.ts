@@ -5,7 +5,6 @@ import type { RegistrySession } from './registry.ts';
 export type SessionVideoLink = {
   url: string;
   label: string;
-  icon: string;
   text: string;
 };
 
@@ -21,7 +20,6 @@ export function sessionVideoLink(
           ? session.youtubeUrl
           : `${session.youtubeUrl}?t=${seconds}s`,
       label: 'YouTube',
-      icon: 'lucide--youtube',
       text: linkText('YouTube', seconds),
     };
   }
@@ -32,7 +30,6 @@ export function sessionVideoLink(
         ? playerUrlAt(session.video.playerUrl as string, seconds)
         : session.video.url,
       label: session.video.label,
-      icon: 'lucide--video',
       text: linkText(session.video.label, jumpsToTime ? seconds : undefined),
     };
   }

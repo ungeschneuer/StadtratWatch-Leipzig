@@ -1,5 +1,12 @@
 /* The few places where the site's look differs from daisyUI's defaults. */
 
+/* Wide content scrolls inside its own box (tables, matrices); the page itself never scrolls sideways. clip, unlike
+   hidden, keeps position: sticky working for the top bar. */
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   @apply bg-base-200 text-base-content font-sans antialiased;
 }
@@ -62,6 +69,14 @@ body {
   .tabs-lift > .tab {
     --tab-p: 0.5rem;
     font-size: 0.8125rem;
+  }
+}
+
+/* The person page has four tabs; on a 320 px phone they fit one row only at this size. */
+@media (width < 24rem) {
+  .tabs-lift > .tab {
+    --tab-p: 0.375rem;
+    font-size: 0.75rem;
   }
 }
 

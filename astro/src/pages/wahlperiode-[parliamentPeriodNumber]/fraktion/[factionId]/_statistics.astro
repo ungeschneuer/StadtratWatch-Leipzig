@@ -1,4 +1,7 @@
 ---
+import StatisticsTable, {
+  type StatisticsMeasure,
+} from '@components/StatisticsTable.astro';
 import { type RegistryFaction } from '@models/registry';
 import { type SessionInput } from '@models/SessionInput';
 import {
@@ -89,175 +92,63 @@ const seatsHistory = calcSeatsHistoryOfFaction(
   faction,
   sessionInputs,
 );
+
+const measures: StatisticsMeasure[] = [
+  {
+    id: 'seats',
+    label: 'Sitze',
+    value: String(faction.seats),
+    explanation:
+      'Sitze heute. Ändern sie sich durch Nachrückende, Austritte oder Wechsel, steht darunter der Stand an den Sitzungen mit einer Änderung.',
+    detail:
+      seatsHistory.length > 1
+        ? seatsHistory
+            .map((point) => `${formatDate(point.date)}: ${point.value}`)
+            .join('; ')
+        : undefined,
+  },
+  {
+    id: 'motions-success-rate',
+    label: 'Erfolgreiche Anträge',
+    value: formatPercentage(motionsSuccessRate),
+    explanation:
+      'Anteil der Anträge der Fraktion, die mit Mehrheit angenommen wurden.',
+    history: motionsSuccessRateHistory,
+  },
+  {
+    id: 'voting-success-rate',
+    label: 'Abstimmungserfolg',
+    value: formatPercentage(votingsSuccessRate),
+    explanation:
+      'Wie häufig das Abstimmungsergebnis mit dem Votum der Fraktion übereinstimmte.',
+    history: votingsSuccessRateHistory,
+  },
+  {
+    id: 'uniformity-score',
+    label: 'Geschlossenheit',
+    value: formatScore(uniformityScore),
+    explanation:
+      'Ein Wert zwischen 0 und 1: wie einheitlich die Fraktionsmitglieder abgestimmt haben. Je größer, desto geschlossener.',
+    history: uniformityScoreHistory,
+    format: 'score',
+  },
+  {
+    id: 'participation-rate',
+    label: 'Abstimmungsteilnahme',
+    value: formatPercentage(participationRate),
+    explanation:
+      'Wie häufig die Fraktionsmitglieder an Abstimmungen teilgenommen haben.',
+    history: participationRateHistory,
+  },
+  {
+    id: 'abstention-rate',
+    label: 'Stimmenthaltungen',
+    value: formatPercentage(abstentionRate),
+    explanation:
+      'Anteil der abgegebenen Stimmen, die weder dafür noch dagegen waren.',
+    history: abstentionRateHistory,
+  },
+];
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-  <div class="card card-border bg-base-100">
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Sitze</div>
-        <span class="text-3xl">{faction.seats}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Sitze heute. Ändern sie sich durch Nachrückende, Austritte oder Wechsel,
-        steht hier der Stand an den Sitzungen mit einer Änderung.
-      </p>
-      {seatsHistory.length > 1 && (
-        <p class="text-sm">
-          {seatsHistory
-            .map((point) => `${formatDate(point.date)}: ${point.value}`)
-            .join('; ')}
-        </p>
-      )}
-    </div>
-  </div>
-  <div
-    id="motions-success-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(motionsSuccessRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Erfolgreiche Anträge</div>
-        <span class="text-3xl">{formatPercentage(motionsSuccessRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Anteil der Anträge, die durch die Fraktion gestellt wurde und durch
-        einen Mehrheitsbeschluss angenommen wurde.
-      </p>
-      <canvas id="motions-success-chart"></canvas>
-    </div>
-  </div>
-
-  <div
-    id="voting-success-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(votingsSuccessRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Abstimmungserfolg</div>
-        <span class="text-3xl">{formatPercentage(votingsSuccessRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Gibt an, wie häufig das Abstimmungsergebnis mit dem Votum der Fraktion
-        übereinstimmte.
-      </p>
-      <canvas id="voting-success-chart"></canvas>
-    </div>
-  </div>
-
-  <div
-    id="uniformity-score"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(uniformityScoreHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Geschlossenheit</div>
-        <span class="text-3xl">{formatScore(uniformityScore)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Ein Wert zwischen 0 und 1 gibt an, wie einheitlich die
-        Fraktionsmitglieder abgestimmt haben. Je größer der Wert ist, desto
-        geschlossener ist das Abstimmungsverhalten der Fraktion.
-      </p>
-      <canvas id="uniformity-chart"></canvas>
-    </div>
-  </div>
-
-  <div
-    id="participation-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(participationRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Abstimmungsteilnahme</div>
-        <span class="text-3xl">{formatPercentage(participationRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Gibt an, wie häufig die Fraktionsmitglieder an Abstimmungen teilgenommen
-        haben.
-      </p>
-      <canvas id="participation-chart"></canvas>
-    </div>
-  </div>
-
-  <div
-    id="abstention-rate"
-    class="card card-border bg-base-100"
-    data-history={JSON.stringify(abstentionRateHistory)}
-  >
-    <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
-        <div>Stimmenthaltungen</div>
-        <span class="text-3xl">{formatPercentage(abstentionRate)}</span>
-      </div>
-      <p class="text-base-content/70 text-sm">
-        Gibt an, wie hoch der Anteil der abgegebenen Stimmen ist, die weder
-        dafür noch dagegen waren.
-      </p>
-      <canvas id="abstention-chart"></canvas>
-    </div>
-  </div>
-</div>
-
-<script>
-  import { historyLineChart, type HistoryPoint } from '@utils/charts';
-  import { type HistoryDataPoint as MotionsSuccessRateHistoryDataPoint } from '@data-analysis/MotionsSuccess';
-  import { type HistoryDataPoint as VotingSuccessRateHistoryDataPoint } from '@data-analysis/VotingSuccess';
-  import { type HistoryDataPoint as UniformityScoreHistoryDataPoint } from '@data-analysis/UniformityScore';
-  import { type HistoryDataPoint as ParticipationRateHistoryDataPoint } from '@data-analysis/ParticipationRate';
-  import { type HistoryDataPoint as AbstentionRateHistoryDataPoint } from '@data-analysis/AbstentionRate';
-  import { formatPercentage, formatScore } from '@utils/format-number';
-
-  function makeChart<TData extends HistoryPoint>(
-    chartContainerId: string,
-    chartCanvasId: string,
-    numberFormatter: (value: number | null) => string,
-  ) {
-    const containerDiv = document.getElementById(
-      chartContainerId,
-    ) as HTMLDivElement;
-    const parsedHistoryData = JSON.parse(
-      containerDiv.dataset.history || '[]',
-    ) as TData[];
-
-    historyLineChart(
-      document.getElementById(chartCanvasId) as HTMLCanvasElement,
-      parsedHistoryData,
-      numberFormatter,
-    );
-  }
-
-  makeChart<MotionsSuccessRateHistoryDataPoint>(
-    'motions-success-rate',
-    'motions-success-chart',
-    formatPercentage,
-  );
-
-  makeChart<VotingSuccessRateHistoryDataPoint>(
-    'voting-success-rate',
-    'voting-success-chart',
-    formatPercentage,
-  );
-
-  makeChart<UniformityScoreHistoryDataPoint>(
-    'uniformity-score',
-    'uniformity-chart',
-    formatScore,
-  );
-
-  makeChart<ParticipationRateHistoryDataPoint>(
-    'participation-rate',
-    'participation-chart',
-    formatPercentage,
-  );
-
-  makeChart<AbstentionRateHistoryDataPoint>(
-    'abstention-rate',
-    'abstention-chart',
-    formatPercentage,
-  );
-</script>
+<StatisticsTable measures={measures} />

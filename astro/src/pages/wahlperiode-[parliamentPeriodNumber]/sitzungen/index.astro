@@ -6,77 +6,47 @@ import {
   getParliamentPeriodWithSessionsPaths,
 } from '../_helpers';
 import { type BreadcrumbItem } from '@components/BreadcrumbMenu.astro';
-import type { MonthEntry, SessionEntry, TimelineEntry } from './_model';
 import { formatDate } from '@utils/format-date';
+import { formatNumber } from '@utils/format-number';
 
 export const getStaticPaths = getParliamentPeriodWithSessionsPaths;
 
 const { parliamentPeriod, sessionInputs } =
   Astro.props as ParliamentPeriodWithSessionsProps;
-const parliamentPeriodId = parliamentPeriod.id;
+const routes = siteRoutes(parliamentPeriod.id);
 
-const groupedByMonthMap = Map.groupBy(sessionInputs, (sessionInput) => {
-  const date = new Date(sessionInput.session.date);
-  const month = `${date.getMonth() + 1}`.padStart(2, '0');
-  const year = date.getFullYear();
-  return `${year}-${month}`;
-});
-const groupedByMonth = Array.from(groupedByMonthMap)
-  .map(([key, value]) => {
-    const year = Number.parseInt(key.split('-')[0], 10);
-    const month = Number.parseInt(key.split('-')[1], 10);
-    const label = new Date(key + '-01').toLocaleString('de-DE', {
+const newestFirst = sessionInputs.toSorted(
+  (a, b) =>
+    new Date(b.session.date).getTime() - new Date(a.session.date).getTime(),
+);
+const months = Array.from(
+  Map.groupBy(newestFirst, (sessionInput) =>
+    new Date(sessionInput.session.date).toLocaleString('de-DE', {
       month: 'long',
       year: 'numeric',
-    });
-    return {
-      month,
-      year,
-      label,
-      sessions: value.map((sessionInput) => ({
-        sessionId: sessionInput.session.id,
-        date: sessionInput.session.date,
-        dateDisplay: formatDate(sessionInput.session.date),
-        title: sessionInput.session.title,
-        approved: sessionInput.session.approved,
-      })),
-    };
-  })
-  .toSorted((a, b) =>
-    a.year !== b.year ? b.year - a.year : b.month - a.month,
-  );
+    }),
+  ),
+  ([label, monthSessionInputs]) => ({
+    label,
+    sessions: monthSessionInputs.map((sessionInput) => ({
+      url: routes.session(sessionInput.session.id),
+      dateDisplay: formatDate(sessionInput.session.date),
+      title: sessionInput.session.title,
+      approved: sessionInput.session.approved,
+      votingCount: sessionInput.votings.length,
+    })),
+  }),
+);
 
-const timelineEntries = groupedByMonth
-  .map<TimelineEntry[]>((group) => {
-    const monthEntry = {
-      type: 'month',
-      month: group.month,
-      year: group.year,
-      label: group.label,
-    } as TimelineEntry;
-    const sessionEntries = group.sessions
-      .toSorted(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-      )
-      .map<TimelineEntry>((session) => {
-        return {
-          type: 'session',
-          sessionId: session.sessionId,
-          date: session.date,
-          dateDisplay: formatDate(session.date),
-          title: session.title,
-          approved: session.approved,
-        };
-      });
-
-    return [monthEntry, ...sessionEntries];
-  })
-  .flat();
+function describeVotingCount(count: number): string {
+  if (count === 0) return 'keine Abstimmungen über die Tafel';
+  return `${formatNumber(count)} ${count === 1 ? 'Abstimmung' : 'Abstimmungen'}`;
+}
 
 const breadcrumbItems: BreadcrumbItem[] = [
   {
     name: parliamentPeriod.name,
-    href: siteRoutes(parliamentPeriodId).parliamentPeriod(),
+    href: routes.parliamentPeriod(),
   },
   {
     name: 'Sitzungen',
@@ -90,59 +60,34 @@ const breadcrumbItems: BreadcrumbItem[] = [
   parliamentPeriod={parliamentPeriod}
   breadcrumbItems={breadcrumbItems}
 >
-  <ul class="timeline timeline-vertical">
-    {timelineEntries.map((entry, index) => {
-      const approved =
-        entry.type === 'session' && (entry as SessionEntry).approved;
-      return entry.type === 'month' ? (
-        <li>
-          {index !== 0 && <hr />}
-          <div class="timeline-start">{(entry as MonthEntry).label}</div>
-          <div class="timeline-middle">
-            <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1">
-              <span class="iconify lucide--calendar-1" />
-            </div>
-          </div>
-          {index < timelineEntries.length - 1 && <hr />}
-        </li>
-      ) : (
-        <li>
-          {index !== 0 && <hr />}
-          <div class="timeline-middle">
-            <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1" />
-          </div>
-          <a
-            href={siteRoutes(parliamentPeriodId).session(
-              (entry as SessionEntry).sessionId,
-            )}
-            class="timeline-end timeline-box ms-3 hover:bg-base-200 hover:cursor-pointer space-y-2"
-            class:list={approved ? undefined : 'border-dashed'}
-          >
-            <div
-              class:list={
-                approved ? 'text-base-content/70' : 'text-base-content/70'
-              }
-            >
-              {(entry as SessionEntry).dateDisplay}
-            </div>
-            {(entry as SessionEntry).title && (
-              <div
-                class="text-base"
-                class:list={approved ? undefined : 'text-base-content/70'}
-              >
-                {(entry as SessionEntry).title}
-              </div>
-            )}
-            {!approved && (
-              <div class="text-warning flex items-center gap-1">
-                <span class="iconify lucide--alert-triangle" />
-                Prüfung noch nicht abgeschlossen
-              </div>
-            )}
-          </a>
-          {index < timelineEntries.length - 1 && <hr />}
-        </li>
-      );
-    })}
-  </ul>
+  <div class="max-w-3xl space-y-8">
+    {months.map((month) => (
+      <section>
+        <h2 class="text-base-content/70 text-sm font-semibold">
+          {month.label}
+        </h2>
+        <ul class="divide-base-300 border-base-300 mt-2 divide-y border-y">
+          {month.sessions.map((session) => (
+            <li class="py-3">
+              <a href={session.url} class="link-quiet font-medium">
+                {session.dateDisplay}
+                {session.title && `: ${session.title}`}
+              </a>
+              <p class="text-base-content/70 mt-1 text-sm">
+                {describeVotingCount(session.votingCount)}
+                {!session.approved && (
+                  <>
+                    ,{' '}
+                    <span class="text-warning">
+                      Prüfung noch nicht abgeschlossen
+                    </span>
+                  </>
+                )}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
 </PageLayout>

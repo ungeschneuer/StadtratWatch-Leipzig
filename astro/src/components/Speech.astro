@@ -64,61 +64,49 @@ function getHintMailTitle(speech: SessionSpeech): string {
 }
 ---
 
-<div
-  id={speechElementId}
-  class="timeline-start text-sm flex flex-row flex-wrap gap-2 w-full items-center"
->
-  <span class="text-base-content/80">{speech.speaker}</span>
-  {faction && <span class="badge badge-sm badge-neutral">{faction.name}</span>}
-  {speech.onBehalfOf && (
-    <span class="badge badge-sm badge-neutral badge-wrap">
-      {speech.onBehalfOf}
-    </span>
-  )}
-  <div class="dropdown dropdown-end ml-auto">
-    <button
-      aria-label="Weitere Aktionen zum Redebeitrag"
-      tabindex="0"
-      class="btn btn-sm btn-ghost"
-    >
-      <span class="iconify lucide--more-horizontal" aria-hidden="true"></span>
-    </button>
-    <ul
-      tabindex="0"
-      class="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-60"
-    >
-      <li>
-        <a
-          class="copy-speech-link-btn"
-          href={`${link}#${speechElementId}`}
-          title={linkTitle}
-          aria-label={linkTitle}
-        >
-          <span class="iconify lucide--link"></span>
-          Link zum Beitrag kopieren
-        </a>
-      </li>
-      <li>
-        <ContactEmailLink
-          title={hintMailTitle}
-          subject={hintMail.subject}
-          body={hintMail.body}
-        >
-          <span class="iconify lucide--flag"></span>
-          Beitrag melden
-        </ContactEmailLink>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class="timeline-middle">
-  <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1">
-    <span class="iconify lucide--message-circle"></span>
-  </div>
-</div>
-<div class="timeline-end timeline-box w-full">
+<article id={speechElementId} class="scroll-mt-20">
+  <header class="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm">
+    <span class="font-semibold">{speech.speaker}</span>
+    {faction && <span class="text-base-content/70">{faction.name}</span>}
+    {speech.onBehalfOf && (
+      <span class="text-base-content/70">{speech.onBehalfOf}</span>
+    )}
+    <div class="dropdown dropdown-end ml-auto self-center">
+      <button
+        aria-label="Weitere Aktionen zum Redebeitrag"
+        tabindex="0"
+        class="btn btn-sm btn-ghost btn-square"
+      >
+        <span class="iconify lucide--more-horizontal" aria-hidden="true"></span>
+      </button>
+      <ul
+        tabindex="0"
+        class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-10 w-60 border p-2 shadow-sm"
+      >
+        <li>
+          <a
+            class="copy-speech-link-btn"
+            href={`${link}#${speechElementId}`}
+            title={linkTitle}
+            aria-label={linkTitle}
+          >
+            Link zum Beitrag kopieren
+          </a>
+        </li>
+        <li>
+          <ContactEmailLink
+            title={hintMailTitle}
+            subject={hintMail.subject}
+            body={hintMail.body}
+          >
+            Beitrag melden
+          </ContactEmailLink>
+        </li>
+      </ul>
+    </div>
+  </header>
   <div
-    class="max-w-prose space-y-3 text-sm leading-relaxed hyphens-auto"
+    class="mt-2 max-w-prose space-y-3 leading-relaxed hyphens-auto"
     lang="de"
   >
     {(speech.transcription || '').split('\n\n').map((line) => (
@@ -126,15 +114,10 @@ function getHintMailTitle(speech: SessionSpeech): string {
     ))}
   </div>
   {videoLink && (
-    <div class="flex justify-between items-center mt-5">
-      <a
-        href={videoLink.url}
-        target="_blank"
-        class="btn btn-soft btn-primary btn-sm flex flex-row items-center gap-1"
-      >
-        <span class={`iconify ${videoLink.icon}`}></span>
+    <p class="mt-3 text-sm">
+      <a href={videoLink.url} target="_blank" class="link link-primary">
         {videoLink.text}
       </a>
-    </div>
+    </p>
   )}
-</div>
+</article>

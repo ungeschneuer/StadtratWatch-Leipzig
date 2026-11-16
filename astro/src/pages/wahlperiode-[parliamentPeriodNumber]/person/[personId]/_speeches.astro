@@ -34,128 +34,96 @@ const hasRecordedSpeeches = speechesBySessionDate.some(
 );
 ---
 
-<div class="alert alert-soft alert-info" role="alert">
-  <span class="iconify lucide--info size-5"></span>
-  <div class="flex flex-col gap-2">
-    {hasRecordedSpeeches && (
-      <p>
-        Die Texte der Redebeiträge stammen aus dem Protokoll der jeweiligen
-        Sitzung und stehen dort zusammen mit allen anderen Beiträgen. Hier sind
-        Datum und Dauer der Beiträge aufgeführt, mit einem Link zum Beitrag in
-        der Sitzung.
-      </p>
-    )}
-    {!hasRecordedSpeeches && (
-      <p>
-        Die folgenden Redebeiträge wurden automatisiert erstellt und können
-        Fehler enthalten. Die Texte dienen nur zur Orientierung und sind nicht
-        als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
-        Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
-        Aufzeichnung.
-      </p>
-    )}
+<div class="text-base-content/70 max-w-prose space-y-2 text-sm">
+  {hasRecordedSpeeches ? (
     <p>
-      Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
-      Öffnen Sie dazu den Beitrag in der Sitzung und wählen Sie im Menü „…“
-      neben dem Redebeitrag „Beitrag melden“. Wir werden den Fehler umgehend
-      prüfen und korrigieren.
+      Die Texte der Redebeiträge stammen aus dem Protokoll der jeweiligen
+      Sitzung und stehen dort zusammen mit allen anderen Beiträgen. Hier sind
+      Datum und Dauer der Beiträge aufgeführt, mit einem Link zum Beitrag in der
+      Sitzung.
     </p>
-  </div>
+  ) : (
+    <p>
+      Die folgenden Redebeiträge wurden automatisiert erstellt und können Fehler
+      enthalten. Die Texte dienen nur zur Orientierung und sind nicht als
+      offizielle Protokolle zu verstehen. Um Aufzeichnungen der Redebeiträge
+      anzuhören, nutzen Sie bitte die Links zur jeweiligen Aufzeichnung.
+    </p>
+  )}
+  <p>
+    Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
+    Öffnen Sie dazu den Beitrag in der Sitzung und wählen Sie im Menü „…“ neben
+    dem Redebeitrag „Beitrag melden“. Wir werden den Fehler umgehend prüfen und
+    korrigieren.
+  </p>
 </div>
 
-<div class="mt-4 space-y-4">
+{speechesBySessionDate.length === 0 && (
+  <p class="text-base-content/70 mt-6">
+    Von {person.name} liegen noch keine Redebeiträge vor.
+  </p>
+)}
+
+<div class="mt-8 max-w-4xl space-y-8">
   {speechesBySessionDate.map((speechesBySessionDate) => {
+    const sessionUrl = siteRoutes(parliamentPeriod.id).session(
+      speechesBySessionDate.session.id,
+    );
     return (
-      <div class="bg-base-200 rounded-box rounded-md border border-base-300 collapse collapse-arrow">
-        <input
-          aria-label="Collapse trigger"
-          type="checkbox"
-          checked
-          name="accordion-multiple"
-        />
-        <div class="collapse-title flex flex-wrap items-baseline gap-x-2">
-          <span class="font-semibold">
+      <section>
+        <h3 class="font-semibold">
+          <a href={sessionUrl} class="link-quiet">
             {formatDate(speechesBySessionDate.session.date)}
-          </span>
-          <span class="text-base-content/70">
-            {speechesBySessionDate.session.title}
-          </span>
-        </div>
-        <div class="collapse-content">
-          {speechesBySessionDate.session.speechesSource ? (
-            <ul class="list">
-              {speechesBySessionDate.speeches.map((speech) => (
-                <li class="list-row items-center">
-                  <span class="iconify lucide--message-circle size-4" />
-                  <span>
-                    Redebeitrag, {formatSpeakingTime(speech.duration, false)}
-                  </span>
-                  <a
-                    class="link link-primary"
-                    href={`${siteRoutes(parliamentPeriod.id).session(speechesBySessionDate.session.id)}?tab=speeches#speech-${speech.start}`}
-                  >
-                    In der Sitzung lesen
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <ul class="timeline timeline-vertical timeline-compact">
-              {speechesBySessionDate.speeches.map((speech, index) => {
-                return (
-                  <li>
-                    {index > 0 && <hr />}
-                    <Speech
-                      parliamentPeriod={parliamentPeriod}
-                      session={speechesBySessionDate.session}
-                      speech={speech}
-                      speechElementId={`speech-${speechesBySessionDate.session.id}-${speech.start}`}
-                      link={`${siteRoutes(parliamentPeriod.id).person(person.id)}?tab=speeches`}
-                    />
-                    {index < speechesBySessionDate.speeches.length - 1 && (
-                      <hr />
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
+          </a>
+          {speechesBySessionDate.session.title && (
+            <span class="text-base-content/70 font-normal">
+              , {speechesBySessionDate.session.title}
+            </span>
           )}
-        </div>
-      </div>
+        </h3>
+        {speechesBySessionDate.session.speechesSource ? (
+          <ul class="divide-base-300 border-base-300 mt-2 divide-y border-y text-sm">
+            {speechesBySessionDate.speeches.map((speech) => (
+              <li class="flex flex-wrap justify-between gap-x-4 py-2">
+                <span>
+                  Redebeitrag, {formatSpeakingTime(speech.duration, false)}
+                </span>
+                <a
+                  class="link link-primary"
+                  href={`${sessionUrl}?tab=speeches#speech-${speech.start}`}
+                >
+                  In der Sitzung lesen
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <ol class="divide-base-300 border-base-300 mt-2 divide-y border-y">
+            {speechesBySessionDate.speeches.map((speech) => (
+              <li class="py-5">
+                <Speech
+                  parliamentPeriod={parliamentPeriod}
+                  session={speechesBySessionDate.session}
+                  speech={speech}
+                  speechElementId={`speech-${speechesBySessionDate.session.id}-${speech.start}`}
+                  link={`${siteRoutes(parliamentPeriod.id).person(person.id)}?tab=speeches`}
+                />
+              </li>
+            ))}
+          </ol>
+        )}
+      </section>
     );
   })}
 </div>
 
-<div
+<p
   id="speech-link-copied"
-  class="alert alert-success fixed bottom-5 right-5 hidden"
+  role="status"
+  class="alert alert-success fixed right-5 bottom-5 hidden"
 >
-  <span class="iconify lucide--check"></span>
-  <div class="flex flex-col gap-2">
-    <p>Link zum Redebeitrag kopiert</p>
-  </div>
-</div>
-
-<div class="alert alert-soft alert-info fixed bottom-5 right-5 hidden">
-  <span class="iconify lucide--info size-5"></span>
-  <div class="flex flex-col gap-2">
-    {!hasRecordedSpeeches && (
-      <p>
-        Die folgenden Redebeiträge wurden automatisiert erstellt und können
-        Fehler enthalten. Die Texte dienen nur zur Orientierung und sind nicht
-        als offizielle Protokolle zu verstehen. Um Aufzeichnungen der
-        Redebeiträge anzuhören, nutzen Sie bitte die Links zur jeweiligen
-        Aufzeichnung.
-      </p>
-    )}
-    <p>
-      Sollten Sie einen Fehler entdecken, können Sie uns diesen gern melden.
-      Öffnen Sie dazu den Beitrag in der Sitzung und wählen Sie im Menü „…“
-      neben dem Redebeitrag „Beitrag melden“. Wir werden den Fehler umgehend
-      prüfen und korrigieren.
-    </p>
-  </div>
-</div>
+  Link zum Redebeitrag kopiert
+</p>
 
 <script>
   document.querySelectorAll('.copy-speech-link-btn').forEach((button) => {

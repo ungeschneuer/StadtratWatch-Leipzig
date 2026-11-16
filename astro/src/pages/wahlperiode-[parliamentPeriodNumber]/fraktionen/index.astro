@@ -1,6 +1,7 @@
 ---
 import FactionAgreementMatrix from '@components/FactionAgreementMatrix.astro';
 import { siteRoutes } from '@utils/routes';
+import { sortValue } from '@utils/sortable-table';
 import PageLayout from '@layouts/PageLayout.astro';
 import {
   type ParliamentPeriodWithSessionsProps,
@@ -154,30 +155,30 @@ const barHeight = factions.length * 40;
   parliamentPeriod={parliamentPeriod}
   breadcrumbItems={breadcrumbItems}
 >
-  <div class="space-y-3">
+  <div class="space-y-12">
     <div class="bg-base-100 border border-base-200 rounded-box">
       <div class="@container overflow-x-auto">
-        <table
-          class="table table-sm md:table-md table-pin-cols"
-          x-data="factions"
-          data-parliament-period-id={parliamentPeriod.id}
-          data-factions={JSON.stringify(factions)}
-        >
+        <table data-sortable class="table table-sm md:table-md table-pin-cols">
           <thead>
             <tr>
               <th>
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-between gap-1 text-left font-semibold whitespace-normal"
-                  @click="sortTextColumn('name', (faction) => faction.name)"
+                  type="button"
+                  data-sort-type="text"
                 >
                   <span>Name</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
                 </button>
               </th>
-              <th class="hidden @[22rem]:table-cell text-right">
+              <th
+                class="hidden @[22rem]:table-cell text-right"
+                aria-sort="descending"
+              >
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('seats', (faction) => faction.seats)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Sitze</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -186,7 +187,8 @@ const barHeight = factions.length * 40;
               <th class="text-right">
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('votingSuccessRate', (faction) => faction.votingSuccessRate)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Abstimmungs&shy;erfolg</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -195,7 +197,8 @@ const barHeight = factions.length * 40;
               <th class="hidden @2xl:table-cell text-right">
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('uniformityScore', (faction) => faction.uniformityScore)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Geschlossen&shy;heit</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -204,7 +207,8 @@ const barHeight = factions.length * 40;
               <th class="hidden @2xl:table-cell text-right">
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('participationRate', (faction) => faction.participationRate)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Abstimmungs&shy;teilnahme</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -213,7 +217,8 @@ const barHeight = factions.length * 40;
               <th class="hidden @4xl:table-cell text-right">
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('abstentionRate', faction => faction.abstentionRate)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Stimm&shy;enthaltungen</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -222,7 +227,8 @@ const barHeight = factions.length * 40;
               <th class="hidden @6xl:table-cell text-right">
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('motionsSuccessRate', faction => faction.motionsSuccessRate)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Erfolgreiche Anträge</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -231,7 +237,8 @@ const barHeight = factions.length * 40;
               <th class="hidden @6xl:table-cell text-right">
                 <button
                   class="hover:text-primary flex w-full cursor-pointer items-center justify-end gap-1 font-semibold whitespace-normal"
-                  @click="sortNumberColumn('speakingTime', faction => faction.speakingTime)"
+                  type="button"
+                  data-sort-type="number"
                 >
                   <span>Redezeit</span>
                   <span class="iconify lucide--chevrons-up-down"></span>
@@ -240,45 +247,57 @@ const barHeight = factions.length * 40;
             </tr>
           </thead>
           <tbody>
-            <template x-for="faction in factions">
+            {factions.map((faction) => (
               <tr>
                 <th scope="row" class="bg-base-100 font-normal">
                   <a
-                    :href="siteRoutes(parliamentPeriodId).faction(faction.id)"
+                    href={siteRoutes(parliamentPeriodId).faction(faction.id)}
                     class="link link-hover link-primary"
-                    x-text="faction.name"
-                  ></a>
+                  >
+                    {faction.name}
+                  </a>
                 </th>
-                <td
-                  class="hidden @[22rem]:table-cell text-right whitespace-nowrap tabular-nums"
-                  x-text="faction.seats"
-                ></td>
+                <td class="hidden @[22rem]:table-cell text-right whitespace-nowrap tabular-nums">
+                  {faction.seats}
+                </td>
                 <td
                   class="text-right whitespace-nowrap tabular-nums"
-                  x-text="faction.votingSuccessRateDisplay"
-                ></td>
+                  data-sort-value={sortValue(faction.votingSuccessRate)}
+                >
+                  {faction.votingSuccessRateDisplay}
+                </td>
                 <td
                   class="text-right hidden @2xl:table-cell tabular-nums"
-                  x-text="faction.uniformityScoreDisplay"
-                ></td>
+                  data-sort-value={sortValue(faction.uniformityScore)}
+                >
+                  {faction.uniformityScoreDisplay}
+                </td>
                 <td
                   class="text-right hidden @2xl:table-cell tabular-nums"
-                  x-text="faction.participationRateDisplay"
-                ></td>
+                  data-sort-value={sortValue(faction.participationRate)}
+                >
+                  {faction.participationRateDisplay}
+                </td>
                 <td
                   class="text-right hidden @4xl:table-cell tabular-nums"
-                  x-text="faction.abstentionRateDisplay"
-                ></td>
+                  data-sort-value={sortValue(faction.abstentionRate)}
+                >
+                  {faction.abstentionRateDisplay}
+                </td>
                 <td
                   class="text-right hidden @6xl:table-cell tabular-nums"
-                  x-text="faction.motionsSuccessRateDisplay"
-                ></td>
+                  data-sort-value={sortValue(faction.motionsSuccessRate)}
+                >
+                  {faction.motionsSuccessRateDisplay}
+                </td>
                 <td
                   class="text-right hidden @6xl:table-cell tabular-nums"
-                  x-text="faction.speakingTimeDisplay"
-                ></td>
+                  data-sort-value={sortValue(faction.speakingTime)}
+                >
+                  {faction.speakingTimeDisplay}
+                </td>
               </tr>
-            </template>
+            ))}
           </tbody>
         </table>
         <p class="text-base-content/70 px-4 py-3 text-xs @6xl:hidden">
@@ -287,10 +306,13 @@ const barHeight = factions.length * 40;
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-      <div class="card card-border bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Abstimmungserfolg</h2>
+    <section aria-labelledby="comparison-heading">
+      <h2 id="comparison-heading" class="text-lg font-semibold">
+        Im Vergleich
+      </h2>
+      <div class="mt-4 grid grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-[repeat(2,minmax(0,1fr))]">
+        <figure class="min-w-0">
+          <figcaption class="font-semibold">Abstimmungserfolg</figcaption>
           <p class="text-base-content/70 mb-3 text-sm">
             Gibt an, wie häufig das Abstimmungsergebnis mit dem Votum der
             Fraktion übereinstimmte.
@@ -304,12 +326,10 @@ const barHeight = factions.length * 40;
           >
             <canvas id="voting-success-rate-chart"></canvas>
           </div>
-        </div>
-      </div>
+        </figure>
 
-      <div class="card card-border bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Geschlossenheit</h2>
+        <figure class="min-w-0">
+          <figcaption class="font-semibold">Geschlossenheit</figcaption>
           <p class="text-base-content/70 mb-3 text-sm">
             Ein Wert zwischen 0 und 1 gibt an, wie einheitlich die
             Fraktionsmitglieder abgestimmt haben. Je größer der Wert ist, desto
@@ -324,12 +344,10 @@ const barHeight = factions.length * 40;
           >
             <canvas id="uniformity-score-chart"></canvas>
           </div>
-        </div>
-      </div>
+        </figure>
 
-      <div class="card card-border bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Abstimmungsteilnahme</h2>
+        <figure class="min-w-0">
+          <figcaption class="font-semibold">Abstimmungsteilnahme</figcaption>
           <p class="text-base-content/70 mb-3 text-sm">
             Gibt an, wie häufig die Fraktionsmitglieder an Abstimmungen
             teilgenommen haben.
@@ -343,12 +361,10 @@ const barHeight = factions.length * 40;
           >
             <canvas id="participation-rate-chart"></canvas>
           </div>
-        </div>
-      </div>
+        </figure>
 
-      <div class="card card-border bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Stimmenthaltungen</h2>
+        <figure class="min-w-0">
+          <figcaption class="font-semibold">Stimmenthaltungen</figcaption>
           <p class="text-base-content/70 mb-3 text-sm">
             Gibt an, wie hoch der Anteil der abgegebenen Stimmen ist, die weder
             dafür noch dagegen waren
@@ -362,12 +378,10 @@ const barHeight = factions.length * 40;
           >
             <canvas id="abstention-rate-chart"></canvas>
           </div>
-        </div>
-      </div>
+        </figure>
 
-      <div class="card card-border bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Erfolgreiche Anträge</h2>
+        <figure class="min-w-0">
+          <figcaption class="font-semibold">Erfolgreiche Anträge</figcaption>
           <p class="text-base-content/70 mb-3 text-sm">
             Anteil der Anträge, die durch die Fraktion gestellt wurde und durch
             einen Mehrheitsbeschluss angenommen wurden.
@@ -381,12 +395,10 @@ const barHeight = factions.length * 40;
           >
             <canvas id="motions-success-rate-chart"></canvas>
           </div>
-        </div>
-      </div>
+        </figure>
 
-      <div class="card card-border bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Redezeit</h2>
+        <figure class="min-w-0">
+          <figcaption class="font-semibold">Redezeit</figcaption>
           <p class="text-base-content/70 mb-3 text-sm">
             Gibt an, wieviel Zeit die Mitglieder der Fraktionen insgesamt in den
             Ratssitzungen gesprochen haben.
@@ -400,9 +412,9 @@ const barHeight = factions.length * 40;
           >
             <canvas id="speaking-times-chart"></canvas>
           </div>
-        </div>
+        </figure>
       </div>
-    </div>
+    </section>
 
     <FactionAgreementMatrix
       parliamentPeriod={parliamentPeriod}
@@ -413,58 +425,11 @@ const barHeight = factions.length * 40;
 
 <script>
   import { siteRoutes } from '@utils/routes';
-  import Alpine from 'alpinejs';
-  import { type FactionListItem } from './_models';
+  import { makeTablesSortable } from '@utils/sortable-table';
   import { rankingBarChart } from '@utils/charts';
   import { type ChartDataPoint } from './_models';
 
-  document.addEventListener('alpine:init', () => {
-    const factionsTableElement = document.querySelector(
-      '[data-factions]',
-    ) as HTMLTableElement;
-    const factions = JSON.parse(
-      factionsTableElement.dataset.factions || '[]',
-    ) as FactionListItem[];
-    const parliamentPeriodId = factionsTableElement.dataset.parliamentPeriodId;
-
-    Alpine.data('factions', () => ({
-      parliamentPeriodId,
-      siteRoutes,
-      factions,
-      sortTextColumn: function (
-        column: string,
-        getText: (faction: FactionListItem) => string,
-      ) {
-        this._updateSortColumn(column);
-        this.factions.sort((a, b) =>
-          this._sortedDesc
-            ? getText(b).localeCompare(getText(a))
-            : getText(a).localeCompare(getText(b)),
-        );
-      },
-      sortNumberColumn: function (
-        column: string,
-        getNumber: (faction: FactionListItem) => number | null,
-      ) {
-        this._updateSortColumn(column);
-        this.factions.sort((a, b) =>
-          this._sortedDesc
-            ? (getNumber(a) || 0) - (getNumber(b) || 0)
-            : (getNumber(b) || 0) - (getNumber(a) || 0),
-        );
-      },
-      _sortedColumn: 'seats',
-      _sortedDesc: false,
-      _updateSortColumn: function (column: string) {
-        if (this._sortedColumn === column) {
-          this._sortedDesc = !this._sortedDesc;
-        } else {
-          this._sortedColumn = column;
-          this._sortedDesc = false;
-        }
-      },
-    }));
-  });
+  makeTablesSortable();
 
   createChart(
     'voting-success-rate-chart-container',

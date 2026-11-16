@@ -30,10 +30,9 @@ const colorPropertyByFaction = Object.fromEntries(
 <style is:inline set:html={factionColorStyles(factionColors)}></style>
 
 <div class="space-y-5">
-  <div class="alert alert-soft alert-info" role="alert">
-    <span class="iconify lucide--info size-5"></span>
+  <div>
     <div
-      class="flex flex-col gap-2"
+      class="text-base-content/70 flex max-w-prose flex-col gap-2 text-sm"
       x-data="{ isMobile: /Mobi|Android/i.test(navigator.userAgent) }"
     >
       <p>
