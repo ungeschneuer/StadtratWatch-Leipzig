@@ -60,7 +60,7 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
     data-history={JSON.stringify(participationRateHistory)}
   >
     <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
+      <div class="card-title flex flex-wrap items-baseline justify-between gap-x-3">
         <div>Abstimmungsteilnahme</div>
         <span class="text-3xl">{formatPercentage(participationRate)}</span>
       </div>
@@ -77,7 +77,7 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
     data-history={JSON.stringify(votingsSuccessRateHistory)}
   >
     <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
+      <div class="card-title flex flex-wrap items-baseline justify-between gap-x-3">
         <div>Abstimmungserfolg</div>
         <span class="text-3xl">{formatPercentage(votingsSuccessRate)}</span>
       </div>
@@ -95,7 +95,7 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
     data-history={JSON.stringify(abstentionRateHistory)}
   >
     <div class="card-body space-y-3">
-      <div class="card-title flex justify-between">
+      <div class="card-title flex flex-wrap items-baseline justify-between gap-x-3">
         <div>Stimmenthaltungen</div>
         <span class="text-3xl">{formatPercentage(abstentionRate)}</span>
       </div>
@@ -110,7 +110,7 @@ const abstentionRateHistory = calcAbstentionRateHistoryOfPerson(
   {factionDeviation && (
     <div id="faction-deviation" class="card card-border bg-base-100">
       <div class="card-body space-y-3">
-        <div class="card-title flex justify-between">
+        <div class="card-title flex flex-wrap items-baseline justify-between gap-x-3">
           <div>Abweichung von der Fraktion</div>
           <span class="text-3xl">{formatPercentage(factionDeviationRate)}</span>
         </div>
