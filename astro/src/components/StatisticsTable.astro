@@ -1,0 +1,102 @@
+---
+import { type HistoryPoint } from '@utils/charts';
+
+export type StatisticsValueFormat = 'percentage' | 'score';
+
+export type StatisticsMeasure = {
+  id: string;
+  label: string;
+  value: string;
+  explanation: string;
+  detail?: string;
+  history?: HistoryPoint[];
+  format?: StatisticsValueFormat;
+};
+
+type Props = {
+  measures: StatisticsMeasure[];
+};
+
+const { measures } = Astro.props as Props;
+const measuresWithHistory = measures.filter(
+  (measure) => (measure.history?.length ?? 0) > 1,
+);
+---
+
+<div class="max-w-3xl space-y-10">
+  <table class="table">
+    <caption class="sr-only">Kennzahlen der Wahlperiode</caption>
+    <thead>
+      <tr>
+        <th scope="col">Kennzahl</th>
+        <th scope="col" class="text-right">
+          Wert
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {measures.map((measure) => (
+        <tr id={measure.id} class="align-top">
+          <th scope="row" class="font-normal">
+            <span class="font-semibold">{measure.label}</span>
+            <p class="text-base-content/70 mt-1 max-w-prose text-sm font-normal">
+              {measure.explanation}
+            </p>
+            {measure.detail && (
+              <p class="mt-1 max-w-prose text-sm font-normal">
+                {measure.detail}
+              </p>
+            )}
+          </th>
+          <td class="text-right text-lg font-semibold whitespace-nowrap tabular-nums">
+            {measure.value}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  {measuresWithHistory.length > 0 && (
+    <section aria-labelledby="statistics-history-heading">
+      <h2 id="statistics-history-heading" class="text-lg font-semibold">
+        Verlauf
+      </h2>
+      <p class="text-base-content/70 mt-1 max-w-prose text-sm font-normal">
+        Jeder Punkt ist der Wert über alle Sitzungen bis zu diesem Tag.
+      </p>
+      <div class="mt-4 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-[repeat(2,minmax(0,1fr))]">
+        {measuresWithHistory.map((measure) => (
+          <figure>
+            <figcaption class="text-sm font-semibold">
+              {measure.label}
+            </figcaption>
+            <canvas
+              class="mt-2"
+              data-statistics-history={JSON.stringify(measure.history)}
+              data-statistics-format={measure.format ?? 'percentage'}
+              aria-label={`Verlauf: ${measure.label}, zuletzt ${measure.value}`}
+              role="img"
+            />
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+</div>
+
+<script>
+  import { historyLineChart, type HistoryPoint } from '@utils/charts';
+  import { formatPercentage, formatScore } from '@utils/format-number';
+
+  const formatters = { percentage: formatPercentage, score: formatScore };
+
+  document
+    .querySelectorAll<HTMLCanvasElement>('canvas[data-statistics-history]')
+    .forEach((canvas) => {
+      const history = JSON.parse(
+        canvas.dataset.statisticsHistory || '[]',
+      ) as HistoryPoint[];
+      const format = canvas.dataset.statisticsFormat as keyof typeof formatters;
+      historyLineChart(canvas, history, formatters[format] ?? formatPercentage);
+    });
+</script>

@@ -52,13 +52,13 @@ const votings = sessionScan
 
 // The overview names how each faction voted; who voted how is on the page of the vote.
 const VOTE_COUNT_LABELS = [
-  { vote: 'J', singular: 'Ja', plural: 'Ja', className: 'badge-success' },
-  { vote: 'N', singular: 'Nein', plural: 'Nein', className: 'badge-error' },
+  { vote: 'J', singular: 'Ja', plural: 'Ja', className: 'text-success' },
+  { vote: 'N', singular: 'Nein', plural: 'Nein', className: 'text-error' },
   {
     vote: 'E',
     singular: 'Enthaltung',
     plural: 'Enthaltungen',
-    className: 'badge-warning',
+    className: 'text-warning',
   },
 ] as const;
 
@@ -71,13 +71,10 @@ function voteCounts(votes: { vote: string }[]) {
 ---
 
 {votings.length === 0 ? (
-  <div class="alert alert-info alert-soft">
-    <span class="iconify lucide--info size-5" />
-    Es liegen noch keine Abstimmungsdaten vor.
-  </div>
+  <p class="text-base-content/70">Es liegen noch keine Abstimmungsdaten vor.</p>
 ) : (
   <div x-data="votings">
-    <div class="mb-2">
+    <div class="mb-4">
       <div class="flex items-center gap-2">
         <input
           class="toggle toggle-sm"
@@ -100,77 +97,63 @@ function voteCounts(votes: { vote: string }[]) {
         Geschäftsordnungsanträge und Abstimmungen zur Tagesordnung.
       </p>
     </div>
-    <ul class="timeline timeline-vertical timeline-compact">
+    <ul class="divide-base-300 border-base-300 max-w-4xl divide-y border-y">
       {votings.map((voting) => (
-        <li class="voting-item" data-voting-type={voting.type}>
-          <hr class="voting-item-leading-line" />
-          <div class="timeline-middle">
-            <div class="bg-base-200 grid place-items-center rounded-full border border-base-300 p-1">
-              {voting.accepted ? (
-                <span
-                  role="img"
-                  aria-label="angenommen"
-                  class="iconify lucide--check text-success"
-                />
-              ) : (
-                <span
-                  role="img"
-                  aria-label="abgelehnt"
-                  class="iconify lucide--x text-error"
-                />
-              )}
-            </div>
-          </div>
+        <li class="voting-item py-4" data-voting-type={voting.type}>
+          <p class="text-base-content/70 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+            <span>
+              {[
+                voting.agendaItem,
+                [voting.type, voting.motionId].filter(Boolean).join(' '),
+              ]
+                .filter(Boolean)
+                .join(': ')}
+            </span>
+            <VotingReviewBadge reviewStatus={voting.reviewStatus} />
+          </p>
           <a
             href={voting.url}
-            class="timeline-end timeline-box mt-5 ms-3 w-full hover:bg-base-200 hover:cursor-pointer space-y-2"
+            class="link-quiet mt-1 block font-medium hyphens-auto"
+            lang="de"
           >
-            <div class="text-base-content/70 flex flex-wrap items-center gap-x-2">
-              <span>
-                {[
-                  voting.agendaItem,
-                  [voting.type, voting.motionId].filter(Boolean).join(' '),
-                ]
-                  .filter(Boolean)
-                  .join(': ')}
-              </span>
-              <VotingReviewBadge reviewStatus={voting.reviewStatus} />
-            </div>
-            <div class="text-base hyphens-auto" lang="de">
-              {voting.title}
-            </div>
+            {voting.title}
+          </a>
+          <p class="mt-1 text-sm">
+            <span
+              class:list={[
+                'font-semibold',
+                voting.accepted ? 'text-success' : 'text-error',
+              ]}
+            >
+              {voting.accepted ? 'Angenommen' : 'Abgelehnt'}
+            </span>
             {voting.authors.length > 0 && (
-              <div class="flex flex-wrap gap-1">
-                {voting.authors.map((author) => (
-                  <span class="badge badge-neutral badge-sm badge-wrap">
-                    {author}
-                  </span>
-                ))}
-              </div>
+              <span class="text-base-content/70">
+                , eingebracht von {voting.authors.join(', ')}
+              </span>
             )}
-
-            <div class="grid grid-cols-[auto_1fr] items-center gap-x-2">
-              {voting.votesByFactions.map((votesByFaction) => (
-                <>
-                  <div class="text-base-content/70">
-                    {votesByFaction.factionName}:
-                  </div>
-                  <div class="mb-1 flex flex-wrap gap-1">
-                    {voteCounts(votesByFaction.votes).map(
-                      ({ label, count, className }) => (
-                        <span
-                          class:list={['badge badge-soft badge-sm', className]}
-                        >
+          </p>
+          <dl class="mt-2 grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-0.5 text-sm">
+            {voting.votesByFactions.map((votesByFaction) => (
+              <>
+                <dt class="text-base-content/70">
+                  {votesByFaction.factionName}
+                </dt>
+                <dd class="tabular-nums">
+                  {voteCounts(votesByFaction.votes).map(
+                    ({ label, count, className }, index) => (
+                      <>
+                        {index > 0 && ', '}
+                        <span class={className}>
                           {count} {label}
                         </span>
-                      ),
-                    )}
-                  </div>
-                </>
-              ))}
-            </div>
-          </a>
-          <hr class="voting-item-trailing-line" />
+                      </>
+                    ),
+                  )}
+                </dd>
+              </>
+            ))}
+          </dl>
         </li>
       ))}
     </ul>
@@ -205,42 +188,8 @@ function voteCounts(votes: { vote: string }[]) {
             'Änderungsantrag',
           ].includes(votingType);
           item.style.display =
-            onlyPrimaryVotings && !isPrimaryVoting ? 'none' : 'grid';
+            onlyPrimaryVotings && !isPrimaryVoting ? 'none' : '';
         });
-
-        // Unhide all vertical lines
-        const hrElements = document.querySelectorAll(
-          '.voting-item-leading-line, .voting-item-trailing-line',
-        ) as NodeListOf<HTMLElement>;
-        hrElements.forEach((hr) => {
-          hr.style.display = 'block';
-        });
-
-        // Hide the first vertical line of the first visible item
-        const firstVisibleItem = Array.from(votingItemsElements).find(
-          (item) => item.style.display !== 'none',
-        );
-        if (firstVisibleItem) {
-          const leadingHr = firstVisibleItem.querySelector(
-            '.voting-item-leading-line',
-          ) as HTMLElement;
-          if (leadingHr) {
-            leadingHr.style.display = 'none';
-          }
-        }
-
-        // Hide the last vertical line of the last visible item
-        const lastVisibleItem = Array.from(votingItemsElements)
-          .reverse()
-          .find((item) => item.style.display !== 'none');
-        if (lastVisibleItem) {
-          const trailingHr = lastVisibleItem.querySelector(
-            '.voting-item-trailing-line',
-          ) as HTMLElement;
-          if (trailingHr) {
-            trailingHr.style.display = 'none';
-          }
-        }
       },
     }));
   });
