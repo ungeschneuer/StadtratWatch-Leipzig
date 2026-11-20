@@ -3637,7 +3637,8 @@
       }
     ],
     "presentMembers": 64,
-    "reviewStatus": "provisional"
+    "reviewStatus": "needs-review",
+    "reviewCase": true
   },
   {
     "votingFilename": "2026-07-01-015.png",
