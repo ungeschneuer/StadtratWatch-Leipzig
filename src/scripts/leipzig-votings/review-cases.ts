@@ -151,6 +151,8 @@ function describeProblem(check: string, voting: ExtractedVoting): string {
         : 'Das amtliche Ergebnis weicht von der Tafel ab.';
     case 'official-sources-agree':
       return 'Niederschrift und Verlaufsprotokoll nennen unterschiedliche Ergebnisse.';
+    case 'in-official-record':
+      return 'Weder Niederschrift noch Verlaufsprotokoll nennen dieses Ergebnis; vielleicht wurde die Abstimmung neu begonnen.';
     case 'not-repeated':
       return 'Die Sitzungsleitung hat die Abstimmung wiederholen lassen; diese Tafel ist vermutlich ungültig.';
     case 'result-shown-long-enough':
@@ -181,6 +183,7 @@ function priorityOf(failedChecks: string[]): ReviewPriority {
       'not-repeated',
       'matches-official',
       'official-sources-agree',
+      'in-official-record',
     ].includes(check),
   );
   if (affectsVotes) return 'hoch';
