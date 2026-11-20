@@ -8,9 +8,14 @@ branch="$1"
 commit="$2"
 timeout_seconds="${CI_TIMEOUT_SECONDS:-1200}"
 
+# A pull request opened with the workflow token also leaves a CI run on the commit that has no jobs and never runs
+# (action_required or failure). It must not hide the run the workflows started, so any successful run counts.
 ci_state() {
-  gh run list --workflow ci.yml --commit "$commit" --limit 1 --json status,conclusion \
-    --jq '.[0] | if . == null then "none" elif .status != "completed" then "pending" else .conclusion end'
+  gh run list --workflow ci.yml --commit "$commit" --limit 20 --json status,conclusion --jq '
+    if length == 0 then "none"
+    elif any(.[]; .conclusion == "success") then "success"
+    elif any(.[]; .status != "completed") then "pending"
+    else .[0].conclusion end'
 }
 
 if [ "$(ci_state)" = none ]; then

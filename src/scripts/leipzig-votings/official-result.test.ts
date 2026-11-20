@@ -246,6 +246,26 @@ describe('applyOfficialResults', () => {
     expect(without[0].official).toBeUndefined();
   });
 
+  it('needs review when the Beschlussprotokoll is out and neither protocol lists the board', () => {
+    const minutes = { kind: 'beschlussprotokoll' as const, votes: [minutesVote(0, '12.1.2', [58, 1, 0])] };
+    const once = applyOfficialResults([voting(0, '12.1.2', [33, 21, 5]), voting(1, '12.1.2', [58, 1, 0])], {
+      minutes,
+      verlauf: [verlauf(0, ['12', '12.1'], [58, 1, 0])],
+    });
+    const again = applyOfficialResults(once, { minutes, verlauf: null });
+
+    expect(once.map((result) => result.status)).toEqual(['needs-review', 'verified']);
+    expect(again[0].checks.filter((check) => check.check === 'in-official-record')).toHaveLength(1);
+  });
+
+  it('stays provisional when only the ALLRIS agenda item pages are out', () => {
+    const [result] = applyOfficialResults([voting(0, '12.1.2', [33, 21, 5])], {
+      minutes: { kind: 'agenda-item-pages', votes: [] },
+      verlauf: null,
+    });
+    expect(result.status).toEqual('provisional');
+  });
+
   it('skips the review of a procedural motion', () => {
     const [byMinutes] = applyOfficialResults([voting(0, '19.20', [25, 27, 0], { failed: ['names-match-roster'] })], {
       minutes: { kind: 'beschlussprotokoll', votes: [minutesVote(0, '19.20', [25, 28, 0], true)] },

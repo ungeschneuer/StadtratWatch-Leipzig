@@ -11,7 +11,7 @@ Die Stadt Leipzig veröffentlicht keine Stimmen je Person. Die Aufzeichnungen de
 
 * Die Ergebnisphasen werden in der ganzen Aufzeichnung gesucht (360p, 2 Bilder je Sekunde), der Endstand in 1080p gelesen: Raster vermessen, Farbe je Feld, Tesseract für Kopfzeile und Zahlen.
 * Jede Abstimmung wird gegen unabhängige Quellen geprüft: die Zahlen der Tafel, ein zweites Bild, die Ansage in den Untertiteln, das Beschlussprotokoll, die TOP-Seiten und das Verlaufsprotokoll.
-* Ergebnis ist ein Status: `verified`, `corrected`, `provisional` (amtliches Ergebnis steht aus), `needs-review` (eine Prüfung schlug fehl), `discarded`, `skipped`.
+* Ergebnis ist ein Status: `verified`, `corrected`, `provisional` (amtliches Ergebnis steht aus; fehlt die Tafel nach Erscheinen der Niederschrift in Niederschrift und Verlaufsprotokoll, wird sie zum Prüffall), `needs-review` (eine Prüfung schlug fehl), `discarded`, `skipped`.
 * `needs-review` entscheiden Prüfende in der Prüfoberfläche; jede Entscheidung ist ein Commit auf `data/leipzig-votings`. Mit dem Merge des Pull Requests werden die Daten veröffentlicht.
 * Veröffentlicht werden `verified`, `corrected`, `reviewed`, `provisional` und `needs-review`; die letzten beiden mit Kennzeichnung, Erklärung und Link zum Pull Request.
 * Abstimmungen ohne Tafel (Handzeichen, geheime Wahl) und Sitzungen ohne Aufzeichnung werden nicht erfasst.
