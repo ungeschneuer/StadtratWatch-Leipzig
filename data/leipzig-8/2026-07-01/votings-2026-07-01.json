@@ -12,10 +12,10 @@
     "votings": 41,
     "verified": 34,
     "corrected": 1,
-    "provisional": 1,
+    "provisional": 0,
     "reviewed": 2,
     "unresolved": 0,
-    "needs-review": 0,
+    "needs-review": 1,
     "skipped": 0,
     "discarded": 3
   },
@@ -10044,10 +10044,15 @@
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
+        },
+        {
+          "check": "in-official-record",
+          "passed": false,
+          "detail": "no result in the Beschlussprotokoll or the Verlaufsprotokoll"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "needs-review",
+      "status": "needs-review"
     },
     {
       "index": 14,
