@@ -62,7 +62,7 @@ summary="$(
       echo "- [$session]($site_url/wahlperiode-8/sitzung/$session/)"
     done
   fi
-  if [ -n "${LEIPZIG_REVIEWERS:-}" ]; then
+  if [ -n "${LEIPZIG_REVIEWERS:-}" ] && [ -n "$new_sessions$decided_sessions" ]; then
     echo
     echo "$LEIPZIG_REVIEWERS" | tr ',' '\n' | sed -E 's/^ *(.+)$/@\1/' | paste -sd ' ' -
   fi
@@ -79,6 +79,12 @@ fi
 gh pr merge "$pull_request" --merge --match-head-commit "$head_sha"
 # A merge with the workflow token starts no other workflow, so the deployment is started here.
 gh workflow run deploy.yml --ref main
-# A mention in a comment notifies the reviewers by GitHub notification and e-mail.
-gh pr comment "$pull_request" --body "$summary"
+# A mention in a comment notifies the reviewers by GitHub notification and e-mail, so the comment is only written when
+# there is something to look at: new sessions or review decisions. Minutes and other updates go online silently.
+if [ -n "$new_sessions$decided_sessions" ]; then
+  gh pr comment "$pull_request" --body "$summary"
+fi
+if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
+  echo "$summary" >>"$GITHUB_STEP_SUMMARY"
+fi
 echo "$summary"

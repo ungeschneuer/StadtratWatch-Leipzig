@@ -73,16 +73,19 @@ export function applyOfficialResults(votings: ExtractedVoting[], sources: Offici
     : new Map<number, MinutesVote>();
   return cleared.map((voting, position) =>
     withStatus(
-      withAttendanceCountCheck(
-        withProcedural(
-          withOfficialResult(
-            voting,
-            minutesMatches.get(voting.index) ?? null,
-            sources.minutes?.kind ?? null,
-            verlaufMatches.get(voting.index) ?? null,
+      withOfficialRecordCheck(
+        withAttendanceCountCheck(
+          withProcedural(
+            withOfficialResult(
+              voting,
+              minutesMatches.get(voting.index) ?? null,
+              sources.minutes?.kind ?? null,
+              verlaufMatches.get(voting.index) ?? null,
+            ),
+            verlaufMatches.get(voting.index)?.context ?? spokenBefore(sources.cues ?? null, cleared, position),
           ),
-          verlaufMatches.get(voting.index)?.context ?? spokenBefore(sources.cues ?? null, cleared, position),
         ),
+        sources.minutes?.kind ?? null,
       ),
     ),
   );
@@ -336,7 +339,7 @@ function correctionFromNames(
   return null;
 }
 
-const OFFICIAL_CHECKS = new Set(['matches-official', 'official-sources-agree']);
+const OFFICIAL_CHECKS = new Set(['matches-official', 'official-sources-agree', 'in-official-record']);
 
 // Nobody named, but exactly as many members are present without a vote as the official result has more: they are the
 // ones added by hand. Only additions are inferred; a vote taken back always needs a name.
@@ -418,6 +421,26 @@ function withAttendanceCountCheck(voting: ExtractedVoting): ExtractedVoting {
         check: 'not-attendance-count',
         passed: !isAttendanceCount,
         detail: isAttendanceCount ? `attendance count at „${agendaItemName}“` : 'agenda item is no opening or quorum',
+      },
+    ],
+  };
+}
+
+// Once the Beschlussprotokoll is out, a board that passed its own checks but that neither it nor the
+// Verlaufsprotokoll lists is no longer waiting for an official result: the chair may have started the vote again
+// (01.07.2026 TOP 12.1.2), so a reviewer decides. The ALLRIS agenda item pages give only one result per item and do
+// not count as complete.
+function withOfficialRecordCheck(voting: ExtractedVoting, minutesKind: MinutesFile['kind'] | null): ExtractedVoting {
+  const otherwiseProvisional = !voting.official && !voting.procedural && voting.checks.every((check) => check.passed);
+  if (minutesKind !== 'beschlussprotokoll' || !otherwiseProvisional) return voting;
+  return {
+    ...voting,
+    checks: [
+      ...voting.checks,
+      {
+        check: 'in-official-record',
+        passed: false,
+        detail: 'no result in the Beschlussprotokoll or the Verlaufsprotokoll',
       },
     ],
   };
