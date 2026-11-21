@@ -292,6 +292,24 @@
       "subtitleSha256": "27f36e6e357a772f92b78da8947a967d5b8403eb724b96a05ee8a2856263c063",
       "firstSeen": "2026-11-10",
       "goneSince": null
+    },
+    {
+      "sessionId": "2026-11-19",
+      "date": "2026-11-19",
+      "oparlMeetingId": "https://www.leipzig.sitzung-online.de/oparl/meetings/2004603",
+      "meetingName": "Ratsversammlung",
+      "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-19112026",
+      "pageTitle": "Aufzeichnung der Ratsversammlung vom 19.11.2026 - Stadt Leipzig",
+      "playerUrl": "https://start.video-stream-hosting.de/player_videojs_stadtleipzig_vorlesen_untertitel2.html?serverip=62.113.221.14&serverapp=stadtleipzig-vod&smil=2026/Livestream_Stadtrat_Leipzig_-_19_November_2026_-_02-03-26.smil&videostartoffset=1&bgimage=https://www.leipzig.de/fileadmin/user_upload/Ratsversammlung_Startbild_20261126.jpg&untertitelAutoaktiv=1&autostart=0",
+      "serverApp": "stadtleipzig-vod",
+      "streamName": "2026/Livestream_Stadtrat_Leipzig_-_19_November_2026_-_02-03-26.smil",
+      "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_19_November_2026_-_02-03-26.smil/playlist.m3u8",
+      "durationSeconds": 25146,
+      "subtitleUrl": "https://hd001.video-stream-hosting.de/vtt/stadtleipzig/2bhjzocs84cw1ntenx6boystdf9io19p.vtt",
+      "subtitleFile": "2026-11-19/subtitles-2026-11-19.vtt",
+      "subtitleSha256": "3e2d82b78cead7d205ab70a59e6a7c5fd8ebe925be0b4546094e25e4a6a0ba10",
+      "firstSeen": "2026-11-21",
+      "goneSince": null
     }
   ]
 }
