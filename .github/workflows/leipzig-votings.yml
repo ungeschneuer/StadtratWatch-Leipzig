@@ -68,7 +68,7 @@ jobs:
 
       # The scan of a recording takes several minutes and never changes; the OCR language data is a download.
       - name: Restore scans and OCR data
-        uses: actions/cache@v6
+        uses: actions/cache/restore@v6
         with:
           path: |
             output/leipzig-votings/vote-events-*.json
@@ -161,6 +161,16 @@ jobs:
             --image-base-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/evidence-{session}"
           bun src/scripts/leipzig-votings/review-issues.ts --review-ui-url "$REVIEW_UI_URL"
           .github/scripts/leipzig-review-issues.sh output/leipzig-review-issues/issues.json
+
+      # Saved even when the job fails: a session that failed after its scan then starts from the stored scan next time.
+      - name: Save scans and OCR data
+        if: always()
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            output/leipzig-votings/vote-events-*.json
+            deu.traineddata
+          key: leipzig-votings-${{ github.run_id }}
 
       - name: Report failure
         if: steps.extract.outcome == 'failure' || steps.papers.outcome == 'failure' || steps.site_data.outcome == 'failure'

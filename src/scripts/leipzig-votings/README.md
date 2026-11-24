@@ -61,6 +61,9 @@ full-screen in its recording. Each vote is cross-checked against independent sou
      colours stand if the cast votes and the spoken announcement confirm them.
    - Since February 2026 the bar numbers carry the share, „14 (22 %)“; the count before the bracket is used.
    - Two-day sessions share one agenda that OParl splits between two meetings, so both are searched.
+   - OParl embeds at most 131 agenda items in a meeting; the rest are found through the meeting's ALLRIS agenda page.
+     ALLRIS does not answer GitHub Actions, so there the agenda has only the embedded items, and a vote on a missing
+     item fails `agenda-item-in-oparl` and goes to review.
    - Sub-items for amendments (18.16.1) are missing in OParl. They pass when the board's paper has the kind and serial number of the
      parent item's paper, taken from OParl or, if OParl only has a „bereits behandelt“ placeholder, from the board of
      the parent item's own vote.

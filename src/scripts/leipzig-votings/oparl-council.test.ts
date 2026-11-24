@@ -68,4 +68,14 @@ describe('fetchMeetingAgenda', () => {
 
     expect(agenda.map((entry) => entry.number)).toEqual(['15.10', '18.10']);
   });
+
+  it('keeps the items OParl embeds when the agenda page does not answer', async () => {
+    const agenda = await fetchMeetingAgenda(
+      (url) => Promise.resolve(objects[url]),
+      () => Promise.reject(new DOMException('The operation timed out.', 'TimeoutError')),
+      meetingId,
+    );
+
+    expect(agenda.map((entry) => entry.number)).toEqual(['15.10']);
+  });
 });

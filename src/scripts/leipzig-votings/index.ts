@@ -10,7 +10,7 @@ import { writeGeneratedFile } from '../leipzig-members/generated-file.ts';
 import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
 import type { Recording, RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import { listVariantUrlsByBandwidth } from '../leipzig-recordings/stream-hosting.ts';
-import { createAllrisClient } from './allris.ts';
+import { ALLRIS_BASE_URL, createAllrisClient } from './allris.ts';
 import type { TextWorkers } from './board-text.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
 import { applyCorrections, parseCorrections } from './corrections.ts';
@@ -106,13 +106,18 @@ async function fetchSessionAgenda(recording: Recording) {
     .map((candidate) => candidate.oparlMeetingId)
     .filter((meetingId): meetingId is string => meetingId !== null);
   const agendas = await Promise.all(
-    [...new Set(meetingIds)].map((meetingId) =>
-      fetchMeetingAgenda(fetchJson, (url) => getTextOrThrow(http, url), meetingId),
-    ),
+    [...new Set(meetingIds)].map((meetingId) => fetchMeetingAgenda(fetchJson, fetchAgendaPage, meetingId)),
   );
   const agenda = agendas.flat();
   console.log(`${recording.sessionId}: agenda with ${agenda.length} items from ${agendas.length} OParl meeting(s)`);
   return agenda;
+}
+
+// The agenda page is an ALLRIS page. Through the ALLRIS client the first timeout ends ALLRIS for the rest of the run,
+// instead of three plain attempts of a minute each per meeting.
+function fetchAgendaPage(url: string): Promise<string> {
+  const allrisPrefix = `${ALLRIS_BASE_URL}/`;
+  return url.startsWith(allrisPrefix) ? allris.getText(url.slice(allrisPrefix.length)) : getTextOrThrow(http, url);
 }
 
 function isNeighbouringDay(date: string, other: string): boolean {
