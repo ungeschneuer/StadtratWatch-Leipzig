@@ -96,9 +96,10 @@ export async function fetchMeetingAgenda(
   const meeting = (await fetchJson(meetingId)) as { agendaItem?: OparlAgendaItem[]; web?: string };
   const embedded = meeting.agendaItem ?? [];
   const missing: OparlAgendaItem[] = [];
-  if (meeting.web) {
+  const agendaPage = meeting.web ? await fetchAgendaPage(fetchText, meetingId, meeting.web) : null;
+  if (agendaPage !== null) {
     const embeddedIds = new Set(embedded.map((item) => agendaItemNumericId(item.id)));
-    const listedIds = listAgendaItemIdsOfAgendaPage(await fetchText(meeting.web));
+    const listedIds = listAgendaItemIdsOfAgendaPage(agendaPage);
     for (const id of listedIds.filter((candidate) => !embeddedIds.has(candidate))) {
       const item = (await fetchJson(`${OPARL_AGENDA_ITEMS_URL}/${id}`)) as OparlAgendaItem;
       // ALLRIS still links items that OParl has deleted since; those are left out without a warning.
@@ -119,6 +120,18 @@ export async function fetchMeetingAgenda(
 }
 
 const OPARL_AGENDA_ITEMS_URL = 'https://www.leipzig.sitzung-online.de/oparl/agendaItems';
+
+// ALLRIS does not answer GitHub's runners. Without the agenda page the session is read with the items OParl embeds;
+// votes on the items left out then have no agenda item and go to review instead of stopping the whole session.
+async function fetchAgendaPage(fetchText: FetchText, meetingId: string, agendaPageUrl: string): Promise<string | null> {
+  try {
+    return await fetchText(agendaPageUrl);
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(`${meetingId}: agenda page ${agendaPageUrl} not readable (${reason}); only the items OParl embeds`);
+    return null;
+  }
+}
 
 export function listAgendaItemIdsOfAgendaPage(html: string): string[] {
   return [...new Set([...html.matchAll(/TOLFDNR=(\d+)/g)].map((match) => match[1]))];
