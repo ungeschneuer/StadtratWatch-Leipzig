@@ -8,14 +8,29 @@ branch="$1"
 commit="$2"
 timeout_seconds="${CI_TIMEOUT_SECONDS:-1200}"
 
-# A pull request opened with the workflow token also leaves a CI run on the commit that has no jobs and never runs
-# (action_required or failure). It must not hide the run the workflows started, so any successful run counts.
+# A pull request opened with the workflow token leaves a CI run on the commit that has no jobs and never runs
+# (action_required or failure). Such a run neither passes nor fails the commit, so it counts as no run at all: it must
+# neither hide a successful run nor keep CI from being started.
+run_has_jobs() {
+  [ "$(gh api "repos/{owner}/{repo}/actions/runs/$1/jobs" --jq '.total_count')" -gt 0 ]
+}
+
 ci_state() {
-  gh run list --workflow ci.yml --commit "$commit" --limit 20 --json status,conclusion --jq '
-    if length == 0 then "none"
-    elif any(.[]; .conclusion == "success") then "success"
-    elif any(.[]; .status != "completed") then "pending"
-    else .[0].conclusion end'
+  local runs run_id
+  runs="$(gh run list --workflow ci.yml --commit "$commit" --limit 20 --json databaseId,status,conclusion)"
+  if jq -e 'any(.[]; .conclusion == "success")' <<<"$runs" >/dev/null; then
+    echo success
+  elif jq -e 'any(.[]; .status != "completed")' <<<"$runs" >/dev/null; then
+    echo pending
+  else
+    for run_id in $(jq -r '.[].databaseId' <<<"$runs"); do
+      if run_has_jobs "$run_id"; then
+        jq -r --argjson id "$run_id" '.[] | select(.databaseId == $id) | .conclusion' <<<"$runs"
+        return
+      fi
+    done
+    echo none
+  fi
 }
 
 if [ "$(ci_state)" = none ]; then
