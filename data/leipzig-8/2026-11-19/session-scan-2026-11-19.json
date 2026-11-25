@@ -4981,9 +4981,14 @@
     "votingSubject": {
       "agendaItem": "18.2",
       "motionId": "VIII-DS-01949",
-      "title": "Bebauungsplan Nr. 433 „Stadtquartier östlich Bremer Straße‘; Stadtbezirk: Nord, Ortsteil: Gohlis-Nord; Beschluss zur Veröffentlichung des Entwurfe",
+      "title": "Bebauungsplan Nr. 433 „Stadtquartier östlich Bremer Straße“; Stadtbezirk:  Nord, Ortsteil:  Gohlis-Nord; Beschluss zur Veröffentlichung des Entwurfes",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Stadtplanungsamt"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027445",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216944",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027445"
     },
     "votes": [
       {
@@ -5272,18 +5277,38 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-019.png",
     "videoTimestamp": "05:10:15",
     "votingSubject": {
       "agendaItem": "18.1.1",
-      "motionId": "VIII-DS-09671-NF-01-ÄA-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanen uımd Plätzen (Sandearnutziunassatziuna)",
+      "motionId": "VII-DS-09671-NF-01-ÄA-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "DIE LINKE"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030950",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218211",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030950",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        }
+      ]
     },
     "votes": [
       {
@@ -5572,18 +5597,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-020.png",
     "videoTimestamp": "05:12:29",
     "votingSubject": {
       "agendaItem": "18.1.2",
-      "motionId": "VIII-DS-09671-NF-02-ÄA-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzit über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanen ımd Plätzen (Sandearnutzunassatziumna)",
+      "motionId": "VII-DS-09671-NF-02-ÄA-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034220",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+          "reference": "VII-DS-09671-NF-02",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972"
+        }
+      ]
     },
     "votes": [
       {
@@ -5872,18 +5924,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-021.png",
     "videoTimestamp": "05:13:02",
     "votingSubject": {
       "agendaItem": "18.1.2",
-      "motionId": "VIII-DS-09671-NF-02-ÄA-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wanaen ımd Plätzen (Sandearnutzunassatziumna)",
+      "motionId": "VII-DS-09671-NF-02-ÄA-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034220",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+          "reference": "VII-DS-09671-NF-02",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972"
+        }
+      ]
     },
     "votes": [
       {
@@ -6172,18 +6251,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-022.png",
     "videoTimestamp": "05:13:47",
     "votingSubject": {
       "agendaItem": "18.1.2",
-      "motionId": "VIII-DS-09671-NF-02-ÄA-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanaen uımd Plätzen (Sandearnutzunassatziumna)",
+      "motionId": "VII-DS-09671-NF-02-ÄA-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034220",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+          "reference": "VII-DS-09671-NF-02",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972"
+        }
+      ]
     },
     "votes": [
       {
@@ -6472,18 +6578,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-024.png",
     "videoTimestamp": "05:14:50",
     "votingSubject": {
       "agendaItem": "18.1.4",
-      "motionId": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkean Wannen und Plätzen (Sandearnutzunassatziuna)",
+      "motionId": "VII-DS-09671-NF-01-ÄA-04-NF-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034212",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031659",
+          "reference": "VII-DS-09671-NF-01-ÄA-04",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031659"
+        }
+      ]
     },
     "votes": [
       {
@@ -6772,18 +6905,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-025.png",
     "videoTimestamp": "05:15:45",
     "votingSubject": {
       "agendaItem": "18.1.2",
-      "motionId": "VIII-DS-09671-NF-02-ÄA-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wanaen ımd Plätzen (Sandearnutzunassatziumna)",
+      "motionId": "VII-DS-09671-NF-02-ÄA-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034220",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+          "reference": "VII-DS-09671-NF-02",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972"
+        }
+      ]
     },
     "votes": [
       {
@@ -7072,18 +7232,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-026.png",
     "videoTimestamp": "05:16:48",
     "votingSubject": {
       "agendaItem": "18.1.2",
-      "motionId": "VIII-DS-09671-NF-02-ÄA-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzit über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanen uımd Plätzen (Sandearnutzunassatziumna)",
+      "motionId": "VII-DS-09671-NF-02-ÄA-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034220",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+          "reference": "VII-DS-09671-NF-02",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972"
+        }
+      ]
     },
     "votes": [
       {
@@ -7372,18 +7559,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-027.png",
     "videoTimestamp": "05:17:50",
     "votingSubject": {
       "agendaItem": "18.1.4",
-      "motionId": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkan Wannen uımd Plätzen (Sandearnıutzunassatzi na)",
+      "motionId": "VII-DS-09671-NF-01-ÄA-04-NF-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034212",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031659",
+          "reference": "VII-DS-09671-NF-01-ÄA-04",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031659"
+        }
+      ]
     },
     "votes": [
       {
@@ -7672,18 +7886,45 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-029.png",
     "videoTimestamp": "05:21:33",
     "votingSubject": {
       "agendaItem": "18.1.4",
-      "motionId": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkan Wannen uımd Plätzen (Sandearnutzunassatziumna)",
+      "motionId": "VII-DS-09671-NF-01-ÄA-04-NF-01",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034212",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031659",
+          "reference": "VII-DS-09671-NF-01-ÄA-04",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Änderungsantrag",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031659"
+        }
+      ]
     },
     "votes": [
       {
@@ -7972,18 +8213,38 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-030.png",
     "videoTimestamp": "05:24:24",
     "votingSubject": {
       "agendaItem": "18.1",
-      "motionId": "VIII-DS-09671-NF-02",
-      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über di Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und DPlätzaen (Sandearnutzunassatziuna)",
+      "motionId": "VII-DS-09671-NF-02",
+      "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Mobilitäts- und Tiefbauamt"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218209",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+          "reference": "VII-DS-09671",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+          "reference": "VII-DS-09671-NF-01",
+          "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+          "paperType": "Neufassung Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579"
+        }
+      ]
     },
     "votes": [
       {
@@ -8272,8 +8533,7 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-031.png",
@@ -8283,7 +8543,12 @@
       "motionId": "VIII-DS-02954",
       "title": "Ortschaftskonzept Miltitz",
       "type": "Beschlussvorlage",
-      "authors": []
+      "authors": [
+        "Stadtplanungsamt"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030341",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216954",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030341"
     },
     "votes": [
       {
@@ -8572,8 +8837,7 @@
       }
     ],
     "presentMembers": 66,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-032.png",
@@ -8583,7 +8847,21 @@
       "motionId": "VIII-DS-03265-ÄA-02",
       "title": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "BSW"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034302",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219977",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034302",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031216",
+          "reference": "VIII-DS-03265",
+          "name": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031216"
+        }
+      ]
     },
     "votes": [
       {
@@ -8881,9 +9159,10 @@
     "votingSubject": {
       "agendaItem": "18.8",
       "motionId": "VIII-DS-03265-ÄA-01-NF-01",
-      "title": "Änderung Geschäftsordnung der Ratsversamm-lung - Anfragen",
+      "title": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [],
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220329"
     },
     "votes": [
       {
@@ -9180,10 +9459,31 @@
     "videoTimestamp": "06:25:24",
     "votingSubject": {
       "agendaItem": "19.2.1",
-      "motionId": "VIII-DS-06102-Ifo-02-ÄA-01",
+      "motionId": "VII-DS-06102-Ifo-02-ÄA-01",
       "title": "Umsetzungsprogramm 2027/2028 zum Energie- und Klimaschutzprogramm (EKSP) 2030",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "CDU"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034206",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219249",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034206",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2000269",
+          "reference": "VII-DS-06102",
+          "name": "Energie- und Klimaschutzprogramm (EKSP) 2030",
+          "paperType": "Beschlussvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2000269"
+        },
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031786",
+          "reference": "VII-DS-06102-Ifo-02",
+          "name": "Umsetzungsprogramm 2027/2028 zum Energie- und Klimaschutzprogramm (EKSP) 2030",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031786"
+        }
+      ]
     },
     "votes": [
       {
@@ -9472,8 +9772,7 @@
       }
     ],
     "presentMembers": 64,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-035.png",
@@ -9483,7 +9782,21 @@
       "motionId": "VIII-Ifo-02817-ÄA-01",
       "title": "Stele für Opfer von Flucht, Vertreibung und Deportation infolge des Zweiten Weltkriegs",
       "type": "Änderungsantrag",
-      "authors": []
+      "authors": [
+        "Bündnis 90/Die Grünen"
+      ],
+      "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034265",
+      "oparlAgendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220383",
+      "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034265",
+      "paperAncestors": [
+        {
+          "oparlPaperId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029902",
+          "reference": "VIII-Ifo-02817",
+          "name": "Stele für Opfer von Flucht, Vertreibung und Deportation infolge des Zweiten Weltkriegs",
+          "paperType": "Informationsvorlage",
+          "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029902"
+        }
+      ]
     },
     "votes": [
       {
@@ -9772,8 +10085,7 @@
       }
     ],
     "presentMembers": 64,
-    "reviewStatus": "needs-review",
-    "reviewCase": true
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-036.png",
