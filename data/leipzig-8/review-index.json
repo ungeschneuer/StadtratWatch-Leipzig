@@ -111,6 +111,13 @@
       "cases": 1,
       "open": 0,
       "reviewed": 1
+    },
+    {
+      "sessionId": "2026-11-19",
+      "videoAvailable": true,
+      "cases": 17,
+      "open": 17,
+      "reviewed": 0
     }
   ]
 }

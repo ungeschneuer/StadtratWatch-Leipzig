@@ -5338,6 +5338,21 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2026934"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030001": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030001",
+      "reference": "VIII-A-02833",
+      "name": "Abwendung des Wohnungsverlustes durch beschleunigte Betreuungsverfahren",
+      "paperType": "Antrag",
+      "date": "2026-04-23",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030001",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2240",
+          "name": "Geschäftsstelle der Fraktion Die Linke"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2030003": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030003",
       "reference": "VIII-A-02834",
@@ -6103,6 +6118,36 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2030133"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030453": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030453",
+      "reference": "VIII-A-02983",
+      "name": "Einführung einer Schweigeminute für Femizide in der Ratsversammlung des Stadtrates Leipzig",
+      "paperType": "Antrag",
+      "date": "2026-05-27",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030453",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030455": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030455",
+      "reference": "VIII-A-02984",
+      "name": "Städtisches Gedenken für gewaltbetroffene Frauen und Mädchen",
+      "paperType": "Antrag",
+      "date": "2026-05-27",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030455",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2030462": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030462",
       "reference": "VIII-DS-01791-ÄA-01",
@@ -6439,6 +6484,23 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2028068"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030560": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030560",
+      "reference": "VIII-A-02984-VSP-01",
+      "name": "Städtisches Gedenken für gewaltbetroffene Frauen und Mädchen",
+      "paperType": "Verwaltungsstandpunkt zum Antrag",
+      "date": "2026-08-11",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030560",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000003",
+          "name": "44 Referat strategische Kulturpolitik"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030455"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2030569": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030569",
       "reference": "VIII-P-02586-DS-01",
@@ -6627,6 +6689,21 @@
         {
           "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2073",
           "name": "64 Amt für Wohnungsbau und Stadterneuerung"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030881": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030881",
+      "reference": "VIII-A-03148",
+      "name": "Berichtpflicht von Rechtsstreitigkeiten",
+      "paperType": "Antrag",
+      "date": "2026-06-23",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030881",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000012",
+          "name": "Geschäftsstelle der Freien Fraktion"
         }
       ],
       "superordinatedPaperIds": []
@@ -6982,6 +7059,23 @@
       ],
       "superordinatedPaperIds": []
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031105": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031105",
+      "reference": "VIII-A-02983-VSP-01",
+      "name": "Einführung einer Schweigeminute für Femizide in der Ratsversammlung des Stadtrates Leipzig",
+      "paperType": "Verwaltungsstandpunkt zum Antrag",
+      "date": "2026-09-02",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031105",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2087",
+          "name": "01.15 Büro für Ratsangelegenheiten"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030453"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031164": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031164",
       "reference": "VIII-DS-01237-NF-01",
@@ -6997,6 +7091,23 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2025298"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031184": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031184",
+      "reference": "VIII-A-03148-VSP-01",
+      "name": "Berichtpflicht von Rechtsstreitigkeiten",
+      "paperType": "Verwaltungsstandpunkt zum Antrag",
+      "date": "2026-09-07",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031184",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2055",
+          "name": "30 Rechtsamt"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030881"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031219": {
@@ -7144,6 +7255,21 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2028330"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031476": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031476",
+      "reference": "VIII-A-03374",
+      "name": "Ferienjobs bei der Stadt Leipzig – Arbeitserfahrung und Nachwuchsgewinnung verbinden!",
+      "paperType": "Antrag",
+      "date": "2026-08-25",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031476",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2245",
+          "name": "Geschäftsstelle der AfD-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031511": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031511",
       "reference": "VIII-DS-01570-ÄA-01",
@@ -7228,6 +7354,21 @@
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2029028"
       ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031613": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031613",
+      "reference": "VIII-A-03407",
+      "name": "Zschochersche Straße 78 – Areal Swiderski: Leipziger Industriedenkmal retten",
+      "paperType": "Antrag",
+      "date": "2026-08-28",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031613",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2245",
+          "name": "Geschäftsstelle der AfD-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": []
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031647": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031647",
@@ -7448,6 +7589,36 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2031219"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031810": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031810",
+      "reference": "VIII-A-03452",
+      "name": "Leipzig ist kein Rüstungsstandort!",
+      "paperType": "Antrag",
+      "date": "2026-09-25",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031810",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2245",
+          "name": "Geschäftsstelle der AfD-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031840": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031840",
+      "reference": "VIII-A-03460",
+      "name": "Stadt des Friedens bleiben – Leipzig darf kein Standort für Rüstungsproduktion werden!",
+      "paperType": "Antrag",
+      "date": "2026-09-14",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031840",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2240",
+          "name": "Geschäftsstelle der Fraktion Die Linke"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031845": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031845",
       "reference": "VIII-DS-02149-ÄA-01",
@@ -7480,6 +7651,23 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2028071"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031880": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031880",
+      "reference": "VIII-A-03460-VSP-02",
+      "name": "Stadt des Friedens bleiben – Leipzig darf kein Standort für Rüstungsproduktion werden!",
+      "paperType": "Verwaltungsstandpunkt zum Antrag",
+      "date": "2026-11-04",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031880",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2079",
+          "name": "80 Amt für Wirtschaftsförderung"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031840"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031904": {
@@ -7650,6 +7838,23 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2031845"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2033169": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033169",
+      "reference": "VIII-A-02833-NF-02",
+      "name": "Abwendung des Wohnungsverlustes durch beschleunigte Betreuungsverfahren",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-09-25",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033169",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2240",
+          "name": "Geschäftsstelle der Fraktion Die Linke"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030001"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2033274": {
@@ -7839,6 +8044,21 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2028248"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2033813": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033813",
+      "reference": "VIII-A-03626",
+      "name": "Veränderungssperre im Industriepark Nord – Leipzig-Plaußig",
+      "paperType": "Antrag",
+      "date": "2026-10-22",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033813",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000008",
+          "name": "Geschäftsstelle der BSW-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2033823": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033823",
       "reference": "VIII-A-02831-NF-02",
@@ -7855,6 +8075,21 @@
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2029988"
       ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2033828": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033828",
+      "reference": "VIII-A-03628",
+      "name": "Meinungsumfrage Kriegswaffenproduzenten im Rahmen der OBM-Wahl",
+      "paperType": "Antrag",
+      "date": "2026-10-20",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033828",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000008",
+          "name": "Geschäftsstelle der BSW-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": []
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2033861": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033861",
@@ -8007,6 +8242,23 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2024566"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2033910": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033910",
+      "reference": "VIII-A-03460-NF-04",
+      "name": "Stadt des Friedens bleiben – Leipzig darf kein Standort für Rüstungsproduktion werden!",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-10-23",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033910",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2240",
+          "name": "Geschäftsstelle der Fraktion Die Linke"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031840"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2033914": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033914",
       "reference": "VIII-DS-03137-ÄA-02",
@@ -8137,6 +8389,155 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2033944"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2033988": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2033988",
+      "reference": "VIII-A-03148-VSP-01-NF-01",
+      "name": "Berichtpflicht von Rechtsstreitigkeiten",
+      "paperType": "Verwaltungsstandpunkt zum Antrag",
+      "date": "2026-11-11",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2033988",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2055",
+          "name": "30 Rechtsamt"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031184"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034103": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034103",
+      "reference": "VIII-DF-03711",
+      "name": "Machern bleibt Machern – Erhalt der Weiterbildungsstätte Machern im Portfolio der Stadt Leipzig – Nachfrage zum Beschluss VIII-A-02627",
+      "paperType": "Dringliche Anfrage",
+      "date": "2026-11-06",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034103",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2240",
+          "name": "Geschäftsstelle der Fraktion Die Linke"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034214": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034214",
+      "reference": "VIII-A-03460-NF-04-ÄA-01",
+      "name": "Stadt des Friedens bleiben – Leipzig darf kein Standort für Rüstungsproduktion werden!",
+      "paperType": "Änderungsantrag",
+      "date": "2026-11-12",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034214",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2033910"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034217": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034217",
+      "reference": "VIII-A-02984-NF-02",
+      "name": "Städtisches Gedenken für gewaltbetroffene Frauen und Mädchen",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-11-12",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034217",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030455"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034274": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034274",
+      "reference": "VIII-DF-03757",
+      "name": "Unklare Auslegung stiller Feiertage",
+      "paperType": "Dringliche Anfrage",
+      "date": "2026-11-16",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034274",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2239",
+          "name": "Geschäftsstelle der SPD-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034291": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034291",
+      "reference": "VIII-A-03460-NF-04-ÄA-02",
+      "name": "Stadt des Friedens bleiben – Leipzig darf kein Standort für Rüstungsproduktion werden!",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-11-17",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034291",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2034214"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034295": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034295",
+      "reference": "VIII-A-03374-NF-02",
+      "name": "Ferienjobs bei der Stadt Leipzig – Arbeitserfahrung und Nachwuchsgewinnung verbinden!",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-11-17",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034295",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2245",
+          "name": "Geschäftsstelle der AfD-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031476"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034301": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034301",
+      "reference": "VIII-A-03626-NF-02",
+      "name": "Aufstellungsbeschluss zur Änderung und Ergänzung B-Plan Industriepark Nord – Leipzig-Plaußig",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-11-19",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034301",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000008",
+          "name": "Geschäftsstelle der BSW-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2033813"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034303": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034303",
+      "reference": "VIII-A-03628-NF-02",
+      "name": "Meinungsumfrage Kriegswaffenproduzenten im Rahmen der OBM-Wahl",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-11-17",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034303",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000008",
+          "name": "Geschäftsstelle der BSW-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2033828"
       ]
     }
   },
@@ -8626,6 +9027,25 @@
       "33": "https://www.leipzig.sitzung-online.de/oparl/papers/2033706",
       "34": "https://www.leipzig.sitzung-online.de/oparl/papers/2031089",
       "35": "https://www.leipzig.sitzung-online.de/oparl/papers/2033862"
+    },
+    "2026-11-19": {
+      "0": "https://www.leipzig.sitzung-online.de/oparl/papers/2034103",
+      "1": "https://www.leipzig.sitzung-online.de/oparl/papers/2034274",
+      "5": "https://www.leipzig.sitzung-online.de/oparl/papers/2031613",
+      "6": "https://www.leipzig.sitzung-online.de/oparl/papers/2034291",
+      "7": "https://www.leipzig.sitzung-online.de/oparl/papers/2034291",
+      "8": "https://www.leipzig.sitzung-online.de/oparl/papers/2034291",
+      "9": "https://www.leipzig.sitzung-online.de/oparl/papers/2031880",
+      "10": "https://www.leipzig.sitzung-online.de/oparl/papers/2031810",
+      "11": "https://www.leipzig.sitzung-online.de/oparl/papers/2034301",
+      "13": "https://www.leipzig.sitzung-online.de/oparl/papers/2034303",
+      "14": "https://www.leipzig.sitzung-online.de/oparl/papers/2030560",
+      "15": "https://www.leipzig.sitzung-online.de/oparl/papers/2034217",
+      "16": "https://www.leipzig.sitzung-online.de/oparl/papers/2031105",
+      "35": "https://www.leipzig.sitzung-online.de/oparl/papers/2033988",
+      "36": "https://www.leipzig.sitzung-online.de/oparl/papers/2034295",
+      "37": "https://www.leipzig.sitzung-online.de/oparl/papers/2033169",
+      "38": "https://www.leipzig.sitzung-online.de/oparl/papers/2033169"
     }
   }
 }
