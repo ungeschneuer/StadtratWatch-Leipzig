@@ -10,8 +10,7 @@ import { writeGeneratedFile } from '../leipzig-members/generated-file.ts';
 import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
 import type { Recording, RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import { listVariantUrlsByBandwidth } from '../leipzig-recordings/stream-hosting.ts';
-import { readAllrisAgendaIndex, refreshAllrisAgendaIndex } from './allris-agenda-index.ts';
-import { ALLRIS_BASE_URL, createAllrisClient } from './allris.ts';
+import { createAllrisClient } from './allris.ts';
 import type { TextWorkers } from './board-text.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
 import { applyCorrections, parseCorrections } from './corrections.ts';
@@ -22,15 +21,16 @@ import type { MinutesFile } from './minutes.ts';
 import { applyOfficialResults } from './official-result.ts';
 import { loadOfficialSources } from './official-sources.ts';
 import {
-  agendaPageItemIdsReadWith,
   type CouncilRoster,
   fetchCouncilRoster,
   fetchMeetingAgenda,
+  fetchMeetingsAgendaItemsModifiedSince,
 } from './oparl-council.ts';
 import { buildReviewCases, evidenceImageNames } from './review-cases.ts';
 import { scanVoteEvents } from './scan-session.ts';
 import {
   serializeSessionVotings,
+  type SessionAgendaRead,
   sessionVotesToCsv,
   type SessionVotingsFile,
   summarizeStatuses,
@@ -84,6 +84,8 @@ async function extractRecording(
     throw new Error(`No HLS variants in ${recording.hlsUrl}`);
   }
   const events = await loadOrScanEvents(recording.sessionId, variants[0]);
+  const agendaReadAt = new Date();
+  const agenda = await fetchSessionAgenda(recording);
   const boardImages = new Map<number, Uint8Array>();
   const votings = await extractSessionVotings(
     {
@@ -91,7 +93,7 @@ async function extractRecording(
       hdVideoUrl: variants[variants.length - 1],
       events,
       roster: councilRoster.sessionRoster(recording.date),
-      agenda: await fetchSessionAgenda(recording),
+      agenda,
       cues: recording.subtitleFile
         ? parseVtt(await readFile(join(args.dataDir, recording.subtitleFile), 'utf-8'))
         : null,
@@ -99,38 +101,56 @@ async function extractRecording(
     { video, workers, fetchJson, log, signal, onBoardRead: (index, png) => boardImages.set(index, png) },
   );
   await saveEvidenceFrames(recording.sessionId, votings, boardImages);
-  await writeSessionVotings(recording, votings);
+  await writeSessionVotings(recording, votings, {
+    readAt: agendaReadAt.toISOString(),
+    itemIds: agenda.map((item) => item.agendaItemId),
+  });
 }
 
 // Sessions over two days share one agenda that OParl splits between two meetings, and a first day often runs on into
 // items OParl lists under the continuation. The session's own meeting comes first, so its items win on equal numbers.
 async function fetchSessionAgenda(recording: Recording) {
-  const meetingIds = [
-    recording,
-    ...manifest.recordings.filter((other) => isNeighbouringDay(other.date, recording.date)),
-  ]
-    .map((candidate) => candidate.oparlMeetingId)
-    .filter((meetingId): meetingId is string => meetingId !== null);
   const agendas = await Promise.all(
-    [...new Set(meetingIds)].map((meetingId) => fetchMeetingAgenda(fetchJson, listAgendaPageItemIds, meetingId)),
+    sessionMeetingIds(recording).map((meetingId) => fetchMeetingAgenda(fetchJson, meetingId)),
   );
   const agenda = agendas.flat();
   console.log(`${recording.sessionId}: agenda with ${agenda.length} items from ${agendas.length} OParl meeting(s)`);
   return agenda;
 }
 
-// The agenda page is an ALLRIS page. Through the ALLRIS client the first timeout ends ALLRIS for the rest of the run,
-// instead of three plain attempts of a minute each per meeting.
-function fetchAgendaPage(url: string): Promise<string> {
-  const allrisPrefix = `${ALLRIS_BASE_URL}/`;
-  return url.startsWith(allrisPrefix) ? allris.getText(url.slice(allrisPrefix.length)) : getTextOrThrow(http, url);
+function sessionMeetingIds(recording: Recording): string[] {
+  const meetingIds = [
+    recording,
+    ...manifest.recordings.filter((other) => isNeighbouringDay(other.date, recording.date)),
+  ]
+    .map((candidate) => candidate.oparlMeetingId)
+    .filter((meetingId): meetingId is string => meetingId !== null);
+  return [...new Set(meetingIds)];
 }
 
-// The ALLRIS runner stores the agenda page ids; only a meeting it has not seen yet needs the page itself.
-const readAgendaPageItemIds = agendaPageItemIdsReadWith(fetchAgendaPage);
-async function listAgendaPageItemIds(meetingId: string, agendaPageUrl: string): Promise<string[] | null> {
-  const stored = (await readAllrisAgendaIndex(args.dataDir)).meetings[meetingId];
-  return stored?.length ? stored : await readAgendaPageItemIds(meetingId, agendaPageUrl);
+// Items can still be added to the agenda after a session has been read, by an urgent motion or a late correction in
+// OParl. Until the minutes are due, a session whose agenda gained items since is read again; the scan is cached.
+const AGENDA_FOLLOWED_DAYS_AFTER_SESSION = 45;
+
+async function agendaGainedItemsSinceRead(recording: Recording): Promise<boolean> {
+  const file = await readFile(votingsPath(recording), 'utf-8')
+    .then((json) => JSON.parse(json) as SessionVotingsFile)
+    .catch(() => null);
+  if (!file?.agenda) return false;
+  const daysSinceSession = (Date.now() - Date.parse(recording.date)) / (24 * 60 * 60 * 1000);
+  if (daysSinceSession > AGENDA_FOLLOWED_DAYS_AFTER_SESSION) return false;
+  const readItemIds = new Set(file.agenda.itemIds);
+  const modifiedItems = await fetchMeetingsAgendaItemsModifiedSince(
+    fetchJson,
+    sessionMeetingIds(recording),
+    new Date(file.agenda.readAt),
+  );
+  const newItems = modifiedItems.filter((item) => !readItemIds.has(item.agendaItemId));
+  if (newItems.length === 0) return false;
+  console.log(
+    `${recording.sessionId}: agenda gained ${newItems.map((item) => item.number).join(', ')} since read; read again`,
+  );
+  return true;
 }
 
 function isNeighbouringDay(date: string, other: string): boolean {
@@ -209,7 +229,7 @@ async function backfillEvidenceImages(recording: Recording) {
   };
   await saveQuotationImages(recording.sessionId, file.votings, frameOf);
   await saveReviewBoardImages(recording.sessionId, file.votings, frameOf);
-  await writeSessionVotings(recording, file.votings);
+  await writeSessionVotings(recording, file.votings, file.agenda ?? null);
 }
 
 function evidenceDirectory(sessionId: string): string {
@@ -241,7 +261,7 @@ async function prepareEvidenceImages(sessionId: string, votings: ExtractedVoting
 }
 
 // Corrections that no longer match fail the session before anything is written, so they are never dropped silently.
-async function writeSessionVotings(recording: Recording, votings: ExtractedVoting[]) {
+async function writeSessionVotings(recording: Recording, votings: ExtractedVoting[], agenda: SessionAgendaRead | null) {
   const correctionsPath = join(args.dataDir, recording.sessionId, `corrections-${recording.sessionId}.json`);
   const correctionsJson = await readFile(correctionsPath, 'utf-8').catch(() => null);
   const corrections = correctionsJson ? parseCorrections(JSON.parse(correctionsJson), correctionsPath) : [];
@@ -263,7 +283,7 @@ async function writeSessionVotings(recording: Recording, votings: ExtractedVotin
   const corrected = applyCorrections(applyOfficialResults(votings, { ...sources, cues }), corrections);
 
   await mkdir(join(args.dataDir, recording.sessionId), { recursive: true });
-  await writeFile(votingsPath(recording), serializeSessionVotings(recording, corrected));
+  await writeFile(votingsPath(recording), serializeSessionVotings(recording, corrected, agenda));
   await writeFile(
     join(args.dataDir, recording.sessionId, `votes-${recording.sessionId}.csv`),
     sessionVotesToCsv(recording.sessionId, corrected, members),
@@ -374,7 +394,16 @@ function requestedRecordings(all: Recording[]): Recording[] {
 async function selectRecordingsToExtract(all: Recording[]): Promise<Recording[]> {
   const selected: Recording[] = [];
   for (const recording of requestedRecordings(all).filter((candidate) => candidate.goneSince === null)) {
-    if (args.force || !(await fileExists(votingsPath(recording)))) selected.push(recording);
+    if (
+      args.force ||
+      !(await fileExists(votingsPath(recording))) ||
+      (await agendaGainedItemsSinceRead(recording).catch((error: unknown) => {
+        log.warn(`${recording.sessionId}: agenda not comparable (${error instanceof Error ? error.message : error})`);
+        return false;
+      }))
+    ) {
+      selected.push(recording);
+    }
   }
   return selected;
 }
@@ -408,12 +437,8 @@ async function main() {
     for (const recording of await selectRecordingsWithVotings(manifest.recordings)) {
       await runForSession(recording, async () => {
         const file = JSON.parse(await readFile(votingsPath(recording), 'utf-8')) as SessionVotingsFile;
-        await writeSessionVotings(recording, file.votings);
+        await writeSessionVotings(recording, file.votings, file.agenda ?? null);
       });
-    }
-    // ALLRIS never answers GitHub Actions; there the stored ids are only read.
-    if (!args.offline && process.env.GITHUB_ACTIONS !== 'true') {
-      await refreshAllrisAgendaIndex({ dataDir: args.dataDir, fetchJson, allris, today: new Date(), warn: log.warn });
     }
   } else {
     const recordings = await selectRecordingsToExtract(manifest.recordings);

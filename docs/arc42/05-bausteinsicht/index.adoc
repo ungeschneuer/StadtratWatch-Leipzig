@@ -43,7 +43,6 @@ data/leipzig-8/
   member-overrides.json      Korrekturen mit Begründung und Quelle
   recordings.json|csv        Manifest der Aufzeichnungen
   papers.json                Vorlagen der Abstimmungen
-  allris-agenda-items.json   Tagesordnungspunkte je Sitzung laut ALLRIS (ALLRIS-Runner)
   YYYY-MM-DD/
     votings-YYYY-MM-DD.json   Abstimmungen mit Status und Prüfungen
     votes-YYYY-MM-DD.csv      Stimmen im Long-Format

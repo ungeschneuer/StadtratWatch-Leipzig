@@ -2,8 +2,9 @@ import { describe, expect, it } from 'bun:test';
 
 import type { LeipzigMembersFile } from '@srw-astro/models/leipzig-members';
 
+import type { Recording } from '../leipzig-recordings/recordings-manifest.ts';
 import type { ExtractedVoting } from './extract-session.ts';
-import { sessionVotesToCsv, summarizeStatuses } from './session-votings-file.ts';
+import { serializeSessionVotings, sessionVotesToCsv, summarizeStatuses } from './session-votings-file.ts';
 
 function voting(index: number, status: ExtractedVoting['status']): ExtractedVoting {
   return {
@@ -53,5 +54,14 @@ describe('session votings file', () => {
 
   it('counts discarded votings in the summary', () => {
     expect(summarizeStatuses(votings)).toMatchObject({ votings: 2, verified: 1, discarded: 1 });
+  });
+
+  it('keeps the agenda the votes were matched against with the time it was read', () => {
+    const recording = { sessionId: '2026-11-19', oparlMeetingId: 'meeting' } as Recording;
+    const agenda = { readAt: '2026-11-24T12:55:40.000Z', itemIds: ['item-b', 'item-a'] };
+
+    const file = JSON.parse(serializeSessionVotings(recording, votings, agenda));
+
+    expect(file.agenda).toEqual({ readAt: '2026-11-24T12:55:40.000Z', itemIds: ['item-a', 'item-b'] });
   });
 });

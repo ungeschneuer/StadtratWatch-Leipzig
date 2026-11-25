@@ -77,7 +77,7 @@ corrections-<date>.json. Needs ffmpeg (FFMPEG_PATH or PATH).
                         Only write the evidence images of existing votings files into <cache-dir>/evidence/<date>/,
                         from the frame each vote was read from: the quotation image of every published vote and the
                         board of every review case.
-    --offline           Do not look for minutes that are not stored yet, nor refresh allris-agenda-items.json.
+    --offline           Do not look for minutes that are not stored yet.
     --image-base-url    Where the evidence images are published; {session} is replaced by the session date.
                         Default: the release evidence-{session} of the fork on GitHub.
 
