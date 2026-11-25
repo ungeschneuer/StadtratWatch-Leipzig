@@ -6,7 +6,14 @@ import type { ExtractedVoting } from './extract-session.ts';
 
 export const EXTRACTOR_VERSION = 1;
 
-export function serializeSessionVotings(recording: Recording, votings: ExtractedVoting[]): string {
+// The OParl agenda the votes were matched against and when it was read, so a later run can tell when items were added.
+export type SessionAgendaRead = { readAt: string; itemIds: string[] };
+
+export function serializeSessionVotings(
+  recording: Recording,
+  votings: ExtractedVoting[],
+  agenda: SessionAgendaRead | null = null,
+): string {
   const file = {
     sessionId: recording.sessionId,
     oparlMeetingId: recording.oparlMeetingId,
@@ -17,13 +24,14 @@ export function serializeSessionVotings(recording: Recording, votings: Extracted
       method: 'video-board',
       extractorVersion: EXTRACTOR_VERSION,
     },
+    ...(agenda ? { agenda: { readAt: agenda.readAt, itemIds: [...agenda.itemIds].sort() } } : {}),
     summary: summarizeStatuses(votings),
     votings,
   };
   return `${JSON.stringify(file, null, 2)}\n`;
 }
 
-export type SessionVotingsFile = { votings: ExtractedVoting[] };
+export type SessionVotingsFile = { votings: ExtractedVoting[]; agenda?: SessionAgendaRead };
 
 export function summarizeStatuses(votings: ExtractedVoting[]): Record<string, number> {
   const summary: Record<string, number> = {

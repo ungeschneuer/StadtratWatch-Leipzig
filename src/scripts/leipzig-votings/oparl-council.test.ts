@@ -37,45 +37,58 @@ describe('fetchCouncilRoster', () => {
 });
 
 describe('fetchMeetingAgenda', () => {
-  const meetingId = 'https://www.leipzig.sitzung-online.de/oparl/meetings/2004593';
-  const item = (id: number, number: string, meeting = meetingId) => ({
-    id: `https://www.leipzig.sitzung-online.de/oparl/agendaItems/${id}`,
+  const meetingId = 'https://www.leipzig.sitzung-online.de/oparl/meetings/2004603';
+  const now = new Date('2026-11-25T09:00:00Z');
+  const item = (order: number, number: string, meeting = meetingId) => ({
+    id: `https://www.leipzig.sitzung-online.de/oparl/agendaItems/${2_200_000 + order}`,
+    order,
     number,
     meeting,
   });
-  const objects: Record<string, unknown> = {
-    [meetingId]: { agendaItem: [item(2186135, '15.10')], web: 'https://ratsinformation.example/TO010?SILFDNR=2004593' },
-    'https://www.leipzig.sitzung-online.de/oparl/agendaItems/2185538': item(2185538, '18.10'),
-    'https://www.leipzig.sitzung-online.de/oparl/agendaItems/2190000': item(2190000, '3', 'other-meeting'),
-    'https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208634': {
-      id: 'https://www.leipzig.sitzung-online.de/oparl/agendaItems/2208634',
-      deleted: true,
+  const embedded = Array.from({ length: 131 }, (_, index) => item(100_001 + index, `1.${index + 1}`));
+  const listPageUrl = (page: number) =>
+    `${LEIPZIG_OPARL_BODY_URL}/agendaItems?modified_since=2026-10-05T13%3A00%3A00%2B00%3A00` +
+    `&modified_until=2026-11-25T09%3A00%3A00%2B00%3A00&size=100&page=${page}`;
+  const listPages: Record<string, unknown> = {
+    [listPageUrl(1)]: {
+      data: [item(100_131, '1.131'), item(100_132, '18.2'), item(100_005, '3', 'other-meeting')],
+      pagination: { totalPages: 2 },
+    },
+    [listPageUrl(2)]: {
+      data: [item(200_001, '20'), { ...item(100_133, '18.3'), deleted: true }, item(100_133, '19')],
+      pagination: { totalPages: 2 },
     },
   };
-  const agendaPage =
-    '<a href="./to020?TOLFDNR=2186135&amp;SILFDNR=2004593">15.10</a>' +
-    '<a href="./to020?TOLFDNR=2185538&amp;SILFDNR=2004593">18.10</a>' +
-    '<a href="./vo020?refresh=false&amp;TOLFDNR=2185538">VIII-DS-01727</a>' +
-    '<a href="./to020?TOLFDNR=2190000">3</a>' +
-    '<a href="./to020?TOLFDNR=2208634">gelöscht</a>';
 
-  it('adds the items that OParl leaves out of the meeting, taken from the agenda page', async () => {
+  it('adds the items OParl leaves out of the meeting from the body list filtered by modification time', async () => {
+    const requested: string[] = [];
     const agenda = await fetchMeetingAgenda(
-      (url) => Promise.resolve(objects[url]),
-      () => Promise.resolve(agendaPage),
+      (url) => {
+        requested.push(url);
+        return Promise.resolve(
+          url === meetingId ? { start: '2026-11-19T14:00:00+01:00', agendaItem: embedded } : listPages[url],
+        );
+      },
       meetingId,
+      now,
     );
 
-    expect(agenda.map((entry) => entry.number)).toEqual(['15.10', '18.10']);
+    expect(agenda.slice(129).map((entry) => entry.number)).toEqual(['1.130', '1.131', '18.2', '19', '20']);
+    expect(requested).toEqual([meetingId, listPageUrl(1), listPageUrl(2)]);
   });
 
-  it('keeps the items OParl embeds when the agenda page does not answer', async () => {
+  it('reads no list when OParl embeds fewer items than its limit', async () => {
+    const requested: string[] = [];
     const agenda = await fetchMeetingAgenda(
-      (url) => Promise.resolve(objects[url]),
-      () => Promise.reject(new DOMException('The operation timed out.', 'TimeoutError')),
+      (url) => {
+        requested.push(url);
+        return Promise.resolve({ start: '2026-11-19T14:00:00+01:00', agendaItem: embedded.slice(0, 3) });
+      },
       meetingId,
+      now,
     );
 
-    expect(agenda.map((entry) => entry.number)).toEqual(['15.10']);
+    expect(agenda.map((entry) => entry.number)).toEqual(['1.1', '1.2', '1.3']);
+    expect(requested).toEqual([meetingId]);
   });
 });
