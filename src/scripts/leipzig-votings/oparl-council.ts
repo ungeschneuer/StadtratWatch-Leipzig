@@ -85,21 +85,23 @@ type OparlAgendaItem = {
 
 export type FetchText = (url: string) => Promise<string>;
 
+// The ALLRIS agenda item ids (TOLFDNR) of a meeting's agenda page, or null if they are not available.
+export type ListAgendaPageItemIds = (meetingId: string, agendaPageUrl: string) => Promise<string[] | null>;
+
 // Leipzig's OParl embeds at most 131 agenda items in a meeting, and its filtered agendaItems list times out. The public
 // ALLRIS agenda page that the meeting links as `web` lists every item by the same id, so it serves as the index of the
 // missing items, which are then read from OParl one by one.
 export async function fetchMeetingAgenda(
   fetchJson: FetchJson,
-  fetchText: FetchText,
+  listAgendaPageItemIds: ListAgendaPageItemIds,
   meetingId: string,
 ): Promise<AgendaItem[]> {
   const meeting = (await fetchJson(meetingId)) as { agendaItem?: OparlAgendaItem[]; web?: string };
   const embedded = meeting.agendaItem ?? [];
   const missing: OparlAgendaItem[] = [];
-  const agendaPage = meeting.web ? await fetchAgendaPage(fetchText, meetingId, meeting.web) : null;
-  if (agendaPage !== null) {
+  const listedIds = meeting.web ? await listAgendaPageItemIds(meetingId, meeting.web) : null;
+  if (listedIds !== null) {
     const embeddedIds = new Set(embedded.map((item) => agendaItemNumericId(item.id)));
-    const listedIds = listAgendaItemIdsOfAgendaPage(agendaPage);
     for (const id of listedIds.filter((candidate) => !embeddedIds.has(candidate))) {
       const item = (await fetchJson(`${OPARL_AGENDA_ITEMS_URL}/${id}`)) as OparlAgendaItem;
       // ALLRIS still links items that OParl has deleted since; those are left out without a warning.
@@ -121,16 +123,18 @@ export async function fetchMeetingAgenda(
 
 const OPARL_AGENDA_ITEMS_URL = 'https://www.leipzig.sitzung-online.de/oparl/agendaItems';
 
-// ALLRIS does not answer GitHub's runners. Without the agenda page the session is read with the items OParl embeds;
-// votes on the items left out then have no agenda item and go to review instead of stopping the whole session.
-async function fetchAgendaPage(fetchText: FetchText, meetingId: string, agendaPageUrl: string): Promise<string | null> {
-  try {
-    return await fetchText(agendaPageUrl);
-  } catch (error) {
-    const reason = error instanceof Error ? error.message : String(error);
-    console.warn(`${meetingId}: agenda page ${agendaPageUrl} not readable (${reason}); only the items OParl embeds`);
-    return null;
-  }
+// Without the agenda page the session is read with the items OParl embeds; votes on the items left out then have no
+// agenda item and go to review instead of stopping the whole session.
+export function agendaPageItemIdsReadWith(fetchText: FetchText): ListAgendaPageItemIds {
+  return async (meetingId, agendaPageUrl) => {
+    try {
+      return listAgendaItemIdsOfAgendaPage(await fetchText(agendaPageUrl));
+    } catch (error) {
+      const reason = error instanceof Error ? error.message : String(error);
+      console.warn(`${meetingId}: agenda page ${agendaPageUrl} not readable (${reason}); only the items OParl embeds`);
+      return null;
+    }
+  };
 }
 
 export function listAgendaItemIdsOfAgendaPage(html: string): string[] {

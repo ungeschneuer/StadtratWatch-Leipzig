@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'bun:test';
 
 import {
+  agendaPageItemIdsReadWith,
   COUNCIL_ORGANIZATION_ID,
   fetchCouncilRoster,
   fetchMeetingAgenda,
@@ -62,7 +63,7 @@ describe('fetchMeetingAgenda', () => {
   it('adds the items that OParl leaves out of the meeting, taken from the agenda page', async () => {
     const agenda = await fetchMeetingAgenda(
       (url) => Promise.resolve(objects[url]),
-      () => Promise.resolve(agendaPage),
+      agendaPageItemIdsReadWith(() => Promise.resolve(agendaPage)),
       meetingId,
     );
 
@@ -72,10 +73,20 @@ describe('fetchMeetingAgenda', () => {
   it('keeps the items OParl embeds when the agenda page does not answer', async () => {
     const agenda = await fetchMeetingAgenda(
       (url) => Promise.resolve(objects[url]),
-      () => Promise.reject(new DOMException('The operation timed out.', 'TimeoutError')),
+      agendaPageItemIdsReadWith(() => Promise.reject(new DOMException('The operation timed out.', 'TimeoutError'))),
       meetingId,
     );
 
     expect(agenda.map((entry) => entry.number)).toEqual(['15.10']);
+  });
+
+  it('adds the missing items from stored agenda page ids without reading the page', async () => {
+    const agenda = await fetchMeetingAgenda(
+      (url) => Promise.resolve(objects[url]),
+      () => Promise.resolve(['2186135', '2185538']),
+      meetingId,
+    );
+
+    expect(agenda.map((entry) => entry.number)).toEqual(['15.10', '18.10']);
   });
 });

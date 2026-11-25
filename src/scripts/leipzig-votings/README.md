@@ -61,9 +61,11 @@ full-screen in its recording. Each vote is cross-checked against independent sou
      colours stand if the cast votes and the spoken announcement confirm them.
    - Since February 2026 the bar numbers carry the share, „14 (22 %)“; the count before the bracket is used.
    - Two-day sessions share one agenda that OParl splits between two meetings, so both are searched.
-   - OParl embeds at most 131 agenda items in a meeting; the rest are found through the meeting's ALLRIS agenda page.
-     ALLRIS does not answer GitHub Actions, so there the agenda has only the embedded items, and a vote on a missing
-     item fails `agenda-item-in-oparl` and goes to review.
+   - OParl embeds at most 131 agenda items in a meeting; the rest are found through the ids on the meeting's ALLRIS
+     agenda page. ALLRIS does not answer GitHub Actions, so `--corrections-only` on the ALLRIS runner stores the ids of
+     every council meeting from 14 days ago to 28 days ahead in `allris-agenda-items.json`, and the extraction in
+     Actions reads them from there. A meeting missing from that file has only the embedded items in Actions; a vote on
+     a missing item then fails `agenda-item-in-oparl` and goes to review.
    - Sub-items for amendments (18.16.1) are missing in OParl. They pass when the board's paper has the kind and serial number of the
      parent item's paper, taken from OParl or, if OParl only has a „bereits behandelt“ placeholder, from the board of
      the parent item's own vote.
@@ -265,6 +267,7 @@ variable `LEIPZIG_REVIEWERS`.
 | `data/leipzig-8/{date}/votes-{date}.csv`    | One row per seat and vote                                                 |
 | `data/leipzig-8/{date}/review-{date}.json`  | The votes a human has to check, with evidence, links and suggestions      |
 | `data/leipzig-8/review-index.json`          | Sessions with their number of open and decided review cases               |
+| `data/leipzig-8/allris-agenda-items.json`   | ALLRIS agenda item ids per OParl meeting (`--corrections-only` only)      |
 
 Vote codes follow StadtratWatch: `J`, `N`, `E`, `O` (did not vote). `attendance` tells present non-voters from absent
 members. In the CSV, `boardVote` is the vote as read from the board and `vote` the vote after corrections.

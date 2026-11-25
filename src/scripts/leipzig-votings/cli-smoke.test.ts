@@ -41,6 +41,7 @@ describe('leipzig-votings command line', () => {
         '-c',
         join(dataDir, 'cache'),
         '--corrections-only',
+        '--offline',
       ],
       { stdout: 'pipe', stderr: 'pipe' },
     );

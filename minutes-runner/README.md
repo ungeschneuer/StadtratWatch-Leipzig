@@ -9,6 +9,9 @@ läuft weiter in GitHub Actions. Seit 13.11.2026 läuft der Runner per cron auf 
 
 1. Daten-Branch `data/leipzig-votings` holen und `main` hineinführen (wie `.github/scripts/leipzig-data-branch.sh`).
 2. `leipzig-votings --corrections-only` mit Netz: liest fehlende Niederschriften und wendet sie mit den Korrekturen an.
+   Es legt außerdem die Tagesordnungspunkte der Ratssitzungen der letzten 14 und der nächsten 28 Tage in
+   `data/leipzig-8/allris-agenda-items.json` ab. OParl liefert je Sitzung höchstens 131 Punkte; `leipzig-votings` in
+   GitHub Actions findet die übrigen über diese Datei.
 3. `leipzig-site-data` erzeugt die Seitendaten neu.
 4. Gibt es Änderungen unter `data/leipzig-8`, ein Commit „StadtratWatch Leipzig (ALLRIS-Runner)“ und Push auf den
    Daten-Branch. Der Pull Request des Daten-Branches nimmt ihn auf; `leipzig-review-recheck` aktualisiert nachts die

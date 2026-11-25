@@ -10,6 +10,7 @@ import { writeGeneratedFile } from '../leipzig-members/generated-file.ts';
 import { createPoliteHttpClient, DEFAULT_USER_AGENT, getTextOrThrow } from '../leipzig-recordings/http-client.ts';
 import type { Recording, RecordingsManifest } from '../leipzig-recordings/recordings-manifest.ts';
 import { listVariantUrlsByBandwidth } from '../leipzig-recordings/stream-hosting.ts';
+import { readAllrisAgendaIndex, refreshAllrisAgendaIndex } from './allris-agenda-index.ts';
 import { ALLRIS_BASE_URL, createAllrisClient } from './allris.ts';
 import type { TextWorkers } from './board-text.ts';
 import { checkArgs, parseCliArgs, printHelpText } from './cli.ts';
@@ -20,7 +21,12 @@ import { createFfmpegVideoReader } from './ffmpeg.ts';
 import type { MinutesFile } from './minutes.ts';
 import { applyOfficialResults } from './official-result.ts';
 import { loadOfficialSources } from './official-sources.ts';
-import { type CouncilRoster, fetchCouncilRoster, fetchMeetingAgenda } from './oparl-council.ts';
+import {
+  agendaPageItemIdsReadWith,
+  type CouncilRoster,
+  fetchCouncilRoster,
+  fetchMeetingAgenda,
+} from './oparl-council.ts';
 import { buildReviewCases, evidenceImageNames } from './review-cases.ts';
 import { scanVoteEvents } from './scan-session.ts';
 import {
@@ -106,7 +112,7 @@ async function fetchSessionAgenda(recording: Recording) {
     .map((candidate) => candidate.oparlMeetingId)
     .filter((meetingId): meetingId is string => meetingId !== null);
   const agendas = await Promise.all(
-    [...new Set(meetingIds)].map((meetingId) => fetchMeetingAgenda(fetchJson, fetchAgendaPage, meetingId)),
+    [...new Set(meetingIds)].map((meetingId) => fetchMeetingAgenda(fetchJson, listAgendaPageItemIds, meetingId)),
   );
   const agenda = agendas.flat();
   console.log(`${recording.sessionId}: agenda with ${agenda.length} items from ${agendas.length} OParl meeting(s)`);
@@ -118,6 +124,13 @@ async function fetchSessionAgenda(recording: Recording) {
 function fetchAgendaPage(url: string): Promise<string> {
   const allrisPrefix = `${ALLRIS_BASE_URL}/`;
   return url.startsWith(allrisPrefix) ? allris.getText(url.slice(allrisPrefix.length)) : getTextOrThrow(http, url);
+}
+
+// The ALLRIS runner stores the agenda page ids; only a meeting it has not seen yet needs the page itself.
+const readAgendaPageItemIds = agendaPageItemIdsReadWith(fetchAgendaPage);
+async function listAgendaPageItemIds(meetingId: string, agendaPageUrl: string): Promise<string[] | null> {
+  const stored = (await readAllrisAgendaIndex(args.dataDir)).meetings[meetingId];
+  return stored?.length ? stored : await readAgendaPageItemIds(meetingId, agendaPageUrl);
 }
 
 function isNeighbouringDay(date: string, other: string): boolean {
@@ -397,6 +410,10 @@ async function main() {
         const file = JSON.parse(await readFile(votingsPath(recording), 'utf-8')) as SessionVotingsFile;
         await writeSessionVotings(recording, file.votings);
       });
+    }
+    // ALLRIS never answers GitHub Actions; there the stored ids are only read.
+    if (!args.offline && process.env.GITHUB_ACTIONS !== 'true') {
+      await refreshAllrisAgendaIndex({ dataDir: args.dataDir, fetchJson, allris, today: new Date(), warn: log.warn });
     }
   } else {
     const recordings = await selectRecordingsToExtract(manifest.recordings);
