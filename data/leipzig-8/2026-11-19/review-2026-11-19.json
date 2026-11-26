@@ -1,6 +1,6 @@
 {
   "sessionId": "2026-11-19",
-  "generatedAt": "2026-11-25T21:37:42.392Z",
+  "generatedAt": "2026-11-26T06:20:53.489Z",
   "video": {
     "hlsUrl": "https://h056.video-stream-hosting.de/stadtleipzig-vod/_definst_/smil:2026/Livestream_Stadtrat_Leipzig_-_19_November_2026_-_02-03-26.smil/playlist.m3u8",
     "mediathekUrl": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-19112026",
@@ -167,6 +167,10 @@
         {
           "label": "Aufzeichnung in der Mediathek",
           "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-19112026"
+        },
+        {
+          "label": "Sitzung in ALLRIS (Ergebnisse je TOP)",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004603"
         },
         {
           "label": "TOP 3.2 in ALLRIS",
@@ -859,9 +863,9 @@
       "title": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
       "problems": [
         {
-          "check": "announcement-matches",
-          "message": "Die gesprochene Ansage (22/41/0) weicht von der Tafel (22/40/0) ab.",
-          "detail": "announced 22/41/0: \"Macht dann 22 zu 41 zu 0, damit ist der Antrag abgelehnt. Und wir kommen jetzt zur Änderung als Ganzes, weil die Fraktion Linke übernommen\""
+          "check": "matches-official",
+          "message": "Das amtliche Ergebnis ist 22/41/0, die Tafel zeigt 22/40/0; jemand wurde von Hand gezählt, aber das Verlaufsprotokoll nennt nicht eindeutig, wer.",
+          "detail": "official 22/41/0 for TOP 18.8.2 (VIII-DS-03265-ÄA-02) differs from the board"
         }
       ],
       "board": {
@@ -871,7 +875,28 @@
         "castVotes": 62,
         "presentMembers": 64
       },
-      "official": null,
+      "official": {
+        "J": 22,
+        "N": 41,
+        "E": 0,
+        "agendaItemNumber": "18.8.2",
+        "paperReference": "VIII-DS-03265-ÄA-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "18.8.2"
+            ],
+            "paperReference": "VIII-DS-03265-ÄA-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 22,
+            "N": 41,
+            "E": 0
+          }
+        ],
+        "correction": null
+      },
       "announced": {
         "J": 22,
         "N": 41,
@@ -967,6 +992,10 @@
         {
           "label": "Aufzeichnung in der Mediathek",
           "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-19112026"
+        },
+        {
+          "label": "Sitzung in ALLRIS (Ergebnisse je TOP)",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004603"
         },
         {
           "label": "TOP 18.8.2 in ALLRIS",
@@ -1752,6 +1781,10 @@
         {
           "label": "Aufzeichnung in der Mediathek",
           "url": "https://www.leipzig.de/mediathek/video/aufzeichnung-der-ratsversammlung-vom-19112026"
+        },
+        {
+          "label": "Sitzung in ALLRIS (Ergebnisse je TOP)",
+          "url": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004603"
         },
         {
           "label": "TOP 18.8 in ALLRIS",

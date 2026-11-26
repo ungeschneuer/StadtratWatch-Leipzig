@@ -206,9 +206,9 @@
   },
   "summary": {
     "votings": 39,
-    "verified": 0,
+    "verified": 18,
     "corrected": 0,
-    "provisional": 33,
+    "provisional": 15,
     "reviewed": 0,
     "unresolved": 0,
     "needs-review": 3,
@@ -4302,13 +4302,40 @@
           "detail": "announced 19/44/2: \"Und das Ergebnis 19 zu 44 zu 2, damit ist der Antrag abgelehnt. Das nachfolgende Thema inklusive der Sammelpetition wird im Block behandelt, es\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 19/44/2 for TOP 12.1 (VIII-A-03407)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 19,
+        "N": 44,
+        "E": 2,
+        "agendaItemNumber": "12.1",
+        "paperReference": "VIII-A-03407",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.1"
+            ],
+            "paperReference": "VIII-A-03407",
+            "label": "Abstimmungsergebnis:",
+            "J": 19,
+            "N": 44,
+            "E": 2
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 6,
@@ -7031,13 +7058,40 @@
           "detail": "announced 34/32/0: \"Sie waren, glaube ich, verwirrt. Und das heisst im Ergebnis 34 zu 32 zu 0 so beschlossen. Herzlichen Dank.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 34/32/0 for TOP 12.2.2 (VIII-A-03460-VSP-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 34,
+        "N": 32,
+        "E": 0,
+        "agendaItemNumber": "12.2.2",
+        "paperReference": "VIII-A-03460-VSP-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.2.2"
+            ],
+            "paperReference": "VIII-A-03460-VSP-02",
+            "label": "Abstimmungsergebnis zu Beschlusspunkt 3:",
+            "J": 34,
+            "N": 32,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 10,
@@ -7720,13 +7774,40 @@
           "detail": "announced 19/44/0: \"Und das Ergebnis lautet hier 19 zu 44 zu 0, damit ist der Antrag abgelehnt. Herzlichen Dank. Nach dieser Debatte kommen wir jetzt zu 12.3. Die Veränderungssperre\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 19/44/0 for TOP 12.4 (VIII-A-03452)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 19,
+        "N": 44,
+        "E": 0,
+        "agendaItemNumber": "12.4",
+        "paperReference": "VIII-A-03452",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.4"
+            ],
+            "paperReference": "VIII-A-03452",
+            "label": "Abstimmungsergebnis:",
+            "J": 19,
+            "N": 44,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 11,
@@ -8409,13 +8490,40 @@
           "detail": "announced 30/33/3: \"Und im Ergebnis heisst das, 30 zu 33 zu 3 so beschlossen. So abgelehnt beschlossen.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 30/33/3 for TOP 12.3 (VIII-A-03626-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 30,
+        "N": 33,
+        "E": 3,
+        "agendaItemNumber": "12.3",
+        "paperReference": "VIII-A-03626-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.3"
+            ],
+            "paperReference": "VIII-A-03626-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 30,
+            "N": 33,
+            "E": 3
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 12,
@@ -9759,13 +9867,40 @@
           "detail": "announced 48/8/10: \"Und das Ergebnis lautet sehr eindeutig 48 zu 8 zu 10, so beschlossen. Ich rufe auf die 12.6, städtisches Gedenken für gewaltbetroffene Frauen und\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 48/8/10 for TOP 12.5 (VIII-A-03628-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 48,
+        "N": 8,
+        "E": 10,
+        "agendaItemNumber": "12.5",
+        "paperReference": "VIII-A-03628-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.5"
+            ],
+            "paperReference": "VIII-A-03628-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 48,
+            "N": 8,
+            "E": 10
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 14,
@@ -10448,13 +10583,40 @@
           "detail": "announced 21/41/0: \"Haben alle abgestimmt? Das Ergebnis 21 zu 41 zu 0, so abgelehnt. Dann kommen wir jetzt zum Antrag in der Neufassung 02. Ihr Botum bitte.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 21/41/0 for TOP 12.6.1 (VIII-A-02984-VSP-01)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 21,
+        "N": 41,
+        "E": 0,
+        "agendaItemNumber": "12.6.1",
+        "paperReference": "VIII-A-02984-VSP-01",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.6.1"
+            ],
+            "paperReference": "VIII-A-02984-VSP-01",
+            "label": "Abstimmungsergebnis:",
+            "J": 21,
+            "N": 41,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 15,
@@ -11137,13 +11299,40 @@
           "detail": "announced 35/22/4: \"Und das Ergebnis? 35 zu 22 zu 4, so beschlossen. Wir kommen jetzt zu 12.07 der Einführung einer Schweigeminute. Auch hier steht\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 35/22/4 for TOP 12.6 (VIII-A-02984-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 35,
+        "N": 22,
+        "E": 4,
+        "agendaItemNumber": "12.6",
+        "paperReference": "VIII-A-02984-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.6"
+            ],
+            "paperReference": "VIII-A-02984-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 35,
+            "N": 22,
+            "E": 4
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 16,
@@ -11826,13 +12015,40 @@
           "detail": "announced 35/28/0: \"Und das Ergebnis? 35 zu 28 zu 0, so beschlossen. Herzlichen Dank. Dann gehen wir jetzt in die Pause. Ach nee, wir machen ja weiter. Entschuldigung,\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 35/28/0 for TOP 12.7 (VIII-A-02983-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 35,
+        "N": 28,
+        "E": 0,
+        "agendaItemNumber": "12.7",
+        "paperReference": "VIII-A-02983-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.7"
+            ],
+            "paperReference": "VIII-A-02983-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 35,
+            "N": 28,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 17,
@@ -12515,13 +12731,40 @@
           "detail": "announced 48/5/6: \"Rundersergebnis 48 zu 5 zu 6, so beschlossen. Achtzehn sieben, Fortsteibung des Medienentwicklungsplans, gibt es Gegenstimmen?\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 48/5/6 for TOP 18.2 (VIII-DS-01949)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 48,
+        "N": 5,
+        "E": 6,
+        "agendaItemNumber": "18.2",
+        "paperReference": "VIII-DS-01949",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "18.2"
+            ],
+            "paperReference": "VIII-DS-01949",
+            "label": "Abstimmungsergebnis:",
+            "J": 48,
+            "N": 5,
+            "E": 6
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 18,
@@ -13204,13 +13447,40 @@
           "detail": "announced 16/35/13: \"Und das Ergebnis heisst 16 zu 35 zu 13 abgelehnt. Änderungsantrag der Fraktion Bündnis\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 16/35/13 for TOP 18.1.1 (VII-DS-09671-NF-01-ÄA-01)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 16,
+        "N": 35,
+        "E": 13,
+        "agendaItemNumber": "18.1.1",
+        "paperReference": "VII-DS-09671-NF-01-ÄA-01",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "18.1.1"
+            ],
+            "paperReference": "VII-DS-09671-NF-01-ÄA-01",
+            "label": "Abstimmungsergebnis:",
+            "J": 16,
+            "N": 35,
+            "E": 13
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 19,
@@ -20638,13 +20908,40 @@
           "detail": "board accepted (simple majority), OParl \"geändert beschlossen\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 44/18/2 for TOP 18.1 (VII-DS-09671-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 44,
+        "N": 18,
+        "E": 2,
+        "agendaItemNumber": "18.1",
+        "paperReference": "VII-DS-09671-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "18.1"
+            ],
+            "paperReference": "VII-DS-09671-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 44,
+            "N": 18,
+            "E": 2
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 30,
@@ -21315,13 +21612,40 @@
           "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 60/0/0 for TOP 18.6 (VIII-DS-02954)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 60,
+        "N": 0,
+        "E": 0,
+        "agendaItemNumber": "18.6",
+        "paperReference": "VIII-DS-02954",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "18.6"
+            ],
+            "paperReference": "VIII-DS-02954",
+            "label": "Abstimmungsergebnis:",
+            "J": 60,
+            "N": 0,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 31,
@@ -22000,8 +22324,14 @@
         },
         {
           "check": "announcement-matches",
+          "passed": true,
+          "detail": "announced 22/41/0: \"Macht dann 22 zu 41 zu 0, damit ist der Antrag abgelehnt. Und wir kommen jetzt zur Änderung als Ganzes, weil die Fraktion Linke übernommen\"; settled by the official result",
+          "settledByOfficialResult": true
+        },
+        {
+          "check": "matches-official",
           "passed": false,
-          "detail": "announced 22/41/0: \"Macht dann 22 zu 41 zu 0, damit ist der Antrag abgelehnt. Und wir kommen jetzt zur Änderung als Ganzes, weil die Fraktion Linke übernommen\""
+          "detail": "official 22/41/0 for TOP 18.8.2 (VIII-DS-03265-ÄA-02) differs from the board"
         },
         {
           "check": "not-attendance-count",
@@ -22010,7 +22340,29 @@
         }
       ],
       "checkStatus": "needs-review",
-      "status": "needs-review"
+      "status": "needs-review",
+      "official": {
+        "J": 22,
+        "N": 41,
+        "E": 0,
+        "agendaItemNumber": "18.8.2",
+        "paperReference": "VIII-DS-03265-ÄA-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "18.8.2"
+            ],
+            "paperReference": "VIII-DS-03265-ÄA-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 22,
+            "N": 41,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 32,
@@ -23370,13 +23722,40 @@
           "detail": "board rejected (simple majority), OParl \"abgelehnt\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 30/33/0 for TOP 19.2.1 (VII-DS-06102-Ifo-02-ÄA-01)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 30,
+        "N": 33,
+        "E": 0,
+        "agendaItemNumber": "19.2.1",
+        "paperReference": "VII-DS-06102-Ifo-02-ÄA-01",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "19.2.1"
+            ],
+            "paperReference": "VII-DS-06102-Ifo-02-ÄA-01",
+            "label": "Abstimmungsergebnis:",
+            "J": 30,
+            "N": 33,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 34,
@@ -24047,13 +24426,40 @@
           "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 37/17/7 for TOP 19.4 (VIII-Ifo-02817)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 37,
+        "N": 17,
+        "E": 7,
+        "agendaItemNumber": "19.4",
+        "paperReference": "VIII-Ifo-02817",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "19.4"
+            ],
+            "paperReference": "VIII-Ifo-02817",
+            "label": "Abstimmungsergebnis:",
+            "J": 37,
+            "N": 17,
+            "E": 7
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 35,
@@ -24719,13 +25125,40 @@
           "detail": "heading VIII-A-03148-VSP-01-NF-01, OParl VIII-A-03148-VSP-01-NF-01"
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 60/0/0 for TOP 12.8 (VIII-A-03148)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 60,
+        "N": 0,
+        "E": 0,
+        "agendaItemNumber": "12.8",
+        "paperReference": "VIII-A-03148",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.8"
+            ],
+            "paperReference": "VIII-A-03148",
+            "label": "Abstimmungsergebnis:",
+            "J": 60,
+            "N": 0,
+            "E": 0
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 36,
@@ -25408,13 +25841,40 @@
           "detail": "announced 25/30/1: \"Das konnten alle abstimmen, mit dem Ergebnis 25 zu 30 zu 1 abgelehnt. 12.10 Die Linke zum Thema Wohnungsverlust, Frau Nagel.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 25/30/1 for TOP 12.9 (VIII-A-03374-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 25,
+        "N": 30,
+        "E": 1,
+        "agendaItemNumber": "12.9",
+        "paperReference": "VIII-A-03374-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.9"
+            ],
+            "paperReference": "VIII-A-03374-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 25,
+            "N": 30,
+            "E": 1
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 37,
@@ -26092,13 +26552,40 @@
           "detail": "announced 45/14/1: \"Und das heisst im Ergebnis, 45 dafür, 14 dagegen eine Enthaltung, damit so beschlossen. Und ich muss dennoch den U-Antrag aufrufen und bitte auch Ihr Votum zum Antrag\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 45/14/1 for TOP 12.10.1 (VIII-A-02833-NF-02-ÄA-01)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 45,
+        "N": 14,
+        "E": 1,
+        "agendaItemNumber": "12.10.1",
+        "paperReference": "VIII-A-02833-NF-02-ÄA-01",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.10.1"
+            ],
+            "paperReference": "VIII-A-02833-NF-02-ÄA-01",
+            "label": "Abstimmungsergebnis:",
+            "J": 45,
+            "N": 14,
+            "E": 1
+          }
+        ],
+        "correction": null
+      }
     },
     {
       "index": 38,
@@ -26776,13 +27263,40 @@
           "detail": "announced 42/16/2: \"Und im Ergebnis heisst das 42 zu 16 zu 2, so beschlossen. Zwölf, elf, Bündnis 90 Die Grünen zum Thema Klimaanpassung, Frau Doktor Schreier-Krieg.\""
         },
         {
+          "check": "matches-official",
+          "passed": true,
+          "detail": "official 42/16/2 for TOP 12.10 (VIII-A-02833-NF-02)"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "provisional",
-      "status": "provisional"
+      "checkStatus": "verified",
+      "status": "verified",
+      "official": {
+        "J": 42,
+        "N": 16,
+        "E": 2,
+        "agendaItemNumber": "12.10",
+        "paperReference": "VIII-A-02833-NF-02",
+        "procedural": false,
+        "sources": [
+          {
+            "kind": "agenda-item-pages",
+            "agendaItemNumbers": [
+              "12.10"
+            ],
+            "paperReference": "VIII-A-02833-NF-02",
+            "label": "Abstimmungsergebnis:",
+            "J": 42,
+            "N": 16,
+            "E": 2
+          }
+        ],
+        "correction": null
+      }
     }
   ]
 }
