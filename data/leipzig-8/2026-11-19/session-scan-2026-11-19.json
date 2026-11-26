@@ -1809,8 +1809,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 67,
-    "reviewStatus": "provisional"
+    "presentMembers": 67
   },
   {
     "votingFilename": "2026-11-19-007.png",
@@ -2815,7 +2814,8 @@
           "paperType": "Antrag",
           "paperUrl": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031840"
         }
-      ]
+      ],
+      "itemNumber": "3"
     },
     "votes": [
       {
@@ -3103,8 +3103,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 67,
-    "reviewStatus": "provisional"
+    "presentMembers": 67
   },
   {
     "votingFilename": "2026-11-19-011.png",
@@ -3407,8 +3406,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 67,
-    "reviewStatus": "provisional"
+    "presentMembers": 67
   },
   {
     "votingFilename": "2026-11-19-012.png",
@@ -3720,8 +3718,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 67,
-    "reviewStatus": "provisional"
+    "presentMembers": 67
   },
   {
     "votingFilename": "2026-11-19-014.png",
@@ -4033,8 +4030,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 67,
-    "reviewStatus": "provisional"
+    "presentMembers": 67
   },
   {
     "votingFilename": "2026-11-19-015.png",
@@ -4346,8 +4342,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-016.png",
@@ -4659,8 +4654,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-017.png",
@@ -4972,8 +4966,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-018.png",
@@ -5276,8 +5269,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-019.png",
@@ -5596,8 +5588,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-020.png",
@@ -8532,8 +8523,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-031.png",
@@ -8836,8 +8826,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66,
-    "reviewStatus": "provisional"
+    "presentMembers": 66
   },
   {
     "votingFilename": "2026-11-19-032.png",
@@ -9771,8 +9760,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 64,
-    "reviewStatus": "provisional"
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-11-19-035.png",
@@ -10084,8 +10072,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 64,
-    "reviewStatus": "provisional"
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-11-19-036.png",
@@ -10404,8 +10391,7 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 64,
-    "reviewStatus": "provisional"
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-11-19-037.png",
@@ -10717,8 +10703,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 64,
-    "reviewStatus": "provisional"
+    "presentMembers": 64
   },
   {
     "votingFilename": "2026-11-19-038.png",
@@ -11030,8 +11015,7 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 63,
-    "reviewStatus": "provisional"
+    "presentMembers": 63
   },
   {
     "votingFilename": "2026-11-19-039.png",
@@ -11343,7 +11327,6 @@
         "vote": "N"
       }
     ],
-    "presentMembers": 63,
-    "reviewStatus": "provisional"
+    "presentMembers": 63
   }
 ]
