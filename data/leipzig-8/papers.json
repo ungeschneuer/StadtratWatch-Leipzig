@@ -32,6 +32,21 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/1010557"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2000269": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2000269",
+      "reference": "VII-DS-06102",
+      "name": "Energie- und Klimaschutzprogramm (EKSP) 2030",
+      "paperType": "Beschlussvorlage",
+      "date": "2022-06-22",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2000269",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2261",
+          "name": "38 Referat Nachhaltige Entwicklung und Klimaschutz"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2002856": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2002856",
       "reference": "VII-A-06720",
@@ -159,6 +174,21 @@
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2006574"
       ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2015030": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015030",
+      "reference": "VII-DS-09671",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Beschlussvorlage",
+      "date": "2026-04-30",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2015030",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2075",
+          "name": "66 Mobilitäts- und Tiefbauamt"
+        }
+      ],
+      "superordinatedPaperIds": []
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2015044": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2015044",
@@ -1834,6 +1864,21 @@
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2026388"
       ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2027445": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027445",
+      "reference": "VIII-DS-01949",
+      "name": "Bebauungsplan Nr. 433 „Stadtquartier östlich Bremer Straße“; Stadtbezirk: Nord, Ortsteil: Gohlis-Nord; Beschluss zur Veröffentlichung des Entwurfes",
+      "paperType": "Beschlussvorlage",
+      "date": "2026-10-06",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2027445",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2070",
+          "name": "61 Stadtplanungsamt"
+        }
+      ],
+      "superordinatedPaperIds": []
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2027462": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2027462",
@@ -5240,6 +5285,21 @@
       ],
       "superordinatedPaperIds": []
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2029902": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029902",
+      "reference": "VIII-Ifo-02817",
+      "name": "Stele für Opfer von Flucht, Vertreibung und Deportation infolge des Zweiten Weltkriegs",
+      "paperType": "Informationsvorlage",
+      "date": "2026-10-21",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2029902",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000003",
+          "name": "44 Referat strategische Kulturpolitik"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2029955": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2029955",
       "reference": "VIII-DS-02822",
@@ -5886,6 +5946,21 @@
       ],
       "superordinatedPaperIds": []
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030341": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030341",
+      "reference": "VIII-DS-02954",
+      "name": "Ortschaftskonzept Miltitz",
+      "paperType": "Beschlussvorlage",
+      "date": "2026-09-11",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030341",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2070",
+          "name": "61 Stadtplanungsamt"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2030347": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030347",
       "reference": "VIII-A-02838-VSP-01",
@@ -6518,6 +6593,23 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2029568"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030579": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030579",
+      "reference": "VII-DS-09671-NF-01",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Neufassung Beschlussvorlage",
+      "date": "2026-10-07",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030579",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2075",
+          "name": "66 Mobilitäts- und Tiefbauamt"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2015030"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2030609": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030609",
       "reference": "VIII-Ifo-02076",
@@ -6738,6 +6830,23 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2030445"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2030950": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2030950",
+      "reference": "VII-DS-09671-NF-01-ÄA-01",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Änderungsantrag",
+      "date": "2026-08-19",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2030950",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2240",
+          "name": "Geschäftsstelle der Fraktion Die Linke"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030579"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2030954": {
@@ -7110,6 +7219,21 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2030881"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031216": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031216",
+      "reference": "VIII-DS-03265",
+      "name": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
+      "paperType": "Beschlussvorlage",
+      "date": "2026-10-28",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031216",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2087",
+          "name": "01.15 Büro für Ratsangelegenheiten"
+        }
+      ],
+      "superordinatedPaperIds": []
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031219": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031219",
       "reference": "VIII-DS-00058-DS-02",
@@ -7438,6 +7562,23 @@
         "https://www.leipzig.sitzung-online.de/oparl/papers/2027816"
       ]
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031659": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031659",
+      "reference": "VII-DS-09671-NF-01-ÄA-04",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Änderungsantrag",
+      "date": "2026-08-27",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031659",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2238",
+          "name": "Geschäftsstelle der CDU-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030579"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031662": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031662",
       "reference": "VII-A-08074-NF-01",
@@ -7572,6 +7713,23 @@
       ],
       "superordinatedPaperIds": []
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031786": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031786",
+      "reference": "VII-DS-06102-Ifo-02",
+      "name": "Umsetzungsprogramm 2027/2028 zum Energie- und Klimaschutzprogramm (EKSP) 2030",
+      "paperType": "Informationsvorlage",
+      "date": "2026-11-13",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031786",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2261",
+          "name": "38 Referat Nachhaltige Entwicklung und Klimaschutz"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2000269"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2031789": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031789",
       "reference": "VIII-DS-00058-DS-03",
@@ -7685,6 +7843,23 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2031666"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2031972": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+      "reference": "VII-DS-09671-NF-02",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Neufassung Beschlussvorlage",
+      "date": "2026-11-03",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2031972",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2075",
+          "name": "66 Mobilitäts- und Tiefbauamt"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2030579"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2032023": {
@@ -8423,6 +8598,40 @@
       ],
       "superordinatedPaperIds": []
     },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034206": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034206",
+      "reference": "VII-DS-06102-Ifo-02-ÄA-01",
+      "name": "Umsetzungsprogramm 2027/2028 zum Energie- und Klimaschutzprogramm (EKSP) 2030",
+      "paperType": "Änderungsantrag",
+      "date": "2026-11-12",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034206",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2238",
+          "name": "Geschäftsstelle der CDU-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031786"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034212": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "reference": "VII-DS-09671-NF-01-ÄA-04-NF-01",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Neufassung Antrag",
+      "date": "2026-11-12",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034212",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2238",
+          "name": "Geschäftsstelle der CDU-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031659"
+      ]
+    },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2034214": {
       "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034214",
       "reference": "VIII-A-03460-NF-04-ÄA-01",
@@ -8455,6 +8664,40 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2030455"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034220": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "reference": "VII-DS-09671-NF-02-ÄA-01",
+      "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+      "paperType": "Änderungsantrag",
+      "date": "2026-11-12",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034220",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031972"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034265": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034265",
+      "reference": "VIII-Ifo-02817-ÄA-01",
+      "name": "Stele für Opfer von Flucht, Vertreibung und Deportation infolge des Zweiten Weltkriegs",
+      "paperType": "Änderungsantrag",
+      "date": "2026-11-19",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034265",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2241",
+          "name": "Geschäftsstelle der Fraktion Bündnis 90/Die Grünen"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2029902"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2034274": {
@@ -8521,6 +8764,23 @@
       ],
       "superordinatedPaperIds": [
         "https://www.leipzig.sitzung-online.de/oparl/papers/2033813"
+      ]
+    },
+    "https://www.leipzig.sitzung-online.de/oparl/papers/2034302": {
+      "oparlId": "https://www.leipzig.sitzung-online.de/oparl/papers/2034302",
+      "reference": "VIII-DS-03265-ÄA-02",
+      "name": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
+      "paperType": "Änderungsantrag",
+      "date": "2026-11-17",
+      "web": "https://ratsinformation.leipzig.de/allris_leipzig_public/VO020?VOLFDNR=2034302",
+      "originators": [
+        {
+          "oparlId": "https://www.leipzig.sitzung-online.de/oparl/organizations/at/2000008",
+          "name": "Geschäftsstelle der BSW-Fraktion"
+        }
+      ],
+      "superordinatedPaperIds": [
+        "https://www.leipzig.sitzung-online.de/oparl/papers/2031216"
       ]
     },
     "https://www.leipzig.sitzung-online.de/oparl/papers/2034303": {
@@ -9042,6 +9302,21 @@
       "14": "https://www.leipzig.sitzung-online.de/oparl/papers/2030560",
       "15": "https://www.leipzig.sitzung-online.de/oparl/papers/2034217",
       "16": "https://www.leipzig.sitzung-online.de/oparl/papers/2031105",
+      "17": "https://www.leipzig.sitzung-online.de/oparl/papers/2027445",
+      "18": "https://www.leipzig.sitzung-online.de/oparl/papers/2030950",
+      "19": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "20": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "21": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "23": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "24": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "25": "https://www.leipzig.sitzung-online.de/oparl/papers/2034220",
+      "26": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "28": "https://www.leipzig.sitzung-online.de/oparl/papers/2034212",
+      "29": "https://www.leipzig.sitzung-online.de/oparl/papers/2031972",
+      "30": "https://www.leipzig.sitzung-online.de/oparl/papers/2030341",
+      "31": "https://www.leipzig.sitzung-online.de/oparl/papers/2034302",
+      "33": "https://www.leipzig.sitzung-online.de/oparl/papers/2034206",
+      "34": "https://www.leipzig.sitzung-online.de/oparl/papers/2034265",
       "35": "https://www.leipzig.sitzung-online.de/oparl/papers/2033988",
       "36": "https://www.leipzig.sitzung-online.de/oparl/papers/2034295",
       "37": "https://www.leipzig.sitzung-online.de/oparl/papers/2033169",

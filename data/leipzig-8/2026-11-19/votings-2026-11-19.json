@@ -8,14 +8,210 @@
     "method": "video-board",
     "extractorVersion": 1
   },
+  "agenda": {
+    "readAt": "2026-11-25T21:21:04.107Z",
+    "itemIds": [
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216834",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216835",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216836",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216837",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216838",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216840",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216841",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216842",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216843",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216844",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216845",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216847",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216903",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216904",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216906",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216907",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216908",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216909",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216922",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216931",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216932",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216933",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216937",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216944",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216946",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216952",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216953",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216954",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216956",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216958",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216959",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216961",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216962",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216963",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216974",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216975",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216976",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216978",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216979",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216980",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216981",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216985",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216986",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216987",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216988",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216989",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216991",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217004",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217005",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217006",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217007",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217008",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217009",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217010",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217015",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217017",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217018",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217021",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217023",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217024",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217028",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217029",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217129",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217130",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217339",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217340",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217341",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217525",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217526",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217591",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217593",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217595",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217596",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217597",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217598",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217599",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217622",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217631",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217632",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217633",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217634",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217636",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217637",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217638",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217639",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217640",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217641",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217642",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217643",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217644",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2217721",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218004",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218005",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218007",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218096",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218097",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218098",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218099",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218190",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218209",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218211",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218214",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218215",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218250",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218278",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218280",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218281",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218325",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218326",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218327",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218328",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218329",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218330",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218332",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218333",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218334",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218335",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218336",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218337",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218338",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218339",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218340",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218341",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218342",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218343",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218344",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218345",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218346",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218347",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218348",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218350",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218352",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218353",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218354",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218355",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218356",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218357",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218888",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218908",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219032",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219073",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219136",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219137",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219138",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219247",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219248",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219249",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219252",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219254",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219255",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219256",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219257",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219339",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219340",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219341",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219342",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219343",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219344",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219345",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219346",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219347",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219350",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219421",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219513",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219514",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219515",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219712",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219728",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219729",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219730",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219731",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219946",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219948",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219955",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219974",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219977",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220187",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220188",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220189",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220196",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220197",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220198",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220199",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220212",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220214",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220329",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220330",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220383",
+      "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220384"
+    ]
+  },
   "summary": {
     "votings": 39,
     "verified": 0,
     "corrected": 0,
-    "provisional": 19,
+    "provisional": 33,
     "reviewed": 0,
     "unresolved": 0,
-    "needs-review": 17,
+    "needs-review": 3,
     "skipped": 1,
     "discarded": 2
   },
@@ -11654,7 +11850,14 @@
         "paperReference": "VIII-DS-01949",
         "title": "Bebauungsplan Nr. 433 „Stadtquartier östlich Bremer Straße‘; Stadtbezirk: Nord, Ortsteil: Gohlis-Nord; Beschluss zur Veröffentlichung des Entwurfe"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216944",
+        "number": "18.2",
+        "isParentAgendaItem": false,
+        "name": "Bebauungsplan Nr. 433 „Stadtquartier östlich Bremer Straße“; Stadtbezirk:  Nord, Ortsteil:  Gohlis-Nord; Beschluss zur Veröffentlichung des Entwurfes",
+        "result": "ungeändert beschlossen",
+        "paperReference": "VIII-DS-01949"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 59,
@@ -12283,7 +12486,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.2"
         },
         {
@@ -12297,6 +12500,16 @@
           "detail": "59 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-01949, OParl VIII-DS-01949"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
+        },
+        {
           "check": "announcement-matches",
           "passed": true,
           "detail": "announced 48/5/6: \"Rundersergebnis 48 zu 5 zu 6, so beschlossen. Achtzehn sieben, Fortsteibung des Medienentwicklungsplans, gibt es Gegenstimmen?\""
@@ -12307,8 +12520,8 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 18,
@@ -12326,7 +12539,14 @@
         "paperReference": "VIII-DS-09671-NF-01-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanen uımd Plätzen (Sandearnutziunassatziuna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218211",
+        "number": "18.1.1",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "abgelehnt",
+        "paperReference": "VII-DS-09671-NF-01-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 64,
@@ -12955,7 +13175,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.1"
         },
         {
@@ -12969,6 +13189,16 @@
           "detail": "64 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-01-ÄA-01, OParl VII-DS-09671-NF-01-ÄA-01"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board rejected (simple majority), OParl \"abgelehnt\""
+        },
+        {
           "check": "announcement-matches",
           "passed": true,
           "detail": "announced 16/35/13: \"Und das Ergebnis heisst 16 zu 35 zu 13 abgelehnt. Änderungsantrag der Fraktion Bündnis\""
@@ -12979,8 +13209,8 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 19,
@@ -12998,7 +13228,14 @@
         "paperReference": "VIII-DS-09671-NF-02-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzit über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanen ımd Plätzen (Sandearnutzunassatziumna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+        "number": "18.1.2",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "teilweise vom Einreicher übernommen",
+        "paperReference": "VII-DS-09671-NF-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 63,
@@ -13620,7 +13857,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.2"
         },
         {
@@ -13634,13 +13871,18 @@
           "detail": "63 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02-ÄA-01, OParl VII-DS-09671-NF-02-ÄA-01"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 20,
@@ -13658,7 +13900,14 @@
         "paperReference": "VIII-DS-09671-NF-02-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wanaen ımd Plätzen (Sandearnutzunassatziumna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+        "number": "18.1.2",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "teilweise vom Einreicher übernommen",
+        "paperReference": "VII-DS-09671-NF-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 61,
@@ -14280,7 +14529,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.2"
         },
         {
@@ -14294,13 +14543,18 @@
           "detail": "61 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02-ÄA-01, OParl VII-DS-09671-NF-02-ÄA-01"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 21,
@@ -14318,7 +14572,14 @@
         "paperReference": "VIII-DS-09671-NF-02-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanaen uımd Plätzen (Sandearnutzunassatziumna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+        "number": "18.1.2",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "teilweise vom Einreicher übernommen",
+        "paperReference": "VII-DS-09671-NF-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 64,
@@ -14940,7 +15201,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.2"
         },
         {
@@ -14954,13 +15215,18 @@
           "detail": "64 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02-ÄA-01, OParl VII-DS-09671-NF-02-ÄA-01"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 22,
@@ -14978,7 +15244,14 @@
         "paperReference": "VIII-DS-09671-NF-02-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzit über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanaen ımad Plätzen (Sandearnıutzunassatzı na)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+        "number": "18.1.2",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "teilweise vom Einreicher übernommen",
+        "paperReference": "VII-DS-09671-NF-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": null,
@@ -15600,7 +15873,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.2"
         },
         {
@@ -15612,6 +15885,11 @@
           "check": "most-present-members-voted",
           "passed": false,
           "detail": "0 votes from 66 present"
+        },
+        {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02-ÄA-01, OParl VII-DS-09671-NF-02-ÄA-01"
         },
         {
           "check": "not-attendance-count",
@@ -15638,7 +15916,14 @@
         "paperReference": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkean Wannen und Plätzen (Sandearnutzunassatziuna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+        "number": "18.1.4",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "geändert beschlossen",
+        "paperReference": "VII-DS-09671-NF-01-ÄA-04-NF-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 64,
@@ -16260,7 +16545,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.4"
         },
         {
@@ -16274,13 +16559,18 @@
           "detail": "64 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-01-ÄA-04-NF-01, OParl VII-DS-09671-NF-01-ÄA-04-NF-01"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 24,
@@ -16298,7 +16588,14 @@
         "paperReference": "VIII-DS-09671-NF-02-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzi« über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wanaen ımd Plätzen (Sandearnutzunassatziumna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+        "number": "18.1.2",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "teilweise vom Einreicher übernommen",
+        "paperReference": "VII-DS-09671-NF-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 63,
@@ -16920,7 +17217,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.2"
         },
         {
@@ -16934,13 +17231,18 @@
           "detail": "63 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02-ÄA-01, OParl VII-DS-09671-NF-02-ÄA-01"
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 25,
@@ -16958,7 +17260,14 @@
         "paperReference": "VIII-DS-09671-NF-02-ÄA-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzit über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Waanen uımd Plätzen (Sandearnutzunassatziumna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219251",
+        "number": "18.1.2",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "teilweise vom Einreicher übernommen",
+        "paperReference": "VII-DS-09671-NF-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 64,
@@ -17587,7 +17896,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.2"
         },
         {
@@ -17601,6 +17910,11 @@
           "detail": "64 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02-ÄA-01, OParl VII-DS-09671-NF-02-ÄA-01"
+        },
+        {
           "check": "announcement-matches",
           "passed": true,
           "detail": "announced 33/30/1: \"Und das Ergebnis 33 zu 30 zu 1 so beschlossen. Dann beantragt die CDU-Fraktion den Paragrafen, ach so, das ist jetzt hinfällig,\""
@@ -17611,8 +17925,8 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 26,
@@ -17630,7 +17944,14 @@
         "paperReference": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkan Wannen uımd Plätzen (Sandearnıutzunassatzi na)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+        "number": "18.1.4",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "geändert beschlossen",
+        "paperReference": "VII-DS-09671-NF-01-ÄA-04-NF-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 64,
@@ -18259,7 +18580,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.4"
         },
         {
@@ -18273,6 +18594,11 @@
           "detail": "64 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-01-ÄA-04-NF-01, OParl VII-DS-09671-NF-01-ÄA-04-NF-01"
+        },
+        {
           "check": "announcement-matches",
           "passed": true,
           "detail": "announced 29/34/1: \"29 zu 34 zu 1 abgelehnt. Jetzt sind wir beim elektronischen Antrag auf Amt 24, Beschlusspunkt Nummer 2\""
@@ -18283,8 +18609,8 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 27,
@@ -18303,7 +18629,14 @@
         "paperReference": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkean Wannen uımd Plätzen (Sandernutzunassatziuna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+        "number": "18.1.4",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "geändert beschlossen",
+        "paperReference": "VII-DS-09671-NF-01-ÄA-04-NF-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 51,
@@ -18925,7 +19258,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.4"
         },
         {
@@ -18937,6 +19270,11 @@
           "check": "most-present-members-voted",
           "passed": true,
           "detail": "51 votes from 66 present"
+        },
+        {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-01-ÄA-04-NF-01, OParl VII-DS-09671-NF-01-ÄA-04-NF-01"
         },
         {
           "check": "not-attendance-count",
@@ -18963,7 +19301,14 @@
         "paperReference": "VIII-DS-09671-NF-01-ÄA-04-NF-01",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen StraRkan Wannen uımd Plätzen (Sandearnutzunassatziumna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219250",
+        "number": "18.1.4",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "geändert beschlossen",
+        "paperReference": "VII-DS-09671-NF-01-ÄA-04-NF-01"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 62,
@@ -19592,7 +19937,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1.4"
         },
         {
@@ -19606,6 +19951,11 @@
           "detail": "62 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-01-ÄA-04-NF-01, OParl VII-DS-09671-NF-01-ÄA-04-NF-01"
+        },
+        {
           "check": "announcement-matches",
           "passed": true,
           "detail": "announced 47/12/3: \"Und im Ergebnis heißt das Zustimmung mit 47 zu 12 zu 3. Dann haben wir, bitte noch einmal konzentriert, aus dem Änderungsantrag 4 der\""
@@ -19616,8 +19966,8 @@
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 29,
@@ -19635,7 +19985,14 @@
         "paperReference": "VIII-DS-09671-NF-02",
         "title": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über di Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und DPlätzaen (Sandearnutzunassatziuna)"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2218209",
+        "number": "18.1",
+        "isParentAgendaItem": false,
+        "name": "2. Satzung zur Änderung der Satzung der Stadt Leipzig über die Erlaubnisse und Gebühren für Sondernutzungen an öffentlichen Straßen, Wegen und Plätzen (Sondernutzungssatzung)",
+        "result": "geändert beschlossen",
+        "paperReference": "VII-DS-09671-NF-02"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 64,
@@ -20257,7 +20614,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.1"
         },
         {
@@ -20271,13 +20628,23 @@
           "detail": "64 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-09671-NF-02, OParl VII-DS-09671-NF-02"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board accepted (simple majority), OParl \"geändert beschlossen\""
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 30,
@@ -20295,7 +20662,14 @@
         "paperReference": "VIII-DS-02954",
         "title": "Ortschaftskonzept Miltitz"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2216954",
+        "number": "18.6",
+        "isParentAgendaItem": false,
+        "name": "Ortschaftskonzept Miltitz",
+        "result": "ungeändert beschlossen",
+        "paperReference": "VIII-DS-02954"
+      },
       "board": {
         "presentMembers": 66,
         "castVotes": 60,
@@ -20917,7 +21291,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.6"
         },
         {
@@ -20931,13 +21305,23 @@
           "detail": "60 votes from 66 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-02954, OParl VIII-DS-02954"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 31,
@@ -20955,7 +21339,14 @@
         "paperReference": "VIII-DS-03265-ÄA-02",
         "title": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219977",
+        "number": "18.8.2",
+        "isParentAgendaItem": false,
+        "name": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
+        "result": "abgelehnt",
+        "paperReference": "VIII-DS-03265-ÄA-02"
+      },
       "board": {
         "presentMembers": 64,
         "castVotes": 62,
@@ -21584,7 +21975,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.8.2"
         },
         {
@@ -21596,6 +21987,16 @@
           "check": "most-present-members-voted",
           "passed": true,
           "detail": "62 votes from 64 present"
+        },
+        {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-03265-ÄA-02, OParl VIII-DS-03265-ÄA-02"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board rejected (simple majority), OParl \"abgelehnt\""
         },
         {
           "check": "announcement-matches",
@@ -21627,7 +22028,14 @@
         "paperReference": "VIII-DS-03265-ÄA-01-NF-01",
         "title": "Änderung Geschäftsordnung der Ratsversamm-lung - Anfragen"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220329",
+        "number": "18.8",
+        "isParentAgendaItem": false,
+        "name": "Änderung Geschäftsordnung der Ratsversammlung - Anfragen",
+        "result": "geändert beschlossen",
+        "paperReference": "VIII-DS-03265"
+      },
       "board": {
         "presentMembers": 64,
         "castVotes": 57,
@@ -22256,7 +22664,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 18.8"
         },
         {
@@ -22268,6 +22676,16 @@
           "check": "most-present-members-voted",
           "passed": true,
           "detail": "57 votes from 64 present"
+        },
+        {
+          "check": "paper-matches-oparl",
+          "passed": false,
+          "detail": "heading VIII-DS-03265-ÄA-01-NF-01, OParl VIII-DS-03265"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board accepted (simple majority), OParl \"geändert beschlossen\""
         },
         {
           "check": "announcement-matches",
@@ -22299,7 +22717,14 @@
         "paperReference": "VIII-DS-06102-Ifo-02-ÄA-01",
         "title": "Umsetzungsprogramm 2027/2028 zum Energie- und Klimaschutzprogramm (EKSP) 2030"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2219249",
+        "number": "19.2.1",
+        "isParentAgendaItem": false,
+        "name": "Umsetzungsprogramm 2027/2028 zum Energie- und Klimaschutzprogramm (EKSP) 2030",
+        "result": "abgelehnt",
+        "paperReference": "VII-DS-06102-Ifo-02-ÄA-01"
+      },
       "board": {
         "presentMembers": 64,
         "castVotes": 63,
@@ -22921,7 +23346,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 19.2.1"
         },
         {
@@ -22935,13 +23360,23 @@
           "detail": "63 votes from 64 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-DS-06102-Ifo-02-ÄA-01, OParl VII-DS-06102-Ifo-02-ÄA-01"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board rejected (simple majority), OParl \"abgelehnt\""
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 34,
@@ -22959,7 +23394,14 @@
         "paperReference": "VIII-Ifo-02817-ÄA-01",
         "title": "Stele für Opfer von Flucht, Vertreibung und Deportation infolge des Zweiten Weltkriegs"
       },
-      "oparl": null,
+      "oparl": {
+        "agendaItemId": "https://www.leipzig.sitzung-online.de/oparl/agendaItems/2220383",
+        "number": "19.4.1",
+        "isParentAgendaItem": false,
+        "name": "Stele für Opfer von Flucht, Vertreibung und Deportation infolge des Zweiten Weltkriegs",
+        "result": "ungeändert beschlossen",
+        "paperReference": "VIII-Ifo-02817-ÄA-01"
+      },
       "board": {
         "presentMembers": 64,
         "castVotes": 61,
@@ -23581,7 +24023,7 @@
         },
         {
           "check": "agenda-item-in-oparl",
-          "passed": false,
+          "passed": true,
           "detail": "heading TOP 19.4.1"
         },
         {
@@ -23595,13 +24037,23 @@
           "detail": "61 votes from 64 present"
         },
         {
+          "check": "paper-matches-oparl",
+          "passed": true,
+          "detail": "heading VIII-Ifo-02817-ÄA-01, OParl VIII-Ifo-02817-ÄA-01"
+        },
+        {
+          "check": "outcome-matches-oparl",
+          "passed": true,
+          "detail": "board accepted (simple majority), OParl \"ungeändert beschlossen\""
+        },
+        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "needs-review",
-      "status": "needs-review"
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 35,
