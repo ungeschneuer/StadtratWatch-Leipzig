@@ -5269,7 +5269,8 @@
         "vote": "J"
       }
     ],
-    "presentMembers": 66
+    "presentMembers": 66,
+    "reviewStatus": "provisional"
   },
   {
     "votingFilename": "2026-11-19-019.png",
