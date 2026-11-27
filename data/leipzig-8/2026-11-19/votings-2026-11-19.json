@@ -206,9 +206,9 @@
   },
   "summary": {
     "votings": 39,
-    "verified": 18,
+    "verified": 17,
     "corrected": 0,
-    "provisional": 15,
+    "provisional": 16,
     "reviewed": 0,
     "unresolved": 0,
     "needs-review": 3,
@@ -12731,40 +12731,13 @@
           "detail": "announced 48/5/6: \"Rundersergebnis 48 zu 5 zu 6, so beschlossen. Achtzehn sieben, Fortsteibung des Medienentwicklungsplans, gibt es Gegenstimmen?\""
         },
         {
-          "check": "matches-official",
-          "passed": true,
-          "detail": "official 48/5/6 for TOP 18.2 (VIII-DS-01949)"
-        },
-        {
           "check": "not-attendance-count",
           "passed": true,
           "detail": "agenda item is no opening or quorum"
         }
       ],
-      "checkStatus": "verified",
-      "status": "verified",
-      "official": {
-        "J": 48,
-        "N": 5,
-        "E": 6,
-        "agendaItemNumber": "18.2",
-        "paperReference": "VIII-DS-01949",
-        "procedural": false,
-        "sources": [
-          {
-            "kind": "agenda-item-pages",
-            "agendaItemNumbers": [
-              "18.2"
-            ],
-            "paperReference": "VIII-DS-01949",
-            "label": "Abstimmungsergebnis:",
-            "J": 48,
-            "N": 5,
-            "E": 6
-          }
-        ],
-        "correction": null
-      }
+      "checkStatus": "provisional",
+      "status": "provisional"
     },
     {
       "index": 18,

@@ -2,7 +2,7 @@
   "sessionId": "2026-11-19",
   "kind": "agenda-item-pages",
   "source": "https://ratsinformation.leipzig.de/allris_leipzig_public/to010?SILFDNR=2004603",
-  "fetchedAt": "2026-11-26T06:19:49.421Z",
+  "fetchedAt": "2026-11-27T06:21:12.414Z",
   "parserVersion": 4,
   "votes": [
     {
@@ -167,16 +167,6 @@
     },
     {
       "order": 16,
-      "agendaItemNumber": "18.2",
-      "paperReference": "VIII-DS-01949",
-      "label": "Abstimmungsergebnis:",
-      "procedural": false,
-      "J": 48,
-      "N": 5,
-      "E": 6
-    },
-    {
-      "order": 17,
       "agendaItemNumber": "18.6",
       "paperReference": "VIII-DS-02954",
       "label": "Abstimmungsergebnis:",
@@ -186,7 +176,7 @@
       "E": 0
     },
     {
-      "order": 18,
+      "order": 17,
       "agendaItemNumber": "18.8.2",
       "paperReference": "VIII-DS-03265-ÄA-02",
       "label": "Abstimmungsergebnis:",
@@ -196,7 +186,7 @@
       "E": 0
     },
     {
-      "order": 19,
+      "order": 18,
       "agendaItemNumber": "19.2.1",
       "paperReference": "VII-DS-06102-Ifo-02-ÄA-01",
       "label": "Abstimmungsergebnis:",
@@ -206,7 +196,7 @@
       "E": 0
     },
     {
-      "order": 20,
+      "order": 19,
       "agendaItemNumber": "19.4",
       "paperReference": "VIII-Ifo-02817",
       "label": "Abstimmungsergebnis:",
@@ -216,7 +206,7 @@
       "E": 7
     },
     {
-      "order": 21,
+      "order": 20,
       "agendaItemNumber": "19.4.1",
       "paperReference": "VIII-Ifo-02817-ÄA-01",
       "label": "Abstimmungsergebnis:",
